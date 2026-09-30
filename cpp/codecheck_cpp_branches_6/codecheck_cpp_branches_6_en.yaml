@@ -1,0 +1,37 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_branches_6_en
+source: prog.cpp
+title: Branches Without Functions 6
+description: Given three numbers x, y, z, print out how whether they are all distinct, two are the same, or all three are
+  the same.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Branches
+  - horstmann:Branches Without Functions
+runtime:
+  language: cpp
+  version: '17'
+statement: |-
+  Given three numbers x, y, z, print out how whether they are all distinct ("Distinct"),
+  two are the same ("Two"), or all three are the same ("All").
+elements:
+- type: editable
+  location:
+    snippet: "#include <iostream>\n#include <string>\nusing namespace std;\n\nint main()\n{\n   string output;\n\n   int x\
+      \ = 0; \n   int y = 0; \n   int z = 0; \n\n   cout << output << endl;\n   return 0;\n}\n"
+  placeholder: "#include <iostream>\n#include <string>\nusing namespace std;\n\nint main()\n{\n   string output;\n\n   int\
+    \ x = 0; \n   int y = 0; \n   int z = 0; \n\n   cout << output << endl;\n   return 0;\n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

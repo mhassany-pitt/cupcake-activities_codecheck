@@ -1,0 +1,55 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_list_105_en
+source: ExpressionChecker.java
+title: Linear Data Structures 105
+description: A stack can be used to check whether an arithmetic expression such as
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Linear Data Structures
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>A stack can be used to check whether an arithmetic expression such as
+      </p>
+
+      <pre>3*(4+(5-6))/7</pre>
+
+      <p>has properly balanced parentheses. Break the expression into its
+      individual parts. </p>
+
+      <pre>3 * ( 4 + ( 5 - 6 ) ) / 7</pre>
+
+      <p>Push each part on a stack as it is encountered. When a <code>)</code> is
+      encountered, pop everything until the matching <code>(</code>. If the stack is
+      prematurely empty, then report an error.</p>
+
+      <p>At the end, there should be no parentheses left. Otherwise, report an
+      error.</p>
+elements:
+- type: editable
+  location:
+    snippet: "import java.util.Stack;\n\npublic class ExpressionChecker\n{\n   public boolean checkParentheses(String expression)\n\
+      \   {\n      Stack<String> stk = new Stack<String>();\n      for (int i = 0; i < expression.length(); i++)\n      {\n\
+      \         String part = expression.substring(i, i + 1);\n         stk.push(part);\n         // TODO: Complete this loop\n\
+      \      }\n      \n      while (!stk.isEmpty())\n      {\n         String part = stk.pop();\n         // TODO: Complete\
+      \ this loop\n      }\n      \n      // TODO: Complete this statement\n      return ...;\n   }\n}\n"
+  placeholder: "import java.util.Stack;\n\npublic class ExpressionChecker\n{\n   public boolean checkParentheses(String expression)\n\
+    \   {\n      Stack<String> stk = new Stack<String>();\n      for (int i = 0; i < expression.length(); i++)\n      {\n\
+    \         String part = expression.substring(i, i + 1);\n         stk.push(part);\n         // TODO: Complete this loop\n\
+    \      }\n      \n      while (!stk.isEmpty())\n      {\n         String part = stk.pop();\n         // TODO: Complete\
+    \ this loop\n      }\n      \n      // TODO: Complete this statement\n      return ...;\n   }\n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

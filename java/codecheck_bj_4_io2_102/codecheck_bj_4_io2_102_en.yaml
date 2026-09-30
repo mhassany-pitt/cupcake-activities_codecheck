@@ -1,0 +1,79 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_io2_102_en
+source: HyperCaesarCipher.java
+title: Advanced Input and Output 102
+description: The HyperCaesar cipher is just like the Caesar cipher, except that the key for each step is the initial key +
+  the sum of the previously encoded characters.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Advanced Input and Output
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>The HyperCaesar cipher is just like the Caesar cipher, except that the
+      key for each step is the initial key + the sum of the previously encoded
+      characters. For example, if the initial key is 3 and the text to be
+      encoded is "eve", then the first "e" is encoded with a key of 3. The next
+      letter is encoded with a key of 104 because the character "e" has Unicode
+      value 101. The third letter is encoded with a key of 222 becase the
+      character "v" has a code value of 118 and 222 = 3 + 101 + 118. The
+      summation process is carried out modulo 256. </p>
+
+      <p>(Despite its seeming complexity, this is not a safe cipher to use for
+      your secret correspondence. It is easy for anyone wishing to decode your
+      messages to try all 256 possible keys.)</p>
+
+      <p>Your task is to
+      implement the decryption method. </p>
+elements:
+- type: editable
+  location:
+    snippet: "import java.io.FileInputStream;\nimport java.io.FileOutputStream;\nimport java.io.InputStream;\nimport java.io.OutputStream;\n\
+      import java.io.IOException;\n\n/**\n   This class encrypts files using the HyperCaesar cipher.\n*/\npublic class HyperCaesarCipher\n\
+      {\n   /**\n      Constructs a cipher object with a given key.\n      @param aKey the encryption key\n   */\n   public\
+      \ HyperCaesarCipher(int aKey)\n   {\n      key = (byte) aKey;\n   }\n\n   /**\n      Encrypts the contents of a stream.\n\
+      \      @param in the input stream\n      @param out the output stream\n   */      \n   public void encryptStream(InputStream\
+      \ in, OutputStream out)\n         throws IOException\n   {\n      boolean done = false;\n      while (!done)\n     \
+      \ {\n         int next = in.read();\n         if (next == -1) done = true;\n         else\n         {\n            byte\
+      \ b = (byte) next;\n            byte c = encrypt(b);\n            out.write(c);\n         }\n      }\n   }\n\n   /**\n\
+      \      Encrypts a byte.\n      @param b the byte to encrypt\n      @return the encrypted byte\n   */\n   public byte\
+      \ encrypt(byte b)\n   {\n      byte r = (byte) (b + key);\n      key = (byte) (key + b);\n      return r;\n   }\n\n\
+      \   \n   // TODO: Add decryption\n   \n   private byte key;\n   \n   // this method is used to check your work\n   \n\
+      \   public static void main(String[] args)\n   {  \n      try\n      {  \n         InputStream inStream = new FileInputStream(\"\
+      encrypted.txt\");\n         OutputStream outStream = new FileOutputStream(\"decrypted.txt\");\n         int key = 3;\n\
+      \         HyperCaesarCipher cipher = new HyperCaesarCipher(key);\n         cipher.decryptStream(inStream, outStream);\n\
+      \n         inStream.close();\n         outStream.close();\n      }\n      catch (IOException exception)\n      {  \n\
+      \         System.out.println(\"Error processing file: \" + exception);\n      }\n   }\n}\n"
+  placeholder: "import java.io.FileInputStream;\nimport java.io.FileOutputStream;\nimport java.io.InputStream;\nimport java.io.OutputStream;\n\
+    import java.io.IOException;\n\n/**\n   This class encrypts files using the HyperCaesar cipher.\n*/\npublic class HyperCaesarCipher\n\
+    {\n   /**\n      Constructs a cipher object with a given key.\n      @param aKey the encryption key\n   */\n   public\
+    \ HyperCaesarCipher(int aKey)\n   {\n      key = (byte) aKey;\n   }\n\n   /**\n      Encrypts the contents of a stream.\n\
+    \      @param in the input stream\n      @param out the output stream\n   */      \n   public void encryptStream(InputStream\
+    \ in, OutputStream out)\n         throws IOException\n   {\n      boolean done = false;\n      while (!done)\n      {\n\
+    \         int next = in.read();\n         if (next == -1) done = true;\n         else\n         {\n            byte b\
+    \ = (byte) next;\n            byte c = encrypt(b);\n            out.write(c);\n         }\n      }\n   }\n\n   /**\n \
+    \     Encrypts a byte.\n      @param b the byte to encrypt\n      @return the encrypted byte\n   */\n   public byte encrypt(byte\
+    \ b)\n   {\n      byte r = (byte) (b + key);\n      key = (byte) (key + b);\n      return r;\n   }\n\n   \n   // TODO:\
+    \ Add decryption\n   \n   private byte key;\n   \n   // this method is used to check your work\n   \n   public static\
+    \ void main(String[] args)\n   {  \n      try\n      {  \n         InputStream inStream = new FileInputStream(\"encrypted.txt\"\
+    );\n         OutputStream outStream = new FileOutputStream(\"decrypted.txt\");\n         int key = 3;\n         HyperCaesarCipher\
+    \ cipher = new HyperCaesarCipher(key);\n         cipher.decryptStream(inStream, outStream);\n\n         inStream.close();\n\
+    \         outStream.close();\n      }\n      catch (IOException exception)\n      {  \n         System.out.println(\"\
+    Error processing file: \" + exception);\n      }\n   }\n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass
+includes:
+- encrypted.txt

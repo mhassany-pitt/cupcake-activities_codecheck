@@ -1,0 +1,61 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_ood_101_en
+source: Square.java
+title: Object-Oriented Design 101
+description: 'Intuitively, every square is a rectangle, so it is tempting to use inheritance for implementing a square:'
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Object-Oriented Design
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>Intuitively, every square is a rectangle, so it is tempting to use
+      inheritance for implementing a square:</p>
+
+      <pre>public class Square extends Rectangle </pre>
+
+      <p>However, the devil is in the details. The <code>Square</code> class
+      inherits all mutators of <code>Rectangle</code>, and some of them can mutate a
+      square into a non-square shape. All these mutators need to be
+      reimplemented so that they ensure that no such mutation occurs.</p>
+
+      <p>Your task is to implement the <code>Square</code> constructor and one
+      mutator, the <code>setSize</code> method. In the <code>setSize</code> method, you
+      should use the <code>assert</code> operator to check that the new size is
+      again a square.</p>
+elements:
+- type: editable
+  location:
+    snippet: "import java.awt.Rectangle;\n\npublic class Square extends Rectangle\n{\n   /**\n      Constructs a square with\
+      \ a given position and side length.\n      @param x the x-coordinate of the top left corner\n      @param y the y-coordinate\
+      \ of the top left corner\n      @parameter sideLength the length of each side\n   */   \n   public Square(int x, int\
+      \ y, int sideLength)\n   {\n      // TODO\n   }\n   \n   /**\n      Sets the size of this method. Overrides Rectangle.setSize.\
+      \ \n      @param width the new side length\n      @param height the new side length \n      (Precondition: width equals\
+      \ height)\n   */   \n   public void setSize(int width, int height)\n   {\n      // TODO\n   }\n   \n   // This method\
+      \ tests your work.\n   \n   public static Square check(int x, int y, int sideLength, int width, int height) \n   {\n\
+      \      Square sq = new Square(x, y, sideLength);\n      try\n      {\n         sq.setSize(width, height);\n      }\n\
+      \      catch (AssertionError ex)\n      {\n      }\n      return sq;\n   }\n}\n"
+  placeholder: "import java.awt.Rectangle;\n\npublic class Square extends Rectangle\n{\n   /**\n      Constructs a square\
+    \ with a given position and side length.\n      @param x the x-coordinate of the top left corner\n      @param y the y-coordinate\
+    \ of the top left corner\n      @parameter sideLength the length of each side\n   */   \n   public Square(int x, int y,\
+    \ int sideLength)\n   {\n      // TODO\n   }\n   \n   /**\n      Sets the size of this method. Overrides Rectangle.setSize.\
+    \ \n      @param width the new side length\n      @param height the new side length \n      (Precondition: width equals\
+    \ height)\n   */   \n   public void setSize(int width, int height)\n   {\n      // TODO\n   }\n   \n   // This method\
+    \ tests your work.\n   \n   public static Square check(int x, int y, int sideLength, int width, int height) \n   {\n \
+    \     Square sq = new Square(x, y, sideLength);\n      try\n      {\n         sq.setSize(width, height);\n      }\n  \
+    \    catch (AssertionError ex)\n      {\n      }\n      return sq;\n   }\n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

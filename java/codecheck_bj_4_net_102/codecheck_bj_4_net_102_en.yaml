@@ -1,0 +1,61 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_net_102_en
+source: OracleService.java
+title: Networking 102
+description: Your task is to provide an oracle server at port 7777 on the local host.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Networking
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>Your task is to provide an oracle server at port 7777 on the local
+      host. The oracle protocol is very simple. The client sends a single line
+      containing a question to the oracle server, and the oracle server sends
+      the answer in a single line and then disconnects.</p>
+
+      <p>The oracle server is not a real oracle. It simply checks whether the
+      input is an actual question (that is, a line starting with "where",
+      "when", "what", "why", "how", "who", "which"). If so, it sends the
+      response "The answer is <a
+      href="http://en.wikipedia.org/wiki/The_Answer_to_Life,_the_Universe,_and_Everything">42</a>.".
+      Otherwise, it sends the response "That was not a question."</p>
+elements:
+- type: editable
+  location:
+    snippet: "import java.io.InputStream;\nimport java.io.IOException;\nimport java.io.OutputStream;\nimport java.io.PrintWriter;\n\
+      import java.net.Socket;\nimport java.util.Scanner;\n\n/**\n   Answers a question that was sent from a socket.\n*/\n\
+      public class OracleService implements Runnable\n{\n   /**\n      Constructs a service object that processes a question.\n\
+      \      @param aSocket the socket\n   */\n   public OracleService(Socket aSocket)\n   {\n      s = aSocket;\n   }\n\n\
+      \   public void run()\n   {\n      try\n      {\n         try\n         {\n            // Get scanner and print writer\n\
+      \n            // get input line\n            \n            // check if it is a question\n            \n            //\
+      \ send answer\n\n            out.flush();\n         }\n         finally\n         {\n            s.close();\n      \
+      \   }\n      }\n      catch (IOException exception)\n      {\n         exception.printStackTrace();\n      }\n   }\n\
+      \n   private Socket s;\n   private Scanner in;\n   private PrintWriter out;\n}\n"
+  placeholder: "import java.io.InputStream;\nimport java.io.IOException;\nimport java.io.OutputStream;\nimport java.io.PrintWriter;\n\
+    import java.net.Socket;\nimport java.util.Scanner;\n\n/**\n   Answers a question that was sent from a socket.\n*/\npublic\
+    \ class OracleService implements Runnable\n{\n   /**\n      Constructs a service object that processes a question.\n \
+    \     @param aSocket the socket\n   */\n   public OracleService(Socket aSocket)\n   {\n      s = aSocket;\n   }\n\n  \
+    \ public void run()\n   {\n      try\n      {\n         try\n         {\n            // Get scanner and print writer\n\
+    \n            // get input line\n            \n            // check if it is a question\n            \n            //\
+    \ send answer\n\n            out.flush();\n         }\n         finally\n         {\n            s.close();\n        \
+    \ }\n      }\n      catch (IOException exception)\n      {\n         exception.printStackTrace();\n      }\n   }\n\n \
+    \  private Socket s;\n   private Scanner in;\n   private PrintWriter out;\n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass
+includes:
+- OracleClient.java
+- OracleServer.java

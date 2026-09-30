@@ -1,0 +1,40 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_python_2darraysnoloops_4_en
+source: prog.py
+title: No Loops 4
+description: Given a two-dimensional array of integers and a string NW, NW, SW, SE, return the sum of the four elements in
+  the given compass direction.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Two-Dimensional Arrays
+  - horstmann:No Loops
+runtime:
+  language: python
+  version: '3'
+statement: Given a two-dimensional array of integers and a string NW, NW, SW, SE, return the sum of the four elements in the
+  given compass direction.
+elements:
+- type: editable
+  location:
+    snippet: "\n# Given a rectangular, two-dimensional array of integers and a string NW, NE, SW, SE, \n# return the sum of\
+      \ the four elements in the corner of the given compass direction.\n# If 'NW' is selected, the four elements in the corner\
+      \ are located at [0,0], [0,1], \n# [1,0], and [1,1]. You may assume the two-dimensional array is at least 2x2. \n\n\
+      def sumCorners(arr, direction):\n   # Your code here...\n"
+  placeholder: "\n# Given a rectangular, two-dimensional array of integers and a string NW, NE, SW, SE, \n# return the sum\
+    \ of the four elements in the corner of the given compass direction.\n# If 'NW' is selected, the four elements in the\
+    \ corner are located at [0,0], [0,1], \n# [1,0], and [1,1]. You may assume the two-dimensional array is at least 2x2.\
+    \ \n\ndef sumCorners(arr, direction):\n   # Your code here...\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

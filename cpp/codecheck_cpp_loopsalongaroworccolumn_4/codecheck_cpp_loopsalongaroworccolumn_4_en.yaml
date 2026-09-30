@@ -1,0 +1,56 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_loopsalongaroworccolumn_4_en
+source: prog.cpp
+title: Loops Along a Row or Column 4
+description: Given a two-dimensional array of integers, a row index r, and a column index c, return the sum of all elements
+  in the given row and column.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Two-Dimensional Arrays
+  - horstmann:Loops Along a Row or Column
+runtime:
+  language: cpp
+  version: '17'
+statement: "<p>\n   Given a two-dimensional array of integers, a row index <code>r</code>, \n   and a column index <code>c</code>,\
+  \ return the sum of all elements in the \n   given row and column. The element where the row and column \n   meet should\
+  \ only be included once. You may assume that the\n   given index for row/column exists.\n</p>"
+elements:
+- type: locked
+  location:
+    snippet: |
+      const int MAX_COLS = 10;
+      /**
+         Sum all elements in a given row and column.
+         @param arr the array to process.
+         @param rows the rows in the array.
+         @param cols the columns in the array.
+         @param r the row to sum.
+         @param c the column to sum.
+         @return the sum of the elements in the row and column
+      */
+      int sum_row_and_col(const int arr[][MAX_COLS], int rows, int cols, int r, int c)
+      {
+- type: editable
+  location:
+    snippet: |2
+         // Your code here...
+  placeholder: |2
+       // Your code here...
+- type: locked
+  location:
+    snippet: |
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

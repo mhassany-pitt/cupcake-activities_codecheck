@@ -1,0 +1,48 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_ood_107_en
+source: Team.java
+title: Object-Oriented Design 107
+description: A team has players.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Object-Oriented Design
+runtime:
+  language: java
+  version: '17'
+statement: "<p>A team has players. Use aggregation to complete the class constructor and the <code>listTeam</code> and <code>addPlayer</code>\
+  \ \n    methods of the <code>Team</code> class below.</p>\n\t<p>Output should be formatted as follows:</p>\n\t<pre>[Player1-Role1,\
+  \ Player2-Role2, Player3-Role3, Player4-Role4, Player5-Role5,  Player6-Role6]\n</pre>"
+elements:
+- type: editable
+  location:
+    snippet: "/**\n   Represents a sports team\n*/\n\npublic class Team\n{  \n   public Team()\n   {\n      // TODO: Use aggregation\
+      \ to create a\n      // team roster consisting of 6 players.\n      \n   }\n\n   /**\n    Produces a listing of all\
+      \ team members and their positions.\n    @return a formatted list of all team members and their positions\n    */\n\
+      \   public String listTeam()\n   {\n      // TODO: Complete this method to provide a string value containing the\n \
+      \     // complete list of players, formatted as shown in the instructions.\n      \n   }\n\n   /**\n    Adds a new player\
+      \ to the team roster.\n    * @param aPlayer a Player object \n    */\n   public void addPlayer(Player aPlayer)\n   {\n\
+      \      // TODO: Complete this method to add a player to the team.\n      \n   }\n}\n"
+  placeholder: "/**\n   Represents a sports team\n*/\n\npublic class Team\n{  \n   public Team()\n   {\n      // TODO: Use\
+    \ aggregation to create a\n      // team roster consisting of 6 players.\n      \n   }\n\n   /**\n    Produces a listing\
+    \ of all team members and their positions.\n    @return a formatted list of all team members and their positions\n   \
+    \ */\n   public String listTeam()\n   {\n      // TODO: Complete this method to provide a string value containing the\n\
+    \      // complete list of players, formatted as shown in the instructions.\n      \n   }\n\n   /**\n    Adds a new player\
+    \ to the team roster.\n    * @param aPlayer a Player object \n    */\n   public void addPlayer(Player aPlayer)\n   {\n\
+    \      // TODO: Complete this method to add a player to the team.\n      \n   }\n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass
+includes:
+- Player.java
+- TeamTester.java

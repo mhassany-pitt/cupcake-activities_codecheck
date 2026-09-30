@@ -1,0 +1,89 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_xml_105_en
+source: RSSWriter.java
+title: XML 105
+description: An RSS file describes a set of news items.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:XML
+runtime:
+  language: java
+  version: '17'
+statement: "<p>An RSS file describes a set of news items. Here is a sample RSS\n    file:</p>\n\n    <pre>&lt;?xml version=\"\
+  1.0\"?&gt;\n&lt;rss version=\"2.0\"&gt;\n  &lt;channel&gt;\n    &lt;item&gt;\n      &lt;title&gt;Star City&lt;/title&gt;\n\
+  \      &lt;link&gt;http://liftoff.msfc.nasa.gov/news/2003/news-starcity.asp&lt;/link&gt;\n      &lt;description&gt;How do\
+  \ Americans get ready to work with Russians aboard the\n        International Space Station? They take a crash course in\
+  \ culture, language\n        and protocol at Russia's Star City.&lt;/description&gt;\n      &lt;pubDate&gt;Tue, 03 Jun 2003\
+  \ 09:39:21 GMT&lt;/pubDate&gt;\n    &lt;/item&gt;\n    \n    &lt;item&gt;\n      &lt;title&gt;Space Exploration&lt;/title&gt;\n\
+  \      &lt;link&gt;http://liftoff.msfc.nasa.gov/&lt;/link&gt;\n      &lt;description&gt;Sky watchers in Europe, Asia, and\
+  \ parts of Alaska and Canada\n        will experience a partial eclipse of the Sun on Saturday, May 31st.&lt;/description&gt;\n\
+  \      &lt;pubDate&gt;Fri, 30 May 2003 11:06:42 GMT&lt;/pubDate&gt;\n    &lt;/item&gt;\n    \n    &lt;item&gt;\n      &lt;title&gt;The\
+  \ Engine That Does More&lt;/title&gt;\n      &lt;link&gt;http://liftoff.msfc.nasa.gov/news/2003/news-VASIMR.asp&lt;/link&gt;\n\
+  \      &lt;description&gt;Before man travels to Mars, NASA hopes to design new engines\n        that will let us fly through\
+  \ the Solar System more quickly.  The proposed\n        VASIMR engine would do that.&lt;/description&gt;\n      &lt;pubDate&gt;Tue,\
+  \ 27 May 2003 08:37:32 GMT&lt;/pubDate&gt;\n    &lt;/item&gt;\n  &lt;/channel&gt;\n&lt;/rss&gt;</pre>\n\n    <p>Note: The\
+  \ RSS format is documented at <a\n    href=\"http://cyber.law.harvard.edu/rss/rss.html\">http://cyber.law.harvard.edu/rss/rss.html</a>.</p>\n\
+  \n    <p>Your task is to complete the <code>createItem</code> method below. Use the\n    current date (<code>new Date().toString()</code>)\
+  \ for the\n    <code>pubDate</code>.</p>"
+elements:
+- type: editable
+  location:
+    snippet: "import java.util.Date;\nimport javax.xml.parsers.DocumentBuilder;\nimport javax.xml.parsers.DocumentBuilderFactory;\n\
+      import javax.xml.parsers.ParserConfigurationException;\nimport javax.xml.xpath.XPath;\nimport javax.xml.xpath.XPathExpressionException;\n\
+      import javax.xml.xpath.XPathFactory;\nimport org.w3c.dom.Document;\nimport org.w3c.dom.Element;\nimport org.w3c.dom.Text;\n\
+      import org.xml.sax.SAXException; \n\nimport org.w3c.dom.DOMImplementation;\nimport org.w3c.dom.ls.DOMImplementationLS;\n\
+      import org.w3c.dom.ls.LSSerializer;\n\n\npublic class RSSWriter\n{    \n   /**\n      Builds an RSS document with a\
+      \ single item\n      @param title the title of the item\n      @param link the link of the item\n      @param description\
+      \ the description of the item\n      @return an RSS document with a single item\n   */\n   public Document build(String\
+      \ title, String link, String description)\n   {\n      doc = builder.newDocument();\n      Element rss = doc.createElement(\"\
+      rss\");\n      doc.appendChild(rss);\n      rss.setAttribute(\"version\", \"2.0\");\n      Element channel = doc.createElement(\"\
+      channel\");\n      rss.appendChild(channel);\n      channel.appendChild(createItem(title, link, description));\n   \
+      \   return doc;\n   }\n\n   /**\n      Builds a DOM element for an RSS item.\n      @param title the title\n      @param\
+      \ link the link\n      @param description the description\n      @return a DOM element describing the item\n   */\n\
+      \   private Element createItem(String title, String link, String description)\n   {\n      . . .\n   }\n\n   private\
+      \ Element createTextElement(String name, String text)\n   {\n      Text t = doc.createTextNode(text);\n      Element\
+      \ e = doc.createElement(name);\n      e.appendChild(t);\n      return e;\n   }\n  \n   // this method is used to check\
+      \ your work\n   \n   public String check(String title, String link, String description, String xpathExpr) \n      throws\
+      \ Exception \n   {\n      DocumentBuilderFactory dbfactory\n         = DocumentBuilderFactory.newInstance();\n     \
+      \ builder = dbfactory.newDocumentBuilder();\n      XPathFactory xpfactory = XPathFactory.newInstance();\n      XPath\
+      \ path = xpfactory.newXPath();\n      Document doc = build(title, link, description);\n      \n      DOMImplementation\
+      \ impl = doc.getImplementation();\n      DOMImplementationLS implLS \n            = (DOMImplementationLS) impl.getFeature(\"\
+      LS\", \"3.0\");\n      LSSerializer ser = implLS.createLSSerializer();\n      String out = ser.writeToString(doc); \
+      \     \n      // return out;\n      return path.evaluate(xpathExpr, doc);       \n   }\n   \n   private DocumentBuilder\
+      \ builder;\n   private Document doc;\n}\n"
+  placeholder: "import java.util.Date;\nimport javax.xml.parsers.DocumentBuilder;\nimport javax.xml.parsers.DocumentBuilderFactory;\n\
+    import javax.xml.parsers.ParserConfigurationException;\nimport javax.xml.xpath.XPath;\nimport javax.xml.xpath.XPathExpressionException;\n\
+    import javax.xml.xpath.XPathFactory;\nimport org.w3c.dom.Document;\nimport org.w3c.dom.Element;\nimport org.w3c.dom.Text;\n\
+    import org.xml.sax.SAXException; \n\nimport org.w3c.dom.DOMImplementation;\nimport org.w3c.dom.ls.DOMImplementationLS;\n\
+    import org.w3c.dom.ls.LSSerializer;\n\n\npublic class RSSWriter\n{    \n   /**\n      Builds an RSS document with a single\
+    \ item\n      @param title the title of the item\n      @param link the link of the item\n      @param description the\
+    \ description of the item\n      @return an RSS document with a single item\n   */\n   public Document build(String title,\
+    \ String link, String description)\n   {\n      doc = builder.newDocument();\n      Element rss = doc.createElement(\"\
+    rss\");\n      doc.appendChild(rss);\n      rss.setAttribute(\"version\", \"2.0\");\n      Element channel = doc.createElement(\"\
+    channel\");\n      rss.appendChild(channel);\n      channel.appendChild(createItem(title, link, description));\n     \
+    \ return doc;\n   }\n\n   /**\n      Builds a DOM element for an RSS item.\n      @param title the title\n      @param\
+    \ link the link\n      @param description the description\n      @return a DOM element describing the item\n   */\n  \
+    \ private Element createItem(String title, String link, String description)\n   {\n      . . .\n   }\n\n   private Element\
+    \ createTextElement(String name, String text)\n   {\n      Text t = doc.createTextNode(text);\n      Element e = doc.createElement(name);\n\
+    \      e.appendChild(t);\n      return e;\n   }\n  \n   // this method is used to check your work\n   \n   public String\
+    \ check(String title, String link, String description, String xpathExpr) \n      throws Exception \n   {\n      DocumentBuilderFactory\
+    \ dbfactory\n         = DocumentBuilderFactory.newInstance();\n      builder = dbfactory.newDocumentBuilder();\n     \
+    \ XPathFactory xpfactory = XPathFactory.newInstance();\n      XPath path = xpfactory.newXPath();\n      Document doc =\
+    \ build(title, link, description);\n      \n      DOMImplementation impl = doc.getImplementation();\n      DOMImplementationLS\
+    \ implLS \n            = (DOMImplementationLS) impl.getFeature(\"LS\", \"3.0\");\n      LSSerializer ser = implLS.createLSSerializer();\n\
+    \      String out = ser.writeToString(doc);      \n      // return out;\n      return path.evaluate(xpathExpr, doc); \
+    \      \n   }\n   \n   private DocumentBuilder builder;\n   private Document doc;\n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

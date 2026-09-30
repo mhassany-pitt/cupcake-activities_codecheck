@@ -1,0 +1,52 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_functionswithdecisions_4_en
+source: prog.cpp
+title: Branches with Functions 4
+description: On a chessboard, positions are marked with a letter between a and h for the column and a number between 1 and
+  8 for the row.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Branches
+  - horstmann:Branches with Functions
+runtime:
+  language: cpp
+  version: '17'
+statement: "On a chessboard, positions are marked with a letter between a and h for the column,\nand a number between 1 and\
+  \ 8 for the row. Given two position strings (e.g. \"a1\", \"b8\"), \nreturn true if they have the two spaces are the same\
+  \ color. The first place on the board, \na1, is black. The next is white, alternating across a row. Odd rows start with\
+  \ black, \neven rows start with white."
+elements:
+- type: locked
+  location:
+    snippet: "#include <iostream>\n#include <string>\nusing namespace std;\n\nbool areSameColor(string space1, string space2)\n\
+      {\n   string col1 = space1.substr(0, 1);\n   string row1 = space1.substr(1, 1);\n    \n   string col2 = space2.substr(0,\
+      \ 1);\n   string row2 = space2.substr(1, 1);\n\n   bool row1Even = row1 == \"0\" || row1 == \"2\" || row1 == \"4\" ||\
+      \ row1 == \"6\";\n"
+- type: editable
+  location:
+    snippet: |2+
+
+
+
+  placeholder: |2+
+
+
+
+- type: locked
+  location:
+    snippet: |
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

@@ -1,0 +1,53 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_otherstringoperations_8_en
+source: prog.cpp
+title: Other String Operations 8
+description: Given a string s and a character c, return a string with the characters surrounding the first of c reversed.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Strings
+  - horstmann:Other String Operations
+runtime:
+  language: cpp
+  version: '17'
+statement: "Given a string s and another string c, return a string with the characters \nsurrounding the first occurrence\
+  \ of c reversed. For example, if s is \"Hello-World\" and \nc is \"-\", return \"HellW-oorld\". If c only occurs at the\
+  \ beginning or end of s, or doesn't occur in s at all, return s."
+elements:
+- type: locked
+  location:
+    snippet: |
+      #include <iostream>
+      #include <string>
+      using namespace std;
+
+      string swapAroundGivenString(string s, string c)
+      {
+- type: editable
+  location:
+    snippet: |2+
+
+
+
+  placeholder: |2+
+
+
+
+- type: locked
+  location:
+    snippet: |
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

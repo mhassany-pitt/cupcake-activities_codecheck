@@ -1,0 +1,45 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_inter_102_en
+source: WordMeasurer.java
+title: Interfaces 102
+description: In this exercise, we use the Word class from chapter 6 (with the bugs fixed).
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Interfaces
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>In this exercise, we use the <code>Word</code> class from chapter 6 (with
+      the bugs fixed). You should not change the <code>Word</code> class at all.
+      Supply a class <code>WordMeasurer</code> that implements the <code>Measurer</code>
+      interface. The <code>measure</code> method, when applied to a <code>Word</code>
+      object, should return the number of syllables in the word.</p>
+elements:
+- type: editable
+  location:
+    snippet: "public class WordMeasurer\n\n/* \n   TODO: Complete this class so that it implements\n   the Measurer interface\
+      \ and measures the number\n   of syllables in a word.\n\n   The Word class is from ch06/debugger (with the bugs fixed)\n\
+      \   and the Measurer and DataSet classes are from ch09/measure2.\n*/\n"
+  placeholder: "public class WordMeasurer\n\n/* \n   TODO: Complete this class so that it implements\n   the Measurer interface\
+    \ and measures the number\n   of syllables in a word.\n\n   The Word class is from ch06/debugger (with the bugs fixed)\n\
+    \   and the Measurer and DataSet classes are from ch09/measure2.\n*/\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass
+includes:
+- DataSet.java
+- Measurer.java
+- Word.java
+- WordMeasurerTester.java

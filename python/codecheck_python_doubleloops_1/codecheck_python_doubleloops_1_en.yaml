@@ -1,0 +1,34 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_python_doubleloops_1_en
+source: prog.py
+title: Double Loops 1
+description: Given two lists a and b, remove all elements of b from a.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Lists - Simple Exercises
+  - horstmann:Double Loops
+runtime:
+  language: python
+  version: '3'
+statement: Given two lists a and b, remove all elements of b from a.
+elements:
+- type: editable
+  location:
+    snippet: "\n# Given two lists a and b, remove all elements of b from a. \n# Then return a\n\ndef removeBfromA(a, b):\n\
+      \   # Your code here...\n"
+  placeholder: "\n# Given two lists a and b, remove all elements of b from a. \n# Then return a\n\ndef removeBfromA(a, b):\n\
+    \   # Your code here...\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

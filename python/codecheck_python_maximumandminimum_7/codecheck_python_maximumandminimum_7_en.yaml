@@ -1,0 +1,48 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_python_maximumandminimum_7_en
+source: prog.py
+title: Maximum and Minimum 7
+description: Given a list of elements, find the shortest distance between two consecutive elements.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Lists - Simple Exercises
+  - horstmann:Maximum and Minimum
+runtime:
+  language: python
+  version: '3'
+statement: Given a list of elements, find the shortest distance between two consecutive elements.
+elements:
+- type: editable
+  location:
+    snippet: |2
+
+      # Given a list of elements, find the smallest difference between two consecutive elements.
+      # Note, the distance between elements cannot be negative. The comparisons do NOT wrap
+      # around, so do not compare the difference between the first and last elements.
+      # If the list has 1 or fewer elements, the minimum distance is 0.
+
+      def findShortestDistiance(arr):
+         # Your code here...
+  placeholder: |2
+
+    # Given a list of elements, find the smallest difference between two consecutive elements.
+    # Note, the distance between elements cannot be negative. The comparisons do NOT wrap
+    # around, so do not compare the difference between the first and last elements.
+    # If the list has 1 or fewer elements, the minimum distance is 0.
+
+    def findShortestDistiance(arr):
+       # Your code here...
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

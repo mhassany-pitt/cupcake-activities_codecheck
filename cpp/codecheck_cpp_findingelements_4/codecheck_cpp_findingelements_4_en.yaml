@@ -1,0 +1,54 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_findingelements_4_en
+source: prog.cpp
+title: Finding Elements 4
+description: Given an array of integers and a value, return the position of the element that is closest to the value.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Arrays - Simple Exercises
+  - horstmann:Finding Elements
+runtime:
+  language: cpp
+  version: '17'
+statement: "Given an array of integers and a value, return the position of \nthe element that is closest in value to the given\
+  \ value. If there \nis more than one, return the position of the first one.\nReturn -1 if the array is empty."
+elements:
+- type: locked
+  location:
+    snippet: |
+      #include <cstdlib> // abs
+      using namespace std;
+      /**
+         Find first element closest to val.
+         @param arr the array to search.
+         @param size the size of the array.
+         @param val the value to use.
+         @return position of first element closest to val.
+            -1 if arr is empty.
+      */
+      int find_closest_value(const int arr[], int size, int val)
+      {
+- type: editable
+  location:
+    snippet: |2
+         // Your code here ...
+  placeholder: |2
+       // Your code here ...
+- type: locked
+  location:
+    snippet: |
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

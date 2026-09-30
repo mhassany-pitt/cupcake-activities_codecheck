@@ -1,0 +1,10 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+string swapAroundGivenString(string s, string c)
+{
+
+
+
+}

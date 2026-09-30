@@ -1,0 +1,62 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_gen_107_en
+source: GenericArray.java
+title: Generic Types 107
+description: The class below has a static method which sets all elements of an array to a value.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Generic Types
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>
+  The class below has a static method which sets all elements of an array to a value.
+  The method is written for an array of strings. This will cause the method to not compile when invoked on arrays of other types. You will need to modify
+  it so that it works for any type.
+  </p>
+elements:
+- type: editable
+  location:
+    snippet: |
+      public class GenericArray
+      {
+         /**
+            @param array is a generic array
+            @param value all array elements are set to this value
+         */
+         public static void setAll(String[] array, String value)
+         {
+            for (int i = 0; i < array.length; i++)
+               array[i] = value;
+         }
+      }
+  placeholder: |
+    public class GenericArray
+    {
+       /**
+          @param array is a generic array
+          @param value all array elements are set to this value
+       */
+       public static void setAll(String[] array, String value)
+       {
+          for (int i = 0; i < array.length; i++)
+             array[i] = value;
+       }
+    }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass
+includes:
+- GenericArrayTester.java

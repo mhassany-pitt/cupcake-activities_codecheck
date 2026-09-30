@@ -1,0 +1,37 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_python_stringsnoloops_4_en
+source: prog.py
+title: No Loops 4
+description: Given a string, return the string with the first and second half swapped.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Strings
+  - horstmann:No Loops
+runtime:
+  language: python
+  version: '3'
+statement: Given a string, return the string with the first and second half swapped. If the string has odd length, leave the
+  middle character in place.
+elements:
+- type: editable
+  location:
+    snippet: "\n# Given a string, return the string with the first and second half swapped. \n# If the string has odd length,\
+      \ leave the middle character in place. If the \n# string length is less than 2, return the original thing.\n\ndef reverseHalves(s):\n\
+      \   # Your code here...\n"
+  placeholder: "\n# Given a string, return the string with the first and second half swapped. \n# If the string has odd length,\
+    \ leave the middle character in place. If the \n# string length is less than 2, return the original thing.\n\ndef reverseHalves(s):\n\
+    \   # Your code here...\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

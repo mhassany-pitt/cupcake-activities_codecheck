@@ -1,0 +1,95 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_inher_104_en
+source: LabeledPoint.java
+title: Inheritance 104
+description: A labeled point has an x- and y-position and a label.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Inheritance
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>A labeled point has an x- and y-position and a label. </p>
+
+      <p>Implement the <code>equals</code> method of the <code>LabeledPoint</code>
+      class. </p>
+elements:
+- type: editable
+  location:
+    snippet: |
+      // TODO: Implement equals
+
+      public class LabeledPoint
+      {
+         private double x;
+         private double y;
+         private String label;
+
+         /**
+            Constructs a labeled point with a given position and label.
+            @param anX the x-coordinate of the point
+            @param aY the y-coordinate of the point
+            @param aLabel the label of the point
+         */
+         public LabeledPoint(double anX, double aY, String aLabel)
+         {
+            x = anX;
+            y = aY;
+            label = aLabel;
+         }
+
+         . . .
+
+         public static boolean check(double x1, double y1, String s1, double x2, double y2, String s2)
+         {
+            LabeledPoint lp1 = new LabeledPoint(x1, y1, s1);
+            LabeledPoint lp2 = new LabeledPoint(x2, y2, s2);
+            return lp1.equals(lp2);
+         }
+      }
+  placeholder: |
+    // TODO: Implement equals
+
+    public class LabeledPoint
+    {
+       private double x;
+       private double y;
+       private String label;
+
+       /**
+          Constructs a labeled point with a given position and label.
+          @param anX the x-coordinate of the point
+          @param aY the y-coordinate of the point
+          @param aLabel the label of the point
+       */
+       public LabeledPoint(double anX, double aY, String aLabel)
+       {
+          x = anX;
+          y = aY;
+          label = aLabel;
+       }
+
+       . . .
+
+       public static boolean check(double x1, double y1, String s1, double x2, double y2, String s2)
+       {
+          LabeledPoint lp1 = new LabeledPoint(x1, y1, s1);
+          LabeledPoint lp2 = new LabeledPoint(x2, y2, s2);
+          return lp1.equals(lp2);
+       }
+    }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

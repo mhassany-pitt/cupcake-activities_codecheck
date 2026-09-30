@@ -1,0 +1,55 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_2darraysnoloops_8_en
+source: prog.cpp
+title: No Loops 8
+description: On a chessboard, positions are marked with a letter between a and h for the column and a number between 1 and
+  8 for the row.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Two-Dimensional Arrays
+  - horstmann:No Loops
+runtime:
+  language: cpp
+  version: '17'
+statement: "<p>On a chessboard, positions are marked with a letter between <b>a</b> \n   and <b>h</b> for the column and a\
+  \ number between <b>1</b> and \n   <b>8</b> for the row. Given an 8x8 array of integers and a \n   string with such a position,\
+  \ return the element at that position.\n</p>"
+elements:
+- type: locked
+  location:
+    snippet: |
+      #include <string>
+      using namespace std;
+      const int SIZE = 8;
+      /**
+         Chess notation uses letters a-h for columns and numbers 1-8 for rows.
+         @param board an 8x8 array of integers.
+         @param pos a string in the form "a7".
+         @return the element at that position.
+      */
+      int get_chess_board_info(const int board[SIZE][SIZE], string pos)
+      {
+- type: editable
+  location:
+    snippet: |2
+         // Your code here...
+  placeholder: |2
+       // Your code here...
+- type: locked
+  location:
+    snippet: |
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

@@ -1,0 +1,155 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_branch_106_en
+source: Name.java
+title: Branches 106
+description: We consider names of people that consist of first and last names, such as Joe Smith.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Branches
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>We consider names of people that consist of first and last names, such
+      as <q>Joe Smith</q>. When you sort names, you first sort by last
+      name and, if two people have the same last name, then you sort by first
+      name. For example, <q>Jane Doe</q> comes before <q>Harry
+      Hacker</q>, but <q>Amy Doe</q> comes before <q>Jane
+      Doe</q>. </p>
+elements:
+- type: editable
+  location:
+    snippet: |
+      public class Name
+      {
+         private String first;
+         private String last;
+
+         /**
+            Constructs a name from a first and last name.
+            @param aFirst the first name
+            @param aLast the last name
+         */
+         public Name(String aFirst, String aLast)
+         {
+            first = aFirst;
+            last = aLast;
+         }
+
+         /**
+            Returns the first name of this name
+            @return the first name
+         */
+         public String getFirst()
+         {
+            return first;
+         }
+
+         /**
+            Returns the last name of this name
+            @return the last name
+         */
+         public String getLast()
+         {
+            return last;
+         }
+
+         /**
+            Checks whether this name should come before another name
+            when sorted by last name, then by first name.
+            @param other another name
+            @return true if this name should come before other
+         */
+         public boolean comesBefore(Name other)
+         {
+            // your work here
+
+
+
+         }
+
+
+         // this method is used to check your work
+
+         public static boolean check(String first1, String last1,
+            String first2, String last2)
+         {
+            Name name1 = new Name(first1, last1);
+            Name name2 = new Name(first2, last2);
+            return name1.comesBefore(name2);
+         }
+      }
+  placeholder: |
+    public class Name
+    {
+       private String first;
+       private String last;
+
+       /**
+          Constructs a name from a first and last name.
+          @param aFirst the first name
+          @param aLast the last name
+       */
+       public Name(String aFirst, String aLast)
+       {
+          first = aFirst;
+          last = aLast;
+       }
+
+       /**
+          Returns the first name of this name
+          @return the first name
+       */
+       public String getFirst()
+       {
+          return first;
+       }
+
+       /**
+          Returns the last name of this name
+          @return the last name
+       */
+       public String getLast()
+       {
+          return last;
+       }
+
+       /**
+          Checks whether this name should come before another name
+          when sorted by last name, then by first name.
+          @param other another name
+          @return true if this name should come before other
+       */
+       public boolean comesBefore(Name other)
+       {
+          // your work here
+
+
+
+       }
+
+
+       // this method is used to check your work
+
+       public static boolean check(String first1, String last1,
+          String first2, String last2)
+       {
+          Name name1 = new Name(first1, last1);
+          Name name2 = new Name(first2, last2);
+          return name1.comesBefore(name2);
+       }
+    }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

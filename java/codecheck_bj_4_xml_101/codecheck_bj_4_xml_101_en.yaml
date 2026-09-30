@@ -1,0 +1,54 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_xml_101_en
+source: XMLReader.java
+title: XML 101
+description: You are given a string that is either valid XML (when it starts with a '<' character) or the name of a file.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:XML
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>You are given a string that is either valid XML (when it starts with a
+      <code>'&lt;'</code> character) or the name of a file. Your task is to read the
+      XML document. </p>
+
+      <p>In order to parse a document from a string, you need to turn it into an
+      input stream, like this:</p>
+
+      <pre>InputStream in = new ByteArrayInputStream(str.getBytes());</pre>
+
+      <p>One of the overloaded <code>parse</code> methods of the
+      <code>DocumentBuilder</code> class accepts an <code>InputStream</code>. </p>
+elements:
+- type: editable
+  location:
+    snippet: "import java.io.File;\nimport java.io.IOException;\nimport java.io.ByteArrayInputStream;\nimport java.io.FileInputStream;\n\
+      import javax.xml.parsers.DocumentBuilder;\nimport javax.xml.parsers.DocumentBuilderFactory;\nimport javax.xml.parsers.ParserConfigurationException;\n\
+      import org.w3c.dom.Document;\nimport org.xml.sax.SAXException; \n\npublic class XMLReader\n{\n   public Document read(String\
+      \ what)\n      throws . . .\n   {\n      . . .\n      if (what.startsWith(\"<\")) \n      {\n         . . . \n     \
+      \ }\n      else\n      {\n         FileInputStream in = new FileInputStream(...);\n         . . .\n      }         \n\
+      \   }\n   \n   // This method is used to check your work.\n   \n   public String check(String what) throws Exception\n\
+      \   {\n      return read(what).getDocumentElement().getNodeName();\n   }\n}\n"
+  placeholder: "import java.io.File;\nimport java.io.IOException;\nimport java.io.ByteArrayInputStream;\nimport java.io.FileInputStream;\n\
+    import javax.xml.parsers.DocumentBuilder;\nimport javax.xml.parsers.DocumentBuilderFactory;\nimport javax.xml.parsers.ParserConfigurationException;\n\
+    import org.w3c.dom.Document;\nimport org.xml.sax.SAXException; \n\npublic class XMLReader\n{\n   public Document read(String\
+    \ what)\n      throws . . .\n   {\n      . . .\n      if (what.startsWith(\"<\")) \n      {\n         . . . \n      }\n\
+    \      else\n      {\n         FileInputStream in = new FileInputStream(...);\n         . . .\n      }         \n   }\n\
+    \   \n   // This method is used to check your work.\n   \n   public String check(String what) throws Exception\n   {\n\
+    \      return read(what).getDocumentElement().getNodeName();\n   }\n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

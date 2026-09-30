@@ -1,0 +1,62 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_sort_105_en
+source: NumberGuesser.java
+title: Sorting and Searching 105
+description: Your task is to implement a number guesser that works on the principle of a binary search.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Sorting and Searching
+runtime:
+  language: java
+  version: '17'
+statement: "<p>Your task is to implement a number guesser that works on the principle\n    of a binary search. In each step,\
+  \ the guesser cuts the query interval in\n    half. When the interval contains a single number, it proclaims the\n    answer.</p>\n\
+  \n    <p>Suppose your guesser is asked to guess a number between 1 and 100. It\n    starts with the query</p>\n\n    <pre>&gt;50</pre>\n\
+  \n    <p>50 is the midpoint between 1 and 100.</p>\n\n    <p>The person who knows the number says <code>false</code>. The\
+  \ next query is\n    </p>\n\n    <pre>&gt;25</pre>\n\n    <p>25 is the midpoint between 1 and 50.</p>\n\n    <p>The answer\
+  \ is still <code>false</code>, and the next query is </p>\n\n    <pre>&gt;13</pre>\n\n    <p>The answer is still <code>false</code>,\
+  \ and the next query is</p>\n\n    <pre>&gt;7</pre>\n\n    <p>Now the answer is <code>true</code>, and the next query is\
+  \ </p>\n\n    <pre>&gt;10</pre>\n\n    <p>The answer is again <code>true</code>, and the next query is</p>\n\n    <pre>&gt;12</pre>\n\
+  \n    <p>The answer is once again <code>true</code>, and now the guesser proclaims\n    </p>\n\n    <pre>=13</pre>\n\n \
+  \   <p>An object of your class will be called like this:</p>\n\n    <pre>while (...)\n{\n   String guess = guesser.nextGuess();\n\
+  \   if (guess.startsWith(\"=\"))\n   {\n      // display answer and terminate loop\n      ...\n   }\n   else\n   { \n  \
+  \    // show guess to person who knows the answer\n      ...\n      // get response from person\n      boolean resp = ...;\
+  \ \n      guesser.response(resp);\n   }\n}</pre>"
+elements:
+- type: editable
+  location:
+    snippet: "import java.util.ArrayList;\n\npublic class NumberGuesser\n{\n   public NumberGuesser(int lowest, int highest)\n\
+      \   {\n      low = lowest;\n      high = highest;\n   }\n\n   /**\n      Returns the next guess.\n      @return a string\
+      \ of the form >n or =n\n   */\n   public String nextGuess()\n   {\n      // TODO: Complete method\n   }\n   \n   /**\n\
+      \      Sets the response by the person who knows the number\n      @param guessCorrect true if the preceding guess was\
+      \ correct\n   */\n   public void response(boolean guessCorrect)\n   {\n      // TODO: Complete method\n   }\n   \n \
+      \  private int low;\n   private int mid;\n   private int high;\n   \n   // this method is used to check your work\n\
+      \   public static String[] check(int n)\n   {\n      NumberGuesser guesser = new NumberGuesser(1, 100);\n      ArrayList<String>\
+      \ guesses = new ArrayList<String>();\n      while (true)\n      {\n         String guess = guesser.nextGuess();\n  \
+      \       guesses.add(guess);\n         System.out.println(guess);\n         if (guess.startsWith(\"=\"))\n          \
+      \  return guesses.toArray(new String[]{});\n         int g = Integer.parseInt(guess.substring(1));\n         guesser.response(n\
+      \ > g);\n      }\n   }   \n}\n"
+  placeholder: "import java.util.ArrayList;\n\npublic class NumberGuesser\n{\n   public NumberGuesser(int lowest, int highest)\n\
+    \   {\n      low = lowest;\n      high = highest;\n   }\n\n   /**\n      Returns the next guess.\n      @return a string\
+    \ of the form >n or =n\n   */\n   public String nextGuess()\n   {\n      // TODO: Complete method\n   }\n   \n   /**\n\
+    \      Sets the response by the person who knows the number\n      @param guessCorrect true if the preceding guess was\
+    \ correct\n   */\n   public void response(boolean guessCorrect)\n   {\n      // TODO: Complete method\n   }\n   \n   private\
+    \ int low;\n   private int mid;\n   private int high;\n   \n   // this method is used to check your work\n   public static\
+    \ String[] check(int n)\n   {\n      NumberGuesser guesser = new NumberGuesser(1, 100);\n      ArrayList<String> guesses\
+    \ = new ArrayList<String>();\n      while (true)\n      {\n         String guess = guesser.nextGuess();\n         guesses.add(guess);\n\
+    \         System.out.println(guess);\n         if (guess.startsWith(\"=\"))\n            return guesses.toArray(new String[]{});\n\
+    \         int g = Integer.parseInt(guess.substring(1));\n         guesser.response(n > g);\n      }\n   }   \n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

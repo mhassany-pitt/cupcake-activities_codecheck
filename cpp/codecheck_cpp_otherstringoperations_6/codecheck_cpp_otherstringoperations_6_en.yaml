@@ -1,0 +1,47 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_otherstringoperations_6_en
+source: prog.cpp
+title: Other String Operations 6
+description: Write a method that undoes the effect of the preceding exercise.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Strings
+  - horstmann:Other String Operations
+runtime:
+  language: cpp
+  version: '17'
+statement: "Write a method that takes in a string, splits it in half, and returns\na new string with the first character of\
+  \ the first half, followed by the\nfirst character of the second half. For example, 'ABCDEFabcdef' becomes \n'AaBbCcDdEeFf'.\
+  \ If the string has an odd number of characters, the middle character becomes the last character of the result."
+elements:
+- type: locked
+  location:
+    snippet: "#include <iostream>\n#include <string>\nusing namespace std;\n\n\n \nstring merge_halves(string s)\n{\n"
+- type: editable
+  location:
+    snippet: |2+
+
+
+
+  placeholder: |2+
+
+
+
+- type: locked
+  location:
+    snippet: |
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

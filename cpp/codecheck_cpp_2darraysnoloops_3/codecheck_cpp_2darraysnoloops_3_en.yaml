@@ -1,0 +1,57 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_2darraysnoloops_3_en
+source: prog.cpp
+title: No Loops 3
+description: Given a two-dimensional array of integers and a string N, E, S, W, give the middle element along the border in
+  the given compass direction, or the average of th
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Two-Dimensional Arrays
+  - horstmann:No Loops
+runtime:
+  language: cpp
+  version: '17'
+statement: "<p>\nGiven a two-dimensional array of integers and a <code>string</code> \"N\", \"E\", \"S\", \"W\", \nreturn\
+  \ the middle element along the border in the given compass direction, or the average \nof the two middle ones if the border\
+  \ length is even.\n</p>"
+elements:
+- type: locked
+  location:
+    snippet: |
+      #include <string>
+      using namespace std;
+      const int MAX_COL = 10;
+
+      /**
+         Return the middle (if side odd) or average two (side even) on given side.
+         @param arr a 2-dimensional int array.
+         @param rows the height of the array.
+         @param cols the width of the array.
+         @param direction one of "S", "N", "E" or "W"
+      */
+      double middle_or_average_on_border(const int arr[][MAX_COL], int rows, int cols, string direction)
+      {
+- type: editable
+  location:
+    snippet: |2
+         // Your code here...
+  placeholder: |2
+       // Your code here...
+- type: locked
+  location:
+    snippet: |
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

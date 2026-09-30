@@ -1,0 +1,66 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_tree_107_en
+source: MapUtil.java
+title: Tree Structures 107
+description: Given an array of strings, create a tree map with each string as a key and its corresponding value the number
+  of letters in that string.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Tree Structures
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>
+  Given an array of strings, create a tree map with each string as a key and
+  its corresponding value the number of letters in that string.
+  </p>
+elements:
+- type: editable
+  location:
+    snippet: |
+      import java.util.Map;
+      import java.util.TreeMap;
+
+      public class MapUtil
+      {
+         /**
+            Make a sorted map whose keys are the given words and whose values are their lengths.
+            @param words an array of strings
+            @return a map mapping strings to their lengths
+         */
+         public Map<String, Integer> makeMap(String[] words)
+         {
+            ...
+         }
+      }
+  placeholder: |
+    import java.util.Map;
+    import java.util.TreeMap;
+
+    public class MapUtil
+    {
+       /**
+          Make a sorted map whose keys are the given words and whose values are their lengths.
+          @param words an array of strings
+          @return a map mapping strings to their lengths
+       */
+       public Map<String, Integer> makeMap(String[] words)
+       {
+          ...
+       }
+    }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

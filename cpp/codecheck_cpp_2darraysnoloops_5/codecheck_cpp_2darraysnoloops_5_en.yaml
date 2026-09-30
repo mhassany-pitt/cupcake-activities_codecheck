@@ -1,0 +1,60 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_2darraysnoloops_5_en
+source: prog.cpp
+title: No Loops 5
+description: Given a two-dimensional array of integers, row/column indexes r, c, and a string N E S W, return the neighbor
+  in that direction, or 0 if it doesn't exist.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Two-Dimensional Arrays
+  - horstmann:No Loops
+runtime:
+  language: cpp
+  version: '17'
+statement: "<p>Given a two-dimensional array of integers, \n   a pair of row/column indexes <code>r</code> and <code>c</code>,\
+  \ \n   and a string \"N\", \"E\", \"S\" or \"W\", return the neighbor in \n   that direction, or <code>0</code> if it doesn't\
+  \ exist.\n</p>"
+elements:
+- type: locked
+  location:
+    snippet: |
+      #include <string>
+      using namespace std;
+
+      const int MAX_COL = 10;
+
+      /**
+         Return the neighbor in the requested direction.
+         @param arr a 2D array of int.
+         @param rows the number of rows in the array.
+         @param cols the number of columns in the array.
+         @param r the row of the element to check.
+         @param c the column of the element to check.
+         @param direction the direction to check.
+      */
+      int get_neighbor(const int arr[][MAX_COL], int rows, int cols, int r, int c, string direction)
+      {
+- type: editable
+  location:
+    snippet: |2
+         // Your code here...
+  placeholder: |2
+       // Your code here...
+- type: locked
+  location:
+    snippet: |
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

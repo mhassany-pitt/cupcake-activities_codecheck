@@ -1,0 +1,38 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_python_functionswithdecisions_5_en
+source: prog.py
+title: Branches with Functions 5
+description: Given three numbers x, y, z and a Boolean variable strict , return true if strict is false and x ≤ y ≤ z, or
+  strict is true and x &lt; y &lt; z.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Branches
+  - horstmann:Branches with Functions
+runtime:
+  language: python
+  version: '3'
+statement: Given three numbers x, y, z and a Boolean variable <code>strict</code>, return <code>true</code> if <code>strict</code>
+  is false and x ≤ y ≤ z, or <code>strict</code> is true and x &lt; y &lt; z.
+elements:
+- type: editable
+  location:
+    snippet: "\n# Given three numbers x, y, z and a Boolean variable strict, if strict is False \n# return True if x <= y\
+      \ <= z, otherwise return False. If strict is true, \n# return True if  x < y < z, otherwise return False.\n\ndef strict(x,\
+      \ y, z, strict):\n   # Your code here...\n"
+  placeholder: "\n# Given three numbers x, y, z and a Boolean variable strict, if strict is False \n# return True if x <=\
+    \ y <= z, otherwise return False. If strict is true, \n# return True if  x < y < z, otherwise return False.\n\ndef strict(x,\
+    \ y, z, strict):\n   # Your code here...\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

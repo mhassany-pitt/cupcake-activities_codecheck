@@ -1,0 +1,51 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_2darraysnoloops_1_en
+source: prog.cpp
+title: No Loops 1
+description: Given a two-dimensional array of integers, return the average of the four corner elements.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Two-Dimensional Arrays
+  - horstmann:No Loops
+runtime:
+  language: cpp
+  version: '17'
+statement: "Given a two-dimensional array of integers, return the average of the \nfour corner elements."
+elements:
+- type: locked
+  location:
+    snippet: |
+      const int MAX_COLS = 10;
+      /**
+         Return the average of the four corner elements.
+         @param arr a two-dimensional array.
+         @param rows the number of rows in the array.
+         @param cols the number of columns in the array.
+         @return the average of the four corners.
+      */
+      double average_of_corners(const int arr[][MAX_COLS], int rows, int cols)
+      {
+- type: editable
+  location:
+    snippet: |2
+         // Your code here ...
+  placeholder: |2
+       // Your code here ...
+- type: locked
+  location:
+    snippet: |
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

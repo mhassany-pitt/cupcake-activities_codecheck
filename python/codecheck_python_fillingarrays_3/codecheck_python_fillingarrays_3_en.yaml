@@ -1,0 +1,44 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_python_fillingarrays_3_en
+source: prog.py
+title: Filling 3
+description: Given integers a and b, return a list containing a, a + 1, a + 2, ..., b.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Lists - Simple Exercises
+  - horstmann:Filling
+runtime:
+  language: python
+  version: '3'
+statement: Given integers a and b, return a list containing a, a + 1, a + 2, ..., b.
+elements:
+- type: editable
+  location:
+    snippet: |2
+
+      # Given integers a and b, return a list containing a, a + 1, a + 2, ..., b.
+      # If b is less than a, return an empty list.
+
+      def aToB(a, b):
+         # Your code here...
+  placeholder: |2
+
+    # Given integers a and b, return a list containing a, a + 1, a + 2, ..., b.
+    # If b is less than a, return an empty list.
+
+    def aToB(a, b):
+       # Your code here...
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

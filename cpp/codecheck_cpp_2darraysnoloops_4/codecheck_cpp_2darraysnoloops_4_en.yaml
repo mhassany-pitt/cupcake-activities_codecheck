@@ -1,0 +1,59 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_2darraysnoloops_4_en
+source: prog.cpp
+title: No Loops 4
+description: Given a two-dimensional array of integers and a string NW, NW, SW, SE, return the sum of the four elements in
+  the given compass direction.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Two-Dimensional Arrays
+  - horstmann:No Loops
+runtime:
+  language: cpp
+  version: '17'
+statement: "<p>Given a rectangular, two-dimensional array of integers \nand a string \"NW\", \"NE\", \"SW, or \"SE\", return\
+  \ the sum of \nthe four elements in the corner of the given compass direction.\n</p>\n<p>For instance, if \"NW\" is given,\
+  \ then the four elements in the \n   Northwest corner are at <code>[0][0]</code>, <code>[0][1]</code>, \n   <code>[1][0]</code>,\
+  \ and <code>[1][1]</code>. \n   You may assume that the two-dimensional array is at least 2x2. \n</p>"
+elements:
+- type: locked
+  location:
+    snippet: |
+      #include <string>
+      using namespace std;
+
+      const int MAX_COL = 10;
+
+      /**
+         Return the sum of the four corner elements in the given compass direction.
+         @param arr the two-dimensional array.
+         @param rows the rows in the array.
+         @param cols the columns in the array.
+         @param direction a compass direction "NW", "NE", "SW" or "SE"
+      */
+      int sum_corners(const int arr[][MAX_COL], int rows, int cols, string direction)
+      {
+- type: editable
+  location:
+    snippet: |2
+         // Your code here...
+  placeholder: |2
+       // Your code here...
+- type: locked
+  location:
+    snippet: |
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

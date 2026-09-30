@@ -1,0 +1,71 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_class2_101_en
+source: Person.java
+title: Designing Classes 101
+description: Consider the Person class below.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Designing Classes
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>Consider the <code>Person</code> class below.</p>
+
+      <p>Note how this class intermingles two responsibilities: describing a
+      person, and formatting an address. The second responsibility is not
+      trivial. We may want to add support for department names or apartment
+      numbers. Addresses in other countries have entirely different formats.</p>
+
+      <p>Ideally, the <code>Person</code> class should have a single responsibility:
+      to describe a person who has an address. A separate <code>Address</code> class
+      should be responsible for the details of managing addresses. </p>
+
+      <p>Your task is to modify the <code>Person</code> class so that it uses the
+      <code>Address</code> class given below. The <code>main</code> method shows how your modified
+      class should be used. </p>
+elements:
+- type: editable
+  location:
+    snippet: "/**\n   Describes a person who will receive mail.\n*/\npublic class Person\n{\n   /*\n      TODO: To increase\
+      \ cohesion, reimplement this class by using\n      the Address class. Do not modify the main method that is used\n \
+      \     for checking.\n   */\n   \n   /**\n      Constructs a person. \n      @param aName the person's name\n      @param\
+      \ aStreet the street\n      @param aCity the city\n      @param aState the two-letter state code\n      @param aZip\
+      \ the ZIP postal code\n   */\n   public Person(String aName, String aStreet,\n         String aCity, String aState,\
+      \ String aZip)\n   {  \n      name = aName;\n      street = aStreet;\n      city = aCity;\n      state = aState;\n \
+      \     zip = aZip;\n   }   \n\n   /**\n      Formats the person's name and address for mailing.\n      @return a string\
+      \ suitable for printing on a mailing label\n   */\n   public String formatForMailing()\n   {  \n      return name +\
+      \ \"\\n\" + street + \"\\n\"\n            + city + \", \" + state + \" \" + zip;\n   }\n   \n   private String name;\n\
+      \   private String street;\n   private String city;\n   private String state;\n   private String zip;\n   \n   // This\
+      \ method is used for checking your work. Do not modify it\n\n   public static void main(String[] args)\n   {\n     \
+      \ Person harry = new Person(\"Harold J. Hacker\",\n         new Address(\"123 Main Street\", \"Anytown\", \"NY\", \"\
+      12345\"));\n      System.out.println(harry.formatForMailing());\n   }   \n}\n"
+  placeholder: "/**\n   Describes a person who will receive mail.\n*/\npublic class Person\n{\n   /*\n      TODO: To increase\
+    \ cohesion, reimplement this class by using\n      the Address class. Do not modify the main method that is used\n   \
+    \   for checking.\n   */\n   \n   /**\n      Constructs a person. \n      @param aName the person's name\n      @param\
+    \ aStreet the street\n      @param aCity the city\n      @param aState the two-letter state code\n      @param aZip the\
+    \ ZIP postal code\n   */\n   public Person(String aName, String aStreet,\n         String aCity, String aState, String\
+    \ aZip)\n   {  \n      name = aName;\n      street = aStreet;\n      city = aCity;\n      state = aState;\n      zip =\
+    \ aZip;\n   }   \n\n   /**\n      Formats the person's name and address for mailing.\n      @return a string suitable\
+    \ for printing on a mailing label\n   */\n   public String formatForMailing()\n   {  \n      return name + \"\\n\" + street\
+    \ + \"\\n\"\n            + city + \", \" + state + \" \" + zip;\n   }\n   \n   private String name;\n   private String\
+    \ street;\n   private String city;\n   private String state;\n   private String zip;\n   \n   // This method is used for\
+    \ checking your work. Do not modify it\n\n   public static void main(String[] args)\n   {\n      Person harry = new Person(\"\
+    Harold J. Hacker\",\n         new Address(\"123 Main Street\", \"Anytown\", \"NY\", \"12345\"));\n      System.out.println(harry.formatForMailing());\n\
+    \   }   \n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass
+includes:
+- Address.java

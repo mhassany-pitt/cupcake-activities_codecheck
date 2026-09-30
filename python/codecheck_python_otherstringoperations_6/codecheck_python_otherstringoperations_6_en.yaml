@@ -1,0 +1,36 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_python_otherstringoperations_6_en
+source: prog.py
+title: Other String Operations 6
+description: Write a method that undoes the effect of the preceding exercise.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Strings
+  - horstmann:Other String Operations
+runtime:
+  language: python
+  version: '3'
+statement: Write a method that undoes the effect of the preceding exercise.
+elements:
+- type: editable
+  location:
+    snippet: "\n# Write a method that takes in a string, splits it in half, and returns\n# a new string with the first character\
+      \ of the first half, followed by the\n# first character of the second half. For example, 'ABCDEFabcdef' becomes \n#\
+      \ 'AaBbCcDdEeFf'.\n \ndef reverseEvenThenOdd(s):\n   # Your code here...\n"
+  placeholder: "\n# Write a method that takes in a string, splits it in half, and returns\n# a new string with the first character\
+    \ of the first half, followed by the\n# first character of the second half. For example, 'ABCDEFabcdef' becomes \n# 'AaBbCcDdEeFf'.\n\
+    \ \ndef reverseEvenThenOdd(s):\n   # Your code here...\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

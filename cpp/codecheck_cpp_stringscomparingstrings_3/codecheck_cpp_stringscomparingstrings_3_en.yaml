@@ -1,0 +1,55 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_stringscomparingstrings_3_en
+source: prog.cpp
+title: Comparing Strings 3
+description: Given a string s, count how many times the ith character from the front equals the ith character from the back.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Strings
+  - horstmann:Comparing Strings
+runtime:
+  language: cpp
+  version: '17'
+statement: "Given a string s, count how many times the i-th character from the front \nequals the i-th character from the\
+  \ back. For example, the count for the\nstring 'abcdefcba' is 3. If the string length is odd, do not count\nthe middle character\
+  \ as a match."
+elements:
+- type: locked
+  location:
+    snippet: |
+      #include <iostream>
+      #include <string>
+      using namespace std;
+
+      int countFrontBackMatches(string s)
+      {
+         int count = 0;
+- type: editable
+  location:
+    snippet: |2+
+
+
+
+  placeholder: |2+
+
+
+
+- type: locked
+  location:
+    snippet: |2
+         return count;
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

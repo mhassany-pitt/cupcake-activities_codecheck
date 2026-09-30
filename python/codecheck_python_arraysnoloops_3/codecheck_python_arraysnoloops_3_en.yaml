@@ -1,0 +1,44 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_python_arraysnoloops_3_en
+source: prog.py
+title: No loops 3
+description: Given a list of integers, swap the first and last elements.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Lists - Simple Exercises
+  - horstmann:No loops
+runtime:
+  language: python
+  version: '3'
+statement: Given a list of integers, swap the first and last elements.
+elements:
+- type: editable
+  location:
+    snippet: |2
+
+      # Given a list of integers containing at least one element,
+      # swap the first and last elements. Then return the updated list.
+
+      def swapFirstAndLast(arr):
+         # Your code here...
+  placeholder: |2
+
+    # Given a list of integers containing at least one element,
+    # swap the first and last elements. Then return the updated list.
+
+    def swapFirstAndLast(arr):
+       # Your code here...
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

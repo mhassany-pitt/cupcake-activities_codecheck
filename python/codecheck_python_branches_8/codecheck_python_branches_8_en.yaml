@@ -1,0 +1,32 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_python_branches_8_en
+source: prog.py
+title: Branches Without Functions 8
+description: Given three integers x, y, z, print the sum of the odd integers.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Branches
+  - horstmann:Branches Without Functions
+runtime:
+  language: python
+  version: '3'
+statement: Given three integers x, y, z, print the sum of the odd integers.
+elements:
+- type: editable
+  location:
+    snippet: "\n# Given three integers x, y, z, print the sum of the odd integers.\n\nx = 2 \ny = 1 \nz = 3 \n\n"
+  placeholder: "\n# Given three integers x, y, z, print the sum of the odd integers.\n\nx = 2 \ny = 1 \nz = 3 \n\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

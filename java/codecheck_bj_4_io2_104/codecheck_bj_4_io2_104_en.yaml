@@ -1,0 +1,54 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_io2_104_en
+source: TextMangler.java
+title: Advanced Input and Output 104
+description: Your task is to swap adjacent letters in a RandomAccessFile.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Advanced Input and Output
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>Your task is to swap adjacent letters in a RandomAccessFile. Simply
+      read two bytes, back up by two bytes, and write the values out. If the
+      file has an odd number of bytes, don't swap the last one. Also, don't swap
+      byte pairs that contain the newline or return characters ('\n' or '\r').
+      If either byte of a pair equals one of these characters, skip the pair and
+      move on to the next pair.</p>
+
+      <p>For example, when you process a file containing the text of a
+      well-known childrens song, it will be transformed into</p>
+
+      <pre>aMyrh daa l tilt ealbm,
+  ilttell ma,bl tilt ealbm,
+  aMyrh daa l tilt ealbm ,ti slfeeecw saw iheta  snswo.
+  </pre>
+elements:
+- type: editable
+  location:
+    snippet: "import java.io.IOException;\nimport java.io.RandomAccessFile;\n\npublic class TextMangler\n{\n   public static\
+      \ void swapAdjacentBytes(RandomAccessFile file) throws IOException\n   {\n      // TODO: complete\n   }   \n   \n  \
+      \ // this method checks your work\n   \n   public static void main(String[] args) throws IOException\n   {\n      RandomAccessFile\
+      \ file = new RandomAccessFile(\"data.txt\", \"rw\");\n      swapAdjacentBytes(file);\n      file.close();\n   }   \n\
+      }\n"
+  placeholder: "import java.io.IOException;\nimport java.io.RandomAccessFile;\n\npublic class TextMangler\n{\n   public static\
+    \ void swapAdjacentBytes(RandomAccessFile file) throws IOException\n   {\n      // TODO: complete\n   }   \n   \n   //\
+    \ this method checks your work\n   \n   public static void main(String[] args) throws IOException\n   {\n      RandomAccessFile\
+    \ file = new RandomAccessFile(\"data.txt\", \"rw\");\n      swapAdjacentBytes(file);\n      file.close();\n   }   \n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass
+includes:
+- data.txt

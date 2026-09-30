@@ -1,0 +1,58 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_inter_104_en
+source: RectangleDoubler.java
+title: Interfaces 104
+description: Some objects can be doubled, for example a bank account.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Interfaces
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>Some objects can be doubled, for example a bank account. The result
+      would be a bank account with twice the balance. Some objects can't be
+      doubled. For example, there is no double of a dime coin—no twenty
+      cent coin exists.</p>
+
+      <p>The <code>Doubler</code> interface (given below) describes a callback that can compute
+      the doubling of a given object.</p>
+
+      <p>Your job is to provide a class <code>RectangleDoubler</code> that computes
+      the doubling of a <code>Rectangle</code>. The doubling should have double the
+      width and height, but the same x and y positions of the top left corner.
+      </p>
+elements:
+- type: editable
+  location:
+    snippet: |
+      import java.awt.Rectangle;
+
+      public class RectangleDoubler . . .
+      {
+         . . .
+      }
+  placeholder: |
+    import java.awt.Rectangle;
+
+    public class RectangleDoubler . . .
+    {
+       . . .
+    }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass
+includes:
+- Doubler.java
+- RectangleDoublerTester.java

@@ -1,0 +1,69 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_otherstringoperations_2_en
+source: prog.cpp
+title: Other String Operations 2
+description: Given a string s, return the first vowel that is doubled in the string.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Strings
+  - horstmann:Other String Operations
+runtime:
+  language: cpp
+  version: '17'
+statement: "Given a string s, return a string containing the first vowel that occurs twice in the string. \nFor this exercise,\
+  \ consider only the following vowels: a, e, i, o, u and their uppercase versions. If no vowel is doubled, return the empty\
+  \ string."
+elements:
+- type: locked
+  location:
+    snippet: |
+      #include <cctype>
+      #include <iostream>
+      #include <string>
+      using namespace std;
+
+      /**
+         Makes an lowercase version of a string.
+         @param str a string
+         @return a string with the characters in str converted to lowercase
+      */
+      string lowercase(string str)
+      {
+         string result = str; // Make a copy of str
+         for (int i = 0; i < result.length(); i++)
+         {
+            result[i] = tolower(result[i]); // Convert each character to lowercase
+         }
+         return result;
+      }
+
+      string firstDoubledVowel(string s)
+      {
+- type: editable
+  location:
+    snippet: |2+
+
+
+
+  placeholder: |2+
+
+
+
+- type: locked
+  location:
+    snippet: |
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

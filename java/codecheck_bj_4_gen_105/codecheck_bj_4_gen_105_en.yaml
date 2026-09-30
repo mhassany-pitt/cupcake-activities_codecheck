@@ -1,0 +1,59 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_gen_105_en
+source: Pair.java
+title: Generic Types 105
+description: We sometimes want to compare two Pair objects, for example, when using pairs as keys in a tree map.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Generic Types
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>We sometimes want to compare two <code>Pair</code> objects, for example,
+      when using pairs as keys in a tree map.</p>
+
+      <p>To compare two pairs, compare the first elements of each. If they are
+      the same, compare the second elements.</p>
+
+      <p>For example, the pair (1, "Joe") comes before (2, "Jim") because the
+      first element of the first pair is less. The pair (1, "Jim") comes before
+      (1, "Joe") because the first elements are the same and the second element
+      of the first pair is less.</p>
+
+      <p>Of course, it is required that the first and second element in the pair
+      are comparable.</p>
+
+      <p>Your task is to implement the <code>compareTo</code> method, and to add
+      suitable constraints to the generic types.</p>
+elements:
+- type: editable
+  location:
+    snippet: "public class Pair<T, S> \n   implements Comparable<Pair<T, S>>\n{\n   public Pair(T firstElement, S secondElement)\n\
+      \   {\n      first = firstElement;\n      second = secondElement;\n   }\n      \n   public T getFirst() { return first;\
+      \ }\n   public S getSecond() { return second; }\n   \n   // your compareTo method here\n   \n   private T first;\n \
+      \  private S second;\n   \n   // this method is used to check your work\n   \n   public static int check(Integer i1,\
+      \ String s1, Integer i2, String s2)\n   {\n      Pair<Integer, String> p1 = new Pair<Integer, String>(i1, s1);\n   \
+      \   Pair<Integer, String> p2 = new Pair<Integer, String>(i2, s2);\n      int d = p1.compareTo(p2);\n      if (d < 0)\
+      \ return -1;\n      if (d > 0) return 1;\n      return 0;\n   }\n}\n"
+  placeholder: "public class Pair<T, S> \n   implements Comparable<Pair<T, S>>\n{\n   public Pair(T firstElement, S secondElement)\n\
+    \   {\n      first = firstElement;\n      second = secondElement;\n   }\n      \n   public T getFirst() { return first;\
+    \ }\n   public S getSecond() { return second; }\n   \n   // your compareTo method here\n   \n   private T first;\n   private\
+    \ S second;\n   \n   // this method is used to check your work\n   \n   public static int check(Integer i1, String s1,\
+    \ Integer i2, String s2)\n   {\n      Pair<Integer, String> p1 = new Pair<Integer, String>(i1, s1);\n      Pair<Integer,\
+    \ String> p2 = new Pair<Integer, String>(i2, s2);\n      int d = p1.compareTo(p2);\n      if (d < 0) return -1;\n    \
+    \  if (d > 0) return 1;\n      return 0;\n   }\n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

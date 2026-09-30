@@ -1,0 +1,51 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_doubleloops_8_en
+source: prog.cpp
+title: Double Loops 8
+description: Given an array of integers, return the position of the longest subsequence of consecutive integers a, a + 1,
+  a + 2, ...
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Arrays - Simple Exercises
+  - horstmann:Double Loops
+runtime:
+  language: cpp
+  version: '17'
+statement: "<p>Given an array of integers, return the position of \nthe longest subsequence of consecutive integers a, a +\
+  \ 1, a + 2, ...\nYou may assume there is at least on element in the array.\n</p>"
+elements:
+- type: locked
+  location:
+    snippet: |
+      /**
+         Return the longest consecutive sequence in an array.
+         @param arr the array to process.
+         @param len the length of the array.
+         @return the longest consecutive sequence.
+      */
+      int longest_consecutive_sequence(const int arr[], int len)
+      {
+- type: editable
+  location:
+    snippet: |2
+         // Your code here...
+  placeholder: |2
+       // Your code here...
+- type: locked
+  location:
+    snippet: |
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

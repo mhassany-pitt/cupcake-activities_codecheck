@@ -1,0 +1,38 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_python_otherstringoperations_8_en
+source: prog.py
+title: Other String Operations 8
+description: Given a string s and a character c (as string of length 1), return a string with the characters surrounding the
+  first occurrence of c reversed.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Strings
+  - horstmann:Other String Operations
+runtime:
+  language: python
+  version: '3'
+statement: Given a string s and a character c (as string of length 1), return a string with the characters surrounding the
+  first occurrence of c reversed. For example, if s is 'Hello' and c is 'l', return 'Hlleo'.
+elements:
+- type: editable
+  location:
+    snippet: "\n# Given a string s and a character c, return a string with the characters \n# surrounding the first of c reversed.\
+      \ For example, if s is Hello-World and \n# c is -, return HellW-oorld. You may assume that the character in c is not\n\
+      # the first or last character in the string.\n\ndef swapAroundGivenCharacter(s, c):\n   # Your code here...\n"
+  placeholder: "\n# Given a string s and a character c, return a string with the characters \n# surrounding the first of c\
+    \ reversed. For example, if s is Hello-World and \n# c is -, return HellW-oorld. You may assume that the character in\
+    \ c is not\n# the first or last character in the string.\n\ndef swapAroundGivenCharacter(s, c):\n   # Your code here...\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

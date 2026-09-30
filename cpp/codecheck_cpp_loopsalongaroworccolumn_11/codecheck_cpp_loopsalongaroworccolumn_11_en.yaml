@@ -1,0 +1,50 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_loopsalongaroworccolumn_11_en
+source: prog.cpp
+title: Loops Along a Row or Column 11
+description: Given a two-dimensional square array of integers, reverse both diagonals.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Two-Dimensional Arrays
+  - horstmann:Loops Along a Row or Column
+runtime:
+  language: cpp
+  version: '17'
+statement: <p>Given a two-dimensional square array of integers, reverse both diagonals.</p>
+elements:
+- type: locked
+  location:
+    snippet: |
+      const int MAX_COLS = 10;
+      /**
+         Given a square array, reverse both diagonals.
+         @param arr the array to process.
+         @param rows the rows in the array.
+         @param cols the columns in the array.
+      */
+      void reverse_diagonals(int arr[][MAX_COLS], int rows, int cols)
+      {
+- type: editable
+  location:
+    snippet: |2
+         // Your code here...
+  placeholder: |2
+       // Your code here...
+- type: locked
+  location:
+    snippet: |
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

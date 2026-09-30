@@ -1,0 +1,66 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_gen_110_en
+source: GenericUtil.java
+title: Generic Types 110
+description: Recall that a predicate is a method with a Boolean return value.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Generic Types
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>Recall that a predicate is a method with a Boolean return value. The <code>Predicate</code> interface can be used to test whether a value fulfills a property. A class implementing this interface provides an <code>invoke</code> method for carrying out a particular test.</p>
+  <p>The <code>GenericUtil</code> class contains a generic static method that finds all values in an array that match a given predicate. Your task is to implement that method.</p>
+elements:
+- type: editable
+  location:
+    snippet: |
+      import java.util.List;
+
+      public class GenericUtil
+      {
+         /**
+            Finds all values in an array that fulfill a given predicate.
+            @param values an array of values
+            @param pred a predicate
+            @return a list of values that match the predicate
+         */
+         public static <T> List<T> findAllMatches(T[] values, Predicate<T> pred)
+         {
+            ...
+         }
+      }
+  placeholder: |
+    import java.util.List;
+
+    public class GenericUtil
+    {
+       /**
+          Finds all values in an array that fulfill a given predicate.
+          @param values an array of values
+          @param pred a predicate
+          @return a list of values that match the predicate
+       */
+       public static <T> List<T> findAllMatches(T[] values, Predicate<T> pred)
+       {
+          ...
+       }
+    }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass
+includes:
+- GenericUtilTester.java
+- Predicate.java

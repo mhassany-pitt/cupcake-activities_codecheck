@@ -1,0 +1,38 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_python_2darraysnoloops_8_en
+source: prog.py
+title: No Loops 8
+description: On a chessboard, positions are marked with a letter between a and h for the column and a number between 1 and
+  8 for the row.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Two-Dimensional Arrays
+  - horstmann:No Loops
+runtime:
+  language: python
+  version: '3'
+statement: On a chessboard, positions are marked with a letter between a and h for the column and a number between 1 and 8
+  for the row. Given an 8x8 array of integers and a string with such a position, return the element at that position.
+elements:
+- type: editable
+  location:
+    snippet: "\n# On a chessboard, positions are marked with a letter between a and h for the column \n# and a number between\
+      \ 1 and 8 for the row. Given an 8x8 array of integers and a \n# string with such a position, return the element at that\
+      \ position.\n\ndef getChessBoardInfo(board, pos):\n   # Your code here...\n"
+  placeholder: "\n# On a chessboard, positions are marked with a letter between a and h for the column \n# and a number between\
+    \ 1 and 8 for the row. Given an 8x8 array of integers and a \n# string with such a position, return the element at that\
+    \ position.\n\ndef getChessBoardInfo(board, pos):\n   # Your code here...\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

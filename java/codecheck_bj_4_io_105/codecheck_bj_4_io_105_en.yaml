@@ -1,0 +1,104 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_io_105_en
+source: WebReader.java
+title: Input and Output 105
+description: The checkURL method below checks whether a web site contains data.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Input and Output
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>The <code>checkURL</code> method below checks whether a web site contains data. Checked
+      exceptions can be thrown in the code. Your task is to declare them but
+      <i>not</i> to catch them. </p>
+elements:
+- type: editable
+  location:
+    snippet: |
+      import java.io.IOException;
+      import java.net.MalformedURLException;
+      import java.net.URL;
+      import java.util.Scanner;
+
+      public class WebReader
+      {
+         public static boolean checkURL(String site)
+         {
+            URL u = new URL(site);
+            Scanner in = new Scanner(u.openStream());
+            return in.hasNextLine();
+         }
+
+         // This method checks your work. Do not modify it.
+
+         public static String check(String site)
+         {
+            try
+            {
+               if (checkURL(site))
+                  return "good";
+               else
+                  return "empty";
+            }
+            catch (MalformedURLException ex)
+            {
+               return "bad URL";
+            }
+            catch (Exception ex)
+            {
+               return "bad";
+            }
+         }
+      }
+  placeholder: |
+    import java.io.IOException;
+    import java.net.MalformedURLException;
+    import java.net.URL;
+    import java.util.Scanner;
+
+    public class WebReader
+    {
+       public static boolean checkURL(String site)
+       {
+          URL u = new URL(site);
+          Scanner in = new Scanner(u.openStream());
+          return in.hasNextLine();
+       }
+
+       // This method checks your work. Do not modify it.
+
+       public static String check(String site)
+       {
+          try
+          {
+             if (checkURL(site))
+                return "good";
+             else
+                return "empty";
+          }
+          catch (MalformedURLException ex)
+          {
+             return "bad URL";
+          }
+          catch (Exception ex)
+          {
+             return "bad";
+          }
+       }
+    }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

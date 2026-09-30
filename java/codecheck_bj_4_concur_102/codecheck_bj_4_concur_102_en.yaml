@@ -1,0 +1,82 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_concur_102_en
+source: DataSet.java
+title: Concurrency 102
+description: We will divide the work of computing the sum of all values in an array over multiple threads.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Concurrency
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>We will divide the work of computing the sum of all values in an array
+      over multiple threads. Each thread will compute the sum of a subrange and
+      then update a shared sum variable and a shared count of completed threads.
+      </p>
+
+      <p>Since the shared variable is updated by multiple threads, we need to
+      ensure that the updates do not interfere with each other. Your task is to
+      use a lock so that only one thread at a time updates the shared data. Note
+      that you should <i>not</i> use a lock to control access to the array which
+      is not mutated. Otherwise we would completely lose the benefit of using
+      multiple threads.</p>
+
+      <p>Note: We use a slightly wasteful mechanism for finding out when all
+      threads have completed their work. Several exercises in this chapter
+      explore other strategies.</p>
+elements:
+- type: editable
+  location:
+    snippet: "import java.util.concurrent.locks.Lock;\nimport java.util.concurrent.locks.ReentrantLock;\n\npublic class DataSet\n\
+      {\n   /**\n      Constructs an empty data set.\n   */\n   public DataSet(double[] values)\n   {\n      sum = 0;    \
+      \  \n      this.values = values;\n      myLock = new ReentrantLock();      \n   }\n\n   private class RangeProcessor\
+      \ implements Runnable\n   {\n      public RangeProcessor(int start, int end)\n      {\n         this.start = start;\n\
+      \         this.end = Math.min(end, values.length);\n      }\n      \n      public void run()\n      {\n         // TODO:\
+      \ use lock to protect access to shared mutated variables\n         double total = 0;\n         for (int i = start; i\
+      \ < end; i++)\n            total += values[i];\n         sum += total;\n         completionCount++;\n      }\n     \
+      \ \n      private int start;\n      private int end;\n   }\n   \n   /**\n      Gets the average of the added data.\n\
+      \      @return the average or 0 if no data has been added\n   */\n   public double getAverage() \n   {\n      if (values.length\
+      \ == 0) return 0;\n      \n      final int THREADS = 10;      \n      int size = values.length / THREADS;\n      for\
+      \ (int i = 0; i < THREADS; i++)\n      {\n         Runnable r = new RangeProcessor(i * size, (i + 1) * size);\n    \
+      \     Thread t = new Thread(r);\n         t.start();\n      }\n      \n      // busy waiting is not an optimal solution\n\
+      \      final int DELAY = 100;\n      try\n      {\n         while (completionCount < THREADS)\n         {         \n\
+      \            Thread.sleep(DELAY);\n         }\n      }\n      catch (InterruptedException ex)\n      {\n         return\
+      \ 0; \n      }         \n      \n      return sum / values.length;\n   }\n\n   private double[] values;\n   private\
+      \ double sum;\n   private int completionCount;\n   private Lock myLock;\n   \n   // this method is used to check your\
+      \ work\n   \n   public static void main(String[] args)  \n   {\n      final int SIZE = 10000000;\n      double[] v =\
+      \ new double[SIZE];\n      for (int i = 0; i < SIZE; i++) v[i] = i;\n      DataSet data = new DataSet(v);\n      double\
+      \ avg = data.getAverage();\n      System.out.println(avg);\n   }\n}\n"
+  placeholder: "import java.util.concurrent.locks.Lock;\nimport java.util.concurrent.locks.ReentrantLock;\n\npublic class\
+    \ DataSet\n{\n   /**\n      Constructs an empty data set.\n   */\n   public DataSet(double[] values)\n   {\n      sum\
+    \ = 0;      \n      this.values = values;\n      myLock = new ReentrantLock();      \n   }\n\n   private class RangeProcessor\
+    \ implements Runnable\n   {\n      public RangeProcessor(int start, int end)\n      {\n         this.start = start;\n\
+    \         this.end = Math.min(end, values.length);\n      }\n      \n      public void run()\n      {\n         // TODO:\
+    \ use lock to protect access to shared mutated variables\n         double total = 0;\n         for (int i = start; i <\
+    \ end; i++)\n            total += values[i];\n         sum += total;\n         completionCount++;\n      }\n      \n \
+    \     private int start;\n      private int end;\n   }\n   \n   /**\n      Gets the average of the added data.\n     \
+    \ @return the average or 0 if no data has been added\n   */\n   public double getAverage() \n   {\n      if (values.length\
+    \ == 0) return 0;\n      \n      final int THREADS = 10;      \n      int size = values.length / THREADS;\n      for (int\
+    \ i = 0; i < THREADS; i++)\n      {\n         Runnable r = new RangeProcessor(i * size, (i + 1) * size);\n         Thread\
+    \ t = new Thread(r);\n         t.start();\n      }\n      \n      // busy waiting is not an optimal solution\n      final\
+    \ int DELAY = 100;\n      try\n      {\n         while (completionCount < THREADS)\n         {         \n            Thread.sleep(DELAY);\n\
+    \         }\n      }\n      catch (InterruptedException ex)\n      {\n         return 0; \n      }         \n      \n\
+    \      return sum / values.length;\n   }\n\n   private double[] values;\n   private double sum;\n   private int completionCount;\n\
+    \   private Lock myLock;\n   \n   // this method is used to check your work\n   \n   public static void main(String[]\
+    \ args)  \n   {\n      final int SIZE = 10000000;\n      double[] v = new double[SIZE];\n      for (int i = 0; i < SIZE;\
+    \ i++) v[i] = i;\n      DataSet data = new DataSet(v);\n      double avg = data.getAverage();\n      System.out.println(avg);\n\
+    \   }\n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

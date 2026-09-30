@@ -1,0 +1,51 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_countingelements_5_en
+source: prog.cpp
+title: Counting Elements 5
+description: Given an array of integers, return the position of the first element that occurs more than once, or -1 if all
+  elements occur exactly once.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Arrays - Simple Exercises
+  - horstmann:Counting Elements
+runtime:
+  language: cpp
+  version: '17'
+statement: "Given an array of integers, return the position of the first element \nthat occurs more than once, or -1 if all\
+  \ elements occur exactly once.\nFor example, <code>[1, 2, 1]</code> would return 0."
+elements:
+- type: locked
+  location:
+    snippet: |
+      /**
+         Find the index of the first duplicate element.
+         @param arr the array to search.
+         @param size the size of the array.
+         @return index of first duplicate, or -1 if no duplicates.
+      */
+      int first_repeated_index(const int arr[], int size)
+      {
+- type: editable
+  location:
+    snippet: |2
+         // Your code here...
+  placeholder: |2
+       // Your code here...
+- type: locked
+  location:
+    snippet: |
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

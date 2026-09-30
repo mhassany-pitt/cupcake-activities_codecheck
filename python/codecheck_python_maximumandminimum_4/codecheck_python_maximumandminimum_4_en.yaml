@@ -1,0 +1,44 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_python_maximumandminimum_4_en
+source: prog.py
+title: Maximum and Minimum 4
+description: Given a list of integers, return the difference between the maximum and minimum.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Lists - Simple Exercises
+  - horstmann:Maximum and Minimum
+runtime:
+  language: python
+  version: '3'
+statement: Given a list of integers, return the difference between the maximum and minimum.
+elements:
+- type: editable
+  location:
+    snippet: |2
+
+      # Given a list of integers, return the difference between the maximum and minimum.
+      # Do not use the min or max functions
+
+      def differenceBetweenMaxAndMin(arr):
+         # Your code here...
+  placeholder: |2
+
+    # Given a list of integers, return the difference between the maximum and minimum.
+    # Do not use the min or max functions
+
+    def differenceBetweenMaxAndMin(arr):
+       # Your code here...
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

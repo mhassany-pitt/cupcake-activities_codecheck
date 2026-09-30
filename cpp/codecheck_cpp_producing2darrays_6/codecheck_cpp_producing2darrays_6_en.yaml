@@ -1,0 +1,52 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_producing2darrays_6_en
+source: prog.cpp
+title: Producing 2D Arrays 6
+description: Repeat where the row lengths don't have to match.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Two-Dimensional Arrays
+  - horstmann:Producing 2D Arrays
+runtime:
+  language: cpp
+  version: '17'
+statement: Repeat where the row lengths don't have to match. Fill the shorter array with zeroes.
+elements:
+- type: locked
+  location:
+    snippet: |
+      #include <vector>
+      using namespace std;
+
+      /**
+         Return two side by side vectors.
+         @param a the first vector.
+         @param b the second vector.
+         @return the combined vectors.
+      */
+      vector<vector<int>> side_by_side(const vector<vector<int>>& a, const vector<vector<int>>& b)
+      {
+- type: editable
+  location:
+    snippet: |2
+         // Your code here...
+  placeholder: |2
+       // Your code here...
+- type: locked
+  location:
+    snippet: |
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

@@ -1,0 +1,63 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_sort_108_en
+source: MergeSorter.java
+title: Sorting and Searching 108
+description: Modify the merge sort algorithm so that, instead of sorting an array, it rearranges places all even elements
+  before the odd ones.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Sorting and Searching
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>Modify the merge sort algorithm so that, instead of sorting an array, it rearranges
+  places all even elements before the odd ones. For example, the array
+  <code>[1, 4, 9, 16, 25]</code> becomes <code>[4, 16, 1, 9, 25]</code>.</p>
+  <p>Use the same recursion where an array is split in two, each half is rearranged,
+  and the two halves are merged together. However, the <code>merge</code> method needs
+  to be changed to merge two arrays, each of which has the even elements before the odd ones,
+  into one larger array with the same property.</p>
+elements:
+- type: editable
+  location:
+    snippet: "public class MergeSorter\n{\n   private int[] a;\n\n   /**\n      Constructs a merge sorter.\n      @param anArray\
+      \ the array to sort\n   */\n   public MergeSorter(int[] anArray)\n   {\n      a = anArray;\n   }\n   \n   /**\n    \
+      \  Places the even elements before the odd ones.\n   */\n   public void evenFirst()\n   {  \n      if (a.length <= 1)\
+      \ return;\n      int[] first = new int[a.length / 2];\n      int[] second = new int[a.length - first.length];\n    \
+      \  // Copy the first half of a into first, the second half into second\n      for (int i = 0; i < first.length; i++)\
+      \ { first[i] = a[i]; }\n      for (int i = 0; i < second.length; i++) \n      { \n         second[i] = a[first.length\
+      \ + i]; \n      }\n      MergeSorter firstSorter = new MergeSorter(first);\n      MergeSorter secondSorter = new MergeSorter(second);\n\
+      \      firstSorter.evenFirst();\n      secondSorter.evenFirst();\n      merge(first, second);\n   }\n\n   /**\n    \
+      \  Merges two arrays into the array managed by this\n      merge sorter. \n      @param first the first array which\
+      \ has the even elements before the odd ones\n      @param second the second array which has the even elements before\
+      \ the odd ones\n   */\n   private void merge(int[] first, int[] second)\n   {  \n      // TODO\n   }\n   \n   // this\
+      \ method is used to check your work\n   public static int [] check(int [] a)\n   {\n      MergeSorter sorter = new MergeSorter(a);\n\
+      \      sorter.evenFirst();\n      return a;\n   }\n}\n"
+  placeholder: "public class MergeSorter\n{\n   private int[] a;\n\n   /**\n      Constructs a merge sorter.\n      @param\
+    \ anArray the array to sort\n   */\n   public MergeSorter(int[] anArray)\n   {\n      a = anArray;\n   }\n   \n   /**\n\
+    \      Places the even elements before the odd ones.\n   */\n   public void evenFirst()\n   {  \n      if (a.length <=\
+    \ 1) return;\n      int[] first = new int[a.length / 2];\n      int[] second = new int[a.length - first.length];\n   \
+    \   // Copy the first half of a into first, the second half into second\n      for (int i = 0; i < first.length; i++)\
+    \ { first[i] = a[i]; }\n      for (int i = 0; i < second.length; i++) \n      { \n         second[i] = a[first.length\
+    \ + i]; \n      }\n      MergeSorter firstSorter = new MergeSorter(first);\n      MergeSorter secondSorter = new MergeSorter(second);\n\
+    \      firstSorter.evenFirst();\n      secondSorter.evenFirst();\n      merge(first, second);\n   }\n\n   /**\n      Merges\
+    \ two arrays into the array managed by this\n      merge sorter. \n      @param first the first array which has the even\
+    \ elements before the odd ones\n      @param second the second array which has the even elements before the odd ones\n\
+    \   */\n   private void merge(int[] first, int[] second)\n   {  \n      // TODO\n   }\n   \n   // this method is used\
+    \ to check your work\n   public static int [] check(int [] a)\n   {\n      MergeSorter sorter = new MergeSorter(a);\n\
+    \      sorter.evenFirst();\n      return a;\n   }\n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

@@ -1,0 +1,36 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_python_functionswithdecisions_7_en
+source: prog.py
+title: Branches with Functions 7
+description: Given three numbers, return true if they are evenly spaced; that is, sorted in ascending or descending order,
+  with the same distance between them.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Branches
+  - horstmann:Branches with Functions
+runtime:
+  language: python
+  version: '3'
+statement: Given three numbers, return true if they are evenly spaced; that is, sorted in ascending or descending order, with
+  the same distance between them.
+elements:
+- type: editable
+  location:
+    snippet: "\n# Given three numbers, return true if they are evenly spaced; that is, \n# sorted in ascending or descending\
+      \ order, with the same distance between them.\n\ndef evenlySpaced(a, b, c):\n   # Your code here...\n"
+  placeholder: "\n# Given three numbers, return true if they are evenly spaced; that is, \n# sorted in ascending or descending\
+    \ order, with the same distance between them.\n\ndef evenlySpaced(a, b, c):\n   # Your code here...\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

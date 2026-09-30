@@ -1,0 +1,44 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_inher_109_en
+source: LightBulb.java
+title: Inheritance 109
+description: Light bulbs can be identified by type and can be measured by the amount of lumens produced per watt of power.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Inheritance
+runtime:
+  language: java
+  version: '17'
+statement: "<p>Light bulbs can be identified by type and can be measured by the amount of lumens produced per watt of power.\
+  \ The <code>Incandescent</code> and \n\t<code>Fluorescent</code> classes below inherit from the abstract <code>LightBulb</code>\
+  \ class. Complete the <code>LightBulb</code> class so that the <code>getDescription</code> method returns a string of the\
+  \ form <code>lumensPerWatt=...,shape=...</code> (without any spaces). Be sure that your class is abstract!</p>"
+elements:
+- type: editable
+  location:
+    snippet: "/**\n   Represents a light bulb of some type.\n*/\npublic abstract class LightBulb // MUST be abstract\n{\n\
+      \   // TODO: Add any needed instance variables, constructors, and methods\n   \n   \n   /**\n      Gets a description\
+      \ of this light bulb.\n      @return a string of the form lumensPerWatt=...,shape=... (without any spaces)\n   */\n\
+      \   public String getDescription()\n   {\n      // TODO: Complete this method\n   }\n}\n"
+  placeholder: "/**\n   Represents a light bulb of some type.\n*/\npublic abstract class LightBulb // MUST be abstract\n{\n\
+    \   // TODO: Add any needed instance variables, constructors, and methods\n   \n   \n   /**\n      Gets a description\
+    \ of this light bulb.\n      @return a string of the form lumensPerWatt=...,shape=... (without any spaces)\n   */\n  \
+    \ public String getDescription()\n   {\n      // TODO: Complete this method\n   }\n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass
+includes:
+- Fluorescent.java
+- Incandescent.java
+- LightBulbTester.java

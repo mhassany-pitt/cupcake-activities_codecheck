@@ -1,0 +1,50 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_stringwords_3_en
+source: prog.cpp
+title: Words 3
+description: Given a string in which words are separated by spaces, return the first word that is repeated somewhere in the
+  string.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Strings
+  - horstmann:Words
+runtime:
+  language: cpp
+  version: '17'
+statement: "Given a string in which words are separated by spaces, return the \nfirst word that is repeated somewhere in the\
+  \ string."
+elements:
+- type: locked
+  location:
+    snippet: "#include <iostream>\n#include <string>\n#include <sstream>\nusing namespace std;\n\n/**\n   Returns the index\
+      \ of the first occurrence of t in s, \n   or -1 if t doesn't occur in s.\n*/\nint find(string s, string t)\n{   \n \
+      \  for (int i = 0; i + t.length() <= s.length(); i++)\n   {\n      if (s.substr(i, t.length()) == t)\n      {\n    \
+      \     return i;\n      }\n   }\n   return -1;\n}\n\nstring firstRepeatedSomewhere(string s)\n{\n"
+- type: editable
+  location:
+    snippet: |2+
+
+
+
+  placeholder: |2+
+
+
+
+- type: locked
+  location:
+    snippet: |
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

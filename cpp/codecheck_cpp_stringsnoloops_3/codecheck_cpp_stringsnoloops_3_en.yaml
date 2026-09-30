@@ -1,0 +1,55 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_stringsnoloops_3_en
+source: prog.cpp
+title: No Loops 3
+description: Given a string, return the string with the middle two characters swapped if it has even length, and the middle
+  three characters swapped if it has odd length.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Strings
+  - horstmann:No Loops
+runtime:
+  language: cpp
+  version: '17'
+statement: |-
+  Given a string, if it has even length return the string with the middle two characters swapped.
+  If it has odd length, reverse the middle three characters. If the length is 3 or less,
+  return the original string.
+elements:
+- type: locked
+  location:
+    snippet: |
+      #include <iostream>
+      #include <string>
+      using namespace std;
+
+      string reverseCenterCharacters(string s)
+      {
+- type: editable
+  location:
+    snippet: |2+
+
+
+
+  placeholder: |2+
+
+
+
+- type: locked
+  location:
+    snippet: |
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

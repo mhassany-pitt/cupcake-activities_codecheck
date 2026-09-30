@@ -1,0 +1,46 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_list_103_en
+source: WordList.java
+title: Linear Data Structures 103
+description: Your task is to concatenate all elements in a linked list of strings backwards, starting at the end of the list.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Linear Data Structures
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>Your task is to concatenate all elements in a linked list of strings
+      backwards, starting at the end of the list. For example, if a linked list
+      contains the strings</p>
+
+      <pre>Mary, had, a, little, lamb</pre>
+
+      <p>you should return the string <code>"lamblittleahadMary"</code>.</p>
+elements:
+- type: editable
+  location:
+    snippet: "import java.util.Arrays;\nimport java.util.LinkedList;\nimport java.util.ListIterator;\n\npublic class WordList\n\
+      {\n   public String concatenateBackwards(LinkedList<String> words)\n   {\n      // TODO: Complete method\n   }\n\n \
+      \  // this method is used to check your work\n   public String check(String[] elements)\n   {\n      LinkedList<String>\
+      \ words = new LinkedList<String>();\n      words.addAll(Arrays.asList(elements));      \n      return concatenateBackwards(words);\n\
+      \   }\n}\n"
+  placeholder: "import java.util.Arrays;\nimport java.util.LinkedList;\nimport java.util.ListIterator;\n\npublic class WordList\n\
+    {\n   public String concatenateBackwards(LinkedList<String> words)\n   {\n      // TODO: Complete method\n   }\n\n   //\
+    \ this method is used to check your work\n   public String check(String[] elements)\n   {\n      LinkedList<String> words\
+    \ = new LinkedList<String>();\n      words.addAll(Arrays.asList(elements));      \n      return concatenateBackwards(words);\n\
+    \   }\n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

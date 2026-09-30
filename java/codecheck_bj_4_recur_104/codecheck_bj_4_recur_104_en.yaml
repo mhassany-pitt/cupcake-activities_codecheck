@@ -1,0 +1,64 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_recur_104_en
+source: ZipperWordGenerator.java
+title: Recursion 104
+description: You are given two strings of equal length.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Recursion
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>You are given two strings of equal length. Your task is to generate all
+      <q>zipper words</q> that can be produced from them. A zipper word
+      is made by interleaving the characters at the same index from each string.
+      Some indexes may be skipped. However, a zipper word has length at least 2.
+      For example, if the two strings are </p>
+
+      <pre><b>a</b>n<b>t</b>
+  <b>b</b>u<b>g</b></pre>
+
+      <p>then a zipper word is </p>
+
+      <pre><b>abtg</b></pre>
+
+      <p>Complete the following class to generate an array list of all zipper
+      words. </p>
+
+      <p>Hint: (1) There are two kinds of zipper words that can be made of
+      <code><b>a</b>nt</code> and <code><b>b</b>ug</code>: those that start with
+      <code><b>ab</b></code> and those that don't. In either case, the suffix is a
+      zipper word made of <code>nt</code> and <code>ug</code>. (2) If the length of the
+      strings is is zero, there are no zipper words. </p>
+elements:
+- type: editable
+  location:
+    snippet: "import java.util.ArrayList;\nimport java.util.Collections;\n\npublic class ZipperWordGenerator\n{\n   public\
+      \ ZipperWordGenerator(String word1, String word2)\n   {\n      assert word1.length() == word2.length();\n      first\
+      \ = word1;\n      second = word2;\n   }\n   \n   public ArrayList<String> getZipperWords() \n   {\n      // your work\
+      \ here\n   }\n   \n   private String first;\n   private String second;   \n   \n   // this method is used to check your\
+      \ work\n   public static ArrayList<String> check(String word1, String word2)\n   {\n      ZipperWordGenerator gen =\
+      \ new ZipperWordGenerator(word1, word2);\n      ArrayList<String> r = gen.getZipperWords();\n      Collections.sort(r);\
+      \ // to make result independent of insertion order\n      return r;   \n   }      \n}\n"
+  placeholder: "import java.util.ArrayList;\nimport java.util.Collections;\n\npublic class ZipperWordGenerator\n{\n   public\
+    \ ZipperWordGenerator(String word1, String word2)\n   {\n      assert word1.length() == word2.length();\n      first =\
+    \ word1;\n      second = word2;\n   }\n   \n   public ArrayList<String> getZipperWords() \n   {\n      // your work here\n\
+    \   }\n   \n   private String first;\n   private String second;   \n   \n   // this method is used to check your work\n\
+    \   public static ArrayList<String> check(String word1, String word2)\n   {\n      ZipperWordGenerator gen = new ZipperWordGenerator(word1,\
+    \ word2);\n      ArrayList<String> r = gen.getZipperWords();\n      Collections.sort(r); // to make result independent\
+    \ of insertion order\n      return r;   \n   }      \n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

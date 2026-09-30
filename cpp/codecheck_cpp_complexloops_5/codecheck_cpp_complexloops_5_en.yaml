@@ -1,0 +1,66 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_complexloops_5_en
+source: prog.cpp
+title: Complex Loops 5
+description: Given a two-dimensional array of integers, return the position of the largest square subarray filled with zeroes,
+  as an array of length 2.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Two-Dimensional Arrays
+  - horstmann:Complex Loops
+runtime:
+  language: cpp
+  version: '17'
+statement: "<p>Given a <code>vector&lt;vector&lt;int&gt;&gt;</code>, return the \n   position of the largest <b>square</b>\
+  \ zero-filled sub-vector, \n   as a <code>vector&lt;int&g;t</code> of size  3, \n   with the first item for the row, the\
+  \ second for the column, and \n   the third for the area of the sub-vector.\n   Return <code>{-1, -1, -1}</code> if there\
+  \ is no such sub-vector.\n</p>"
+elements:
+- type: locked
+  location:
+    snippet: |
+      #include <vector>
+      using namespace std;
+
+      /** Helper function. Check if a subrange is all zeros. */
+      bool all_zeros(const vector<vector<int>>& v, int r, int c, int k);
+
+      /**
+         Return upper-left corner and area of largest zero-filled square.
+         @param v the vector<vector<int>> to process.
+         @return {-1, -1, -1} if no zero-filled squares.
+      */
+      vector<int> start_of_largest_zero_square_vector(const vector<vector<int>>& v)
+      {
+- type: editable
+  location:
+    snippet: |2
+          // Your code here...
+  placeholder: |2
+        // Your code here...
+- type: locked
+  location:
+    snippet: |
+      }
+      /** Helpber function. */
+      bool all_zeros(const vector<vector<int>>& v, int r, int c, int size)
+      {
+         for (int i = 0; i < size; i++)
+            for (int j = 0; j < size; j++)
+               if (v[r + i][c + j] != 0) { return false; }
+         return true;
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

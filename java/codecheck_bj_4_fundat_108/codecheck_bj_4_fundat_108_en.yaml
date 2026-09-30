@@ -1,0 +1,51 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_fundat_108_en
+source: Location.java
+title: Fundamental Data Types 108
+description: A position on the planet Earth is specified by latitude and longitude (in degrees).
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Fundamental Data Types
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>A position on the planet Earth is specified by latitude and longitude (in degrees). The distance between two points on a sphere can be calculated with the following formula, where latitude and longitude are in radians and r is the radius of the sphere:</p>
+  <p>
+  distance = r * arccos(sin(latitude1) * sin(latitude2) + cos(latitude1) * cos(latitude2)  * cos(longitude1 - longitude2))
+  </p>
+  <p>The radius of the planet Earth is 6371 km</p>
+  <p>Your task is to compute the distance between two <code>Location</code> objects.</p>
+elements:
+- type: editable
+  location:
+    snippet: "/**\n   A class to describe the location of a place on Earth.\n*/\npublic class Location\n{\n   private double\
+      \ latid;\n   private double longit;\n\n   private static final double EARTH_RADIUS = 6371;\n\n   /**\n      Construct\
+      \ a location with a given latitude and longitude (in degrees)\n   */\n   public Location(double latitude, double longitude)\n\
+      \   {\n      . . .\n   }\n\n   public double getLongitudeInRadians() { return longit; }\n\n   public double getLatitudeInRadians()\
+      \ { return latid; }\n   \n   /**\n      Gets the distance between two locations in kilometers\n      @param other another\
+      \ location\n      @return the distance between this location and other\n   */\n   public double getDistance(Location\
+      \ other)\n   {\n      . . .\n   }\n}\n"
+  placeholder: "/**\n   A class to describe the location of a place on Earth.\n*/\npublic class Location\n{\n   private double\
+    \ latid;\n   private double longit;\n\n   private static final double EARTH_RADIUS = 6371;\n\n   /**\n      Construct\
+    \ a location with a given latitude and longitude (in degrees)\n   */\n   public Location(double latitude, double longitude)\n\
+    \   {\n      . . .\n   }\n\n   public double getLongitudeInRadians() { return longit; }\n\n   public double getLatitudeInRadians()\
+    \ { return latid; }\n   \n   /**\n      Gets the distance between two locations in kilometers\n      @param other another\
+    \ location\n      @return the distance between this location and other\n   */\n   public double getDistance(Location other)\n\
+    \   {\n      . . .\n   }\n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass
+includes:
+- LocationTester.java

@@ -1,0 +1,58 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_io2_103_en
+source: TextMangler.java
+title: Advanced Input and Output 103
+description: Your task is to swap all letters A with O and all letters a with o in a RandomAccessFile.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Advanced Input and Output
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>Your task is to swap all letters A with O and all letters a with o in a
+      RandomAccessFile. Simply read a byte at a time, and if you find a letter
+      to be swapped, move one byte back. </p>
+
+      <p>For example, when you process a file containing the text of a
+      well-known childrens song, it will be transformed into</p>
+
+      <pre>    Mory hod o little lomb,
+      little lomb, little lomb,
+      Mory hod o little lomb, its fleece wos white os snaw.
+  </pre>
+elements:
+- type: editable
+  location:
+    snippet: "import java.io.IOException;\nimport java.io.RandomAccessFile;\n\npublic class TextMangler\n{\n   public static\
+      \ void swapAsAndOs(RandomAccessFile file) throws IOException\n   {\n      long pos = 0;\n      while (pos < file.length())\n\
+      \      {\n         char c = (char) file.read();\n         char replacement = 0;\n         if (c == 'a') replacement\
+      \ = 'o';\n         if (c == 'A') replacement = 'O';\n         else if (c == 'o') replacement = 'a';\n         else if\
+      \ (c == 'O') replacement = 'A';\n         if (replacement != 0)\n         {\n            file.seek(pos);\n         \
+      \   file.write((byte) replacement);\n         }\n         pos++;\n      }\n   }   \n   \n   // this method checks your\
+      \ work\n   \n   public static void main(String[] args) throws IOException\n   {\n      RandomAccessFile file = new RandomAccessFile(\"\
+      data.txt\", \"rw\");\n      swapAsAndOs(file);\n      file.close();\n   }   \n}\n"
+  placeholder: "import java.io.IOException;\nimport java.io.RandomAccessFile;\n\npublic class TextMangler\n{\n   public static\
+    \ void swapAsAndOs(RandomAccessFile file) throws IOException\n   {\n      long pos = 0;\n      while (pos < file.length())\n\
+    \      {\n         char c = (char) file.read();\n         char replacement = 0;\n         if (c == 'a') replacement =\
+    \ 'o';\n         if (c == 'A') replacement = 'O';\n         else if (c == 'o') replacement = 'a';\n         else if (c\
+    \ == 'O') replacement = 'A';\n         if (replacement != 0)\n         {\n            file.seek(pos);\n            file.write((byte)\
+    \ replacement);\n         }\n         pos++;\n      }\n   }   \n   \n   // this method checks your work\n   \n   public\
+    \ static void main(String[] args) throws IOException\n   {\n      RandomAccessFile file = new RandomAccessFile(\"data.txt\"\
+    , \"rw\");\n      swapAsAndOs(file);\n      file.close();\n   }   \n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass
+includes:
+- data.txt

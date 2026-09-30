@@ -1,0 +1,70 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_object_111_en
+source: ThreeDButtonComponent.java
+title: Objects 111
+description: Complete the ThreeDButtonComponent class to draw a button with shading.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Objects
+runtime:
+  language: java
+  version: '17'
+statement: <p>Complete the <code>ThreeDButtonComponent</code> class to draw a button with shading.  The button is a <code>Rectangle</code>,
+  with very thin rectangles on each side to form the shaded sides.  The bottom and right shadings should be darker than the
+  button and the left and top shadings should be lighter.  Use <code>Color.brighter</code> and <code>Color.darker</code> for
+  the shadings.  Look in the Color class API for details on the use of these methods.</p>
+elements:
+- type: editable
+  location:
+    snippet: |+
+      import javax.swing.JComponent;
+      import java.awt.Color;
+      import java.awt.Graphics;
+      import java.awt.Graphics2D;
+      import java.awt.Rectangle;
+
+      public class ThreeDButtonComponent extends JComponent
+      {
+         public void paintComponent(Graphics g)
+         {
+            Graphics2D g2 = (Graphics2D) g;
+            // your work here
+            ...
+         }
+      }
+
+
+  placeholder: |+
+    import javax.swing.JComponent;
+    import java.awt.Color;
+    import java.awt.Graphics;
+    import java.awt.Graphics2D;
+    import java.awt.Rectangle;
+
+    public class ThreeDButtonComponent extends JComponent
+    {
+       public void paintComponent(Graphics g)
+       {
+          Graphics2D g2 = (Graphics2D) g;
+          // your work here
+          ...
+       }
+    }
+
+
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass
+includes:
+- ThreeDButtonViewer.java

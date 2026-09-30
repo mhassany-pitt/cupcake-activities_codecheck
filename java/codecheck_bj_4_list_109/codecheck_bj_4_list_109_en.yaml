@@ -1,0 +1,60 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_list_109_en
+source: LinkedList.java
+title: Linear Data Structures 109
+description: Implement the addLast method in this simplified LinkedList class.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Linear Data Structures
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>
+  Implement the <code>addLast</code> method in this simplified <code>LinkedList</code> class.
+  </p>
+elements:
+- type: editable
+  location:
+    snippet: "/**\n   A linked list is a sequence of nodes with efficient\n   element insertion and removal. This class \n\
+      \   contains a subset of the methods of the standard\n   java.util.LinkedList class.\n*/\npublic class LinkedList\n\
+      {  \n   private Node first;\n      \n   /** \n      Constructs an empty linked list.\n   */\n   public LinkedList()\n\
+      \   {  \n      first = null;\n   }\n   \n   /**\n      Adds an element to the front of the linked list.\n      @param\
+      \ element the element to add\n   */\n   public void addFirst(Object element)\n   {  \n      Node newNode = new Node();\n\
+      \      newNode.data = element;\n      newNode.next = first;\n      first = newNode;\n   }\n\n   /**\n      Adds an element\
+      \ to the end of the linked list.\n      @param element the element to add\n   */\n   public void addLast(Object element)\n\
+      \   {  \n      // your work here\n   }\n   \n   public String toString()\n   {\n      String r = \"[\";\n      for (Node\
+      \ current = first; current != null; current = current.next)\n      {\n         if (current != first) r = r + \",\";\n\
+      \         r = r + current.data;\n      }\n      return r + \"]\";    \n   }\n   \n   class Node\n   {  \n      public\
+      \ Object data;\n      public Node next;\n   }   \n   \n   // This method is used to check your work\n   public static\
+      \ String check(String[] first, String[] last)\n   {\n      LinkedList list = new LinkedList();\n      for (String s\
+      \ : last) list.addLast(s);\n      for (String s : first) list.addFirst(s);\n      return list.toString();\n   }    \
+      \  \n}\n"
+  placeholder: "/**\n   A linked list is a sequence of nodes with efficient\n   element insertion and removal. This class\
+    \ \n   contains a subset of the methods of the standard\n   java.util.LinkedList class.\n*/\npublic class LinkedList\n\
+    {  \n   private Node first;\n      \n   /** \n      Constructs an empty linked list.\n   */\n   public LinkedList()\n\
+    \   {  \n      first = null;\n   }\n   \n   /**\n      Adds an element to the front of the linked list.\n      @param\
+    \ element the element to add\n   */\n   public void addFirst(Object element)\n   {  \n      Node newNode = new Node();\n\
+    \      newNode.data = element;\n      newNode.next = first;\n      first = newNode;\n   }\n\n   /**\n      Adds an element\
+    \ to the end of the linked list.\n      @param element the element to add\n   */\n   public void addLast(Object element)\n\
+    \   {  \n      // your work here\n   }\n   \n   public String toString()\n   {\n      String r = \"[\";\n      for (Node\
+    \ current = first; current != null; current = current.next)\n      {\n         if (current != first) r = r + \",\";\n\
+    \         r = r + current.data;\n      }\n      return r + \"]\";    \n   }\n   \n   class Node\n   {  \n      public\
+    \ Object data;\n      public Node next;\n   }   \n   \n   // This method is used to check your work\n   public static\
+    \ String check(String[] first, String[] last)\n   {\n      LinkedList list = new LinkedList();\n      for (String s :\
+    \ last) list.addLast(s);\n      for (String s : first) list.addFirst(s);\n      return list.toString();\n   }      \n\
+    }\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

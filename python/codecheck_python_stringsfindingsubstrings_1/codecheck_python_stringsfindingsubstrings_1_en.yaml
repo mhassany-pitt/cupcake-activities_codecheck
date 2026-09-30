@@ -1,0 +1,36 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_python_stringsfindingsubstrings_1_en
+source: prog.py
+title: Finding Substrings 1
+description: Given strings s and t, return a list of all positions in which t occurs in s.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Strings
+  - horstmann:Finding Substrings
+runtime:
+  language: python
+  version: '3'
+statement: Given strings s and t, return a list of all positions in which t occurs in s.
+elements:
+- type: editable
+  location:
+    snippet: "\n# Given strings s and t, return a list of all positions in which t occurs in s. For \n# example, if s = 'Mississippi'\
+      \ and t = 'iss', the result should be [1, 4] because\n# 'iss' starts at index 1 and 4 inside string s. You may assume\
+      \ that t is not empty.\n# Do not use the find method.\n\ndef allPositionsOfT(s, t):\n   # Your code here...\n"
+  placeholder: "\n# Given strings s and t, return a list of all positions in which t occurs in s. For \n# example, if s =\
+    \ 'Mississippi' and t = 'iss', the result should be [1, 4] because\n# 'iss' starts at index 1 and 4 inside string s. You\
+    \ may assume that t is not empty.\n# Do not use the find method.\n\ndef allPositionsOfT(s, t):\n   # Your code here...\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

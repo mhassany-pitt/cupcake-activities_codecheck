@@ -1,0 +1,61 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_fundat_110_en
+source: Time.java
+title: Fundamental Data Types 110
+description: Fred fills out his time sheet at work, but he needs to provide the number of minutes worked.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Fundamental Data Types
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>Fred fills out his time sheet at work, but he needs to provide the number of minutes worked. He only knows the start and end times, given in hours and minutes. Help Fred by implementing the <code>minutesUntil</code> method below. </p>
+  <p>For example, if two <code>Time</code> objects are declared as</p>
+  <pre>Time start = new Time(13:11);
+  Time end = new Time(14:01);
+  </pre>
+  <p>then the call <code>start.minutesUntil(end)</code> should return 50. There are 50 minutes between 13:11 and 14:01.</p>
+  <p>Be sure to handle the situation where Fred works the night shift. If </p>
+  <pre>start = new Time(23:11);
+  end = new Time(1:01);
+  </pre>
+  <p>then the call <code>start.minutesUntil(end)</code> should return 110.</p>
+elements:
+- type: editable
+  location:
+    snippet: "/**\n   A class to compute the distance between two points in time.\n*/\npublic class Time\n{\n   private int\
+      \ hours;\n   private int minutes;\n\n   /**\n      Construct a Time.\n      @param hrs the hours of the time (between\
+      \ 0 and 23)\n      @param min the minutes of the time (between 0 and 59)\n   */\n   public Time(int hrs, int min)\n\
+      \   {\n      hours = hrs;\n      minutes = min;\n   }\n   \n   /**\n      Gets the hours of this time\n      @return\
+      \ the hours\n   */\n   public int getHours() { return hours; }\n   \n   /**\n      Gets the minutes of this time\n \
+      \     @return the minutes\n   */\n   public int getMinutes() { return minutes; }\n   \n   /**\n      Gets the minutes\
+      \ from this time to another\n      @param other another time\n      @return the number of minutes from this time to\
+      \ the other\n   */\n   public int minutesUntil(Time other)\n   {\n      // your work here      \n   }\n\n   // this\
+      \ method is used to check your work\n\n   public static int check(int h1, int m1, int h2, int m2)\n   {\n      Time\
+      \ first = new Time(h1, m1);\n      Time second = new Time(h2, m2);\n      return first.minutesUntil(second);\n   }\n\
+      }\n"
+  placeholder: "/**\n   A class to compute the distance between two points in time.\n*/\npublic class Time\n{\n   private\
+    \ int hours;\n   private int minutes;\n\n   /**\n      Construct a Time.\n      @param hrs the hours of the time (between\
+    \ 0 and 23)\n      @param min the minutes of the time (between 0 and 59)\n   */\n   public Time(int hrs, int min)\n  \
+    \ {\n      hours = hrs;\n      minutes = min;\n   }\n   \n   /**\n      Gets the hours of this time\n      @return the\
+    \ hours\n   */\n   public int getHours() { return hours; }\n   \n   /**\n      Gets the minutes of this time\n      @return\
+    \ the minutes\n   */\n   public int getMinutes() { return minutes; }\n   \n   /**\n      Gets the minutes from this time\
+    \ to another\n      @param other another time\n      @return the number of minutes from this time to the other\n   */\n\
+    \   public int minutesUntil(Time other)\n   {\n      // your work here      \n   }\n\n   // this method is used to check\
+    \ your work\n\n   public static int check(int h1, int m1, int h2, int m2)\n   {\n      Time first = new Time(h1, m1);\n\
+    \      Time second = new Time(h2, m2);\n      return first.minutesUntil(second);\n   }\n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

@@ -1,0 +1,53 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_otherstringoperations_1_en
+source: prog.cpp
+title: Other String Operations 1
+description: Given a string s and an integer n, return a string in which each of the characters in s is repeated n times.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Strings
+  - horstmann:Other String Operations
+runtime:
+  language: cpp
+  version: '17'
+statement: "Given a string s and an integer n, return a string \nin which each of the characters in s is repeated n times."
+elements:
+- type: locked
+  location:
+    snippet: |
+      #include <iostream>
+      #include <string>
+      using namespace std;
+
+      string repeatCharacters(string s, int n)
+      {
+         string result = "";
+- type: editable
+  location:
+    snippet: |2+
+
+
+
+  placeholder: |2+
+
+
+
+- type: locked
+  location:
+    snippet: |2
+         return result;
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

@@ -1,0 +1,43 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_branches_9_en
+source: prog.cpp
+title: Branches Without Functions 9
+description: Given three input strings, print all but the shortest one.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Branches
+  - horstmann:Branches Without Functions
+runtime:
+  language: cpp
+  version: '17'
+statement: |-
+  Given three input strings, print all but the shortest one, in the order given,
+  separated by a space. If all three string lengths are equal, print "All Equal".
+elements:
+- type: locked
+  location:
+    snippet: "#include <iostream>\n#include <string>\nusing namespace std;\n\nint main()\n{\n   string s1 = \"hi\"; \n   string\
+      \ s2 = \"hello\"; \n   string s3 = \"morning\"; \n\n"
+- type: editable
+  location:
+    snippet: "\n     \n\n"
+  placeholder: "\n     \n\n"
+- type: locked
+  location:
+    snippet: |2
+         return 0;
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

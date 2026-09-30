@@ -1,0 +1,51 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_otherstringoperations_7_en
+source: prog.cpp
+title: Other String Operations 7
+description: Given a string and two characters x and y, interchange all occurrences of x and y.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Strings
+  - horstmann:Other String Operations
+runtime:
+  language: cpp
+  version: '17'
+statement: Given a string s and two strings x and y, change all occurrences of x to y. If x is empty, return s;
+elements:
+- type: locked
+  location:
+    snippet: |
+      #include <iostream>
+      #include <string>
+      using namespace std;
+
+      string replace(string s, string x, string y)
+      {
+- type: editable
+  location:
+    snippet: |2+
+
+
+
+  placeholder: |2+
+
+
+
+- type: locked
+  location:
+    snippet: |
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

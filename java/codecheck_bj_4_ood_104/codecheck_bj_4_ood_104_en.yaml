@@ -1,0 +1,104 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_ood_104_en
+source: ATM.java
+title: Object-Oriented Design 104
+description: Add the capability of transferring money from the currently selected account to the other account from the same
+  account holder to the ATM class of Section 12.5.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Object-Oriented Design
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>Add the capability of transferring money from the currently selected
+      account to the other account from the same account holder to the
+      <code>ATM</code> class of Section 12.5.</p>
+
+      <p>You need not implement any user interface.</p>
+elements:
+- type: editable
+  location:
+    snippet: "// TODO: Implement the transfer method. If required, add data fields and\n// modify methods\n\n/**\n   An ATM\
+      \ that accesses a bank.\n*/\npublic class ATM \n{  \n   /**\n      Constructs an ATM for a given bank.\n      @param\
+      \ aBank the bank to which this ATM connects\n   */    \n   public ATM(Bank aBank)\n   {\n      theBank = aBank;\n  \
+      \    reset();\n   }\n\n   /**\n      Resets the ATM to the initial state.\n   */\n   public void reset()\n   {\n   \
+      \   customerNumber = -1;\n      currentAccount = null;\n      state = START;             \n   }\n\n   /** \n      Sets\
+      \ the current customer number \n      and sets state to PIN. \n      (Precondition: state is START)\n      @param number\
+      \ the customer number.\n   */\n   public void setCustomerNumber(int number) \n   {\n      assert state == START;\n \
+      \     customerNumber = number;\n      state = PIN;\n   }\n\n   /** \n      Finds customer in bank.\n      If found sets\
+      \ state to ACCOUNT, else to START.\n      (Precondition: state is PIN)\n      @param pin the PIN of the current customer\n\
+      \   */\n   public void selectCustomer(int pin)\n   {  \n      assert state == PIN;\n      currentCustomer \n       \
+      \  = theBank.findCustomer(customerNumber, pin);\n      if (currentCustomer == null) \n         state = START;\n    \
+      \  else \n         state = ACCOUNT;\n   }\n   \n   /** \n      Sets current account to checking or savings. Sets \n\
+      \      state to TRANSACT. \n      (Precondition: state is ACCOUNT or TRANSACT)\n      @param account one of CHECKING\
+      \ or SAVINGS\n   */\n   public void selectAccount(int account)\n   {\n      assert state == ACCOUNT || state == TRANSACT;\n\
+      \      if (account == CHECKING)\n         currentAccount = currentCustomer.getCheckingAccount();\n      else\n     \
+      \    currentAccount = currentCustomer.getSavingsAccount();\n      state = TRANSACT;\n   }\n\n   /** \n      Withdraws\
+      \ amount from current account. \n      (Precondition: state is TRANSACT)\n      @param value the amount to withdraw\n\
+      \   */\n   public void withdraw(double value)\n   {  \n      assert state == TRANSACT;\n      currentAccount.withdraw(value);\n\
+      \   }\n\n   /** \n      Deposits amount to current account. \n      (Precondition: state is TRANSACT)\n      @param\
+      \ value the amount to deposit\n   */\n   public void deposit(double value)\n   {  \n      assert state == TRANSACT;\n\
+      \      currentAccount.deposit(value);\n   }\n   \n   /** \n      Transfers between the current account and the other\
+      \ account\n      of the same customer.\n      (Precondition: state is TRANSACT)\n   */\n   public void transfer(double\
+      \ value)\n   {\n      // TODO\n   }\n   \n   /** \n      Gets the balance of the current account. \n      (Precondition:\
+      \ state is TRANSACT)\n      @return the balance\n   */\n   public double getBalance()\n   {  \n      assert state ==\
+      \ TRANSACT;\n      return currentAccount.getBalance();\n   }   \n\n   /**\n      Moves back to the previous state.\n\
+      \   */\n   public void back()\n   {\n      if (state == TRANSACT)\n         state = ACCOUNT;\n      else if (state ==\
+      \ ACCOUNT)\n         state = PIN;\n      else if (state == PIN)\n         state = START;\n   }\n\n   /**\n      Gets\
+      \ the current state of this ATM.\n      @return the current state\n   */\n   public int getState()\n   {\n      return\
+      \ state;\n   }\n\n   private int state;\n   private int customerNumber;\n   private Customer currentCustomer;\n   private\
+      \ BankAccount currentAccount;\n   private Bank theBank;\n   \n   public static final int START = 1;\n   public static\
+      \ final int PIN = 2;\n   public static final int ACCOUNT = 3;\n   public static final int TRANSACT = 4;\n\n   public\
+      \ static final int CHECKING = 1;\n   public static final int SAVINGS = 2;\n}\n"
+  placeholder: "// TODO: Implement the transfer method. If required, add data fields and\n// modify methods\n\n/**\n   An\
+    \ ATM that accesses a bank.\n*/\npublic class ATM \n{  \n   /**\n      Constructs an ATM for a given bank.\n      @param\
+    \ aBank the bank to which this ATM connects\n   */    \n   public ATM(Bank aBank)\n   {\n      theBank = aBank;\n    \
+    \  reset();\n   }\n\n   /**\n      Resets the ATM to the initial state.\n   */\n   public void reset()\n   {\n      customerNumber\
+    \ = -1;\n      currentAccount = null;\n      state = START;             \n   }\n\n   /** \n      Sets the current customer\
+    \ number \n      and sets state to PIN. \n      (Precondition: state is START)\n      @param number the customer number.\n\
+    \   */\n   public void setCustomerNumber(int number) \n   {\n      assert state == START;\n      customerNumber = number;\n\
+    \      state = PIN;\n   }\n\n   /** \n      Finds customer in bank.\n      If found sets state to ACCOUNT, else to START.\n\
+    \      (Precondition: state is PIN)\n      @param pin the PIN of the current customer\n   */\n   public void selectCustomer(int\
+    \ pin)\n   {  \n      assert state == PIN;\n      currentCustomer \n         = theBank.findCustomer(customerNumber, pin);\n\
+    \      if (currentCustomer == null) \n         state = START;\n      else \n         state = ACCOUNT;\n   }\n   \n   /**\
+    \ \n      Sets current account to checking or savings. Sets \n      state to TRANSACT. \n      (Precondition: state is\
+    \ ACCOUNT or TRANSACT)\n      @param account one of CHECKING or SAVINGS\n   */\n   public void selectAccount(int account)\n\
+    \   {\n      assert state == ACCOUNT || state == TRANSACT;\n      if (account == CHECKING)\n         currentAccount =\
+    \ currentCustomer.getCheckingAccount();\n      else\n         currentAccount = currentCustomer.getSavingsAccount();\n\
+    \      state = TRANSACT;\n   }\n\n   /** \n      Withdraws amount from current account. \n      (Precondition: state is\
+    \ TRANSACT)\n      @param value the amount to withdraw\n   */\n   public void withdraw(double value)\n   {  \n      assert\
+    \ state == TRANSACT;\n      currentAccount.withdraw(value);\n   }\n\n   /** \n      Deposits amount to current account.\
+    \ \n      (Precondition: state is TRANSACT)\n      @param value the amount to deposit\n   */\n   public void deposit(double\
+    \ value)\n   {  \n      assert state == TRANSACT;\n      currentAccount.deposit(value);\n   }\n   \n   /** \n      Transfers\
+    \ between the current account and the other account\n      of the same customer.\n      (Precondition: state is TRANSACT)\n\
+    \   */\n   public void transfer(double value)\n   {\n      // TODO\n   }\n   \n   /** \n      Gets the balance of the\
+    \ current account. \n      (Precondition: state is TRANSACT)\n      @return the balance\n   */\n   public double getBalance()\n\
+    \   {  \n      assert state == TRANSACT;\n      return currentAccount.getBalance();\n   }   \n\n   /**\n      Moves back\
+    \ to the previous state.\n   */\n   public void back()\n   {\n      if (state == TRANSACT)\n         state = ACCOUNT;\n\
+    \      else if (state == ACCOUNT)\n         state = PIN;\n      else if (state == PIN)\n         state = START;\n   }\n\
+    \n   /**\n      Gets the current state of this ATM.\n      @return the current state\n   */\n   public int getState()\n\
+    \   {\n      return state;\n   }\n\n   private int state;\n   private int customerNumber;\n   private Customer currentCustomer;\n\
+    \   private BankAccount currentAccount;\n   private Bank theBank;\n   \n   public static final int START = 1;\n   public\
+    \ static final int PIN = 2;\n   public static final int ACCOUNT = 3;\n   public static final int TRANSACT = 4;\n\n   public\
+    \ static final int CHECKING = 1;\n   public static final int SAVINGS = 2;\n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass
+includes:
+- ATMTester.java
+- Bank.java
+- BankAccount.java
+- Customer.java
+- customers.txt

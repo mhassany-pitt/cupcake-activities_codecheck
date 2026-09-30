@@ -1,0 +1,34 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_python_fillingarrays_5_en
+source: prog.py
+title: Filling 5
+description: Given an integer n, return a list containing 1 2 2 3 3 3 4 4 4 4 ... and finally n repeated n times.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Lists - Simple Exercises
+  - horstmann:Filling
+runtime:
+  language: python
+  version: '3'
+statement: Given an integer n, return a list containing 1 2 2 3 3 3 4 4 4 4 ... and finally n repeated n times.
+elements:
+- type: editable
+  location:
+    snippet: "\n# Given an integer n, return a list containing \n# 1 2 2 3 3 3 4 4 4 4 ... and finally n repeated n times.\n\
+      # You may assume n is 0 or greater.\n\ndef reapeatNumTimes(n):\n   # Your code here...\n"
+  placeholder: "\n# Given an integer n, return a list containing \n# 1 2 2 3 3 3 4 4 4 4 ... and finally n repeated n times.\n\
+    # You may assume n is 0 or greater.\n\ndef reapeatNumTimes(n):\n   # Your code here...\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

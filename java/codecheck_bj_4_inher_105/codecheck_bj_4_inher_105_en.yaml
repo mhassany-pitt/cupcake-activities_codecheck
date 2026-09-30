@@ -1,0 +1,107 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_inher_105_en
+source: Tile.java
+title: Inheritance 105
+description: A Tile class extends Rectangle.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Inheritance
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>A <code>Tile</code> class extends <code>Rectangle</code>. It is to be used for
+      non-overlapping tilings. Your task is to override the <code>translate</code>
+      method so that it moves the tiles not by pixels but by tile dimensions.
+      This figure shows the action of <code>t.translate(1, -2)</code>. </p>
+
+      <p><img src="data:image/png;base64,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" /></p>
+elements:
+- type: editable
+  location:
+    snippet: |
+      /*
+        TODO: Override translate so that it translates by the tile's
+        dimensions, not pixels. For example, translate(1, -2) should move
+        by the full width to the right and twice the height up.
+      */
+
+      import java.awt.Rectangle;
+
+      /**
+         A tile for tiling the plane.
+      */
+      public class Tile extends Rectangle
+      {
+         /**
+            Constructs a tile with given dimensions.
+            @param x the x-coordinate of the top left corner
+            @param y the y-coordinate of the top left corner
+            @param width the width of the tile
+            @param height the height of the tile
+         */
+         public Tile(int x, int y, int width, int height)
+         {
+            super(x, y, width, height);
+         }
+
+
+         // this method is used to check your work
+
+         public static String check(int x, int y, int width, int height, int dx, int dy)
+         {
+            Tile t = new Tile(x, y, width, height);
+            t.translate(dx, dy);
+            return t.toString();
+         }
+      }
+  placeholder: |
+    /*
+      TODO: Override translate so that it translates by the tile's
+      dimensions, not pixels. For example, translate(1, -2) should move
+      by the full width to the right and twice the height up.
+    */
+
+    import java.awt.Rectangle;
+
+    /**
+       A tile for tiling the plane.
+    */
+    public class Tile extends Rectangle
+    {
+       /**
+          Constructs a tile with given dimensions.
+          @param x the x-coordinate of the top left corner
+          @param y the y-coordinate of the top left corner
+          @param width the width of the tile
+          @param height the height of the tile
+       */
+       public Tile(int x, int y, int width, int height)
+       {
+          super(x, y, width, height);
+       }
+
+
+       // this method is used to check your work
+
+       public static String check(int x, int y, int width, int height, int dx, int dy)
+       {
+          Tile t = new Tile(x, y, width, height);
+          t.translate(dx, dy);
+          return t.toString();
+       }
+    }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

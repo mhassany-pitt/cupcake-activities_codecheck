@@ -1,0 +1,57 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_io_103_en
+source: SavingsAccount.java
+title: Input and Output 103
+description: The SavingsAccount class given below is similar to that of Chapter 9.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Input and Output
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>The <code>SavingsAccount</code> class given below is similar to that of
+      Chapter 9. It should be illegal to construct savings accounts with a
+      negative balance or interest rate. Modify the constructor so that an
+      <code>IllegalArgumentException</code> is thrown in these cases.</p>
+elements:
+- type: editable
+  location:
+    snippet: "// TODO: Modify the constructor to throw an IllegalArgumentException\n// if the initial balance or interest\
+      \ rate is < 0\n\n/**\n   An account that earns interest at a fixed rate.\n*/\npublic class SavingsAccount extends BankAccount\n\
+      {  \n   /**\n      Constructs a bank account with a given interest rate.\n      @balance initialBalance the initial\
+      \ balance\n      @param rate the interest rate\n   */\n   private double interestRate;\n     \n   public SavingsAccount(double\
+      \ initialBalance, double rate) \n   {  \n      super(initialBalance);\n      interestRate = rate;\n   }\n\n   /**\n\
+      \      Adds the earned interest to the account balance.\n   */\n   public void addInterest() \n   {  \n      double\
+      \ interest = getBalance() * interestRate / 100;\n      deposit(interest); \n   }\n\n   // This method checks your work.\n\
+      \   \n   public static String check(double initialBalance, double rate)\n   {\n      try\n      {\n         SavingsAccount\
+      \ account = new SavingsAccount(initialBalance, rate);\n         return \"constructed\";\n      }\n      catch (IllegalArgumentException\
+      \ ex)\n      {\n         return \"illegal argument\";\n      }\n      catch (Exception ex)\n      {\n         return\
+      \ \"another error\";\n      }\n   }\n}\n"
+  placeholder: "// TODO: Modify the constructor to throw an IllegalArgumentException\n// if the initial balance or interest\
+    \ rate is < 0\n\n/**\n   An account that earns interest at a fixed rate.\n*/\npublic class SavingsAccount extends BankAccount\n\
+    {  \n   /**\n      Constructs a bank account with a given interest rate.\n      @balance initialBalance the initial balance\n\
+    \      @param rate the interest rate\n   */\n   private double interestRate;\n     \n   public SavingsAccount(double initialBalance,\
+    \ double rate) \n   {  \n      super(initialBalance);\n      interestRate = rate;\n   }\n\n   /**\n      Adds the earned\
+    \ interest to the account balance.\n   */\n   public void addInterest() \n   {  \n      double interest = getBalance()\
+    \ * interestRate / 100;\n      deposit(interest); \n   }\n\n   // This method checks your work.\n   \n   public static\
+    \ String check(double initialBalance, double rate)\n   {\n      try\n      {\n         SavingsAccount account = new SavingsAccount(initialBalance,\
+    \ rate);\n         return \"constructed\";\n      }\n      catch (IllegalArgumentException ex)\n      {\n         return\
+    \ \"illegal argument\";\n      }\n      catch (Exception ex)\n      {\n         return \"another error\";\n      }\n \
+    \  }\n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass
+includes:
+- BankAccount.java

@@ -1,0 +1,52 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_maximumandminimum_7_en
+source: prog.cpp
+title: Maximum and Minimum 7
+description: Given an array of element, find the shortest distance between two consecutive elements.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Arrays - Simple Exercises
+  - horstmann:Maximum and Minimum
+runtime:
+  language: cpp
+  version: '17'
+statement: "<p>Given an array of elements, find the smallest \ndifference between two consecutive elements.\nThe distance\
+  \ between elements cannot be negative,\nso you will need to use the <code>abs</code> function.\n</p>\n<p>The comparisons\
+  \ <b>do not</b> wrap around, \n   so do not compare the difference between the \n   first and last elements.\n   If the\
+  \ array has 1 or fewer elements, the \n   minimum distance is 0.\n</p>"
+elements:
+- type: locked
+  location:
+    snippet: |
+      #include <cstdlib> // abs
+      using namespace std;
+      /**
+         Find smallest difference between consecutive elements.
+         @param arr the array to search
+         @param size the size of the array
+         @return the smallest difference, 0 if size < 2.
+      */
+      int find_smallest_difference(const int arr[], int size)
+      {
+- type: editable
+  location:
+    snippet: "\n   \n\n"
+  placeholder: "\n   \n\n"
+- type: locked
+  location:
+    snippet: |
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

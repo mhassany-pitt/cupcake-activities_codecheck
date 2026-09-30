@@ -1,0 +1,102 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_class2_102_en
+source: SwapTester.java
+title: Designing Classes 102
+description: A Java method cannot update primitive type parameters.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Designing Classes
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>A Java method cannot update primitive
+      type parameters. For example, the following method does not work as
+      intended:</p>
+
+      <pre>public class SwapTester
+  {
+     public static void falseSwap(int a, int b) // doesn't work
+     {
+        int temp = a;
+        a = b;
+        b = temp;
+     }
+
+     public static void main(String[] args)
+     {
+        int x = 3;
+        int y = 4;
+        falseSwap(x, y);
+        System.out.println(x + " " + y);
+        System.out.println("Expected: 4 3"); // test fails
+     }
+  }</pre>
+
+      <p>Your task is to implement a method <code>trueSwap</code> that swaps two
+      values that were placed into an array.</p>
+elements:
+- type: editable
+  location:
+    snippet: |
+      public class SwapTester
+      {
+         /**
+            Swaps two values
+            @param array an array of length 2 containing the
+            values to be swapped
+         */
+         public static void trueSwap(int[] array)
+         {
+            // TODO: Complete
+            . . .
+         }
+
+         public static void main(String[] args)
+         {
+            int[] xy = new int[2];
+            xy[0] = 3;
+            xy[1] = 4;
+            // TODO: call trueSwap and print swapped values
+            . . .
+            System.out.println("Expected: 4 3");
+         }
+      }
+  placeholder: |
+    public class SwapTester
+    {
+       /**
+          Swaps two values
+          @param array an array of length 2 containing the
+          values to be swapped
+       */
+       public static void trueSwap(int[] array)
+       {
+          // TODO: Complete
+          . . .
+       }
+
+       public static void main(String[] args)
+       {
+          int[] xy = new int[2];
+          xy[0] = 3;
+          xy[1] = 4;
+          // TODO: call trueSwap and print swapped values
+          . . .
+          System.out.println("Expected: 4 3");
+       }
+    }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

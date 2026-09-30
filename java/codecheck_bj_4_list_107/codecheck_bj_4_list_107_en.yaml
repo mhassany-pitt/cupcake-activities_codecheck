@@ -1,0 +1,46 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_list_107_en
+source: LinkedListUtil.java
+title: Linear Data Structures 107
+description: Implement a method that adds an element to the beginning of a linked list and another at the end.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Linear Data Structures
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>
+  Implement a method that adds an element to the beginning of a linked list and another at the end.
+  </p>
+elements:
+- type: editable
+  location:
+    snippet: "import java.util.LinkedList;\nimport java.util.ListIterator;\n\npublic class LinkedListUtil\n{\n   /**\n   \
+      \   Adds an element to the front and another to the back of a linked list.\n      @param list a linked list\n      @param\
+      \ front the element to add to the front\n      @param back the element to add to the back\n   */\n   public static void\
+      \ processList(LinkedList<String> list, String front, String back)\n   {\n      // Your work here\n   }\n \n   // This\
+      \ method is used to check your work\n   public static LinkedList<String> check(String[] values, String s1, String s2)\n\
+      \   {\n      LinkedList<String> list = new LinkedList<String>();\n      for (String s : values) list.addLast(s);\n\n\
+      \      processList(list, s1, s2);\n      return list;\n   }\n}\n"
+  placeholder: "import java.util.LinkedList;\nimport java.util.ListIterator;\n\npublic class LinkedListUtil\n{\n   /**\n \
+    \     Adds an element to the front and another to the back of a linked list.\n      @param list a linked list\n      @param\
+    \ front the element to add to the front\n      @param back the element to add to the back\n   */\n   public static void\
+    \ processList(LinkedList<String> list, String front, String back)\n   {\n      // Your work here\n   }\n \n   // This\
+    \ method is used to check your work\n   public static LinkedList<String> check(String[] values, String s1, String s2)\n\
+    \   {\n      LinkedList<String> list = new LinkedList<String>();\n      for (String s : values) list.addLast(s);\n\n \
+    \     processList(list, s1, s2);\n      return list;\n   }\n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

@@ -1,0 +1,54 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_fundat_105_en
+source: Timer.java
+title: Fundamental Data Types 105
+description: The following timer class measures the total time that has elapsed after timing a number of events.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Fundamental Data Types
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>The following timer class measures the total time that has elapsed
+      after timing a number of events. Your job is to implement the <code>add</code>
+      method so that it correctly updates the <code>hours</code> and
+      <code>minutes</code> fields. For example, consider this sequence of
+      statements:</p>
+      <pre>Timer t = new Timer();
+  t.add(40); // 40 minutes
+  t.add(50); // another 50 minutes
+  System.out.println(t.getTotal()); // prints 1:30, one hour and 30 minutes</pre>
+elements:
+- type: editable
+  location:
+    snippet: "/**\n   A timer keeps tracks of the total elapsed time.\n*/\npublic class Timer\n{\n   private int hours;\n\
+      \   private int minutes;\n\n   /**\n      Construct a timer with 0:0O elapsed time\n   */\n   public Timer()\n   {\n\
+      \      hours = 0;\n      minutes = 0;\n   }\n   \n   /**\n      Adds a given number of minutes to the elapsed time.\n\
+      \      @param minutesToAdd the number of minutes (>=0; may be larger than 60)\n   */\n   public void add(int minutesToAdd)\n\
+      \   {\n      // your work here\n      \n      \n      \n   }\n   \n   /**\n      Gets the total elapsed time. \n   \
+      \   @return a string describing the total time in the format h:mm, \n      with mm < 60\n   */\n   public String getTotal()\n\
+      \   {\n      return String.format(\"%d:%02d\", hours, minutes);\n   }\n}\n"
+  placeholder: "/**\n   A timer keeps tracks of the total elapsed time.\n*/\npublic class Timer\n{\n   private int hours;\n\
+    \   private int minutes;\n\n   /**\n      Construct a timer with 0:0O elapsed time\n   */\n   public Timer()\n   {\n \
+    \     hours = 0;\n      minutes = 0;\n   }\n   \n   /**\n      Adds a given number of minutes to the elapsed time.\n \
+    \     @param minutesToAdd the number of minutes (>=0; may be larger than 60)\n   */\n   public void add(int minutesToAdd)\n\
+    \   {\n      // your work here\n      \n      \n      \n   }\n   \n   /**\n      Gets the total elapsed time. \n     \
+    \ @return a string describing the total time in the format h:mm, \n      with mm < 60\n   */\n   public String getTotal()\n\
+    \   {\n      return String.format(\"%d:%02d\", hours, minutes);\n   }\n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass
+includes:
+- TimerTester.java

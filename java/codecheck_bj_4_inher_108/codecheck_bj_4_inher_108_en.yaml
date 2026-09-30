@@ -1,0 +1,60 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_inher_108_en
+source: Element.java
+title: Inheritance 108
+description: Enumerated types in Java are quite powerful, in that they can contain methods and instance variables.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Inheritance
+runtime:
+  language: java
+  version: '17'
+statement: "<p>Enumerated types in Java are quite powerful, in that they can contain methods and instance variables.  An enum\
+  \ type class automatically has a static <code>values</code>\n\tmethod added by the compiler that returns an array containing\
+  \ all of the values of the enum in the order in which they were declared.</p>\n\t<p>You will complete the <code>Elements</code>\
+  \ enumeration which declares elements with their symbols and melting points. Your tasks are as follows:</p>\n    <ul>\n\
+  \    <li>Complete the declaration of the <code>Elements</code> enum class using the table of elements given below</li>\n\
+  \    <li>Complete the <code>getMeltedElements</code> method that returns a list of all elements that will melt at a given\
+  \ temperature.</li>\n    </ul>\n<p>Table of melting points:</p>\n<table border=\"1\">\n<tr align=\"center\">\n\t<td>Element</td>\n\
+  \t<td>Symbol</td>\n\t<td>Melting Point</td>\n</tr>\n<tr align=\"center\">\n\t<td>Hydrogen</td>\n\t<td>H</td>\n\t<td>-258.975</td>\n\
+  </tr>\n<tr align=\"center\">\n\t<td>Oxygen</td>\n\t<td>O</td>\n\t<td>-222.65</td>\n</tr>\n<tr align=\"center\">\n\t<td>Nitrogen</td>\n\
+  \t<td>N</td>\n\t<td>-209.86</td>\n</tr>\n<tr align=\"center\">\n\t<td>Chlorine</td>\n\t<td>Cl</td>\n\t<td>-100.84</td>\n\
+  </tr>\n<tr align=\"center\">\n\t<td>Mercury</td>\n\t<td>Hg</td>\n\t<td>-38.72</td>\n</tr>\n<tr align=\"center\">\n\t<td>Potassium</td>\n\
+  \t<td>K</td>\n\t<td>63.35</td>\n</tr>\n<tr align=\"center\">\n\t<td>Sodium</td>\n\t<td>Na</td>\n\t<td>98.0</td>\n</tr>\n\
+  </table>"
+elements:
+- type: editable
+  location:
+    snippet: "import java.util.ArrayList;\n\n/**\n   Element enumeration defines elements, their symbols, and their melting\
+      \ points.\n*/\n\npublic enum Element\n{\n   // TODO: Define enumerated values for each entry in the table\n\n   private\
+      \ String symbol;\n   private double meltingPoint;\n\n   // TODO: Complete the constructor\n   Element (String aSymbol,\
+      \ double aMeltingPoint)\n   {\n\n\n   }\n\n   public double getMeltingPoint()\n   {\n      return meltingPoint;\n  \
+      \ }\n\n   public String toString()\n   {\n      return symbol;\n   }\n   \n   //TODO: complete the getMeltedElements\
+      \ method.\n   /**\n      Returns a list of elements whose melting points\n      are less than or equal to a given temperature.\n\
+      \      @param boundaryTemp the cutoff temperature value\n      @return a list of elements that will melt at the boundary\
+      \ temperature\n   */\n   public static ArrayList<Element> getMeltedElements(double boundaryTemp)\n   {\n\n   }   \n\
+      }\n"
+  placeholder: "import java.util.ArrayList;\n\n/**\n   Element enumeration defines elements, their symbols, and their melting\
+    \ points.\n*/\n\npublic enum Element\n{\n   // TODO: Define enumerated values for each entry in the table\n\n   private\
+    \ String symbol;\n   private double meltingPoint;\n\n   // TODO: Complete the constructor\n   Element (String aSymbol,\
+    \ double aMeltingPoint)\n   {\n\n\n   }\n\n   public double getMeltingPoint()\n   {\n      return meltingPoint;\n   }\n\
+    \n   public String toString()\n   {\n      return symbol;\n   }\n   \n   //TODO: complete the getMeltedElements method.\n\
+    \   /**\n      Returns a list of elements whose melting points\n      are less than or equal to a given temperature.\n\
+    \      @param boundaryTemp the cutoff temperature value\n      @return a list of elements that will melt at the boundary\
+    \ temperature\n   */\n   public static ArrayList<Element> getMeltedElements(double boundaryTemp)\n   {\n\n   }   \n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass
+includes:
+- ElementTester.java

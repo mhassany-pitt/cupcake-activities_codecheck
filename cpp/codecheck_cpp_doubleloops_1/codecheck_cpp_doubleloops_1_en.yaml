@@ -1,0 +1,59 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_doubleloops_1_en
+source: prog.cpp
+title: Double Loops 1
+description: Given two arrays a and b, remove all elements of b from a.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Arrays - Simple Exercises
+  - horstmann:Double Loops
+runtime:
+  language: cpp
+  version: '17'
+statement: "Given two arrays <code>a</code> and <code>b</code>, \nremove all elements of <code>b</code> from <code>a</code>.\n\
+  Return the new size of <code>a</code>."
+elements:
+- type: locked
+  location:
+    snippet: |
+      #include <iostream>
+      using namespace std;
+
+      /**
+         Remove all elements in b from a.
+         @param a the first array of int.
+         @param a_size the size of the first array.
+         @param b the second array.
+         @param b_size the size of the second array.
+         @return the size of a after removing elements.
+      */
+      int remove_b_from_a(int a[], int a_size, const int b[], int b_size)
+      {
+- type: editable
+  location:
+    snippet: |2+
+
+
+
+  placeholder: |2+
+
+
+
+- type: locked
+  location:
+    snippet: |
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

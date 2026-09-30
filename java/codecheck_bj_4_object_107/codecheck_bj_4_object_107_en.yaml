@@ -1,0 +1,37 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_object_107_en
+source: PasswordTester.java
+title: Objects 107
+description: 'A stronger password can be created by replacing characters with similar-looking symbols: e becomes 3, i becomes
+  1, a becomes @, and s becomes $.'
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Objects
+runtime:
+  language: java
+  version: '17'
+statement: '<p>A stronger password can be created by replacing characters with similar-looking symbols: e becomes 3, i becomes
+  1, a becomes @, and s becomes $.</p>'
+elements:
+- type: editable
+  location:
+    snippet: "public class PasswordTester\n{\n   public static void main(String[] args)\n   {\n      String originalPassword=\"\
+      asecretid\";\n\n      // Your work here\n      \n      String modifiedPassword = ...\n            \n      System.out.println(modifiedPassword);\n\
+      \      // Also print out what you expect\n      System.out.println(\"Expected: ...\");\n   }\n}\n"
+  placeholder: "public class PasswordTester\n{\n   public static void main(String[] args)\n   {\n      String originalPassword=\"\
+    asecretid\";\n\n      // Your work here\n      \n      String modifiedPassword = ...\n            \n      System.out.println(modifiedPassword);\n\
+    \      // Also print out what you expect\n      System.out.println(\"Expected: ...\");\n   }\n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

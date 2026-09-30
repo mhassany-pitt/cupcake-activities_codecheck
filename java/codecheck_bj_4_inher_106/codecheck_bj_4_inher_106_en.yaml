@@ -1,0 +1,44 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_inher_106_en
+source: Auto.java
+title: Inheritance 106
+description: All vehicles used for transportation in the U.S. must have identification, which varies according to the type
+  of vehicle.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Inheritance
+runtime:
+  language: java
+  version: '17'
+statement: "<p>All vehicles used for transportation in the U.S. must have identification, which varies according to the type\
+  \ of vehicle.  For example,\n\tall automobiles have a unique Vehicle Identification Number (VIN) assigned by the manufacturer,\
+  \ plus a license plate number assigend by\n\tthe state in which the auto is registerd.</p>\n\t<p>Modify the <code>Auto</code>\
+  \ class to include an instance variable for the license plate number. Implement the constructor so that an <code>Auto</code>\
+  \ can be constructed with a VIN and a license plate number.</p>\n\t<p>Override the <code>getID()</code> method to return\
+  \ the id of the auto as shown in this format: \n\t<code>VIN=1234567890,plate=ABC123</code> (without any spaces).</p>"
+elements:
+- type: editable
+  location:
+    snippet: "/**\n   Represents an automobile.\n*/\npublic class Auto // TODO: Inherit from Vehicle\n{\n   // TODO: Declare\
+      \ instance variables\n   \n   public Auto(String vin, String plate)\n   {\n      // TODO: Complete the constructor\n\
+      \   }\n\n   // TODO:  implement the getID() method for autos\n}\n"
+  placeholder: "/**\n   Represents an automobile.\n*/\npublic class Auto // TODO: Inherit from Vehicle\n{\n   // TODO: Declare\
+    \ instance variables\n   \n   public Auto(String vin, String plate)\n   {\n      // TODO: Complete the constructor\n \
+    \  }\n\n   // TODO:  implement the getID() method for autos\n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass
+includes:
+- Vehicle.java
+- VehicleTester.java

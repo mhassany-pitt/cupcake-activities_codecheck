@@ -1,0 +1,55 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_twoanswers_5_en
+source: prog.cpp
+title: Two Answers 5
+description: Given an array of integers, return an array of length 2, each being an array.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Arrays - Simple Exercises
+  - horstmann:Two Answers
+runtime:
+  language: cpp
+  version: '17'
+statement: "Given a <code>vector</code> of integers, return a <code>vector&lt;vector&lt;int&gt; &gt;</code>\nof size 2. The\
+  \ first one holds the elements with even \npositions, and the second one holds the elements with odd \npositions in the\
+  \ original <code>vector</code>."
+elements:
+- type: locked
+  location:
+    snippet: |
+      #include <vector>
+      using namespace std;
+
+      /**
+         Split a vector into elements at odd and even indices.
+         @param numbers the original vector
+         @return a vector or vector<int>. First is even, the second odd.
+      */
+      vector<vector<int> > split_even_odd_indices(const vector<int>& numbers)
+      {
+- type: editable
+  location:
+    snippet: |2
+         // Your code here...
+  placeholder: |2
+       // Your code here...
+- type: locked
+  location:
+    snippet: |
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass
+includes:
+- Tester.cpp

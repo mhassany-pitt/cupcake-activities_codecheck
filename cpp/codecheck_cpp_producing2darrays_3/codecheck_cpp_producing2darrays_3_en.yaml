@@ -1,0 +1,55 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_producing2darrays_3_en
+source: prog.cpp
+title: Producing 2D Arrays 3
+description: Repeat the preceding exercise where the array dimensions need not match, filling positions that exist in neither
+  array with 0.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Two-Dimensional Arrays
+  - horstmann:Producing 2D Arrays
+runtime:
+  language: cpp
+  version: '17'
+statement: "<p>Given two <code>vector&lt;vector&lt;int&gt;&gt;</code>, <code>a</code>\n   and <code>b</code>, return a <code>vector</code>\n\
+  \   where the height is the maximum height of <code>a</code> and <code>b</code>\n   and the width is the maximum width of\
+  \ <code>a</code> and <code>b</code>, \n   and where each element is the greater of the corresponding elements in the \n\
+  \   two arrays. Fill positions that exist in neither array with 0.\n</p>"
+elements:
+- type: locked
+  location:
+    snippet: |
+      #include <vector>
+      using namespace std;
+      /**
+         Combine two array filling each element with the max of the matching element.
+         @param a the first vector.
+         @param b the second vector.
+         @return the combined vectors.
+      */
+      vector<vector<int>> max_of_mismatched(const vector<vector<int>>& a, const vector<vector<int>>& b)
+      {
+- type: editable
+  location:
+    snippet: |2
+         // Your code here...
+  placeholder: |2
+       // Your code here...
+- type: locked
+  location:
+    snippet: |
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

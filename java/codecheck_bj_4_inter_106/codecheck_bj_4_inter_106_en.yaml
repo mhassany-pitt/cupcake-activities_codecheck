@@ -1,0 +1,40 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_inter_106_en
+source: RectangleManager.java
+title: Interfaces 106
+description: Complete the RectangleManager class below so that it implements the given Adjuster interface.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Interfaces
+runtime:
+  language: java
+  version: '17'
+statement: "<p>Complete the <code>RectangleManager</code> class below so that it implements the given\n    <code>Adjuster</code>\
+  \ interface. The implementation should use the <code>h</code> and <code>w</code> parameters \n    as the incremental amounts\
+  \ by which the <code>o</code> object's current height and width are to be \n    changed, respectively.  </p>\n\t<p>For example,\
+  \ if the original rectangle has width of 10 and height of 20, and the \n\tincrements are 5 and 7 for width and height respectively,\
+  \ the new dimensions of the\n\trectangle should be width of 15 and height of 27.</p>"
+elements:
+- type: editable
+  location:
+    snippet: "/**\n   Manages modifications to rectangle objects\n*/\n\nimport java.awt.Rectangle;\npublic class RectangleManager\
+      \ implements Adjuster\n{\n\n   // TODO:  Implement the adjustDimensions method from the\n   // interface.\n   \n}\n"
+  placeholder: "/**\n   Manages modifications to rectangle objects\n*/\n\nimport java.awt.Rectangle;\npublic class RectangleManager\
+    \ implements Adjuster\n{\n\n   // TODO:  Implement the adjustDimensions method from the\n   // interface.\n   \n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass
+includes:
+- Adjuster.java
+- RectangleManagerTester.java

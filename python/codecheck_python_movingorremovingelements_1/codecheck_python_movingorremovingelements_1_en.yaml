@@ -1,0 +1,37 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_python_movingorremovingelements_1_en
+source: prog.py
+title: Moving or Removing Elements 1
+description: Given a list of integers and an integer n, remove all elementts &gt; n or &lt; -n.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Lists - Simple Exercises
+  - horstmann:Moving or Removing Elements
+runtime:
+  language: python
+  version: '3'
+statement: Given a list of integers and an integer n, remove all elementts &gt; n or &lt; -n. Shift all remaining elements
+  to the front, and return the number of removed elements.
+elements:
+- type: editable
+  location:
+    snippet: "\n# Given a list of integers and an integer n, remove all \n# elements > n or < -n. Shift all remaining elements\
+      \ to the front, \n# and place zeroes at the end of the list to replace the removed\n# elements.\n\ndef removeElementsInRange(arr,\
+      \ n):\n   # Your code here...\n   return arr\n"
+  placeholder: "\n# Given a list of integers and an integer n, remove all \n# elements > n or < -n. Shift all remaining elements\
+    \ to the front, \n# and place zeroes at the end of the list to replace the removed\n# elements.\n\ndef removeElementsInRange(arr,\
+    \ n):\n   # Your code here...\n   return arr\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

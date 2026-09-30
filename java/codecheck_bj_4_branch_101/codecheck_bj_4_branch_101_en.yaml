@@ -1,0 +1,101 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_branch_101_en
+source: Employee.java
+title: Branches 101
+description: Employees get paid time and a half for the weekly work hours in excess of 40 hours.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Branches
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>Employees get paid <q>time and a half</q> for the weekly work
+      hours in excess of 40 hours. For example, an employee making $10/hour and
+      working 50 hours in a given week gets paid $10 for the first 40 hours and
+      $15 for the remaining 10 hours, for a total weekly pay of $550.</p>
+elements:
+- type: editable
+  location:
+    snippet: |
+      public class Employee
+      {
+         private double salary;
+         private static final int OVERTIME_THRESHOLD = 40;
+
+         /**
+            Constructs an employee with a given salary
+            @param anHourlySalary the hourly salary of this employee
+         */
+         public Employee(double anHourlySalary)
+         {
+            salary = anHourlySalary;
+         }
+
+         /**
+            Computes the wage for a given week.
+            @param hoursWorked the hours worked in the week
+            @return the wage earned in that week, taking overtime into account
+         */
+         public double weeklyWage(int hoursWorked)
+         {
+            // your work here
+
+         }
+
+         // this method is used to check your work
+
+         public static double check(int hoursWorked)
+         {
+            Employee emily = new Employee(10); // $10/hour
+            return emily.weeklyWage(hoursWorked);
+         }
+      }
+  placeholder: |
+    public class Employee
+    {
+       private double salary;
+       private static final int OVERTIME_THRESHOLD = 40;
+
+       /**
+          Constructs an employee with a given salary
+          @param anHourlySalary the hourly salary of this employee
+       */
+       public Employee(double anHourlySalary)
+       {
+          salary = anHourlySalary;
+       }
+
+       /**
+          Computes the wage for a given week.
+          @param hoursWorked the hours worked in the week
+          @return the wage earned in that week, taking overtime into account
+       */
+       public double weeklyWage(int hoursWorked)
+       {
+          // your work here
+
+       }
+
+       // this method is used to check your work
+
+       public static double check(int hoursWorked)
+       {
+          Employee emily = new Employee(10); // $10/hour
+          return emily.weeklyWage(hoursWorked);
+       }
+    }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

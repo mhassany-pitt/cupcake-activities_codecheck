@@ -1,0 +1,43 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_python_loopsalongaroworcolumn_3_en
+source: prog.py
+title: Loops Along a Row or Column 3
+description: Given a two-dimensional array of integers, an index, and a string R or C, return the sum of the elements in that
+  row or column.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Two-Dimensional Arrays
+  - horstmann:Loops Along a Row or Column
+runtime:
+  language: python
+  version: '3'
+statement: Given a two-dimensional array of integers, an index, and a string R or C, return the sum of the elements in that
+  row or column.
+elements:
+- type: editable
+  location:
+    snippet: "\n# Given a two-dimensional array of integers, an index, and a string \n# containing the letter R or C, return\
+      \ the sum of the elements in \n# that row or column. For example, if the input is [[1,2,3],[4,5,6]] with\n# an index\
+      \ of 0 and string of 'R', the result would be 6 (because 1 + 2 + 3 = 6).\n# In the same case, if the string was 'C'\
+      \ instead, the results would be 5\n# because 1 + 4 = 5. You may assume that both dimensions of the array\n# have at\
+      \ least one element and that the given index exists for the row/column.\n\ndef sumRowOrCol(arr, index, rowOrCol):\n\
+      \   # Your code here...\n"
+  placeholder: "\n# Given a two-dimensional array of integers, an index, and a string \n# containing the letter R or C, return\
+    \ the sum of the elements in \n# that row or column. For example, if the input is [[1,2,3],[4,5,6]] with\n# an index of\
+    \ 0 and string of 'R', the result would be 6 (because 1 + 2 + 3 = 6).\n# In the same case, if the string was 'C' instead,\
+    \ the results would be 5\n# because 1 + 4 = 5. You may assume that both dimensions of the array\n# have at least one element\
+    \ and that the given index exists for the row/column.\n\ndef sumRowOrCol(arr, index, rowOrCol):\n   # Your code here...\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

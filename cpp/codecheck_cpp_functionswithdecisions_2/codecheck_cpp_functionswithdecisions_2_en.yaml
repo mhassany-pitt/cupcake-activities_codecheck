@@ -1,0 +1,51 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_functionswithdecisions_2_en
+source: prog.cpp
+title: Branches with Functions 2
+description: Write a function that checks whether two points with coordinates x1, y1 and x2, y2 are in the same quadrant.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Branches
+  - horstmann:Branches with Functions
+runtime:
+  language: cpp
+  version: '17'
+statement: "Write a function that checks whether two points with coordinates \nx1, y1 and x2, y2 are in the same quadrant.\
+  \ The given coordinates \nwill not be on the x- or y-axis."
+elements:
+- type: locked
+  location:
+    snippet: |
+      #include <iostream>
+      using namespace std;
+
+      bool coordinatesInSameQuadrant(double x1, double y1, double x2, double y2)
+      {
+- type: editable
+  location:
+    snippet: |2+
+
+
+
+  placeholder: |2+
+
+
+
+- type: locked
+  location:
+    snippet: |
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

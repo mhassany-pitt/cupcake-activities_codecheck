@@ -1,0 +1,40 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_class_106_en
+source: ClassScheduleTester.java
+title: Classes 106
+description: Your task is to write a tester class for the ClassSchedule class given below.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Classes
+runtime:
+  language: java
+  version: '17'
+statement: <p>Your task is to write a tester class for the <code>ClassSchedule</code> class given below. You should test the
+  <code>getTime</code> and <code>setStartTime</code> methods of the <code>ClassSchedule</code> class.</p>
+elements:
+- type: editable
+  location:
+    snippet: "public class ClassScheduleTester\n{\n   public static void main(String[] args)\n   {\n      ClassSchedule class1\
+      \ = new ClassSchedule(\"Intro to Java\",\"MWF\",\"9:00\", \"9:50\",\"Turing 101\");\n\n      // your work here - test\
+      \ the getTime method\n\n      ClassSchedule class2 = new ClassSchedule(\"Operating Systems\",\"TTh\",\"12:30\",\"13:45\"\
+      ,\"Turing 307\"); \n      // your work here - test the setStartTime method\n   }\n}\n"
+  placeholder: "public class ClassScheduleTester\n{\n   public static void main(String[] args)\n   {\n      ClassSchedule\
+    \ class1 = new ClassSchedule(\"Intro to Java\",\"MWF\",\"9:00\", \"9:50\",\"Turing 101\");\n\n      // your work here\
+    \ - test the getTime method\n\n      ClassSchedule class2 = new ClassSchedule(\"Operating Systems\",\"TTh\",\"12:30\"\
+    ,\"13:45\",\"Turing 307\"); \n      // your work here - test the setStartTime method\n   }\n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass
+includes:
+- ClassSchedule.java

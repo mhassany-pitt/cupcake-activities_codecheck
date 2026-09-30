@@ -1,0 +1,55 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_doubleloops_7_en
+source: prog.cpp
+title: Double Loops 7
+description: Given an array of integers, return an array of arrays of length 2, containing each unique element together with
+  its frequency.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Arrays - Simple Exercises
+  - horstmann:Double Loops
+runtime:
+  language: cpp
+  version: '17'
+statement: |-
+  <p>Given a <code>vector&lt;int&gt;</code>, return a <code>vector&lt;vector&lt;int&gt;&gt;</code>
+     where each element contains a value along with its frequency.
+  </p>
+elements:
+- type: locked
+  location:
+    snippet: |
+      #include <vector>
+      using namespace std;
+
+      /**
+         Return a frequency count of all elements.
+         @param v the vector to process.
+         @return the frequency counts as a vector<vector<int>>
+      */
+      vector<vector<int>> fequency_count(const vector<int>& v)
+      {
+- type: editable
+  location:
+    snippet: |2
+         // Your code here...
+  placeholder: |2
+       // Your code here...
+- type: locked
+  location:
+    snippet: |
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

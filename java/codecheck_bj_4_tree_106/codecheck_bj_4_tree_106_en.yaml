@@ -1,0 +1,41 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_tree_106_en
+source: SetUtil.java
+title: Tree Structures 106
+description: Implement a method that receives two arrays of strings and determines which words are unique to each.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Tree Structures
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>
+  Implement a method that receives two arrays of strings and determines which words are unique to each.</p>
+elements:
+- type: editable
+  location:
+    snippet: "import java.util.ArrayList;\nimport java.util.Set;\nimport java.util.TreeSet;\n\npublic class SetUtil\n{   \n\
+      \   /**\n      Determine the strings that are unique to words1 and words2\n      @param words1 an array of strings\n\
+      \      @param words2 an array of strings      \n      @param a list of two sets: the words that are in words1 but not\
+      \ word2,\n      and the words that are in words2 but not word1. The sets should be sorted.\n   */\n   public static\
+      \ List<Set<String>> uniqueInEach(String[] words1, String[] words2)\n   {\n      ...      \n   }\n}\n"
+  placeholder: "import java.util.ArrayList;\nimport java.util.Set;\nimport java.util.TreeSet;\n\npublic class SetUtil\n{ \
+    \  \n   /**\n      Determine the strings that are unique to words1 and words2\n      @param words1 an array of strings\n\
+    \      @param words2 an array of strings      \n      @param a list of two sets: the words that are in words1 but not\
+    \ word2,\n      and the words that are in words2 but not word1. The sets should be sorted.\n   */\n   public static List<Set<String>>\
+    \ uniqueInEach(String[] words1, String[] words2)\n   {\n      ...      \n   }\n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

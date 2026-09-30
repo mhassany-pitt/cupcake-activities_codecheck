@@ -1,0 +1,56 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_stringsfindingsubstrings_1_en
+source: prog.cpp
+title: Finding Substrings 1
+description: Given strings s and t, return a list of all positions in which t occurs in s.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Strings
+  - horstmann:Finding Substrings
+runtime:
+  language: cpp
+  version: '17'
+statement: "Given strings s and t, return a vector of all positions in which t occurs in s. For \nexample, if s is \"mississippi\"\
+  \ and t is \"is\", the result should contain 1 and 4 because\n\"is\" starts at index 1 and 4 inside the string \"mississippi\"\
+  . You may assume that t is not empty."
+elements:
+- type: locked
+  location:
+    snippet: |
+      #include <iostream>
+      #include <string>
+      #include <vector>
+      using namespace std;
+
+      vector<int> allPositionsOfT(string s, string t)
+      {
+         vector<int> result;
+- type: editable
+  location:
+    snippet: |2+
+
+
+
+  placeholder: |2+
+
+
+
+- type: locked
+  location:
+    snippet: |2
+         return result;
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

@@ -1,0 +1,40 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_branches_2_en
+source: prog.cpp
+title: Branches Without Functions 2
+description: On a chessboard, positions are marked with a letter between a and h for the column and a number between 1 and
+  8 for the row.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Branches
+  - horstmann:Branches Without Functions
+runtime:
+  language: cpp
+  version: '17'
+statement: "On a chessboard, positions are marked with letters between a and h for the column and a\nnumber between 1 and\
+  \ 8 for the row. \nGive a 2 character input string with a letter (a-h) and a number (1-8), print \"Corner\" if the \nvalue\
+  \ indicates a square on a corner. Print \"Border\" if the value indicates a square on an \nedge of the board. Otherwise,\
+  \ print \"Inside\"."
+elements:
+- type: editable
+  location:
+    snippet: "#include <iostream>\nusing namespace std;\n\nint main()\n{\n\n   string input = \"a1\"; \n\n   string column\
+      \ = input.substr(0, 1);\n   string row = input.substr(1, 1);\n   string output;\n   cout << output << endl;\n   return\
+      \ 0;\n}\n"
+  placeholder: "#include <iostream>\nusing namespace std;\n\nint main()\n{\n\n   string input = \"a1\"; \n\n   string column\
+    \ = input.substr(0, 1);\n   string row = input.substr(1, 1);\n   string output;\n   cout << output << endl;\n   return\
+    \ 0;\n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

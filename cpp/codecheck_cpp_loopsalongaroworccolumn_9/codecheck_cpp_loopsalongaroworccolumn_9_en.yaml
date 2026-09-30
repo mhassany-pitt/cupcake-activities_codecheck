@@ -1,0 +1,52 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_loopsalongaroworccolumn_9_en
+source: prog.cpp
+title: Loops Along a Row or Column 9
+description: Given a two-dimensional square array of integers, return the sum of the elements along both diagonals.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Two-Dimensional Arrays
+  - horstmann:Loops Along a Row or Column
+runtime:
+  language: cpp
+  version: '17'
+statement: "<p>Given a two-dimensional <b>square</b> array of integers, \n return the sum of the elements along both diagonals.\
+  \ \n If there is a center element, do not to count it twice.\n</p>"
+elements:
+- type: locked
+  location:
+    snippet: |
+      const int MAX_COLS = 10;
+      /**
+         Sum the diagonals in a square array.
+         @param arr the array to process.
+         @param rows the rows in the array.
+         @param cols the columns in the array.
+         @return the sum of the diagonals.
+      */
+      int sum_diagonals(const int arr[][MAX_COLS], int rows, int cols)
+      {
+- type: editable
+  location:
+    snippet: |2
+         // Your code here...
+  placeholder: |2
+       // Your code here...
+- type: locked
+  location:
+    snippet: |
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

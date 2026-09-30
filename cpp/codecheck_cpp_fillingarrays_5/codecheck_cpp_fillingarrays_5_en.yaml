@@ -1,0 +1,48 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_fillingarrays_5_en
+source: prog.cpp
+title: Filling 5
+description: Given an integer n, fill an array with 1 2 2 3 3 3 4 4 4 4 ... and finally n repeated n times.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Arrays - Simple Exercises
+  - horstmann:Filling
+runtime:
+  language: cpp
+  version: '17'
+statement: "Given an integer n, fill an array containing \n1 2 2 3 3 3 4 4 4 4 ... and finally n repeated n times. Be sure\
+  \ not to fill past the end of\nthe array. Return the number of elements filled."
+elements:
+- type: locked
+  location:
+    snippet: "#include <iostream>\nusing namespace std;\n\nint repeatNumTimes(int arr[], int arr_size, int n)\n{   \n"
+- type: editable
+  location:
+    snippet: |2+
+
+
+
+  placeholder: |2+
+
+
+
+- type: locked
+  location:
+    snippet: |
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass
+includes:
+- Tester.cpp

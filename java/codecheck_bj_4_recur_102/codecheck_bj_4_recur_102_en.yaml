@@ -1,0 +1,48 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_recur_102_en
+source: ZipperWord.java
+title: Recursion 102
+description: Two strings of equal length can be interlaced like the teeth of a zipper to form a new word.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Recursion
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>Two strings of equal length can be interlaced like the teeth of a
+      zipper to form a new word. For example, interlacing <code>cota</code> and
+      <code>rain</code> yields <code>c<b>r</b>o<b>a</b>t<b>i</b>a<b>n</b></code>. The
+      following class constructs a <code>ZipperWord</code> from two strings. </p>
+
+      <p>Your task is to complete the <code>toString</code> method using recursion.
+      Hint: Concatenate the first letter from each string, follwed by a simpler
+      <code>ZipperWord</code> that is made from the tails of the strings
+      (<code>first.substring(1)</code> and <code>second.substring(1)</code>). </p>
+elements:
+- type: editable
+  location:
+    snippet: "public class ZipperWord\n{\n   public ZipperWord(String word1, String word2)\n   {\n      assert word1.length()\
+      \ == word2.length();\n      first = word1;\n      second = word2;\n   }\n\n   public String toString()\n   {\n     \
+      \ // your work here   \n   }\n\n   private String first;\n   private String second;\n\n   // this method is used to\
+      \ check your work\n\n   public static String check(String word1, String word2)\n   {\n      ZipperWord zippy = new ZipperWord(word1,\
+      \ word2);\n      return zippy.toString();\n   }\n}\n"
+  placeholder: "public class ZipperWord\n{\n   public ZipperWord(String word1, String word2)\n   {\n      assert word1.length()\
+    \ == word2.length();\n      first = word1;\n      second = word2;\n   }\n\n   public String toString()\n   {\n      //\
+    \ your work here   \n   }\n\n   private String first;\n   private String second;\n\n   // this method is used to check\
+    \ your work\n\n   public static String check(String word1, String word2)\n   {\n      ZipperWord zippy = new ZipperWord(word1,\
+    \ word2);\n      return zippy.toString();\n   }\n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

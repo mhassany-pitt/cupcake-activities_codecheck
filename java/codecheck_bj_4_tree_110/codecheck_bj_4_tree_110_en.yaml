@@ -1,0 +1,48 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_tree_110_en
+source: Person.java
+title: Tree Structures 110
+description: The program below will fail to run because the Person class does not implement the Comparable interface.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Tree Structures
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>
+  The program below will fail to run because the <code>Person</code> class does not
+  implement the <code>Comparable</code> interface. Modify the class so that the program
+  runs correctly.
+  </p>
+elements:
+- type: editable
+  location:
+    snippet: "import java.util.Set;\nimport java.util.TreeSet;\n\npublic class Person \n{\n   private String firstName;\n\
+      \   private String lastName;\n\n   public Person(String firstName, String lastName) \n   {\n      this.firstName = firstName;\n\
+      \      this.lastName = lastName; \n   }\n\n   public String toString()\n   {\n      return lastName + \"/\" + firstName;\n\
+      \   }\n      \n   // This method is used to check your work\n   \n   public static Set<String> check(String[] names)\n\
+      \   {\n      Set<String> result = new TreeSet<String>();\n      for (int i = 0; i < names.length; i += 2)\n      {\n\
+      \         Person p = new Person(names[i], names[i + 1]);\n         result.add(p.toString());\n      }\n      return\
+      \ result;\n   }   \n}\n"
+  placeholder: "import java.util.Set;\nimport java.util.TreeSet;\n\npublic class Person \n{\n   private String firstName;\n\
+    \   private String lastName;\n\n   public Person(String firstName, String lastName) \n   {\n      this.firstName = firstName;\n\
+    \      this.lastName = lastName; \n   }\n\n   public String toString()\n   {\n      return lastName + \"/\" + firstName;\n\
+    \   }\n      \n   // This method is used to check your work\n   \n   public static Set<String> check(String[] names)\n\
+    \   {\n      Set<String> result = new TreeSet<String>();\n      for (int i = 0; i < names.length; i += 2)\n      {\n \
+    \        Person p = new Person(names[i], names[i + 1]);\n         result.add(p.toString());\n      }\n      return result;\n\
+    \   }   \n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

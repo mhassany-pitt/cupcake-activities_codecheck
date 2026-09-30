@@ -1,0 +1,50 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_movingorremovingelements_3_en
+source: prog.cpp
+title: Moving or Removing Elements 3
+description: Given an array of integers, move all zeroes to the front.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Arrays - Simple Exercises
+  - horstmann:Moving or Removing Elements
+runtime:
+  language: cpp
+  version: '17'
+statement: Given an array of integers, move all zeroes to the front.
+elements:
+- type: locked
+  location:
+    snippet: |
+      /**
+         Move zeros to the front of the array.
+         @param arr the array.
+         @param size the size of the array.
+      */
+      void move_zeros_to_front(int arr[], int size)
+      {
+- type: editable
+  location:
+    snippet: |2
+         // Your code here...
+  placeholder: |2
+       // Your code here...
+- type: locked
+  location:
+    snippet: |
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass
+includes:
+- Tester.cpp

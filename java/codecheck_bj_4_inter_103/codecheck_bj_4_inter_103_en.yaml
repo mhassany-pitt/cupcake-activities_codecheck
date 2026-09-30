@@ -1,0 +1,86 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_inter_103_en
+source: Word.java
+title: Interfaces 103
+description: Some objects can be doubled, for example a bank account.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Interfaces
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>Some objects can be doubled, for example a bank account. The result
+      would be a bank account with twice the balance. Some objects can't be
+      doubled. For example, there is no double of a dime coin—no twenty
+      cent coin exists. </p>
+
+      <p>The <code>Doublable</code> interface specifies a method for making an
+      object that is double of the current one. It should only be implemented by
+      classes for which doubling makes sense.</p>
+
+      <p>Your job is to modify the <code>Word</code> class of chapter 6 (which is
+      reproduced below, with the bugs fixed) so that it implements the
+      <code>Doublable</code> interface. Doubling a word should repeat its text. For
+      example, </p>
+
+      <pre>new Word("Java").makeDouble()</pre>
+
+      <p>should produce a <code>Word</code> object with text <code>"JavaJava"</code>.
+      </p>
+elements:
+- type: editable
+  location:
+    snippet: "/*\n  TODO: Implement the Doublable interface. A word is doubled by\n  repeating it. For example, new Word(\"\
+      Java\").makeDouble() should\n  return a word containing \"JavaJava\".\n\n  This is the Word class from ch06/debugger\
+      \ (with the bugs fixed).\n*/\n\n\n/**\n   This class describes words in a document.\n*/\npublic class Word\n{\n   /**\n\
+      \      Constructs a word by removing leading and trailing non-\n      letter characters, such as punctuation marks.\n\
+      \      @param s the input string\n   */\n   public Word(String s)\n   {\n      int i = 0;\n      while (i < s.length()\
+      \ && !Character.isLetter(s.charAt(i)))\n         i++;\n      int j = s.length() - 1;\n      while (j > i && !Character.isLetter(s.charAt(j)))\n\
+      \         j--;\n      text = s.substring(i, j + 1);      \n   }\n\n   /**\n      Returns the text of the word, after\
+      \ removal of the\n      leading and trailing non-letter characters.\n      @return the text of the word\n   */\n   public\
+      \ String toString()\n   {\n      return text;\n   }\n\n   /**\n      Counts the syllables in the word.\n      @return\
+      \ the syllable count\n   */\n   public int countSyllables()\n   {\n      int count = 0;\n      int end = text.length()\
+      \ - 1;\n      if (end < 0) return 0; // The empty string has no syllables\n\n      // An e at the end of the word doesn't\
+      \ count as a vowel\n      char ch = Character.toLowerCase(text.charAt(end));\n      if (ch == 'e') end--;\n\n      boolean\
+      \ insideVowelGroup = false;\n      for (int i = 0; i <= end; i++)\n      {\n         ch = Character.toLowerCase(text.charAt(i));\n\
+      \         String vowels = \"aeiouy\";\n         if (vowels.indexOf(ch) >= 0) \n         {\n            // ch is a vowel\n\
+      \            if (!insideVowelGroup)\n            {\n               // Start of new vowel group\n               count++;\
+      \ \n               insideVowelGroup = true;\n            }\n         }\n         else insideVowelGroup = false;\n  \
+      \    }\n\n      // Every word has at least one syllable\n      if (count == 0) \n         count = 1;\n\n      return\
+      \ count;      \n   }\n\n   private String text;\n}\n"
+  placeholder: "/*\n  TODO: Implement the Doublable interface. A word is doubled by\n  repeating it. For example, new Word(\"\
+    Java\").makeDouble() should\n  return a word containing \"JavaJava\".\n\n  This is the Word class from ch06/debugger (with\
+    \ the bugs fixed).\n*/\n\n\n/**\n   This class describes words in a document.\n*/\npublic class Word\n{\n   /**\n    \
+    \  Constructs a word by removing leading and trailing non-\n      letter characters, such as punctuation marks.\n    \
+    \  @param s the input string\n   */\n   public Word(String s)\n   {\n      int i = 0;\n      while (i < s.length() &&\
+    \ !Character.isLetter(s.charAt(i)))\n         i++;\n      int j = s.length() - 1;\n      while (j > i && !Character.isLetter(s.charAt(j)))\n\
+    \         j--;\n      text = s.substring(i, j + 1);      \n   }\n\n   /**\n      Returns the text of the word, after removal\
+    \ of the\n      leading and trailing non-letter characters.\n      @return the text of the word\n   */\n   public String\
+    \ toString()\n   {\n      return text;\n   }\n\n   /**\n      Counts the syllables in the word.\n      @return the syllable\
+    \ count\n   */\n   public int countSyllables()\n   {\n      int count = 0;\n      int end = text.length() - 1;\n     \
+    \ if (end < 0) return 0; // The empty string has no syllables\n\n      // An e at the end of the word doesn't count as\
+    \ a vowel\n      char ch = Character.toLowerCase(text.charAt(end));\n      if (ch == 'e') end--;\n\n      boolean insideVowelGroup\
+    \ = false;\n      for (int i = 0; i <= end; i++)\n      {\n         ch = Character.toLowerCase(text.charAt(i));\n    \
+    \     String vowels = \"aeiouy\";\n         if (vowels.indexOf(ch) >= 0) \n         {\n            // ch is a vowel\n\
+    \            if (!insideVowelGroup)\n            {\n               // Start of new vowel group\n               count++;\
+    \ \n               insideVowelGroup = true;\n            }\n         }\n         else insideVowelGroup = false;\n    \
+    \  }\n\n      // Every word has at least one syllable\n      if (count == 0) \n         count = 1;\n\n      return count;\
+    \      \n   }\n\n   private String text;\n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass
+includes:
+- Doublable.java
+- WordTester.java

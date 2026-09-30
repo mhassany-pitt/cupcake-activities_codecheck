@@ -1,0 +1,49 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_array_102_en
+source: Words.java
+title: Arrays and Array Lists 102
+description: You want to collect all “short” words in an array of words, that is, words with at most three characters.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Arrays and Array Lists
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>You want to collect all “short” words in an array of words,
+      that is, words with at most three characters. Since you don't know in
+      advance how many short words there are, collect them in an array list, not
+      an array.</p>
+
+      <p>For example, if you are passed an array containing the words </p>
+
+      <pre>"Mary", "had", "a", "little", "lamb"</pre>
+
+      <p>you would return an array list containing the words</p>
+
+      <pre>"had", "a"</pre>
+elements:
+- type: editable
+  location:
+    snippet: "import java.util.ArrayList;\n\npublic class Words\n{\n   /**\n      Returns all short words (length <= 3) in\
+      \ an array of words\n      @param words an array of strings\n      @return an array list containing the short words\
+      \ in words\n   */\n   public ArrayList<String> shortWords(String[] words)\n   {\n      // your work here\n      \n \
+      \     \n      \n   }\n}\n"
+  placeholder: "import java.util.ArrayList;\n\npublic class Words\n{\n   /**\n      Returns all short words (length <= 3)\
+    \ in an array of words\n      @param words an array of strings\n      @return an array list containing the short words\
+    \ in words\n   */\n   public ArrayList<String> shortWords(String[] words)\n   {\n      // your work here\n      \n   \
+    \   \n      \n   }\n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

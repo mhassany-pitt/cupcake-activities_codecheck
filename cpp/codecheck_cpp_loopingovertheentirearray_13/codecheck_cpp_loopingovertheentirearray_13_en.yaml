@@ -1,0 +1,54 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_loopingovertheentirearray_13_en
+source: prog.cpp
+title: Looping Over the Entire Array 13
+description: Given a two-dimensional array of integers and a value x, return the positions of all matching elements, as an
+  array of arrays of length 2.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Two-Dimensional Arrays
+  - horstmann:Looping Over the Entire Array
+runtime:
+  language: cpp
+  version: '17'
+statement: "<p>Given a <code>vector&lt;vector&lt;int&gt;&gt; and a value <code>x</code>, \n   return the positions of all\
+  \ matching elements, as an <code>vector&lt;vector&lt;int&gt;&gt;.\n   If <code>x</code> is not found, return <code>[[-1,\
+  \ -1]]</code>.\n</p>"
+elements:
+- type: locked
+  location:
+    snippet: |
+      #include <vector>
+      using namespace std;
+      /**
+         Return all positions of x in the vector v.
+         @param v the vector to search through.
+         @param x the value to search for.
+         @return a 2D vector containing positions.
+      */
+      vector<vector<int>> find_locations_of_x(const vector<vector<int>>& v, int x)
+      {
+- type: editable
+  location:
+    snippet: |2
+         // Your code here...
+  placeholder: |2
+       // Your code here...
+- type: locked
+  location:
+    snippet: |
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

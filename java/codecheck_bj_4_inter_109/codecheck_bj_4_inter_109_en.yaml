@@ -1,0 +1,51 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_inter_109_en
+source: Movement.java
+title: Interfaces 109
+description: Create the Movement interface below and the abstract methods move and getPosition, which are implemented by the
+  Ship and Auto classes.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Interfaces
+runtime:
+  language: java
+  version: '17'
+statement: "<p>Create the <code>Movement</code> interface below and the abstract \n    methods <code>move</code> and <code>getPosition</code>,\
+  \ which are implemented by the <code>Ship</code> and <code>Auto</code> classes.</p>"
+elements:
+- type: editable
+  location:
+    snippet: |
+      /**
+         Implements a generalized interface for
+         types of movement by objects.
+      */
+
+         // TODO: create the interface type and the abstract methods move and getPosition
+         // to support the Ship and Auto classes.
+  placeholder: |
+    /**
+       Implements a generalized interface for
+       types of movement by objects.
+    */
+
+       // TODO: create the interface type and the abstract methods move and getPosition
+       // to support the Ship and Auto classes.
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass
+includes:
+- Auto.java
+- MovementTester.java
+- Ship.java

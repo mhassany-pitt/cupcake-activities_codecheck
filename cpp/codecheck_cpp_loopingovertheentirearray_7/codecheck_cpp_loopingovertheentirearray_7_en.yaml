@@ -1,0 +1,57 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_loopingovertheentirearray_7_en
+source: prog.cpp
+title: Looping Over the Entire Array 7
+description: Given an r x c array of integers, return an (r + 2) x (c + 2) array whose borders are zero and whose interior
+  is the original array.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Two-Dimensional Arrays
+  - horstmann:Looping Over the Entire Array
+runtime:
+  language: cpp
+  version: '17'
+statement: "<p>Given an r x c <code>vector&lt;vector&lt;int&gt;&gt;> return an (r + 2) x (c + 2) \n<code>vector</code> whose\
+  \ borders are zero and whose interior is the original\n<code>vector</code>.\n</p>"
+elements:
+- type: locked
+  location:
+    snippet: |
+      #include <vector>
+      using namespace std;
+
+      /**
+         Create a new 2D vector with zeros around the border.
+         @param v the vector to start with.
+         @return a larger vector with a border of zeros.
+      */
+      vector<vector<int>> add_zero_borders(const vector<vector<int>>& v)
+      {
+- type: editable
+  location:
+    snippet: |2+
+
+
+
+  placeholder: |2+
+
+
+
+- type: locked
+  location:
+    snippet: |
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

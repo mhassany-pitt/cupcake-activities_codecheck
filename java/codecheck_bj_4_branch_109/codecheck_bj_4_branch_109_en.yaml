@@ -1,0 +1,62 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_branch_109_en
+source: Numbers.java
+title: Branches 109
+description: Write a method to test whether three numbers are all different.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Branches
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>Write a method to test whether three numbers are all different. For example, </p>
+  <ul><li>3, 5, and 4 are all different</li><li>3, 3, 4 are not all different</li><li>3, 3, 3 are not all different</li>
+  </ul>
+elements:
+- type: editable
+  location:
+    snippet: |
+      /**
+         A class to compare numbers.
+      */
+      public class Numbers
+      {
+         /**
+            Checks whether three numbers are all different
+            @return true if none of the numbers a, b, or c are equal to another
+         */
+         public boolean allDifferent(int a, int b, int c)
+         {
+            // your work here
+         }
+      }
+  placeholder: |
+    /**
+       A class to compare numbers.
+    */
+    public class Numbers
+    {
+       /**
+          Checks whether three numbers are all different
+          @return true if none of the numbers a, b, or c are equal to another
+       */
+       public boolean allDifferent(int a, int b, int c)
+       {
+          // your work here
+       }
+    }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

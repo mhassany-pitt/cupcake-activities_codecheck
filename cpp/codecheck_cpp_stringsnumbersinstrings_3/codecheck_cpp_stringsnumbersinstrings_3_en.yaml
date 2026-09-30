@@ -1,0 +1,59 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_stringsnumbersinstrings_3_en
+source: prog.cpp
+title: Numbers in Strings 3
+description: Given a string, find all integers inside and return a string that separates them by commas.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Strings
+  - horstmann:Numbers in Strings
+runtime:
+  language: cpp
+  version: '17'
+statement: "Given a string, find all integers inside and return a string that separates them by commas.\nThere should be no\
+  \ leading or\ntrailing commas. For example, if 11 12 and 13 are in the string, you should return \n\"11,12,13\" NOT \"11,12,13,\"\
+  \ or \",11,12,13\". If no integers are found, return an empty string."
+elements:
+- type: locked
+  location:
+    snippet: |
+      #include <iostream>
+      #include <string>
+      using namespace std;
+
+      #include <cctype>
+      #include <iostream>
+      #include <sstream>
+      #include <string>
+      using namespace std;
+
+      string all_integers(string s)
+      {
+- type: editable
+  location:
+    snippet: |2+
+
+
+
+  placeholder: |2+
+
+
+
+- type: locked
+  location:
+    snippet: |
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

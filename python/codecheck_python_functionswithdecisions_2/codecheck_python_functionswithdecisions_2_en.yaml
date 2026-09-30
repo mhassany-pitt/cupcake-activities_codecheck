@@ -1,0 +1,36 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_python_functionswithdecisions_2_en
+source: prog.py
+title: Branches with Functions 2
+description: Write a function that checks whether two points with coordinates x1, y1 and x2, y2 are in the same quadrant.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Branches
+  - horstmann:Branches with Functions
+runtime:
+  language: python
+  version: '3'
+statement: Write a function that checks whether two points with coordinates x1, y1 and x2, y2 are in the same quadrant.
+elements:
+- type: editable
+  location:
+    snippet: "\n# Write a function that checks whether two points with coordinates \n# x1, y1 and x2, y2 are in the same quadrant.\
+      \ The given coordinates \n# will not be on the x- or y-axis.\n\ndef coordinatesInSameQuadrant(x1, y1, x2, y2):\n   #\
+      \ Your code here...\n"
+  placeholder: "\n# Write a function that checks whether two points with coordinates \n# x1, y1 and x2, y2 are in the same\
+    \ quadrant. The given coordinates \n# will not be on the x- or y-axis.\n\ndef coordinatesInSameQuadrant(x1, y1, x2, y2):\n\
+    \   # Your code here...\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

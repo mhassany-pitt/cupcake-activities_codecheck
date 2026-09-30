@@ -1,0 +1,56 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_loopingoverneighbors_4_en
+source: prog.cpp
+title: Looping over Neighbors 4
+description: Given a two-dimensional array of integers, row/column positions r, c, and a value x, fill the given element and
+  its neighbors in the compass directions N E S W NE NW SE SW with x.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Two-Dimensional Arrays
+  - horstmann:Looping over Neighbors
+runtime:
+  language: cpp
+  version: '17'
+statement: "<p>Given a two-dimensional array of integers, row/column positions \n   <code>r</code>, <code>c</code>, and a\
+  \ value <code>x</code>, \n   fill the given element and its neighbors (in the compass directions N \n   E S W NE NW SE SW)\
+  \ with <code>x</code>.\n</p>"
+elements:
+- type: locked
+  location:
+    snippet: |
+      const int MAX_COLS = 10;
+      /**
+         Fill all neighboring elements with a value.
+         @param arr the array to modify.
+         @param rows the rows in the array.
+         @param cols the columns in the array.
+         @param r the row of the element.
+         @param c the column of the element.
+         @param x the value to fill the neighbors with.
+      */
+      void fill_neighbors(int arr[][MAX_COLS], int rows, int cols, int r, int c, int x)
+      {
+- type: editable
+  location:
+    snippet: |2
+         // Your code here...
+  placeholder: |2
+       // Your code here...
+- type: locked
+  location:
+    snippet: |
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

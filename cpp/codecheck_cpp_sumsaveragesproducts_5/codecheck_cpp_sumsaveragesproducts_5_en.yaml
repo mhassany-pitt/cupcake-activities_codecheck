@@ -1,0 +1,52 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_sumsaveragesproducts_5_en
+source: prog.cpp
+title: Products 5
+description: Given an array of strings and a string s, return the average length of all strings containing s.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Arrays - Simple Exercises
+  - horstmann:Sums
+  - horstmann:Averages
+  - horstmann:Products
+runtime:
+  language: cpp
+  version: '17'
+statement: "Given an array of strings and a string s, \nreturn the average length of all strings containing s."
+elements:
+- type: locked
+  location:
+    snippet: "#include <iostream>\n#include <string>\nusing namespace std;\n\n/**\n   Returns the index of the first occurrence\
+      \ of t in s, \n   or -1 if t doesn't occur in s.\n*/\nint find(string s, string t)\n{   \n   for (int i = 0; i + t.length()\
+      \ <= s.length(); i++)\n   {\n      if (s.substr(i, t.length()) == t)\n      {\n         return i;\n      }\n   }\n \
+      \  return -1;\n}\n\ndouble averageLengthOfStringsContaining(const string arr[], int arr_size, string s)\n{\n"
+- type: editable
+  location:
+    snippet: |2+
+
+
+
+  placeholder: |2+
+
+
+
+- type: locked
+  location:
+    snippet: |
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass
+includes:
+- Tester.cpp

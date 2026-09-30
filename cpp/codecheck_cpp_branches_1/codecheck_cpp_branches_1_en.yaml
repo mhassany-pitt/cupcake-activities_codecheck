@@ -1,0 +1,36 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_branches_1_en
+source: prog.cpp
+title: Branches Without Functions 1
+description: Given an input string, print the string with the first and last letter removed if they were equal, or the original
+  string if they were not.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Branches
+  - horstmann:Branches Without Functions
+runtime:
+  language: cpp
+  version: '17'
+statement: "Given an input string, when the first and last letters are equal, \nprint the string with the first and last letters\
+  \ removed. \nOtherwise, print the original string."
+elements:
+- type: editable
+  location:
+    snippet: "#include <iostream>\n#include <string>\nusing namespace std;\n\nint main()\n{\n   string input = \"test\"; \n\
+      \   string output;\n   cout << output << endl;\n   return 0;\n}\n"
+  placeholder: "#include <iostream>\n#include <string>\nusing namespace std;\n\nint main()\n{\n   string input = \"test\"\
+    ; \n   string output;\n   cout << output << endl;\n   return 0;\n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

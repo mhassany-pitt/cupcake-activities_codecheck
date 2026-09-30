@@ -1,0 +1,57 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_branch_107_en
+source: GuessNumber.java
+title: Branches 107
+description: A simple guessing game asks the player to guess a number between 1 and 50.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Branches
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>A simple guessing game asks the player to guess a number between 1 and 50.  Hints are returned depending on how far from the number the guess is.</p>
+  <ul>
+     <li>20 or more above the number: The hint is "Burning Hot"</li>
+     <li>10 to 19 above the number: The hint is "Hot"</li>
+     <li>5 to 9 above the number: The hint is "Warm"</li>
+     <li>4 below the number to 4 above: The hint is "Pleasant"</li>
+     <li>5 to 9 below the number: The hint is "Cool"</li>
+     <li>10 to 19 below the number: The hint is "Cold"</li>
+     <li>20 or more below the number: The hint is "Ice Cold"</li>
+  </ul>
+elements:
+- type: editable
+  location:
+    snippet: "import java.util.Random;\n/**\n   A class to store a number to guess and return a closeness hint\n*/\npublic\
+      \ class GuessNumber\n{\n   private int number;\n\n   /**\n      Construct an GuessNumber with a random value between\
+      \ 1 and 50\n   */\n   public GuessNumber()\n   {\n      Random r = new Random();\n      number = r.nextInt(50) + 1;\n\
+      \   }\n   \n   /**\n      Determine how close the guess is and return a hint\n      @return a string describing, in\
+      \ terms of hotness or coldness, how\n      close the guess is to the number\n   */\n   public String howClose(int guess)\n\
+      \   {\n      // Implement this method, following the task description    \n   \n   \n   }\n\n   // Other methods for\
+      \ playing the game omitted--you need not supply any of them\n   \n   // This method is used to check your work\n   \n\
+      \   public static String check(int number, int guess)\n   {\n      GuessNumber gn = new GuessNumber();\n      gn.number\
+      \ = number;\n      return gn.howClose(guess);\n   }\n}\n"
+  placeholder: "import java.util.Random;\n/**\n   A class to store a number to guess and return a closeness hint\n*/\npublic\
+    \ class GuessNumber\n{\n   private int number;\n\n   /**\n      Construct an GuessNumber with a random value between 1\
+    \ and 50\n   */\n   public GuessNumber()\n   {\n      Random r = new Random();\n      number = r.nextInt(50) + 1;\n  \
+    \ }\n   \n   /**\n      Determine how close the guess is and return a hint\n      @return a string describing, in terms\
+    \ of hotness or coldness, how\n      close the guess is to the number\n   */\n   public String howClose(int guess)\n \
+    \  {\n      // Implement this method, following the task description    \n   \n   \n   }\n\n   // Other methods for playing\
+    \ the game omitted--you need not supply any of them\n   \n   // This method is used to check your work\n   \n   public\
+    \ static String check(int number, int guess)\n   {\n      GuessNumber gn = new GuessNumber();\n      gn.number = number;\n\
+    \      return gn.howClose(guess);\n   }\n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

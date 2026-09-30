@@ -1,0 +1,72 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_object_112_en
+source: ThreeButtonComponent.java
+title: Objects 112
+description: Complete the ThreeButtonComponent class to draw three boxes that look like push buttons.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Objects
+runtime:
+  language: java
+  version: '17'
+statement: "<p>Complete the <code>ThreeButtonComponent</code> class to draw three boxes that look like push buttons.  Each\
+  \ box is a <code>Rectangle</code> drawn in <code>Color.GRAY</code> using the Graphics2D method <code>fill3DRect</code>.\
+  \ Look in the Graphics2D class API for a complete description of this method.  Use <code>true</code> for the value for the\
+  \ <code>boolean raised</code> parameter.  (We will learn more about the <code>boolean</code> data type in Chapter 4.)  The\
+  \ center of each box has a different colored circle, <code>Color.RED</code>, <code>Color.GREEN</code>, or <code>Color.CYAN</code>.\
+  \ \n</p>"
+elements:
+- type: editable
+  location:
+    snippet: |+
+      import javax.swing.JComponent;
+      import java.awt.Color;
+      import java.awt.Graphics;
+      import java.awt.Graphics2D;
+      import java.awt.geom.Ellipse2D;
+
+      public class ThreeButtonComponent extends JComponent
+      {
+         public void paintComponent(Graphics g)
+         {
+            Graphics2D g2 = (Graphics2D) g;
+            // your work here
+            ...
+         }
+      }
+
+
+  placeholder: |+
+    import javax.swing.JComponent;
+    import java.awt.Color;
+    import java.awt.Graphics;
+    import java.awt.Graphics2D;
+    import java.awt.geom.Ellipse2D;
+
+    public class ThreeButtonComponent extends JComponent
+    {
+       public void paintComponent(Graphics g)
+       {
+          Graphics2D g2 = (Graphics2D) g;
+          // your work here
+          ...
+       }
+    }
+
+
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass
+includes:
+- ThreeButtonViewer.java

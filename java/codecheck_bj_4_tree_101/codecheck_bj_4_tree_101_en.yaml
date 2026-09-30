@@ -1,0 +1,60 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_tree_101_en
+source: LetterSet.java
+title: Tree Structures 101
+description: Your task is to produce a set of all letters in a string.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Tree Structures
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>Your task is to produce a set of all letters in a string. Letters are
+      represented as strings of length 1. For example, if you are given a string
+      </p>
+
+      <pre>Mary had a little lamb</pre>
+
+      <p>you should produce the set</p>
+
+      <pre>{ " ", "M", "a", "b", "d", "e", "h", "i", "l", "m", "r", "t", "y" }</pre>
+elements:
+- type: editable
+  location:
+    snippet: |
+      import java.util.Set;
+      import java.util.TreeSet;
+
+      public class LetterSet
+      {
+         public Set<String> makeLetterSet(String str)
+         {
+            // TODO: Complete method
+         }
+      }
+  placeholder: |
+    import java.util.Set;
+    import java.util.TreeSet;
+
+    public class LetterSet
+    {
+       public Set<String> makeLetterSet(String str)
+       {
+          // TODO: Complete method
+       }
+    }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

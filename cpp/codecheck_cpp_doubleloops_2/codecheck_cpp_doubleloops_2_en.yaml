@@ -1,0 +1,49 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_doubleloops_2_en
+source: prog.cpp
+title: Double Loops 2
+description: Given two arrays a and b, return an array that contains all elements occurring in a but not in b.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Arrays - Simple Exercises
+  - horstmann:Double Loops
+runtime:
+  language: cpp
+  version: '17'
+statement: "Given two arrays <code>a</code> and <code>b</code>, \ncopy all elements that occur in <code>a</code> but \nnot\
+  \ in <code>b</code> into <code>result</code>.\nReturn the size of <code>result</code>."
+elements:
+- type: locked
+  location:
+    snippet: "/**\n   Set result to all elements in a which are not in b.\n   @param a the first array.\n   @param a_size\
+      \ size of the first array.\n   @param b the seond array.\n   @param b_size the size of the second array.\n   @param\
+      \ result the array to store the result.\n   @return the size of result.\n*/\nint element_in_a_not_b(const int a[], int\
+      \ a_size, \n                       const int b[], int b_size, int result[])\n{\n"
+- type: editable
+  location:
+    snippet: |2+
+
+
+
+  placeholder: |2+
+
+
+
+- type: locked
+  location:
+    snippet: |
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

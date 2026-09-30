@@ -1,0 +1,40 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_loop_101_en
+source: Words.java
+title: Loops 101
+description: Your task is to write a method getVowels that gets the vowels in a string.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Loops
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>Your task is to write a method <code>getVowels</code> that gets the vowels in a string. For example,
+      the call <code>getVowels("Hello, World!")</code> should return the string
+      <code>"eoo"</code>.</p>
+elements:
+- type: editable
+  location:
+    snippet: "public class Words\n{\n   /**\n      Gets a string consisting of all vowels contained in a given string. Vowels\
+      \ are\n      A E I O U a e i o u\n      @param s a string\n      @return a string with all vowels in s, in the order\
+      \ in which they appear in s\n   */\n   public String getVowels(String s)\n   {\n      // your work here\n      \n  \
+      \    \n      \n      \n      \n\n   }\n}\n"
+  placeholder: "public class Words\n{\n   /**\n      Gets a string consisting of all vowels contained in a given string. Vowels\
+    \ are\n      A E I O U a e i o u\n      @param s a string\n      @return a string with all vowels in s, in the order in\
+    \ which they appear in s\n   */\n   public String getVowels(String s)\n   {\n      // your work here\n      \n      \n\
+    \      \n      \n      \n\n   }\n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

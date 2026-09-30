@@ -1,0 +1,180 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_io_109_en
+source: Vehicle.java
+title: Input and Output 109
+description: The Vehicle class given below is used to represent various types of self-propelled vehicles.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Input and Output
+runtime:
+  language: java
+  version: '17'
+statement: "<p>The <code>Vehicle</code> class given below is used to represent various types\n    of self-propelled vehicles.\
+  \ It should be illegal to construct a Vehicle of type\n    \"truck\" with less than 4 wheels, or a Vehicle of type \"motorcycle\"\
+  \ with \n    any number of wheels except 2. Modify the constructor so that an\n    <code>IllegalArgumentException</code>\
+  \ is thrown if either of these conditions\n    are not met.</p>"
+elements:
+- type: editable
+  location:
+    snippet: |
+      /**
+         Describes a vehicle with a self-contained propulsion unit.
+      */
+      public class Vehicle
+      {
+         private String make;
+         private String model;
+         private String year;
+         private String type;
+         private int wheelCount;
+         private String engineType;
+         private String fuel;
+
+         /**
+            Constructs a vehicle
+            @param aMake the vehicle's make
+            @param aModel the vehicle's model
+            @param aType the type of the vehicle
+            @param numWheels the number of wheels on this vehicle
+            @param aFuel the type of fuel used by this vehicle
+         */
+
+         public Vehicle(String aMake, String aModel, String aYear,
+               String aType, int numWheels, String aEngineType, String aFuel)
+         {
+            /*
+              TODO: Modify the constructor to throw an IllegalArgumentException
+              if the conditions of the problem statement are not met.
+            */
+            make = aMake;
+            model = aModel;
+            year = aYear;
+            type = aType;
+            wheelCount = numWheels;
+            engineType = aEngineType;
+            fuel = aFuel;
+         }
+
+         /**
+            Formats the vehicle information for printing
+            @returns a string sutiable for printing
+         */
+         public String formatForPrinting()
+         {
+            return "Make: " + make + "\n"
+                  + "Model: " + model + "\n"
+                  + "Year: " + year + "\n"
+                  + "Type: " + type + "\n"
+                  + "Number of wheels: " + wheelCount + "\n"
+                  + "Engine type: " + engineType + "\n"
+                  + "Fuel: " + fuel + "\n";
+         }
+
+         /**
+           The following method checks your constructor. We use the exception
+           handling mechanism to determine whether (a) the
+           constructor completed normally, or (b) an exception occurred.
+         */
+         public static String check(String aMake, String aModel, String aYear,
+               String aType, int numWheels, String aEngineType, String aFuel)
+         {
+           try
+           {
+             Vehicle aVehicle = new Vehicle(aMake,aModel,aYear,aType,
+                   numWheels,aEngineType,aFuel);
+             return "Constructor completed normally";
+           }
+           catch (Exception exception)
+           {
+             return "Exception in constructor";
+           }
+         }
+      }
+  placeholder: |
+    /**
+       Describes a vehicle with a self-contained propulsion unit.
+    */
+    public class Vehicle
+    {
+       private String make;
+       private String model;
+       private String year;
+       private String type;
+       private int wheelCount;
+       private String engineType;
+       private String fuel;
+
+       /**
+          Constructs a vehicle
+          @param aMake the vehicle's make
+          @param aModel the vehicle's model
+          @param aType the type of the vehicle
+          @param numWheels the number of wheels on this vehicle
+          @param aFuel the type of fuel used by this vehicle
+       */
+
+       public Vehicle(String aMake, String aModel, String aYear,
+             String aType, int numWheels, String aEngineType, String aFuel)
+       {
+          /*
+            TODO: Modify the constructor to throw an IllegalArgumentException
+            if the conditions of the problem statement are not met.
+          */
+          make = aMake;
+          model = aModel;
+          year = aYear;
+          type = aType;
+          wheelCount = numWheels;
+          engineType = aEngineType;
+          fuel = aFuel;
+       }
+
+       /**
+          Formats the vehicle information for printing
+          @returns a string sutiable for printing
+       */
+       public String formatForPrinting()
+       {
+          return "Make: " + make + "\n"
+                + "Model: " + model + "\n"
+                + "Year: " + year + "\n"
+                + "Type: " + type + "\n"
+                + "Number of wheels: " + wheelCount + "\n"
+                + "Engine type: " + engineType + "\n"
+                + "Fuel: " + fuel + "\n";
+       }
+
+       /**
+         The following method checks your constructor. We use the exception
+         handling mechanism to determine whether (a) the
+         constructor completed normally, or (b) an exception occurred.
+       */
+       public static String check(String aMake, String aModel, String aYear,
+             String aType, int numWheels, String aEngineType, String aFuel)
+       {
+         try
+         {
+           Vehicle aVehicle = new Vehicle(aMake,aModel,aYear,aType,
+                 numWheels,aEngineType,aFuel);
+           return "Constructor completed normally";
+         }
+         catch (Exception exception)
+         {
+           return "Exception in constructor";
+         }
+       }
+    }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

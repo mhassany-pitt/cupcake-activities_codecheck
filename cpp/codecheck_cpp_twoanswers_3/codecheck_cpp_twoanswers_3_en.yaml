@@ -1,0 +1,55 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_twoanswers_3_en
+source: prog.cpp
+title: Two Answers 3
+description: Given an array of integers, return an array of length 2, with the number of positive and the number of negative
+  elements in the array.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Arrays - Simple Exercises
+  - horstmann:Two Answers
+runtime:
+  language: cpp
+  version: '17'
+statement: "Given a array of integers, return the number of \npositive and the number of negative elements in \nthe array.\
+  \ Use the reference parameters\n<code>neg</code> and <code>pos</code> to return\nthe answer. <code>0</code> is neither negative,\n\
+  nor positive."
+elements:
+- type: locked
+  location:
+    snippet: |
+      /**
+         Count positive and negative numbers in arr.
+         @param arr the array to process.
+         @param size the size of the array.
+         @param neg the count of negative numbers.
+         @param pos the count of positive numbers.
+      */
+      void count_positive_and_negative(const int arr[], int size, int& neg, int& pos)
+      {
+- type: editable
+  location:
+    snippet: |2
+         // Your code here...
+  placeholder: |2
+       // Your code here...
+- type: locked
+  location:
+    snippet: |
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass
+includes:
+- Tester.cpp

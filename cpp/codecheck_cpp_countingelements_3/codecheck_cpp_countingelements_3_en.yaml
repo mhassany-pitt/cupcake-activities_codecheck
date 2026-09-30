@@ -1,0 +1,50 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_countingelements_3_en
+source: prog.cpp
+title: Counting Elements 3
+description: Given an array of integers, return the most frequent element.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Arrays - Simple Exercises
+  - horstmann:Counting Elements
+runtime:
+  language: cpp
+  version: '17'
+statement: "Given an array of integers, return the most frequent element. \nIf there is more than one element with maximum\
+  \ frequency, return the one \nthat occurs first in the array. You may assume there is at least one\nelement in the array."
+elements:
+- type: locked
+  location:
+    snippet: |
+      /**
+         Find the most frequently occurring element.
+         @param arr the array to process.
+         @param size the size of the array.
+         @return the (first) most frequently occurring element.
+      */
+      int most_frequent_element(const int arr[], int size)
+      {
+- type: editable
+  location:
+    snippet: |2
+         // Your code here...
+  placeholder: |2
+       // Your code here...
+- type: locked
+  location:
+    snippet: |
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

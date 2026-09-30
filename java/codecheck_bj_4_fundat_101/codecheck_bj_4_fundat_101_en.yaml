@@ -1,0 +1,42 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_fundat_101_en
+source: Angles.java
+title: Fundamental Data Types 101
+description: When you work with angle measurements, you often want them normalized or converted into the range between 0 .
+  . . 359 degrees.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Fundamental Data Types
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>When you work with angle measurements, you often want them
+      <q>normalized</q> or converted into the range between 0 . . . 359
+      degrees. Write a method <code>normalize</code> that takes an angle of any size
+      (positive or negative) and normalizes it. For example,
+      <code>normalize(380)</code> should return 20, and <code>normalize(-30)</code>
+      should return 330. </p>
+elements:
+- type: editable
+  location:
+    snippet: "public class Angles\n{\n   /**\n      Normalizes an angle.\n      @param angle an integer angle (may be negative)\n\
+      \      @return the equivalent angle in the range 0 ... 359\n   */\n   public int normalize(int angle)\n   {\n      //\
+      \ your work here\n      \n      \n      \n      \n   }   \n}\n"
+  placeholder: "public class Angles\n{\n   /**\n      Normalizes an angle.\n      @param angle an integer angle (may be negative)\n\
+    \      @return the equivalent angle in the range 0 ... 359\n   */\n   public int normalize(int angle)\n   {\n      //\
+    \ your work here\n      \n      \n      \n      \n   }   \n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

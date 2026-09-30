@@ -1,0 +1,56 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_python_producing2darrays_6_en
+source: prog.py
+title: Producing 2D Arrays 6
+description: Repeat where the row lengths don't have to match.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Two-Dimensional Arrays
+  - horstmann:Producing 2D Arrays
+runtime:
+  language: python
+  version: '3'
+statement: Repeat where the row lengths don't have to match. Fill the shorter array with zeroes.
+elements:
+- type: editable
+  location:
+    snippet: |2
+
+      # Given two two-dimensional rectangular arrays, return a
+      # two-dimensional array that places them side by side in the
+      # following pattern:
+      # a[0][0] a[0][1] ... a[0][n] b[0][0] b[0][1] ... b[0][m]
+      # a[1][0] a[1][1] ... a[1][n] b[1][0] b[1][1] ... b[1][m].
+      # ...
+      # If the row lengths don't match, fill the values corresponding
+      # to the shorter array with zeroes
+
+      def sideBySide(a, b):
+         # Your code here...
+  placeholder: |2
+
+    # Given two two-dimensional rectangular arrays, return a
+    # two-dimensional array that places them side by side in the
+    # following pattern:
+    # a[0][0] a[0][1] ... a[0][n] b[0][0] b[0][1] ... b[0][m]
+    # a[1][0] a[1][1] ... a[1][n] b[1][0] b[1][1] ... b[1][m].
+    # ...
+    # If the row lengths don't match, fill the values corresponding
+    # to the shorter array with zeroes
+
+    def sideBySide(a, b):
+       # Your code here...
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

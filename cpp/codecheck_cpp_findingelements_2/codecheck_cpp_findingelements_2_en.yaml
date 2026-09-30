@@ -1,0 +1,50 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_findingelements_2_en
+source: prog.cpp
+title: Finding Elements 2
+description: Given an array of integers and a value, return the difference between the last and first position of the value
+  in the array, or -1 if the value does not exist.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Arrays - Simple Exercises
+  - horstmann:Finding Elements
+runtime:
+  language: cpp
+  version: '17'
+statement: "Given an array of integers and a value, return the distance \nbetween the last and first occurrences of the value\
+  \ in the array, \nor -1 if the value does not exist."
+elements:
+- type: locked
+  location:
+    snippet: |
+      /**
+         Find distance between first and last occurrences of val.
+         @param arr the array to search.
+         @param size the size of the array.
+         @param val the value to search for.
+         @return the distance or -1 if val not found.
+      */
+      int distance_first_to_last(const int arr[], int arr_size, int val)
+      {
+- type: editable
+  location:
+    snippet: "\n   \n\n"
+  placeholder: "\n   \n\n"
+- type: locked
+  location:
+    snippet: |
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

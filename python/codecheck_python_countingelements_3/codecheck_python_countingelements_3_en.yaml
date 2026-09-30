@@ -1,0 +1,37 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_python_countingelements_3_en
+source: prog.py
+title: Counting Elements 3
+description: Given a list of integers, return the most frequent element.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Lists - Simple Exercises
+  - horstmann:Counting Elements
+runtime:
+  language: python
+  version: '3'
+statement: Given a list of integers, return the most frequent element. If there is more than one element with maximum frequency,
+  return the one that occurs first in the list.
+elements:
+- type: editable
+  location:
+    snippet: "\n# Given a list of integers, return the most frequent element. \n# If there is more than one element with maximum\
+      \ frequency, return the one \n# that occurs first in the list. You may assume there is at least one\n# element in the\
+      \ list.\n\ndef mostFrequentElement(arr):\n   # Your code here...\n"
+  placeholder: "\n# Given a list of integers, return the most frequent element. \n# If there is more than one element with\
+    \ maximum frequency, return the one \n# that occurs first in the list. You may assume there is at least one\n# element\
+    \ in the list.\n\ndef mostFrequentElement(arr):\n   # Your code here...\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

@@ -1,0 +1,62 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_tree_105_en
+source: FastPQueue.java
+title: Tree Structures 105
+description: It is possible to provide a fast priority queue implementation if the inserted items have a bounded number of
+  integer priorities.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Tree Structures
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>It is possible to provide a fast priority queue implementation if the
+      inserted items have a bounded number of integer priorities. </p>
+
+      <p>Make an array list of linked lists. The linked list at index <code>i</code>
+      holds all items with priority <code>i</code>. To add an element, simply add it
+      to the end of the <code>i</code>th priority list. To remove an element, remove
+      it from the front of the non-empty list with the lowest priority. </p>
+
+      <p><img src="data:image/png;base64,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" /></p>
+
+      <p>Complete the following class that implements this idea. (Note that the
+      elements stored in this priority queue do not implement the
+      <code>Comparable</code> interface. Instead, an integer priority must be
+      specified together with each item as it is inserted.)</p>
+elements:
+- type: editable
+  location:
+    snippet: "import java.util.ArrayList;\nimport java.util.LinkedList;\n\npublic class FastPQueue\n{\n   public FastPQueue(int\
+      \ maxPriority)\n   {\n      itemLists = new ArrayList<LinkedList<Object>>();\n      for (int i = 0; i <= maxPriority;\
+      \ i++)\n         itemLists.add(new LinkedList<Object>());\n   }\n   \n   public void add(int priority, Object item)\n\
+      \   {\n      // TODO: Complete this method\n   }\n   \n   public Object remove()\n   {\n      // TODO: Complete this\
+      \ method\n   }\n   \n   private ArrayList<LinkedList<Object>> itemLists; // linked lists of items with the same priority\n\
+      \   \n   // This method is used to check your work\n   public static String[] check(String[] items)\n   {\n      FastPQueue\
+      \ pq = new FastPQueue(9);\n      for (String item : items)\n         pq.add(Integer.parseInt(item.substring(0, 1)),\
+      \ item.substring(1));\n      String[] r = new String[items.length];\n      for (int i = 0; i < r.length; i++)\n    \
+      \     r[i] = pq.remove().toString();\n      return r;\n   }   \n}\n"
+  placeholder: "import java.util.ArrayList;\nimport java.util.LinkedList;\n\npublic class FastPQueue\n{\n   public FastPQueue(int\
+    \ maxPriority)\n   {\n      itemLists = new ArrayList<LinkedList<Object>>();\n      for (int i = 0; i <= maxPriority;\
+    \ i++)\n         itemLists.add(new LinkedList<Object>());\n   }\n   \n   public void add(int priority, Object item)\n\
+    \   {\n      // TODO: Complete this method\n   }\n   \n   public Object remove()\n   {\n      // TODO: Complete this method\n\
+    \   }\n   \n   private ArrayList<LinkedList<Object>> itemLists; // linked lists of items with the same priority\n   \n\
+    \   // This method is used to check your work\n   public static String[] check(String[] items)\n   {\n      FastPQueue\
+    \ pq = new FastPQueue(9);\n      for (String item : items)\n         pq.add(Integer.parseInt(item.substring(0, 1)), item.substring(1));\n\
+    \      String[] r = new String[items.length];\n      for (int i = 0; i < r.length; i++)\n         r[i] = pq.remove().toString();\n\
+    \      return r;\n   }   \n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

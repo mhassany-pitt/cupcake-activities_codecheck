@@ -1,0 +1,58 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_loopingoverneighbors_3_en
+source: prog.cpp
+title: Looping over Neighbors 3
+description: Given a two-dimensional array of integers and row/column positions r, c, return the compass direction of the
+  largest neighbor as a string N E S W NE NW SE SW.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Two-Dimensional Arrays
+  - horstmann:Looping over Neighbors
+runtime:
+  language: cpp
+  version: '17'
+statement: "<p>Given a two-dimensional array of integers and row/column positions r, c, \n   return the compass direction\
+  \ of the largest neighbor as a string \n   \"N\", \"E\", \"S\", \"W\", \"NE\", \"NW\", \"SE\", or \"SW\".\n</p>"
+elements:
+- type: locked
+  location:
+    snippet: |
+      #include <string>
+      using namespace std;
+      const int MAX_COLS = 10;
+
+      /**
+         Return the compass direction of the largest neighbor (N,E,S,W,NE,NW,SE,SW).
+         @param arr the array to process.
+         @param rows the rows in the array.
+         @param cols the columns in the array.
+         @param r the row of the element to check.
+         @param c the column of the element to check.
+         @return the direction as a string.
+      */
+      string largest_by_compass_direction(const int arr[][MAX_COLS], int rows, int cols, int r, int c)
+      {
+- type: editable
+  location:
+    snippet: |2
+         // Your code here...
+  placeholder: |2
+       // Your code here...
+- type: locked
+  location:
+    snippet: |
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

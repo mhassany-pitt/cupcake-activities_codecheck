@@ -1,0 +1,65 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_net_103_en
+source: CookiePrinter.java
+title: Networking 103
+description: Many web site instruct browsers to set cookies, small pieces of information that the browser will send back to
+  the web site when it connects again.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Networking
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>Many web site instruct browsers to set <i>cookies</i>, small pieces of
+      information that the browser will send back to the web site when it
+      connects again. Many cookies are quite harmless and merely tell the server
+      which page requests are related. However, some cookies are used for
+      marketing and tracking purposes.</p>
+
+      <p>Your task is to write a program that prints all cookies that a web page
+      wants to set. The cookies are a part of the HTTP header that is sent
+      before the actual HTML document. Cookies are sent in lines that start with
+      <code>Set-Cookie:</code>. However, letter case is not significant, and you
+      need to be able to handle variations in letter case. Some web site even
+      use a mixture of <code>Set-Cookie:</code>, <code>set-cookie:</code>, and so on, in
+      the same page.</p>
+
+      <p>Your program should use sockets, not the <code>URLConnection</code> class. </p>
+elements:
+- type: editable
+  location:
+    snippet: "import java.io.InputStream;\nimport java.io.IOException;\nimport java.io.OutputStream;\nimport java.io.PrintWriter;\n\
+      import java.net.Socket;\nimport java.util.Scanner;\n\n/**\n   This program prints all cookies that a web site tries\
+      \ to set.\n   Supply the name of the host and the resource on the command-line, \n   for example java CookiePrinter\
+      \ nytimes.com /\n*/\npublic class CookiePrinter\n{\n   public static void main(String[] args) throws IOException\n \
+      \  {\n      // Get command-line arguments\n\n      if (args.length != 2)\n      {\n         System.out.println(\"Usage:\
+      \ java CookiePrinter host resource\");\n         System.exit(0);\n      }\n      String host = args[0];\n      String\
+      \ resource = args[1];\n\n      // Open socket\n\n      // Get streams\n      \n      // Turn streams into scanners and\
+      \ writers\n\n      // Send command\n\n      String command = \"GET \" + resource + \" HTTP/1.0\\n\\n\";\n      out.print(command);\n\
+      \      out.flush();\n\n      // Read server response and print any lines starting with \n      // Set-Cookie, set-cookie,\
+      \ \n\n      // Always close the socket at the end\n      \n   }\n}\n"
+  placeholder: "import java.io.InputStream;\nimport java.io.IOException;\nimport java.io.OutputStream;\nimport java.io.PrintWriter;\n\
+    import java.net.Socket;\nimport java.util.Scanner;\n\n/**\n   This program prints all cookies that a web site tries to\
+    \ set.\n   Supply the name of the host and the resource on the command-line, \n   for example java CookiePrinter nytimes.com\
+    \ /\n*/\npublic class CookiePrinter\n{\n   public static void main(String[] args) throws IOException\n   {\n      // Get\
+    \ command-line arguments\n\n      if (args.length != 2)\n      {\n         System.out.println(\"Usage: java CookiePrinter\
+    \ host resource\");\n         System.exit(0);\n      }\n      String host = args[0];\n      String resource = args[1];\n\
+    \n      // Open socket\n\n      // Get streams\n      \n      // Turn streams into scanners and writers\n\n      // Send\
+    \ command\n\n      String command = \"GET \" + resource + \" HTTP/1.0\\n\\n\";\n      out.print(command);\n      out.flush();\n\
+    \n      // Read server response and print any lines starting with \n      // Set-Cookie, set-cookie, \n\n      // Always\
+    \ close the socket at the end\n      \n   }\n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

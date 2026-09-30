@@ -1,0 +1,53 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_countingelements_9_en
+source: prog.cpp
+title: Counting Elements 9
+description: Given two arrays of integers a and b of the same length, count the number of positions where the array elements
+  differ by at least 2.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Arrays - Simple Exercises
+  - horstmann:Counting Elements
+runtime:
+  language: cpp
+  version: '17'
+statement: "Given two arrays of integers a and b of the same length, count \nthe number of positions where the array elements\
+  \ differ by at least 2."
+elements:
+- type: locked
+  location:
+    snippet: |
+      #include <cstdlib> // abs
+      /**
+         Count elements which differ by 2.
+         @param a the first array.
+         @param b the second array.
+         @param size the size of both arrays.
+         @return the number of elements that differ by at least two.
+      */
+      int differ_by_2_or_more(const int a[], const int b[], int size)
+      {
+- type: editable
+  location:
+    snippet: |2
+         // Your code here
+  placeholder: |2
+       // Your code here
+- type: locked
+  location:
+    snippet: |
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

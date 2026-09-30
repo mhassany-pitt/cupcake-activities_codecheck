@@ -1,0 +1,52 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_concur_101_en
+source: CountdownRunnable.java
+title: Concurrency 101
+description: We want to simulate multiple rocket launches by ACME Rocket Inc.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Concurrency
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>We want to simulate multiple rocket launches by ACME Rocket Inc. Each
+      launch has a countdown, like this</p>
+
+      <p><code>10...</code>(delay)<code>9...</code>(delay)<code>8...</code>(delay)...
+      <code>1...</code>(delay)<code>Liftoff</code></p>
+
+      <p>The initial counter value and the delay (in milliseconds) are variable.
+  </p>
+elements:
+- type: editable
+  location:
+    snippet: "/**\n   A runnable that prints a countdown.\n*/\npublic class CountdownRunnable implements Runnable\n{\n   /**\n\
+      \      Constructs the runnable object.\n      @param startingValue the starting value of the countdown\n      @param\
+      \ aDelay the delay between counts\n   */\n   public CountdownRunnable(int startingValue, int aDelay)\n   {\n      counter\
+      \ = startingValue;\n      delay = aDelay;\n   }\n   \n   // your work here\n\n   private int counter;\n   private int\
+      \ delay;\n\n   // this method is used to test your work\n   \n   public static void main(String[] args)\n   {\n    \
+      \  CountdownRunnable r1 = new CountdownRunnable(10, 10);\n      CountdownRunnable r2 = new CountdownRunnable(20, 5);\n\
+      \      Thread t1 = new Thread(r1);\n      Thread t2 = new Thread(r2);\n      t1.start();\n      t2.start();\n   }  \
+      \ \n}\n"
+  placeholder: "/**\n   A runnable that prints a countdown.\n*/\npublic class CountdownRunnable implements Runnable\n{\n \
+    \  /**\n      Constructs the runnable object.\n      @param startingValue the starting value of the countdown\n      @param\
+    \ aDelay the delay between counts\n   */\n   public CountdownRunnable(int startingValue, int aDelay)\n   {\n      counter\
+    \ = startingValue;\n      delay = aDelay;\n   }\n   \n   // your work here\n\n   private int counter;\n   private int\
+    \ delay;\n\n   // this method is used to test your work\n   \n   public static void main(String[] args)\n   {\n      CountdownRunnable\
+    \ r1 = new CountdownRunnable(10, 10);\n      CountdownRunnable r2 = new CountdownRunnable(20, 5);\n      Thread t1 = new\
+    \ Thread(r1);\n      Thread t2 = new Thread(r2);\n      t1.start();\n      t2.start();\n   }   \n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

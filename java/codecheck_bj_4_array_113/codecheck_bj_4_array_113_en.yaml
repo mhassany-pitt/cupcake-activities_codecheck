@@ -1,0 +1,45 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_array_113_en
+source: Swapper.java
+title: Arrays and Array Lists 113
+description: Your task is to complete a method that swaps adjacent values in an array of integers.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Arrays and Array Lists
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>Your task is to complete a method that swaps adjacent values in an array of integers. For example, if the array contains the values</p>
+  <pre>1 4 9 16 25 36</pre>
+  then after calling the method, it should contain the values
+  <pre>4 1 16 9 36 25</pre>
+  <p>If the array contains an odd number of elements, leave the last element in place. For example,</p>
+  <pre>1 4 9 16 25 36 45</pre>
+  becomes
+  <pre>4 1 16 9 36 25 45</pre>
+elements:
+- type: editable
+  location:
+    snippet: "public class Swapper\n{\n   /**\n      This method swaps adjacent elements of the given array\n      @param\
+      \ values an array\n   */\n   public void swapAdjacentElements(int[] values)\n   {\n      // your work here\n\n\n\n\n\
+      \   }\n   \n   \n   // This method is used to check your work\n   public int[] check(int[] values)\n   {\n      swapAdjacentElements(values);\n\
+      \      return values;\n   }\n}\n"
+  placeholder: "public class Swapper\n{\n   /**\n      This method swaps adjacent elements of the given array\n      @param\
+    \ values an array\n   */\n   public void swapAdjacentElements(int[] values)\n   {\n      // your work here\n\n\n\n\n \
+    \  }\n   \n   \n   // This method is used to check your work\n   public int[] check(int[] values)\n   {\n      swapAdjacentElements(values);\n\
+    \      return values;\n   }\n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

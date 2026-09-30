@@ -1,0 +1,51 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_findingelements_5_en
+source: prog.cpp
+title: Finding Elements 5
+description: Given two arrays of integers of the same length, return the first position where their elements are the same.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Arrays - Simple Exercises
+  - horstmann:Finding Elements
+runtime:
+  language: cpp
+  version: '17'
+statement: "Given two arrays of integers <b>of the same length</b>, return \nthe first index where their elements are the\
+  \ same.\nIf they are never the same, return -1."
+elements:
+- type: locked
+  location:
+    snippet: |
+      /**
+         Return first index where elements are equal.
+         @param a the first array to examine.
+         @param b the second array to examine.
+         @param size the size of both arrays.
+         @return index where elements first match or -1 if no match.
+      */
+      int find_first_match(const int a[], const int b[], int size)
+      {
+- type: editable
+  location:
+    snippet: |2
+         // Write your code here ...
+  placeholder: |2
+       // Write your code here ...
+- type: locked
+  location:
+    snippet: |
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

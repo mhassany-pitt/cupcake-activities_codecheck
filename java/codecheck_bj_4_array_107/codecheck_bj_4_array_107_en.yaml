@@ -1,0 +1,78 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_array_107_en
+source: Numbers.java
+title: Arrays and Array Lists 107
+description: Your task is to determine whether an array has the same sequence of numbers at the beginning and the end, and
+  if so, how long that sequence is.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Arrays and Array Lists
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>Your task is to determine whether an array has the same sequence of
+      numbers at the beginning and the end, and if so, how long that sequence is.</p>
+      <p>For example, the array</p>
+      <pre>1 4 9 10 11 12 1 4 9</pre>
+      <p>has the same sequence <code>1 4 9</code> at the left and the right, and it has length 3.</p>
+      <p>If the array doesn't have a common sequence at the left and the right, such as</p>
+      <pre>1 4 9 16 25</pre>
+      <p>return 0. </p>
+      <p>The two sequences cannot overlap. For example, in the array </p>
+      <pre>1 1 1 1</pre>
+      <p>the sequence <code>1 1</code> occurs at the left and the right, and your
+      method should return 2.</p>
+elements:
+- type: editable
+  location:
+    snippet: |
+      public class Numbers
+      {
+         /**
+            Computes the length of the longest sequence that occurs in the
+            start of the left half and the end of the right half of an
+            array.
+            @param values an array of integer values
+            @return the length of the longest end sequence
+         */
+         public int sameEnds(int[] values)
+         {
+            // your work here
+
+
+
+         }
+      }
+  placeholder: |
+    public class Numbers
+    {
+       /**
+          Computes the length of the longest sequence that occurs in the
+          start of the left half and the end of the right half of an
+          array.
+          @param values an array of integer values
+          @return the length of the longest end sequence
+       */
+       public int sameEnds(int[] values)
+       {
+          // your work here
+
+
+
+       }
+    }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

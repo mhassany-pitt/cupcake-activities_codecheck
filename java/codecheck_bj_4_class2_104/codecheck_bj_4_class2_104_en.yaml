@@ -1,0 +1,43 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_class2_104_en
+source: Numbers.java
+title: Designing Classes 104
+description: Supply a static method that computes the number of binary digits in a given integer.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Designing Classes
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>Supply a static method that computes the number of binary digits in a
+      given integer. For example,</p>
+
+      <pre>Numbers.binaryDigits(20)</pre>
+
+      <p>should return 5 because 20 is 10100<sub>2</sub>.</p>
+elements:
+- type: editable
+  location:
+    snippet: "public class Numbers\n{\n   /**\n      Returns the number of digits in the binary\n      representation of a\
+      \ number\n      @param n a nonnegative number\n      @return the number of binary digits needed to\n      represent\
+      \ n\n   */\n   \n   // TODO: supply the method\n   . . .\n   \n   public static void main(String[] args)\n   {\n   \
+      \   System.out.println(Numbers.binaryDigits(20));\n   }\n}\n"
+  placeholder: "public class Numbers\n{\n   /**\n      Returns the number of digits in the binary\n      representation of\
+    \ a number\n      @param n a nonnegative number\n      @return the number of binary digits needed to\n      represent\
+    \ n\n   */\n   \n   // TODO: supply the method\n   . . .\n   \n   public static void main(String[] args)\n   {\n     \
+    \ System.out.println(Numbers.binaryDigits(20));\n   }\n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

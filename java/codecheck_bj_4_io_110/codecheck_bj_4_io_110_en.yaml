@@ -1,0 +1,40 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_io_110_en
+source: IllegalNumberOfWheels.java
+title: Input and Output 110
+description: The following Vehicle class throws a custom exception of type IllegalNumberOfWheels.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Input and Output
+runtime:
+  language: java
+  version: '17'
+statement: <p>The following <code>Vehicle</code> class throws a custom exception of type <code>IllegalNumberOfWheels</code>.
+  Your task is to implement this exception class. The exception should not be a checked exception, and it should indicate
+  that an improper wheel count is an illegal parameter value.</p>
+elements:
+- type: editable
+  location:
+    snippet: "public class IllegalNumberOfWheels\n// TODO: Inherit from an appropriate exception\n\n{\n  /**\n   TODO: Create\
+      \ two constructors: one with no parameters, and one\n   that accepts a message string describing the reason for the\
+      \ exception.\n   */\n   \n}\n"
+  placeholder: "public class IllegalNumberOfWheels\n// TODO: Inherit from an appropriate exception\n\n{\n  /**\n   TODO: Create\
+    \ two constructors: one with no parameters, and one\n   that accepts a message string describing the reason for the exception.\n\
+    \   */\n   \n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass
+includes:
+- Checker.java
+- Vehicle.java

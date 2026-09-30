@@ -1,0 +1,89 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_ood_105_en
+source: ATMSimulator.java
+title: Object-Oriented Design 105
+description: 'In this assignment, a transfer method has been added to the ATM class of section 12.5:'
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Object-Oriented Design
+runtime:
+  language: java
+  version: '17'
+statement: "<p>In this assignment, a <code>transfer</code> method has been added to the\n    <code>ATM</code> class of section\
+  \ 12.5:</p>\n\n    <pre>public class ATM \n   /** \n      Transfers between the current account and the other account\n\
+  \      of the same customer.\n      (Precondition: state is TRANSACT)\n   */\n   public void transfer(double value)\n  \
+  \ {\n      . . .\n      back();\n   }</pre>\n\n    <p>Your task is to change the command-line user interface of the\n  \
+  \  <code>ATMSimulator</code> so that the menu </p>\n\n    <pre>A=Deposit, B=Withdrawal, C=Cancel: </pre>\n\n    <p>is replaced\
+  \ by</p>\n\n    <pre>A=Deposit, B=Withdrawal, C=Transfer, D=Cancel: </pre>\n\n    <p>Of course, you should now carry out\
+  \ the appropriate actions when the\n    user selects options C or D.</p>"
+elements:
+- type: editable
+  location:
+    snippet: "// TODO: Change the prompt \"A=Deposit, B=Withdrawal, C=Cancel: \"\n// to \"A=Deposit, B=Withdrawal, C=Transfer,\
+      \ D=Cancel: \" and implement\n// the transfer feature.\n\nimport java.io.IOException;\nimport java.util.Scanner;\n\n\
+      /**\n   A text-based simulation of an automatic teller machine.\n*/\npublic class ATMSimulator\n{  \n   public static\
+      \ void main(String[] args)\n   {  \n      ATM theATM;\n      try\n      {  \n         Bank theBank = new Bank();\n \
+      \        theBank.readCustomers(\"customers.txt\");\n         theATM = new ATM(theBank);\n      }\n      catch(IOException\
+      \ e)\n      {  \n         System.out.println(\"Error opening accounts file.\");\n         return;\n      }\n\n     \
+      \ Scanner in = new Scanner(System.in);\n\n      while (true)\n      {\n         int state = theATM.getState();\n   \
+      \      if (state == ATM.START)\n         {\n            System.out.print(\"Enter customer number: \");\n           \
+      \ int number = in.nextInt();\n            if (number == 0) return;\n            theATM.setCustomerNumber(number);  \
+      \          \n         }\n         else if (state == ATM.PIN)\n         {\n            System.out.print(\"Enter PIN:\
+      \ \");\n            int pin = in.nextInt();\n            theATM.selectCustomer(pin);\n         }\n         else if (state\
+      \ == ATM.ACCOUNT)\n         {\n            System.out.print(\"A=Checking, B=Savings, C=Quit: \");\n            String\
+      \ command = in.next();\n            if (command.equalsIgnoreCase(\"A\"))\n               theATM.selectAccount(ATM.CHECKING);\n\
+      \            else if (command.equalsIgnoreCase(\"B\"))\n               theATM.selectAccount(ATM.SAVINGS);\n        \
+      \    else if (command.equalsIgnoreCase(\"C\"))\n               theATM.reset();\n            else\n               System.out.println(\"\
+      Illegal input!\");                        \n         }\n         else if (state == ATM.TRANSACT)\n         {\n     \
+      \       System.out.println(\"Balance=\" + theATM.getBalance());\n            System.out.print(\"A=Deposit, B=Withdrawal,\
+      \ C=Cancel: \");\n            String command = in.next();\n            if (command.equalsIgnoreCase(\"A\"))\n      \
+      \      {\n               System.out.print(\"Amount: \");\n               double amount = in.nextDouble();\n        \
+      \       theATM.deposit(amount);\n               theATM.back();\n            }\n            else if (command.equalsIgnoreCase(\"\
+      B\"))\n            {\n               System.out.print(\"Amount: \");\n               double amount = in.nextDouble();\n\
+      \               theATM.withdraw(amount);\n               theATM.back();\n            }\n            else if (command.equalsIgnoreCase(\"\
+      C\"))\n               theATM.back();\n            else\n               System.out.println(\"Illegal input!\");     \
+      \                               \n         }         \n      }\n   }\n}\n\n"
+  placeholder: "// TODO: Change the prompt \"A=Deposit, B=Withdrawal, C=Cancel: \"\n// to \"A=Deposit, B=Withdrawal, C=Transfer,\
+    \ D=Cancel: \" and implement\n// the transfer feature.\n\nimport java.io.IOException;\nimport java.util.Scanner;\n\n/**\n\
+    \   A text-based simulation of an automatic teller machine.\n*/\npublic class ATMSimulator\n{  \n   public static void\
+    \ main(String[] args)\n   {  \n      ATM theATM;\n      try\n      {  \n         Bank theBank = new Bank();\n        \
+    \ theBank.readCustomers(\"customers.txt\");\n         theATM = new ATM(theBank);\n      }\n      catch(IOException e)\n\
+    \      {  \n         System.out.println(\"Error opening accounts file.\");\n         return;\n      }\n\n      Scanner\
+    \ in = new Scanner(System.in);\n\n      while (true)\n      {\n         int state = theATM.getState();\n         if (state\
+    \ == ATM.START)\n         {\n            System.out.print(\"Enter customer number: \");\n            int number = in.nextInt();\n\
+    \            if (number == 0) return;\n            theATM.setCustomerNumber(number);            \n         }\n       \
+    \  else if (state == ATM.PIN)\n         {\n            System.out.print(\"Enter PIN: \");\n            int pin = in.nextInt();\n\
+    \            theATM.selectCustomer(pin);\n         }\n         else if (state == ATM.ACCOUNT)\n         {\n          \
+    \  System.out.print(\"A=Checking, B=Savings, C=Quit: \");\n            String command = in.next();\n            if (command.equalsIgnoreCase(\"\
+    A\"))\n               theATM.selectAccount(ATM.CHECKING);\n            else if (command.equalsIgnoreCase(\"B\"))\n   \
+    \            theATM.selectAccount(ATM.SAVINGS);\n            else if (command.equalsIgnoreCase(\"C\"))\n             \
+    \  theATM.reset();\n            else\n               System.out.println(\"Illegal input!\");                        \n\
+    \         }\n         else if (state == ATM.TRANSACT)\n         {\n            System.out.println(\"Balance=\" + theATM.getBalance());\n\
+    \            System.out.print(\"A=Deposit, B=Withdrawal, C=Cancel: \");\n            String command = in.next();\n   \
+    \         if (command.equalsIgnoreCase(\"A\"))\n            {\n               System.out.print(\"Amount: \");\n      \
+    \         double amount = in.nextDouble();\n               theATM.deposit(amount);\n               theATM.back();\n  \
+    \          }\n            else if (command.equalsIgnoreCase(\"B\"))\n            {\n               System.out.print(\"\
+    Amount: \");\n               double amount = in.nextDouble();\n               theATM.withdraw(amount);\n             \
+    \  theATM.back();\n            }\n            else if (command.equalsIgnoreCase(\"C\"))\n               theATM.back();\n\
+    \            else\n               System.out.println(\"Illegal input!\");                                    \n      \
+    \   }         \n      }\n   }\n}\n\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass
+includes:
+- ATM.java
+- Bank.java
+- BankAccount.java
+- Customer.java
+- customers.txt

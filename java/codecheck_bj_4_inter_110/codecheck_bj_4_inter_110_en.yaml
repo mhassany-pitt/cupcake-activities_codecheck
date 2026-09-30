@@ -1,0 +1,48 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_inter_110_en
+source: Animals.java
+title: Interfaces 110
+description: The Cat and Dog class below implement the Animal interface.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Interfaces
+runtime:
+  language: java
+  version: '17'
+statement: <p>The <code>Cat</code> and <code>Dog</code> class below implement the <code>Animal</code> interface. All animals
+  have names, but only dogs do tricks. Implement the <code>describe</code> method, using the <code>instanceof</code> operator
+  to test whether the given animal is a dog. If so, return the name, a space, and the trick that the dog can do, such as "Helmut
+  barks at the moon".  If it is any other kind of animal, return the name, a space, and "has no tricks".</p>
+elements:
+- type: editable
+  location:
+    snippet: "public class Animals\n{\n   /**\n      Describes the given animal.\n      @param pet an animal\n      @return\
+      \ a string with the animal's name, a space, and \n      either the trick that the animal knows (if it is a dog) or a\
+      \ \n      string \"has no tricks\"\n   */\n   public static String describe(Animal pet)\n   {\n      // TODO: Complete\
+      \ this method\n   }\n\n   // This method is used to check your work\n   public static String check(String name, String\
+      \ trick) \n   { \n      Animal pet;\n      if (trick == null) pet = new Cat(name);\n      else pet = new Dog(name, trick);\n\
+      \      return describe(pet); \n   }      \n}\n"
+  placeholder: "public class Animals\n{\n   /**\n      Describes the given animal.\n      @param pet an animal\n      @return\
+    \ a string with the animal's name, a space, and \n      either the trick that the animal knows (if it is a dog) or a \n\
+    \      string \"has no tricks\"\n   */\n   public static String describe(Animal pet)\n   {\n      // TODO: Complete this\
+    \ method\n   }\n\n   // This method is used to check your work\n   public static String check(String name, String trick)\
+    \ \n   { \n      Animal pet;\n      if (trick == null) pet = new Cat(name);\n      else pet = new Dog(name, trick);\n\
+    \      return describe(pet); \n   }      \n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass
+includes:
+- Animal.java
+- Cat.java
+- Dog.java

@@ -1,0 +1,52 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_functionswithdecisions_7_en
+source: prog.cpp
+title: Branches with Functions 7
+description: Given three numbers, return true if they are evenly spaced; that is, sorted in ascending or descending order,
+  with the same distance between them.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Branches
+  - horstmann:Branches with Functions
+runtime:
+  language: cpp
+  version: '17'
+statement: "Given three numbers, return true if they are evenly spaced; that is, \nsorted in ascending or descending order,\
+  \ with the same distance between them."
+elements:
+- type: locked
+  location:
+    snippet: |
+      #include <iostream>
+      using namespace std;
+
+      bool evenlySpaced(double a, double b, double c)
+      {
+- type: editable
+  location:
+    snippet: |2+
+
+
+
+  placeholder: |2+
+
+
+
+- type: locked
+  location:
+    snippet: |
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

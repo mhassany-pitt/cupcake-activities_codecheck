@@ -1,0 +1,43 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_recur_112_en
+source: MyMethods.java
+title: Recursion 112
+description: Complete the static reverseHelper method so that the reverse method returns a String that is the reverse of the
+  parameter s.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Recursion
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>Complete the static <code>reverseHelper</code> method so that the <code>reverse</code> method returns a String that is the reverse of the parameter <code>s</code>. </p>
+  <p>The helper method should build up the reversed string like this:</p>
+  <pre>reverseHelper("fred", "")
+  = reverseHelper("red", "f")
+  = reverseHelper("ed", "rf")
+  = reverseHelper("d", "erf")
+  = reverseHelper("", "derf")
+  = "derf"
+  </pre>
+elements:
+- type: editable
+  location:
+    snippet: "public class MyMethods\n{  \n   public static String reverse(String s)\n   {   \n      return reverseHelper(s,\
+      \ \"\");\n   }\n\n   public static String reverseHelper(String s, String reverse)\n   {\n      . . .\n   }\n}\n"
+  placeholder: "public class MyMethods\n{  \n   public static String reverse(String s)\n   {   \n      return reverseHelper(s,\
+    \ \"\");\n   }\n\n   public static String reverseHelper(String s, String reverse)\n   {\n      . . .\n   }\n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

@@ -1,0 +1,54 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_findingelements_3_en
+source: prog.cpp
+title: Finding Elements 3
+description: Given an array of integers and a value, fill an array with all positions of the value in the array.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Arrays - Simple Exercises
+  - horstmann:Finding Elements
+runtime:
+  language: cpp
+  version: '17'
+statement: "Given an array of integers and a value, fill <code>result</code> \nwith all positions of the value in the array.\
+  \ Return the size of\n<code>result</code>."
+elements:
+- type: locked
+  location:
+    snippet: |
+      /**
+         Find all positions of a value.
+         @param arr the array to search.
+         @param size the size of the array.
+         @param val the value to search for.
+         @param result the array to fill with positions.
+         @return the size of the result.
+      */
+      int find_all_positions(const int arr[], int size, int val, int result[])
+      {
+- type: editable
+  location:
+    snippet: |2
+         // Your code here...
+  placeholder: |2
+       // Your code here...
+- type: locked
+  location:
+    snippet: |
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass
+includes:
+- Tester.cpp

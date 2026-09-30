@@ -1,0 +1,38 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_python_otherstringoperations_4_en
+source: prog.py
+title: Other String Operations 4
+description: Given a string s and a string t, return a string in which all the characters of s that occur in t have been replaced
+  by a _ character.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Strings
+  - horstmann:Other String Operations
+runtime:
+  language: python
+  version: '3'
+statement: Given a string s and a string t, return a string in which all the characters of s that occur in t have been replaced
+  by a _ character.
+elements:
+- type: editable
+  location:
+    snippet: "\n# Given a string s and a string t, return a string in which all the characters \n# of s that occur in t have\
+      \ been replaced by a _ sign. The comparisons are \n# case sensitive.\n\ndef replaceCharactersWithUnderscores(s, t):\n\
+      \   # Your code here...\n"
+  placeholder: "\n# Given a string s and a string t, return a string in which all the characters \n# of s that occur in t\
+    \ have been replaced by a _ sign. The comparisons are \n# case sensitive.\n\ndef replaceCharactersWithUnderscores(s, t):\n\
+    \   # Your code here...\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

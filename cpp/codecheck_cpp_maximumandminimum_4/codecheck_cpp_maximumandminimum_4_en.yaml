@@ -1,0 +1,50 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_maximumandminimum_4_en
+source: prog.cpp
+title: Maximum and Minimum 4
+description: Given an array of integers, return the difference between the maximum and minimum.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Arrays - Simple Exercises
+  - horstmann:Maximum and Minimum
+runtime:
+  language: cpp
+  version: '17'
+statement: Given an array of integers, return the difference between the maximum and minimum.
+elements:
+- type: locked
+  location:
+    snippet: |
+      #include <iostream>
+      using namespace std;
+
+      int differenceBetweenMaxAndMin(const int arr[], int arr_size)
+      {
+- type: editable
+  location:
+    snippet: |2+
+
+
+
+  placeholder: |2+
+
+
+
+- type: locked
+  location:
+    snippet: |
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

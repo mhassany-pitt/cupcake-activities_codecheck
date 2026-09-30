@@ -1,0 +1,57 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_array_104_en
+source: SquareBoard.java
+title: Arrays and Array Lists 104
+description: You are given a class similar to the TicTacToe board in Section 7.6, but the board can have more than 3 rows
+  and columns.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Arrays and Array Lists
+runtime:
+  language: java
+  version: '17'
+statement: "<p>You are given a class similar to the TicTacToe board in Section 7.6,\n    but the board can have more than\
+  \ 3 rows and columns. </p>\n\n    <p>Your task is to complete a method that fills the two diagonals with\n   asterisks,\
+  \ like this:</p>\n<pre>\n*      *\n *    * \n  *  *  \n   **   \n   **   \n  *  *  \n *    * \n*      *\n\n</pre>"
+elements:
+- type: editable
+  location:
+    snippet: "import java.util.Scanner;\n\npublic class SquareBoard\n{\n   private String[][] board;\n   private int length;\n\
+      \n   /**\n      Constructs an empty square game board.\n      @param sideLength the length of each side\n   */\n   public\
+      \ SquareBoard(int sideLength)\n   {\n      length = sideLength;\n      board = new String[length][length];\n      //\
+      \ Fill with spaces\n      for (int i = 0; i < length; i++)\n         for (int j = 0; j < length; j++)\n            board[i][j]\
+      \ = \" \";\n   }\n\n   /**\n      Creates a string representation of the board, such as\n      |x o|\n      | x |\n\
+      \      | o |.\n      @return the string representation\n   */\n   public String toString()\n   {\n      String r = \"\
+      \";\n      for (int i = 0; i < length; i++)\n      {\n         r = r + \"|\";\n         for (int j = 0; j < length;\
+      \ j++)\n            r = r + board[i][j];\n         r = r + \"|\\n\";\n      }\n      return r;\n   }   \n\n   /**\n\
+      \      Fills the diagonals of this square board with \"*\" strings.\n   */\n   public void fillDiagonals()\n   {\n \
+      \     // your work here\n      \n      \n      \n   }\n   \n   // This method is used to check your work.\n\n   public\
+      \ static void main(String[] args)\n   {\n      Scanner in = new Scanner(System.in);\n      int n = in.nextInt();   \n\
+      \      SquareBoard board = new SquareBoard(n);\n      board.fillDiagonals();\n      System.out.println(board.toString());\n\
+      \   }\n}\n"
+  placeholder: "import java.util.Scanner;\n\npublic class SquareBoard\n{\n   private String[][] board;\n   private int length;\n\
+    \n   /**\n      Constructs an empty square game board.\n      @param sideLength the length of each side\n   */\n   public\
+    \ SquareBoard(int sideLength)\n   {\n      length = sideLength;\n      board = new String[length][length];\n      // Fill\
+    \ with spaces\n      for (int i = 0; i < length; i++)\n         for (int j = 0; j < length; j++)\n            board[i][j]\
+    \ = \" \";\n   }\n\n   /**\n      Creates a string representation of the board, such as\n      |x o|\n      | x |\n  \
+    \    | o |.\n      @return the string representation\n   */\n   public String toString()\n   {\n      String r = \"\"\
+    ;\n      for (int i = 0; i < length; i++)\n      {\n         r = r + \"|\";\n         for (int j = 0; j < length; j++)\n\
+    \            r = r + board[i][j];\n         r = r + \"|\\n\";\n      }\n      return r;\n   }   \n\n   /**\n      Fills\
+    \ the diagonals of this square board with \"*\" strings.\n   */\n   public void fillDiagonals()\n   {\n      // your work\
+    \ here\n      \n      \n      \n   }\n   \n   // This method is used to check your work.\n\n   public static void main(String[]\
+    \ args)\n   {\n      Scanner in = new Scanner(System.in);\n      int n = in.nextInt();   \n      SquareBoard board = new\
+    \ SquareBoard(n);\n      board.fillDiagonals();\n      System.out.println(board.toString());\n   }\n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

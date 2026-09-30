@@ -1,0 +1,46 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_loop_106_en
+source: PhoneNumbers.java
+title: Loops 106
+description: When people enter their telephone numbers into a form they use many different formats.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Loops
+runtime:
+  language: java
+  version: '17'
+statement: "<p>When people enter their telephone numbers into a form they use many\ndifferent formats. Some examples are:\
+  \ </p>\n<pre>   (444) 999-1234\n   4449991234\n   444.999.1234</pre>\nIn the <code>PhoneNumbers</code> class below, complete\
+  \ the\n<code>cleanNumber</code> method. It takes a string and extracts the numeric\ndigits from the string. If there are\
+  \ exactly 10 numeric digits, the number is\nreformatted: <code>(###) ###-####</code> and returned. If there are any other\n\
+  number of digits, the string <code>\"Error\"</code> is returned. \n\n<p>Hint: Use the <code>Character.isDigit</code> method\
+  \ to check whether a\ncharacter is a digit. </p>"
+elements:
+- type: editable
+  location:
+    snippet: "public class PhoneNumbers\n{\n   /**\n      Cleans a phone number.\n      @param phoneNumber a phone number\
+      \ that should contain ten digits and possibly other characters\n      @return the phone number in the form (###) ###-####\
+      \ or the string \"Error\" if phoneNumber\n      does not have ten digits\n   */\n   public String cleanNumber(String\
+      \ phoneNumber)\n   {   \n      // your work here\n      ...\n      for (int i = 0; i < ...; i++)\n      {\n        \
+      \ char ch = phoneNumber.charAt(i);\n         if (Character.isDigit(ch))\n         {\n            ...\n         }   \
+      \       \n      }\n      ...    \n   }   \n}\n"
+  placeholder: "public class PhoneNumbers\n{\n   /**\n      Cleans a phone number.\n      @param phoneNumber a phone number\
+    \ that should contain ten digits and possibly other characters\n      @return the phone number in the form (###) ###-####\
+    \ or the string \"Error\" if phoneNumber\n      does not have ten digits\n   */\n   public String cleanNumber(String phoneNumber)\n\
+    \   {   \n      // your work here\n      ...\n      for (int i = 0; i < ...; i++)\n      {\n         char ch = phoneNumber.charAt(i);\n\
+    \         if (Character.isDigit(ch))\n         {\n            ...\n         }          \n      }\n      ...    \n   }\
+    \   \n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

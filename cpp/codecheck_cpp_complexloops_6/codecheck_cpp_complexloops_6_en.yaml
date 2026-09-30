@@ -1,0 +1,69 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_complexloops_6_en
+source: prog.cpp
+title: Complex Loops 6
+description: Repeat the previous exercise with subarrays that are not necessarily square.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Two-Dimensional Arrays
+  - horstmann:Complex Loops
+runtime:
+  language: cpp
+  version: '17'
+statement: "<p>Given a <code>vector&lt;vector&lt;int&gt;&gt;</code>, return the \n   position of the largest <b>rectangular</b>\
+  \ zero-filled sub-vector, \n   as a <code>vector&lt;int&g;t</code> of size  3, \n   with the first item for the row, the\
+  \ second for the column, and \n   the third for the area of the sub-vector.\n   Return <code>{-1, -1, 0}</code> if there\
+  \ is no such sub-vector.\n</p>"
+elements:
+- type: locked
+  location:
+    snippet: |
+      #include <vector>
+      using namespace std;
+
+      /** Helper function. Check if a subrange is all zeros. */
+      bool all_zeros(const vector<vector<int>>& v, int r1, int c1, int r2, int c2);
+
+      /**
+         Return upper-left corner and area of largest zero-filled rectangle.
+         @param v the vector<vector<int>> to process.
+         @return {-1, -1, -1} if no zero-filled squares.
+      */
+      vector<int> start_of_largest_zero_rectangle_vector(const vector<vector<int>>& v)
+      {
+- type: editable
+  location:
+    snippet: |2
+          // Your code here...
+  placeholder: |2
+        // Your code here...
+- type: locked
+  location:
+    snippet: |
+      }
+      /** Helpber function. */
+      bool all_zeros(const vector<vector<int>>& v, int r1, int c1, int r2, int c2)
+      {
+         for (int r = r1; r <= r2; r++)
+         {
+            for (int c = c1; c <= c2; c++)
+            {
+               if (v[r][c] != 0) { return false; }
+            }
+         }
+         return true;
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

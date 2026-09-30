@@ -1,0 +1,56 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_2darraysnoloops_2_en
+source: prog.cpp
+title: No Loops 2
+description: Given a two-dimensional array of integers, return the middle element if both the row and column lenghts are odd,
+  or the average of the two or four middle elements of one or both is even.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Two-Dimensional Arrays
+  - horstmann:No Loops
+runtime:
+  language: cpp
+  version: '17'
+statement: "<p>Given a two-dimensional array of integers, return the middle element if both\nthe row and column lengths are\
+  \ odd, or the average of the two or four middle \nelements if one or both is even. For instance:</p>\n<pre>\n{{1,2,3},{4,<mark>5</mark>,6},{7,8,9}}\
+  \ // height &amp; width are odd; return 5.0\n{{1,2,3,4},{4,<mark>5,6</mark>,7},{7,8,9,10}} // height odd, width even; return\
+  \ avg 5 + 6 or 5.5\n{{1,2,3,4},{5,<mark>6,7</mark>,8},{9,<mark>10,11</mark>,12},{13,14,15,16}} // height &amp; width even\n\
+  </pre>"
+elements:
+- type: locked
+  location:
+    snippet: |
+      const int MAX_COLS = 10;
+      /**
+         Average or middle element.
+         @param arr a 2D array of int.
+         @param rows the number of rows in the array.
+         @param cols the number of columns in the array.
+         @return middle if odd, average if even.
+      */
+      double average_or_middle(const int arr[][MAX_COLS], int rows, int cols)
+      {
+- type: editable
+  location:
+    snippet: |2
+         // Your code here...
+  placeholder: |2
+       // Your code here...
+- type: locked
+  location:
+    snippet: |
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

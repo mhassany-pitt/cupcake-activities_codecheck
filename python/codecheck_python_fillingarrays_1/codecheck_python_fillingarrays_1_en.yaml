@@ -1,0 +1,42 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_python_fillingarrays_1_en
+source: prog.py
+title: Filling 1
+description: Given an integer n, return a list of length n containing 1 -1 1 -1 ...
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Lists - Simple Exercises
+  - horstmann:Filling
+runtime:
+  language: python
+  version: '3'
+statement: Given an integer n, return a list of length n containing 1 -1 1 -1 ...
+elements:
+- type: editable
+  location:
+    snippet: |2
+
+      # Given an integer n, return a list of length n containing 1 -1 1 -1 ...
+
+      def evenOdd(n):
+         # Your code here...
+  placeholder: |2
+
+    # Given an integer n, return a list of length n containing 1 -1 1 -1 ...
+
+    def evenOdd(n):
+       # Your code here...
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

@@ -1,0 +1,79 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_object_102_en
+source: AverageTester.java
+title: Objects 102
+description: Complete the following program to compute the average length of the words.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Objects
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>Complete the following program to compute the average length of the
+      words. Invoke the appropriate method to compute the length of each word,
+      compute the sum of the five results, and divide by 5.0. (You will see in
+      chapter 4 why you need to divide by 5.0 and not simply 5.)</p>
+elements:
+- type: editable
+  location:
+    snippet: |
+      public class AverageTester
+      {
+         public static void main(String[] args)
+         {
+            String word1 = "Mary";
+            String word2 = "had";
+            String word3 = "a";
+            String word4 = "little";
+            String word5 = "lamb";
+
+            // your work here
+
+            int length1 = . . .;
+            int length2 = . . .;
+            . . .
+            . . .
+            . . .
+            . . .
+            System.out.println(average);
+            System.out.println("Expected: 3.6");
+         }
+      }
+  placeholder: |
+    public class AverageTester
+    {
+       public static void main(String[] args)
+       {
+          String word1 = "Mary";
+          String word2 = "had";
+          String word3 = "a";
+          String word4 = "little";
+          String word5 = "lamb";
+
+          // your work here
+
+          int length1 = . . .;
+          int length2 = . . .;
+          . . .
+          . . .
+          . . .
+          . . .
+          System.out.println(average);
+          System.out.println("Expected: 3.6");
+       }
+    }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

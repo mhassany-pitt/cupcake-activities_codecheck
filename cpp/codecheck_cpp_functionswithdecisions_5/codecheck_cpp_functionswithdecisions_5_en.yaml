@@ -1,0 +1,52 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_functionswithdecisions_5_en
+source: prog.cpp
+title: Branches with Functions 5
+description: Given three numbers x, y, z and a Boolean variable strict , return true if strict is false and x ≤ y ≤ z, or
+  strict is true and x &lt; y &lt; z.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Branches
+  - horstmann:Branches with Functions
+runtime:
+  language: cpp
+  version: '17'
+statement: "Given three numbers x, y, z and a Boolean variable strict, if strict is False \nreturn True if x <= y <= z, otherwise\
+  \ return False. If strict is true, \nreturn True if  x < y < z, otherwise return False."
+elements:
+- type: locked
+  location:
+    snippet: |
+      #include <iostream>
+      using namespace std;
+
+      bool strict(double x, double y, double z, bool strict)
+      {
+- type: editable
+  location:
+    snippet: |2+
+
+
+
+  placeholder: |2+
+
+
+
+- type: locked
+  location:
+    snippet: |
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

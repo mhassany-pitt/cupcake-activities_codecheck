@@ -1,0 +1,46 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_python_sumsaveragesproducts_10_en
+source: prog.py
+title: Products 10
+description: Given a list of integers, find the largest sum of two different elements in the list.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Lists - Simple Exercises
+  - horstmann:Sums
+  - horstmann:Averages
+  - horstmann:Products
+runtime:
+  language: python
+  version: '3'
+statement: Given a list of integers, find the largest sum of two different elements in the list.
+elements:
+- type: editable
+  location:
+    snippet: |2
+
+      # Given a list of integers, find the largest sum of two different elements in the list.
+      # You may assume there are at least 2 elements in the list
+
+      def largestSumOfTwoDifferentElements(lst):
+         # Your code here...
+  placeholder: |2
+
+    # Given a list of integers, find the largest sum of two different elements in the list.
+    # You may assume there are at least 2 elements in the list
+
+    def largestSumOfTwoDifferentElements(lst):
+       # Your code here...
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

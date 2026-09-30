@@ -1,0 +1,68 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_net_104_en
+source: CookiePrinter.java
+title: Networking 104
+description: Many web site instruct browsers to set cookies, small pieces of information that the browser will send back to
+  the web site when it connects again.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Networking
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>Many web site instruct browsers to set <i>cookies</i>, small pieces of
+      information that the browser will send back to the web site when it
+      connects again. Many cookies are quite harmless and merely tell the server
+      which page requests are related. However, some cookies are used for
+      marketing and tracking purposes.</p>
+
+      <p>Your task is to write a program that prints all cookies that a web page
+      wants to set. The cookies are a part of the HTTP header that is sent
+      before the actual HTML document. Cookies are sent in lines that start with
+      <code>Set-Cookie:</code>. However, letter case is not significant, and you
+      need to be able to handle variations in letter case. Some web site even
+      use a mixture of <code>Set-Cookie:</code>, <code>set-cookie:</code>, and so on, in
+      the same page.</p>
+
+      <p>Your program should use the <code>URLConnection</code> class, not sockets.
+      Use the <a
+      href="http://java.sun.com/javase/6/docs/api/java/net/URLConnection.html#getHeaderFields()">getHeaderFields</a>
+      method. </p>
+elements:
+- type: editable
+  location:
+    snippet: "import java.io.IOException;\nimport java.net.HttpURLConnection;\nimport java.net.URL;\nimport java.net.URLConnection;\n\
+      import java.util.List;\nimport java.util.Map;\n\n/**\n   This program prints all cookies that a web site tries to set.\n\
+      \   Supply the name of the host and the resource on the command-line, \n   for example java CookiePrinter nytimes.com\
+      \ /\n*/\npublic class CookiePrinter\n{\n   public static void main(String[] args) throws IOException\n   {\n      //\
+      \ Get command-line arguments\n\n      if (args.length != 2)\n      {\n         System.out.println(\"Usage: java CookiePrinter\
+      \ host resource\");\n         System.exit(0);\n      }\n      String host = args[0];\n      String resource = args[1];\n\
+      \n      // Open URLConnection\n     \n      // Get header fields\n      \n      Map<String, List<String>> headerFields\
+      \ = connection.getHeaderFields();\n      \n      // print any lines starting with Set-Cookie, set-cookie, etc. \n  \
+      \    \n      for (. . .)\n      {\n         . . .\n         System.out.println(key + \": \" + cookie);\n      }\n  \
+      \ }\n}\n"
+  placeholder: "import java.io.IOException;\nimport java.net.HttpURLConnection;\nimport java.net.URL;\nimport java.net.URLConnection;\n\
+    import java.util.List;\nimport java.util.Map;\n\n/**\n   This program prints all cookies that a web site tries to set.\n\
+    \   Supply the name of the host and the resource on the command-line, \n   for example java CookiePrinter nytimes.com\
+    \ /\n*/\npublic class CookiePrinter\n{\n   public static void main(String[] args) throws IOException\n   {\n      // Get\
+    \ command-line arguments\n\n      if (args.length != 2)\n      {\n         System.out.println(\"Usage: java CookiePrinter\
+    \ host resource\");\n         System.exit(0);\n      }\n      String host = args[0];\n      String resource = args[1];\n\
+    \n      // Open URLConnection\n     \n      // Get header fields\n      \n      Map<String, List<String>> headerFields\
+    \ = connection.getHeaderFields();\n      \n      // print any lines starting with Set-Cookie, set-cookie, etc. \n    \
+    \  \n      for (. . .)\n      {\n         . . .\n         System.out.println(key + \": \" + cookie);\n      }\n   }\n\
+    }\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

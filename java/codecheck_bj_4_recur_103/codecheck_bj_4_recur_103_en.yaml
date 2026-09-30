@@ -1,0 +1,116 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_recur_103_en
+source: ZipperWord.java
+title: Recursion 103
+description: Two strings of equal length can be interlaced like the teeth of a zipper to form a new word.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Recursion
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>Two strings of equal length can be interlaced like the teeth of a
+      zipper to form a new word. For example, interlacing <code>cota</code> and
+      <code>rain</code> yields <code>c<b>r</b>o<b>a</b>t<b>i</b>a<b>n</b></code>. The
+      following class constructs a <code>ZipperWord</code> from two strings. </p>
+
+      <p>Your task is to complete the implementation of the
+      <code>toStringHelper</code> method below. That method computes the zipped word
+      resulting from interleaving characters from <code>first</code> and
+      <code>second</code>, starting with the given position. Interleave the
+      characters at that position and combine with a recursive call to
+      <code>toStringHelper</code>. </p>
+elements:
+- type: editable
+  location:
+    snippet: |
+      public class ZipperWord
+      {
+         public ZipperWord(String word1, String word2)
+         {
+            assert word1.length() == word2.length();
+            first = word1;
+            second = word2;
+         }
+
+         public String toString()
+         {
+            return toStringHelper(0);
+         }
+
+         /**
+            Returns the interleaving of the characters of the string
+            first and second, starting at position start. This method
+            should recursively call itself.
+            @param start the starting position
+            @return the interleaved word parts
+         */
+         private String toStringHelper(int start)
+         {
+            // your work here
+         }
+
+         private String first;
+         private String second;
+
+         // this method is used to check your work
+
+         public static String check(String word1, String word2)
+         {
+            ZipperWord zippy = new ZipperWord(word1, word2);
+            return zippy.toString();
+         }
+      }
+  placeholder: |
+    public class ZipperWord
+    {
+       public ZipperWord(String word1, String word2)
+       {
+          assert word1.length() == word2.length();
+          first = word1;
+          second = word2;
+       }
+
+       public String toString()
+       {
+          return toStringHelper(0);
+       }
+
+       /**
+          Returns the interleaving of the characters of the string
+          first and second, starting at position start. This method
+          should recursively call itself.
+          @param start the starting position
+          @return the interleaved word parts
+       */
+       private String toStringHelper(int start)
+       {
+          // your work here
+       }
+
+       private String first;
+       private String second;
+
+       // this method is used to check your work
+
+       public static String check(String word1, String word2)
+       {
+          ZipperWord zippy = new ZipperWord(word1, word2);
+          return zippy.toString();
+       }
+    }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

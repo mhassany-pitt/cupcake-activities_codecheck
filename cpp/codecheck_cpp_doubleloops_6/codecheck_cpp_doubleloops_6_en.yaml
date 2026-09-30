@@ -1,0 +1,52 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_doubleloops_6_en
+source: prog.cpp
+title: Double Loops 6
+description: Given an array a of integers, return an array of all elements of a that occur exactly once.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Arrays - Simple Exercises
+  - horstmann:Double Loops
+runtime:
+  language: cpp
+  version: '17'
+statement: "<p>Given a <code>vector&lt;int&gt;</code>, return a <code>vector</code> \nof all elements of a that occur exactly\
+  \ once.\n</p>"
+elements:
+- type: locked
+  location:
+    snippet: |
+      #include <vector>
+      using namespace std;
+
+      /**
+         Give a vector<int> return a list of all unique elements.
+         @param v the vector to check.
+         @return a list of unique elements.
+      */
+      vector<int> unique_elements(const vector<int>& v)
+      {
+- type: editable
+  location:
+    snippet: |2
+         // Your code here...
+  placeholder: |2
+       // Your code here...
+- type: locked
+  location:
+    snippet: |
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

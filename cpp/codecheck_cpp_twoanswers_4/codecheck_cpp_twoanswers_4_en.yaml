@@ -1,0 +1,50 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_twoanswers_4_en
+source: prog.cpp
+title: Two Answers 4
+description: Given an array of integers, return an array of length 2, each being an array.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Arrays - Simple Exercises
+  - horstmann:Two Answers
+runtime:
+  language: cpp
+  version: '17'
+statement: "Given a <code>vector</code> of integers, return a <code>vector</code>\nof size 2, with each element being a <code>vector&lt;int&gt;</code>.\n\
+  The first holds the positive elements and the second holds the \nnegative elements of the original <code>vector</code>.\
+  \ Zero is\nneither positive, nor negative."
+elements:
+- type: locked
+  location:
+    snippet: |
+      #include <vector>
+      using namespace std;
+
+      vector<vector<int> > return_positive_negative(const vector<int>& numbers)
+      {
+- type: editable
+  location:
+    snippet: |2
+         // Your code here...
+  placeholder: |2
+       // Your code here...
+- type: locked
+  location:
+    snippet: |
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass
+includes:
+- Tester.cpp

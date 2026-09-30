@@ -1,0 +1,49 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_branches_11_en
+source: prog.cpp
+title: Branches Without Functions 11
+description: Repeat the preceding exercise for U.S. time (e.g. 7:30am).
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Branches
+  - horstmann:Branches Without Functions
+runtime:
+  language: cpp
+  version: '17'
+statement: "Given an actual time and an alarm clock time, in U.S. time format (e.g. 7:30am, 2:30pm) \nprint how many more\
+  \ minutes before the alarm rings. When the time is after the alarm, \nprint \"Alarm already went off\" instead. All times\
+  \ will be on the same day."
+elements:
+- type: locked
+  location:
+    snippet: "#include <iostream>\n#include <string>\nusing namespace std;\n\nint main()\n{\n   int actualTime = 600; \n \
+      \  string actualTimeSuffix = \"am\"; \n   int alarmTime = 555; \n   string alarmTimeSuffix = \"am\"; \n\n"
+- type: editable
+  location:
+    snippet: |2+
+
+
+
+  placeholder: |2+
+
+
+
+- type: locked
+  location:
+    snippet: |2
+         return 0;
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

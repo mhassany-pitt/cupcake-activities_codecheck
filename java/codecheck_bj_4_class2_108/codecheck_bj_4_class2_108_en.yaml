@@ -1,0 +1,67 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_class2_108_en
+source: SalaryBonus.java
+title: Designing Classes 108
+description: The constructor of the SalaryBonus class below makes the following assumptions;
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Designing Classes
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>The constructor of the <code>SalaryBonus</code> class below makes the following assumptions;
+       </p>
+
+      <ul>
+        <li><code>salary</code> should not exceed 150,000. </li>
+
+        <li><code>bonusRate</code> should not exceed 5%.
+        </li>
+      </ul>
+
+      <p>You should add <code>assert</code> statements to the constructor that check
+      for these preconditions. </p>
+
+      <p>The <code>check</code> method uses exception handling, a technique
+      introduced in Chapter 11 of the text, to check that you inserted the
+      appropriate <code>assert</code> statements. You need not understand the
+      implementation of the <code>check</code> method at this time, and you should
+      not modify it. </p>
+elements:
+- type: editable
+  location:
+    snippet: "/**\n   Calculate the salary amount by applying a bonus rate.\n*/\n\npublic class SalaryBonus\n{\n   private\
+      \ double salary;\n   private double bonusRate;\n\n   public SalaryBonus(double aSalary, double aRate)\n   {\n      //TODO:\
+      \ Add assert statements\n      salary = aSalary;\n      bonusRate = aRate;\n   }\n   \n   /**\n      The following method\
+      \ checks your constructor. We use the exception\n      handling mechanism (see chapter 11) to determine whether (a)\
+      \ the\n      constructor completed normally, (b) your code used an assertion to\n      check a precondition violation,\
+      \ or (c) you failed to use an\n      assertion and some other exception occurred.\n   */   \n   public static String\
+      \ check(double salaryTest, double rateTest)\n   {\n      try\n      {\n         SalaryBonus eBonus = new SalaryBonus(salaryTest,rateTest);\n\
+      \         return \"Constructor completed normally\";\n      }\n      catch (AssertionError error)\n      {\n       \
+      \  return \"Precondition violation detected\";\n      }\n      catch (Exception exception)\n      {\n         return\
+      \ \"Exception in constructor\";\n      }\n   }\n}\n"
+  placeholder: "/**\n   Calculate the salary amount by applying a bonus rate.\n*/\n\npublic class SalaryBonus\n{\n   private\
+    \ double salary;\n   private double bonusRate;\n\n   public SalaryBonus(double aSalary, double aRate)\n   {\n      //TODO:\
+    \ Add assert statements\n      salary = aSalary;\n      bonusRate = aRate;\n   }\n   \n   /**\n      The following method\
+    \ checks your constructor. We use the exception\n      handling mechanism (see chapter 11) to determine whether (a) the\n\
+    \      constructor completed normally, (b) your code used an assertion to\n      check a precondition violation, or (c)\
+    \ you failed to use an\n      assertion and some other exception occurred.\n   */   \n   public static String check(double\
+    \ salaryTest, double rateTest)\n   {\n      try\n      {\n         SalaryBonus eBonus = new SalaryBonus(salaryTest,rateTest);\n\
+    \         return \"Constructor completed normally\";\n      }\n      catch (AssertionError error)\n      {\n         return\
+    \ \"Precondition violation detected\";\n      }\n      catch (Exception exception)\n      {\n         return \"Exception\
+    \ in constructor\";\n      }\n   }\n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

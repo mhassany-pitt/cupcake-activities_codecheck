@@ -1,0 +1,48 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_stringsfindingsubstrings_5_en
+source: prog.cpp
+title: Finding Substrings 5
+description: Given a string s, find the longest prefix that also occurs at the end (so that s = p + t + p), and return t,
+  the string without the beginning and the end.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Strings
+  - horstmann:Finding Substrings
+runtime:
+  language: cpp
+  version: '17'
+statement: "Given a string s, find the longest prefix p that also occurs at the end \n(so that s = p + t + p), and return\
+  \ t, the string without the \nbeginning and the end."
+elements:
+- type: locked
+  location:
+    snippet: "#include <iostream>\n#include <string>\nusing namespace std;\n\nstring removeLongestMatchingPrefixSuffix(string\
+      \ s)\n{   \n"
+- type: editable
+  location:
+    snippet: |2+
+
+
+
+  placeholder: |2+
+
+
+
+- type: locked
+  location:
+    snippet: |
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

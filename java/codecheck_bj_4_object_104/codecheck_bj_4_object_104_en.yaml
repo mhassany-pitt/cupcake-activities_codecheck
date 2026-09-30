@@ -1,0 +1,69 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_object_104_en
+source: IntersectionTester.java
+title: Objects 104
+description: Your task is to translate the rectangle box2 in the program below so that the intersection of box and box2 has
+  area 100.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Objects
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>Your task is to translate the rectangle <code>box2</code> in the program below so that
+      the intersection of <code>box</code> and <code>box2</code> has area 100.</p>
+      <p>Hint: Draw a picture that shows the positions of <code>box1</code> and
+      <code>box2</code>. Then move <code>box2</code> so that it overlaps with
+      <code>box1</code> in a 10 by 10 square. </p>
+elements:
+- type: editable
+  location:
+    snippet: |
+      import java.awt.Rectangle;
+
+      public class IntersectionTester
+      {
+         public static void main(String[] args)
+         {
+            Rectangle box1 = new Rectangle(5, 10, 20, 30);
+            Rectangle box2 = new Rectangle(10, 15, 20, 30);
+            // now translate box2
+            . . .
+            Rectangle box = box1.intersection(box2);
+            double area = box.getWidth() * box.getHeight();
+            System.out.println(area);
+            System.out.println("Expected: 100");
+         }
+      }
+  placeholder: |
+    import java.awt.Rectangle;
+
+    public class IntersectionTester
+    {
+       public static void main(String[] args)
+       {
+          Rectangle box1 = new Rectangle(5, 10, 20, 30);
+          Rectangle box2 = new Rectangle(10, 15, 20, 30);
+          // now translate box2
+          . . .
+          Rectangle box = box1.intersection(box2);
+          double area = box.getWidth() * box.getHeight();
+          System.out.println(area);
+          System.out.println("Expected: 100");
+       }
+    }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

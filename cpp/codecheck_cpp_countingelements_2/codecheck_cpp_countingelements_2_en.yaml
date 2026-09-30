@@ -1,0 +1,52 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_countingelements_2_en
+source: prog.cpp
+title: Counting Elements 2
+description: Given an array of integers and two values a and b, count how many elements are at least a and at most b.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Arrays - Simple Exercises
+  - horstmann:Counting Elements
+runtime:
+  language: cpp
+  version: '17'
+statement: "Given an array of integers and two values <code>lower</code> \nand <code>upper</code>, count how many elements\
+  \ are at least \n<code>lower</code> and at most <code>upper</code>."
+elements:
+- type: locked
+  location:
+    snippet: |
+      /**
+         Count elements between lower and upper (inclusive).
+         @param a the array to examine.
+         @param size the size of the array.
+         @param lower the lower value to consider.
+         @param upper the upper value to consider.
+         @return elements falling between lower and upper (inclusive).
+      */
+      int count_between(const int a[], int size, int lower, int upper)
+      {
+- type: editable
+  location:
+    snippet: |2
+         // Your code here...
+  placeholder: |2
+       // Your code here...
+- type: locked
+  location:
+    snippet: |
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

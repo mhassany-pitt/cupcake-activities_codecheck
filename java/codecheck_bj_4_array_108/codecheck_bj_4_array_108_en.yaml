@@ -1,0 +1,48 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_array_108_en
+source: Words.java
+title: Arrays and Array Lists 108
+description: Remove all short words (that is, words of length at most 3) from an array.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Arrays and Array Lists
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>Remove all short words (that is, words of length at most 3) from an array. Move down the remaining array elements to fit the gaps. Don't change the order of the elements. Fill the unused portion at the end of the array with empty strings.</p>
+
+  <p>For example, if you start with an array containing</p>
+
+      <pre><code>"Mary", "had", "a", "little", "lamb"</code> </pre>
+
+      <p>you would end up with an array containing the five strings</p>
+
+      <pre><code>"Mary", "little", "lamb"</code>, "", ""</pre>
+elements:
+- type: editable
+  location:
+    snippet: "public class Words\n{\n   /**\n      Removes all short words (length <= 3) from an array. The \n      order\
+      \ of the remaining element is left unchanged. The unused\n      end of the array is filled with empty strings.\n   \
+      \   @param words the array from which the short words are to be removed\n   */\n   public static void removeShortWords(String[]\
+      \ words)\n   {\n      // your work here\n\n\n\n   }\n\n}\n"
+  placeholder: "public class Words\n{\n   /**\n      Removes all short words (length <= 3) from an array. The \n      order\
+    \ of the remaining element is left unchanged. The unused\n      end of the array is filled with empty strings.\n     \
+    \ @param words the array from which the short words are to be removed\n   */\n   public static void removeShortWords(String[]\
+    \ words)\n   {\n      // your work here\n\n\n\n   }\n\n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass
+includes:
+- WordsTester.java

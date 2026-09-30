@@ -1,0 +1,73 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_ood_103_en
+source: Invoice.java
+title: Object-Oriented Design 103
+description: The invoice program assumes that prices are given in dollar.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Object-Oriented Design
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>The invoice program assumes that prices are given in dollar. Other
+      currencies have different rules, and it makes sense to use an interface
+      that defines the essential operations required for money values. The interface <code>Money</code> is given below.</p>
+
+      <p>There will be classes (such as <code>Dollar</code> and <code>Euro</code>) that
+      implement this interface, but you need not know them.</p>
+
+      <p>In this assignment, the <code>Product</code> and <code>LineItem</code> classes
+      have been modified to use the <code>Money</code> interface. </p>
+
+      <p>Your task is to modify the <code>Invoice</code> class.</p>
+elements:
+- type: editable
+  location:
+    snippet: "import java.util.ArrayList;\n\n/**\n   Describes an invoice for a set of purchased products.\n*/\npublic class\
+      \ Invoice\n{  \n   /**\n      Constructs an invoice.\n      @param anAddress the billing address\n   */\n   public Invoice(Address\
+      \ anAddress)\n   {  \n      items = new ArrayList<LineItem>();\n      billingAddress = anAddress;\n   }\n  \n   /**\n\
+      \      Adds a charge for a product to this invoice.\n      @param aProduct the product that the customer ordered\n \
+      \     @param quantity the quantity of the product\n   */\n   public void add(Product aProduct, int quantity)\n   { \
+      \ \n      LineItem anItem = new LineItem(aProduct, quantity);\n      items.add(anItem);\n   }\n\n   /**\n      Formats\
+      \ the invoice.\n      @return the formatted invoice\n   */\n   public String format()\n   {  \n      String r =  \"\
+      \                     I N V O I C E\\n\\n\"\n            + billingAddress.format()\n            + String.format(\"\\\
+      n\\n%-30s%8s%5s%8s\\n\",\n               \"Description\", \"Price\", \"Qty\", \"Total\");\n\n      for (LineItem i :\
+      \ items)\n      {  \n         r = r + i.format() + \"\\n\";\n      }\n\n      // TODO: Format amount due      \n\n \
+      \     return r;\n   }\n\n   /**\n      Computes the total amount due.\n      @return the amount due\n   */\n   public\
+      \ Money getAmountDue()\n   {\n      // TODO: Compute amount due\n   }\n   \n   private Address billingAddress;\n   private\
+      \ ArrayList<LineItem> items;\n}\n"
+  placeholder: "import java.util.ArrayList;\n\n/**\n   Describes an invoice for a set of purchased products.\n*/\npublic class\
+    \ Invoice\n{  \n   /**\n      Constructs an invoice.\n      @param anAddress the billing address\n   */\n   public Invoice(Address\
+    \ anAddress)\n   {  \n      items = new ArrayList<LineItem>();\n      billingAddress = anAddress;\n   }\n  \n   /**\n\
+    \      Adds a charge for a product to this invoice.\n      @param aProduct the product that the customer ordered\n   \
+    \   @param quantity the quantity of the product\n   */\n   public void add(Product aProduct, int quantity)\n   {  \n \
+    \     LineItem anItem = new LineItem(aProduct, quantity);\n      items.add(anItem);\n   }\n\n   /**\n      Formats the\
+    \ invoice.\n      @return the formatted invoice\n   */\n   public String format()\n   {  \n      String r =  \"      \
+    \               I N V O I C E\\n\\n\"\n            + billingAddress.format()\n            + String.format(\"\\n\\n%-30s%8s%5s%8s\\\
+    n\",\n               \"Description\", \"Price\", \"Qty\", \"Total\");\n\n      for (LineItem i : items)\n      {  \n \
+    \        r = r + i.format() + \"\\n\";\n      }\n\n      // TODO: Format amount due      \n\n      return r;\n   }\n\n\
+    \   /**\n      Computes the total amount due.\n      @return the amount due\n   */\n   public Money getAmountDue()\n \
+    \  {\n      // TODO: Compute amount due\n   }\n   \n   private Address billingAddress;\n   private ArrayList<LineItem>\
+    \ items;\n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass
+includes:
+- Address.java
+- Dollar.java
+- InvoicePrinter.java
+- LineItem.java
+- Money.java
+- Product.java

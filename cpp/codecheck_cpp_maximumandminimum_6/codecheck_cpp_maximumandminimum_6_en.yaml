@@ -1,0 +1,49 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_maximumandminimum_6_en
+source: prog.cpp
+title: Maximum and Minimum 6
+description: Given an array of integers, return the second-largest element.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Arrays - Simple Exercises
+  - horstmann:Maximum and Minimum
+runtime:
+  language: cpp
+  version: '17'
+statement: |-
+  Given an array of positive integers, return the second-largest element.
+  If there are fewer than two integers, return -1.
+elements:
+- type: locked
+  location:
+    snippet: |
+      /**
+         Find the second-largest element in an array.
+         @param arr the array to search.
+         @param size the size of the array.
+         @return the second largest or -1 if size < 2.
+      */
+      int second_largest(const int arr[], int size)
+      {
+- type: editable
+  location:
+    snippet: "\n   \n\n"
+  placeholder: "\n   \n\n"
+- type: locked
+  location:
+    snippet: |
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

@@ -1,0 +1,52 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_recur_105_en
+source: Squid.java
+title: Recursion 105
+description: A recursive squid is a square in a diamond containing another squid.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Recursion
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>A recursive <q>squid</q> is a <b>squ</b>are <b>i</b>n a
+      <b>d</b>iamond containing another <q>squid</q>.</p>
+
+      <p>Your task is to implement the <code>draw</code> method of the squid. Draw
+      the diamond, draw the square, then make another <code>Squid</code> with half
+      the radius, and call its <code>draw</code> method. However, if the radius is
+      too small, do nothing. </p>
+
+      <p>Viewer and component classes have been provided.</p>
+elements:
+- type: editable
+  location:
+    snippet: "import java.awt.Graphics2D;\nimport java.awt.geom.Line2D;\nimport java.awt.geom.Point2D;\nimport java.awt.geom.Rectangle2D;\n\
+      \npublic class Squid\n{\n   /**\n      Constructs a Squid (square inside diamond).\n      @param aCenter the center\
+      \ point\n      @param aRadius, the distance from the center to the corner points\n      of the diamond\n   */\n   public\
+      \ Squid(Point2D.Double aCenter, double aRadius)\n   {\n      center = aCenter;\n      radius = aRadius;\n   }\n   \n\
+      \   public void draw(Graphics2D g2)\n   {\n      // your work here\n   }\n\n   private Point2D.Double center;\n   private\
+      \ double radius;   \n}\n"
+  placeholder: "import java.awt.Graphics2D;\nimport java.awt.geom.Line2D;\nimport java.awt.geom.Point2D;\nimport java.awt.geom.Rectangle2D;\n\
+    \npublic class Squid\n{\n   /**\n      Constructs a Squid (square inside diamond).\n      @param aCenter the center point\n\
+    \      @param aRadius, the distance from the center to the corner points\n      of the diamond\n   */\n   public Squid(Point2D.Double\
+    \ aCenter, double aRadius)\n   {\n      center = aCenter;\n      radius = aRadius;\n   }\n   \n   public void draw(Graphics2D\
+    \ g2)\n   {\n      // your work here\n   }\n\n   private Point2D.Double center;\n   private double radius;   \n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass
+includes:
+- SquidComponent.java
+- SquidViewer.java

@@ -1,0 +1,36 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_python_otherstringoperations_3_en
+source: prog.py
+title: Other String Operations 3
+description: Given a string s, return the string with adjacent duplicates removed.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Strings
+  - horstmann:Other String Operations
+runtime:
+  language: python
+  version: '3'
+statement: Given a string s, return the string with adjacent duplicates removed. For example, Mississippi yields Misisipi.
+elements:
+- type: editable
+  location:
+    snippet: "\n# Given a string s, return the string with adjacent duplicates removed. \n# For example, Mississippi yields\
+      \ Misisipi. You may assume there is at least \n# one character in the given string. \n\ndef removeAdjacentDuplicates(s):\n\
+      \   # Your code here...\n"
+  placeholder: "\n# Given a string s, return the string with adjacent duplicates removed. \n# For example, Mississippi yields\
+    \ Misisipi. You may assume there is at least \n# one character in the given string. \n\ndef removeAdjacentDuplicates(s):\n\
+    \   # Your code here...\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

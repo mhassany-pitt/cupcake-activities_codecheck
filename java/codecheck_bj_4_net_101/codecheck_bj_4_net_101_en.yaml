@@ -1,0 +1,46 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_net_101_en
+source: OracleClient.java
+title: Networking 101
+description: Your task is to connect to the oracle server at port 7777 on the local host.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Networking
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>Your task is to connect to the oracle server at port 7777 on the local
+      host. The oracle protocol is very simple. Send a single line containing a
+      question to the oracle server, and the oracle server will send the answer
+      in a single line and then disconnect.</p>
+elements:
+- type: editable
+  location:
+    snippet: "import java.io.InputStream;\nimport java.io.IOException;\nimport java.io.OutputStream;\nimport java.io.PrintWriter;\n\
+      import java.net.Socket;\nimport java.util.Scanner;\n\npublic class OracleClient\n{\n   public static String getAnswer(String\
+      \ question)\n      throws IOException\n   {\n      OracleServer.start();\n      final int PORT = 7777;\n      \n   \
+      \   // Connect to the port on localhost\n      \n      // Send the question\n      \n      // Get the response\n   \
+      \   \n      // Close the socket\n      \n      // Return the response\n   }\n}\n"
+  placeholder: "import java.io.InputStream;\nimport java.io.IOException;\nimport java.io.OutputStream;\nimport java.io.PrintWriter;\n\
+    import java.net.Socket;\nimport java.util.Scanner;\n\npublic class OracleClient\n{\n   public static String getAnswer(String\
+    \ question)\n      throws IOException\n   {\n      OracleServer.start();\n      final int PORT = 7777;\n      \n     \
+    \ // Connect to the port on localhost\n      \n      // Send the question\n      \n      // Get the response\n      \n\
+    \      // Close the socket\n      \n      // Return the response\n   }\n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass
+includes:
+- OracleServer.java
+- OracleService.java

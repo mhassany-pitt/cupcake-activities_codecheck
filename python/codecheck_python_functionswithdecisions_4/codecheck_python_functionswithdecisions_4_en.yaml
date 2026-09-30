@@ -1,0 +1,38 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_python_functionswithdecisions_4_en
+source: prog.py
+title: Branches with Functions 4
+description: On a chessboard, positions are marked with a letter between a and h for the column and a number between 1 and
+  8 for the row.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Branches
+  - horstmann:Branches with Functions
+runtime:
+  language: python
+  version: '3'
+statement: On a chessboard, positions are marked with a letter between a and h for the column and a number between 1 and 8
+  for the row. Given two position strings, return true if they have the same color.
+elements:
+- type: editable
+  location:
+    snippet: "\n# On a chessboard, squares are marked with a letter between a and h for the column,\n# and a number between\
+      \ 1 and 8 for the row. Given two position strings (e.g. \"a1\", \"b8\"), \n# return true if the squares have the same\
+      \ color. The first square on the board, \n# a1, is black.\n\ndef areSameColor(space1, space2):\n   # Your code here...\n"
+  placeholder: "\n# On a chessboard, squares are marked with a letter between a and h for the column,\n# and a number between\
+    \ 1 and 8 for the row. Given two position strings (e.g. \"a1\", \"b8\"), \n# return true if the squares have the same\
+    \ color. The first square on the board, \n# a1, is black.\n\ndef areSameColor(space1, space2):\n   # Your code here...\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

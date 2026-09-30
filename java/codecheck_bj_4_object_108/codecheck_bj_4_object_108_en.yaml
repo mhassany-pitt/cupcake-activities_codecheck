@@ -1,0 +1,37 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_object_108_en
+source: ReverseTester.java
+title: Objects 108
+description: StringBuilder is another class that provides methods to manipulate strings.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Objects
+runtime:
+  language: java
+  version: '17'
+statement: <p><code>StringBuilder</code> is another class that provides methods to manipulate strings.  Look in the <code>StringBuilder</code>
+  class API for information on the <code>reverse</code> method and use the method to reverse a sample string. Then use the
+  <code>toString</code> method to obtain the string in the <code>StringBuilder</code> object.</p>
+elements:
+- type: editable
+  location:
+    snippet: "public class ReverseTester\n{\n   public static void main(String[] args)\n   {\n      StringBuilder words =\
+      \ new StringBuilder(\"deliver star maps\");\n\n      // Your work here\n\n      String reversed = ...;\n\n      System.out.println(reversed);\
+      \   \n      // Also print out what you expect\n      System.out.println(\"Expected: ...\");\n  }\n}\n"
+  placeholder: "public class ReverseTester\n{\n   public static void main(String[] args)\n   {\n      StringBuilder words\
+    \ = new StringBuilder(\"deliver star maps\");\n\n      // Your work here\n\n      String reversed = ...;\n\n      System.out.println(reversed);\
+    \   \n      // Also print out what you expect\n      System.out.println(\"Expected: ...\");\n  }\n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

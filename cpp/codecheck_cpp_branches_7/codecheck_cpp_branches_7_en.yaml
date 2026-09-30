@@ -1,0 +1,35 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_branches_7_en
+source: prog.cpp
+title: Branches Without Functions 7
+description: Given two integers x and y, print their sum, but if it is more than 100 or less than 0, print "out of range".
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Branches
+  - horstmann:Branches Without Functions
+runtime:
+  language: cpp
+  version: '17'
+statement: "Given two integers x and y, print their sum. If the sum is more than 100 \nor the sum is less than 0, print \"\
+  out of range\" instead of the sum."
+elements:
+- type: editable
+  location:
+    snippet: "#include <iostream>\nusing namespace std;\n\nint main()\n{\n   int x = 0; \n   int y = 0; \n\n   return 0;\n\
+      }\n"
+  placeholder: "#include <iostream>\nusing namespace std;\n\nint main()\n{\n   int x = 0; \n   int y = 0; \n\n   return 0;\n\
+    }\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

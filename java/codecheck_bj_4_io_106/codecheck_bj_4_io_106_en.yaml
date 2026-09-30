@@ -1,0 +1,48 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_io_106_en
+source: ExamAverage.java
+title: Input and Output 106
+description: Your task is to read a file containing exam scores, and to write another file that contains the results of processing
+  the exam scores.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Input and Output
+runtime:
+  language: java
+  version: '17'
+statement: "<p>Your task is to read a file containing exam scores, and to write\n    another file that contains the results\
+  \ of processing the exam scores.\n    The output file should number and list each score that was read in, \n    show the\
+  \ total number of scores that were read, and show the average score.\n    The output format should contain these lines:</p>\n\
+  \n    <pre>Score 1: 90.0\nScore 2: 80.0\nScore 3: 92.0\nScore 4: 83.0\nScore 5: 74.0\nScore 6: 93.0\nScore 7: 79.0\nScore\
+  \ 8: 89.0\nScore 9: 84.0\nScore 10: 91.0\nNumber of scores read: 10\nAverage Score: 85.5\n</pre>"
+elements:
+- type: editable
+  location:
+    snippet: "/**\n   Reads a file of exam scores and calculates the average score.\n*/\n\n\nimport java.io.FileReader;\n\
+      import java.io.FileNotFoundException;\nimport java.util.Scanner;\nimport java.io.PrintWriter;\n\npublic class ExamAverage\n\
+      {\n   public static void main(String[] args)\n      throws FileNotFoundException\n   {\n      String inputFileName =\
+      \ \"scores.txt\";\n      String outputFileName = \"examScoreAverage.txt\";\n      \n      // TODO: Open the input and\
+      \ output files.\n      // Read records from the input file.\n      // Calculate the average score.\n      // Write each\
+      \ exam score, the count of scores read,\n      // and the average score to the output file.\n   }\n}\n"
+  placeholder: "/**\n   Reads a file of exam scores and calculates the average score.\n*/\n\n\nimport java.io.FileReader;\n\
+    import java.io.FileNotFoundException;\nimport java.util.Scanner;\nimport java.io.PrintWriter;\n\npublic class ExamAverage\n\
+    {\n   public static void main(String[] args)\n      throws FileNotFoundException\n   {\n      String inputFileName = \"\
+    scores.txt\";\n      String outputFileName = \"examScoreAverage.txt\";\n      \n      // TODO: Open the input and output\
+    \ files.\n      // Read records from the input file.\n      // Calculate the average score.\n      // Write each exam\
+    \ score, the count of scores read,\n      // and the average score to the output file.\n   }\n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass
+includes:
+- scores.txt

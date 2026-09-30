@@ -1,0 +1,65 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_class_105_en
+source: ClassSchedule.java
+title: Classes 105
+description: A ClassSchedule class has been designed to represent a class that is scheduled at given days and times.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Classes
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>A <code>ClassSchedule</code> class has been designed to represent a class that is scheduled at given days and times. Sometimes class schedule days or times must be changed.  Expand the <code>ClassSchedule</code> class to include methods to allow new values for days, start times and end times</p>
+  <pre>
+     public void setDays(String meetingDays)
+     public void setStartTime(String startTime)
+     public void setEndTime(String endTime)
+  </pre>
+elements:
+- type: editable
+  location:
+    snippet: "/**\n   A class has a title, time and room\n*/\npublic class ClassSchedule\n{  \n   private String title;\n\
+      \   private String days;\n   private String startTime;\n   private String endTime;\n   private String room;\n\n   /**\n\
+      \      Constructs a class with title, day, time and room.\n   */\n   public ClassSchedule(String classTitle, String\
+      \ meetingDays, String aStartTime, String aEndTime, String classRoom)\n   {   \n     title = classTitle;\n     days =\
+      \ meetingDays;\n     startTime = aStartTime;\n     endTime = aEndTime;\n     room = classRoom;\n   }\n\n   /**\n   \
+      \   Gets the title.\n      @return the title\n   */\n   public String getTitle()\n   {   \n      return title;\n   }\n\
+      \n   /**\n      Gets the time in the form \"days start time-end time\"\n      @return the time\n   */\n   public String\
+      \ getTime()\n   {   \n      String time = days + \" \" + startTime + \"-\" + endTime;\n      return time;\n   }\n\n\
+      \   /**\n      Gets the room.\n      @return the room\n   */\n   public String getRoom()\n   {   \n      return room;\n\
+      \   }\n\n   /**\n      Sets the days.\n      @param meetingDays the new meeting days\n   */\n   public void setDays(String\
+      \ meetingDays)\n   {   \n      // your work here\n\n   }\n\n   /**\n      Sets the start time.\n      @param aStartTime\
+      \ the new start time\n   */\n   public /* your work here */ setStartTime(/* your work here */)\n   {   \n      // your\
+      \ work here\n\n   }\n\n   /**\n      Sets the end time.\n      @param anEndTime the new end time\n   */\n\n   // your\
+      \ work here\n\n}\n"
+  placeholder: "/**\n   A class has a title, time and room\n*/\npublic class ClassSchedule\n{  \n   private String title;\n\
+    \   private String days;\n   private String startTime;\n   private String endTime;\n   private String room;\n\n   /**\n\
+    \      Constructs a class with title, day, time and room.\n   */\n   public ClassSchedule(String classTitle, String meetingDays,\
+    \ String aStartTime, String aEndTime, String classRoom)\n   {   \n     title = classTitle;\n     days = meetingDays;\n\
+    \     startTime = aStartTime;\n     endTime = aEndTime;\n     room = classRoom;\n   }\n\n   /**\n      Gets the title.\n\
+    \      @return the title\n   */\n   public String getTitle()\n   {   \n      return title;\n   }\n\n   /**\n      Gets\
+    \ the time in the form \"days start time-end time\"\n      @return the time\n   */\n   public String getTime()\n   { \
+    \  \n      String time = days + \" \" + startTime + \"-\" + endTime;\n      return time;\n   }\n\n   /**\n      Gets the\
+    \ room.\n      @return the room\n   */\n   public String getRoom()\n   {   \n      return room;\n   }\n\n   /**\n    \
+    \  Sets the days.\n      @param meetingDays the new meeting days\n   */\n   public void setDays(String meetingDays)\n\
+    \   {   \n      // your work here\n\n   }\n\n   /**\n      Sets the start time.\n      @param aStartTime the new start\
+    \ time\n   */\n   public /* your work here */ setStartTime(/* your work here */)\n   {   \n      // your work here\n\n\
+    \   }\n\n   /**\n      Sets the end time.\n      @param anEndTime the new end time\n   */\n\n   // your work here\n\n\
+    }\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass
+includes:
+- ClassScheduleTester.java

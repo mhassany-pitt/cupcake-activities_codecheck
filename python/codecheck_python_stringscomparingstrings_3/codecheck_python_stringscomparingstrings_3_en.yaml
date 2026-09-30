@@ -1,0 +1,36 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_python_stringscomparingstrings_3_en
+source: prog.py
+title: Comparing Strings 3
+description: Given a string s, count how many times the ith character from the front equals the ith character from the back.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Strings
+  - horstmann:Comparing Strings
+runtime:
+  language: python
+  version: '3'
+statement: Given a string s, count how many times the ith character from the front equals the ith character from the back.
+elements:
+- type: editable
+  location:
+    snippet: "\n# Given a string s, count how many times the i-th character from the front \n# equals the i-th character from\
+      \ the back. For example, the count for the\n# string 'abcdefcba' is 3. If the string length is odd, do not count\n#\
+      \ the middle character as a match.\n\ndef countFrontBackMatches(s):\n   # Your code here...\n"
+  placeholder: "\n# Given a string s, count how many times the i-th character from the front \n# equals the i-th character\
+    \ from the back. For example, the count for the\n# string 'abcdefcba' is 3. If the string length is odd, do not count\n\
+    # the middle character as a match.\n\ndef countFrontBackMatches(s):\n   # Your code here...\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

@@ -1,0 +1,38 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_python_branches_10_en
+source: prog.py
+title: Branches Without Functions 10
+description: Given an actual time and an alarm clock time, both in “military” format (such as 0730 for 7:30am), print how
+  many more minutes before the alarm rings.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Branches
+  - horstmann:Branches Without Functions
+runtime:
+  language: python
+  version: '3'
+statement: Given an actual time and an alarm clock time, both in “military” format (such as 0730 for 7:30am), print how many
+  more minutes before the alarm rings. But if the time is after the alarm, print "Alarm already went off".
+elements:
+- type: editable
+  location:
+    snippet: "\n# Given an actual time and an alarm clock time, both in military format (such as 0730 for 7:30am), \n# print\
+      \ how many more minutes before the alarm rings. When the time is after the alarm, \n# print \"Alarm already went off\"\
+      \ instead. All times will be on the same day. \n\nactualTime = 600 \nalarmTime = 555 \n\n# Your code here...\n"
+  placeholder: "\n# Given an actual time and an alarm clock time, both in military format (such as 0730 for 7:30am), \n# print\
+    \ how many more minutes before the alarm rings. When the time is after the alarm, \n# print \"Alarm already went off\"\
+    \ instead. All times will be on the same day. \n\nactualTime = 600 \nalarmTime = 555 \n\n# Your code here...\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

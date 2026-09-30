@@ -1,0 +1,39 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_loop_102_en
+source: Numbers.java
+title: Loops 102
+description: Your task is to write a method evenSum that computes the sum of all even numbers between two given numbers.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Loops
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>Your task is to write a method <code>evenSum</code> that computes the sum of all even numbers between two given numbers. For example, the
+      call <code>evenSum(3, 8)</code> should return 4 + 6 + 8 = 18.</p>
+elements:
+- type: editable
+  location:
+    snippet: "public class Numbers\n{\n   /**\n      Computes a sum of even integers \n      @param a the lower bound (may\
+      \ be odd or even)\n      @param b the upper bound (may be odd or even)\n      @return the sum of even integers between\
+      \ a and b (inclusive).\n   */\n   public int evenSum(int a, int b)\n   {\n      // your work here\n   \n   \n   \n \
+      \  \n   \n   \n   }\n}\n"
+  placeholder: "public class Numbers\n{\n   /**\n      Computes a sum of even integers \n      @param a the lower bound (may\
+    \ be odd or even)\n      @param b the upper bound (may be odd or even)\n      @return the sum of even integers between\
+    \ a and b (inclusive).\n   */\n   public int evenSum(int a, int b)\n   {\n      // your work here\n   \n   \n   \n   \n\
+    \   \n   \n   }\n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

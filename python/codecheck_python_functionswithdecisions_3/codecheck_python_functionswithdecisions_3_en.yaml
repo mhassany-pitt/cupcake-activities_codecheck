@@ -1,0 +1,44 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_python_functionswithdecisions_3_en
+source: prog.py
+title: Branches with Functions 3
+description: Given two numbers, return their distance if it less than 10, or 10 otherwise.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Branches
+  - horstmann:Branches with Functions
+runtime:
+  language: python
+  version: '3'
+statement: Given two numbers, return their distance if it less than 10, or 10 otherwise.
+elements:
+- type: editable
+  location:
+    snippet: |2
+
+      # Given two numbers, calculate the distance between them on a number line.
+      # If it is less than 10 return the distance, otherwise return 10.
+
+      def distanceOnNumberLine(a, b):
+         # Your code here...
+  placeholder: |2
+
+    # Given two numbers, calculate the distance between them on a number line.
+    # If it is less than 10 return the distance, otherwise return 10.
+
+    def distanceOnNumberLine(a, b):
+       # Your code here...
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

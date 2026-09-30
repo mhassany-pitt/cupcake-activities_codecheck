@@ -1,0 +1,36 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_python_countingelements_9_en
+source: prog.py
+title: Counting Elements 9
+description: Given two lists of integers a and b of the same length, count the number of positions where the list elements
+  differ by at least 2.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Lists - Simple Exercises
+  - horstmann:Counting Elements
+runtime:
+  language: python
+  version: '3'
+statement: Given two lists of integers a and b of the same length, count the number of positions where the list elements differ
+  by at least 2.
+elements:
+- type: editable
+  location:
+    snippet: "\n# Given two lists of integers a and b of the same length, count \n# the number of positions where the list\
+      \ elements differ by at least 2.\n\ndef differByAtLeast2(a, b):\n   # Your code here...\n"
+  placeholder: "\n# Given two lists of integers a and b of the same length, count \n# the number of positions where the list\
+    \ elements differ by at least 2.\n\ndef differByAtLeast2(a, b):\n   # Your code here...\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

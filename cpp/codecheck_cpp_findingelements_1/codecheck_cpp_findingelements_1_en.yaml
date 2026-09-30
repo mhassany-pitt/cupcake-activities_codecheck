@@ -1,0 +1,50 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_findingelements_1_en
+source: prog.cpp
+title: Finding Elements 1
+description: Given an array of integers and a value, return the position of the last occurrence of the value in the array,
+  or -1 if the value does not exist.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Arrays - Simple Exercises
+  - horstmann:Finding Elements
+runtime:
+  language: cpp
+  version: '17'
+statement: "Given a list of integers and a value, return the position \nof the <b>last</b> occurrence of the value in the\
+  \ array, or -1 if \nthe value does not exist."
+elements:
+- type: locked
+  location:
+    snippet: |
+      /**
+         Find index of last occurence of val in array.
+         @param arr the array to search.
+         @param size the size of the array.
+         @param val the value to look for.
+         @return last position of element or -1 if not found.
+      */
+      int last_index_of(const int arr[], int size, int val)
+      {
+- type: editable
+  location:
+    snippet: "\n   \n\n"
+  placeholder: "\n   \n\n"
+- type: locked
+  location:
+    snippet: |
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

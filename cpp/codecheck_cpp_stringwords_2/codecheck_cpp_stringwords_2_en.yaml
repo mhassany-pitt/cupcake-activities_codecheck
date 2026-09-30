@@ -1,0 +1,55 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_stringwords_2_en
+source: prog.cpp
+title: Words 2
+description: Given a string in which words are separated by spaces, return the first word that is duplicated (such as an accidental
+  “this this”).
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Strings
+  - horstmann:Words
+runtime:
+  language: cpp
+  version: '17'
+statement: "Given a string in which words are separated by spaces, \nreturn the first word that is repeated (i.e. immediately\
+  \ follows itself, like like this.)\n\nIf no repeats are found, return an empty string."
+elements:
+- type: locked
+  location:
+    snippet: |
+      #include <iostream>
+      #include <string>
+      #include <sstream>
+
+      using namespace std;
+
+      string firstRepeatedWord(string s)
+      {
+- type: editable
+  location:
+    snippet: |2+
+
+
+
+  placeholder: |2+
+
+
+
+- type: locked
+  location:
+    snippet: |
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

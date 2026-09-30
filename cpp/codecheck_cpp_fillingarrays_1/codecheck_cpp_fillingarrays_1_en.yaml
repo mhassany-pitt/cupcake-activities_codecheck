@@ -1,0 +1,50 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_fillingarrays_1_en
+source: prog.cpp
+title: Filling 1
+description: Given an integer n, fill an array of length n with 1 -1 1 -1 ...
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Arrays - Simple Exercises
+  - horstmann:Filling
+runtime:
+  language: cpp
+  version: '17'
+statement: Fill an array with 1 -1 1 -1 ...
+elements:
+- type: locked
+  location:
+    snippet: |
+      using namespace std;
+      void evenOdd(int arr[], int arr_size)
+      {
+- type: editable
+  location:
+    snippet: |2+
+
+
+
+  placeholder: |2+
+
+
+
+- type: locked
+  location:
+    snippet: |
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass
+includes:
+- Tester.cpp

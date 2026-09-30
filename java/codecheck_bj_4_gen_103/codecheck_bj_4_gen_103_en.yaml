@@ -1,0 +1,66 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_gen_103_en
+source: Matrix.java
+title: Generic Types 103
+description: Your task is to complete the implementation of a generic Matrix class.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Generic Types
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>Your task is to complete the implementation of a generic
+      <code>Matrix</code> class. A matrix is a two-dimensional arrangement of
+      elements. You access elements with a row and column index. For
+      example,</p>
+
+      <pre>Matrix&lt;String&gt; tttBoard = new Matrix&lt;String&gt;(3, 3);<br />tttBoard.put(0, 0, "x");
+  if (tttBoard.get(1, 2).equals("o")) . . .</pre>
+
+      <p>If the matrix has many rows and columns but few elements, it doesn't
+      make sense to allocate a large two-dimensional array, most of whose
+      entries are null. Instead, we will only store the non-null entries in a
+      map. We store the (i, j) element at the key with value i * columns + j.
+      For example, in a 10 x 10 matrix, the (3,4) element has key 3 * 10 + 4 =
+      34.</p>
+
+      <p>Complete the implementations of the <code>get</code> and <code>put</code>
+      method below.</p>
+elements:
+- type: editable
+  location:
+    snippet: "import java.util.Map;\nimport java.util.TreeMap;\n\npublic class Matrix<T>\n{\n   public Matrix(int rows, int\
+      \ columns)\n   {\n      this.rows = rows;\n      this.columns = columns;\n      elements = new TreeMap<Integer, T>();\n\
+      \   }\n\n   // add your get and put methods here\n\n   private Map<Integer, T> elements;\n   private int rows;\n   private\
+      \ int columns;\n\n   // the following method is used to check your work\n\n   public static String check(int r, int\
+      \ c, String s)\n   {\n      int rows = 3;\n      int columns = 4;\n\n      Matrix<String> m = new Matrix<String>(rows,\
+      \ columns);\n\n      // add letters of s diagonally\n      for (int i = 0; i < s.length(); i++)\n      {\n         m.put(r,\
+      \ c, s.substring(i, i + 1));\n         r++; if (r >= rows) r = 0;\n         c++; if (c >= columns) c = 0;\n      }\n\
+      \   \n      // make string representing matrix content\n      String t = \"\";\n      for (int i = 0; i < rows; i++)\n\
+      \         for (int j = 0; j < columns; j++)\n            if (m.get(i, j) == null) \n               t += \".\"; \n  \
+      \          else \n               t += m.get(i, j);\n      return t;\n   }\n}\n"
+  placeholder: "import java.util.Map;\nimport java.util.TreeMap;\n\npublic class Matrix<T>\n{\n   public Matrix(int rows,\
+    \ int columns)\n   {\n      this.rows = rows;\n      this.columns = columns;\n      elements = new TreeMap<Integer, T>();\n\
+    \   }\n\n   // add your get and put methods here\n\n   private Map<Integer, T> elements;\n   private int rows;\n   private\
+    \ int columns;\n\n   // the following method is used to check your work\n\n   public static String check(int r, int c,\
+    \ String s)\n   {\n      int rows = 3;\n      int columns = 4;\n\n      Matrix<String> m = new Matrix<String>(rows, columns);\n\
+    \n      // add letters of s diagonally\n      for (int i = 0; i < s.length(); i++)\n      {\n         m.put(r, c, s.substring(i,\
+    \ i + 1));\n         r++; if (r >= rows) r = 0;\n         c++; if (c >= columns) c = 0;\n      }\n   \n      // make string\
+    \ representing matrix content\n      String t = \"\";\n      for (int i = 0; i < rows; i++)\n         for (int j = 0;\
+    \ j < columns; j++)\n            if (m.get(i, j) == null) \n               t += \".\"; \n            else \n         \
+    \      t += m.get(i, j);\n      return t;\n   }\n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

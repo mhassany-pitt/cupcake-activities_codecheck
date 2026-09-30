@@ -1,0 +1,62 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_loop_109_en
+source: ColorSquaresComponent.java
+title: Loops 109
+description: Your task is to write a method that produces images from strings describing color values.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Loops
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>Your task is to write a method that produces images from strings describing color values.</p>
+
+  <p>Draw a small box for each color: red, green, blue, cyan, magenta, yellow,
+  black, white. The colors are coded in a string, using the letters R, G, B, C,
+  M, Y, K, W. The helper method <code>getSquareColor</code> returns the color
+  corresponding to a particular letter. </p>
+elements:
+- type: editable
+  location:
+    snippet: "import javax.swing.JComponent;\nimport java.awt.Graphics;\nimport java.awt.Graphics2D;\nimport java.awt.Rectangle;\n\
+      import java.awt.Color;\n\n/**\n   Draws colored squares.\n */\npublic class ColorSquaresComponent extends JComponent\n\
+      {\n   private String colors;\n   private int wide;\n   private int high;\n   private int size;\n   \n   /**\n     Constructs\
+      \ a component for a drawing made up of colored squares.\n     @param col the color codes of all squares in the drawing.\n\
+      \     @param w the width of the drawing\n     @param h the height of the drawing\n     @param sideLength the side length\
+      \ of each square\n   */\n   public ColorSquaresComponent(String col, int w, int h, int boxSize)\n   {\n     colors =\
+      \ col;\n     wide = w;\n     high = h;\n     size = boxSize;\n   }  \n   \n   private Color getSquareColor(char code)\n\
+      \   {\n     if (code == 'R') return Color.RED;\n     if (code == 'G') return Color.GREEN;\n     if (code == 'B') return\
+      \ Color.BLUE;\n     if (code == 'C') return Color.CYAN;\n     if (code == 'M') return Color.MAGENTA;\n     if (code\
+      \ == 'Y') return Color.YELLOW;\n     if (code == 'K') return Color.BLACK;\n     return Color.WHITE;      \n   }\n  \
+      \    \n   public void paintComponent(Graphics g)\n   {\n     Graphics2D g2 = (Graphics2D) g;\n     Rectangle box = new\
+      \ Rectangle (0,0, size, size);\n     // your work here - draw all of the boxes in the specified color\n     \n     \n\
+      \     \n     \n     \n   }\n}\n"
+  placeholder: "import javax.swing.JComponent;\nimport java.awt.Graphics;\nimport java.awt.Graphics2D;\nimport java.awt.Rectangle;\n\
+    import java.awt.Color;\n\n/**\n   Draws colored squares.\n */\npublic class ColorSquaresComponent extends JComponent\n\
+    {\n   private String colors;\n   private int wide;\n   private int high;\n   private int size;\n   \n   /**\n     Constructs\
+    \ a component for a drawing made up of colored squares.\n     @param col the color codes of all squares in the drawing.\n\
+    \     @param w the width of the drawing\n     @param h the height of the drawing\n     @param sideLength the side length\
+    \ of each square\n   */\n   public ColorSquaresComponent(String col, int w, int h, int boxSize)\n   {\n     colors = col;\n\
+    \     wide = w;\n     high = h;\n     size = boxSize;\n   }  \n   \n   private Color getSquareColor(char code)\n   {\n\
+    \     if (code == 'R') return Color.RED;\n     if (code == 'G') return Color.GREEN;\n     if (code == 'B') return Color.BLUE;\n\
+    \     if (code == 'C') return Color.CYAN;\n     if (code == 'M') return Color.MAGENTA;\n     if (code == 'Y') return Color.YELLOW;\n\
+    \     if (code == 'K') return Color.BLACK;\n     return Color.WHITE;      \n   }\n      \n   public void paintComponent(Graphics\
+    \ g)\n   {\n     Graphics2D g2 = (Graphics2D) g;\n     Rectangle box = new Rectangle (0,0, size, size);\n     // your\
+    \ work here - draw all of the boxes in the specified color\n     \n     \n     \n     \n     \n   }\n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass
+includes:
+- ColorSquaresViewer.java

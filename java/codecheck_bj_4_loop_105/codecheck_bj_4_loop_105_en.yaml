@@ -1,0 +1,39 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_loop_105_en
+source: Numbers.java
+title: Loops 105
+description: Your task is to write a method countSevens that counts the number of digits equal to 7 in a given number.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Loops
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>Your task is to write a method <code>countSevens</code> that counts the number of digits equal to 7 in a given number. For example,
+      the call <code>countSevens(1797)</code> should return 2 since the number
+      contains two digits 7. </p><p>Hint: Repeatedly compute <code>% 10</code> and
+      <code>/ 10</code>. </p>
+elements:
+- type: editable
+  location:
+    snippet: "public class Numbers\n{\n   /**\n      Counts the number of digits with value 7 in a given number\n      @param\
+      \ n any non-negative number\n      @return the number of digits with value 7 in the decimal representation of n\n  \
+      \ */\n   public int countSevens(int n)\n   {\n      // your work here\n   \n   \n   \n   \n   \n   \n   }\n}\n"
+  placeholder: "public class Numbers\n{\n   /**\n      Counts the number of digits with value 7 in a given number\n      @param\
+    \ n any non-negative number\n      @return the number of digits with value 7 in the decimal representation of n\n   */\n\
+    \   public int countSevens(int n)\n   {\n      // your work here\n   \n   \n   \n   \n   \n   \n   }\n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

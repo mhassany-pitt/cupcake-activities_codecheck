@@ -1,0 +1,84 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_io_107_en
+source: UpcaseNames.java
+title: Input and Output 107
+description: Your task is to read an input file containing a name on each line, and then write an output file with those names,
+  with the first letter of each name in uppercase.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Input and Output
+runtime:
+  language: java
+  version: '17'
+statement: "<p>Your task is to read an input file containing a name on each line, and then\n    write an output file with\
+  \ those names, with the first letter of each name in \n    uppercase.\n    For example, if the input file contains the name\
+  \ \"bugs bunny\" on one line,\n    the output file should contain \"Bugs Bunny\" on one line.</p>"
+elements:
+- type: editable
+  location:
+    snippet: |
+      /**
+         Reads a file of lower case names, and writes a file of the
+         names with the first letter of each name in uppercase.
+      */
+
+      import java.io.FileReader;
+      import java.io.FileNotFoundException;
+      import java.util.Scanner;
+      import java.io.PrintWriter;
+
+      public class UpcaseNames
+      {
+         public static void main(String[] args)
+            throws FileNotFoundException
+         {
+            String inputFileName = "names.txt";
+            String outputFileName = "upcaseNames.txt";
+
+            // TODO: Open the input and output files.
+            // Read records from the input file.
+            // Upcase the first letter of each name on each line.
+            // Write each line with the modified names to the output file.
+         }
+      }
+  placeholder: |
+    /**
+       Reads a file of lower case names, and writes a file of the
+       names with the first letter of each name in uppercase.
+    */
+
+    import java.io.FileReader;
+    import java.io.FileNotFoundException;
+    import java.util.Scanner;
+    import java.io.PrintWriter;
+
+    public class UpcaseNames
+    {
+       public static void main(String[] args)
+          throws FileNotFoundException
+       {
+          String inputFileName = "names.txt";
+          String outputFileName = "upcaseNames.txt";
+
+          // TODO: Open the input and output files.
+          // Read records from the input file.
+          // Upcase the first letter of each name on each line.
+          // Write each line with the modified names to the output file.
+       }
+    }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass
+includes:
+- names.txt

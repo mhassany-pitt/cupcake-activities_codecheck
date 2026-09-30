@@ -1,0 +1,71 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_class2_106_en
+source: Vehicle.java
+title: Designing Classes 106
+description: Consider the Vehicle class below.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Designing Classes
+runtime:
+  language: java
+  version: '17'
+statement: "<p>Consider the <code>Vehicle</code> class below.</p>\n\n    <p>Note how this class intermingles two responsibilities:\
+  \ describing a\n    vehicle, and describing the characteristics of its propulsion. \n    The second responsibility is not\
+  \ trivial. We may want to add support for \n    different types of propulsion, with completely different characteristics.\n\
+  \    For example, we would be ineterestd in the number of propellers for a boat,\n    and not the number of wheels.</p>\n\
+  \n    <p>Ideally, a <code>Vehicle</code> class should have a single responsibility:\n    to describe a vehicle has some\
+  \ type of self-contained propulsion. A separate \n    <code>Propulsion</code> class should be responsible for the details\
+  \ of managing \n    propulsion characteristics. </p>\n\n    <p>Your task is to modify the <code>Vehicle</code> class so\
+  \ that it uses the\n    <code>Propulsion</code> class given below. The <code>main</code> method shows how your modified\n\
+  \    class should be used. </p>"
+elements:
+- type: editable
+  location:
+    snippet: "/**\n   Describes a vehicle with a self-contained propulsion unit.\n*/\npublic class Vehicle\n{\n   /*\n   \
+      \  TODO: To increase cohesion, reimplement this class by using\n     the Propulsion class. Do not modify the main method\
+      \ that is use\n     for checking.\n   */\n\n   private String make;\n   private String model;\n   private String year;\n\
+      \   private String type;\n   private int wheelCount;\n   private String engineType;\n   private String fuel;\n\n   /**\n\
+      \      Constructs a vehicle\n      @param aMake the vehicle's make\n      @param aModel the vehicle's model\n      @param\
+      \ aType the type of the vehicle\n      @param numWheels the number of wheels on this vehicle\n      @param aFuel the\
+      \ type of fuel used by this vehicle\n   */\n   \n   public Vehicle(String aMake, String aModel, String aYear,\n    \
+      \  String aType, int numWheels, String aEngineType, String aFuel)\n   {\n      make = aMake;\n      model = aModel;\n\
+      \      year = aYear;\n      type = aType;\n      wheelCount = numWheels;\n      engineType = aEngineType;\n      fuel\
+      \ = aFuel;\n   }\n   \n   public static void main(String[] args)\n   {\n      Vehicle auto = new Vehicle(\"Ford\",\"\
+      Taurus\",\"2010\",\"automobile\",\n         4,new Propulsion(\"combustion\",\"gasoline\"));\n      System.out.println(auto.formatForPrinting());\n\
+      \   }\n\n   /**\n    * Formats the vehicle information for printing\n    * @returns a string sutiable for printing\n\
+      \    */\n   public String formatForPrinting()\n   {\n      return \"Make: \" + make + \"\\n\"\n         + \"Model: \"\
+      \ + model + \"\\n\"\n         + \"Year: \" + year + \"\\n\"\n         + \"Type: \" + type + \"\\n\"\n         + \"Number\
+      \ of wheels: \" + wheelCount + \"\\n\"\n         + \"Engine type: \" + engineType + \"\\n\"\n         + \"Fuel: \" +\
+      \ fuel + \"\\n\";\n   }   \n}\n"
+  placeholder: "/**\n   Describes a vehicle with a self-contained propulsion unit.\n*/\npublic class Vehicle\n{\n   /*\n \
+    \    TODO: To increase cohesion, reimplement this class by using\n     the Propulsion class. Do not modify the main method\
+    \ that is use\n     for checking.\n   */\n\n   private String make;\n   private String model;\n   private String year;\n\
+    \   private String type;\n   private int wheelCount;\n   private String engineType;\n   private String fuel;\n\n   /**\n\
+    \      Constructs a vehicle\n      @param aMake the vehicle's make\n      @param aModel the vehicle's model\n      @param\
+    \ aType the type of the vehicle\n      @param numWheels the number of wheels on this vehicle\n      @param aFuel the type\
+    \ of fuel used by this vehicle\n   */\n   \n   public Vehicle(String aMake, String aModel, String aYear,\n      String\
+    \ aType, int numWheels, String aEngineType, String aFuel)\n   {\n      make = aMake;\n      model = aModel;\n      year\
+    \ = aYear;\n      type = aType;\n      wheelCount = numWheels;\n      engineType = aEngineType;\n      fuel = aFuel;\n\
+    \   }\n   \n   public static void main(String[] args)\n   {\n      Vehicle auto = new Vehicle(\"Ford\",\"Taurus\",\"2010\"\
+    ,\"automobile\",\n         4,new Propulsion(\"combustion\",\"gasoline\"));\n      System.out.println(auto.formatForPrinting());\n\
+    \   }\n\n   /**\n    * Formats the vehicle information for printing\n    * @returns a string sutiable for printing\n \
+    \   */\n   public String formatForPrinting()\n   {\n      return \"Make: \" + make + \"\\n\"\n         + \"Model: \" +\
+    \ model + \"\\n\"\n         + \"Year: \" + year + \"\\n\"\n         + \"Type: \" + type + \"\\n\"\n         + \"Number\
+    \ of wheels: \" + wheelCount + \"\\n\"\n         + \"Engine type: \" + engineType + \"\\n\"\n         + \"Fuel: \" + fuel\
+    \ + \"\\n\";\n   }   \n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass
+includes:
+- Propulsion.java

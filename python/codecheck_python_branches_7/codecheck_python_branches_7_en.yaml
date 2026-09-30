@@ -1,0 +1,34 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_python_branches_7_en
+source: prog.py
+title: Branches Without Functions 7
+description: Given two integers x and y, print their sum, but if it is more than 100 or less than 0, print "out of range".
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Branches
+  - horstmann:Branches Without Functions
+runtime:
+  language: python
+  version: '3'
+statement: Given two integers x and y, print their sum, but if it is more than 100 or less than 0, print "out of range".
+elements:
+- type: editable
+  location:
+    snippet: "\n# Given two integers x and y, print their sum. If the sum is more than 100 \n# or the sum is less than 0,\
+      \ print \"out of range\" instead of the sum.\n\nx = 0 \ny = 0 \n\n"
+  placeholder: "\n# Given two integers x and y, print their sum. If the sum is more than 100 \n# or the sum is less than 0,\
+    \ print \"out of range\" instead of the sum.\n\nx = 0 \ny = 0 \n\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

@@ -1,0 +1,50 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_branches_10_en
+source: prog.cpp
+title: Branches Without Functions 10
+description: Given an actual time and an alarm clock time, both in “military” format (such as 0730 for 7:30am), print how
+  many more minutes before the alarm rings.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Branches
+  - horstmann:Branches Without Functions
+runtime:
+  language: cpp
+  version: '17'
+statement: "Given an actual time and an alarm clock time, both in military format (such as 1430 for 2:30pm), \nprint how many\
+  \ more minutes before the alarm rings. When the time is after the alarm, \nprint \"Alarm already went off\" instead. All\
+  \ times will be on the same day."
+elements:
+- type: locked
+  location:
+    snippet: "#include <iostream>\nusing namespace std;\n\nint main()\n{\n   int actualTime = 600; \n   int alarmTime = 1555;\
+      \ \n\n"
+- type: editable
+  location:
+    snippet: |2
+         . . .
+  placeholder: |2
+       . . .
+- type: locked
+  location:
+    snippet: |2
+         if (differenceInMinutes > 0)
+            cout << differenceInMinutes << endl;
+         else
+            cout << "Alarm already went off" << endl;
+         return 0;
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

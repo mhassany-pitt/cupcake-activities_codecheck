@@ -1,0 +1,40 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_python_producing2darrays_3_en
+source: prog.py
+title: Producing 2D Arrays 3
+description: Repeat the preceding exercise where the array dimensions need not match, filling positions that exist in neither
+  array with 0.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Two-Dimensional Arrays
+  - horstmann:Producing 2D Arrays
+runtime:
+  language: python
+  version: '3'
+statement: Repeat the preceding exercise where the array dimensions need not match, filling positions that exist in neither
+  array with 0.
+elements:
+- type: editable
+  location:
+    snippet: "\n# Given two two-dimensional arrays a and b of integers \n# return a two-dimensional array where the height\
+      \ is the maximum height of a and b\n# and the width is the maximum width of a and b, and where each element \n# is the\
+      \ greater of the corresponding elements in the two lists.\n# Fill positions that exist in neither array with 0.\n\n\
+      def maxOfMismatchedArrays(a, b):\n   # Your code here...\n"
+  placeholder: "\n# Given two two-dimensional arrays a and b of integers \n# return a two-dimensional array where the height\
+    \ is the maximum height of a and b\n# and the width is the maximum width of a and b, and where each element \n# is the\
+    \ greater of the corresponding elements in the two lists.\n# Fill positions that exist in neither array with 0.\n\ndef\
+    \ maxOfMismatchedArrays(a, b):\n   # Your code here...\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

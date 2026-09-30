@@ -1,0 +1,38 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_loop_108_en
+source: Compressor.java
+title: Loops 108
+description: A simple technique for compressing an image is run-length encoding.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Loops
+runtime:
+  language: java
+  version: '17'
+statement: "<p>A simple technique for compressing an image is run-length encoding. The\ncolor of each pixel or area is specified\
+  \ for an image. The color pallette can\nbe specified by the first letter of each color (R, G, B, C, M, Y, K, W) - red,\n\
+  green, blue, cyan, magenta, yellow, black, white. An example 6 by 4 image is:\n</p>\n<pre>    RRRGGGYYYYWBWWRGBBBBBRRR</pre>\n\
+  Run-length encoding counts the number of each color in a group and replaces the\nindividual color values by a number and\
+  \ the color. For our example, this would\ngive: \n<pre>   3R3G4Y1W1B2W1R1G5B3R</pre>\n\n<p>Complete the <code>compressImage</code>\
+  \ method to run-length compress a\nstring of characters.</p>"
+elements:
+- type: editable
+  location:
+    snippet: "public class Compressor\n{\n   public String compressImage(String imageColors)\n   {\n      // your work here\
+      \   \n   } \n}\n"
+  placeholder: "public class Compressor\n{\n   public String compressImage(String imageColors)\n   {\n      // your work here\
+    \   \n   } \n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

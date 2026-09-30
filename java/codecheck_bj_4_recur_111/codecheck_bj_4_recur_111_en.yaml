@@ -1,0 +1,38 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_recur_111_en
+source: MyMethods.java
+title: Recursion 111
+description: Modify the static return upperCase method in the MyMethods class so that it returns a string of the upper case
+  letters.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Recursion
+runtime:
+  language: java
+  version: '17'
+statement: <p>Modify the static return upperCase method in the MyMethods class so that it returns a string of the upper case
+  letters. For example, upperCase("John DeGamma") would return the string "JDG" because those are the sequence of upper case
+  letters in the word.</p>
+elements:
+- type: editable
+  location:
+    snippet: "public class MyMethods\n{  \n   public static String upperCase(String s)\n   {   \n      ...\n      String upperCaseTail\
+      \ = upperCase(...);\n      char ch = s.charAt(0);\n      if (Character.isUpperCase(ch))\n         ...\n      else\n\
+      \         ...\n   }\n}\n"
+  placeholder: "public class MyMethods\n{  \n   public static String upperCase(String s)\n   {   \n      ...\n      String\
+    \ upperCaseTail = upperCase(...);\n      char ch = s.charAt(0);\n      if (Character.isUpperCase(ch))\n         ...\n\
+    \      else\n         ...\n   }\n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

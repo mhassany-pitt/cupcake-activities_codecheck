@@ -1,0 +1,54 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_inter_108_en
+source: PolygonTester.java
+title: Interfaces 108
+description: Modify the PolygonTester class below so that it uses anonymous objects where possible.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Interfaces
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>Modify the <code>PolygonTester</code> class below so that it uses anonymous objects where
+      possible. Objects that are only used once should be coded as anonymous objects.</p>
+elements:
+- type: editable
+  location:
+    snippet: "/**\n   This class creates a polygon object to test the Polygon class.\n*/\npublic class PolygonTester\n{  \n\
+      \   public static void main(String[] args)\n   {\n      PolygonTester PolyTest = new PolygonTester();\n      System.out.println(PolyTest.testPolygon());\n\
+      \      System.out.println(\"Expected: (0,0) (0,10) (10,15)\"\n         + \" (15,10) (10,0) (0,0) \");\n   }\n   \n \
+      \  /**\n      Creates a polygon and returns a list of the vertices' coordinates\n      @return list of vertics' coordinates\n\
+      \   */\n   private String testPolygon()\n   {\n      // TODO: Clean up this code by using\n      // anonymous objects\
+      \ where possible.\n      Polygon poly = new Polygon(6);\n      Point startPoint = new Point (0,0);\n      poly.addPoint(startPoint);\n\
+      \      Point secondPoint = new Point(0,10);\n      poly.addPoint(secondPoint);\n      Point thirdPoint = new Point(10,15);\n\
+      \      poly.addPoint(thirdPoint);\n      Point fourthPoint = new Point(15,10);\n      poly.addPoint(fourthPoint);\n\
+      \      Point fifthPoint = new Point (10,0);\n      poly.addPoint(fifthPoint);\n      poly.addPoint(startPoint);\n  \
+      \    return poly.listVertices();\n   }\n}\n"
+  placeholder: "/**\n   This class creates a polygon object to test the Polygon class.\n*/\npublic class PolygonTester\n{\
+    \  \n   public static void main(String[] args)\n   {\n      PolygonTester PolyTest = new PolygonTester();\n      System.out.println(PolyTest.testPolygon());\n\
+    \      System.out.println(\"Expected: (0,0) (0,10) (10,15)\"\n         + \" (15,10) (10,0) (0,0) \");\n   }\n   \n   /**\n\
+    \      Creates a polygon and returns a list of the vertices' coordinates\n      @return list of vertics' coordinates\n\
+    \   */\n   private String testPolygon()\n   {\n      // TODO: Clean up this code by using\n      // anonymous objects\
+    \ where possible.\n      Polygon poly = new Polygon(6);\n      Point startPoint = new Point (0,0);\n      poly.addPoint(startPoint);\n\
+    \      Point secondPoint = new Point(0,10);\n      poly.addPoint(secondPoint);\n      Point thirdPoint = new Point(10,15);\n\
+    \      poly.addPoint(thirdPoint);\n      Point fourthPoint = new Point(15,10);\n      poly.addPoint(fourthPoint);\n  \
+    \    Point fifthPoint = new Point (10,0);\n      poly.addPoint(fifthPoint);\n      poly.addPoint(startPoint);\n      return\
+    \ poly.listVertices();\n   }\n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass
+includes:
+- Point.java
+- Polygon.java

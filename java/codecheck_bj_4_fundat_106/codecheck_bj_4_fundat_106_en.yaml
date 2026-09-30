@@ -1,0 +1,44 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_fundat_106_en
+source: Degrees.java
+title: Fundamental Data Types 106
+description: Latitude and longitude are measured in degrees, minutes and seconds.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Fundamental Data Types
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>Latitude and longitude are measured in degrees, minutes and seconds.  As with time measurements, there are 60 seconds to a minute, and 60 minutes to a degree. Many GIS (Geographical Information System) programs express latitude and longitude in degrees only, with the minutes and seconds converted to fractional degrees.  For example, </p>
+  <pre>
+     Latitude 40°15'30" can also be expressed as Latitude 40.25833333333333
+  </pre>
+  <p>Implement a method <code>decimalDegrees</code> to carry out this conversion. Note that degrees may be negative. Use the <code>Math</code> class method <code>abs</code> when computing the decimal degrees.  Use the <code>Math</code> class method <code>signum</code> as a multiplier so that the decimal degrees have the same sign as the degrees.</p>
+elements:
+- type: editable
+  location:
+    snippet: "/**\n   A class to convert degree, minute, seconds to decimal degrees\n*/\npublic class Degrees\n{\n   /**\n\
+      \      Converts minutes and seconds to decimal degrees \n      @param degrees the degrees between -359 and 359\n   \
+      \   @param minutes the minutes between 0 and 59\n      @param seconds the minutes between 0 and 59\n      @return the\
+      \ equivalent decimal degrees between -360 and 360 (exclusive)\n   */\n   public double decimalDegrees(int degrees, int\
+      \ minutes, int seconds)\n   {\n      ...\n   }\n}\n"
+  placeholder: "/**\n   A class to convert degree, minute, seconds to decimal degrees\n*/\npublic class Degrees\n{\n   /**\n\
+    \      Converts minutes and seconds to decimal degrees \n      @param degrees the degrees between -359 and 359\n     \
+    \ @param minutes the minutes between 0 and 59\n      @param seconds the minutes between 0 and 59\n      @return the equivalent\
+    \ decimal degrees between -360 and 360 (exclusive)\n   */\n   public double decimalDegrees(int degrees, int minutes, int\
+    \ seconds)\n   {\n      ...\n   }\n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

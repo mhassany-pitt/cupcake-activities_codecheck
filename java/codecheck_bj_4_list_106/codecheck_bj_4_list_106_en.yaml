@@ -1,0 +1,43 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_list_106_en
+source: LinkedListUtil.java
+title: Linear Data Structures 106
+description: Write a method that removes all but the first two elements from a linked list, using an iterator.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Linear Data Structures
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>
+     Write a method that removes all but the first two elements from a linked list, using
+     an iterator. You may assume that the list has at least two elements.
+  </p>
+elements:
+- type: editable
+  location:
+    snippet: "import java.util.LinkedList;\nimport java.util.ListIterator;\n\npublic class LinkedListUtil\n{\n   /**\n   \
+      \   deletes all but the first two linked list enries\n   */\n   public static void processList(ListIterator iter)\n\
+      \   {  \n      // Your work here\n   }\n\n\n   // This method is used to check your work\n   public static LinkedList<String>\
+      \ check(String[] values)\n   {    \n      LinkedList<String> list = new LinkedList<String>();\n      for (String s :\
+      \ values) list.add(s);\n      \n      processList(list.listIterator());\n\n      return list;\n   }\n\n}\n"
+  placeholder: "import java.util.LinkedList;\nimport java.util.ListIterator;\n\npublic class LinkedListUtil\n{\n   /**\n \
+    \     deletes all but the first two linked list enries\n   */\n   public static void processList(ListIterator iter)\n\
+    \   {  \n      // Your work here\n   }\n\n\n   // This method is used to check your work\n   public static LinkedList<String>\
+    \ check(String[] values)\n   {    \n      LinkedList<String> list = new LinkedList<String>();\n      for (String s : values)\
+    \ list.add(s);\n      \n      processList(list.listIterator());\n\n      return list;\n   }\n\n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

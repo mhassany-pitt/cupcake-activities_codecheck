@@ -1,0 +1,50 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_bj_4_class_107_en
+source: MapLabels.java
+title: Classes 107
+description: The latitude, longitude and place name are used to label a map.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Classes
+runtime:
+  language: java
+  version: '17'
+statement: |-
+  <p>The latitude, longitude and place name are used to label a map.  Implement a class with latitude and longitude as decimal degrees (33.755, for example) and a place name.  Provide a toString method that will return an XML string with the values in this format:</p>
+  <pre>
+     &lt;label name="Atlanta, GA" latitude="33.755" longitude="-84.39"/&gt;
+     &lt;label name="San Francisco, CA" latitude="37.7793" longitude="-122.4192"/&gt;
+  </pre>
+elements:
+- type: editable
+  location:
+    snippet: "/**\n   A map  label has a place name, longitude and latitude\n*/\npublic class MapLabels\n{  \n   private String\
+      \ placeName;\n   private double latitude;\n   private double longitude;\n\n   /**\n      Constructs a map label with\
+      \ place name, logitude and latitude\n   */\n   public MapLabels (String name, double aLat, double aLong)\n   {   \n\
+      \     // your work here\n     placeName = ...;\n     latitude = ...;\n     longitude = ...;\n   }\n \n   /**\n     \
+      \ Gets the string in XML form\n      @return the string\n   */\n   public String toString()\n   {   \n      //your work\
+      \ here\n      // use \\\" to print a \"\n      String label = \"<label name=\\\"\" + placeName + ...;\n\n      return\
+      \ label;\n   }   \n}\n"
+  placeholder: "/**\n   A map  label has a place name, longitude and latitude\n*/\npublic class MapLabels\n{  \n   private\
+    \ String placeName;\n   private double latitude;\n   private double longitude;\n\n   /**\n      Constructs a map label\
+    \ with place name, logitude and latitude\n   */\n   public MapLabels (String name, double aLat, double aLong)\n   {  \
+    \ \n     // your work here\n     placeName = ...;\n     latitude = ...;\n     longitude = ...;\n   }\n \n   /**\n    \
+    \  Gets the string in XML form\n      @return the string\n   */\n   public String toString()\n   {   \n      //your work\
+    \ here\n      // use \\\" to print a \"\n      String label = \"<label name=\\\"\" + placeName + ...;\n\n      return\
+    \ label;\n   }   \n}\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass
+includes:
+- MapLabelsTester.java

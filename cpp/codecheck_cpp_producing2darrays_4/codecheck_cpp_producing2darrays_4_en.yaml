@@ -1,0 +1,55 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_cpp_producing2darrays_4_en
+source: prog.cpp
+title: Producing 2D Arrays 4
+description: Given two two-dimensional arrays of integers with the same number of rows and columns, return the first position
+  where they do not match, as an array of length 2.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Two-Dimensional Arrays
+  - horstmann:Producing 2D Arrays
+runtime:
+  language: cpp
+  version: '17'
+statement: "<p>Given two <code>vector&lt;vector&lt;int&gt;&gt;</code> with the \n   same number of rows and columns, return\
+  \ the first \n   position where they do not match, as a <code>vector</code>.\n   If they do fully match, return <code>{-1,\
+  \ -1}</code>.\n</p>"
+elements:
+- type: locked
+  location:
+    snippet: |
+      #include <vector>
+      using namespace std;
+
+      /**
+         Return the position of the first mismatch between two vectors.
+         @param a the first vector.
+         @param b the second vector.
+         @return {-1,-1} if they match; the position otherwise.
+      */
+      vector<int> first_no_match(const vector<vector<int>>& a, const vector<vector<int>>& b)
+      {
+- type: editable
+  location:
+    snippet: |2
+         // Your code here...
+  placeholder: |2
+       // Your code here...
+- type: locked
+  location:
+    snippet: |
+      }
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

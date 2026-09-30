@@ -1,0 +1,38 @@
+$schema: https://adapt2.sis.pitt.edu/cupcake/schemas/free-coding/0.1.0
+license: CC BY-NC-ND 4.0
+locale: en
+id: fc_codecheck_python_producing2darrays_7_en
+source: prog.py
+title: Producing 2D Arrays 7
+description: Given a two-dimensional array a, return a list whose [i][j] element is the average of the neighbors of a[i][j]
+  in the N, E, S, W direction.
+authors:
+- first: Cay
+  last: Horstmann
+  email: cay@horstmann.com
+  affiliation: San José State University
+pedagogy:
+  activity: free-coding
+  difficulty: novice
+  prereq_topics: []
+  topics:
+  - horstmann:Two-Dimensional Arrays
+  - horstmann:Producing 2D Arrays
+runtime:
+  language: python
+  version: '3'
+statement: Given a two-dimensional array a, return a list whose [i][j] element is the average of the neighbors of a[i][j]
+  in the N, E, S, W direction.
+elements:
+- type: editable
+  location:
+    snippet: "\n# Given a two-dimensional array a, return a two-dimensional array whose \n# [i][j] element is the average\
+      \ of the neighbors of a[i][j] \n# in the N, E, S, W direction. You may assume that there\n# are elements in all directions.\
+      \ \n\ndef averageElements(arr, i, j):\n   # Your code here...\n"
+  placeholder: "\n# Given a two-dimensional array a, return a two-dimensional array whose \n# [i][j] element is the average\
+    \ of the neighbors of a[i][j] \n# in the N, E, S, W direction. You may assume that there\n# are elements in all directions.\
+    \ \n\ndef averageElements(arr, i, j):\n   # Your code here...\n"
+testcases:
+- title: Solution Verification
+  visible: true
+  status: pass

@@ -26,18 +26,24 @@ statement: |-
   </pre>
   <p>Implement a method <code>decimalDegrees</code> to carry out this conversion. Note that degrees may be negative. Use the <code>Math</code> class method <code>abs</code> when computing the decimal degrees.  Use the <code>Math</code> class method <code>signum</code> as a multiplier so that the decimal degrees have the same sign as the degrees.</p>
 elements:
-- type: editable
+- type: locked
   location:
     snippet: "/**\n   A class to convert degree, minute, seconds to decimal degrees\n*/\npublic class Degrees\n{\n   /**\n\
       \      Converts minutes and seconds to decimal degrees \n      @param degrees the degrees between -359 and 359\n   \
       \   @param minutes the minutes between 0 and 59\n      @param seconds the minutes between 0 and 59\n      @return the\
       \ equivalent decimal degrees between -360 and 360 (exclusive)\n   */\n   public double decimalDegrees(int degrees, int\
-      \ minutes, int seconds)\n   {\n      ...\n   }\n}\n"
-  placeholder: "/**\n   A class to convert degree, minute, seconds to decimal degrees\n*/\npublic class Degrees\n{\n   /**\n\
-    \      Converts minutes and seconds to decimal degrees \n      @param degrees the degrees between -359 and 359\n     \
-    \ @param minutes the minutes between 0 and 59\n      @param seconds the minutes between 0 and 59\n      @return the equivalent\
-    \ decimal degrees between -360 and 360 (exclusive)\n   */\n   public double decimalDegrees(int degrees, int minutes, int\
-    \ seconds)\n   {\n      ...\n   }\n}\n"
+      \ minutes, int seconds)\n   {\n"
+- type: editable
+  location:
+    snippet: |2
+            ...
+  placeholder: |2
+          ...
+- type: locked
+  location:
+    snippet: |2
+         }
+      }
 testcases:
 - title: Solution Verification
   visible: true

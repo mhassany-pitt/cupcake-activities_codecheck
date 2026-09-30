@@ -34,7 +34,7 @@ statement: |-
       <p>the sequence <code>1 1</code> occurs at the left and the right, and your
       method should return 2.</p>
 elements:
-- type: editable
+- type: locked
   location:
     snippet: |
       public class Numbers
@@ -48,30 +48,23 @@ elements:
          */
          public int sameEnds(int[] values)
          {
+- type: editable
+  location:
+    snippet: |2+
             // your work here
 
 
 
-         }
-      }
-  placeholder: |
-    public class Numbers
-    {
-       /**
-          Computes the length of the longest sequence that occurs in the
-          start of the left half and the end of the right half of an
-          array.
-          @param values an array of integer values
-          @return the length of the longest end sequence
-       */
-       public int sameEnds(int[] values)
-       {
+  placeholder: |2+
           // your work here
 
 
 
-       }
-    }
+- type: locked
+  location:
+    snippet: |2
+         }
+      }
 testcases:
 - title: Solution Verification
   visible: true

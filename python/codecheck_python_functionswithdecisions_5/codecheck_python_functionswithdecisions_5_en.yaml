@@ -24,14 +24,17 @@ runtime:
 statement: Given three numbers x, y, z and a Boolean variable <code>strict</code>, return <code>true</code> if <code>strict</code>
   is false and x ≤ y ≤ z, or <code>strict</code> is true and x &lt; y &lt; z.
 elements:
-- type: editable
+- type: locked
   location:
     snippet: "\n# Given three numbers x, y, z and a Boolean variable strict, if strict is False \n# return True if x <= y\
       \ <= z, otherwise return False. If strict is true, \n# return True if  x < y < z, otherwise return False.\n\ndef strict(x,\
-      \ y, z, strict):\n   # Your code here...\n"
-  placeholder: "\n# Given three numbers x, y, z and a Boolean variable strict, if strict is False \n# return True if x <=\
-    \ y <= z, otherwise return False. If strict is true, \n# return True if  x < y < z, otherwise return False.\n\ndef strict(x,\
-    \ y, z, strict):\n   # Your code here...\n"
+      \ y, z, strict):\n"
+- type: editable
+  location:
+    snippet: |2
+         # Your code here...
+  placeholder: |2
+       # Your code here...
 testcases:
 - title: Solution Verification
   visible: true

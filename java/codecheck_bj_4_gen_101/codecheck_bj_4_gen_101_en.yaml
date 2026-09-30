@@ -34,32 +34,30 @@ statement: |-
       <p>Complete the implementations of the <code>get</code> and <code>put</code>
       method below.</p>
 elements:
-- type: editable
+- type: locked
   location:
     snippet: "import java.util.ArrayList;\n\npublic class Matrix<T>\n{\n   public Matrix(int rows, int columns)\n   {\n  \
       \    this.rows = rows;\n      this.columns = columns;\n      elements = new ArrayList<ArrayList<T>>();\n      for (int\
       \ i = 0; i < rows; i++)\n      {\n         ArrayList<T> row = new ArrayList<T>();\n         for (int j = 0; j < columns;\
-      \ j++)\n            row.add(null);\n         \n         elements.add(row);\n      }\n   }\n\n   // add your get and\
-      \ put methods here\n\n   private ArrayList<ArrayList<T>> elements;\n   private int rows;\n   private int columns;\n\n\
-      \   // the following method is used to check your work\n\n   public static String check(int r, int c, String s)\n  \
-      \ {\n      int rows = 3;\n      int columns = 4;\n\n      Matrix<String> m = new Matrix<String>(rows, columns);\n\n\
-      \      // add letters of s diagonally\n      for (int i = 0; i < s.length(); i++)\n      {\n         m.put(r, c, s.substring(i,\
-      \ i + 1));\n         r++; if (r >= rows) r = 0;\n         c++; if (c >= columns) c = 0;\n      }\n   \n      // make\
-      \ string representing matrix content\n      String t = \"\";\n      for (int i = 0; i < rows; i++)\n         for (int\
-      \ j = 0; j < columns; j++)\n            if (m.get(i, j) == null) \n               t += \".\"; \n            else \n\
-      \               t += m.get(i, j);\n      return t;\n   }\n}\n"
-  placeholder: "import java.util.ArrayList;\n\npublic class Matrix<T>\n{\n   public Matrix(int rows, int columns)\n   {\n\
-    \      this.rows = rows;\n      this.columns = columns;\n      elements = new ArrayList<ArrayList<T>>();\n      for (int\
-    \ i = 0; i < rows; i++)\n      {\n         ArrayList<T> row = new ArrayList<T>();\n         for (int j = 0; j < columns;\
-    \ j++)\n            row.add(null);\n         \n         elements.add(row);\n      }\n   }\n\n   // add your get and put\
-    \ methods here\n\n   private ArrayList<ArrayList<T>> elements;\n   private int rows;\n   private int columns;\n\n   //\
-    \ the following method is used to check your work\n\n   public static String check(int r, int c, String s)\n   {\n   \
-    \   int rows = 3;\n      int columns = 4;\n\n      Matrix<String> m = new Matrix<String>(rows, columns);\n\n      // add\
-    \ letters of s diagonally\n      for (int i = 0; i < s.length(); i++)\n      {\n         m.put(r, c, s.substring(i, i\
-    \ + 1));\n         r++; if (r >= rows) r = 0;\n         c++; if (c >= columns) c = 0;\n      }\n   \n      // make string\
-    \ representing matrix content\n      String t = \"\";\n      for (int i = 0; i < rows; i++)\n         for (int j = 0;\
-    \ j < columns; j++)\n            if (m.get(i, j) == null) \n               t += \".\"; \n            else \n         \
-    \      t += m.get(i, j);\n      return t;\n   }\n}\n"
+      \ j++)\n            row.add(null);\n         \n         elements.add(row);\n      }\n   }\n\n"
+- type: editable
+  location:
+    snippet: |2+
+         // add your get and put methods here
+
+  placeholder: |2+
+       // add your get and put methods here
+
+- type: locked
+  location:
+    snippet: "   private ArrayList<ArrayList<T>> elements;\n   private int rows;\n   private int columns;\n\n   // the following\
+      \ method is used to check your work\n\n   public static String check(int r, int c, String s)\n   {\n      int rows =\
+      \ 3;\n      int columns = 4;\n\n      Matrix<String> m = new Matrix<String>(rows, columns);\n\n      // add letters\
+      \ of s diagonally\n      for (int i = 0; i < s.length(); i++)\n      {\n         m.put(r, c, s.substring(i, i + 1));\n\
+      \         r++; if (r >= rows) r = 0;\n         c++; if (c >= columns) c = 0;\n      }\n   \n      // make string representing\
+      \ matrix content\n      String t = \"\";\n      for (int i = 0; i < rows; i++)\n         for (int j = 0; j < columns;\
+      \ j++)\n            if (m.get(i, j) == null) \n               t += \".\"; \n            else \n               t += m.get(i,\
+      \ j);\n      return t;\n   }\n}\n"
 testcases:
 - title: Solution Verification
   visible: true

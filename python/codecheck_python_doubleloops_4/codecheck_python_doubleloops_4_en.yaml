@@ -22,19 +22,18 @@ runtime:
   version: '3'
 statement: Given a list of integers, return the largest sum of consecutive elements.
 elements:
-- type: editable
+- type: locked
   location:
     snippet: |2
 
       # Given a list of integers, return the largest sum of consecutive elements.
 
       def largestConsecutiveSum(arr):
+- type: editable
+  location:
+    snippet: |2
          # Your code here...
   placeholder: |2
-
-    # Given a list of integers, return the largest sum of consecutive elements.
-
-    def largestConsecutiveSum(arr):
        # Your code here...
 testcases:
 - title: Solution Verification

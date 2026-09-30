@@ -32,22 +32,24 @@ statement: |-
       <p>One of the overloaded <code>parse</code> methods of the
       <code>DocumentBuilder</code> class accepts an <code>InputStream</code>. </p>
 elements:
-- type: editable
+- type: locked
   location:
     snippet: "import java.io.File;\nimport java.io.IOException;\nimport java.io.ByteArrayInputStream;\nimport java.io.FileInputStream;\n\
       import javax.xml.parsers.DocumentBuilder;\nimport javax.xml.parsers.DocumentBuilderFactory;\nimport javax.xml.parsers.ParserConfigurationException;\n\
       import org.w3c.dom.Document;\nimport org.xml.sax.SAXException; \n\npublic class XMLReader\n{\n   public Document read(String\
-      \ what)\n      throws . . .\n   {\n      . . .\n      if (what.startsWith(\"<\")) \n      {\n         . . . \n     \
-      \ }\n      else\n      {\n         FileInputStream in = new FileInputStream(...);\n         . . .\n      }         \n\
-      \   }\n   \n   // This method is used to check your work.\n   \n   public String check(String what) throws Exception\n\
-      \   {\n      return read(what).getDocumentElement().getNodeName();\n   }\n}\n"
-  placeholder: "import java.io.File;\nimport java.io.IOException;\nimport java.io.ByteArrayInputStream;\nimport java.io.FileInputStream;\n\
-    import javax.xml.parsers.DocumentBuilder;\nimport javax.xml.parsers.DocumentBuilderFactory;\nimport javax.xml.parsers.ParserConfigurationException;\n\
-    import org.w3c.dom.Document;\nimport org.xml.sax.SAXException; \n\npublic class XMLReader\n{\n   public Document read(String\
-    \ what)\n      throws . . .\n   {\n      . . .\n      if (what.startsWith(\"<\")) \n      {\n         . . . \n      }\n\
-    \      else\n      {\n         FileInputStream in = new FileInputStream(...);\n         . . .\n      }         \n   }\n\
-    \   \n   // This method is used to check your work.\n   \n   public String check(String what) throws Exception\n   {\n\
-    \      return read(what).getDocumentElement().getNodeName();\n   }\n}\n"
+      \ what)\n      throws"
+- type: editable
+  location:
+    snippet: |2
+       . . .
+  placeholder: |2
+     . . .
+- type: locked
+  location:
+    snippet: "   {\n      . . .\n      if (what.startsWith(\"<\")) \n      {\n         . . . \n      }\n      else\n     \
+      \ {\n         FileInputStream in = new FileInputStream(...);\n         . . .\n      }         \n   }\n   \n   // This\
+      \ method is used to check your work.\n   \n   public String check(String what) throws Exception\n   {\n      return\
+      \ read(what).getDocumentElement().getNodeName();\n   }\n}\n"
 testcases:
 - title: Solution Verification
   visible: true

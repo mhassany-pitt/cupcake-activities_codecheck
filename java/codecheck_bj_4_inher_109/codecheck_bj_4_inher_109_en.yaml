@@ -24,16 +24,30 @@ statement: "<p>Light bulbs can be identified by type and can be measured by the 
   \ class. Complete the <code>LightBulb</code> class so that the <code>getDescription</code> method returns a string of the\
   \ form <code>lumensPerWatt=...,shape=...</code> (without any spaces). Be sure that your class is abstract!</p>"
 elements:
+- type: locked
+  location:
+    snippet: |
+      /**
+         Represents a light bulb of some type.
+      */
+      public abstract class LightBulb // MUST be abstract
+      {
 - type: editable
   location:
-    snippet: "/**\n   Represents a light bulb of some type.\n*/\npublic abstract class LightBulb // MUST be abstract\n{\n\
-      \   // TODO: Add any needed instance variables, constructors, and methods\n   \n   \n   /**\n      Gets a description\
-      \ of this light bulb.\n      @return a string of the form lumensPerWatt=...,shape=... (without any spaces)\n   */\n\
-      \   public String getDescription()\n   {\n      // TODO: Complete this method\n   }\n}\n"
-  placeholder: "/**\n   Represents a light bulb of some type.\n*/\npublic abstract class LightBulb // MUST be abstract\n{\n\
-    \   // TODO: Add any needed instance variables, constructors, and methods\n   \n   \n   /**\n      Gets a description\
-    \ of this light bulb.\n      @return a string of the form lumensPerWatt=...,shape=... (without any spaces)\n   */\n  \
-    \ public String getDescription()\n   {\n      // TODO: Complete this method\n   }\n}\n"
+    snippet: "   // TODO: Add any needed instance variables, constructors, and methods\n   \n   \n"
+  placeholder: "   // TODO: Add any needed instance variables, constructors, and methods\n   \n   \n"
+- type: locked
+  location:
+    snippet: |2
+         /**
+            Gets a description of this light bulb.
+            @return a string of the form lumensPerWatt=...,shape=... (without any spaces)
+         */
+         public String getDescription()
+         {
+            // TODO: Complete this method
+         }
+      }
 testcases:
 - title: Solution Verification
   visible: true

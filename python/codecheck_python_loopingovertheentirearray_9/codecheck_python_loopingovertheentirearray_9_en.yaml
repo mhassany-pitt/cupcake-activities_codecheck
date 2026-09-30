@@ -22,12 +22,16 @@ runtime:
   version: '3'
 statement: Given a two-dimensional array of integers, return a list of the number of negative elements in each row.
 elements:
-- type: editable
+- type: locked
   location:
     snippet: "\n# Given a two-dimensional array of integers, return an \n# array of the number of negative elements in each\
-      \ row.\n\ndef countNegativeByRow(arr):\n   # Your code here...\n"
-  placeholder: "\n# Given a two-dimensional array of integers, return an \n# array of the number of negative elements in each\
-    \ row.\n\ndef countNegativeByRow(arr):\n   # Your code here...\n"
+      \ row.\n\ndef countNegativeByRow(arr):\n"
+- type: editable
+  location:
+    snippet: |2
+         # Your code here...
+  placeholder: |2
+       # Your code here...
 testcases:
 - title: Solution Verification
   visible: true

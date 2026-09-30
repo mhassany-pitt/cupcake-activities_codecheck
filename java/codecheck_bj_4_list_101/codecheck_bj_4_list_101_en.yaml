@@ -23,19 +23,29 @@ statement: |-
   <p>Your task is to remove all short words (that is, words with at most 3
       characters) from a linked list.</p>
 elements:
+- type: locked
+  location:
+    snippet: |
+      import java.util.Arrays;
+      import java.util.LinkedList;
+      import java.util.ListIterator;
+
+      public class WordList
+      {
+         public void removeShortWords(LinkedList<String> words)
+         {
 - type: editable
   location:
-    snippet: "import java.util.Arrays;\nimport java.util.LinkedList;\nimport java.util.ListIterator;\n\npublic class WordList\n\
-      {\n   public void removeShortWords(LinkedList<String> words)\n   {\n      // TODO: Complete method\n   }\n\n   public\
-      \ boolean isShortWord(String word)\n   {\n      return word.length() <= 3;\n   }\n   \n   // this method is used to\
-      \ check your work\n   public LinkedList<String> check(String[] elements)\n   {\n      LinkedList<String> words = new\
-      \ LinkedList<String>();\n      words.addAll(Arrays.asList(elements));      \n      removeShortWords(words);\n      return\
-      \ words;\n   }\n}\n"
-  placeholder: "import java.util.Arrays;\nimport java.util.LinkedList;\nimport java.util.ListIterator;\n\npublic class WordList\n\
-    {\n   public void removeShortWords(LinkedList<String> words)\n   {\n      // TODO: Complete method\n   }\n\n   public\
-    \ boolean isShortWord(String word)\n   {\n      return word.length() <= 3;\n   }\n   \n   // this method is used to check\
-    \ your work\n   public LinkedList<String> check(String[] elements)\n   {\n      LinkedList<String> words = new LinkedList<String>();\n\
-    \      words.addAll(Arrays.asList(elements));      \n      removeShortWords(words);\n      return words;\n   }\n}\n"
+    snippet: |2
+            // TODO: Complete method
+  placeholder: |2
+          // TODO: Complete method
+- type: locked
+  location:
+    snippet: "   }\n\n   public boolean isShortWord(String word)\n   {\n      return word.length() <= 3;\n   }\n   \n   //\
+      \ this method is used to check your work\n   public LinkedList<String> check(String[] elements)\n   {\n      LinkedList<String>\
+      \ words = new LinkedList<String>();\n      words.addAll(Arrays.asList(elements));      \n      removeShortWords(words);\n\
+      \      return words;\n   }\n}\n"
 testcases:
 - title: Solution Verification
   visible: true

@@ -25,18 +25,22 @@ statement: |-
      an iterator. You may assume that the list has at least two elements.
   </p>
 elements:
-- type: editable
+- type: locked
   location:
     snippet: "import java.util.LinkedList;\nimport java.util.ListIterator;\n\npublic class LinkedListUtil\n{\n   /**\n   \
       \   deletes all but the first two linked list enries\n   */\n   public static void processList(ListIterator iter)\n\
-      \   {  \n      // Your work here\n   }\n\n\n   // This method is used to check your work\n   public static LinkedList<String>\
-      \ check(String[] values)\n   {    \n      LinkedList<String> list = new LinkedList<String>();\n      for (String s :\
-      \ values) list.add(s);\n      \n      processList(list.listIterator());\n\n      return list;\n   }\n\n}\n"
-  placeholder: "import java.util.LinkedList;\nimport java.util.ListIterator;\n\npublic class LinkedListUtil\n{\n   /**\n \
-    \     deletes all but the first two linked list enries\n   */\n   public static void processList(ListIterator iter)\n\
-    \   {  \n      // Your work here\n   }\n\n\n   // This method is used to check your work\n   public static LinkedList<String>\
-    \ check(String[] values)\n   {    \n      LinkedList<String> list = new LinkedList<String>();\n      for (String s : values)\
-    \ list.add(s);\n      \n      processList(list.listIterator());\n\n      return list;\n   }\n\n}\n"
+      \   {  \n"
+- type: editable
+  location:
+    snippet: |2
+            // Your work here
+  placeholder: |2
+          // Your work here
+- type: locked
+  location:
+    snippet: "   }\n\n\n   // This method is used to check your work\n   public static LinkedList<String> check(String[] values)\n\
+      \   {    \n      LinkedList<String> list = new LinkedList<String>();\n      for (String s : values) list.add(s);\n \
+      \     \n      processList(list.listIterator());\n\n      return list;\n   }\n\n}\n"
 testcases:
 - title: Solution Verification
   visible: true

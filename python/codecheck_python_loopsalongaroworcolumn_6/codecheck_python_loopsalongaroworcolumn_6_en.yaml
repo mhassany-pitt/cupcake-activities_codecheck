@@ -22,14 +22,16 @@ runtime:
   version: '3'
 statement: Given a two-dimensional array of integers, return the sum of all elements along the north and south border.
 elements:
-- type: editable
+- type: locked
   location:
     snippet: "\n# Given a two-dimensional array of integers, return the sum \n# of all elements along the north and south\
-      \ border. If there is only\n# one row, it will be treated as both the North and South border.\n\ndef sumNorthAndSouth(arr):\n\
-      \   # Your code here...\n"
-  placeholder: "\n# Given a two-dimensional array of integers, return the sum \n# of all elements along the north and south\
-    \ border. If there is only\n# one row, it will be treated as both the North and South border.\n\ndef sumNorthAndSouth(arr):\n\
-    \   # Your code here...\n"
+      \ border. If there is only\n# one row, it will be treated as both the North and South border.\n\ndef sumNorthAndSouth(arr):\n"
+- type: editable
+  location:
+    snippet: |2
+         # Your code here...
+  placeholder: |2
+       # Your code here...
 testcases:
 - title: Solution Verification
   visible: true

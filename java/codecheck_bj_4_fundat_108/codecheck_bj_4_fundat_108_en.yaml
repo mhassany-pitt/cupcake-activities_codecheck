@@ -27,22 +27,36 @@ statement: |-
   <p>The radius of the planet Earth is 6371 km</p>
   <p>Your task is to compute the distance between two <code>Location</code> objects.</p>
 elements:
+- type: locked
+  location:
+    snippet: |
+      /**
+         A class to describe the location of a place on Earth.
+      */
+      public class Location
+      {
+         private double latid;
+         private double longit;
+
+         private static final double EARTH_RADIUS = 6371;
+
+         /**
+            Construct a location with a given latitude and longitude (in degrees)
+         */
+         public Location(double latitude, double longitude)
+         {
 - type: editable
   location:
-    snippet: "/**\n   A class to describe the location of a place on Earth.\n*/\npublic class Location\n{\n   private double\
-      \ latid;\n   private double longit;\n\n   private static final double EARTH_RADIUS = 6371;\n\n   /**\n      Construct\
-      \ a location with a given latitude and longitude (in degrees)\n   */\n   public Location(double latitude, double longitude)\n\
-      \   {\n      . . .\n   }\n\n   public double getLongitudeInRadians() { return longit; }\n\n   public double getLatitudeInRadians()\
+    snippet: |2
+            . . .
+  placeholder: |2
+          . . .
+- type: locked
+  location:
+    snippet: "   }\n\n   public double getLongitudeInRadians() { return longit; }\n\n   public double getLatitudeInRadians()\
       \ { return latid; }\n   \n   /**\n      Gets the distance between two locations in kilometers\n      @param other another\
       \ location\n      @return the distance between this location and other\n   */\n   public double getDistance(Location\
       \ other)\n   {\n      . . .\n   }\n}\n"
-  placeholder: "/**\n   A class to describe the location of a place on Earth.\n*/\npublic class Location\n{\n   private double\
-    \ latid;\n   private double longit;\n\n   private static final double EARTH_RADIUS = 6371;\n\n   /**\n      Construct\
-    \ a location with a given latitude and longitude (in degrees)\n   */\n   public Location(double latitude, double longitude)\n\
-    \   {\n      . . .\n   }\n\n   public double getLongitudeInRadians() { return longit; }\n\n   public double getLatitudeInRadians()\
-    \ { return latid; }\n   \n   /**\n      Gets the distance between two locations in kilometers\n      @param other another\
-    \ location\n      @return the distance between this location and other\n   */\n   public double getDistance(Location other)\n\
-    \   {\n      . . .\n   }\n}\n"
 testcases:
 - title: Solution Verification
   visible: true

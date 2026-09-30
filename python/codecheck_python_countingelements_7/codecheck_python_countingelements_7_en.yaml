@@ -22,12 +22,16 @@ runtime:
   version: '3'
 statement: Given a list of integers, remove all elements that occur more than once, leaving the first occurrence.
 elements:
-- type: editable
+- type: locked
   location:
     snippet: "\n# Given a list of integers, remove all elements that \n# occur more than once, leaving the first occurrence.\n\
-      \ndef removeDuplicates(arr):\n   # Your code here...\n"
-  placeholder: "\n# Given a list of integers, remove all elements that \n# occur more than once, leaving the first occurrence.\n\
-    \ndef removeDuplicates(arr):\n   # Your code here...\n"
+      \ndef removeDuplicates(arr):\n"
+- type: editable
+  location:
+    snippet: |2
+         # Your code here...
+  placeholder: |2
+       # Your code here...
 testcases:
 - title: Solution Verification
   visible: true

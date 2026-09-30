@@ -22,14 +22,17 @@ runtime:
   version: '3'
 statement: Repeat the preceding exercise for U.S. time (e.g. 7:30am).
 elements:
-- type: editable
+- type: locked
   location:
     snippet: "\n# Given an actual time and an alarm clock time, in U.S. time format (e.g. 7:30am, 2:30pm) \n# print how many\
       \ more minutes before the alarm rings. When the time is after the alarm, \n# print \"Alarm already went off\" instead.\
-      \ All times will be on the same day. \n\nactualTime = '6:00am' \nalarmTime = '5:55am' \n\n# Your code here...\n"
-  placeholder: "\n# Given an actual time and an alarm clock time, in U.S. time format (e.g. 7:30am, 2:30pm) \n# print how\
-    \ many more minutes before the alarm rings. When the time is after the alarm, \n# print \"Alarm already went off\" instead.\
-    \ All times will be on the same day. \n\nactualTime = '6:00am' \nalarmTime = '5:55am' \n\n# Your code here...\n"
+      \ All times will be on the same day. \n\nactualTime = '6:00am' \nalarmTime = '5:55am' \n\n"
+- type: editable
+  location:
+    snippet: |
+      # Your code here...
+  placeholder: |
+    # Your code here...
 testcases:
 - title: Solution Verification
   visible: true

@@ -26,20 +26,23 @@ statement: "<p>When people enter their telephone numbers into a form they use ma
   number of digits, the string <code>\"Error\"</code> is returned. \n\n<p>Hint: Use the <code>Character.isDigit</code> method\
   \ to check whether a\ncharacter is a digit. </p>"
 elements:
-- type: editable
+- type: locked
   location:
     snippet: "public class PhoneNumbers\n{\n   /**\n      Cleans a phone number.\n      @param phoneNumber a phone number\
       \ that should contain ten digits and possibly other characters\n      @return the phone number in the form (###) ###-####\
       \ or the string \"Error\" if phoneNumber\n      does not have ten digits\n   */\n   public String cleanNumber(String\
-      \ phoneNumber)\n   {   \n      // your work here\n      ...\n      for (int i = 0; i < ...; i++)\n      {\n        \
-      \ char ch = phoneNumber.charAt(i);\n         if (Character.isDigit(ch))\n         {\n            ...\n         }   \
-      \       \n      }\n      ...    \n   }   \n}\n"
-  placeholder: "public class PhoneNumbers\n{\n   /**\n      Cleans a phone number.\n      @param phoneNumber a phone number\
-    \ that should contain ten digits and possibly other characters\n      @return the phone number in the form (###) ###-####\
-    \ or the string \"Error\" if phoneNumber\n      does not have ten digits\n   */\n   public String cleanNumber(String phoneNumber)\n\
-    \   {   \n      // your work here\n      ...\n      for (int i = 0; i < ...; i++)\n      {\n         char ch = phoneNumber.charAt(i);\n\
-    \         if (Character.isDigit(ch))\n         {\n            ...\n         }          \n      }\n      ...    \n   }\
-    \   \n}\n"
+      \ phoneNumber)\n   {   \n"
+- type: editable
+  location:
+    snippet: |2
+            // your work here
+  placeholder: |2
+          // your work here
+- type: locked
+  location:
+    snippet: "      ...\n      for (int i = 0; i < ...; i++)\n      {\n         char ch = phoneNumber.charAt(i);\n       \
+      \  if (Character.isDigit(ch))\n         {\n            ...\n         }          \n      }\n      ...    \n   }   \n\
+      }\n"
 testcases:
 - title: Solution Verification
   visible: true

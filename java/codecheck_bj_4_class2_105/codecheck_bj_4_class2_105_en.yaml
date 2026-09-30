@@ -24,32 +24,41 @@ statement: |-
       total number of coins that were constructed. Also add a static method
       <code>objectCount</code> that returns the count. </p>
 elements:
+- type: locked
+  location:
+    snippet: |+
+      /**
+         A coin with a monetary value.
+      */
+
 - type: editable
   location:
-    snippet: "/**\n   A coin with a monetary value.\n*/\n\n/*\n   TODO: Add a static variable that counts the number of coin\
-      \ objects\n   that have been constructed. Add a static method objectCount that\n   reports the count.\n*/\n\npublic\
-      \ class Coin\n{\n   /**\n      Constructs a coin.\n      @param aValue the monetary value of the coin.\n      @param\
-      \ aName the name of the coin\n   */\n   public Coin(double aValue, String aName) \n   { \n      value = aValue; \n \
-      \     name = aName;\n   }\n\n   /**\n      Gets the coin value.\n      @return the value\n   */\n   public double getValue()\
-      \ \n   {\n      return value;\n   }\n\n   /**\n      Gets the coin name.\n      @return the name\n   */\n   public String\
-      \ getName() \n   {\n      return name;\n   }\n   \n   /**\n      Returns a string representation of the object.\n  \
-      \    @return name and value of coin\n   */\n   public String toString()\n   {\n      return \"Coin[value=\" + value\
-      \ + \",name=\" + name + \"]\";\n   }\n\n   private double value;\n   private String name;\n   \n   public static int\
-      \ check(int dimes, int quarters)\n   {\n      Coin[] coins = new Coin[dimes + quarters];\n      for (int i = 1; i <=\
-      \ dimes; i++)\n         coins[i] = new Coin(0.10, \"dime\");\n      for (int i = 1; i <= quarters; i++)\n         coins[dimes]\
-      \ = new Coin(0.25, \"quarter\");\n      return Coin.objectCount();\n   }\n}\n"
-  placeholder: "/**\n   A coin with a monetary value.\n*/\n\n/*\n   TODO: Add a static variable that counts the number of\
-    \ coin objects\n   that have been constructed. Add a static method objectCount that\n   reports the count.\n*/\n\npublic\
-    \ class Coin\n{\n   /**\n      Constructs a coin.\n      @param aValue the monetary value of the coin.\n      @param aName\
-    \ the name of the coin\n   */\n   public Coin(double aValue, String aName) \n   { \n      value = aValue; \n      name\
-    \ = aName;\n   }\n\n   /**\n      Gets the coin value.\n      @return the value\n   */\n   public double getValue() \n\
-    \   {\n      return value;\n   }\n\n   /**\n      Gets the coin name.\n      @return the name\n   */\n   public String\
-    \ getName() \n   {\n      return name;\n   }\n   \n   /**\n      Returns a string representation of the object.\n    \
-    \  @return name and value of coin\n   */\n   public String toString()\n   {\n      return \"Coin[value=\" + value + \"\
-    ,name=\" + name + \"]\";\n   }\n\n   private double value;\n   private String name;\n   \n   public static int check(int\
-    \ dimes, int quarters)\n   {\n      Coin[] coins = new Coin[dimes + quarters];\n      for (int i = 1; i <= dimes; i++)\n\
-    \         coins[i] = new Coin(0.10, \"dime\");\n      for (int i = 1; i <= quarters; i++)\n         coins[dimes] = new\
-    \ Coin(0.25, \"quarter\");\n      return Coin.objectCount();\n   }\n}\n"
+    snippet: |+
+      /*
+         TODO: Add a static variable that counts the number of coin objects
+         that have been constructed. Add a static method objectCount that
+         reports the count.
+      */
+
+  placeholder: |+
+    /*
+       TODO: Add a static variable that counts the number of coin objects
+       that have been constructed. Add a static method objectCount that
+       reports the count.
+    */
+
+- type: locked
+  location:
+    snippet: "public class Coin\n{\n   /**\n      Constructs a coin.\n      @param aValue the monetary value of the coin.\n\
+      \      @param aName the name of the coin\n   */\n   public Coin(double aValue, String aName) \n   { \n      value =\
+      \ aValue; \n      name = aName;\n   }\n\n   /**\n      Gets the coin value.\n      @return the value\n   */\n   public\
+      \ double getValue() \n   {\n      return value;\n   }\n\n   /**\n      Gets the coin name.\n      @return the name\n\
+      \   */\n   public String getName() \n   {\n      return name;\n   }\n   \n   /**\n      Returns a string representation\
+      \ of the object.\n      @return name and value of coin\n   */\n   public String toString()\n   {\n      return \"Coin[value=\"\
+      \ + value + \",name=\" + name + \"]\";\n   }\n\n   private double value;\n   private String name;\n   \n   public static\
+      \ int check(int dimes, int quarters)\n   {\n      Coin[] coins = new Coin[dimes + quarters];\n      for (int i = 1;\
+      \ i <= dimes; i++)\n         coins[i] = new Coin(0.10, \"dime\");\n      for (int i = 1; i <= quarters; i++)\n     \
+      \    coins[dimes] = new Coin(0.25, \"quarter\");\n      return Coin.objectCount();\n   }\n}\n"
 testcases:
 - title: Solution Verification
   visible: true

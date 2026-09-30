@@ -30,26 +30,25 @@ statement: |-
   </pre>
   <p>These methods return the class title, the time period in the form <code>days start time-end time</code>, and class room. An example time is: <code>MWF 9:00-9:50</code></p>
 elements:
-- type: editable
+- type: locked
   location:
     snippet: "/**\n   A computer class has a title, time and room\n*/\npublic class ClassSchedule\n{  \n   private String\
       \ title;\n   private String days;\n   private String startTime;\n   private String endTime;\n   private String room;\n\
       \n   /**\n      Constructs a computer class with title, days, time and room\n   */\n   public ClassSchedule(String classTitle,\
-      \ String meetingDays, String aStartTime, String anEndTime, String classRoom)\n   {   \n     // your work here\n    \
-      \ title = ...;\n     days = ...;\n     ...     \n   }\n\n   /**\n      Gets the title\n      @return the title\n   */\n\
-      \   public String getTitle()\n   {   \n      // your work here\n      \n   }\n   \n   /**\n      Gets the time in the\
-      \ form \"days start time-end time\"\n      @return the time\n   */\n   public String getTime()\n   {   \n      // your\
-      \ work here\n      String time = ...;\n      return time;\n   }\n   \n   /**\n      Gets the room\n      @return the\
-      \ room\n   */\n   public String getRoom()\n   {   \n      // your work here\n\n   }\n}\n"
-  placeholder: "/**\n   A computer class has a title, time and room\n*/\npublic class ClassSchedule\n{  \n   private String\
-    \ title;\n   private String days;\n   private String startTime;\n   private String endTime;\n   private String room;\n\
-    \n   /**\n      Constructs a computer class with title, days, time and room\n   */\n   public ClassSchedule(String classTitle,\
-    \ String meetingDays, String aStartTime, String anEndTime, String classRoom)\n   {   \n     // your work here\n     title\
-    \ = ...;\n     days = ...;\n     ...     \n   }\n\n   /**\n      Gets the title\n      @return the title\n   */\n   public\
-    \ String getTitle()\n   {   \n      // your work here\n      \n   }\n   \n   /**\n      Gets the time in the form \"days\
-    \ start time-end time\"\n      @return the time\n   */\n   public String getTime()\n   {   \n      // your work here\n\
-    \      String time = ...;\n      return time;\n   }\n   \n   /**\n      Gets the room\n      @return the room\n   */\n\
-    \   public String getRoom()\n   {   \n      // your work here\n\n   }\n}\n"
+      \ String meetingDays, String aStartTime, String anEndTime, String classRoom)\n   {   \n"
+- type: editable
+  location:
+    snippet: |2
+           // your work here
+  placeholder: |2
+         // your work here
+- type: locked
+  location:
+    snippet: "     title = ...;\n     days = ...;\n     ...     \n   }\n\n   /**\n      Gets the title\n      @return the\
+      \ title\n   */\n   public String getTitle()\n   {   \n      // your work here\n      \n   }\n   \n   /**\n      Gets\
+      \ the time in the form \"days start time-end time\"\n      @return the time\n   */\n   public String getTime()\n   {\
+      \   \n      // your work here\n      String time = ...;\n      return time;\n   }\n   \n   /**\n      Gets the room\n\
+      \      @return the room\n   */\n   public String getRoom()\n   {   \n      // your work here\n\n   }\n}\n"
 testcases:
 - title: Solution Verification
   visible: true

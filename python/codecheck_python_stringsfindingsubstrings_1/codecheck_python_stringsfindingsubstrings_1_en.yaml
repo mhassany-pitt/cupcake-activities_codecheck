@@ -22,14 +22,17 @@ runtime:
   version: '3'
 statement: Given strings s and t, return a list of all positions in which t occurs in s.
 elements:
-- type: editable
+- type: locked
   location:
     snippet: "\n# Given strings s and t, return a list of all positions in which t occurs in s. For \n# example, if s = 'Mississippi'\
       \ and t = 'iss', the result should be [1, 4] because\n# 'iss' starts at index 1 and 4 inside string s. You may assume\
-      \ that t is not empty.\n# Do not use the find method.\n\ndef allPositionsOfT(s, t):\n   # Your code here...\n"
-  placeholder: "\n# Given strings s and t, return a list of all positions in which t occurs in s. For \n# example, if s =\
-    \ 'Mississippi' and t = 'iss', the result should be [1, 4] because\n# 'iss' starts at index 1 and 4 inside string s. You\
-    \ may assume that t is not empty.\n# Do not use the find method.\n\ndef allPositionsOfT(s, t):\n   # Your code here...\n"
+      \ that t is not empty.\n# Do not use the find method.\n\ndef allPositionsOfT(s, t):\n"
+- type: editable
+  location:
+    snippet: |2
+         # Your code here...
+  placeholder: |2
+       # Your code here...
 testcases:
 - title: Solution Verification
   visible: true

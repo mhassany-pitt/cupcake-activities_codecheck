@@ -40,7 +40,7 @@ statement: |-
       href="http://java.sun.com/javase/6/docs/api/java/net/URLConnection.html#getHeaderFields()">getHeaderFields</a>
       method. </p>
 elements:
-- type: editable
+- type: locked
   location:
     snippet: "import java.io.IOException;\nimport java.net.HttpURLConnection;\nimport java.net.URL;\nimport java.net.URLConnection;\n\
       import java.util.List;\nimport java.util.Map;\n\n/**\n   This program prints all cookies that a web site tries to set.\n\
@@ -50,18 +50,20 @@ elements:
       \ host resource\");\n         System.exit(0);\n      }\n      String host = args[0];\n      String resource = args[1];\n\
       \n      // Open URLConnection\n     \n      // Get header fields\n      \n      Map<String, List<String>> headerFields\
       \ = connection.getHeaderFields();\n      \n      // print any lines starting with Set-Cookie, set-cookie, etc. \n  \
-      \    \n      for (. . .)\n      {\n         . . .\n         System.out.println(key + \": \" + cookie);\n      }\n  \
-      \ }\n}\n"
-  placeholder: "import java.io.IOException;\nimport java.net.HttpURLConnection;\nimport java.net.URL;\nimport java.net.URLConnection;\n\
-    import java.util.List;\nimport java.util.Map;\n\n/**\n   This program prints all cookies that a web site tries to set.\n\
-    \   Supply the name of the host and the resource on the command-line, \n   for example java CookiePrinter nytimes.com\
-    \ /\n*/\npublic class CookiePrinter\n{\n   public static void main(String[] args) throws IOException\n   {\n      // Get\
-    \ command-line arguments\n\n      if (args.length != 2)\n      {\n         System.out.println(\"Usage: java CookiePrinter\
-    \ host resource\");\n         System.exit(0);\n      }\n      String host = args[0];\n      String resource = args[1];\n\
-    \n      // Open URLConnection\n     \n      // Get header fields\n      \n      Map<String, List<String>> headerFields\
-    \ = connection.getHeaderFields();\n      \n      // print any lines starting with Set-Cookie, set-cookie, etc. \n    \
-    \  \n      for (. . .)\n      {\n         . . .\n         System.out.println(key + \": \" + cookie);\n      }\n   }\n\
-    }\n"
+      \    \n      for (. . .)\n      {\n"
+- type: editable
+  location:
+    snippet: |2
+               . . .
+  placeholder: |2
+             . . .
+- type: locked
+  location:
+    snippet: |2
+               System.out.println(key + ": " + cookie);
+            }
+         }
+      }
 testcases:
 - title: Solution Verification
   visible: true

@@ -22,12 +22,15 @@ runtime:
   version: '3'
 statement: Given two lists a and b, remove all elements of b from a.
 elements:
+- type: locked
+  location:
+    snippet: "\n# Given two lists a and b, remove all elements of b from a. \n# Then return a\n\ndef removeBfromA(a, b):\n"
 - type: editable
   location:
-    snippet: "\n# Given two lists a and b, remove all elements of b from a. \n# Then return a\n\ndef removeBfromA(a, b):\n\
-      \   # Your code here...\n"
-  placeholder: "\n# Given two lists a and b, remove all elements of b from a. \n# Then return a\n\ndef removeBfromA(a, b):\n\
-    \   # Your code here...\n"
+    snippet: |2
+         # Your code here...
+  placeholder: |2
+       # Your code here...
 testcases:
 - title: Solution Verification
   visible: true

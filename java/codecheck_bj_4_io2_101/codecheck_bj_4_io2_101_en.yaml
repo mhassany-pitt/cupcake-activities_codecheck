@@ -32,7 +32,7 @@ statement: |-
       This is convenient for testing, and it does not affect the implementation
       of the cipher class. </p>
 elements:
-- type: editable
+- type: locked
   location:
     snippet: "import java.io.ByteArrayInputStream;\nimport java.io.ByteArrayOutputStream;\nimport java.io.InputStream;\nimport\
       \ java.io.OutputStream;\nimport java.io.IOException;\n\n/**\n   This class encrypts files using the SuperCaesar cipher.\n\
@@ -44,34 +44,23 @@ elements:
       \ {\n         int next = in.read();\n         if (next == -1) done = true;\n         else\n         {\n            byte\
       \ b = (byte) next;\n            byte c;\n            if (decrypt)\n               c = decrypt(b);\n            else\n\
       \               c = encrypt(b);\n            out.write(c);\n         }\n      }\n   }\n\n   /**\n      Encrypts a byte.\n\
-      \      @param b the byte to encrypt\n      @return the encrypted byte\n   */\n   public byte encrypt(byte b)\n   {\n\
-      \      // your work here\n   }\n\n   /**\n      Decrypts a byte.\n      @param b the byte to decrypt\n      @return\
-      \ the decrypted byte\n   */\n   public byte decrypt(byte b)\n   {\n      // your work here\n   }\n\n   private int key;\n\
-      \   \n   // this method is used to check your work\n   \n   public static String check(String input, int key, boolean\
-      \ decrypt)\n   {\n      try\n      {\n         InputStream inStream = new ByteArrayInputStream(input.getBytes());\n\
-      \         ByteArrayOutputStream outStream = new ByteArrayOutputStream();\n\n         SuperCaesarCipher cipher = new\
-      \ SuperCaesarCipher(key);\n         cipher.processStream(inStream, outStream, decrypt);\n\n         inStream.close();\n\
-      \         outStream.close();\n         return outStream.toString();\n      }\n      catch (IOException exception)\n\
-      \      {  \n         return \"Error\";\n      }      \n   }   \n}\n"
-  placeholder: "import java.io.ByteArrayInputStream;\nimport java.io.ByteArrayOutputStream;\nimport java.io.InputStream;\n\
-    import java.io.OutputStream;\nimport java.io.IOException;\n\n/**\n   This class encrypts files using the SuperCaesar cipher.\n\
-    */\npublic class SuperCaesarCipher\n{\n   /**\n      Constructs a cipher object with a given key.\n      @param aKey the\
-    \ encryption key\n   */\n   public SuperCaesarCipher(int aKey)\n   {\n      key = aKey;\n   }\n\n   /**\n      Encrypts\
-    \ or decrypts the contents of a stream.\n      @param in the input stream\n      @param out the output stream\n      @param\
-    \ decrypt true to decrypt, false to encrypt\n   */      \n   public void processStream(InputStream in, OutputStream out,\
-    \ boolean decrypt)\n         throws IOException\n   {\n      boolean done = false;\n      while (!done)\n      {\n   \
-    \      int next = in.read();\n         if (next == -1) done = true;\n         else\n         {\n            byte b = (byte)\
-    \ next;\n            byte c;\n            if (decrypt)\n               c = decrypt(b);\n            else\n           \
-    \    c = encrypt(b);\n            out.write(c);\n         }\n      }\n   }\n\n   /**\n      Encrypts a byte.\n      @param\
-    \ b the byte to encrypt\n      @return the encrypted byte\n   */\n   public byte encrypt(byte b)\n   {\n      // your\
-    \ work here\n   }\n\n   /**\n      Decrypts a byte.\n      @param b the byte to decrypt\n      @return the decrypted byte\n\
-    \   */\n   public byte decrypt(byte b)\n   {\n      // your work here\n   }\n\n   private int key;\n   \n   // this method\
-    \ is used to check your work\n   \n   public static String check(String input, int key, boolean decrypt)\n   {\n     \
-    \ try\n      {\n         InputStream inStream = new ByteArrayInputStream(input.getBytes());\n         ByteArrayOutputStream\
-    \ outStream = new ByteArrayOutputStream();\n\n         SuperCaesarCipher cipher = new SuperCaesarCipher(key);\n      \
-    \   cipher.processStream(inStream, outStream, decrypt);\n\n         inStream.close();\n         outStream.close();\n \
-    \        return outStream.toString();\n      }\n      catch (IOException exception)\n      {  \n         return \"Error\"\
-    ;\n      }      \n   }   \n}\n"
+      \      @param b the byte to encrypt\n      @return the encrypted byte\n   */\n   public byte encrypt(byte b)\n   {\n"
+- type: editable
+  location:
+    snippet: |2
+            // your work here
+  placeholder: |2
+          // your work here
+- type: locked
+  location:
+    snippet: "   }\n\n   /**\n      Decrypts a byte.\n      @param b the byte to decrypt\n      @return the decrypted byte\n\
+      \   */\n   public byte decrypt(byte b)\n   {\n      // your work here\n   }\n\n   private int key;\n   \n   // this\
+      \ method is used to check your work\n   \n   public static String check(String input, int key, boolean decrypt)\n  \
+      \ {\n      try\n      {\n         InputStream inStream = new ByteArrayInputStream(input.getBytes());\n         ByteArrayOutputStream\
+      \ outStream = new ByteArrayOutputStream();\n\n         SuperCaesarCipher cipher = new SuperCaesarCipher(key);\n    \
+      \     cipher.processStream(inStream, outStream, decrypt);\n\n         inStream.close();\n         outStream.close();\n\
+      \         return outStream.toString();\n      }\n      catch (IOException exception)\n      {  \n         return \"\
+      Error\";\n      }      \n   }   \n}\n"
 testcases:
 - title: Solution Verification
   visible: true

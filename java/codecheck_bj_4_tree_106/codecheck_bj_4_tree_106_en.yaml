@@ -23,18 +23,22 @@ statement: |-
   <p>
   Implement a method that receives two arrays of strings and determines which words are unique to each.</p>
 elements:
-- type: editable
+- type: locked
   location:
     snippet: "import java.util.ArrayList;\nimport java.util.Set;\nimport java.util.TreeSet;\n\npublic class SetUtil\n{   \n\
       \   /**\n      Determine the strings that are unique to words1 and words2\n      @param words1 an array of strings\n\
       \      @param words2 an array of strings      \n      @param a list of two sets: the words that are in words1 but not\
       \ word2,\n      and the words that are in words2 but not word1. The sets should be sorted.\n   */\n   public static\
-      \ List<Set<String>> uniqueInEach(String[] words1, String[] words2)\n   {\n      ...      \n   }\n}\n"
-  placeholder: "import java.util.ArrayList;\nimport java.util.Set;\nimport java.util.TreeSet;\n\npublic class SetUtil\n{ \
-    \  \n   /**\n      Determine the strings that are unique to words1 and words2\n      @param words1 an array of strings\n\
-    \      @param words2 an array of strings      \n      @param a list of two sets: the words that are in words1 but not\
-    \ word2,\n      and the words that are in words2 but not word1. The sets should be sorted.\n   */\n   public static List<Set<String>>\
-    \ uniqueInEach(String[] words1, String[] words2)\n   {\n      ...      \n   }\n}\n"
+      \ List<Set<String>> uniqueInEach(String[] words1, String[] words2)\n   {\n"
+- type: editable
+  location:
+    snippet: "      ...      \n"
+  placeholder: "      ...      \n"
+- type: locked
+  location:
+    snippet: |2
+         }
+      }
 testcases:
 - title: Solution Verification
   visible: true

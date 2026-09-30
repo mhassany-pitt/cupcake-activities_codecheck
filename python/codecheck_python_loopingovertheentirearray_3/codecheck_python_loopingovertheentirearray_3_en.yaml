@@ -23,7 +23,7 @@ runtime:
   version: '3'
 statement: Given a two-dimensional square array of integers, compute the sum of all elements that are not on one of the diagonals.
 elements:
-- type: editable
+- type: locked
   location:
     snippet: |2
 
@@ -31,13 +31,11 @@ elements:
       # sum of all elements that are not on one of the diagonals.
 
       def sumWithoutDiagonals(arr):
+- type: editable
+  location:
+    snippet: |2
          # Your code here...
   placeholder: |2
-
-    # Given a two-dimensional square array of integers, compute the
-    # sum of all elements that are not on one of the diagonals.
-
-    def sumWithoutDiagonals(arr):
        # Your code here...
 testcases:
 - title: Solution Verification

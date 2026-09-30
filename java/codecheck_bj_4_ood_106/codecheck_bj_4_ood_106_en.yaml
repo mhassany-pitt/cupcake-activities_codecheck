@@ -24,28 +24,35 @@ statement: |-
       to compare temperatures.  However, temperatures may be expressed using different scales, such as Fahrenheit or Celsius.  You will use a collaborator class to handle converting temperatures from one scale to another.</p>
       <p>Complete the <code>Temperature</code> class below. Use two instances of the <code>Converter</code> to convert to Celsius or Fahrenheit in the <code>compareTo</code> method.</p>
 elements:
+- type: locked
+  location:
+    snippet: |-
+      /**
+       Temperature class represents a specific temperature value in a specific scale.
+       */
+
+      public class Temperature
+      {
+         private String scale;
+         private double value;
+         private static Converter toCelsius =
 - type: editable
   location:
-    snippet: "/**\n Temperature class represents a specific temperature value in a specific scale.\n */\n\npublic class Temperature\n\
-      {\n   private String scale;\n   private double value;\n   private static Converter toCelsius = ...\n   private static\
-      \ Converter toFahrenheit = ...\n\n   /**\n      Constructs a temperature.\n      @param aValue the temperature value\
-      \ in the given scale\n      @param aScale \"C\" for Celsius, \"F\" for Fahrenheit\n   */\n   public Temperature(double\
-      \ aValue, String aScale)\n   {\n      value = aValue;\n      scale = aScale;\n   }\n   \n   public String getScale()\n\
-      \   {\n      return scale;\n   }\n   \n   public double getValue()\n   {\n      return value;\n   }\n\n   /**\n    \
-      \  Compares two temparatures.\n      @param other another Tempeature object to be compared with this one\n      @return\
-      \ -1 if the other object's value is larger than this object's value\n               0 if the values are equal\n    \
-      \           1 if the other object's value is smaller than this object's value.\n   */\n   public int compareTemps(Temperature\
-      \ other)\n   {\n      // Use the appropriate converter so that you can compare the values\n      \n   }\n}\n"
-  placeholder: "/**\n Temperature class represents a specific temperature value in a specific scale.\n */\n\npublic class\
-    \ Temperature\n{\n   private String scale;\n   private double value;\n   private static Converter toCelsius = ...\n  \
-    \ private static Converter toFahrenheit = ...\n\n   /**\n      Constructs a temperature.\n      @param aValue the temperature\
-    \ value in the given scale\n      @param aScale \"C\" for Celsius, \"F\" for Fahrenheit\n   */\n   public Temperature(double\
-    \ aValue, String aScale)\n   {\n      value = aValue;\n      scale = aScale;\n   }\n   \n   public String getScale()\n\
-    \   {\n      return scale;\n   }\n   \n   public double getValue()\n   {\n      return value;\n   }\n\n   /**\n      Compares\
-    \ two temparatures.\n      @param other another Tempeature object to be compared with this one\n      @return -1 if the\
-    \ other object's value is larger than this object's value\n               0 if the values are equal\n               1\
-    \ if the other object's value is smaller than this object's value.\n   */\n   public int compareTemps(Temperature other)\n\
-    \   {\n      // Use the appropriate converter so that you can compare the values\n      \n   }\n}\n"
+    snippet: |2
+       ...
+  placeholder: |2
+     ...
+- type: locked
+  location:
+    snippet: "   private static Converter toFahrenheit = ...\n\n   /**\n      Constructs a temperature.\n      @param aValue\
+      \ the temperature value in the given scale\n      @param aScale \"C\" for Celsius, \"F\" for Fahrenheit\n   */\n   public\
+      \ Temperature(double aValue, String aScale)\n   {\n      value = aValue;\n      scale = aScale;\n   }\n   \n   public\
+      \ String getScale()\n   {\n      return scale;\n   }\n   \n   public double getValue()\n   {\n      return value;\n\
+      \   }\n\n   /**\n      Compares two temparatures.\n      @param other another Tempeature object to be compared with\
+      \ this one\n      @return -1 if the other object's value is larger than this object's value\n               0 if the\
+      \ values are equal\n               1 if the other object's value is smaller than this object's value.\n   */\n   public\
+      \ int compareTemps(Temperature other)\n   {\n      // Use the appropriate converter so that you can compare the values\n\
+      \      \n   }\n}\n"
 testcases:
 - title: Solution Verification
   visible: true

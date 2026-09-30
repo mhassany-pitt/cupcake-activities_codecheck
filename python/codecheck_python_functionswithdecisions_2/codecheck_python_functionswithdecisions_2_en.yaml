@@ -22,14 +22,16 @@ runtime:
   version: '3'
 statement: Write a function that checks whether two points with coordinates x1, y1 and x2, y2 are in the same quadrant.
 elements:
-- type: editable
+- type: locked
   location:
     snippet: "\n# Write a function that checks whether two points with coordinates \n# x1, y1 and x2, y2 are in the same quadrant.\
-      \ The given coordinates \n# will not be on the x- or y-axis.\n\ndef coordinatesInSameQuadrant(x1, y1, x2, y2):\n   #\
-      \ Your code here...\n"
-  placeholder: "\n# Write a function that checks whether two points with coordinates \n# x1, y1 and x2, y2 are in the same\
-    \ quadrant. The given coordinates \n# will not be on the x- or y-axis.\n\ndef coordinatesInSameQuadrant(x1, y1, x2, y2):\n\
-    \   # Your code here...\n"
+      \ The given coordinates \n# will not be on the x- or y-axis.\n\ndef coordinatesInSameQuadrant(x1, y1, x2, y2):\n"
+- type: editable
+  location:
+    snippet: |2
+         # Your code here...
+  placeholder: |2
+       # Your code here...
 testcases:
 - title: Solution Verification
   visible: true

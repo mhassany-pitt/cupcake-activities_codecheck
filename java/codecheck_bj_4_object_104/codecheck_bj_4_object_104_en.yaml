@@ -27,7 +27,7 @@ statement: |-
       <code>box2</code>. Then move <code>box2</code> so that it overlaps with
       <code>box1</code> in a 10 by 10 square. </p>
 elements:
-- type: editable
+- type: locked
   location:
     snippet: |
       import java.awt.Rectangle;
@@ -39,30 +39,21 @@ elements:
             Rectangle box1 = new Rectangle(5, 10, 20, 30);
             Rectangle box2 = new Rectangle(10, 15, 20, 30);
             // now translate box2
+- type: editable
+  location:
+    snippet: |2
             . . .
+  placeholder: |2
+          . . .
+- type: locked
+  location:
+    snippet: |2
             Rectangle box = box1.intersection(box2);
             double area = box.getWidth() * box.getHeight();
             System.out.println(area);
             System.out.println("Expected: 100");
          }
       }
-  placeholder: |
-    import java.awt.Rectangle;
-
-    public class IntersectionTester
-    {
-       public static void main(String[] args)
-       {
-          Rectangle box1 = new Rectangle(5, 10, 20, 30);
-          Rectangle box2 = new Rectangle(10, 15, 20, 30);
-          // now translate box2
-          . . .
-          Rectangle box = box1.intersection(box2);
-          double area = box.getWidth() * box.getHeight();
-          System.out.println(area);
-          System.out.println("Expected: 100");
-       }
-    }
 testcases:
 - title: Solution Verification
   visible: true

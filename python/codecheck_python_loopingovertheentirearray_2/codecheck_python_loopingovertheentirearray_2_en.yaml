@@ -22,14 +22,20 @@ runtime:
   version: '3'
 statement: Given a two-dimensional array of integers, compute the sum of all elements that are not one of the borders.
 elements:
-- type: editable
+- type: locked
   location:
     snippet: "\n# Given a rectangular two-dimensional array of integers, compute \n# the sum of all elements that are not\
-      \ one of the borders.\n\ndef sumWithoutBorders(arr):\n   # Your code here...\nsumWithoutBorders([[1, 2, 3], [4, 5, 6],\
-      \ [7, 8, 9]])\n"
-  placeholder: "\n# Given a rectangular two-dimensional array of integers, compute \n# the sum of all elements that are not\
-    \ one of the borders.\n\ndef sumWithoutBorders(arr):\n   # Your code here...\nsumWithoutBorders([[1, 2, 3], [4, 5, 6],\
-    \ [7, 8, 9]])\n"
+      \ one of the borders.\n\ndef sumWithoutBorders(arr):\n"
+- type: editable
+  location:
+    snippet: |2
+         # Your code here...
+  placeholder: |2
+       # Your code here...
+- type: locked
+  location:
+    snippet: |
+      sumWithoutBorders([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
 testcases:
 - title: Solution Verification
   visible: true

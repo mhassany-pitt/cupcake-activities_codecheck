@@ -22,12 +22,16 @@ runtime:
   version: '3'
 statement: Given a list of integers and a value, return a list of all positions of the value in the list.
 elements:
-- type: editable
+- type: locked
   location:
     snippet: "\n# Given a list of integers and a value, return a list \n# of all positions of the value in the list. Do not\
-      \ use\n# the find or index methods.\n\ndef findAllPositions(arr, val):\n   # Your code here...\n"
-  placeholder: "\n# Given a list of integers and a value, return a list \n# of all positions of the value in the list. Do\
-    \ not use\n# the find or index methods.\n\ndef findAllPositions(arr, val):\n   # Your code here...\n"
+      \ use\n# the find or index methods.\n\ndef findAllPositions(arr, val):\n"
+- type: editable
+  location:
+    snippet: |2
+         # Your code here...
+  placeholder: |2
+       # Your code here...
 testcases:
 - title: Solution Verification
   visible: true

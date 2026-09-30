@@ -27,7 +27,7 @@ statement: |-
   M, Y, K, W. The helper method <code>getSquareColor</code> returns the color
   corresponding to a particular letter. </p>
 elements:
-- type: editable
+- type: locked
   location:
     snippet: "import javax.swing.JComponent;\nimport java.awt.Graphics;\nimport java.awt.Graphics2D;\nimport java.awt.Rectangle;\n\
       import java.awt.Color;\n\n/**\n   Draws colored squares.\n */\npublic class ColorSquaresComponent extends JComponent\n\
@@ -40,20 +40,16 @@ elements:
       \ Color.BLUE;\n     if (code == 'C') return Color.CYAN;\n     if (code == 'M') return Color.MAGENTA;\n     if (code\
       \ == 'Y') return Color.YELLOW;\n     if (code == 'K') return Color.BLACK;\n     return Color.WHITE;      \n   }\n  \
       \    \n   public void paintComponent(Graphics g)\n   {\n     Graphics2D g2 = (Graphics2D) g;\n     Rectangle box = new\
-      \ Rectangle (0,0, size, size);\n     // your work here - draw all of the boxes in the specified color\n     \n     \n\
-      \     \n     \n     \n   }\n}\n"
-  placeholder: "import javax.swing.JComponent;\nimport java.awt.Graphics;\nimport java.awt.Graphics2D;\nimport java.awt.Rectangle;\n\
-    import java.awt.Color;\n\n/**\n   Draws colored squares.\n */\npublic class ColorSquaresComponent extends JComponent\n\
-    {\n   private String colors;\n   private int wide;\n   private int high;\n   private int size;\n   \n   /**\n     Constructs\
-    \ a component for a drawing made up of colored squares.\n     @param col the color codes of all squares in the drawing.\n\
-    \     @param w the width of the drawing\n     @param h the height of the drawing\n     @param sideLength the side length\
-    \ of each square\n   */\n   public ColorSquaresComponent(String col, int w, int h, int boxSize)\n   {\n     colors = col;\n\
-    \     wide = w;\n     high = h;\n     size = boxSize;\n   }  \n   \n   private Color getSquareColor(char code)\n   {\n\
-    \     if (code == 'R') return Color.RED;\n     if (code == 'G') return Color.GREEN;\n     if (code == 'B') return Color.BLUE;\n\
-    \     if (code == 'C') return Color.CYAN;\n     if (code == 'M') return Color.MAGENTA;\n     if (code == 'Y') return Color.YELLOW;\n\
-    \     if (code == 'K') return Color.BLACK;\n     return Color.WHITE;      \n   }\n      \n   public void paintComponent(Graphics\
-    \ g)\n   {\n     Graphics2D g2 = (Graphics2D) g;\n     Rectangle box = new Rectangle (0,0, size, size);\n     // your\
-    \ work here - draw all of the boxes in the specified color\n     \n     \n     \n     \n     \n   }\n}\n"
+      \ Rectangle (0,0, size, size);\n"
+- type: editable
+  location:
+    snippet: "     // your work here - draw all of the boxes in the specified color\n     \n     \n     \n     \n     \n"
+  placeholder: "     // your work here - draw all of the boxes in the specified color\n     \n     \n     \n     \n     \n"
+- type: locked
+  location:
+    snippet: |2
+         }
+      }
 testcases:
 - title: Solution Verification
   visible: true

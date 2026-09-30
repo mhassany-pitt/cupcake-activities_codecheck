@@ -26,14 +26,19 @@ statement: |-
       interface. The <code>measure</code> method, when applied to a <code>Word</code>
       object, should return the number of syllables in the word.</p>
 elements:
+- type: locked
+  location:
+    snippet: |+
+      public class WordMeasurer
+
 - type: editable
   location:
-    snippet: "public class WordMeasurer\n\n/* \n   TODO: Complete this class so that it implements\n   the Measurer interface\
-      \ and measures the number\n   of syllables in a word.\n\n   The Word class is from ch06/debugger (with the bugs fixed)\n\
-      \   and the Measurer and DataSet classes are from ch09/measure2.\n*/\n"
-  placeholder: "public class WordMeasurer\n\n/* \n   TODO: Complete this class so that it implements\n   the Measurer interface\
-    \ and measures the number\n   of syllables in a word.\n\n   The Word class is from ch06/debugger (with the bugs fixed)\n\
-    \   and the Measurer and DataSet classes are from ch09/measure2.\n*/\n"
+    snippet: "/* \n   TODO: Complete this class so that it implements\n   the Measurer interface and measures the number\n\
+      \   of syllables in a word.\n\n   The Word class is from ch06/debugger (with the bugs fixed)\n   and the Measurer and\
+      \ DataSet classes are from ch09/measure2.\n*/\n"
+  placeholder: "/* \n   TODO: Complete this class so that it implements\n   the Measurer interface and measures the number\n\
+    \   of syllables in a word.\n\n   The Word class is from ch06/debugger (with the bugs fixed)\n   and the Measurer and\
+    \ DataSet classes are from ch09/measure2.\n*/\n"
 testcases:
 - title: Solution Verification
   visible: true

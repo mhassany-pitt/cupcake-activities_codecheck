@@ -22,12 +22,16 @@ runtime:
   version: '3'
 statement: Given a string and two characters x and y (as strings of length 1), interchange all occurrences of x and y.
 elements:
-- type: editable
+- type: locked
   location:
     snippet: "\n# Given a string and two characters x and y, change all occurrences of \n# x to the value of y.\n\ndef replaceXwithY(s,\
-      \ x, y):\n   # Your code here...\n"
-  placeholder: "\n# Given a string and two characters x and y, change all occurrences of \n# x to the value of y.\n\ndef replaceXwithY(s,\
-    \ x, y):\n   # Your code here...\n"
+      \ x, y):\n"
+- type: editable
+  location:
+    snippet: |2
+         # Your code here...
+  placeholder: |2
+       # Your code here...
 testcases:
 - title: Solution Verification
   visible: true

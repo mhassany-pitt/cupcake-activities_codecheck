@@ -28,18 +28,28 @@ statement: |-
 
       <p>you should return the string <code>"lamblittleahadMary"</code>.</p>
 elements:
+- type: locked
+  location:
+    snippet: |
+      import java.util.Arrays;
+      import java.util.LinkedList;
+      import java.util.ListIterator;
+
+      public class WordList
+      {
+         public String concatenateBackwards(LinkedList<String> words)
+         {
 - type: editable
   location:
-    snippet: "import java.util.Arrays;\nimport java.util.LinkedList;\nimport java.util.ListIterator;\n\npublic class WordList\n\
-      {\n   public String concatenateBackwards(LinkedList<String> words)\n   {\n      // TODO: Complete method\n   }\n\n \
-      \  // this method is used to check your work\n   public String check(String[] elements)\n   {\n      LinkedList<String>\
-      \ words = new LinkedList<String>();\n      words.addAll(Arrays.asList(elements));      \n      return concatenateBackwards(words);\n\
-      \   }\n}\n"
-  placeholder: "import java.util.Arrays;\nimport java.util.LinkedList;\nimport java.util.ListIterator;\n\npublic class WordList\n\
-    {\n   public String concatenateBackwards(LinkedList<String> words)\n   {\n      // TODO: Complete method\n   }\n\n   //\
-    \ this method is used to check your work\n   public String check(String[] elements)\n   {\n      LinkedList<String> words\
-    \ = new LinkedList<String>();\n      words.addAll(Arrays.asList(elements));      \n      return concatenateBackwards(words);\n\
-    \   }\n}\n"
+    snippet: |2
+            // TODO: Complete method
+  placeholder: |2
+          // TODO: Complete method
+- type: locked
+  location:
+    snippet: "   }\n\n   // this method is used to check your work\n   public String check(String[] elements)\n   {\n    \
+      \  LinkedList<String> words = new LinkedList<String>();\n      words.addAll(Arrays.asList(elements));      \n      return\
+      \ concatenateBackwards(words);\n   }\n}\n"
 testcases:
 - title: Solution Verification
   visible: true

@@ -29,23 +29,26 @@ statement: |-
       <p>The initial counter value and the delay (in milliseconds) are variable.
   </p>
 elements:
-- type: editable
+- type: locked
   location:
     snippet: "/**\n   A runnable that prints a countdown.\n*/\npublic class CountdownRunnable implements Runnable\n{\n   /**\n\
       \      Constructs the runnable object.\n      @param startingValue the starting value of the countdown\n      @param\
       \ aDelay the delay between counts\n   */\n   public CountdownRunnable(int startingValue, int aDelay)\n   {\n      counter\
-      \ = startingValue;\n      delay = aDelay;\n   }\n   \n   // your work here\n\n   private int counter;\n   private int\
-      \ delay;\n\n   // this method is used to test your work\n   \n   public static void main(String[] args)\n   {\n    \
-      \  CountdownRunnable r1 = new CountdownRunnable(10, 10);\n      CountdownRunnable r2 = new CountdownRunnable(20, 5);\n\
-      \      Thread t1 = new Thread(r1);\n      Thread t2 = new Thread(r2);\n      t1.start();\n      t2.start();\n   }  \
-      \ \n}\n"
-  placeholder: "/**\n   A runnable that prints a countdown.\n*/\npublic class CountdownRunnable implements Runnable\n{\n \
-    \  /**\n      Constructs the runnable object.\n      @param startingValue the starting value of the countdown\n      @param\
-    \ aDelay the delay between counts\n   */\n   public CountdownRunnable(int startingValue, int aDelay)\n   {\n      counter\
-    \ = startingValue;\n      delay = aDelay;\n   }\n   \n   // your work here\n\n   private int counter;\n   private int\
-    \ delay;\n\n   // this method is used to test your work\n   \n   public static void main(String[] args)\n   {\n      CountdownRunnable\
-    \ r1 = new CountdownRunnable(10, 10);\n      CountdownRunnable r2 = new CountdownRunnable(20, 5);\n      Thread t1 = new\
-    \ Thread(r1);\n      Thread t2 = new Thread(r2);\n      t1.start();\n      t2.start();\n   }   \n}\n"
+      \ = startingValue;\n      delay = aDelay;\n   }\n   \n"
+- type: editable
+  location:
+    snippet: |2+
+         // your work here
+
+  placeholder: |2+
+       // your work here
+
+- type: locked
+  location:
+    snippet: "   private int counter;\n   private int delay;\n\n   // this method is used to test your work\n   \n   public\
+      \ static void main(String[] args)\n   {\n      CountdownRunnable r1 = new CountdownRunnable(10, 10);\n      CountdownRunnable\
+      \ r2 = new CountdownRunnable(20, 5);\n      Thread t1 = new Thread(r1);\n      Thread t2 = new Thread(r2);\n      t1.start();\n\
+      \      t2.start();\n   }   \n}\n"
 testcases:
 - title: Solution Verification
   visible: true

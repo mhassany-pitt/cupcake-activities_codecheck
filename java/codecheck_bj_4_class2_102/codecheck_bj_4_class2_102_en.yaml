@@ -46,7 +46,7 @@ statement: |-
       <p>Your task is to implement a method <code>trueSwap</code> that swaps two
       values that were placed into an array.</p>
 elements:
-- type: editable
+- type: locked
   location:
     snippet: |
       public class SwapTester
@@ -58,7 +58,15 @@ elements:
          */
          public static void trueSwap(int[] array)
          {
+- type: editable
+  location:
+    snippet: |2
             // TODO: Complete
+  placeholder: |2
+          // TODO: Complete
+- type: locked
+  location:
+    snippet: |2
             . . .
          }
 
@@ -72,30 +80,6 @@ elements:
             System.out.println("Expected: 4 3");
          }
       }
-  placeholder: |
-    public class SwapTester
-    {
-       /**
-          Swaps two values
-          @param array an array of length 2 containing the
-          values to be swapped
-       */
-       public static void trueSwap(int[] array)
-       {
-          // TODO: Complete
-          . . .
-       }
-
-       public static void main(String[] args)
-       {
-          int[] xy = new int[2];
-          xy[0] = 3;
-          xy[1] = 4;
-          // TODO: call trueSwap and print swapped values
-          . . .
-          System.out.println("Expected: 4 3");
-       }
-    }
 testcases:
 - title: Solution Verification
   visible: true

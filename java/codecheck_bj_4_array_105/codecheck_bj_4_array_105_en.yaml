@@ -39,7 +39,7 @@ statement: |-
 
   </pre>
 elements:
-- type: editable
+- type: locked
   location:
     snippet: "import java.util.Scanner;\n\npublic class SquareBoard\n{\n   private String[][] board;\n   private int length;\n\
       \   \n   /**\n      Constructs an empty square game board.\n      @param sideLength the length of each side\n   */\n\
@@ -50,21 +50,24 @@ elements:
       \      String r = \"\";\n      for (int i = 0; i < length; i++)\n      {\n         r = r + \"|\";\n         for (int\
       \ j = 0; j < length; j++)\n            r = r + board[i][j];\n         r = r + \"|\\n\";\n      }\n      return r;\n\
       \   }   \n\n   /**\n      Fills the borders of this board with \"*\" strings.\n   */\n   public void fillBorders()\n\
-      \   {\n      // your work here\n\n\n\n   }\n   \n   // This method is used to check your work.\n\n   public static void\
-      \ main(String[] args)\n   {\n      Scanner in = new Scanner(System.in);\n      int n = in.nextInt();   \n      SquareBoard\
-      \ board = new SquareBoard(n);\n      board.fillBorders();\n      System.out.println(board.toString());\n   }  \n}\n"
-  placeholder: "import java.util.Scanner;\n\npublic class SquareBoard\n{\n   private String[][] board;\n   private int length;\n\
-    \   \n   /**\n      Constructs an empty square game board.\n      @param sideLength the length of each side\n   */\n \
-    \  public SquareBoard(int sideLength)\n   {\n      length = sideLength;\n      board = new String[length][length];\n \
-    \     // Fill with spaces\n      for (int i = 0; i < length; i++)\n         for (int j = 0; j < length; j++)\n       \
-    \     board[i][j] = \" \";\n   }\n\n   /**\n      Creates a string representation of the board, such as\n      |x o|\n\
-    \      | x |\n      | o |.\n      @return the string representation\n   */\n   public String toString()\n   {\n      String\
-    \ r = \"\";\n      for (int i = 0; i < length; i++)\n      {\n         r = r + \"|\";\n         for (int j = 0; j < length;\
-    \ j++)\n            r = r + board[i][j];\n         r = r + \"|\\n\";\n      }\n      return r;\n   }   \n\n   /**\n  \
-    \    Fills the borders of this board with \"*\" strings.\n   */\n   public void fillBorders()\n   {\n      // your work\
-    \ here\n\n\n\n   }\n   \n   // This method is used to check your work.\n\n   public static void main(String[] args)\n\
-    \   {\n      Scanner in = new Scanner(System.in);\n      int n = in.nextInt();   \n      SquareBoard board = new SquareBoard(n);\n\
-    \      board.fillBorders();\n      System.out.println(board.toString());\n   }  \n}\n"
+      \   {\n"
+- type: editable
+  location:
+    snippet: |2+
+            // your work here
+
+
+
+  placeholder: |2+
+          // your work here
+
+
+
+- type: locked
+  location:
+    snippet: "   }\n   \n   // This method is used to check your work.\n\n   public static void main(String[] args)\n   {\n\
+      \      Scanner in = new Scanner(System.in);\n      int n = in.nextInt();   \n      SquareBoard board = new SquareBoard(n);\n\
+      \      board.fillBorders();\n      System.out.println(board.toString());\n   }  \n}\n"
 testcases:
 - title: Solution Verification
   visible: true

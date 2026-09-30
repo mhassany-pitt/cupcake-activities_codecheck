@@ -33,25 +33,34 @@ statement: "<p>Enumerated types in Java are quite powerful, in that they can con
   \t<td>K</td>\n\t<td>63.35</td>\n</tr>\n<tr align=\"center\">\n\t<td>Sodium</td>\n\t<td>Na</td>\n\t<td>98.0</td>\n</tr>\n\
   </table>"
 elements:
+- type: locked
+  location:
+    snippet: |
+      import java.util.ArrayList;
+
+      /**
+         Element enumeration defines elements, their symbols, and their melting points.
+      */
+
+      public enum Element
+      {
 - type: editable
   location:
-    snippet: "import java.util.ArrayList;\n\n/**\n   Element enumeration defines elements, their symbols, and their melting\
-      \ points.\n*/\n\npublic enum Element\n{\n   // TODO: Define enumerated values for each entry in the table\n\n   private\
-      \ String symbol;\n   private double meltingPoint;\n\n   // TODO: Complete the constructor\n   Element (String aSymbol,\
-      \ double aMeltingPoint)\n   {\n\n\n   }\n\n   public double getMeltingPoint()\n   {\n      return meltingPoint;\n  \
-      \ }\n\n   public String toString()\n   {\n      return symbol;\n   }\n   \n   //TODO: complete the getMeltedElements\
+    snippet: |2+
+         // TODO: Define enumerated values for each entry in the table
+
+  placeholder: |2+
+       // TODO: Define enumerated values for each entry in the table
+
+- type: locked
+  location:
+    snippet: "   private String symbol;\n   private double meltingPoint;\n\n   // TODO: Complete the constructor\n   Element\
+      \ (String aSymbol, double aMeltingPoint)\n   {\n\n\n   }\n\n   public double getMeltingPoint()\n   {\n      return meltingPoint;\n\
+      \   }\n\n   public String toString()\n   {\n      return symbol;\n   }\n   \n   //TODO: complete the getMeltedElements\
       \ method.\n   /**\n      Returns a list of elements whose melting points\n      are less than or equal to a given temperature.\n\
       \      @param boundaryTemp the cutoff temperature value\n      @return a list of elements that will melt at the boundary\
       \ temperature\n   */\n   public static ArrayList<Element> getMeltedElements(double boundaryTemp)\n   {\n\n   }   \n\
       }\n"
-  placeholder: "import java.util.ArrayList;\n\n/**\n   Element enumeration defines elements, their symbols, and their melting\
-    \ points.\n*/\n\npublic enum Element\n{\n   // TODO: Define enumerated values for each entry in the table\n\n   private\
-    \ String symbol;\n   private double meltingPoint;\n\n   // TODO: Complete the constructor\n   Element (String aSymbol,\
-    \ double aMeltingPoint)\n   {\n\n\n   }\n\n   public double getMeltingPoint()\n   {\n      return meltingPoint;\n   }\n\
-    \n   public String toString()\n   {\n      return symbol;\n   }\n   \n   //TODO: complete the getMeltedElements method.\n\
-    \   /**\n      Returns a list of elements whose melting points\n      are less than or equal to a given temperature.\n\
-    \      @param boundaryTemp the cutoff temperature value\n      @return a list of elements that will melt at the boundary\
-    \ temperature\n   */\n   public static ArrayList<Element> getMeltedElements(double boundaryTemp)\n   {\n\n   }   \n}\n"
 testcases:
 - title: Solution Verification
   visible: true

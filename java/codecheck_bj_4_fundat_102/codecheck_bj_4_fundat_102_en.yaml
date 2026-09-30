@@ -24,14 +24,28 @@ statement: |-
       example, <code>last("Hello, World!", 5)</code> should return the string
       <code>"orld!"</code>.</p>
 elements:
+- type: locked
+  location:
+    snippet: |
+      public class Strings
+      {
+         /**
+            Gets the last n characters from a string.
+            @param s a string
+            @param n a nonnegative integer <= s.length()
+            @return the string that contains the last n characters of s
+         */
+         public String last(String s, int n)
+         {
 - type: editable
   location:
-    snippet: "public class Strings\n{\n   /**\n      Gets the last n characters from a string.\n      @param s a string\n\
-      \      @param n a nonnegative integer <= s.length()\n      @return the string that contains the last n characters of\
-      \ s\n   */\n   public String last(String s, int n)\n   {\n      // your work here\n      \n      \n      \n   }\n}\n"
-  placeholder: "public class Strings\n{\n   /**\n      Gets the last n characters from a string.\n      @param s a string\n\
-    \      @param n a nonnegative integer <= s.length()\n      @return the string that contains the last n characters of s\n\
-    \   */\n   public String last(String s, int n)\n   {\n      // your work here\n      \n      \n      \n   }\n}\n"
+    snippet: "      // your work here\n      \n      \n      \n"
+  placeholder: "      // your work here\n      \n      \n      \n"
+- type: locked
+  location:
+    snippet: |2
+         }
+      }
 testcases:
 - title: Solution Verification
   visible: true

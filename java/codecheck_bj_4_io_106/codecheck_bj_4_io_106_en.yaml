@@ -26,20 +26,27 @@ statement: "<p>Your task is to read a file containing exam scores, and to write\
   \n    <pre>Score 1: 90.0\nScore 2: 80.0\nScore 3: 92.0\nScore 4: 83.0\nScore 5: 74.0\nScore 6: 93.0\nScore 7: 79.0\nScore\
   \ 8: 89.0\nScore 9: 84.0\nScore 10: 91.0\nNumber of scores read: 10\nAverage Score: 85.5\n</pre>"
 elements:
-- type: editable
+- type: locked
   location:
     snippet: "/**\n   Reads a file of exam scores and calculates the average score.\n*/\n\n\nimport java.io.FileReader;\n\
       import java.io.FileNotFoundException;\nimport java.util.Scanner;\nimport java.io.PrintWriter;\n\npublic class ExamAverage\n\
       {\n   public static void main(String[] args)\n      throws FileNotFoundException\n   {\n      String inputFileName =\
-      \ \"scores.txt\";\n      String outputFileName = \"examScoreAverage.txt\";\n      \n      // TODO: Open the input and\
-      \ output files.\n      // Read records from the input file.\n      // Calculate the average score.\n      // Write each\
-      \ exam score, the count of scores read,\n      // and the average score to the output file.\n   }\n}\n"
-  placeholder: "/**\n   Reads a file of exam scores and calculates the average score.\n*/\n\n\nimport java.io.FileReader;\n\
-    import java.io.FileNotFoundException;\nimport java.util.Scanner;\nimport java.io.PrintWriter;\n\npublic class ExamAverage\n\
-    {\n   public static void main(String[] args)\n      throws FileNotFoundException\n   {\n      String inputFileName = \"\
-    scores.txt\";\n      String outputFileName = \"examScoreAverage.txt\";\n      \n      // TODO: Open the input and output\
-    \ files.\n      // Read records from the input file.\n      // Calculate the average score.\n      // Write each exam\
-    \ score, the count of scores read,\n      // and the average score to the output file.\n   }\n}\n"
+      \ \"scores.txt\";\n      String outputFileName = \"examScoreAverage.txt\";\n      \n"
+- type: editable
+  location:
+    snippet: |2
+            // TODO: Open the input and output files.
+  placeholder: |2
+          // TODO: Open the input and output files.
+- type: locked
+  location:
+    snippet: |2
+            // Read records from the input file.
+            // Calculate the average score.
+            // Write each exam score, the count of scores read,
+            // and the average score to the output file.
+         }
+      }
 testcases:
 - title: Solution Verification
   visible: true

@@ -24,12 +24,16 @@ runtime:
 statement: Given three numbers, return true if they are evenly spaced; that is, sorted in ascending or descending order, with
   the same distance between them.
 elements:
-- type: editable
+- type: locked
   location:
     snippet: "\n# Given three numbers, return true if they are evenly spaced; that is, \n# sorted in ascending or descending\
-      \ order, with the same distance between them.\n\ndef evenlySpaced(a, b, c):\n   # Your code here...\n"
-  placeholder: "\n# Given three numbers, return true if they are evenly spaced; that is, \n# sorted in ascending or descending\
-    \ order, with the same distance between them.\n\ndef evenlySpaced(a, b, c):\n   # Your code here...\n"
+      \ order, with the same distance between them.\n\ndef evenlySpaced(a, b, c):\n"
+- type: editable
+  location:
+    snippet: |2
+         # Your code here...
+  placeholder: |2
+       # Your code here...
 testcases:
 - title: Solution Verification
   visible: true

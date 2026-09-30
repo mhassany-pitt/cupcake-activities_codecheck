@@ -22,7 +22,7 @@ runtime:
   version: '3'
 statement: Given integers a and b, return a list containing a, a + 1, a + 2, ..., b.
 elements:
-- type: editable
+- type: locked
   location:
     snippet: |2
 
@@ -30,13 +30,11 @@ elements:
       # If b is less than a, return an empty list.
 
       def aToB(a, b):
+- type: editable
+  location:
+    snippet: |2
          # Your code here...
   placeholder: |2
-
-    # Given integers a and b, return a list containing a, a + 1, a + 2, ..., b.
-    # If b is less than a, return an empty list.
-
-    def aToB(a, b):
        # Your code here...
 testcases:
 - title: Solution Verification

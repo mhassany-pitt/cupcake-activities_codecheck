@@ -33,16 +33,29 @@ statement: |-
 
       <pre>"had", "a"</pre>
 elements:
+- type: locked
+  location:
+    snippet: |
+      import java.util.ArrayList;
+
+      public class Words
+      {
+         /**
+            Returns all short words (length <= 3) in an array of words
+            @param words an array of strings
+            @return an array list containing the short words in words
+         */
+         public ArrayList<String> shortWords(String[] words)
+         {
 - type: editable
   location:
-    snippet: "import java.util.ArrayList;\n\npublic class Words\n{\n   /**\n      Returns all short words (length <= 3) in\
-      \ an array of words\n      @param words an array of strings\n      @return an array list containing the short words\
-      \ in words\n   */\n   public ArrayList<String> shortWords(String[] words)\n   {\n      // your work here\n      \n \
-      \     \n      \n   }\n}\n"
-  placeholder: "import java.util.ArrayList;\n\npublic class Words\n{\n   /**\n      Returns all short words (length <= 3)\
-    \ in an array of words\n      @param words an array of strings\n      @return an array list containing the short words\
-    \ in words\n   */\n   public ArrayList<String> shortWords(String[] words)\n   {\n      // your work here\n      \n   \
-    \   \n      \n   }\n}\n"
+    snippet: "      // your work here\n      \n      \n      \n"
+  placeholder: "      // your work here\n      \n      \n      \n"
+- type: locked
+  location:
+    snippet: |2
+         }
+      }
 testcases:
 - title: Solution Verification
   visible: true

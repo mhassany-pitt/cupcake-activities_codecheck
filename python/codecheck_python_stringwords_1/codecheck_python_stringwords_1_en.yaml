@@ -22,14 +22,17 @@ runtime:
   version: '3'
 statement: Given a string in which words are separated by spaces, return the longest word.
 elements:
-- type: editable
+- type: locked
   location:
     snippet: "\n# Given a string in which words are separated by spaces, \n# return the longest word. You may assume there\
       \ is at least\n# one word in the given list of words. If there are two words\n# with equal length, return the first\
-      \ longest one.\n\ndef longestWord(s):\n   # Your code here...\n"
-  placeholder: "\n# Given a string in which words are separated by spaces, \n# return the longest word. You may assume there\
-    \ is at least\n# one word in the given list of words. If there are two words\n# with equal length, return the first longest\
-    \ one.\n\ndef longestWord(s):\n   # Your code here...\n"
+      \ longest one.\n\ndef longestWord(s):\n"
+- type: editable
+  location:
+    snippet: |2
+         # Your code here...
+  placeholder: |2
+       # Your code here...
 testcases:
 - title: Solution Verification
   visible: true

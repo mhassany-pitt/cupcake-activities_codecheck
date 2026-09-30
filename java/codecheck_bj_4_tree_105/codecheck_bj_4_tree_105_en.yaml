@@ -36,26 +36,25 @@ statement: |-
       <code>Comparable</code> interface. Instead, an integer priority must be
       specified together with each item as it is inserted.)</p>
 elements:
-- type: editable
+- type: locked
   location:
     snippet: "import java.util.ArrayList;\nimport java.util.LinkedList;\n\npublic class FastPQueue\n{\n   public FastPQueue(int\
       \ maxPriority)\n   {\n      itemLists = new ArrayList<LinkedList<Object>>();\n      for (int i = 0; i <= maxPriority;\
       \ i++)\n         itemLists.add(new LinkedList<Object>());\n   }\n   \n   public void add(int priority, Object item)\n\
-      \   {\n      // TODO: Complete this method\n   }\n   \n   public Object remove()\n   {\n      // TODO: Complete this\
-      \ method\n   }\n   \n   private ArrayList<LinkedList<Object>> itemLists; // linked lists of items with the same priority\n\
-      \   \n   // This method is used to check your work\n   public static String[] check(String[] items)\n   {\n      FastPQueue\
-      \ pq = new FastPQueue(9);\n      for (String item : items)\n         pq.add(Integer.parseInt(item.substring(0, 1)),\
-      \ item.substring(1));\n      String[] r = new String[items.length];\n      for (int i = 0; i < r.length; i++)\n    \
-      \     r[i] = pq.remove().toString();\n      return r;\n   }   \n}\n"
-  placeholder: "import java.util.ArrayList;\nimport java.util.LinkedList;\n\npublic class FastPQueue\n{\n   public FastPQueue(int\
-    \ maxPriority)\n   {\n      itemLists = new ArrayList<LinkedList<Object>>();\n      for (int i = 0; i <= maxPriority;\
-    \ i++)\n         itemLists.add(new LinkedList<Object>());\n   }\n   \n   public void add(int priority, Object item)\n\
-    \   {\n      // TODO: Complete this method\n   }\n   \n   public Object remove()\n   {\n      // TODO: Complete this method\n\
-    \   }\n   \n   private ArrayList<LinkedList<Object>> itemLists; // linked lists of items with the same priority\n   \n\
-    \   // This method is used to check your work\n   public static String[] check(String[] items)\n   {\n      FastPQueue\
-    \ pq = new FastPQueue(9);\n      for (String item : items)\n         pq.add(Integer.parseInt(item.substring(0, 1)), item.substring(1));\n\
-    \      String[] r = new String[items.length];\n      for (int i = 0; i < r.length; i++)\n         r[i] = pq.remove().toString();\n\
-    \      return r;\n   }   \n}\n"
+      \   {\n"
+- type: editable
+  location:
+    snippet: |2
+            // TODO: Complete this method
+  placeholder: |2
+          // TODO: Complete this method
+- type: locked
+  location:
+    snippet: "   }\n   \n   public Object remove()\n   {\n      // TODO: Complete this method\n   }\n   \n   private ArrayList<LinkedList<Object>>\
+      \ itemLists; // linked lists of items with the same priority\n   \n   // This method is used to check your work\n  \
+      \ public static String[] check(String[] items)\n   {\n      FastPQueue pq = new FastPQueue(9);\n      for (String item\
+      \ : items)\n         pq.add(Integer.parseInt(item.substring(0, 1)), item.substring(1));\n      String[] r = new String[items.length];\n\
+      \      for (int i = 0; i < r.length; i++)\n         r[i] = pq.remove().toString();\n      return r;\n   }   \n}\n"
 testcases:
 - title: Solution Verification
   visible: true

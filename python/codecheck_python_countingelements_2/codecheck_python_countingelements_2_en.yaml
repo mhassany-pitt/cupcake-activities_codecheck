@@ -22,19 +22,18 @@ runtime:
   version: '3'
 statement: Given a list of integers and two values a and b, count how many elements are at least a and at most b.
 elements:
-- type: editable
+- type: locked
   location:
     snippet: |2
 
       # Given a list of integers and two values a and b, count how many elements are at least a and at most b.
 
       def countInRange(arr, a, b):
+- type: editable
+  location:
+    snippet: |2
          # Your code here...
   placeholder: |2
-
-    # Given a list of integers and two values a and b, count how many elements are at least a and at most b.
-
-    def countInRange(arr, a, b):
        # Your code here...
 testcases:
 - title: Solution Verification

@@ -28,12 +28,22 @@ statement: |-
   n 0 1 2 ... n-1
   </pre>
 elements:
+- type: locked
+  location:
+    snippet: "\n# Given an integer n, produce the two-dimensional array \n# [[0, 1, 2, 3, ... n],\n#  [1, 2, 3, ... n, 0]\n"
 - type: editable
   location:
-    snippet: "\n# Given an integer n, produce the two-dimensional array \n# [[0, 1, 2, 3, ... n],\n#  [1, 2, 3, ... n, 0]\n\
-      # ...\n#  [n, 0, 1, 2 ... n-1]]\n\ndef createArray(n):\n   # Your code here...\n"
-  placeholder: "\n# Given an integer n, produce the two-dimensional array \n# [[0, 1, 2, 3, ... n],\n#  [1, 2, 3, ... n, 0]\n\
-    # ...\n#  [n, 0, 1, 2 ... n-1]]\n\ndef createArray(n):\n   # Your code here...\n"
+    snippet: |
+      # ...
+  placeholder: |
+    # ...
+- type: locked
+  location:
+    snippet: |
+      #  [n, 0, 1, 2 ... n-1]]
+
+      def createArray(n):
+         # Your code here...
 testcases:
 - title: Solution Verification
   visible: true

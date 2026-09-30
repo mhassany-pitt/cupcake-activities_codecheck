@@ -28,14 +28,25 @@ statement: |-
       <code>normalize(380)</code> should return 20, and <code>normalize(-30)</code>
       should return 330. </p>
 elements:
+- type: locked
+  location:
+    snippet: |
+      public class Angles
+      {
+         /**
+            Normalizes an angle.
+            @param angle an integer angle (may be negative)
+            @return the equivalent angle in the range 0 ... 359
+         */
+         public int normalize(int angle)
+         {
 - type: editable
   location:
-    snippet: "public class Angles\n{\n   /**\n      Normalizes an angle.\n      @param angle an integer angle (may be negative)\n\
-      \      @return the equivalent angle in the range 0 ... 359\n   */\n   public int normalize(int angle)\n   {\n      //\
-      \ your work here\n      \n      \n      \n      \n   }   \n}\n"
-  placeholder: "public class Angles\n{\n   /**\n      Normalizes an angle.\n      @param angle an integer angle (may be negative)\n\
-    \      @return the equivalent angle in the range 0 ... 359\n   */\n   public int normalize(int angle)\n   {\n      //\
-    \ your work here\n      \n      \n      \n      \n   }   \n}\n"
+    snippet: "      // your work here\n      \n      \n      \n      \n"
+  placeholder: "      // your work here\n      \n      \n      \n      \n"
+- type: locked
+  location:
+    snippet: "   }   \n}\n"
 testcases:
 - title: Solution Verification
   visible: true

@@ -47,31 +47,28 @@ statement: "<p>An RSS file contains a sequence of <code>item</code> elements ins
   \ get the title of a given item, assuming that the file\n    only contains one channel. Items are numbered starting with\
   \ 1.</p>"
 elements:
-- type: editable
+- type: locked
   location:
     snippet: "import java.io.File;\nimport java.io.IOException;\nimport java.io.ByteArrayInputStream;\nimport javax.xml.parsers.DocumentBuilder;\n\
       import javax.xml.parsers.DocumentBuilderFactory;\nimport javax.xml.parsers.ParserConfigurationException;\nimport javax.xml.xpath.XPath;\n\
       import javax.xml.xpath.XPathExpressionException;\nimport javax.xml.xpath.XPathFactory;\nimport org.w3c.dom.Document;\n\
       import org.xml.sax.SAXException; \n\npublic class RSSReader\n{\n   public String getItemTitle(Document doc, int item)\
-      \ throws XPathExpressionException      \n   {\n      . . .\n   }\n   \n   // this method is used to check your work\n\
-      \   \n   public String check(String what, int item) \n      throws ParserConfigurationException, SAXException, \n  \
-      \    IOException, XPathExpressionException\n   {\n      XPathFactory xpfactory = XPathFactory.newInstance();\n     \
-      \ path = xpfactory.newXPath();\n      DocumentBuilderFactory dbfactory = DocumentBuilderFactory.newInstance();\n   \
-      \   DocumentBuilder builder = dbfactory.newDocumentBuilder();\n      Document doc;\n      if (what.startsWith(\"<\"\
-      )) \n      {\n         doc = builder.parse(new ByteArrayInputStream(what.getBytes())); \n      }\n      else\n     \
-      \ {\n         doc = builder.parse(new File(what));\n      }       \n      return getItemTitle(doc, item);\n   }\n  \
-      \ \n   private XPath path;\n}\n"
-  placeholder: "import java.io.File;\nimport java.io.IOException;\nimport java.io.ByteArrayInputStream;\nimport javax.xml.parsers.DocumentBuilder;\n\
-    import javax.xml.parsers.DocumentBuilderFactory;\nimport javax.xml.parsers.ParserConfigurationException;\nimport javax.xml.xpath.XPath;\n\
-    import javax.xml.xpath.XPathExpressionException;\nimport javax.xml.xpath.XPathFactory;\nimport org.w3c.dom.Document;\n\
-    import org.xml.sax.SAXException; \n\npublic class RSSReader\n{\n   public String getItemTitle(Document doc, int item)\
-    \ throws XPathExpressionException      \n   {\n      . . .\n   }\n   \n   // this method is used to check your work\n\
-    \   \n   public String check(String what, int item) \n      throws ParserConfigurationException, SAXException, \n    \
-    \  IOException, XPathExpressionException\n   {\n      XPathFactory xpfactory = XPathFactory.newInstance();\n      path\
-    \ = xpfactory.newXPath();\n      DocumentBuilderFactory dbfactory = DocumentBuilderFactory.newInstance();\n      DocumentBuilder\
-    \ builder = dbfactory.newDocumentBuilder();\n      Document doc;\n      if (what.startsWith(\"<\")) \n      {\n      \
-    \   doc = builder.parse(new ByteArrayInputStream(what.getBytes())); \n      }\n      else\n      {\n         doc = builder.parse(new\
-    \ File(what));\n      }       \n      return getItemTitle(doc, item);\n   }\n   \n   private XPath path;\n}\n"
+      \ throws XPathExpressionException      \n   {\n"
+- type: editable
+  location:
+    snippet: |2
+            . . .
+  placeholder: |2
+          . . .
+- type: locked
+  location:
+    snippet: "   }\n   \n   // this method is used to check your work\n   \n   public String check(String what, int item)\
+      \ \n      throws ParserConfigurationException, SAXException, \n      IOException, XPathExpressionException\n   {\n \
+      \     XPathFactory xpfactory = XPathFactory.newInstance();\n      path = xpfactory.newXPath();\n      DocumentBuilderFactory\
+      \ dbfactory = DocumentBuilderFactory.newInstance();\n      DocumentBuilder builder = dbfactory.newDocumentBuilder();\n\
+      \      Document doc;\n      if (what.startsWith(\"<\")) \n      {\n         doc = builder.parse(new ByteArrayInputStream(what.getBytes()));\
+      \ \n      }\n      else\n      {\n         doc = builder.parse(new File(what));\n      }       \n      return getItemTitle(doc,\
+      \ item);\n   }\n   \n   private XPath path;\n}\n"
 testcases:
 - title: Solution Verification
   visible: true

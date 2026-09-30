@@ -22,7 +22,7 @@ runtime:
   version: '3'
 statement: Given a string, return the string with the first and last characters swapped.
 elements:
-- type: editable
+- type: locked
   location:
     snippet: |2
 
@@ -31,14 +31,11 @@ elements:
       # use a loop to solve this problem.
 
       def swapFirstAndLast(s):
+- type: editable
+  location:
+    snippet: |2
          # Your code here...
   placeholder: |2
-
-    # Given a string, return the string with the first and last characters swapped. If
-    # there are fewer than 2 characters in the string, return the original string. Do not
-    # use a loop to solve this problem.
-
-    def swapFirstAndLast(s):
        # Your code here...
 testcases:
 - title: Solution Verification

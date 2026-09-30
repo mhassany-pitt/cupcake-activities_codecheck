@@ -24,7 +24,7 @@ statement: |-
       example, the call <code>initials("Harry", "Joseph", "Hacker")</code> should return the string
       <code>"HJH"</code>. </p>
 elements:
-- type: editable
+- type: locked
   location:
     snippet: |
       public class Names
@@ -39,25 +39,17 @@ elements:
          */
          public String initials(String first, String middle, String last)
          {
+- type: editable
+  location:
+    snippet: |2
             ...
+  placeholder: |2
+          ...
+- type: locked
+  location:
+    snippet: |2
          }
       }
-  placeholder: |
-    public class Names
-    {
-       /**
-          Gets the initials of a name.
-          @param first the first name of this name
-          @param middle the middle name of this name
-          @param last the last name of this name
-          @return a string consisting of the first character of the first, middle,
-          and last name
-       */
-       public String initials(String first, String middle, String last)
-       {
-          ...
-       }
-    }
 testcases:
 - title: Solution Verification
   visible: true

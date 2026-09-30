@@ -26,26 +26,39 @@ statement: "<p>A simple way of encoding a message is the railfence cypher.  The 
   \ in the preceding diagram. Each array element should either be <code>null</code> (represented by <code>.</code> above)\
   \ or a string of length 1.</p>"
 elements:
+- type: locked
+  location:
+    snippet: |
+      import java.util.ArrayList;
+
+      /**
+         Encodes strings using the Railfence cipher.
+      */
+      public class Railfence
+      {
+         /**
+            Arranges a message in a fence pattern
+            @param message any string
+            @return a two-dimensional array of strings that are either null (.) or strings
+            of length 1, arranged in a pattern like this
+            m . . . a . .
+            . e . s . g .
+            . . s . . . e
+         */
+         public String[][] makeFence(String message)
+         {
 - type: editable
   location:
-    snippet: "import java.util.ArrayList;\n\n/**\n   Encodes strings using the Railfence cipher.\n*/\npublic class Railfence\n\
-      {\n   /**\n      Arranges a message in a fence pattern\n      @param message any string\n      @return a two-dimensional\
-      \ array of strings that are either null (.) or strings\n      of length 1, arranged in a pattern like this\n      m\
-      \ . . . a . .\n      . e . s . g .\n      . . s . . . e\n   */\n   public String[][] makeFence(String message)\n   {\n\
-      \      // your work here\n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n \
-      \  }\n   \n   \n   // This message is used to check your work\n   public String encode(String message)\n   {\n     \
-      \ String[][] fence = makeFence(message);\n      String result = \"\";\n      for (int i = 0; i < fence.length; i++)\n\
-      \        for (int j = 0; j < fence[i].length; j++)\n          if (fence[i][j] != null && fence[i][j].length() == 1)\n\
-      \            result = result + fence[i][j];\n      return result;\n   }\n}\n"
-  placeholder: "import java.util.ArrayList;\n\n/**\n   Encodes strings using the Railfence cipher.\n*/\npublic class Railfence\n\
-    {\n   /**\n      Arranges a message in a fence pattern\n      @param message any string\n      @return a two-dimensional\
-    \ array of strings that are either null (.) or strings\n      of length 1, arranged in a pattern like this\n      m .\
-    \ . . a . .\n      . e . s . g .\n      . . s . . . e\n   */\n   public String[][] makeFence(String message)\n   {\n \
-    \     // your work here\n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n   }\n\
-    \   \n   \n   // This message is used to check your work\n   public String encode(String message)\n   {\n      String[][]\
-    \ fence = makeFence(message);\n      String result = \"\";\n      for (int i = 0; i < fence.length; i++)\n        for\
-    \ (int j = 0; j < fence[i].length; j++)\n          if (fence[i][j] != null && fence[i][j].length() == 1)\n           \
-    \ result = result + fence[i][j];\n      return result;\n   }\n}\n"
+    snippet: "      // your work here\n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n  \
+      \    \n"
+  placeholder: "      // your work here\n      \n      \n      \n      \n      \n      \n      \n      \n      \n      \n\
+    \      \n"
+- type: locked
+  location:
+    snippet: "   }\n   \n   \n   // This message is used to check your work\n   public String encode(String message)\n   {\n\
+      \      String[][] fence = makeFence(message);\n      String result = \"\";\n      for (int i = 0; i < fence.length;\
+      \ i++)\n        for (int j = 0; j < fence[i].length; j++)\n          if (fence[i][j] != null && fence[i][j].length()\
+      \ == 1)\n            result = result + fence[i][j];\n      return result;\n   }\n}\n"
 testcases:
 - title: Solution Verification
   visible: true

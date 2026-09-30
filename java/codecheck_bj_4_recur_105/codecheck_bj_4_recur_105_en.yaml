@@ -30,19 +30,22 @@ statement: |-
 
       <p>Viewer and component classes have been provided.</p>
 elements:
-- type: editable
+- type: locked
   location:
     snippet: "import java.awt.Graphics2D;\nimport java.awt.geom.Line2D;\nimport java.awt.geom.Point2D;\nimport java.awt.geom.Rectangle2D;\n\
       \npublic class Squid\n{\n   /**\n      Constructs a Squid (square inside diamond).\n      @param aCenter the center\
       \ point\n      @param aRadius, the distance from the center to the corner points\n      of the diamond\n   */\n   public\
       \ Squid(Point2D.Double aCenter, double aRadius)\n   {\n      center = aCenter;\n      radius = aRadius;\n   }\n   \n\
-      \   public void draw(Graphics2D g2)\n   {\n      // your work here\n   }\n\n   private Point2D.Double center;\n   private\
-      \ double radius;   \n}\n"
-  placeholder: "import java.awt.Graphics2D;\nimport java.awt.geom.Line2D;\nimport java.awt.geom.Point2D;\nimport java.awt.geom.Rectangle2D;\n\
-    \npublic class Squid\n{\n   /**\n      Constructs a Squid (square inside diamond).\n      @param aCenter the center point\n\
-    \      @param aRadius, the distance from the center to the corner points\n      of the diamond\n   */\n   public Squid(Point2D.Double\
-    \ aCenter, double aRadius)\n   {\n      center = aCenter;\n      radius = aRadius;\n   }\n   \n   public void draw(Graphics2D\
-    \ g2)\n   {\n      // your work here\n   }\n\n   private Point2D.Double center;\n   private double radius;   \n}\n"
+      \   public void draw(Graphics2D g2)\n   {\n"
+- type: editable
+  location:
+    snippet: |2
+            // your work here
+  placeholder: |2
+          // your work here
+- type: locked
+  location:
+    snippet: "   }\n\n   private Point2D.Double center;\n   private double radius;   \n}\n"
 testcases:
 - title: Solution Verification
   visible: true

@@ -39,28 +39,36 @@ statement: |-
       implementation of the <code>check</code> method at this time, and you should
       not modify it. </p>
 elements:
+- type: locked
+  location:
+    snippet: |
+      /**
+         Calculate the salary amount by applying a bonus rate.
+      */
+
+      public class SalaryBonus
+      {
+         private double salary;
+         private double bonusRate;
+
+         public SalaryBonus(double aSalary, double aRate)
+         {
 - type: editable
   location:
-    snippet: "/**\n   Calculate the salary amount by applying a bonus rate.\n*/\n\npublic class SalaryBonus\n{\n   private\
-      \ double salary;\n   private double bonusRate;\n\n   public SalaryBonus(double aSalary, double aRate)\n   {\n      //TODO:\
-      \ Add assert statements\n      salary = aSalary;\n      bonusRate = aRate;\n   }\n   \n   /**\n      The following method\
-      \ checks your constructor. We use the exception\n      handling mechanism (see chapter 11) to determine whether (a)\
-      \ the\n      constructor completed normally, (b) your code used an assertion to\n      check a precondition violation,\
-      \ or (c) you failed to use an\n      assertion and some other exception occurred.\n   */   \n   public static String\
-      \ check(double salaryTest, double rateTest)\n   {\n      try\n      {\n         SalaryBonus eBonus = new SalaryBonus(salaryTest,rateTest);\n\
+    snippet: |2
+            //TODO: Add assert statements
+  placeholder: |2
+          //TODO: Add assert statements
+- type: locked
+  location:
+    snippet: "      salary = aSalary;\n      bonusRate = aRate;\n   }\n   \n   /**\n      The following method checks your\
+      \ constructor. We use the exception\n      handling mechanism (see chapter 11) to determine whether (a) the\n      constructor\
+      \ completed normally, (b) your code used an assertion to\n      check a precondition violation, or (c) you failed to\
+      \ use an\n      assertion and some other exception occurred.\n   */   \n   public static String check(double salaryTest,\
+      \ double rateTest)\n   {\n      try\n      {\n         SalaryBonus eBonus = new SalaryBonus(salaryTest,rateTest);\n\
       \         return \"Constructor completed normally\";\n      }\n      catch (AssertionError error)\n      {\n       \
       \  return \"Precondition violation detected\";\n      }\n      catch (Exception exception)\n      {\n         return\
       \ \"Exception in constructor\";\n      }\n   }\n}\n"
-  placeholder: "/**\n   Calculate the salary amount by applying a bonus rate.\n*/\n\npublic class SalaryBonus\n{\n   private\
-    \ double salary;\n   private double bonusRate;\n\n   public SalaryBonus(double aSalary, double aRate)\n   {\n      //TODO:\
-    \ Add assert statements\n      salary = aSalary;\n      bonusRate = aRate;\n   }\n   \n   /**\n      The following method\
-    \ checks your constructor. We use the exception\n      handling mechanism (see chapter 11) to determine whether (a) the\n\
-    \      constructor completed normally, (b) your code used an assertion to\n      check a precondition violation, or (c)\
-    \ you failed to use an\n      assertion and some other exception occurred.\n   */   \n   public static String check(double\
-    \ salaryTest, double rateTest)\n   {\n      try\n      {\n         SalaryBonus eBonus = new SalaryBonus(salaryTest,rateTest);\n\
-    \         return \"Constructor completed normally\";\n      }\n      catch (AssertionError error)\n      {\n         return\
-    \ \"Precondition violation detected\";\n      }\n      catch (Exception exception)\n      {\n         return \"Exception\
-    \ in constructor\";\n      }\n   }\n}\n"
 testcases:
 - title: Solution Verification
   visible: true

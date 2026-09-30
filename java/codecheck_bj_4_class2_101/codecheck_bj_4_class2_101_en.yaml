@@ -35,34 +35,33 @@ statement: |-
       <code>Address</code> class given below. The <code>main</code> method shows how your modified
       class should be used. </p>
 elements:
+- type: locked
+  location:
+    snippet: |
+      /**
+         Describes a person who will receive mail.
+      */
+      public class Person
+      {
 - type: editable
   location:
-    snippet: "/**\n   Describes a person who will receive mail.\n*/\npublic class Person\n{\n   /*\n      TODO: To increase\
-      \ cohesion, reimplement this class by using\n      the Address class. Do not modify the main method that is used\n \
-      \     for checking.\n   */\n   \n   /**\n      Constructs a person. \n      @param aName the person's name\n      @param\
-      \ aStreet the street\n      @param aCity the city\n      @param aState the two-letter state code\n      @param aZip\
-      \ the ZIP postal code\n   */\n   public Person(String aName, String aStreet,\n         String aCity, String aState,\
-      \ String aZip)\n   {  \n      name = aName;\n      street = aStreet;\n      city = aCity;\n      state = aState;\n \
-      \     zip = aZip;\n   }   \n\n   /**\n      Formats the person's name and address for mailing.\n      @return a string\
-      \ suitable for printing on a mailing label\n   */\n   public String formatForMailing()\n   {  \n      return name +\
-      \ \"\\n\" + street + \"\\n\"\n            + city + \", \" + state + \" \" + zip;\n   }\n   \n   private String name;\n\
-      \   private String street;\n   private String city;\n   private String state;\n   private String zip;\n   \n   // This\
-      \ method is used for checking your work. Do not modify it\n\n   public static void main(String[] args)\n   {\n     \
-      \ Person harry = new Person(\"Harold J. Hacker\",\n         new Address(\"123 Main Street\", \"Anytown\", \"NY\", \"\
-      12345\"));\n      System.out.println(harry.formatForMailing());\n   }   \n}\n"
-  placeholder: "/**\n   Describes a person who will receive mail.\n*/\npublic class Person\n{\n   /*\n      TODO: To increase\
-    \ cohesion, reimplement this class by using\n      the Address class. Do not modify the main method that is used\n   \
-    \   for checking.\n   */\n   \n   /**\n      Constructs a person. \n      @param aName the person's name\n      @param\
-    \ aStreet the street\n      @param aCity the city\n      @param aState the two-letter state code\n      @param aZip the\
-    \ ZIP postal code\n   */\n   public Person(String aName, String aStreet,\n         String aCity, String aState, String\
-    \ aZip)\n   {  \n      name = aName;\n      street = aStreet;\n      city = aCity;\n      state = aState;\n      zip =\
-    \ aZip;\n   }   \n\n   /**\n      Formats the person's name and address for mailing.\n      @return a string suitable\
-    \ for printing on a mailing label\n   */\n   public String formatForMailing()\n   {  \n      return name + \"\\n\" + street\
-    \ + \"\\n\"\n            + city + \", \" + state + \" \" + zip;\n   }\n   \n   private String name;\n   private String\
-    \ street;\n   private String city;\n   private String state;\n   private String zip;\n   \n   // This method is used for\
-    \ checking your work. Do not modify it\n\n   public static void main(String[] args)\n   {\n      Person harry = new Person(\"\
-    Harold J. Hacker\",\n         new Address(\"123 Main Street\", \"Anytown\", \"NY\", \"12345\"));\n      System.out.println(harry.formatForMailing());\n\
-    \   }   \n}\n"
+    snippet: "   /*\n      TODO: To increase cohesion, reimplement this class by using\n      the Address class. Do not modify\
+      \ the main method that is used\n      for checking.\n   */\n   \n"
+  placeholder: "   /*\n      TODO: To increase cohesion, reimplement this class by using\n      the Address class. Do not\
+    \ modify the main method that is used\n      for checking.\n   */\n   \n"
+- type: locked
+  location:
+    snippet: "   /**\n      Constructs a person. \n      @param aName the person's name\n      @param aStreet the street\n\
+      \      @param aCity the city\n      @param aState the two-letter state code\n      @param aZip the ZIP postal code\n\
+      \   */\n   public Person(String aName, String aStreet,\n         String aCity, String aState, String aZip)\n   {  \n\
+      \      name = aName;\n      street = aStreet;\n      city = aCity;\n      state = aState;\n      zip = aZip;\n   } \
+      \  \n\n   /**\n      Formats the person's name and address for mailing.\n      @return a string suitable for printing\
+      \ on a mailing label\n   */\n   public String formatForMailing()\n   {  \n      return name + \"\\n\" + street + \"\\\
+      n\"\n            + city + \", \" + state + \" \" + zip;\n   }\n   \n   private String name;\n   private String street;\n\
+      \   private String city;\n   private String state;\n   private String zip;\n   \n   // This method is used for checking\
+      \ your work. Do not modify it\n\n   public static void main(String[] args)\n   {\n      Person harry = new Person(\"\
+      Harold J. Hacker\",\n         new Address(\"123 Main Street\", \"Anytown\", \"NY\", \"12345\"));\n      System.out.println(harry.formatForMailing());\n\
+      \   }   \n}\n"
 testcases:
 - title: Solution Verification
   visible: true

@@ -30,15 +30,28 @@ statement: |-
       <p>Your job is to compute the length of the longest run. For example, with
       the preceding array, the longest run <code>2 2 2</code> has length 3.</p>
 elements:
-- type: editable
+- type: locked
   location:
     snippet: "public class Numbers\n{\n   /**\n      Computes the length of the longest run (sequence of \n      adjacent\
       \ repeated values) in an array.\n      @param values an array of integer values\n      @return the length of the longest\
-      \ run in values\n   */\n   public int lengthOfLongestRun(int[] values)\n   {\n      // your work here\n\n\n\n   }\n\
-      }\n"
-  placeholder: "public class Numbers\n{\n   /**\n      Computes the length of the longest run (sequence of \n      adjacent\
-    \ repeated values) in an array.\n      @param values an array of integer values\n      @return the length of the longest\
-    \ run in values\n   */\n   public int lengthOfLongestRun(int[] values)\n   {\n      // your work here\n\n\n\n   }\n}\n"
+      \ run in values\n   */\n   public int lengthOfLongestRun(int[] values)\n   {\n"
+- type: editable
+  location:
+    snippet: |2+
+            // your work here
+
+
+
+  placeholder: |2+
+          // your work here
+
+
+
+- type: locked
+  location:
+    snippet: |2
+         }
+      }
 testcases:
 - title: Solution Verification
   visible: true

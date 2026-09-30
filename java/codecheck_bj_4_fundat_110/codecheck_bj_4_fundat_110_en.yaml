@@ -32,7 +32,7 @@ statement: |-
   </pre>
   <p>then the call <code>start.minutesUntil(end)</code> should return 110.</p>
 elements:
-- type: editable
+- type: locked
   location:
     snippet: "/**\n   A class to compute the distance between two points in time.\n*/\npublic class Time\n{\n   private int\
       \ hours;\n   private int minutes;\n\n   /**\n      Construct a Time.\n      @param hrs the hours of the time (between\
@@ -41,20 +41,25 @@ elements:
       \ the hours\n   */\n   public int getHours() { return hours; }\n   \n   /**\n      Gets the minutes of this time\n \
       \     @return the minutes\n   */\n   public int getMinutes() { return minutes; }\n   \n   /**\n      Gets the minutes\
       \ from this time to another\n      @param other another time\n      @return the number of minutes from this time to\
-      \ the other\n   */\n   public int minutesUntil(Time other)\n   {\n      // your work here      \n   }\n\n   // this\
-      \ method is used to check your work\n\n   public static int check(int h1, int m1, int h2, int m2)\n   {\n      Time\
-      \ first = new Time(h1, m1);\n      Time second = new Time(h2, m2);\n      return first.minutesUntil(second);\n   }\n\
-      }\n"
-  placeholder: "/**\n   A class to compute the distance between two points in time.\n*/\npublic class Time\n{\n   private\
-    \ int hours;\n   private int minutes;\n\n   /**\n      Construct a Time.\n      @param hrs the hours of the time (between\
-    \ 0 and 23)\n      @param min the minutes of the time (between 0 and 59)\n   */\n   public Time(int hrs, int min)\n  \
-    \ {\n      hours = hrs;\n      minutes = min;\n   }\n   \n   /**\n      Gets the hours of this time\n      @return the\
-    \ hours\n   */\n   public int getHours() { return hours; }\n   \n   /**\n      Gets the minutes of this time\n      @return\
-    \ the minutes\n   */\n   public int getMinutes() { return minutes; }\n   \n   /**\n      Gets the minutes from this time\
-    \ to another\n      @param other another time\n      @return the number of minutes from this time to the other\n   */\n\
-    \   public int minutesUntil(Time other)\n   {\n      // your work here      \n   }\n\n   // this method is used to check\
-    \ your work\n\n   public static int check(int h1, int m1, int h2, int m2)\n   {\n      Time first = new Time(h1, m1);\n\
-    \      Time second = new Time(h2, m2);\n      return first.minutesUntil(second);\n   }\n}\n"
+      \ the other\n   */\n   public int minutesUntil(Time other)\n   {\n"
+- type: editable
+  location:
+    snippet: "      // your work here      \n"
+  placeholder: "      // your work here      \n"
+- type: locked
+  location:
+    snippet: |2
+         }
+
+         // this method is used to check your work
+
+         public static int check(int h1, int m1, int h2, int m2)
+         {
+            Time first = new Time(h1, m1);
+            Time second = new Time(h2, m2);
+            return first.minutesUntil(second);
+         }
+      }
 testcases:
 - title: Solution Verification
   visible: true

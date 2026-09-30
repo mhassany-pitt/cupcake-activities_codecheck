@@ -22,14 +22,16 @@ runtime:
   version: '3'
 statement: Given a list of integers, return the position of the last occurrence of the largest element.
 elements:
-- type: editable
+- type: locked
   location:
     snippet: "\n# Given a list of integers, return the position \n# of the last occurrence of the largest element.\n# You\
-      \ may assume the given list has at least one element.\n# Do not use the index, find, or max methods.\n\ndef positionOfLastLargest(arr):\n\
-      \   # Your code here...\n"
-  placeholder: "\n# Given a list of integers, return the position \n# of the last occurrence of the largest element.\n# You\
-    \ may assume the given list has at least one element.\n# Do not use the index, find, or max methods.\n\ndef positionOfLastLargest(arr):\n\
-    \   # Your code here...\n"
+      \ may assume the given list has at least one element.\n# Do not use the index, find, or max methods.\n\ndef positionOfLastLargest(arr):\n"
+- type: editable
+  location:
+    snippet: |2
+         # Your code here...
+  placeholder: |2
+       # Your code here...
 testcases:
 - title: Solution Verification
   visible: true

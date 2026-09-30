@@ -23,12 +23,16 @@ runtime:
 statement: Given numbers x, y, and target, return whichever of x and y is closer to the target. If they have the same distance,
   return the smaller of the two.
 elements:
-- type: editable
+- type: locked
   location:
     snippet: "\n# Given numbers x, y, and target, return whichever of x and y is closer \n# to the target. If they have the\
-      \ same distance, return the smaller of the two.\n\ndef closerToTarget(x, y, target):\n   # Your code here...\n"
-  placeholder: "\n# Given numbers x, y, and target, return whichever of x and y is closer \n# to the target. If they have\
-    \ the same distance, return the smaller of the two.\n\ndef closerToTarget(x, y, target):\n   # Your code here...\n"
+      \ same distance, return the smaller of the two.\n\ndef closerToTarget(x, y, target):\n"
+- type: editable
+  location:
+    snippet: |2
+         # Your code here...
+  placeholder: |2
+       # Your code here...
 testcases:
 - title: Solution Verification
   visible: true

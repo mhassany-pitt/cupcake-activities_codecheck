@@ -24,12 +24,16 @@ runtime:
 statement: Given an r x c array of integers, return an (r + 2) x (c + 2) array whose borders are zero and whose interior is
   the original array.
 elements:
-- type: editable
+- type: locked
   location:
     snippet: "\n# Given an r x c array of integers, return an (r + 2) x (c + 2) \n# array whose borders are zero and whose\
-      \ interior is the original array.\n\ndef addZeroBorders(arr):\n   # Your code here...\n"
-  placeholder: "\n# Given an r x c array of integers, return an (r + 2) x (c + 2) \n# array whose borders are zero and whose\
-    \ interior is the original array.\n\ndef addZeroBorders(arr):\n   # Your code here...\n"
+      \ interior is the original array.\n\ndef addZeroBorders(arr):\n"
+- type: editable
+  location:
+    snippet: |2
+         # Your code here...
+  placeholder: |2
+       # Your code here...
 testcases:
 - title: Solution Verification
   visible: true

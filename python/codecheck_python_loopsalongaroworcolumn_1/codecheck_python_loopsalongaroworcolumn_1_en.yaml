@@ -22,13 +22,16 @@ runtime:
   version: '3'
 statement: Given a two-dimensional array of integers and a row index, return the largest element in that row.
 elements:
-- type: editable
+- type: locked
   location:
     snippet: "\n# Given a two-dimensional array of integers and a row index, \n# return the largest element in that row. You\
-      \ may assume there\n# is at least one element in the specified row.\n\ndef largestInRow(arr, row):\n   # Your code here...\n"
-  placeholder: "\n# Given a two-dimensional array of integers and a row index, \n# return the largest element in that row.\
-    \ You may assume there\n# is at least one element in the specified row.\n\ndef largestInRow(arr, row):\n   # Your code\
-    \ here...\n"
+      \ may assume there\n# is at least one element in the specified row.\n\ndef largestInRow(arr, row):\n"
+- type: editable
+  location:
+    snippet: |2
+         # Your code here...
+  placeholder: |2
+       # Your code here...
 testcases:
 - title: Solution Verification
   visible: true

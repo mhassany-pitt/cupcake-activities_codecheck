@@ -37,18 +37,31 @@ statement: |-
   /home/me/cs1
   /usr/local/jdk1.6.0/jre/lib</pre>
 elements:
+- type: locked
+  location:
+    snippet: |
+      import java.util.Arrays;
+      import java.util.Comparator;
+
+      public class PathSorter
+      {
+         public String[] sort(String[] paths)
+         {
+            class PathComparator implements Comparator<String>
+            {
+               public int compare(String p1, String p2)
+               {
 - type: editable
   location:
-    snippet: "import java.util.Arrays;\nimport java.util.Comparator;\n\npublic class PathSorter\n{\n   public String[] sort(String[]\
-      \ paths)\n   {\n      class PathComparator implements Comparator<String>\n      {\n         public int compare(String\
-      \ p1, String p2)\n         {\n            // TODO: Complete this method\n         }\n         \n         private int\
-      \ countSlashes(String p)\n         {\n            return p.length() - p.replace(\"/\", \"\").length();\n         }\n\
-      \      }      \n      \n      Arrays.sort(paths, new PathComparator());\n      return paths;\n   }   \n}\n"
-  placeholder: "import java.util.Arrays;\nimport java.util.Comparator;\n\npublic class PathSorter\n{\n   public String[] sort(String[]\
-    \ paths)\n   {\n      class PathComparator implements Comparator<String>\n      {\n         public int compare(String\
-    \ p1, String p2)\n         {\n            // TODO: Complete this method\n         }\n         \n         private int countSlashes(String\
-    \ p)\n         {\n            return p.length() - p.replace(\"/\", \"\").length();\n         }\n      }      \n      \n\
-    \      Arrays.sort(paths, new PathComparator());\n      return paths;\n   }   \n}\n"
+    snippet: |2
+                  // TODO: Complete this method
+  placeholder: |2
+                // TODO: Complete this method
+- type: locked
+  location:
+    snippet: "         }\n         \n         private int countSlashes(String p)\n         {\n            return p.length()\
+      \ - p.replace(\"/\", \"\").length();\n         }\n      }      \n      \n      Arrays.sort(paths, new PathComparator());\n\
+      \      return paths;\n   }   \n}\n"
 testcases:
 - title: Solution Verification
   visible: true

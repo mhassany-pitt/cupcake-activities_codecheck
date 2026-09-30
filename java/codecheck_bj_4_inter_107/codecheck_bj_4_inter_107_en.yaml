@@ -27,20 +27,28 @@ statement: "<p>Complete the <code>CarMuseum</code> class below so that it implem
   \ input string is \"1949 Ford,1943 Studebaker,1950 Chevrolet,1948 Pontiac,1949 Ford,1944 Pontiac,1949 Studebaker\", then\n\
   \              the <code>getMeasure</code> method of the <code>CarMuseum</code> class should return 6.0.</p>"
 elements:
+- type: locked
+  location:
+    snippet: |+
+      /**
+         Allows input of unique cars into the museum.
+      */
+
 - type: editable
   location:
-    snippet: "/**\n   Allows input of unique cars into the museum.\n*/\n\n// TODO: modify this class to implement the Measurable\
-      \ interface\n\nimport java.util.*;\n\npublic class CarMuseum \n{\n   private ArrayList<String> cars;\n   \n   public\
-      \ CarMuseum(String input)\n   {\n      cars = new ArrayList<String>();\n      // TODO:  complete this method to add\n\
-      \      // cars from the input string.  Only\n      // allow unique cars to be added (no\n      // duplicates).\n   }\n\
-      \   /**\n      Returns the count of cars\n      @return the count of cars in the museum\n   */\n\n   // TODO:  Implement\
-      \ the getMeasure method from the interface\n}\n"
-  placeholder: "/**\n   Allows input of unique cars into the museum.\n*/\n\n// TODO: modify this class to implement the Measurable\
-    \ interface\n\nimport java.util.*;\n\npublic class CarMuseum \n{\n   private ArrayList<String> cars;\n   \n   public CarMuseum(String\
-    \ input)\n   {\n      cars = new ArrayList<String>();\n      // TODO:  complete this method to add\n      // cars from\
-    \ the input string.  Only\n      // allow unique cars to be added (no\n      // duplicates).\n   }\n   /**\n      Returns\
-    \ the count of cars\n      @return the count of cars in the museum\n   */\n\n   // TODO:  Implement the getMeasure method\
-    \ from the interface\n}\n"
+    snippet: |+
+      // TODO: modify this class to implement the Measurable interface
+
+  placeholder: |+
+    // TODO: modify this class to implement the Measurable interface
+
+- type: locked
+  location:
+    snippet: "import java.util.*;\n\npublic class CarMuseum \n{\n   private ArrayList<String> cars;\n   \n   public CarMuseum(String\
+      \ input)\n   {\n      cars = new ArrayList<String>();\n      // TODO:  complete this method to add\n      // cars from\
+      \ the input string.  Only\n      // allow unique cars to be added (no\n      // duplicates).\n   }\n   /**\n      Returns\
+      \ the count of cars\n      @return the count of cars in the museum\n   */\n\n   // TODO:  Implement the getMeasure method\
+      \ from the interface\n}\n"
 testcases:
 - title: Solution Verification
   visible: true

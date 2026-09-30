@@ -22,12 +22,16 @@ runtime:
   version: '3'
 statement: Given integers a and b, return a list containing all even numbers that are at least a and at most b.
 elements:
-- type: editable
+- type: locked
   location:
     snippet: "\n# Given integers a and b, return a list containing \n# all even numbers that are at least a and at most b.\n\
-      # If b is greater than a, return an empty list.\n\ndef getEvenBetweenAandB(a, b):\n   # Your code here...\n"
-  placeholder: "\n# Given integers a and b, return a list containing \n# all even numbers that are at least a and at most\
-    \ b.\n# If b is greater than a, return an empty list.\n\ndef getEvenBetweenAandB(a, b):\n   # Your code here...\n"
+      # If b is greater than a, return an empty list.\n\ndef getEvenBetweenAandB(a, b):\n"
+- type: editable
+  location:
+    snippet: |2
+         # Your code here...
+  placeholder: |2
+       # Your code here...
 testcases:
 - title: Solution Verification
   visible: true

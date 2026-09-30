@@ -22,12 +22,16 @@ runtime:
   version: '3'
 statement: Given two lists a and b, return a list that contains all elements occurring in a but not in b.
 elements:
-- type: editable
+- type: locked
   location:
     snippet: "\n# Given two lists a and b, return a list that contains \n# all elements occurring in a but not in b. \n\n\
-      def elementInAnotB(a, b):\n   # Your code here...\n"
-  placeholder: "\n# Given two lists a and b, return a list that contains \n# all elements occurring in a but not in b. \n\n\
-    def elementInAnotB(a, b):\n   # Your code here...\n"
+      def elementInAnotB(a, b):\n"
+- type: editable
+  location:
+    snippet: |2
+         # Your code here...
+  placeholder: |2
+       # Your code here...
 testcases:
 - title: Solution Verification
   visible: true

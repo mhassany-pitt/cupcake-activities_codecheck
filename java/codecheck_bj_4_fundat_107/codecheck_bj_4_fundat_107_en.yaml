@@ -25,16 +25,23 @@ statement: "<p>Latitude and longitude can be expressed in the form of decimal de
   \ that converts decimal degrees to a <code>String</code> with degrees, minutes and seconds in the form <code>xxx°xx\"xx.xx'</code>.\
   \ Seconds may have a fractional part. The unicode character <code>'\\u00B0'</code> is the degree symbol.</p>"
 elements:
-- type: editable
+- type: locked
   location:
     snippet: "public class Degrees\n{\n   /**\n      Converts the specified decimal degrees to a string with degrees, minutes,\
       \ seconds.\n      @param decimalDegrees a decimal degree value >= 0, such as 40.25833\n      @return a string with the\
       \ degrees, minutes, and seconds, such as 40°15'30\" \n   */\n   public String convert(double decimalDegrees)\n   { \
-      \  \n      String degSymbol = \"\\u00B0\";\n      ...\n   }\n}\n"
-  placeholder: "public class Degrees\n{\n   /**\n      Converts the specified decimal degrees to a string with degrees, minutes,\
-    \ seconds.\n      @param decimalDegrees a decimal degree value >= 0, such as 40.25833\n      @return a string with the\
-    \ degrees, minutes, and seconds, such as 40°15'30\" \n   */\n   public String convert(double decimalDegrees)\n   {   \n\
-    \      String degSymbol = \"\\u00B0\";\n      ...\n   }\n}\n"
+      \  \n      String degSymbol = \"\\u00B0\";\n"
+- type: editable
+  location:
+    snippet: |2
+            ...
+  placeholder: |2
+          ...
+- type: locked
+  location:
+    snippet: |2
+         }
+      }
 testcases:
 - title: Solution Verification
   visible: true

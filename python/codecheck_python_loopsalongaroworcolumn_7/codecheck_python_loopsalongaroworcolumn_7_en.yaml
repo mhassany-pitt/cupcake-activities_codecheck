@@ -22,12 +22,16 @@ runtime:
   version: '3'
 statement: Given a two-dimensional array of integers, return the sum of all elements along all borders but not the corners.
 elements:
-- type: editable
+- type: locked
   location:
     snippet: "\n# Given a two-dimensional array of integers, return the sum of \n# all elements along all borders but not\
-      \ the corners.\n\ndef sumBordersWithoutCorners(arr):\n   # Your code here...\n"
-  placeholder: "\n# Given a two-dimensional array of integers, return the sum of \n# all elements along all borders but not\
-    \ the corners.\n\ndef sumBordersWithoutCorners(arr):\n   # Your code here...\n"
+      \ the corners.\n\ndef sumBordersWithoutCorners(arr):\n"
+- type: editable
+  location:
+    snippet: |2
+         # Your code here...
+  placeholder: |2
+       # Your code here...
 testcases:
 - title: Solution Verification
   visible: true

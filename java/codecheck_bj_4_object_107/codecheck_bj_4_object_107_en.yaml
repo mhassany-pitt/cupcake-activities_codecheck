@@ -23,14 +23,23 @@ runtime:
 statement: '<p>A stronger password can be created by replacing characters with similar-looking symbols: e becomes 3, i becomes
   1, a becomes @, and s becomes $.</p>'
 elements:
+- type: locked
+  location:
+    snippet: |+
+      public class PasswordTester
+      {
+         public static void main(String[] args)
+         {
+            String originalPassword="asecretid";
+
 - type: editable
   location:
-    snippet: "public class PasswordTester\n{\n   public static void main(String[] args)\n   {\n      String originalPassword=\"\
-      asecretid\";\n\n      // Your work here\n      \n      String modifiedPassword = ...\n            \n      System.out.println(modifiedPassword);\n\
-      \      // Also print out what you expect\n      System.out.println(\"Expected: ...\");\n   }\n}\n"
-  placeholder: "public class PasswordTester\n{\n   public static void main(String[] args)\n   {\n      String originalPassword=\"\
-    asecretid\";\n\n      // Your work here\n      \n      String modifiedPassword = ...\n            \n      System.out.println(modifiedPassword);\n\
-    \      // Also print out what you expect\n      System.out.println(\"Expected: ...\");\n   }\n}\n"
+    snippet: "      // Your work here\n      \n"
+  placeholder: "      // Your work here\n      \n"
+- type: locked
+  location:
+    snippet: "      String modifiedPassword = ...\n            \n      System.out.println(modifiedPassword);\n      // Also\
+      \ print out what you expect\n      System.out.println(\"Expected: ...\");\n   }\n}\n"
 testcases:
 - title: Solution Verification
   visible: true

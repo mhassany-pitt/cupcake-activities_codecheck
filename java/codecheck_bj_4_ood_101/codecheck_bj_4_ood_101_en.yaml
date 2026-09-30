@@ -35,26 +35,26 @@ statement: |-
       should use the <code>assert</code> operator to check that the new size is
       again a square.</p>
 elements:
-- type: editable
+- type: locked
   location:
     snippet: "import java.awt.Rectangle;\n\npublic class Square extends Rectangle\n{\n   /**\n      Constructs a square with\
       \ a given position and side length.\n      @param x the x-coordinate of the top left corner\n      @param y the y-coordinate\
       \ of the top left corner\n      @parameter sideLength the length of each side\n   */   \n   public Square(int x, int\
-      \ y, int sideLength)\n   {\n      // TODO\n   }\n   \n   /**\n      Sets the size of this method. Overrides Rectangle.setSize.\
-      \ \n      @param width the new side length\n      @param height the new side length \n      (Precondition: width equals\
-      \ height)\n   */   \n   public void setSize(int width, int height)\n   {\n      // TODO\n   }\n   \n   // This method\
-      \ tests your work.\n   \n   public static Square check(int x, int y, int sideLength, int width, int height) \n   {\n\
-      \      Square sq = new Square(x, y, sideLength);\n      try\n      {\n         sq.setSize(width, height);\n      }\n\
-      \      catch (AssertionError ex)\n      {\n      }\n      return sq;\n   }\n}\n"
-  placeholder: "import java.awt.Rectangle;\n\npublic class Square extends Rectangle\n{\n   /**\n      Constructs a square\
-    \ with a given position and side length.\n      @param x the x-coordinate of the top left corner\n      @param y the y-coordinate\
-    \ of the top left corner\n      @parameter sideLength the length of each side\n   */   \n   public Square(int x, int y,\
-    \ int sideLength)\n   {\n      // TODO\n   }\n   \n   /**\n      Sets the size of this method. Overrides Rectangle.setSize.\
-    \ \n      @param width the new side length\n      @param height the new side length \n      (Precondition: width equals\
-    \ height)\n   */   \n   public void setSize(int width, int height)\n   {\n      // TODO\n   }\n   \n   // This method\
-    \ tests your work.\n   \n   public static Square check(int x, int y, int sideLength, int width, int height) \n   {\n \
-    \     Square sq = new Square(x, y, sideLength);\n      try\n      {\n         sq.setSize(width, height);\n      }\n  \
-    \    catch (AssertionError ex)\n      {\n      }\n      return sq;\n   }\n}\n"
+      \ y, int sideLength)\n   {\n"
+- type: editable
+  location:
+    snippet: |2
+            // TODO
+  placeholder: |2
+          // TODO
+- type: locked
+  location:
+    snippet: "   }\n   \n   /**\n      Sets the size of this method. Overrides Rectangle.setSize. \n      @param width the\
+      \ new side length\n      @param height the new side length \n      (Precondition: width equals height)\n   */   \n \
+      \  public void setSize(int width, int height)\n   {\n      // TODO\n   }\n   \n   // This method tests your work.\n\
+      \   \n   public static Square check(int x, int y, int sideLength, int width, int height) \n   {\n      Square sq = new\
+      \ Square(x, y, sideLength);\n      try\n      {\n         sq.setSize(width, height);\n      }\n      catch (AssertionError\
+      \ ex)\n      {\n      }\n      return sq;\n   }\n}\n"
 testcases:
 - title: Solution Verification
   visible: true

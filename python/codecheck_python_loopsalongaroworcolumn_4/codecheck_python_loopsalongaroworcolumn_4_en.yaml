@@ -24,16 +24,17 @@ runtime:
 statement: Given a two-dimensional array of integers, a row index r, and a column index c, return the sum of all elements
   in the given row and column. The element where the row and column meet should only be included once.
 elements:
-- type: editable
+- type: locked
   location:
     snippet: "\n# Given a two-dimensional array of integers, a row index r, \n# and a column index c, return the sum of all\
       \ elements in the \n# given row and column. The element where the row and column \n# meet should only be included once.\
-      \ You may assume that the\n# given index for row/column exists.\n\ndef sumRowAndCol(arr, rowIndex, colIndex):\n   #\
-      \ Your code here...\n"
-  placeholder: "\n# Given a two-dimensional array of integers, a row index r, \n# and a column index c, return the sum of\
-    \ all elements in the \n# given row and column. The element where the row and column \n# meet should only be included\
-    \ once. You may assume that the\n# given index for row/column exists.\n\ndef sumRowAndCol(arr, rowIndex, colIndex):\n\
-    \   # Your code here...\n"
+      \ You may assume that the\n# given index for row/column exists.\n\ndef sumRowAndCol(arr, rowIndex, colIndex):\n"
+- type: editable
+  location:
+    snippet: |2
+         # Your code here...
+  placeholder: |2
+       # Your code here...
 testcases:
 - title: Solution Verification
   visible: true

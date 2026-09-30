@@ -27,14 +27,23 @@ statement: "<p>All vehicles used for transportation in the U.S. must have identi
   \ can be constructed with a VIN and a license plate number.</p>\n\t<p>Override the <code>getID()</code> method to return\
   \ the id of the auto as shown in this format: \n\t<code>VIN=1234567890,plate=ABC123</code> (without any spaces).</p>"
 elements:
+- type: locked
+  location:
+    snippet: |-
+      /**
+         Represents an automobile.
+      */
+      public class Auto
 - type: editable
   location:
-    snippet: "/**\n   Represents an automobile.\n*/\npublic class Auto // TODO: Inherit from Vehicle\n{\n   // TODO: Declare\
-      \ instance variables\n   \n   public Auto(String vin, String plate)\n   {\n      // TODO: Complete the constructor\n\
-      \   }\n\n   // TODO:  implement the getID() method for autos\n}\n"
-  placeholder: "/**\n   Represents an automobile.\n*/\npublic class Auto // TODO: Inherit from Vehicle\n{\n   // TODO: Declare\
-    \ instance variables\n   \n   public Auto(String vin, String plate)\n   {\n      // TODO: Complete the constructor\n \
-    \  }\n\n   // TODO:  implement the getID() method for autos\n}\n"
+    snippet: |2
+       // TODO: Inherit from Vehicle
+  placeholder: |2
+     // TODO: Inherit from Vehicle
+- type: locked
+  location:
+    snippet: "{\n   // TODO: Declare instance variables\n   \n   public Auto(String vin, String plate)\n   {\n      // TODO:\
+      \ Complete the constructor\n   }\n\n   // TODO:  implement the getID() method for autos\n}\n"
 testcases:
 - title: Solution Verification
   visible: true

@@ -25,26 +25,37 @@ statement: |-
       class so that equal objects have the same hash code and that unequal
       objects are likely to have different hash codes. </p>
 elements:
-- type: editable
+- type: locked
   location:
     snippet: "public class LabeledPoint\n{\n   /**\n      Constructs a labeled point with a given position and label.\n  \
       \    @param anX the x-coordinate of the point\n      @param aY the y-coordinate of the point\n      @param aLabel the\
       \ label of the point\n   */\n   public LabeledPoint(int anX, int aY, String aLabel)\n   {\n      x = anX;\n      y =\
       \ aY;\n      label = aLabel;\n   }\n\n   public boolean equals(Object otherObject)\n   {\n      LabeledPoint other =\
       \ (LabeledPoint) otherObject;\n      return x == other.x && y == other.y && label.equals(other.label);\n   }\n   \n\
-      \   public int hashCode()\n   {\n      // TODO: Complete method\n   }\n\n   // This method tests your work\n   public\
-      \ static boolean check(int x1, int y1, String s1, int x2, int y2, String s2)\n   {\n      LabeledPoint lp1 = new LabeledPoint(x1,\
-      \ y1, s1);\n      LabeledPoint lp2 = new LabeledPoint(x2, y2, s2);\n      return lp1.hashCode() == lp2.hashCode();\n\
-      \   }\n\n   private int x;\n   private int y;\n   private String label;\n}\n"
-  placeholder: "public class LabeledPoint\n{\n   /**\n      Constructs a labeled point with a given position and label.\n\
-    \      @param anX the x-coordinate of the point\n      @param aY the y-coordinate of the point\n      @param aLabel the\
-    \ label of the point\n   */\n   public LabeledPoint(int anX, int aY, String aLabel)\n   {\n      x = anX;\n      y = aY;\n\
-    \      label = aLabel;\n   }\n\n   public boolean equals(Object otherObject)\n   {\n      LabeledPoint other = (LabeledPoint)\
-    \ otherObject;\n      return x == other.x && y == other.y && label.equals(other.label);\n   }\n   \n   public int hashCode()\n\
-    \   {\n      // TODO: Complete method\n   }\n\n   // This method tests your work\n   public static boolean check(int x1,\
-    \ int y1, String s1, int x2, int y2, String s2)\n   {\n      LabeledPoint lp1 = new LabeledPoint(x1, y1, s1);\n      LabeledPoint\
-    \ lp2 = new LabeledPoint(x2, y2, s2);\n      return lp1.hashCode() == lp2.hashCode();\n   }\n\n   private int x;\n   private\
-    \ int y;\n   private String label;\n}\n"
+      \   public int hashCode()\n   {\n"
+- type: editable
+  location:
+    snippet: |2
+            // TODO: Complete method
+  placeholder: |2
+          // TODO: Complete method
+- type: locked
+  location:
+    snippet: |2
+         }
+
+         // This method tests your work
+         public static boolean check(int x1, int y1, String s1, int x2, int y2, String s2)
+         {
+            LabeledPoint lp1 = new LabeledPoint(x1, y1, s1);
+            LabeledPoint lp2 = new LabeledPoint(x2, y2, s2);
+            return lp1.hashCode() == lp2.hashCode();
+         }
+
+         private int x;
+         private int y;
+         private String label;
+      }
 testcases:
 - title: Solution Verification
   visible: true

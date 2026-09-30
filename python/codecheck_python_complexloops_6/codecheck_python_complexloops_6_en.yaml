@@ -22,16 +22,18 @@ runtime:
   version: '3'
 statement: Repeat the previous exercise with subarrays that are not necessarily square.
 elements:
-- type: editable
+- type: locked
   location:
     snippet: "\n# Given a two-dimensional array of integers, return the position of the \n# largest (by area) rectangular\
       \ subarray filled with zeroes, as a list \n# of length 3, with the first item for the row the subarray begins on, the\
       \ \n# second for the column, and the third for the area of the subarray.\n# Return [-1, -1, 0] if there is no such subarray.\n\
-      \n\ndef largestAllZeroRectangleStartingPoint(arr):\n   # Your code here...\n"
-  placeholder: "\n# Given a two-dimensional array of integers, return the position of the \n# largest (by area) rectangular\
-    \ subarray filled with zeroes, as a list \n# of length 3, with the first item for the row the subarray begins on, the\
-    \ \n# second for the column, and the third for the area of the subarray.\n# Return [-1, -1, 0] if there is no such subarray.\n\
-    \n\ndef largestAllZeroRectangleStartingPoint(arr):\n   # Your code here...\n"
+      \n\ndef largestAllZeroRectangleStartingPoint(arr):\n"
+- type: editable
+  location:
+    snippet: |2
+         # Your code here...
+  placeholder: |2
+       # Your code here...
 testcases:
 - title: Solution Verification
   visible: true

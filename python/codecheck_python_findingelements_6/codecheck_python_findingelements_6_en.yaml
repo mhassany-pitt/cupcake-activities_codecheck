@@ -22,12 +22,16 @@ runtime:
   version: '3'
 statement: Given two lists of integers of the same length, return the first position where their elements differ.
 elements:
-- type: editable
+- type: locked
   location:
     snippet: "\n# Given two lists of integers of the same length, \n# return the first position where their elements differ.\n\
-      # If they match completely, return -1\n\ndef firstPositionDifferent(a, b):\n   # Your code here...\n"
-  placeholder: "\n# Given two lists of integers of the same length, \n# return the first position where their elements differ.\n\
-    # If they match completely, return -1\n\ndef firstPositionDifferent(a, b):\n   # Your code here...\n"
+      # If they match completely, return -1\n\ndef firstPositionDifferent(a, b):\n"
+- type: editable
+  location:
+    snippet: |2
+         # Your code here...
+  placeholder: |2
+       # Your code here...
 testcases:
 - title: Solution Verification
   visible: true

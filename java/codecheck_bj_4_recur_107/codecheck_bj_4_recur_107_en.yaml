@@ -24,14 +24,21 @@ statement: "<p>We want to implement a method that reverses the digits in an inte
   \ 0) \n= reverseDigitsHelper(345, 6) \n= reverseDigitsHelper(34, 65) \n= reverseDigitsHelper(3, 654) \n= reverseDigitsHelper(0,\
   \ 6543) \n= 6543\n</pre>"
 elements:
-- type: editable
+- type: locked
   location:
     snippet: "public class MyMethods\n{  \n   public static int reverseInt(int value)\n   {   \n      return reverseIntHelper(value,\
-      \ 0);\n   }\n\n   public static int reverseIntHelper(int partialValue, int partialReversedValue)\n   {\n      . . .\n\
-      \   }\n}\n"
-  placeholder: "public class MyMethods\n{  \n   public static int reverseInt(int value)\n   {   \n      return reverseIntHelper(value,\
-    \ 0);\n   }\n\n   public static int reverseIntHelper(int partialValue, int partialReversedValue)\n   {\n      . . .\n\
-    \   }\n}\n"
+      \ 0);\n   }\n\n   public static int reverseIntHelper(int partialValue, int partialReversedValue)\n   {\n"
+- type: editable
+  location:
+    snippet: |2
+            . . .
+  placeholder: |2
+          . . .
+- type: locked
+  location:
+    snippet: |2
+         }
+      }
 testcases:
 - title: Solution Verification
   visible: true

@@ -26,9 +26,9 @@ statement: "<p>Your task is to read an input file containing a month name follow
   \ file should contain \"Jan 40.9\" on one line.</p>\n   <p>The formula for converting from Celsius to Fahrenheit is F =\
   \ 9/5 C + 32.</p>"
 elements:
-- type: editable
+- type: locked
   location:
-    snippet: |
+    snippet: |+
       /**
          Reads a file of month names and average temperatures in Celsius,
          and writes a file containing month names and average temperatures
@@ -48,40 +48,21 @@ elements:
             String inputFileName = "celsius.txt";
             String outputFileName = "fahrenheit.txt";
 
+- type: editable
+  location:
+    snippet: |2
             // TODO: Open the input and output files.
+  placeholder: |2
+          // TODO: Open the input and output files.
+- type: locked
+  location:
+    snippet: |2
             // Read records from the input file.
             // Calculate the temperature in Fahrenheit.
             // Write each line to the output file with the temperature
             // in Fahrenheit.
          }
       }
-  placeholder: |
-    /**
-       Reads a file of month names and average temperatures in Celsius,
-       and writes a file containing month names and average temperatures
-       in Celsius.
-    */
-
-    import java.io.FileReader;
-    import java.io.FileNotFoundException;
-    import java.util.Scanner;
-    import java.io.PrintWriter;
-
-    public class CityTemps
-    {
-       public static void main(String[] args)
-          throws FileNotFoundException
-       {
-          String inputFileName = "celsius.txt";
-          String outputFileName = "fahrenheit.txt";
-
-          // TODO: Open the input and output files.
-          // Read records from the input file.
-          // Calculate the temperature in Fahrenheit.
-          // Write each line to the output file with the temperature
-          // in Fahrenheit.
-       }
-    }
 testcases:
 - title: Solution Verification
   visible: true

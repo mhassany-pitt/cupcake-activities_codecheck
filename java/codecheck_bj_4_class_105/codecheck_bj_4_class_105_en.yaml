@@ -23,7 +23,6 @@ statement: |-
   A `ClassSchedule` class has been designed to represent a class that is scheduled at given days and times. Sometimes class schedule days or times must be changed.  Expand the `ClassSchedule` class to include methods to allow new values for days, start times and end times
 
   ```
-
      public void setDays(String meetingDays)
      public void setStartTime(String startTime)
      public void setEndTime(String endTime)

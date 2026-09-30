@@ -21,7 +21,6 @@ runtime:
   version: '17'
 statement: |-
   ```
-
   This Pair class stores two elements of the same generic type. Implement the `min` which returns the smaller of the two elements. The elements must be instances of the `Comparable` interface.
   ```
 elements:

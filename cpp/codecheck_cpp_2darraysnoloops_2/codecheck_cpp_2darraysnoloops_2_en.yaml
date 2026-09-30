@@ -22,7 +22,7 @@ runtime:
   language: cpp
   version: '17'
 statement: "Given a two-dimensional array of integers, return the middle element if both\nthe row and column lengths are odd,\
-  \ or the average of the two or four middle \nelements if one or both is even. For instance:\n\n```\n\n{{1,2,3},{4,<mark>5</mark>,6},{7,8,9}}\
+  \ or the average of the two or four middle \nelements if one or both is even. For instance:\n\n```\n{{1,2,3},{4,<mark>5</mark>,6},{7,8,9}}\
   \ // height &amp; width are odd; return 5.0\n{{1,2,3,4},{4,<mark>5,6</mark>,7},{7,8,9,10}} // height odd, width even; return\
   \ avg 5 + 6 or 5.5\n{{1,2,3,4},{5,<mark>6,7</mark>,8},{9,<mark>10,11</mark>,12},{13,14,15,16}} // height &amp; width even\n\
   ```"

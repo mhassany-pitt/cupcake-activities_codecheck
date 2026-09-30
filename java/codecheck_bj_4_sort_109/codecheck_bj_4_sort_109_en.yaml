@@ -21,7 +21,6 @@ runtime:
   version: '17'
 statement: |-
   ```
-
   Modify the merge method so that the merging produces a descending sort.
   ```
 elements:

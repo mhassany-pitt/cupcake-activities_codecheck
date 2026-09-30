@@ -23,7 +23,7 @@ statement: "In this assignment, a `transfer` method has been added to the\n`ATM`
   \ ATM \n   /** \n      Transfers between the current account and the other account\n      of the same customer.\n      (Precondition:\
   \ state is TRANSACT)\n   */\n   public void transfer(double value)\n   {\n      . . .\n      back();\n   }\n```\n\nYour\
   \ task is to change the command-line user interface of the\n`ATMSimulator` so that the menu \n\n```\nA=Deposit, B=Withdrawal,\
-  \ C=Cancel:\n```\n\nis replaced by\n\n```\nA=Deposit, B=Withdrawal, C=Transfer, D=Cancel:\n```\n\nOf course, you should\
+  \ C=Cancel: \n```\n\nis replaced by\n\n```\nA=Deposit, B=Withdrawal, C=Transfer, D=Cancel: \n```\n\nOf course, you should\
   \ now carry out the appropriate actions when the\n    user selects options C or D."
 elements:
 - type: editable

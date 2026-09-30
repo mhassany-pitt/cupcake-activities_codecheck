@@ -21,11 +21,10 @@ runtime:
   version: '17'
 statement: "Latitude and longitude are measured in degrees, minutes and seconds.  As with time measurements, there are 60\
   \ seconds to a minute, and 60 minutes to a degree. Many GIS (Geographical Information System) programs express latitude\
-  \ and longitude in degrees only, with the minutes and seconds converted to fractional degrees.  For example, \n\n```\n\n\
-  \   Latitude 40°15'30\" can also be expressed as Latitude 40.25833333333333\n```\n\nImplement a method `decimalDegrees`\
-  \ to carry out this conversion. Note that degrees may be negative. Use the `Math` class method `abs` when computing the\
-  \ decimal degrees.  Use the `Math` class method `signum` as a multiplier so that the decimal degrees have the same sign\
-  \ as the degrees."
+  \ and longitude in degrees only, with the minutes and seconds converted to fractional degrees.  For example, \n\n```\n \
+  \  Latitude 40°15'30\" can also be expressed as Latitude 40.25833333333333\n```\n\nImplement a method `decimalDegrees` to\
+  \ carry out this conversion. Note that degrees may be negative. Use the `Math` class method `abs` when computing the decimal\
+  \ degrees.  Use the `Math` class method `signum` as a multiplier so that the decimal degrees have the same sign as the degrees."
 elements:
 - type: editable
   location:

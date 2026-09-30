@@ -23,7 +23,7 @@ runtime:
 statement: "Your task is to read a file containing lines of text, and to write\n    another file that contains these lines\
   \ in reverse order. For example, if\n    your input file contains the lines\n\n```\nMary had a little lamb, \nits fleece\
   \ was white as snow.\n```\n\nthen your output file should contain the lines\n\n```\nits fleece was white as snow.\nMary\
-  \ had a little lamb,\n```"
+  \ had a little lamb, \n```"
 elements:
 - type: editable
   location:

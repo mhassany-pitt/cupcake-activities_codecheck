@@ -19,23 +19,12 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: |-
-  Intuitively, every square is a rectangle, so it is tempting to use
-      inheritance for implementing a square:
-
-  ```
-  public class Square extends Rectangle
-  ```
-
-  However, the devil is in the details. The `Square` class
-      inherits all mutators of `Rectangle`, and some of them can mutate a
-      square into a non-square shape. All these mutators need to be
-      reimplemented so that they ensure that no such mutation occurs.
-
-  Your task is to implement the `Square` constructor and one
-      mutator, the `setSize` method. In the `setSize` method, you
-      should use the `assert` operator to check that the new size is
-      again a square.
+statement: "Intuitively, every square is a rectangle, so it is tempting to use\n    inheritance for implementing a square:\n\
+  \n```\npublic class Square extends Rectangle \n```\n\nHowever, the devil is in the details. The `Square` class\n    inherits\
+  \ all mutators of `Rectangle`, and some of them can mutate a\n    square into a non-square shape. All these mutators need\
+  \ to be\n    reimplemented so that they ensure that no such mutation occurs.\n\nYour task is to implement the `Square` constructor\
+  \ and one\n    mutator, the `setSize` method. In the `setSize` method, you\n    should use the `assert` operator to check\
+  \ that the new size is\n    again a square."
 elements:
 - type: editable
   location:

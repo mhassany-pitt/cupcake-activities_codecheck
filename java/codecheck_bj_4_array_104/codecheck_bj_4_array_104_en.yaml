@@ -22,7 +22,7 @@ runtime:
   version: '17'
 statement: "You are given a class similar to the TicTacToe board in Section 7.6,\n    but the board can have more than 3 rows\
   \ and columns. \n\nYour task is to complete a method that fills the two diagonals with\n   asterisks, like this:\n\n```\n\
-  \n*      *\n *    * \n  *  *  \n   **   \n   **   \n  *  *  \n *    * \n*      *\n```"
+  *      *\n *    * \n  *  *  \n   **   \n   **   \n  *  *  \n *    * \n*      *\n```"
 elements:
 - type: editable
   location:

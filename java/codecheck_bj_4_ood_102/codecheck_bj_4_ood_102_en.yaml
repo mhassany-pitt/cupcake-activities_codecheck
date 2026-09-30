@@ -19,32 +19,12 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: |-
-  Intuitively, every square is a rectangle, so it is tempting to use
-      inheritance for implementing a square:
-
-  ```
-  public class Square extends Rectangle
-  ```
-
-  However, the devil is in the details. The `Square` class
-      inherits all mutators of `Rectangle`, and some of them can mutate a
-      square into a non-square shape.
-
-  The safer approach is to use aggregation:
-
-  ```
-  public class Square
-  {
-     . . .
-     private Rectangle rect;
-  }
-  ```
-
-  Now we do not inherit any `Rectangle` methods. Instead, all
-      methods must be implemented so that they operate on the `rect`
-      instance field. Your task is to implement the constructor and three
-      methods.
+statement: "Intuitively, every square is a rectangle, so it is tempting to use\n    inheritance for implementing a square:\n\
+  \n```\npublic class Square extends Rectangle \n```\n\nHowever, the devil is in the details. The `Square` class\n    inherits\
+  \ all mutators of `Rectangle`, and some of them can mutate a\n    square into a non-square shape.\n\nThe safer approach\
+  \ is to use aggregation:\n\n```\npublic class Square\n{\n   . . .\n   private Rectangle rect;\n}\n```\n\nNow we do not inherit\
+  \ any `Rectangle` methods. Instead, all\n    methods must be implemented so that they operate on the `rect`\n    instance\
+  \ field. Your task is to implement the constructor and three\n    methods."
 elements:
 - type: editable
   location:

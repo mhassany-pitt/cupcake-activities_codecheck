@@ -19,20 +19,10 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: |-
-  Remove all short words (that is, words of length at most 3) from an array. Move down the remaining array elements to fit the gaps. Don't change the order of the elements. Fill the unused portion at the end of the array with empty strings.
-
-  For example, if you start with an array containing
-
-  ```
-  `"Mary", "had", "a", "little", "lamb"`
-  ```
-
-  you would end up with an array containing the five strings
-
-  ```
-  `"Mary", "little", "lamb"`, "", ""
-  ```
+statement: "Remove all short words (that is, words of length at most 3) from an array. Move down the remaining array elements\
+  \ to fit the gaps. Don't change the order of the elements. Fill the unused portion at the end of the array with empty strings.\n\
+  \nFor example, if you start with an array containing\n\n```\n`\"Mary\", \"had\", \"a\", \"little\", \"lamb\"` \n```\n\n\
+  you would end up with an array containing the five strings\n\n```\n`\"Mary\", \"little\", \"lamb\"`, \"\", \"\"\n```"
 elements:
 - type: editable
   location:

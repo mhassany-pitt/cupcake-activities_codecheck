@@ -20,10 +20,10 @@ runtime:
   language: java
   version: '17'
 statement: "A simple way of encoding a message is the railfence cypher.  The message is written downwards and diagonally on\
-  \ rails of an imaginary fence, moving down and up.  The message, `Howareyou?` becomes\n\n```\n\nH . . . r . . . u .\n. o\
-  \ . a . e . o . ? \n. . w . . . y . . .\n```\n\nwhich is then encoded as `Hruoaeo?wy`\n\nWrite a method that receives a\
-  \ string and that returns a two-dimensional array of strings, \nplacing the characters as indicated in the preceding diagram.\
-  \ Each array element should either be `null` (represented by `.` above) or a string of length 1."
+  \ rails of an imaginary fence, moving down and up.  The message, `Howareyou?` becomes\n\n```\nH . . . r . . . u .\n. o .\
+  \ a . e . o . ? \n. . w . . . y . . .\n```\n\nwhich is then encoded as `Hruoaeo?wy`\n\nWrite a method that receives a string\
+  \ and that returns a two-dimensional array of strings, \nplacing the characters as indicated in the preceding diagram. Each\
+  \ array element should either be `null` (represented by `.` above) or a string of length 1."
 elements:
 - type: editable
   location:

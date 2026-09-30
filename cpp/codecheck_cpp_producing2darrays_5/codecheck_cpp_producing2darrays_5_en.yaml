@@ -21,7 +21,7 @@ runtime:
   language: cpp
   version: '17'
 statement: "Given `vector&lt;vector&lt;int&gt;&gt;` with the same \n   number of rows, return a `vector` that places \n  \
-  \ them side by side in the following pattern:\n\n```\n\n   a[0][0] a[0][1] ... a[0][n] b[0][0] b[0][1] ... b[0][m]\n   a[1][0]\
+  \ them side by side in the following pattern:\n\n```\n   a[0][0] a[0][1] ... a[0][n] b[0][0] b[0][1] ... b[0][m]\n   a[1][0]\
   \ a[1][1] ... a[1][n] b[1][0] b[1][1] ... b[1][m]\n```\n\nNote: the supplied `vectors` for this problem are not necessarily\n\
   \   rectangular."
 elements:

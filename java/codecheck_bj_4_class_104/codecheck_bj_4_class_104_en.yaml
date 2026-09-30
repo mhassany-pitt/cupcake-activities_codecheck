@@ -26,7 +26,6 @@ statement: |-
   Provide a constructor and these methods:
 
   ```
-
      public String getTitle()
      public String getTime()
      public String getRoom()

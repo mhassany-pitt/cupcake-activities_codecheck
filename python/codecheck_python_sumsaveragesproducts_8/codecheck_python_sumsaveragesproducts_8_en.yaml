@@ -26,7 +26,7 @@ runtime:
 statement: Given a list of integers, give the largest n ≤ length / 2 so that the sum of the first n elements equals the sum
   of the last n elements.
 elements:
-- type: locked
+- type: editable
   location:
     snippet: |2
 
@@ -35,11 +35,14 @@ elements:
       # If there is no way for this to occur, return -1
 
       def largestNSumFirstNEqualsSumLastN(arr):
-- type: editable
-  location:
-    snippet: |2
          # Your code here...
   placeholder: |2
+
+    # Given a list of integers, give the largest n <= length / 2 so that
+    # the sum of the first n elements equals the sum of the last n elements.
+    # If there is no way for this to occur, return -1
+
+    def largestNSumFirstNEqualsSumLastN(arr):
        # Your code here...
 testcases:
 - title: Solution Verification

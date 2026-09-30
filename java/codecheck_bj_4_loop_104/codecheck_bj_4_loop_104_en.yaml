@@ -24,28 +24,16 @@ statement: |-
       example, the call <code>countPerfectSquares(5, 25)</code> should return 3
       (since 9, 16, and 25 are perfect squares between 5 and 25). </p>
 elements:
-- type: locked
-  location:
-    snippet: |
-      public class Numbers
-      {
-         /**
-            Counts the number of perfect squares in a given range
-            @param a the lower bound of the range
-            @param b the upper bound of the range
-            @return the number of perfect squares in the range [a,b] (including the bounds)
-         */
-         public int countPerfectSquares(int a, int b)
-         {
 - type: editable
   location:
-    snippet: "      // your work here\n   \n   \n   \n   \n   \n   \n"
-  placeholder: "      // your work here\n   \n   \n   \n   \n   \n   \n"
-- type: locked
-  location:
-    snippet: |2
-         }
-      }
+    snippet: "public class Numbers\n{\n   /**\n      Counts the number of perfect squares in a given range\n      @param a\
+      \ the lower bound of the range\n      @param b the upper bound of the range\n      @return the number of perfect squares\
+      \ in the range [a,b] (including the bounds)\n   */\n   public int countPerfectSquares(int a, int b)\n   {\n      //\
+      \ your work here\n   \n   \n   \n   \n   \n   \n   }\n}\n"
+  placeholder: "public class Numbers\n{\n   /**\n      Counts the number of perfect squares in a given range\n      @param\
+    \ a the lower bound of the range\n      @param b the upper bound of the range\n      @return the number of perfect squares\
+    \ in the range [a,b] (including the bounds)\n   */\n   public int countPerfectSquares(int a, int b)\n   {\n      // your\
+    \ work here\n   \n   \n   \n   \n   \n   \n   }\n}\n"
 testcases:
 - title: Solution Verification
   visible: true

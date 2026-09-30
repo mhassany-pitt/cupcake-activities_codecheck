@@ -22,18 +22,19 @@ runtime:
   version: '3'
 statement: Given a two-dimensional array of integers, return the number of distinct elements.
 elements:
-- type: locked
+- type: editable
   location:
     snippet: |2
 
       # Given a two-dimensional array of integers, return the number of distinct elements.
 
       def countDistinctElements(arr):
-- type: editable
-  location:
-    snippet: |2
          # Your code here...
   placeholder: |2
+
+    # Given a two-dimensional array of integers, return the number of distinct elements.
+
+    def countDistinctElements(arr):
        # Your code here...
 testcases:
 - title: Solution Verification

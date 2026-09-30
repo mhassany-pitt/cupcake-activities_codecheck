@@ -33,24 +33,22 @@ statement: |-
       width and height, but the same x and y positions of the top left corner.
       </p>
 elements:
-- type: locked
-  location:
-    snippet: |-
-      import java.awt.Rectangle;
-
-      public class RectangleDoubler
 - type: editable
   location:
-    snippet: |2
-       . . .
-  placeholder: |2
-     . . .
-- type: locked
-  location:
     snippet: |
+      import java.awt.Rectangle;
+
+      public class RectangleDoubler . . .
       {
          . . .
       }
+  placeholder: |
+    import java.awt.Rectangle;
+
+    public class RectangleDoubler . . .
+    {
+       . . .
+    }
 testcases:
 - title: Solution Verification
   visible: true

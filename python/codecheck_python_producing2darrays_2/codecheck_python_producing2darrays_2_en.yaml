@@ -24,17 +24,14 @@ runtime:
 statement: Given two two-dimensional arrays a and b of integers with the same number of rows and columns, return a list of
   the same size where each element is the greater of the corresponding elements in the two arrays.
 elements:
-- type: locked
+- type: editable
   location:
     snippet: "\n# Given two two-dimensional arrays a and b of integers \n# with the same number of rows and columns, return\
       \ a two-dimensional array \n# of the same size where each element is the greater of the \n# corresponding elements in\
-      \ the two lists.\n\ndef getGreaterElements(a, b):\n"
-- type: editable
-  location:
-    snippet: |2
-         # Your code here...
-  placeholder: |2
-       # Your code here...
+      \ the two lists.\n\ndef getGreaterElements(a, b):\n   # Your code here...\n"
+  placeholder: "\n# Given two two-dimensional arrays a and b of integers \n# with the same number of rows and columns, return\
+    \ a two-dimensional array \n# of the same size where each element is the greater of the \n# corresponding elements in\
+    \ the two lists.\n\ndef getGreaterElements(a, b):\n   # Your code here...\n"
 testcases:
 - title: Solution Verification
   visible: true

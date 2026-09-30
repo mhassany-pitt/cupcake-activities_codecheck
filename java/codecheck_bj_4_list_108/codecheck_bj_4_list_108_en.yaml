@@ -25,33 +25,24 @@ statement: |-
   Write a method that adds an element after the first and another before the last element of a nonempty linked list, using a list iterator.
   </p>
 elements:
-- type: locked
-  location:
-    snippet: |
-      import java.util.LinkedList;
-      import java.util.ListIterator;
-
-      public class LinkedListUtil
-      {
-         /**
-            Adds an element after the first and another before the last element of a linked list.
-            @param iter a linked list iterator
-            @param front the element to add after the first element
-            @param back the element to add before the last element
-         */
-         public static void processList(ListIterator<String> iter, String front, String back)
-         {
 - type: editable
   location:
-    snippet: |2
-            // Your work here
-  placeholder: |2
-          // Your work here
-- type: locked
-  location:
-    snippet: "   }\n \n   // This method is used to check your work\n \n   public static LinkedList<String> check(String[]\
-      \ values, String s1, String s2)\n   {\n      LinkedList<String> list = new LinkedList<String>();\n      for (String\
-      \ s : values) list.addLast(s);\n\n      processList(list.listIterator(), s1, s2);\n      return list;\n   }\n}\n"
+    snippet: "import java.util.LinkedList;\nimport java.util.ListIterator;\n\npublic class LinkedListUtil\n{\n   /**\n   \
+      \   Adds an element after the first and another before the last element of a linked list.\n      @param iter a linked\
+      \ list iterator\n      @param front the element to add after the first element\n      @param back the element to add\
+      \ before the last element\n   */\n   public static void processList(ListIterator<String> iter, String front, String\
+      \ back)\n   {\n      // Your work here\n   }\n \n   // This method is used to check your work\n \n   public static LinkedList<String>\
+      \ check(String[] values, String s1, String s2)\n   {\n      LinkedList<String> list = new LinkedList<String>();\n  \
+      \    for (String s : values) list.addLast(s);\n\n      processList(list.listIterator(), s1, s2);\n      return list;\n\
+      \   }\n}\n"
+  placeholder: "import java.util.LinkedList;\nimport java.util.ListIterator;\n\npublic class LinkedListUtil\n{\n   /**\n \
+    \     Adds an element after the first and another before the last element of a linked list.\n      @param iter a linked\
+    \ list iterator\n      @param front the element to add after the first element\n      @param back the element to add before\
+    \ the last element\n   */\n   public static void processList(ListIterator<String> iter, String front, String back)\n \
+    \  {\n      // Your work here\n   }\n \n   // This method is used to check your work\n \n   public static LinkedList<String>\
+    \ check(String[] values, String s1, String s2)\n   {\n      LinkedList<String> list = new LinkedList<String>();\n    \
+    \  for (String s : values) list.addLast(s);\n\n      processList(list.listIterator(), s1, s2);\n      return list;\n \
+    \  }\n}\n"
 testcases:
 - title: Solution Verification
   visible: true

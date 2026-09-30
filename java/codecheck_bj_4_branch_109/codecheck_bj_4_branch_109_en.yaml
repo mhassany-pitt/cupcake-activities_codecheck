@@ -24,7 +24,7 @@ statement: |-
   <ul><li>3, 5, and 4 are all different</li><li>3, 3, 4 are not all different</li><li>3, 3, 3 are not all different</li>
   </ul>
 elements:
-- type: locked
+- type: editable
   location:
     snippet: |
       /**
@@ -38,17 +38,24 @@ elements:
          */
          public boolean allDifferent(int a, int b, int c)
          {
-- type: editable
-  location:
-    snippet: |2
             // your work here
-  placeholder: |2
-          // your work here
-- type: locked
-  location:
-    snippet: |2
          }
       }
+  placeholder: |
+    /**
+       A class to compare numbers.
+    */
+    public class Numbers
+    {
+       /**
+          Checks whether three numbers are all different
+          @return true if none of the numbers a, b, or c are equal to another
+       */
+       public boolean allDifferent(int a, int b, int c)
+       {
+          // your work here
+       }
+    }
 testcases:
 - title: Solution Verification
   visible: true

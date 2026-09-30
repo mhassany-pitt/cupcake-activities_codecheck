@@ -24,29 +24,34 @@ statement: |-
   <p>Your task is to modify the selection sort algorithm so that you find
       the <i>largest</i> element and swap it to the last position and find the <i>smallest</i> element and swap it to the first position. Your result will only place two array elements correctly</p>
 elements:
-- type: locked
+- type: editable
   location:
     snippet: "/**\n   This modified SelectionSorter class places only the largest and the smallest elements correctly.\n*/\n\
       public class SelectionSorter\n{\n   /**\n      Constructs a selection sorter.\n      @param anArray the array to sort\n\
       \   */\n   public SelectionSorter(int[] anArray)\n   {\n      a = anArray;\n   }\n\n   /**\n      Places the max and\
-      \ min array elements correctly\n   */\n   public void minmax()\n   {  \n"
-- type: editable
-  location:
-    snippet: |2
-            // TODO: swap appropriately
-  placeholder: |2
-          // TODO: swap appropriately
-- type: locked
-  location:
-    snippet: "      int maxPos = maximumPosition();\n\n      // TODO: swap appropriately\n      int minPos = minimumPosition();\n\
-      \n   }\n\n   /**\n      Finds the largest element in the array.\n      @return the position of the largest element in\
-      \ the array\n   */\n   private int maximumPosition()\n   {\n      // your work here\n   }\n\n   /**\n      Finds the\
-      \ smallest element in a subrange of the array.\n      @return the position of the smallest element in the array\n  \
-      \ */\n   private int minimumPosition()\n   {\n      // your work here\n   }\n\n\n   /**\n      Swaps two entries of\
-      \ the array.\n      @param i the first position to swap\n      @param j the second position to swap\n   */\n   private\
-      \ void swap(int i, int j)\n   {\n      int temp = a[i];\n      a[i] = a[j];\n      a[j] = temp;\n   }\n\n   private\
-      \ int[] a;\n   \n   // this method is used to check your work\n   public static int[] check(int[] values)\n   {\n  \
-      \    SelectionSorter sorter = new SelectionSorter(values);\n      sorter.minmax();\n      return values;\n   }\n}\n"
+      \ min array elements correctly\n   */\n   public void minmax()\n   {  \n      // TODO: swap appropriately\n      int\
+      \ maxPos = maximumPosition();\n\n      // TODO: swap appropriately\n      int minPos = minimumPosition();\n\n   }\n\n\
+      \   /**\n      Finds the largest element in the array.\n      @return the position of the largest element in the array\n\
+      \   */\n   private int maximumPosition()\n   {\n      // your work here\n   }\n\n   /**\n      Finds the smallest element\
+      \ in a subrange of the array.\n      @return the position of the smallest element in the array\n   */\n   private int\
+      \ minimumPosition()\n   {\n      // your work here\n   }\n\n\n   /**\n      Swaps two entries of the array.\n      @param\
+      \ i the first position to swap\n      @param j the second position to swap\n   */\n   private void swap(int i, int j)\n\
+      \   {\n      int temp = a[i];\n      a[i] = a[j];\n      a[j] = temp;\n   }\n\n   private int[] a;\n   \n   // this\
+      \ method is used to check your work\n   public static int[] check(int[] values)\n   {\n      SelectionSorter sorter\
+      \ = new SelectionSorter(values);\n      sorter.minmax();\n      return values;\n   }\n}\n"
+  placeholder: "/**\n   This modified SelectionSorter class places only the largest and the smallest elements correctly.\n\
+    */\npublic class SelectionSorter\n{\n   /**\n      Constructs a selection sorter.\n      @param anArray the array to sort\n\
+    \   */\n   public SelectionSorter(int[] anArray)\n   {\n      a = anArray;\n   }\n\n   /**\n      Places the max and min\
+    \ array elements correctly\n   */\n   public void minmax()\n   {  \n      // TODO: swap appropriately\n      int maxPos\
+    \ = maximumPosition();\n\n      // TODO: swap appropriately\n      int minPos = minimumPosition();\n\n   }\n\n   /**\n\
+    \      Finds the largest element in the array.\n      @return the position of the largest element in the array\n   */\n\
+    \   private int maximumPosition()\n   {\n      // your work here\n   }\n\n   /**\n      Finds the smallest element in\
+    \ a subrange of the array.\n      @return the position of the smallest element in the array\n   */\n   private int minimumPosition()\n\
+    \   {\n      // your work here\n   }\n\n\n   /**\n      Swaps two entries of the array.\n      @param i the first position\
+    \ to swap\n      @param j the second position to swap\n   */\n   private void swap(int i, int j)\n   {\n      int temp\
+    \ = a[i];\n      a[i] = a[j];\n      a[j] = temp;\n   }\n\n   private int[] a;\n   \n   // this method is used to check\
+    \ your work\n   public static int[] check(int[] values)\n   {\n      SelectionSorter sorter = new SelectionSorter(values);\n\
+    \      sorter.minmax();\n      return values;\n   }\n}\n"
 testcases:
 - title: Solution Verification
   visible: true

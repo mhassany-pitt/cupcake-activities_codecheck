@@ -24,16 +24,12 @@ runtime:
   version: '3'
 statement: Given a list of strings and a string s, return the average length of all strings containing s.
 elements:
-- type: locked
-  location:
-    snippet: "\n# Given a list of strings and a string s, \n# return the average length of all strings containing s.\n\ndef\
-      \ averageContainingStringS(strings, s):\n"
 - type: editable
   location:
-    snippet: |2
-         # Your code here...
-  placeholder: |2
-       # Your code here...
+    snippet: "\n# Given a list of strings and a string s, \n# return the average length of all strings containing s.\n\ndef\
+      \ averageContainingStringS(strings, s):\n   # Your code here...\n"
+  placeholder: "\n# Given a list of strings and a string s, \n# return the average length of all strings containing s.\n\n\
+    def averageContainingStringS(strings, s):\n   # Your code here...\n"
 testcases:
 - title: Solution Verification
   visible: true

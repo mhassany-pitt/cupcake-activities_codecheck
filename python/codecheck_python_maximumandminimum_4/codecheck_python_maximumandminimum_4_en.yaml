@@ -22,7 +22,7 @@ runtime:
   version: '3'
 statement: Given a list of integers, return the difference between the maximum and minimum.
 elements:
-- type: locked
+- type: editable
   location:
     snippet: |2
 
@@ -30,11 +30,13 @@ elements:
       # Do not use the min or max functions
 
       def differenceBetweenMaxAndMin(arr):
-- type: editable
-  location:
-    snippet: |2
          # Your code here...
   placeholder: |2
+
+    # Given a list of integers, return the difference between the maximum and minimum.
+    # Do not use the min or max functions
+
+    def differenceBetweenMaxAndMin(arr):
        # Your code here...
 testcases:
 - title: Solution Verification

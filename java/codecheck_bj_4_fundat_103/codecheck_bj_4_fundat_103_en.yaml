@@ -28,7 +28,7 @@ statement: |-
       <i>x</i><sub>2</sub>)<sup>2</sup> + (<i>y</i><sub>1</sub> -
       <i>y</i><sub>2</sub>)<sup>2</sup>. <code></code> </p>
 elements:
-- type: locked
+- type: editable
   location:
     snippet: |
       public class Lines
@@ -43,18 +43,27 @@ elements:
          */
          public double segmentLength(double x1, double y1, double x2, double y2)
          {
-- type: editable
-  location:
-    snippet: |2
             // your work here
-  placeholder: |2
-          // your work here
-- type: locked
-  location:
-    snippet: |2
             . . .
          }
       }
+  placeholder: |
+    public class Lines
+    {
+       /**
+          Computes the length of a line segment
+          @param x1 the x-coordinate of the starting point
+          @param y1 the y-coordinate of the starting point
+          @param x2 the x-coordinate of the ending point
+          @param y2 the y-coordinate of the ending point
+          @return the length of the line segment joining (x1, y1) and (x2, y2)
+       */
+       public double segmentLength(double x1, double y1, double x2, double y2)
+       {
+          // your work here
+          . . .
+       }
+    }
 testcases:
 - title: Solution Verification
   visible: true

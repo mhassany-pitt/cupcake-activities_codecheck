@@ -23,22 +23,16 @@ runtime:
   version: '17'
 statement: Given a two-dimensional array of integers, remove any adjacent duplicate rows by filling the duplicates with zeroes.
 elements:
-- type: locked
+- type: editable
   location:
     snippet: "// Given a two-dimensional array of integers, remove \n// any adjacent duplicate rows by filling the duplicate\
       \ with zeroes. \n// The array is represented as vector of row vectors, all of the same size.\n\n#include <vector>\n\
-      using namespace std;\n\nvector<vector<int>> removeAdjacentDuplicates(vector<vector<int>> arr)\n{   \n"
-- type: editable
-  location:
-    snippet: |2
-         ...
-  placeholder: |2
-       ...
-- type: locked
-  location:
-    snippet: |2
-         return arr;
-      }
+      using namespace std;\n\nvector<vector<int>> removeAdjacentDuplicates(vector<vector<int>> arr)\n{   \n   ...\n   return\
+      \ arr;\n}\n"
+  placeholder: "// Given a two-dimensional array of integers, remove \n// any adjacent duplicate rows by filling the duplicate\
+    \ with zeroes. \n// The array is represented as vector of row vectors, all of the same size.\n\n#include <vector>\nusing\
+    \ namespace std;\n\nvector<vector<int>> removeAdjacentDuplicates(vector<vector<int>> arr)\n{   \n   ...\n   return arr;\n\
+    }\n"
 testcases:
 - title: Solution Verification
   visible: true

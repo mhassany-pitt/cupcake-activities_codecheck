@@ -35,27 +35,42 @@ statement: |-
 elements:
 - type: editable
   location:
-    snippet: "// TODO: Complete the pathLengths method in the Node class. \n\n"
-  placeholder: "// TODO: Complete the pathLengths method in the Node class. \n\n"
-- type: locked
-  location:
-    snippet: "import java.util.Set;\nimport java.util.TreeSet;\n\n/**\n   This class implements a binary search tree whose\n\
-      \   nodes hold objects that implement the Comparable\n   interface.\n*/\npublic class BinarySearchTree\n{\n   // This\
-      \ method is used to check your work\n   \n   public static Set<Integer> check(String[] values)\n   {\n      BinarySearchTree\
-      \ tree = new BinarySearchTree();\n      for (String v : values)\n         tree.add(v);\n      return tree.pathLengths();\n\
-      \   }\n   \n   /**\n      Constructs an empty tree.\n   */\n   public BinarySearchTree()\n   {  \n      root = null;\n\
-      \   }\n\n   public Set<Integer> pathLengths()\n   {\n      if (root == null) return null;\n      return root.pathLengths();\n\
-      \   }\n   \n   /**\n      Inserts a new node into the tree.\n      @param obj the object to insert\n   */\n   public\
-      \ void add(Comparable obj) \n   {  \n      Node newNode = new Node();\n      newNode.data = obj;\n      newNode.left\
-      \ = null;\n      newNode.right = null;\n      if (root == null) root = newNode;\n      else root.addNode(newNode);\n\
-      \   }\n\n   private Node root;\n\n   /**\n      A node of a tree stores a data item and references\n      of the child\
-      \ nodes to the left and to the right.\n   */\n   private class Node\n   {  \n      \n      public Set<Integer> pathLengths()\n\
-      \      {\n         // TODO: Complete this method\n      }\n      \n      /**\n         Inserts a new node as a descendant\
-      \ of this node.\n         @param newNode the node to insert\n      */\n      public void addNode(Node newNode)\n   \
-      \   {  \n         int comp = newNode.data.compareTo(data);\n         if (comp < 0)\n         {  \n            if (left\
-      \ == null) left = newNode;\n            else left.addNode(newNode);\n         }\n         else if (comp > 0)\n     \
-      \    {  \n            if (right == null) right = newNode;\n            else right.addNode(newNode);\n         }\n  \
-      \    }\n   \n      public Comparable data;\n      public Node left;\n      public Node right;\n   }\n}\n\n\n\n"
+    snippet: "// TODO: Complete the pathLengths method in the Node class. \n\nimport java.util.Set;\nimport java.util.TreeSet;\n\
+      \n/**\n   This class implements a binary search tree whose\n   nodes hold objects that implement the Comparable\n  \
+      \ interface.\n*/\npublic class BinarySearchTree\n{\n   // This method is used to check your work\n   \n   public static\
+      \ Set<Integer> check(String[] values)\n   {\n      BinarySearchTree tree = new BinarySearchTree();\n      for (String\
+      \ v : values)\n         tree.add(v);\n      return tree.pathLengths();\n   }\n   \n   /**\n      Constructs an empty\
+      \ tree.\n   */\n   public BinarySearchTree()\n   {  \n      root = null;\n   }\n\n   public Set<Integer> pathLengths()\n\
+      \   {\n      if (root == null) return null;\n      return root.pathLengths();\n   }\n   \n   /**\n      Inserts a new\
+      \ node into the tree.\n      @param obj the object to insert\n   */\n   public void add(Comparable obj) \n   {  \n \
+      \     Node newNode = new Node();\n      newNode.data = obj;\n      newNode.left = null;\n      newNode.right = null;\n\
+      \      if (root == null) root = newNode;\n      else root.addNode(newNode);\n   }\n\n   private Node root;\n\n   /**\n\
+      \      A node of a tree stores a data item and references\n      of the child nodes to the left and to the right.\n\
+      \   */\n   private class Node\n   {  \n      \n      public Set<Integer> pathLengths()\n      {\n         // TODO: Complete\
+      \ this method\n      }\n      \n      /**\n         Inserts a new node as a descendant of this node.\n         @param\
+      \ newNode the node to insert\n      */\n      public void addNode(Node newNode)\n      {  \n         int comp = newNode.data.compareTo(data);\n\
+      \         if (comp < 0)\n         {  \n            if (left == null) left = newNode;\n            else left.addNode(newNode);\n\
+      \         }\n         else if (comp > 0)\n         {  \n            if (right == null) right = newNode;\n          \
+      \  else right.addNode(newNode);\n         }\n      }\n   \n      public Comparable data;\n      public Node left;\n\
+      \      public Node right;\n   }\n}\n\n\n\n"
+  placeholder: "// TODO: Complete the pathLengths method in the Node class. \n\nimport java.util.Set;\nimport java.util.TreeSet;\n\
+    \n/**\n   This class implements a binary search tree whose\n   nodes hold objects that implement the Comparable\n   interface.\n\
+    */\npublic class BinarySearchTree\n{\n   // This method is used to check your work\n   \n   public static Set<Integer>\
+    \ check(String[] values)\n   {\n      BinarySearchTree tree = new BinarySearchTree();\n      for (String v : values)\n\
+    \         tree.add(v);\n      return tree.pathLengths();\n   }\n   \n   /**\n      Constructs an empty tree.\n   */\n\
+    \   public BinarySearchTree()\n   {  \n      root = null;\n   }\n\n   public Set<Integer> pathLengths()\n   {\n      if\
+    \ (root == null) return null;\n      return root.pathLengths();\n   }\n   \n   /**\n      Inserts a new node into the\
+    \ tree.\n      @param obj the object to insert\n   */\n   public void add(Comparable obj) \n   {  \n      Node newNode\
+    \ = new Node();\n      newNode.data = obj;\n      newNode.left = null;\n      newNode.right = null;\n      if (root ==\
+    \ null) root = newNode;\n      else root.addNode(newNode);\n   }\n\n   private Node root;\n\n   /**\n      A node of a\
+    \ tree stores a data item and references\n      of the child nodes to the left and to the right.\n   */\n   private class\
+    \ Node\n   {  \n      \n      public Set<Integer> pathLengths()\n      {\n         // TODO: Complete this method\n   \
+    \   }\n      \n      /**\n         Inserts a new node as a descendant of this node.\n         @param newNode the node\
+    \ to insert\n      */\n      public void addNode(Node newNode)\n      {  \n         int comp = newNode.data.compareTo(data);\n\
+    \         if (comp < 0)\n         {  \n            if (left == null) left = newNode;\n            else left.addNode(newNode);\n\
+    \         }\n         else if (comp > 0)\n         {  \n            if (right == null) right = newNode;\n            else\
+    \ right.addNode(newNode);\n         }\n      }\n   \n      public Comparable data;\n      public Node left;\n      public\
+    \ Node right;\n   }\n}\n\n\n\n"
 testcases:
 - title: Solution Verification
   visible: true

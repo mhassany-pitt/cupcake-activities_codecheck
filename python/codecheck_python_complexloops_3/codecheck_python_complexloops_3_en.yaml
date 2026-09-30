@@ -22,16 +22,13 @@ runtime:
   version: '3'
 statement: Given a two-dimensional array of integers, return the index of the first row that is entirely filled with zeroes.
 elements:
-- type: locked
-  location:
-    snippet: "\n# Given a two-dimensional array of integers, return the \n# index of the first row that is entirely filled\
-      \ with zeroes.\n# If no row is entirely filled with zeroes, return -1.\n\ndef indexOfAllZeroes(arr):\n"
 - type: editable
   location:
-    snippet: |2
-         # Your code here...
-  placeholder: |2
-       # Your code here...
+    snippet: "\n# Given a two-dimensional array of integers, return the \n# index of the first row that is entirely filled\
+      \ with zeroes.\n# If no row is entirely filled with zeroes, return -1.\n\ndef indexOfAllZeroes(arr):\n   # Your code\
+      \ here...\n"
+  placeholder: "\n# Given a two-dimensional array of integers, return the \n# index of the first row that is entirely filled\
+    \ with zeroes.\n# If no row is entirely filled with zeroes, return -1.\n\ndef indexOfAllZeroes(arr):\n   # Your code here...\n"
 testcases:
 - title: Solution Verification
   visible: true

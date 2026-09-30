@@ -41,44 +41,42 @@ statement: |-
 elements:
 - type: editable
   location:
-    snippet: |+
-      /*
-        TODO: Implement the Doublable interface. A word is doubled by
-        repeating it. For example, new Word("Java").makeDouble() should
-        return a word containing "JavaJava".
-
-        This is the Word class from ch06/debugger (with the bugs fixed).
-      */
-
-
-  placeholder: |+
-    /*
-      TODO: Implement the Doublable interface. A word is doubled by
-      repeating it. For example, new Word("Java").makeDouble() should
-      return a word containing "JavaJava".
-
-      This is the Word class from ch06/debugger (with the bugs fixed).
-    */
-
-
-- type: locked
-  location:
-    snippet: "/**\n   This class describes words in a document.\n*/\npublic class Word\n{\n   /**\n      Constructs a word\
-      \ by removing leading and trailing non-\n      letter characters, such as punctuation marks.\n      @param s the input\
-      \ string\n   */\n   public Word(String s)\n   {\n      int i = 0;\n      while (i < s.length() && !Character.isLetter(s.charAt(i)))\n\
-      \         i++;\n      int j = s.length() - 1;\n      while (j > i && !Character.isLetter(s.charAt(j)))\n         j--;\n\
-      \      text = s.substring(i, j + 1);      \n   }\n\n   /**\n      Returns the text of the word, after removal of the\n\
-      \      leading and trailing non-letter characters.\n      @return the text of the word\n   */\n   public String toString()\n\
-      \   {\n      return text;\n   }\n\n   /**\n      Counts the syllables in the word.\n      @return the syllable count\n\
-      \   */\n   public int countSyllables()\n   {\n      int count = 0;\n      int end = text.length() - 1;\n      if (end\
-      \ < 0) return 0; // The empty string has no syllables\n\n      // An e at the end of the word doesn't count as a vowel\n\
-      \      char ch = Character.toLowerCase(text.charAt(end));\n      if (ch == 'e') end--;\n\n      boolean insideVowelGroup\
-      \ = false;\n      for (int i = 0; i <= end; i++)\n      {\n         ch = Character.toLowerCase(text.charAt(i));\n  \
-      \       String vowels = \"aeiouy\";\n         if (vowels.indexOf(ch) >= 0) \n         {\n            // ch is a vowel\n\
+    snippet: "/*\n  TODO: Implement the Doublable interface. A word is doubled by\n  repeating it. For example, new Word(\"\
+      Java\").makeDouble() should\n  return a word containing \"JavaJava\".\n\n  This is the Word class from ch06/debugger\
+      \ (with the bugs fixed).\n*/\n\n\n/**\n   This class describes words in a document.\n*/\npublic class Word\n{\n   /**\n\
+      \      Constructs a word by removing leading and trailing non-\n      letter characters, such as punctuation marks.\n\
+      \      @param s the input string\n   */\n   public Word(String s)\n   {\n      int i = 0;\n      while (i < s.length()\
+      \ && !Character.isLetter(s.charAt(i)))\n         i++;\n      int j = s.length() - 1;\n      while (j > i && !Character.isLetter(s.charAt(j)))\n\
+      \         j--;\n      text = s.substring(i, j + 1);      \n   }\n\n   /**\n      Returns the text of the word, after\
+      \ removal of the\n      leading and trailing non-letter characters.\n      @return the text of the word\n   */\n   public\
+      \ String toString()\n   {\n      return text;\n   }\n\n   /**\n      Counts the syllables in the word.\n      @return\
+      \ the syllable count\n   */\n   public int countSyllables()\n   {\n      int count = 0;\n      int end = text.length()\
+      \ - 1;\n      if (end < 0) return 0; // The empty string has no syllables\n\n      // An e at the end of the word doesn't\
+      \ count as a vowel\n      char ch = Character.toLowerCase(text.charAt(end));\n      if (ch == 'e') end--;\n\n      boolean\
+      \ insideVowelGroup = false;\n      for (int i = 0; i <= end; i++)\n      {\n         ch = Character.toLowerCase(text.charAt(i));\n\
+      \         String vowels = \"aeiouy\";\n         if (vowels.indexOf(ch) >= 0) \n         {\n            // ch is a vowel\n\
       \            if (!insideVowelGroup)\n            {\n               // Start of new vowel group\n               count++;\
       \ \n               insideVowelGroup = true;\n            }\n         }\n         else insideVowelGroup = false;\n  \
       \    }\n\n      // Every word has at least one syllable\n      if (count == 0) \n         count = 1;\n\n      return\
       \ count;      \n   }\n\n   private String text;\n}\n"
+  placeholder: "/*\n  TODO: Implement the Doublable interface. A word is doubled by\n  repeating it. For example, new Word(\"\
+    Java\").makeDouble() should\n  return a word containing \"JavaJava\".\n\n  This is the Word class from ch06/debugger (with\
+    \ the bugs fixed).\n*/\n\n\n/**\n   This class describes words in a document.\n*/\npublic class Word\n{\n   /**\n    \
+    \  Constructs a word by removing leading and trailing non-\n      letter characters, such as punctuation marks.\n    \
+    \  @param s the input string\n   */\n   public Word(String s)\n   {\n      int i = 0;\n      while (i < s.length() &&\
+    \ !Character.isLetter(s.charAt(i)))\n         i++;\n      int j = s.length() - 1;\n      while (j > i && !Character.isLetter(s.charAt(j)))\n\
+    \         j--;\n      text = s.substring(i, j + 1);      \n   }\n\n   /**\n      Returns the text of the word, after removal\
+    \ of the\n      leading and trailing non-letter characters.\n      @return the text of the word\n   */\n   public String\
+    \ toString()\n   {\n      return text;\n   }\n\n   /**\n      Counts the syllables in the word.\n      @return the syllable\
+    \ count\n   */\n   public int countSyllables()\n   {\n      int count = 0;\n      int end = text.length() - 1;\n     \
+    \ if (end < 0) return 0; // The empty string has no syllables\n\n      // An e at the end of the word doesn't count as\
+    \ a vowel\n      char ch = Character.toLowerCase(text.charAt(end));\n      if (ch == 'e') end--;\n\n      boolean insideVowelGroup\
+    \ = false;\n      for (int i = 0; i <= end; i++)\n      {\n         ch = Character.toLowerCase(text.charAt(i));\n    \
+    \     String vowels = \"aeiouy\";\n         if (vowels.indexOf(ch) >= 0) \n         {\n            // ch is a vowel\n\
+    \            if (!insideVowelGroup)\n            {\n               // Start of new vowel group\n               count++;\
+    \ \n               insideVowelGroup = true;\n            }\n         }\n         else insideVowelGroup = false;\n    \
+    \  }\n\n      // Every word has at least one syllable\n      if (count == 0) \n         count = 1;\n\n      return count;\
+    \      \n   }\n\n   private String text;\n}\n"
 testcases:
 - title: Solution Verification
   visible: true

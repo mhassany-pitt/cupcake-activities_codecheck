@@ -22,27 +22,16 @@ runtime:
 statement: <p>Your task is to write a tester class for the <code>ClassSchedule</code> class given below. You should test the
   <code>getTime</code> and <code>setStartTime</code> methods of the <code>ClassSchedule</code> class.</p>
 elements:
-- type: locked
-  location:
-    snippet: |+
-      public class ClassScheduleTester
-      {
-         public static void main(String[] args)
-         {
-            ClassSchedule class1 = new ClassSchedule("Intro to Java","MWF","9:00", "9:50","Turing 101");
-
 - type: editable
   location:
-    snippet: |2+
-            // your work here - test the getTime method
-
-  placeholder: |2+
-          // your work here - test the getTime method
-
-- type: locked
-  location:
-    snippet: "      ClassSchedule class2 = new ClassSchedule(\"Operating Systems\",\"TTh\",\"12:30\",\"13:45\",\"Turing 307\"\
-      ); \n      // your work here - test the setStartTime method\n   }\n}\n"
+    snippet: "public class ClassScheduleTester\n{\n   public static void main(String[] args)\n   {\n      ClassSchedule class1\
+      \ = new ClassSchedule(\"Intro to Java\",\"MWF\",\"9:00\", \"9:50\",\"Turing 101\");\n\n      // your work here - test\
+      \ the getTime method\n\n      ClassSchedule class2 = new ClassSchedule(\"Operating Systems\",\"TTh\",\"12:30\",\"13:45\"\
+      ,\"Turing 307\"); \n      // your work here - test the setStartTime method\n   }\n}\n"
+  placeholder: "public class ClassScheduleTester\n{\n   public static void main(String[] args)\n   {\n      ClassSchedule\
+    \ class1 = new ClassSchedule(\"Intro to Java\",\"MWF\",\"9:00\", \"9:50\",\"Turing 101\");\n\n      // your work here\
+    \ - test the getTime method\n\n      ClassSchedule class2 = new ClassSchedule(\"Operating Systems\",\"TTh\",\"12:30\"\
+    ,\"13:45\",\"Turing 307\"); \n      // your work here - test the setStartTime method\n   }\n}\n"
 testcases:
 - title: Solution Verification
   visible: true

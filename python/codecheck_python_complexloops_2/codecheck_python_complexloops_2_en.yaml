@@ -23,16 +23,14 @@ runtime:
   version: '3'
 statement: Given a two-dimensional array of integers, remove any adjacent duplicate rows by filling the duplicates with zeroes.
 elements:
-- type: locked
-  location:
-    snippet: "\n# Given a two-dimensional array of integers, remove \n# any adjacent duplicate rows by filling the duplicate\
-      \ with zeroes. \n# If more than two adjacent rows are the same, fill all but the first\n# with zeroes.\n\ndef removeAdjacentDuplicates(arr):\n"
 - type: editable
   location:
-    snippet: |2
-         # Your code here...
-  placeholder: |2
-       # Your code here...
+    snippet: "\n# Given a two-dimensional array of integers, remove \n# any adjacent duplicate rows by filling the duplicate\
+      \ with zeroes. \n# If more than two adjacent rows are the same, fill all but the first\n# with zeroes.\n\ndef removeAdjacentDuplicates(arr):\n\
+      \   # Your code here...\n"
+  placeholder: "\n# Given a two-dimensional array of integers, remove \n# any adjacent duplicate rows by filling the duplicate\
+    \ with zeroes. \n# If more than two adjacent rows are the same, fill all but the first\n# with zeroes.\n\ndef removeAdjacentDuplicates(arr):\n\
+    \   # Your code here...\n"
 testcases:
 - title: Solution Verification
   visible: true

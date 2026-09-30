@@ -25,30 +25,20 @@ statement: |-
       <code>Object[]</code> array within. If a <code>ClassCastException</code> occurs,
       turn it into an <code>IOException</code> with the same message text.</p>
 elements:
-- type: locked
-  location:
-    snippet: |
-      import java.io.ObjectInputStream;
-      import java.io.FileInputStream;
-      import java.util.Arrays;
-
-      public class ObjectArrayReader
-      {
-         public Object[] readObjects(FileInputStream fileIn)
-            throws IOException
-         {
 - type: editable
   location:
-    snippet: |2
-            . . .
-  placeholder: |2
-          . . .
-- type: locked
-  location:
-    snippet: "   }\n   \n   // The following method checks your code. Do not modify it in any way.\n   \n   public String\
+    snippet: "import java.io.ObjectInputStream;\nimport java.io.FileInputStream;\nimport java.util.Arrays;\n\npublic class\
+      \ ObjectArrayReader\n{\n   public Object[] readObjects(FileInputStream fileIn)\n      throws IOException\n   {\n   \
+      \   . . .\n   }\n   \n   // The following method checks your code. Do not modify it in any way.\n   \n   public String\
       \ check(String filename)\n   {\n      try\n      {         \n         Object[] values = readObjects(new FileInputStream(filename));\n\
       \         return Arrays.toString(values);\n      }\n      catch (IOException ex)\n      {\n         return ex.toString();\n\
       \      }      \n   }\n}\n"
+  placeholder: "import java.io.ObjectInputStream;\nimport java.io.FileInputStream;\nimport java.util.Arrays;\n\npublic class\
+    \ ObjectArrayReader\n{\n   public Object[] readObjects(FileInputStream fileIn)\n      throws IOException\n   {\n     \
+    \ . . .\n   }\n   \n   // The following method checks your code. Do not modify it in any way.\n   \n   public String check(String\
+    \ filename)\n   {\n      try\n      {         \n         Object[] values = readObjects(new FileInputStream(filename));\n\
+    \         return Arrays.toString(values);\n      }\n      catch (IOException ex)\n      {\n         return ex.toString();\n\
+    \      }      \n   }\n}\n"
 testcases:
 - title: Solution Verification
   visible: true

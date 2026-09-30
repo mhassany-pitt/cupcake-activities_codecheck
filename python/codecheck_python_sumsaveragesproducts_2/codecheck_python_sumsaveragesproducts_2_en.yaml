@@ -24,18 +24,19 @@ runtime:
   version: '3'
 statement: Given a list of integers, return the sum of all odd elements.
 elements:
-- type: locked
+- type: editable
   location:
     snippet: |2
 
       # Given a list of integers, return the sum of all odd elements.
 
       def sumAllOddElements(arr):
-- type: editable
-  location:
-    snippet: |2
          # Your code here...
   placeholder: |2
+
+    # Given a list of integers, return the sum of all odd elements.
+
+    def sumAllOddElements(arr):
        # Your code here...
 testcases:
 - title: Solution Verification

@@ -22,17 +22,14 @@ runtime:
   version: '3'
 statement: Given a string s, return the longest prefix that is repeated somewhere else in the string.
 elements:
-- type: locked
+- type: editable
   location:
     snippet: "\n# Given a string s, return the longest prefix that is repeated somewhere else in the string. \n# For example,\
       \ \"abcdabejf\" would return \"ab\" as \"ab\" starts at the beginning of the string\n# and is repeated again later.\
-      \ Do not use the find method.\n\ndef longestPrefixRepeated(s):\n"
-- type: editable
-  location:
-    snippet: |2
-         # Your code here...
-  placeholder: |2
-       # Your code here...
+      \ Do not use the find method.\n\ndef longestPrefixRepeated(s):\n   # Your code here...\n"
+  placeholder: "\n# Given a string s, return the longest prefix that is repeated somewhere else in the string. \n# For example,\
+    \ \"abcdabejf\" would return \"ab\" as \"ab\" starts at the beginning of the string\n# and is repeated again later. Do\
+    \ not use the find method.\n\ndef longestPrefixRepeated(s):\n   # Your code here...\n"
 testcases:
 - title: Solution Verification
   visible: true

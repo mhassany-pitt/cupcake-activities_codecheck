@@ -26,9 +26,9 @@ statement: "<p>Complete the <code>ThreeButtonComponent</code> class to draw thre
   \ center of each box has a different colored circle, <code>Color.RED</code>, <code>Color.GREEN</code>, or <code>Color.CYAN</code>.\
   \ \n</p>"
 elements:
-- type: locked
+- type: editable
   location:
-    snippet: |
+    snippet: |+
       import javax.swing.JComponent;
       import java.awt.Color;
       import java.awt.Graphics;
@@ -40,18 +40,28 @@ elements:
          public void paintComponent(Graphics g)
          {
             Graphics2D g2 = (Graphics2D) g;
-- type: editable
-  location:
-    snippet: |2
             // your work here
-  placeholder: |2
-          // your work here
-- type: locked
-  location:
-    snippet: |2+
             ...
          }
       }
+
+
+  placeholder: |+
+    import javax.swing.JComponent;
+    import java.awt.Color;
+    import java.awt.Graphics;
+    import java.awt.Graphics2D;
+    import java.awt.geom.Ellipse2D;
+
+    public class ThreeButtonComponent extends JComponent
+    {
+       public void paintComponent(Graphics g)
+       {
+          Graphics2D g2 = (Graphics2D) g;
+          // your work here
+          ...
+       }
+    }
 
 
 testcases:

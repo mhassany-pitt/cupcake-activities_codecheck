@@ -42,23 +42,22 @@ statement: |-
       zipper word made of <code>nt</code> and <code>ug</code>. (2) If the length of the
       strings is is zero, there are no zipper words. </p>
 elements:
-- type: locked
+- type: editable
   location:
     snippet: "import java.util.ArrayList;\nimport java.util.Collections;\n\npublic class ZipperWordGenerator\n{\n   public\
       \ ZipperWordGenerator(String word1, String word2)\n   {\n      assert word1.length() == word2.length();\n      first\
-      \ = word1;\n      second = word2;\n   }\n   \n   public ArrayList<String> getZipperWords() \n   {\n"
-- type: editable
-  location:
-    snippet: |2
-            // your work here
-  placeholder: |2
-          // your work here
-- type: locked
-  location:
-    snippet: "   }\n   \n   private String first;\n   private String second;   \n   \n   // this method is used to check your\
+      \ = word1;\n      second = word2;\n   }\n   \n   public ArrayList<String> getZipperWords() \n   {\n      // your work\
+      \ here\n   }\n   \n   private String first;\n   private String second;   \n   \n   // this method is used to check your\
       \ work\n   public static ArrayList<String> check(String word1, String word2)\n   {\n      ZipperWordGenerator gen =\
       \ new ZipperWordGenerator(word1, word2);\n      ArrayList<String> r = gen.getZipperWords();\n      Collections.sort(r);\
       \ // to make result independent of insertion order\n      return r;   \n   }      \n}\n"
+  placeholder: "import java.util.ArrayList;\nimport java.util.Collections;\n\npublic class ZipperWordGenerator\n{\n   public\
+    \ ZipperWordGenerator(String word1, String word2)\n   {\n      assert word1.length() == word2.length();\n      first =\
+    \ word1;\n      second = word2;\n   }\n   \n   public ArrayList<String> getZipperWords() \n   {\n      // your work here\n\
+    \   }\n   \n   private String first;\n   private String second;   \n   \n   // this method is used to check your work\n\
+    \   public static ArrayList<String> check(String word1, String word2)\n   {\n      ZipperWordGenerator gen = new ZipperWordGenerator(word1,\
+    \ word2);\n      ArrayList<String> r = gen.getZipperWords();\n      Collections.sort(r); // to make result independent\
+    \ of insertion order\n      return r;   \n   }      \n}\n"
 testcases:
 - title: Solution Verification
   visible: true

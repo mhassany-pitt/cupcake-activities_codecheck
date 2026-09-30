@@ -31,7 +31,7 @@ statement: |-
 
       <pre>"a"</pre>
 elements:
-- type: locked
+- type: editable
   location:
     snippet: |
       public class Words
@@ -45,23 +45,30 @@ elements:
          */
          public String nthShortWord(String[] words, int n)
          {
-- type: editable
-  location:
-    snippet: |2+
             // your work here
 
 
 
-  placeholder: |2+
+         }
+      }
+  placeholder: |
+    public class Words
+    {
+       /**
+          Returns the nth short word (length <= 3) in an array.
+          @param words an array of strings
+          @param n an integer > 0
+          @return the nth short word in words, or the empty string if there is
+          no such word
+       */
+       public String nthShortWord(String[] words, int n)
+       {
           // your work here
 
 
 
-- type: locked
-  location:
-    snippet: |2
-         }
-      }
+       }
+    }
 testcases:
 - title: Solution Verification
   visible: true

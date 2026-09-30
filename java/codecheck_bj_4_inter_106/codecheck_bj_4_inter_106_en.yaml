@@ -25,26 +25,12 @@ statement: "<p>Complete the <code>RectangleManager</code> class below so that it
   \ if the original rectangle has width of 10 and height of 20, and the \n\tincrements are 5 and 7 for width and height respectively,\
   \ the new dimensions of the\n\trectangle should be width of 15 and height of 27.</p>"
 elements:
-- type: locked
-  location:
-    snippet: |+
-      /**
-         Manages modifications to rectangle objects
-      */
-
-      import java.awt.Rectangle;
-      public class RectangleManager implements Adjuster
-      {
-
 - type: editable
   location:
-    snippet: |2
-         // TODO:  Implement the adjustDimensions method from the
-  placeholder: |2
-       // TODO:  Implement the adjustDimensions method from the
-- type: locked
-  location:
-    snippet: "   // interface.\n   \n}\n"
+    snippet: "/**\n   Manages modifications to rectangle objects\n*/\n\nimport java.awt.Rectangle;\npublic class RectangleManager\
+      \ implements Adjuster\n{\n\n   // TODO:  Implement the adjustDimensions method from the\n   // interface.\n   \n}\n"
+  placeholder: "/**\n   Manages modifications to rectangle objects\n*/\n\nimport java.awt.Rectangle;\npublic class RectangleManager\
+    \ implements Adjuster\n{\n\n   // TODO:  Implement the adjustDimensions method from the\n   // interface.\n   \n}\n"
 testcases:
 - title: Solution Verification
   visible: true

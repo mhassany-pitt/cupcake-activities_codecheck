@@ -24,17 +24,14 @@ runtime:
 statement: On a chessboard, positions are marked with a letter between a and h for the column and a number between 1 and 8
   for the row. Given two position strings, return true if they have the same color.
 elements:
-- type: locked
+- type: editable
   location:
     snippet: "\n# On a chessboard, squares are marked with a letter between a and h for the column,\n# and a number between\
       \ 1 and 8 for the row. Given two position strings (e.g. \"a1\", \"b8\"), \n# return true if the squares have the same\
-      \ color. The first square on the board, \n# a1, is black.\n\ndef areSameColor(space1, space2):\n"
-- type: editable
-  location:
-    snippet: |2
-         # Your code here...
-  placeholder: |2
-       # Your code here...
+      \ color. The first square on the board, \n# a1, is black.\n\ndef areSameColor(space1, space2):\n   # Your code here...\n"
+  placeholder: "\n# On a chessboard, squares are marked with a letter between a and h for the column,\n# and a number between\
+    \ 1 and 8 for the row. Given two position strings (e.g. \"a1\", \"b8\"), \n# return true if the squares have the same\
+    \ color. The first square on the board, \n# a1, is black.\n\ndef areSameColor(space1, space2):\n   # Your code here...\n"
 testcases:
 - title: Solution Verification
   visible: true

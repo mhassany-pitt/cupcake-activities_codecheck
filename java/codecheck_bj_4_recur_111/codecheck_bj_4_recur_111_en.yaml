@@ -24,26 +24,14 @@ statement: <p>Modify the static return upperCase method in the MyMethods class s
   letters. For example, upperCase("John DeGamma") would return the string "JDG" because those are the sequence of upper case
   letters in the word.</p>
 elements:
-- type: locked
-  location:
-    snippet: "public class MyMethods\n{  \n   public static String upperCase(String s)\n   {   \n"
 - type: editable
   location:
-    snippet: |2
-            ...
-  placeholder: |2
-          ...
-- type: locked
-  location:
-    snippet: |2
-            String upperCaseTail = upperCase(...);
-            char ch = s.charAt(0);
-            if (Character.isUpperCase(ch))
-               ...
-            else
-               ...
-         }
-      }
+    snippet: "public class MyMethods\n{  \n   public static String upperCase(String s)\n   {   \n      ...\n      String upperCaseTail\
+      \ = upperCase(...);\n      char ch = s.charAt(0);\n      if (Character.isUpperCase(ch))\n         ...\n      else\n\
+      \         ...\n   }\n}\n"
+  placeholder: "public class MyMethods\n{  \n   public static String upperCase(String s)\n   {   \n      ...\n      String\
+    \ upperCaseTail = upperCase(...);\n      char ch = s.charAt(0);\n      if (Character.isUpperCase(ch))\n         ...\n\
+    \      else\n         ...\n   }\n}\n"
 testcases:
 - title: Solution Verification
   visible: true

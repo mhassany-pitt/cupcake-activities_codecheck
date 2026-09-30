@@ -22,27 +22,14 @@ runtime:
 statement: <p>Your task is to write a method <code>stutter</code> that repeats all letters t in a string. For example, the
   call <code>stutter("stutter")</code> should return "sttutttter".</p>
 elements:
-- type: locked
-  location:
-    snippet: |
-      public class Words
-      {
-         /**
-            Computes a string that repeats every letter 't' in the original string.
-            @param s any string
-            @return a string with the same characters as s, except that every letter 't' is repeated
-         */
-         public String stutter(String s)
-         {
 - type: editable
   location:
-    snippet: "      // your work here\n   \n   \n   \n   \n   \n   \n"
-  placeholder: "      // your work here\n   \n   \n   \n   \n   \n   \n"
-- type: locked
-  location:
-    snippet: |2
-         }
-      }
+    snippet: "public class Words\n{\n   /**\n      Computes a string that repeats every letter 't' in the original string.\n\
+      \      @param s any string\n      @return a string with the same characters as s, except that every letter 't' is repeated\n\
+      \   */\n   public String stutter(String s)\n   {\n      // your work here\n   \n   \n   \n   \n   \n   \n   }\n}\n"
+  placeholder: "public class Words\n{\n   /**\n      Computes a string that repeats every letter 't' in the original string.\n\
+    \      @param s any string\n      @return a string with the same characters as s, except that every letter 't' is repeated\n\
+    \   */\n   public String stutter(String s)\n   {\n      // your work here\n   \n   \n   \n   \n   \n   \n   }\n}\n"
 testcases:
 - title: Solution Verification
   visible: true

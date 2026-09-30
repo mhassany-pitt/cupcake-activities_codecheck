@@ -22,16 +22,12 @@ runtime:
   version: '3'
 statement: Given two strings s and t, return the first position where their characters differ, or -1 if they are identical.
 elements:
-- type: locked
-  location:
-    snippet: "\n# Given two strings s and t, return the first position where their \n# characters differ, or -1 if they are\
-      \ identical.\n\ndef firstPositionDiffer(s, t):\n"
 - type: editable
   location:
-    snippet: |2
-         # Your code here...
-  placeholder: |2
-       # Your code here...
+    snippet: "\n# Given two strings s and t, return the first position where their \n# characters differ, or -1 if they are\
+      \ identical.\n\ndef firstPositionDiffer(s, t):\n   # Your code here...\n"
+  placeholder: "\n# Given two strings s and t, return the first position where their \n# characters differ, or -1 if they\
+    \ are identical.\n\ndef firstPositionDiffer(s, t):\n   # Your code here...\n"
 testcases:
 - title: Solution Verification
   visible: true

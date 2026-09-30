@@ -24,7 +24,7 @@ statement: '<p>Write a method <code>getLastFirst</code> whose parameter is a str
   Smith"</code> and that returns a string with the last name followed by a comma and the first name, like this: <code>"Smith,
   Harry"</code></p>'
 elements:
-- type: locked
+- type: editable
   location:
     snippet: |
       /**
@@ -41,17 +41,27 @@ elements:
          */
          public String getLastFirst(String firstLast)
          {
-- type: editable
-  location:
-    snippet: |2
             . . .
-  placeholder: |2
-          . . .
-- type: locked
-  location:
-    snippet: |2
          }
       }
+  placeholder: |
+    /**
+       A class to process names.
+    */
+    public class Names
+    {
+       /**
+          Turns a name "First Last" into a name "Last, First"
+          @param firstLast a name such as "Harry Smith", with a space separating
+          the first and last name.
+          @return a name such as "Smith, Harry", with the last name followed by
+          a comma, a space, and the first name.
+       */
+       public String getLastFirst(String firstLast)
+       {
+          . . .
+       }
+    }
 testcases:
 - title: Solution Verification
   visible: true

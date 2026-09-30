@@ -22,16 +22,12 @@ runtime:
   version: '3'
 statement: Given two lists of integers of the same length, return the first position where their elements are the same.
 elements:
-- type: locked
-  location:
-    snippet: "\n# Given two lists of integers of the same length, return \n# the first position where their elements are the\
-      \ same.\n# If they are never the same, return -1.\n\ndef firstPositionSame(a, b):\n"
 - type: editable
   location:
-    snippet: |2
-         # Your code here...
-  placeholder: |2
-       # Your code here...
+    snippet: "\n# Given two lists of integers of the same length, return \n# the first position where their elements are the\
+      \ same.\n# If they are never the same, return -1.\n\ndef firstPositionSame(a, b):\n   # Your code here...\n"
+  placeholder: "\n# Given two lists of integers of the same length, return \n# the first position where their elements are\
+    \ the same.\n# If they are never the same, return -1.\n\ndef firstPositionSame(a, b):\n   # Your code here...\n"
 testcases:
 - title: Solution Verification
   visible: true

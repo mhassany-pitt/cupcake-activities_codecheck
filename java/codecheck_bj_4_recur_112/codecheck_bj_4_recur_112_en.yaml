@@ -31,21 +31,12 @@ statement: |-
   = "derf"
   </pre>
 elements:
-- type: locked
-  location:
-    snippet: "public class MyMethods\n{  \n   public static String reverse(String s)\n   {   \n      return reverseHelper(s,\
-      \ \"\");\n   }\n\n   public static String reverseHelper(String s, String reverse)\n   {\n"
 - type: editable
   location:
-    snippet: |2
-            . . .
-  placeholder: |2
-          . . .
-- type: locked
-  location:
-    snippet: |2
-         }
-      }
+    snippet: "public class MyMethods\n{  \n   public static String reverse(String s)\n   {   \n      return reverseHelper(s,\
+      \ \"\");\n   }\n\n   public static String reverseHelper(String s, String reverse)\n   {\n      . . .\n   }\n}\n"
+  placeholder: "public class MyMethods\n{  \n   public static String reverse(String s)\n   {   \n      return reverseHelper(s,\
+    \ \"\");\n   }\n\n   public static String reverseHelper(String s, String reverse)\n   {\n      . . .\n   }\n}\n"
 testcases:
 - title: Solution Verification
   visible: true

@@ -23,20 +23,16 @@ statement: |-
   <p>Your task is to write a method <code>evenSum</code> that computes the sum of all even numbers between two given numbers. For example, the
       call <code>evenSum(3, 8)</code> should return 4 + 6 + 8 = 18.</p>
 elements:
-- type: locked
+- type: editable
   location:
     snippet: "public class Numbers\n{\n   /**\n      Computes a sum of even integers \n      @param a the lower bound (may\
       \ be odd or even)\n      @param b the upper bound (may be odd or even)\n      @return the sum of even integers between\
-      \ a and b (inclusive).\n   */\n   public int evenSum(int a, int b)\n   {\n"
-- type: editable
-  location:
-    snippet: "      // your work here\n   \n   \n   \n   \n   \n   \n"
-  placeholder: "      // your work here\n   \n   \n   \n   \n   \n   \n"
-- type: locked
-  location:
-    snippet: |2
-         }
-      }
+      \ a and b (inclusive).\n   */\n   public int evenSum(int a, int b)\n   {\n      // your work here\n   \n   \n   \n \
+      \  \n   \n   \n   }\n}\n"
+  placeholder: "public class Numbers\n{\n   /**\n      Computes a sum of even integers \n      @param a the lower bound (may\
+    \ be odd or even)\n      @param b the upper bound (may be odd or even)\n      @return the sum of even integers between\
+    \ a and b (inclusive).\n   */\n   public int evenSum(int a, int b)\n   {\n      // your work here\n   \n   \n   \n   \n\
+    \   \n   \n   }\n}\n"
 testcases:
 - title: Solution Verification
   visible: true

@@ -24,28 +24,16 @@ statement: |-
       the call <code>getVowels("Hello, World!")</code> should return the string
       <code>"eoo"</code>.</p>
 elements:
-- type: locked
-  location:
-    snippet: |
-      public class Words
-      {
-         /**
-            Gets a string consisting of all vowels contained in a given string. Vowels are
-            A E I O U a e i o u
-            @param s a string
-            @return a string with all vowels in s, in the order in which they appear in s
-         */
-         public String getVowels(String s)
-         {
 - type: editable
   location:
-    snippet: "      // your work here\n      \n      \n      \n      \n      \n\n"
-  placeholder: "      // your work here\n      \n      \n      \n      \n      \n\n"
-- type: locked
-  location:
-    snippet: |2
-         }
-      }
+    snippet: "public class Words\n{\n   /**\n      Gets a string consisting of all vowels contained in a given string. Vowels\
+      \ are\n      A E I O U a e i o u\n      @param s a string\n      @return a string with all vowels in s, in the order\
+      \ in which they appear in s\n   */\n   public String getVowels(String s)\n   {\n      // your work here\n      \n  \
+      \    \n      \n      \n      \n\n   }\n}\n"
+  placeholder: "public class Words\n{\n   /**\n      Gets a string consisting of all vowels contained in a given string. Vowels\
+    \ are\n      A E I O U a e i o u\n      @param s a string\n      @return a string with all vowels in s, in the order in\
+    \ which they appear in s\n   */\n   public String getVowels(String s)\n   {\n      // your work here\n      \n      \n\
+    \      \n      \n      \n\n   }\n}\n"
 testcases:
 - title: Solution Verification
   visible: true

@@ -30,40 +30,18 @@ statement: |-
       <code>ZipperWord</code> that is made from the tails of the strings
       (<code>first.substring(1)</code> and <code>second.substring(1)</code>). </p>
 elements:
-- type: locked
-  location:
-    snippet: |
-      public class ZipperWord
-      {
-         public ZipperWord(String word1, String word2)
-         {
-            assert word1.length() == word2.length();
-            first = word1;
-            second = word2;
-         }
-
-         public String toString()
-         {
 - type: editable
   location:
-    snippet: "      // your work here   \n"
-  placeholder: "      // your work here   \n"
-- type: locked
-  location:
-    snippet: |2
-         }
-
-         private String first;
-         private String second;
-
-         // this method is used to check your work
-
-         public static String check(String word1, String word2)
-         {
-            ZipperWord zippy = new ZipperWord(word1, word2);
-            return zippy.toString();
-         }
-      }
+    snippet: "public class ZipperWord\n{\n   public ZipperWord(String word1, String word2)\n   {\n      assert word1.length()\
+      \ == word2.length();\n      first = word1;\n      second = word2;\n   }\n\n   public String toString()\n   {\n     \
+      \ // your work here   \n   }\n\n   private String first;\n   private String second;\n\n   // this method is used to\
+      \ check your work\n\n   public static String check(String word1, String word2)\n   {\n      ZipperWord zippy = new ZipperWord(word1,\
+      \ word2);\n      return zippy.toString();\n   }\n}\n"
+  placeholder: "public class ZipperWord\n{\n   public ZipperWord(String word1, String word2)\n   {\n      assert word1.length()\
+    \ == word2.length();\n      first = word1;\n      second = word2;\n   }\n\n   public String toString()\n   {\n      //\
+    \ your work here   \n   }\n\n   private String first;\n   private String second;\n\n   // this method is used to check\
+    \ your work\n\n   public static String check(String word1, String word2)\n   {\n      ZipperWord zippy = new ZipperWord(word1,\
+    \ word2);\n      return zippy.toString();\n   }\n}\n"
 testcases:
 - title: Solution Verification
   visible: true

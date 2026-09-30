@@ -24,7 +24,7 @@ statement: |-
   Modify the merge method so that the merging produces a descending sort.
   </pre>
 elements:
-- type: locked
+- type: editable
   location:
     snippet: "/**\n   This class sorts an array, using the merge sort algorithm.\n*/\npublic class MergeSorter\n{\n\n   private\
       \ int[] a;\n\n   /**\n      Constructs a merge sorter.\n      @param anArray the array to sort\n   */\n   public MergeSorter(int[]\
@@ -36,15 +36,22 @@ elements:
       \      MergeSorter secondSorter = new MergeSorter(second);\n      firstSorter.sort();\n      secondSorter.sort();\n\
       \      merge(first, second);\n   }\n\n   /**\n      Merges two sorted arrays into the array managed by this\n      merge\
       \ sorter. \n      @param first the first sorted array\n      @param second the second sorted array\n   */\n   private\
-      \ void merge(int[] first, int[] second)\n   {  \n"
-- type: editable
-  location:
-    snippet: "      // TODO: Modify the merge method so that the merging produces a descending sort         \n"
-  placeholder: "      // TODO: Modify the merge method so that the merging produces a descending sort         \n"
-- type: locked
-  location:
-    snippet: "   }\n\n   \n   // this method is used to check your work\n   public static int [] check(int [] a)\n   {\n \
-      \     MergeSorter sorter = new MergeSorter(a);\n      sorter.sort();\n      return a;\n   }\n}\n"
+      \ void merge(int[] first, int[] second)\n   {  \n      // TODO: Modify the merge method so that the merging produces\
+      \ a descending sort         \n   }\n\n   \n   // this method is used to check your work\n   public static int [] check(int\
+      \ [] a)\n   {\n      MergeSorter sorter = new MergeSorter(a);\n      sorter.sort();\n      return a;\n   }\n}\n"
+  placeholder: "/**\n   This class sorts an array, using the merge sort algorithm.\n*/\npublic class MergeSorter\n{\n\n  \
+    \ private int[] a;\n\n   /**\n      Constructs a merge sorter.\n      @param anArray the array to sort\n   */\n   public\
+    \ MergeSorter(int[] anArray)\n   {\n      a = anArray;\n   }\n   \n   /**\n      Sorts the array managed by this merge\
+    \ sorter.\n   */\n   public void sort()\n   {  \n      if (a.length <= 1) return;\n      int[] first = new int[a.length\
+    \ / 2];\n      int[] second = new int[a.length - first.length];\n      // Copy the first half of a into first, the second\
+    \ half into second\n      for (int i = 0; i < first.length; i++) { first[i] = a[i]; }\n      for (int i = 0; i < second.length;\
+    \ i++) \n      { \n         second[i] = a[first.length + i]; \n      }\n      MergeSorter firstSorter = new MergeSorter(first);\n\
+    \      MergeSorter secondSorter = new MergeSorter(second);\n      firstSorter.sort();\n      secondSorter.sort();\n  \
+    \    merge(first, second);\n   }\n\n   /**\n      Merges two sorted arrays into the array managed by this\n      merge\
+    \ sorter. \n      @param first the first sorted array\n      @param second the second sorted array\n   */\n   private\
+    \ void merge(int[] first, int[] second)\n   {  \n      // TODO: Modify the merge method so that the merging produces a\
+    \ descending sort         \n   }\n\n   \n   // this method is used to check your work\n   public static int [] check(int\
+    \ [] a)\n   {\n      MergeSorter sorter = new MergeSorter(a);\n      sorter.sort();\n      return a;\n   }\n}\n"
 testcases:
 - title: Solution Verification
   visible: true

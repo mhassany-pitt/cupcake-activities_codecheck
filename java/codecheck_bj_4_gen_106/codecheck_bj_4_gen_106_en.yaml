@@ -24,22 +24,14 @@ statement: |-
   This Pair class stores two elements of the same generic type. Implement the <code>min</code> which returns the smaller of the two elements. The elements must be instances of the <code>Comparable</code> interface.
   </pre>
 elements:
-- type: locked
+- type: editable
   location:
     snippet: "public class Pair<T ...> \n{\n   private T e1;\n   private T e2;\n\n   /**\n      Constructs a Pair.\n     \
       \ @param e1 is the first member\n      @param e2 is the second member\n   */\n   public Pair(T e1, T e2)\n   {\n   \
-      \   this.e1 = e1;\n      this.e2 = e2;\n   }\n\n   public ... min()\n   {  \n"
-- type: editable
-  location:
-    snippet: |2
-            ...
-  placeholder: |2
-          ...
-- type: locked
-  location:
-    snippet: |2
-         }
-      }
+      \   this.e1 = e1;\n      this.e2 = e2;\n   }\n\n   public ... min()\n   {  \n      ...\n   }\n}\n"
+  placeholder: "public class Pair<T ...> \n{\n   private T e1;\n   private T e2;\n\n   /**\n      Constructs a Pair.\n   \
+    \   @param e1 is the first member\n      @param e2 is the second member\n   */\n   public Pair(T e1, T e2)\n   {\n   \
+    \   this.e1 = e1;\n      this.e2 = e2;\n   }\n\n   public ... min()\n   {  \n      ...\n   }\n}\n"
 testcases:
 - title: Solution Verification
   visible: true

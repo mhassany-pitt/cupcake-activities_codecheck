@@ -22,16 +22,12 @@ runtime:
   version: '3'
 statement: Given a string s and an integer n, return a string in which each of the characters in s is repeated n times.
 elements:
-- type: locked
-  location:
-    snippet: "\n# Given a string s and an integer n, return a string \n# in which each of the characters in s is repeated\
-      \ n times.\n\n\ndef repeatCharacters(s, n):\n   # Your code goes here"
 - type: editable
   location:
-    snippet: |
-      ...
-  placeholder: |
-    ...
+    snippet: "\n# Given a string s and an integer n, return a string \n# in which each of the characters in s is repeated\
+      \ n times.\n\n\ndef repeatCharacters(s, n):\n   # Your code goes here...\n"
+  placeholder: "\n# Given a string s and an integer n, return a string \n# in which each of the characters in s is repeated\
+    \ n times.\n\n\ndef repeatCharacters(s, n):\n   # Your code goes here...\n"
 testcases:
 - title: Solution Verification
   visible: true

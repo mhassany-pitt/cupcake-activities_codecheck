@@ -22,16 +22,12 @@ runtime:
   version: '3'
 statement: Given a two-dimensional array of integers and a row index r, reverse the given row.
 elements:
-- type: locked
-  location:
-    snippet: "\n# Given a two-dimensional array of integers and a \n# row index r, reverse the given row.\n\ndef reverseGivenRow(arr,\
-      \ r):\n"
 - type: editable
   location:
-    snippet: |2
-         # Your code here...
-  placeholder: |2
-       # Your code here...
+    snippet: "\n# Given a two-dimensional array of integers and a \n# row index r, reverse the given row.\n\ndef reverseGivenRow(arr,\
+      \ r):\n   # Your code here...\n"
+  placeholder: "\n# Given a two-dimensional array of integers and a \n# row index r, reverse the given row.\n\ndef reverseGivenRow(arr,\
+    \ r):\n   # Your code here...\n"
 testcases:
 - title: Solution Verification
   visible: true

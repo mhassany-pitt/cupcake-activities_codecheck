@@ -25,26 +25,16 @@ statement: <p>Complete the <code>MyMethods</code> class so that the static <code
   letters. The vowels method calls a helper method whose parameter are the original string, the starting index where to look
   for vowels, and the previously found vowels. </p>
 elements:
-- type: locked
-  location:
-    snippet: "public class MyMethods\n{  \n   public static String vowels(String s)\n   {   \n      return vowelsHelper(s,\
-      \ 0, \"\");\n   }\n\n   public static String vowelsHelper(String s, int index, String alreadyFoundVowels)\n   {\n"
 - type: editable
   location:
-    snippet: |2
-            // your work here
-  placeholder: |2
-          // your work here
-- type: locked
-  location:
-    snippet: |2
-         }
-
-         public static boolean isVowel(char ch)
-         {
-            return ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u';
-         }
-      }
+    snippet: "public class MyMethods\n{  \n   public static String vowels(String s)\n   {   \n      return vowelsHelper(s,\
+      \ 0, \"\");\n   }\n\n   public static String vowelsHelper(String s, int index, String alreadyFoundVowels)\n   {\n  \
+      \    // your work here\n   }\n\n   public static boolean isVowel(char ch)\n   {\n      return ch == 'a' || ch == 'e'\
+      \ || ch == 'i' || ch == 'o' || ch == 'u';\n   }\n}\n"
+  placeholder: "public class MyMethods\n{  \n   public static String vowels(String s)\n   {   \n      return vowelsHelper(s,\
+    \ 0, \"\");\n   }\n\n   public static String vowelsHelper(String s, int index, String alreadyFoundVowels)\n   {\n    \
+    \  // your work here\n   }\n\n   public static boolean isVowel(char ch)\n   {\n      return ch == 'a' || ch == 'e' ||\
+    \ ch == 'i' || ch == 'o' || ch == 'u';\n   }\n}\n"
 testcases:
 - title: Solution Verification
   visible: true

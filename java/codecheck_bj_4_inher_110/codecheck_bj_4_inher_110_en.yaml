@@ -26,21 +26,15 @@ statement: "<p>All vehicles used for transportation in the U.S. must have identi
   \ class below to override the <code>equals</code> method of the \n\t<code>Vehicle</code> class to test that the VIN and\
   \ license plate number are identical.</p>"
 elements:
-- type: locked
-  location:
-    snippet: "/**\n   Represents an automobile.\n*/\n\npublic class Auto extends Vehicle\n{\n   private String licensePlate;\n\
-      \   \n   public Auto(String vin, String plate)\n   {\n      super(vin);\n      licensePlate = plate;\n   }\n\n"
 - type: editable
   location:
-    snippet: |2
-         // TODO: Override the equals method of the Object class to
-  placeholder: |2
-       // TODO: Override the equals method of the Object class to
-- type: locked
-  location:
-    snippet: |2
-         // test that VIN and license plate number are identical.
-      }
+    snippet: "/**\n   Represents an automobile.\n*/\n\npublic class Auto extends Vehicle\n{\n   private String licensePlate;\n\
+      \   \n   public Auto(String vin, String plate)\n   {\n      super(vin);\n      licensePlate = plate;\n   }\n\n   //\
+      \ TODO: Override the equals method of the Object class to\n   // test that VIN and license plate number are identical.\n\
+      }\n"
+  placeholder: "/**\n   Represents an automobile.\n*/\n\npublic class Auto extends Vehicle\n{\n   private String licensePlate;\n\
+    \   \n   public Auto(String vin, String plate)\n   {\n      super(vin);\n      licensePlate = plate;\n   }\n\n   // TODO:\
+    \ Override the equals method of the Object class to\n   // test that VIN and license plate number are identical.\n}\n"
 testcases:
 - title: Solution Verification
   visible: true

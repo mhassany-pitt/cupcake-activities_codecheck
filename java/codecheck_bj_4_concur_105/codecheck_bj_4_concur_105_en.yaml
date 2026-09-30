@@ -40,27 +40,19 @@ statement: |-
       <p>Your task is to find a way to terminate each thread when it cannot do
       any further work.</p>
 elements:
-- type: locked
+- type: editable
   location:
     snippet: "import java.io.FileReader;\nimport java.io.IOException;\nimport java.util.ArrayList;\nimport java.util.Scanner;\n\
       import java.util.concurrent.locks.Condition;\nimport java.util.concurrent.locks.Lock;\nimport java.util.concurrent.locks.ReentrantLock;\n\
       \npublic class WordList\n{\n   public WordList(Scanner in)\n   {\n      words = new ArrayList<String>();\n      myLock\
       \ = new ReentrantLock();\n      while (in.hasNext()) words.add(in.next());\n   }\n   \n   private class Swapper implements\
-      \ Runnable\n   {\n      public void run()\n      {\n"
-- type: editable
-  location:
-    snippet: |2
-               // TODO: Don't make this thread run forever
-  placeholder: |2
-             // TODO: Don't make this thread run forever
-- type: locked
-  location:
-    snippet: "         while (true)\n         {\n            myLock.lock();\n            try\n            {\n            \
-      \   // find a pair to swap\n               int i = 0; \n               while (i < words.size() - 1 && words.get(i).compareTo(words.get(i\
-      \ + 1)) <= 0)\n                  i++;\n               if (i < words.size() - 1) \n               {\n               \
-      \   String word1 = words.get(i);\n                  String word2 = words.get(i + 1);\n                  words.set(i,\
-      \ word2);\n                  words.set(i + 1, word1);\n               }               \n            }\n            finally\n\
-      \            {\n               myLock.unlock();\n            }\n         }\n      }\n   }\n   \n   private class DupeRemover\
+      \ Runnable\n   {\n      public void run()\n      {\n         // TODO: Don't make this thread run forever\n         while\
+      \ (true)\n         {\n            myLock.lock();\n            try\n            {\n               // find a pair to swap\n\
+      \               int i = 0; \n               while (i < words.size() - 1 && words.get(i).compareTo(words.get(i + 1))\
+      \ <= 0)\n                  i++;\n               if (i < words.size() - 1) \n               {\n                  String\
+      \ word1 = words.get(i);\n                  String word2 = words.get(i + 1);\n                  words.set(i, word2);\n\
+      \                  words.set(i + 1, word1);\n               }               \n            }\n            finally\n \
+      \           {\n               myLock.unlock();\n            }\n         }\n      }\n   }\n   \n   private class DupeRemover\
       \ implements Runnable\n   {\n      public void run()\n      {\n         // TODO: Don't make this thread run forever\n\
       \         while (true)\n         {\n            myLock.lock();\n            try\n            {\n               // find\
       \ a duplicate\n               int i = 0; \n               while (i < words.size() - 1 && !words.get(i).equals(words.get(i\
@@ -72,6 +64,28 @@ elements:
       \ myLock;\n   \n   public static void main(String[] args) throws IOException, InterruptedException\n   {\n      Scanner\
       \ in = new Scanner(new FileReader(\"data.txt\"));\n      WordList list = new WordList(in);\n      list.slowSort(); \
       \     \n   }   \n}\n"
+  placeholder: "import java.io.FileReader;\nimport java.io.IOException;\nimport java.util.ArrayList;\nimport java.util.Scanner;\n\
+    import java.util.concurrent.locks.Condition;\nimport java.util.concurrent.locks.Lock;\nimport java.util.concurrent.locks.ReentrantLock;\n\
+    \npublic class WordList\n{\n   public WordList(Scanner in)\n   {\n      words = new ArrayList<String>();\n      myLock\
+    \ = new ReentrantLock();\n      while (in.hasNext()) words.add(in.next());\n   }\n   \n   private class Swapper implements\
+    \ Runnable\n   {\n      public void run()\n      {\n         // TODO: Don't make this thread run forever\n         while\
+    \ (true)\n         {\n            myLock.lock();\n            try\n            {\n               // find a pair to swap\n\
+    \               int i = 0; \n               while (i < words.size() - 1 && words.get(i).compareTo(words.get(i + 1)) <=\
+    \ 0)\n                  i++;\n               if (i < words.size() - 1) \n               {\n                  String word1\
+    \ = words.get(i);\n                  String word2 = words.get(i + 1);\n                  words.set(i, word2);\n      \
+    \            words.set(i + 1, word1);\n               }               \n            }\n            finally\n         \
+    \   {\n               myLock.unlock();\n            }\n         }\n      }\n   }\n   \n   private class DupeRemover implements\
+    \ Runnable\n   {\n      public void run()\n      {\n         // TODO: Don't make this thread run forever\n         while\
+    \ (true)\n         {\n            myLock.lock();\n            try\n            {\n               // find a duplicate\n\
+    \               int i = 0; \n               while (i < words.size() - 1 && !words.get(i).equals(words.get(i + 1)))\n \
+    \                 i++;\n               if (i < words.size() - 1) words.remove(i);\n            }\n            finally\n\
+    \            {\n               myLock.unlock();\n            }\n         }\n      }\n   }\n   \n   public void slowSort()\
+    \ throws InterruptedException\n   {\n      Runnable r1 = new Swapper();\n      Runnable r2 = new DupeRemover();\n    \
+    \  Thread t1 = new Thread(r1);\n      Thread t2 = new Thread(r2);\n      t1.start();\n      t2.start();\n      t1.join();\n\
+    \      t2.join();\n      System.out.println(words);\n   }\n   \n   private ArrayList<String> words;\n   private Lock myLock;\n\
+    \   \n   public static void main(String[] args) throws IOException, InterruptedException\n   {\n      Scanner in = new\
+    \ Scanner(new FileReader(\"data.txt\"));\n      WordList list = new WordList(in);\n      list.slowSort();      \n   }\
+    \   \n}\n"
 testcases:
 - title: Solution Verification
   visible: true

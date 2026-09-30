@@ -22,7 +22,7 @@ runtime:
   version: '3'
 statement: Given strings s and t, return a string in which all occurrences of t are removed from s.
 elements:
-- type: locked
+- type: editable
   location:
     snippet: |2
 
@@ -30,11 +30,13 @@ elements:
       # Do not use the replace method.
 
       def removeAllOccurrences(s, t):
-- type: editable
-  location:
-    snippet: |2
          # Your code here...
   placeholder: |2
+
+    # Given strings s and t, return a string in which all occurrences of t are removed from s.
+    # Do not use the replace method.
+
+    def removeAllOccurrences(s, t):
        # Your code here...
 testcases:
 - title: Solution Verification

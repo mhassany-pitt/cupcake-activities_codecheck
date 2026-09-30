@@ -24,17 +24,14 @@ runtime:
 statement: Given two two-dimensional arrays of integers with the same number of rows and columns, return the first position
   where they do not match, as a list of length 2.
 elements:
-- type: locked
+- type: editable
   location:
     snippet: "\n# Given two two-dimensional arrays of integers with the \n# same number of rows and columns, return the first\
       \ \n# position where they do not match, as a list of length 2.\n# If the fully match, return [-1, -1]\n\ndef firstNoMatch(a,\
-      \ b):\n"
-- type: editable
-  location:
-    snippet: |2
-         # Your code here...
-  placeholder: |2
-       # Your code here...
+      \ b):\n   # Your code here...\n"
+  placeholder: "\n# Given two two-dimensional arrays of integers with the \n# same number of rows and columns, return the\
+    \ first \n# position where they do not match, as a list of length 2.\n# If the fully match, return [-1, -1]\n\ndef firstNoMatch(a,\
+    \ b):\n   # Your code here...\n"
 testcases:
 - title: Solution Verification
   visible: true

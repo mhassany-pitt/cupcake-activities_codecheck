@@ -22,18 +22,19 @@ runtime:
   version: '3'
 statement: Given a two-dimensional array of integers, compute the sum of all positive elements.
 elements:
-- type: locked
+- type: editable
   location:
     snippet: |2
 
       # Given a two-dimensional array of integers, compute the sum of all positive elements.
 
       def sumAllPositiveElements(arr):
-- type: editable
-  location:
-    snippet: |2
          # Your code here...
   placeholder: |2
+
+    # Given a two-dimensional array of integers, compute the sum of all positive elements.
+
+    def sumAllPositiveElements(arr):
        # Your code here...
 testcases:
 - title: Solution Verification

@@ -24,7 +24,7 @@ runtime:
 statement: Given a string, return the string with the middle two characters swapped if it has even length, and the middle
   three characters swapped if it has odd length.
 elements:
-- type: locked
+- type: editable
   location:
     snippet: |2
 
@@ -33,11 +33,14 @@ elements:
       # If the length is 3 or less, return the original string.
 
       def reverseCenterCharacters(s):
-- type: editable
-  location:
-    snippet: |2
          # Your code here...
   placeholder: |2
+
+    # If the given string has even length, return the string with the middle two characters swapped.
+    # If it has odd length, reverse the middle three characters.
+    # If the length is 3 or less, return the original string.
+
+    def reverseCenterCharacters(s):
        # Your code here...
 testcases:
 - title: Solution Verification

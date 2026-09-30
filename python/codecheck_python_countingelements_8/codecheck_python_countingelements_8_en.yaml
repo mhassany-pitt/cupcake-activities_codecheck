@@ -24,16 +24,12 @@ runtime:
 statement: Given two lists of integers a and b of the same length, count the number of positions where the lists have the
   same elements.
 elements:
-- type: locked
-  location:
-    snippet: "\n# Given two lists of integers a and b of the same length, \n# count the number of positions where the lists\
-      \ have the same elements.\n\ndef countWhereSame(a, b):\n"
 - type: editable
   location:
-    snippet: |2
-         # Your code here...
-  placeholder: |2
-       # Your code here...
+    snippet: "\n# Given two lists of integers a and b of the same length, \n# count the number of positions where the lists\
+      \ have the same elements.\n\ndef countWhereSame(a, b):\n   # Your code here...\n"
+  placeholder: "\n# Given two lists of integers a and b of the same length, \n# count the number of positions where the lists\
+    \ have the same elements.\n\ndef countWhereSame(a, b):\n   # Your code here...\n"
 testcases:
 - title: Solution Verification
   visible: true

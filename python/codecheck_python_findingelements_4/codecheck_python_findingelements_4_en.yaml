@@ -23,17 +23,14 @@ runtime:
 statement: Given a list of integers and a value, return the position of the element that is closest to the value. If there
   is more than one, return the position of the first one.
 elements:
-- type: locked
+- type: editable
   location:
     snippet: "\n# Given a list of integers and a value, return the position of \n# the element that is closest in value to\
       \ the given value. If \n# there is more than one, return the position of the first one.\n# Return -1 if the list is\
-      \ empty.\n\ndef findClosestValueIndex(arr, val):\n"
-- type: editable
-  location:
-    snippet: |2
-         # Your code here...
-  placeholder: |2
-       # Your code here...
+      \ empty.\n\ndef findClosestValueIndex(arr, val):\n   # Your code here...\n"
+  placeholder: "\n# Given a list of integers and a value, return the position of \n# the element that is closest in value\
+    \ to the given value. If \n# there is more than one, return the position of the first one.\n# Return -1 if the list is\
+    \ empty.\n\ndef findClosestValueIndex(arr, val):\n   # Your code here...\n"
 testcases:
 - title: Solution Verification
   visible: true

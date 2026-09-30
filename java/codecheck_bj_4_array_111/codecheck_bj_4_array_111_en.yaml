@@ -25,28 +25,16 @@ statement: <p>Write a method that computes the frequency (as a percentage betwee
   element contains percentage of the letter <code>'a' + i</code> or <code>'A' + i</code> among the letters in the string.
   The string may contain other characters that you should simply skip.</p>
 elements:
-- type: locked
-  location:
-    snippet: |
-      public class Letters
-      {
-         /**
-            Counts the frequencies of letters A-Za-z in a string
-            @param str a string
-            @return an array of 26 percentages. The i-th count is the percentage of occurrences
-            of 'A' + i or 'a' + i among all letters (a number between 0.0 and 1.0).
-         */
-         public double[] letterFrequencies(String str)
-         {
 - type: editable
   location:
-    snippet: "      // Your work here\n \n \n"
-  placeholder: "      // Your work here\n \n \n"
-- type: locked
-  location:
-    snippet: |2
-         }
-      }
+    snippet: "public class Letters\n{\n   /**\n      Counts the frequencies of letters A-Za-z in a string\n      @param str\
+      \ a string\n      @return an array of 26 percentages. The i-th count is the percentage of occurrences\n      of 'A'\
+      \ + i or 'a' + i among all letters (a number between 0.0 and 1.0).\n   */\n   public double[] letterFrequencies(String\
+      \ str)\n   {\n      // Your work here\n \n \n   }\n}\n"
+  placeholder: "public class Letters\n{\n   /**\n      Counts the frequencies of letters A-Za-z in a string\n      @param\
+    \ str a string\n      @return an array of 26 percentages. The i-th count is the percentage of occurrences\n      of 'A'\
+    \ + i or 'a' + i among all letters (a number between 0.0 and 1.0).\n   */\n   public double[] letterFrequencies(String\
+    \ str)\n   {\n      // Your work here\n \n \n   }\n}\n"
 testcases:
 - title: Solution Verification
   visible: true

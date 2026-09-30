@@ -29,46 +29,40 @@ statement: "<p>Consider the <code>Vehicle</code> class below.</p>\n\n    <p>Note
   \ that it uses the\n    <code>Propulsion</code> class given below. The <code>main</code> method shows how your modified\n\
   \    class should be used. </p>"
 elements:
-- type: locked
-  location:
-    snippet: |
-      /**
-         Describes a vehicle with a self-contained propulsion unit.
-      */
-      public class Vehicle
-      {
 - type: editable
   location:
-    snippet: |2+
-         /*
-           TODO: To increase cohesion, reimplement this class by using
-           the Propulsion class. Do not modify the main method that is use
-           for checking.
-         */
-
-  placeholder: |2+
-       /*
-         TODO: To increase cohesion, reimplement this class by using
-         the Propulsion class. Do not modify the main method that is use
-         for checking.
-       */
-
-- type: locked
-  location:
-    snippet: "   private String make;\n   private String model;\n   private String year;\n   private String type;\n   private\
-      \ int wheelCount;\n   private String engineType;\n   private String fuel;\n\n   /**\n      Constructs a vehicle\n  \
-      \    @param aMake the vehicle's make\n      @param aModel the vehicle's model\n      @param aType the type of the vehicle\n\
-      \      @param numWheels the number of wheels on this vehicle\n      @param aFuel the type of fuel used by this vehicle\n\
-      \   */\n   \n   public Vehicle(String aMake, String aModel, String aYear,\n      String aType, int numWheels, String\
-      \ aEngineType, String aFuel)\n   {\n      make = aMake;\n      model = aModel;\n      year = aYear;\n      type = aType;\n\
-      \      wheelCount = numWheels;\n      engineType = aEngineType;\n      fuel = aFuel;\n   }\n   \n   public static void\
-      \ main(String[] args)\n   {\n      Vehicle auto = new Vehicle(\"Ford\",\"Taurus\",\"2010\",\"automobile\",\n       \
-      \  4,new Propulsion(\"combustion\",\"gasoline\"));\n      System.out.println(auto.formatForPrinting());\n   }\n\n  \
-      \ /**\n    * Formats the vehicle information for printing\n    * @returns a string sutiable for printing\n    */\n \
-      \  public String formatForPrinting()\n   {\n      return \"Make: \" + make + \"\\n\"\n         + \"Model: \" + model\
-      \ + \"\\n\"\n         + \"Year: \" + year + \"\\n\"\n         + \"Type: \" + type + \"\\n\"\n         + \"Number of\
-      \ wheels: \" + wheelCount + \"\\n\"\n         + \"Engine type: \" + engineType + \"\\n\"\n         + \"Fuel: \" + fuel\
-      \ + \"\\n\";\n   }   \n}\n"
+    snippet: "/**\n   Describes a vehicle with a self-contained propulsion unit.\n*/\npublic class Vehicle\n{\n   /*\n   \
+      \  TODO: To increase cohesion, reimplement this class by using\n     the Propulsion class. Do not modify the main method\
+      \ that is use\n     for checking.\n   */\n\n   private String make;\n   private String model;\n   private String year;\n\
+      \   private String type;\n   private int wheelCount;\n   private String engineType;\n   private String fuel;\n\n   /**\n\
+      \      Constructs a vehicle\n      @param aMake the vehicle's make\n      @param aModel the vehicle's model\n      @param\
+      \ aType the type of the vehicle\n      @param numWheels the number of wheels on this vehicle\n      @param aFuel the\
+      \ type of fuel used by this vehicle\n   */\n   \n   public Vehicle(String aMake, String aModel, String aYear,\n    \
+      \  String aType, int numWheels, String aEngineType, String aFuel)\n   {\n      make = aMake;\n      model = aModel;\n\
+      \      year = aYear;\n      type = aType;\n      wheelCount = numWheels;\n      engineType = aEngineType;\n      fuel\
+      \ = aFuel;\n   }\n   \n   public static void main(String[] args)\n   {\n      Vehicle auto = new Vehicle(\"Ford\",\"\
+      Taurus\",\"2010\",\"automobile\",\n         4,new Propulsion(\"combustion\",\"gasoline\"));\n      System.out.println(auto.formatForPrinting());\n\
+      \   }\n\n   /**\n    * Formats the vehicle information for printing\n    * @returns a string sutiable for printing\n\
+      \    */\n   public String formatForPrinting()\n   {\n      return \"Make: \" + make + \"\\n\"\n         + \"Model: \"\
+      \ + model + \"\\n\"\n         + \"Year: \" + year + \"\\n\"\n         + \"Type: \" + type + \"\\n\"\n         + \"Number\
+      \ of wheels: \" + wheelCount + \"\\n\"\n         + \"Engine type: \" + engineType + \"\\n\"\n         + \"Fuel: \" +\
+      \ fuel + \"\\n\";\n   }   \n}\n"
+  placeholder: "/**\n   Describes a vehicle with a self-contained propulsion unit.\n*/\npublic class Vehicle\n{\n   /*\n \
+    \    TODO: To increase cohesion, reimplement this class by using\n     the Propulsion class. Do not modify the main method\
+    \ that is use\n     for checking.\n   */\n\n   private String make;\n   private String model;\n   private String year;\n\
+    \   private String type;\n   private int wheelCount;\n   private String engineType;\n   private String fuel;\n\n   /**\n\
+    \      Constructs a vehicle\n      @param aMake the vehicle's make\n      @param aModel the vehicle's model\n      @param\
+    \ aType the type of the vehicle\n      @param numWheels the number of wheels on this vehicle\n      @param aFuel the type\
+    \ of fuel used by this vehicle\n   */\n   \n   public Vehicle(String aMake, String aModel, String aYear,\n      String\
+    \ aType, int numWheels, String aEngineType, String aFuel)\n   {\n      make = aMake;\n      model = aModel;\n      year\
+    \ = aYear;\n      type = aType;\n      wheelCount = numWheels;\n      engineType = aEngineType;\n      fuel = aFuel;\n\
+    \   }\n   \n   public static void main(String[] args)\n   {\n      Vehicle auto = new Vehicle(\"Ford\",\"Taurus\",\"2010\"\
+    ,\"automobile\",\n         4,new Propulsion(\"combustion\",\"gasoline\"));\n      System.out.println(auto.formatForPrinting());\n\
+    \   }\n\n   /**\n    * Formats the vehicle information for printing\n    * @returns a string sutiable for printing\n \
+    \   */\n   public String formatForPrinting()\n   {\n      return \"Make: \" + make + \"\\n\"\n         + \"Model: \" +\
+    \ model + \"\\n\"\n         + \"Year: \" + year + \"\\n\"\n         + \"Type: \" + type + \"\\n\"\n         + \"Number\
+    \ of wheels: \" + wheelCount + \"\\n\"\n         + \"Engine type: \" + engineType + \"\\n\"\n         + \"Fuel: \" + fuel\
+    \ + \"\\n\";\n   }   \n}\n"
 testcases:
 - title: Solution Verification
   visible: true

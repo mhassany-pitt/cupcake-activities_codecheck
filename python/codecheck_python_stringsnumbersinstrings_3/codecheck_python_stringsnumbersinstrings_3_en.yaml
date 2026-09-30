@@ -22,18 +22,16 @@ runtime:
   version: '3'
 statement: Given a string, find all integers inside and return a string that separates them by commas.
 elements:
-- type: locked
+- type: editable
   location:
     snippet: "\n# Given a string, find all integers inside and return a string that separates them by commas.\n# Words and\
       \ numbers will be separated by a single space. There should be no leading or\n# trailing commas. For example, if 11\
       \ 12 and 13 are in the string, you should return \n# '11,12,13' NOT '11,12,13,' or ',11,12,13'. If no integers are found,\
-      \ return an empty string.\n\n\ndef numbersInside(s):\n"
-- type: editable
-  location:
-    snippet: |2
-         # Your code here...
-  placeholder: |2
-       # Your code here...
+      \ return an empty string.\n\n\ndef numbersInside(s):\n   # Your code here...\n"
+  placeholder: "\n# Given a string, find all integers inside and return a string that separates them by commas.\n# Words and\
+    \ numbers will be separated by a single space. There should be no leading or\n# trailing commas. For example, if 11 12\
+    \ and 13 are in the string, you should return \n# '11,12,13' NOT '11,12,13,' or ',11,12,13'. If no integers are found,\
+    \ return an empty string.\n\n\ndef numbersInside(s):\n   # Your code here...\n"
 testcases:
 - title: Solution Verification
   visible: true

@@ -27,29 +27,16 @@ statement: |-
       the word is empty, return the empty string. If it is null, return
       null.</p>
 elements:
-- type: locked
+- type: editable
   location:
     snippet: "public class Words\n{\n   /**\n      Gets the middle character or character pair from this word \n      when\
       \ possible.\n      @param word a word\n      @return the middle character (if the word length is odd) or\n      middle\
       \ two characters (if it is even), or the empty string if \n      the word is empty, or null if it is null.\n   */\n\
-      \   public String getMiddle(String word)\n   {\n"
-- type: editable
-  location:
-    snippet: |2+
-            // your work here
-
-
-
-  placeholder: |2+
-          // your work here
-
-
-
-- type: locked
-  location:
-    snippet: |2
-         }
-      }
+      \   public String getMiddle(String word)\n   {\n      // your work here\n\n\n\n   }\n}\n"
+  placeholder: "public class Words\n{\n   /**\n      Gets the middle character or character pair from this word \n      when\
+    \ possible.\n      @param word a word\n      @return the middle character (if the word length is odd) or\n      middle\
+    \ two characters (if it is even), or the empty string if \n      the word is empty, or null if it is null.\n   */\n  \
+    \ public String getMiddle(String word)\n   {\n      // your work here\n\n\n\n   }\n}\n"
 testcases:
 - title: Solution Verification
   visible: true

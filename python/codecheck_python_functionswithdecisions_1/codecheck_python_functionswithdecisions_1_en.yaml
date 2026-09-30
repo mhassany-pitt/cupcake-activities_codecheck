@@ -22,18 +22,19 @@ runtime:
   version: '3'
 statement: Given two numbers, return true if they both have the same sign.
 elements:
-- type: locked
+- type: editable
   location:
     snippet: |2
 
       # Given two numbers, return true if they both have the same sign.
 
       def valuesHaveTheSameSign(x, y):
-- type: editable
-  location:
-    snippet: |2
          # Your code here...
   placeholder: |2
+
+    # Given two numbers, return true if they both have the same sign.
+
+    def valuesHaveTheSameSign(x, y):
        # Your code here...
 testcases:
 - title: Solution Verification

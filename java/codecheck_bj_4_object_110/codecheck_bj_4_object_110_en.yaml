@@ -23,30 +23,16 @@ statement: |-
   <p>Draw two intersecting rectangles and color their intersection black.</p>
   <p>Use <code>draw</code> to draw the outline of <code>box1</code> and <code>box2</code>. Create a third rectangle, <code>box3</code>, where the two rectangles intersect.  Use <code>fill</code> to draw <code>box3</code> as a filled rectangle. </p>
 elements:
-- type: locked
-  location:
-    snippet: |
-      import javax.swing.JComponent;
-      import java.awt.Graphics;
-      import java.awt.Graphics2D;
-      import java.awt.Rectangle;
-
-      public class IntersectionComponent extends JComponent
-      {
-         public void paintComponent(Graphics g)
-         {
-            Graphics2D g2 = (Graphics2D) g;
-            Rectangle box1 = new Rectangle(5, 10, 100, 120);
-            Rectangle box2 = new Rectangle(50, 60, 100, 120);
 - type: editable
   location:
-    snippet: |2
-            // your work here
-  placeholder: |2
-          // your work here
-- type: locked
-  location:
-    snippet: "      ...\n      ...\n      \n   }\n}\n"
+    snippet: "import javax.swing.JComponent;\nimport java.awt.Graphics;\nimport java.awt.Graphics2D;\nimport java.awt.Rectangle;\n\
+      \npublic class IntersectionComponent extends JComponent\n{\n   public void paintComponent(Graphics g)\n   {\n      Graphics2D\
+      \ g2 = (Graphics2D) g;\n      Rectangle box1 = new Rectangle(5, 10, 100, 120);\n      Rectangle box2 = new Rectangle(50,\
+      \ 60, 100, 120);\n      // your work here\n      ...\n      ...\n      \n   }\n}\n"
+  placeholder: "import javax.swing.JComponent;\nimport java.awt.Graphics;\nimport java.awt.Graphics2D;\nimport java.awt.Rectangle;\n\
+    \npublic class IntersectionComponent extends JComponent\n{\n   public void paintComponent(Graphics g)\n   {\n      Graphics2D\
+    \ g2 = (Graphics2D) g;\n      Rectangle box1 = new Rectangle(5, 10, 100, 120);\n      Rectangle box2 = new Rectangle(50,\
+    \ 60, 100, 120);\n      // your work here\n      ...\n      ...\n      \n   }\n}\n"
 testcases:
 - title: Solution Verification
   visible: true

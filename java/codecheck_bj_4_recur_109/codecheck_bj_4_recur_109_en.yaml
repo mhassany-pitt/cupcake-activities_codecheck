@@ -26,21 +26,16 @@ statement: |-
   <p>For example, the call <code>mkString(new int[] { 1, 2, 3, 4 }, "|")</code> should
   return the string "1|2|3|4".</p>
 elements:
-- type: locked
+- type: editable
   location:
     snippet: "import java.util.ArrayList;\n\npublic class MyMethods\n{  \n   public static String mkString(int[] values, String\
       \ separator) \n   {\n      if (values.length == 0) return \"...\";\n      String helperResult = helper(values, ...,\
-      \ separator);\n"
-- type: editable
-  location:
-    snippet: |2
-            ...
-  placeholder: |2
-          ...
-- type: locked
-  location:
-    snippet: "   }\n   \n   public static String helper(int[] values, int n, String separator)\n   {\n      if (n == ...)\
-      \ return ...;\n      String partialResult = helper(values, ..., separator);\n      ...\n   }\n}\n"
+      \ separator);\n      ...\n   }\n   \n   public static String helper(int[] values, int n, String separator)\n   {\n \
+      \     if (n == ...) return ...;\n      String partialResult = helper(values, ..., separator);\n      ...\n   }\n}\n"
+  placeholder: "import java.util.ArrayList;\n\npublic class MyMethods\n{  \n   public static String mkString(int[] values,\
+    \ String separator) \n   {\n      if (values.length == 0) return \"...\";\n      String helperResult = helper(values,\
+    \ ..., separator);\n      ...\n   }\n   \n   public static String helper(int[] values, int n, String separator)\n   {\n\
+    \      if (n == ...) return ...;\n      String partialResult = helper(values, ..., separator);\n      ...\n   }\n}\n"
 testcases:
 - title: Solution Verification
   visible: true

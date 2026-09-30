@@ -25,7 +25,7 @@ statement: "<p>A Java method cannot update primitive\ntype parameters. For examp
   \      applyBonus(sal, 0.02); // 2% bonus; cannot work\n      System.out.println(sal); \n      System.out.println(\"Expected:\
   \ 45900.0\"); \n   }\n}\n</pre>\n    \n<p>To address this problem, the salary should be an object of a class.</p>"
 elements:
-- type: locked
+- type: editable
   location:
     snippet: |
       /**
@@ -33,16 +33,16 @@ elements:
       */
       public class Salary
       {
-- type: editable
-  location:
-    snippet: |2
          . . .
-  placeholder: |2
-       . . .
-- type: locked
-  location:
-    snippet: |
       }
+  placeholder: |
+    /**
+       A salary to which a bonus can be applied.
+    */
+    public class Salary
+    {
+       . . .
+    }
 testcases:
 - title: Solution Verification
   visible: true

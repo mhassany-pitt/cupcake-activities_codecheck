@@ -26,16 +26,12 @@ runtime:
 statement: Given a list of integers and two values a and b, return the sum of all elements that are at least a and at most
   b.
 elements:
-- type: locked
-  location:
-    snippet: "\n# Given a list of integers and two values a and b, \n# return the sum of all elements that are at least a\
-      \ and at most b.\n\ndef sumElementsBetweenAandB(arr, a, b):\n"
 - type: editable
   location:
-    snippet: |2
-         # Your code here...
-  placeholder: |2
-       # Your code here...
+    snippet: "\n# Given a list of integers and two values a and b, \n# return the sum of all elements that are at least a\
+      \ and at most b.\n\ndef sumElementsBetweenAandB(arr, a, b):\n   # Your code here...\n"
+  placeholder: "\n# Given a list of integers and two values a and b, \n# return the sum of all elements that are at least\
+    \ a and at most b.\n\ndef sumElementsBetweenAandB(arr, a, b):\n   # Your code here...\n"
 testcases:
 - title: Solution Verification
   visible: true

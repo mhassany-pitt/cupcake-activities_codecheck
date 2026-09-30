@@ -34,28 +34,30 @@ statement: |-
      &lt;label name="San Francisco, CA" latitude="37.7793" longitude="-122.4192"/&gt;
   </pre>
 elements:
-- type: locked
+- type: editable
   location:
     snippet: "/**\n   A map label has a place name, longitude and latitude\n*/\npublic class MapLabels\n{  \n   private String\
       \ placeName;\n   private double latitude;\n   private double longitude;\n\n   /**\n      Constructs a map label with\
       \ place name, logitude and latitude given in decimal degrees\n   */\n   public MapLabels (String name, double aLat,\
-      \ double aLong)\n   {   \n"
-- type: editable
-  location:
-    snippet: |2
-            // your work here
-  placeholder: |2
-          // your work here
-- type: locked
-  location:
-    snippet: "      placeName = ...;\n      latitude = ...;\n      longitude = ...;\n   }\n   \n   /**\n      Constructs a\
-      \ map label with place name, logitude and latitude given in degrees, minutes, seconds\n   */\n   public MapLabels (String\
-      \ name, int degLat, int minLat, double secLat, int degLong, int minLong, double secLong)   \n   {   \n      // your\
-      \ work here\n      placeName = ...;\n      // decimalDegress = Math.signum(degrees) * (Math.abs(degrees) + minutes/60.\
-      \ + seconds/3600.);\n      latitude = ...;\n      longitude = ...;\n   }\n   \n   /**\n      Gets the string in XML\
-      \ form\n      @return the string\n   */\n   public String toString()\n   {   \n      //your work here\n      // use\
-      \ \\\" to print a \"\n      String label = \"<label name=\\\"\" + placeName + ...;\n\n      return label;\n   }   \n\
-      }\n"
+      \ double aLong)\n   {   \n      // your work here\n      placeName = ...;\n      latitude = ...;\n      longitude =\
+      \ ...;\n   }\n   \n   /**\n      Constructs a map label with place name, logitude and latitude given in degrees, minutes,\
+      \ seconds\n   */\n   public MapLabels (String name, int degLat, int minLat, double secLat, int degLong, int minLong,\
+      \ double secLong)   \n   {   \n      // your work here\n      placeName = ...;\n      // decimalDegress = Math.signum(degrees)\
+      \ * (Math.abs(degrees) + minutes/60. + seconds/3600.);\n      latitude = ...;\n      longitude = ...;\n   }\n   \n \
+      \  /**\n      Gets the string in XML form\n      @return the string\n   */\n   public String toString()\n   {   \n \
+      \     //your work here\n      // use \\\" to print a \"\n      String label = \"<label name=\\\"\" + placeName + ...;\n\
+      \n      return label;\n   }   \n}\n"
+  placeholder: "/**\n   A map label has a place name, longitude and latitude\n*/\npublic class MapLabels\n{  \n   private\
+    \ String placeName;\n   private double latitude;\n   private double longitude;\n\n   /**\n      Constructs a map label\
+    \ with place name, logitude and latitude given in decimal degrees\n   */\n   public MapLabels (String name, double aLat,\
+    \ double aLong)\n   {   \n      // your work here\n      placeName = ...;\n      latitude = ...;\n      longitude = ...;\n\
+    \   }\n   \n   /**\n      Constructs a map label with place name, logitude and latitude given in degrees, minutes, seconds\n\
+    \   */\n   public MapLabels (String name, int degLat, int minLat, double secLat, int degLong, int minLong, double secLong)\
+    \   \n   {   \n      // your work here\n      placeName = ...;\n      // decimalDegress = Math.signum(degrees) * (Math.abs(degrees)\
+    \ + minutes/60. + seconds/3600.);\n      latitude = ...;\n      longitude = ...;\n   }\n   \n   /**\n      Gets the string\
+    \ in XML form\n      @return the string\n   */\n   public String toString()\n   {   \n      //your work here\n      //\
+    \ use \\\" to print a \"\n      String label = \"<label name=\\\"\" + placeName + ...;\n\n      return label;\n   }  \
+    \ \n}\n"
 testcases:
 - title: Solution Verification
   visible: true

@@ -38,22 +38,19 @@ statement: |-
 
   <p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAADSCAYAAABkWJYfAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9oCEQErJKalhfwAAAkXSURBVHja7d1faFb1A8fxz3FzTlbQTZJk/wiiItZfMKWorGxEXWgkQXdhRCEKUdCFN0GQeRFoUJQRdCEVpVRuWTw6Ny2sIcTQTKJtxBZFXfSPNZyu87v4seE2W3Pq5rbXC4TtOQ/ne3b8Ps/7/NmjRVmWZaaDopj8Mcty9o2LOWtc447zvWGOVzkAEyEgAAgIAAICgIAAICAAICAACAgAAgKAgAAgIAAgIAAICAACAoCAACAgACAgAAgIAAICgIAAICAAICAACAgAAgKAgAAgIAAwDtXTZkvL0rgA55CiLKfJO1VRTMmbeJHJH7dMOWU/L8DMOwOBaXd4NkUHAcY17iQdXLoHAsCECAgAAgKAgAAgIAAICAAICAACAoCAACAgAAgIAAgIAAICgIAAICAACAgACAgAAgKAgAAgIAAICAAICAACAoCAACAgAAgIAAgIAGdL9bTZ0rKcmmFTzqqfF2C8irKcJu9URTE1b+KzbVyAGXcGAtPu8Gx2HXwUmfxxy0zduA4u3QMBYIIEBAABAUBAABAQAAQEAAQEAAEBQEAAEBAABAQABAQAAQFAQAAQEAAEBAAEBAABAUBAABAQAAQEAAQEAAEBQEAAEBAABAQABASAs6V62mxpWRoX4BxSlKV3KgBm8hkITLvDs2JqzlynaNwikz9umakbd7b9/Z6MeyAATIiAACAgAAgIAAICgIAAgIAAICAACAgAAgKAgACAgAAgIAAICAACAoCAAICAACAgAAgIAAICgIAAgIAAICAACAgAAgKAgACAgAAgIACcU4qyLEu7AYBTVW0XwNk6PCsmf8yyNK5xz864J+ESFgATIiAACAgAAgKAgAAgIAAgIAAICAACAoCAACAgACAgAAgIAAICgIAAICAAICAACAgAAgKAgAAgIAAgIAAICAACAoCAACAgACAgAAgIAOeUoizL0m4A4FRV2wVwtg7PiskfsyyNa9yzM+5JuIQFwIQICAACAoCAACAgAAgIAAgIAAICgIAAICAACAgACAgAAgKAgAAgIAAICAAICAACAoCAACAgAAgIAAgIAAICgIAAICAACAgACAgAAgLAOaUoy7K0GwBwBgKAgAAgIAAICAAICAACAoCAACAgAAgIAAyptgtG6+/vz9tvv53W1tb8+uuv+eeff1KpVOwYzD2YCQG59957h/8g1dVZuHBh7rvvvjz88MOZM2fiJ1dbtmzJhx9+aHZwxuPwyCOPpCzLvPfee6mpqRn33Buc72KCgJwFx48fT3d3d9588838+eefefzxxye8rtbW1iTJ888/n8WLF6eqqspM4bTt27cvf/3119AcG3kQZO4x3Uz7eyCVSiWVSiU7duwYisann356Wuv87bffkiRLlizxAuaMaWxsPOnX5h7OQKZYbW1tVqxYkS1btqSvr++kz9m1a1d27tyZjo6OHD16NBdeeGFuu+22PProo6mrqxt1RLh8+fJhoTp27Fi2bduWPXv2pKenJ0myaNGi3H333Vm5cmWqq6tHXXL4+OOP8/rrr2fv3r3p7e3NZ599Nq5tYWb54YcfcujQoVx99dUpiiKHDx9OV1dXrrjiimHz5WRz70QnPu/Ey1njnU//NS9hVgbk6NGj2bFjR5LkpptuGrasLMts2LAhzc3Nwx7/6aef8v7776etrS2bNm0ac/39/f157rnncvDgwWGPd3Z2prOzM21tbdmwYcOwiCTJiy++mP3795/ytojIzDz7aGhoSE1NTb799ts0NTVlzZo1p7Xeic6nkfMSZmVATjwiq66uzj333JMnnnhi2HN27tyZ5ubmXHTRRXnyySdz/fXXZ968eens7Myrr76ab775Ju+8887QEd3Jbli+++67OXjwYM4777ysXbs2t956a5Jk//792bx5c9rb27N9+/asWrVq2NgdHR3ZuHFjrrvuusydOzeffPLJuLZl9erVZucMOripVCqZN29e7rzzzsydOzevvfZadu3aldWrV6e2tnbMuTfW4+Od2yPn08h5CRMxoz4Hcvz48Xz99dfZu3fvqBdZkqxfvz5Lly5NXV1dqqurc9VVV2X9+vVJks8//3zMdQ8e4a1bty533XVX5s+fn/nz52fZsmVZu3btsOecaN26dbnxxhuHXqRnYluYXlpaWtLb25vbb789dXV1qampyfLly9Pb25uWlpbTWvdE59PIeQmz8gxk8IhsYGAgP/74Y95666288sorOXbsWB566KEkSVdXV5KMebng559/HnOcwXseixcvHrVsyZIlSZLu7u5Ry+rr64d9fya2henlxMtXgx544IFs27YtTU1Nwx4/VROdTyPnJczKgAyqqqrKpZdemqeffjpffPFFPvjgg6GAjOd/7R0YGDgr21VbWzvs+6ncFiZfR0dHjhw5kiR55plnRi0/cuRIOjo6cuWVV05o/ROdTyPnJczqgIz0xx9/DH19+eWX57vvvssbb7wx9Fsvp2rRokXp6upKW1tb7rjjjmHLvvzyyyTJJZdc8p/rORPbwvTR1NQ0rucMXgYdTzCKojCfOCfMmHsgAwMD6e7uzssvv5wkueyyy4aWPfjgg0n+f524Uqnkl19+ycDAQPr7+9PT0zOuF/CyZcuSJJs2bUpra2v6+vrS19eXlpaWbN68edhzxnImtoXpoa+vL7t3705RFNm6devQZ5YG/2zdujVFUWT37t3/+qvng84///wkSXt7+7CzDvMJZyCn4WSf5p0zZ04ee+yxoe8bGhry/fff56OPPsrGjRsnNM7KlSvz1Vdf5dChQ3nhhRdGLa+vr8+KFSv+cz1nYluYHpqbm/P333/nlltuyYIFC0YtX7BgQW6++eYcOHAge/bsyf333/+v67rhhhuyb9++PPvss0OPVSoV8wkBOSOnUnPm5IILLsi1116bVatW5Zprrhm2fM2aNVm6dGkaGxtz+PDh/P7776mqqsrChQtTX1//rx/cGlRTU5OXXnop27dvT3Nzc3p6elIURS6++OKhDxKO9zdaTndbmB4GL1+NdZO8oaEhBw4cSGNj45gBeeqpp1KWZdrb24f+ORTzialWlOO5CwcAIw/c7QIABAQAAQFAQAAQEAAQEAAEBIDJ9j+fwqeVQqR+RwAAAABJRU5ErkJggg=="/></p>
 elements:
-- type: locked
+- type: editable
   location:
     snippet: "public class ColorCodes\n{\n   /**\n      Returns the code of the given image when doubled in size\n      @param\
       \ img the codes of an image\n      @return the color codes of the doubled image\n   */\n   public String doubleImage(String\
       \ img)\n   {   \n      String result = \"\";\n      for (int i = 0; i < img.length(); i++)\n      {\n          char\
-      \ ch = img.charAt(i);\n          if (ch == '\\n')\n          {\n"
-- type: editable
-  location:
-    snippet: |2
-                   // your work here
-  placeholder: |2
-                 // your work here
-- type: locked
-  location:
-    snippet: "          }\n          else\n          {\n             // your work here\n          }          \n      }\n \
-      \     return result;\n   }  \n}\n"
+      \ ch = img.charAt(i);\n          if (ch == '\\n')\n          {\n             // your work here\n          }\n      \
+      \    else\n          {\n             // your work here\n          }          \n      }\n      return result;\n   } \
+      \ \n}\n"
+  placeholder: "public class ColorCodes\n{\n   /**\n      Returns the code of the given image when doubled in size\n     \
+    \ @param img the codes of an image\n      @return the color codes of the doubled image\n   */\n   public String doubleImage(String\
+    \ img)\n   {   \n      String result = \"\";\n      for (int i = 0; i < img.length(); i++)\n      {\n          char ch\
+    \ = img.charAt(i);\n          if (ch == '\\n')\n          {\n             // your work here\n          }\n          else\n\
+    \          {\n             // your work here\n          }          \n      }\n      return result;\n   }  \n}\n"
 testcases:
 - title: Solution Verification
   visible: true

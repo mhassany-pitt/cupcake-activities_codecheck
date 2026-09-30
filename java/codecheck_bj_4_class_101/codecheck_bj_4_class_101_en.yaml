@@ -21,7 +21,7 @@ runtime:
   version: '17'
 statement: <p>Change the withdraw method of the BankAccount class so that a charge of $1.00 is deducted for each withdrawal.</p>
 elements:
-- type: locked
+- type: editable
   location:
     snippet: "/**\n   A bank account has a balance that can be changed by \n   deposits and withdrawals.\n*/\npublic class\
       \ BankAccount\n{  \n   private double balance;\n\n   /**\n      Constructs a bank account with a zero balance.\n   */\n\
@@ -31,23 +31,20 @@ elements:
       \ amount the amount to deposit\n   */\n   public void deposit(double amount)\n   {  \n      double newBalance = balance\
       \ + amount;\n      balance = newBalance;\n   }\n\n   /**\n      Withdraws money from the bank account.\n      @param\
       \ amount the amount to withdraw\n   */\n   public void withdraw(double amount)\n   {   \n      double newBalance = balance\
-      \ - amount;\n      balance = newBalance;\n"
-- type: editable
-  location:
-    snippet: |2+
-            // your work here
-
-
-
-  placeholder: |2+
-          // your work here
-
-
-
-- type: locked
-  location:
-    snippet: "   }\n\n   /**\n      Gets the current balance of the bank account.\n      @return the current balance\n   */\n\
-      \   public double getBalance()\n   {   \n      return balance;\n   }\n}\n"
+      \ - amount;\n      balance = newBalance;\n      // your work here\n\n\n\n   }\n\n   /**\n      Gets the current balance\
+      \ of the bank account.\n      @return the current balance\n   */\n   public double getBalance()\n   {   \n      return\
+      \ balance;\n   }\n}\n"
+  placeholder: "/**\n   A bank account has a balance that can be changed by \n   deposits and withdrawals.\n*/\npublic class\
+    \ BankAccount\n{  \n   private double balance;\n\n   /**\n      Constructs a bank account with a zero balance.\n   */\n\
+    \   public BankAccount()\n   {   \n      balance = 0;\n   }\n\n   /**\n      Constructs a bank account with a given balance.\n\
+    \      @param initialBalance the initial balance\n   */\n   public BankAccount(double initialBalance)\n   {   \n     \
+    \ balance = initialBalance;\n   }\n\n   /**\n      Deposits money into the bank account.\n      @param amount the amount\
+    \ to deposit\n   */\n   public void deposit(double amount)\n   {  \n      double newBalance = balance + amount;\n    \
+    \  balance = newBalance;\n   }\n\n   /**\n      Withdraws money from the bank account.\n      @param amount the amount\
+    \ to withdraw\n   */\n   public void withdraw(double amount)\n   {   \n      double newBalance = balance - amount;\n \
+    \     balance = newBalance;\n      // your work here\n\n\n\n   }\n\n   /**\n      Gets the current balance of the bank\
+    \ account.\n      @return the current balance\n   */\n   public double getBalance()\n   {   \n      return balance;\n\
+    \   }\n}\n"
 testcases:
 - title: Solution Verification
   visible: true

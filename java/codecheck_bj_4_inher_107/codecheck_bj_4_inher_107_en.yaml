@@ -24,22 +24,13 @@ statement: |-
       <code>Vehicle</code> class. Cars lose value over time. In this example, you should assume that the value is reduced by 25 cents per mile driven, until it reaches zero. </p>
       <p>Do <i>not</i> add any instance variables to the <code>Car</code> class.</p>
 elements:
-- type: locked
+- type: editable
   location:
-    snippet: |-
+    snippet: |
       /**
          Represents a car.
       */
-      public class Car
-- type: editable
-  location:
-    snippet: |2
-       // TODO: Inherit from Vehicle
-  placeholder: |2
-     // TODO: Inherit from Vehicle
-- type: locked
-  location:
-    snippet: |
+      public class Car // TODO: Inherit from Vehicle
       {
          // Do NOT add any instance variables
 
@@ -50,6 +41,21 @@ elements:
 
          // TODO: Override the getValue method
       }
+  placeholder: |
+    /**
+       Represents a car.
+    */
+    public class Car // TODO: Inherit from Vehicle
+    {
+       // Do NOT add any instance variables
+
+       public Car(double purchasePrice)
+       {
+          // TODO: Complete
+       }
+
+       // TODO: Override the getValue method
+    }
 testcases:
 - title: Solution Verification
   visible: true

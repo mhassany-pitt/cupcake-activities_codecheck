@@ -26,7 +26,7 @@ statement: "<p>Your task is to produce a map of the frequencies of all letters i
   \n    <p>Construct a map that contains the keys in sorted order.</p>\n\n    <p>Hint: Use autoboxing:</p>\n\n    <pre>Integer\
   \ f = freqs.get(letter); // Caution: may be null\n. . .\nfreqs.put(letter, f + 1); // Can use arithmetic with Integer</pre>"
 elements:
-- type: locked
+- type: editable
   location:
     snippet: |
       import java.util.Map;
@@ -36,17 +36,20 @@ elements:
       {
          public Map<String, Integer> makeLetterMap(String str)
          {
-- type: editable
-  location:
-    snippet: |2
             // TODO: Complete method
-  placeholder: |2
-          // TODO: Complete method
-- type: locked
-  location:
-    snippet: |2
          }
       }
+  placeholder: |
+    import java.util.Map;
+    import java.util.TreeMap;
+
+    public class LetterMap
+    {
+       public Map<String, Integer> makeLetterMap(String str)
+       {
+          // TODO: Complete method
+       }
+    }
 testcases:
 - title: Solution Verification
   visible: true

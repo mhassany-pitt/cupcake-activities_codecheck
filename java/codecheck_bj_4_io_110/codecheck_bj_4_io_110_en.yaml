@@ -23,22 +23,14 @@ statement: <p>The following <code>Vehicle</code> class throws a custom exception
   Your task is to implement this exception class. The exception should not be a checked exception, and it should indicate
   that an improper wheel count is an illegal parameter value.</p>
 elements:
-- type: locked
-  location:
-    snippet: |
-      public class IllegalNumberOfWheels
 - type: editable
   location:
-    snippet: |+
-      // TODO: Inherit from an appropriate exception
-
-  placeholder: |+
-    // TODO: Inherit from an appropriate exception
-
-- type: locked
-  location:
-    snippet: "{\n  /**\n   TODO: Create two constructors: one with no parameters, and one\n   that accepts a message string\
-      \ describing the reason for the exception.\n   */\n   \n}\n"
+    snippet: "public class IllegalNumberOfWheels\n// TODO: Inherit from an appropriate exception\n\n{\n  /**\n   TODO: Create\
+      \ two constructors: one with no parameters, and one\n   that accepts a message string describing the reason for the\
+      \ exception.\n   */\n   \n}\n"
+  placeholder: "public class IllegalNumberOfWheels\n// TODO: Inherit from an appropriate exception\n\n{\n  /**\n   TODO: Create\
+    \ two constructors: one with no parameters, and one\n   that accepts a message string describing the reason for the exception.\n\
+    \   */\n   \n}\n"
 testcases:
 - title: Solution Verification
   visible: true

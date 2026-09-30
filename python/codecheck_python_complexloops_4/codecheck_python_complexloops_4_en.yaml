@@ -26,16 +26,13 @@ statement: |-
   <pre>0 0
   0 0</pre>
 elements:
-- type: locked
-  location:
-    snippet: "\n# Given a two-dimensional array of integers, return the top left corner of the \n# first subarray of the form\n\
-      # 0 0\n# 0 0\n# If no instance is found, return None\n\ndef findUpperLeftOfSquareOfZeroes(arr):\n"
 - type: editable
   location:
-    snippet: |2
-         # Your code here...
-  placeholder: |2
-       # Your code here...
+    snippet: "\n# Given a two-dimensional array of integers, return the top left corner of the \n# first subarray of the form\n\
+      # 0 0\n# 0 0\n# If no instance is found, return None\n\ndef findUpperLeftOfSquareOfZeroes(arr):\n   # Your code here...\n"
+  placeholder: "\n# Given a two-dimensional array of integers, return the top left corner of the \n# first subarray of the\
+    \ form\n# 0 0\n# 0 0\n# If no instance is found, return None\n\ndef findUpperLeftOfSquareOfZeroes(arr):\n   # Your code\
+    \ here...\n"
 testcases:
 - title: Solution Verification
   visible: true

@@ -21,7 +21,7 @@ runtime:
   version: '17'
 statement: <p>Your task is to draw a simple checkerboard pattern.</p>
 elements:
-- type: locked
+- type: editable
   location:
     snippet: |
       import javax.swing.JComponent;
@@ -35,18 +35,26 @@ elements:
          public void paintComponent(Graphics g)
          {
             Graphics2D g2 = (Graphics2D) g;
-- type: editable
-  location:
-    snippet: |2
             // your work here
-  placeholder: |2
-          // your work here
-- type: locked
-  location:
-    snippet: |2
             . . .
          }
       }
+  placeholder: |
+    import javax.swing.JComponent;
+    import java.awt.Color;
+    import java.awt.Graphics;
+    import java.awt.Graphics2D;
+    import java.awt.Rectangle;
+
+    public class CheckerBoardComponent extends JComponent
+    {
+       public void paintComponent(Graphics g)
+       {
+          Graphics2D g2 = (Graphics2D) g;
+          // your work here
+          . . .
+       }
+    }
 testcases:
 - title: Solution Verification
   visible: true

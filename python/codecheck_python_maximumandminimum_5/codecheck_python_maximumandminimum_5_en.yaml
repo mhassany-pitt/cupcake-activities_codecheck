@@ -22,7 +22,7 @@ runtime:
   version: '3'
 statement: Given a list of integers, swap the the maximum and minimum.
 elements:
-- type: locked
+- type: editable
   location:
     snippet: |2
 
@@ -30,11 +30,13 @@ elements:
       # Then return the given list. Do not use the built in min or max functions.
 
       def swapMinAndMax(arr):
-- type: editable
-  location:
-    snippet: |2
          # Your code here...
   placeholder: |2
+
+    # Given a list of integers, swap the the maximum and minimum in place.
+    # Then return the given list. Do not use the built in min or max functions.
+
+    def swapMinAndMax(arr):
        # Your code here...
 testcases:
 - title: Solution Verification

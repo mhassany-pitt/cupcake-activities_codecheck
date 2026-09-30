@@ -23,7 +23,7 @@ statement: |-
   <p>
   Implement the generic <code>replicate</code> method. It should return a list containing multiple copies of the given value.</p>
 elements:
-- type: locked
+- type: editable
   location:
     snippet: |
       import java.util.ArrayList;
@@ -39,17 +39,26 @@ elements:
          */
          public static ... replicate(... value, ... count)
          {
-- type: editable
-  location:
-    snippet: |2
             ...
-  placeholder: |2
-          ...
-- type: locked
-  location:
-    snippet: |2
          }
       }
+  placeholder: |
+    import java.util.ArrayList;
+    import java.util.List;
+
+    public class GenericUtil
+    {
+       /**
+          Replicates a value a given number of times
+          @param value the value to be replicated
+          @param count the number of replications
+          @return a list containing the given number of copies of the value
+       */
+       public static ... replicate(... value, ... count)
+       {
+          ...
+       }
+    }
 testcases:
 - title: Solution Verification
   visible: true

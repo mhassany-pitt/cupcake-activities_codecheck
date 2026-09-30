@@ -27,7 +27,7 @@ statement: |-
      public void setEndTime(String endTime)
   </pre>
 elements:
-- type: locked
+- type: editable
   location:
     snippet: "/**\n   A class has a title, time and room\n*/\npublic class ClassSchedule\n{  \n   private String title;\n\
       \   private String days;\n   private String startTime;\n   private String endTime;\n   private String room;\n\n   /**\n\
@@ -39,20 +39,24 @@ elements:
       \ getTime()\n   {   \n      String time = days + \" \" + startTime + \"-\" + endTime;\n      return time;\n   }\n\n\
       \   /**\n      Gets the room.\n      @return the room\n   */\n   public String getRoom()\n   {   \n      return room;\n\
       \   }\n\n   /**\n      Sets the days.\n      @param meetingDays the new meeting days\n   */\n   public void setDays(String\
-      \ meetingDays)\n   {   \n"
-- type: editable
-  location:
-    snippet: |2+
-            // your work here
-
-  placeholder: |2+
-          // your work here
-
-- type: locked
-  location:
-    snippet: "   }\n\n   /**\n      Sets the start time.\n      @param aStartTime the new start time\n   */\n   public /*\
-      \ your work here */ setStartTime(/* your work here */)\n   {   \n      // your work here\n\n   }\n\n   /**\n      Sets\
-      \ the end time.\n      @param anEndTime the new end time\n   */\n\n   // your work here\n\n}\n"
+      \ meetingDays)\n   {   \n      // your work here\n\n   }\n\n   /**\n      Sets the start time.\n      @param aStartTime\
+      \ the new start time\n   */\n   public /* your work here */ setStartTime(/* your work here */)\n   {   \n      // your\
+      \ work here\n\n   }\n\n   /**\n      Sets the end time.\n      @param anEndTime the new end time\n   */\n\n   // your\
+      \ work here\n\n}\n"
+  placeholder: "/**\n   A class has a title, time and room\n*/\npublic class ClassSchedule\n{  \n   private String title;\n\
+    \   private String days;\n   private String startTime;\n   private String endTime;\n   private String room;\n\n   /**\n\
+    \      Constructs a class with title, day, time and room.\n   */\n   public ClassSchedule(String classTitle, String meetingDays,\
+    \ String aStartTime, String aEndTime, String classRoom)\n   {   \n     title = classTitle;\n     days = meetingDays;\n\
+    \     startTime = aStartTime;\n     endTime = aEndTime;\n     room = classRoom;\n   }\n\n   /**\n      Gets the title.\n\
+    \      @return the title\n   */\n   public String getTitle()\n   {   \n      return title;\n   }\n\n   /**\n      Gets\
+    \ the time in the form \"days start time-end time\"\n      @return the time\n   */\n   public String getTime()\n   { \
+    \  \n      String time = days + \" \" + startTime + \"-\" + endTime;\n      return time;\n   }\n\n   /**\n      Gets the\
+    \ room.\n      @return the room\n   */\n   public String getRoom()\n   {   \n      return room;\n   }\n\n   /**\n    \
+    \  Sets the days.\n      @param meetingDays the new meeting days\n   */\n   public void setDays(String meetingDays)\n\
+    \   {   \n      // your work here\n\n   }\n\n   /**\n      Sets the start time.\n      @param aStartTime the new start\
+    \ time\n   */\n   public /* your work here */ setStartTime(/* your work here */)\n   {   \n      // your work here\n\n\
+    \   }\n\n   /**\n      Sets the end time.\n      @param anEndTime the new end time\n   */\n\n   // your work here\n\n\
+    }\n"
 testcases:
 - title: Solution Verification
   visible: true

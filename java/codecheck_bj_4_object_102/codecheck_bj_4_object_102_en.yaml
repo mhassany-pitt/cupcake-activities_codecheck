@@ -25,9 +25,9 @@ statement: |-
       compute the sum of the five results, and divide by 5.0. (You will see in
       chapter 4 why you need to divide by 5.0 and not simply 5.)</p>
 elements:
-- type: locked
+- type: editable
   location:
-    snippet: |+
+    snippet: |
       public class AverageTester
       {
          public static void main(String[] args)
@@ -38,17 +38,8 @@ elements:
             String word4 = "little";
             String word5 = "lamb";
 
-- type: editable
-  location:
-    snippet: |2+
             // your work here
 
-  placeholder: |2+
-          // your work here
-
-- type: locked
-  location:
-    snippet: |2
             int length1 = . . .;
             int length2 = . . .;
             . . .
@@ -59,6 +50,29 @@ elements:
             System.out.println("Expected: 3.6");
          }
       }
+  placeholder: |
+    public class AverageTester
+    {
+       public static void main(String[] args)
+       {
+          String word1 = "Mary";
+          String word2 = "had";
+          String word3 = "a";
+          String word4 = "little";
+          String word5 = "lamb";
+
+          // your work here
+
+          int length1 = . . .;
+          int length2 = . . .;
+          . . .
+          . . .
+          . . .
+          . . .
+          System.out.println(average);
+          System.out.println("Expected: 3.6");
+       }
+    }
 testcases:
 - title: Solution Verification
   visible: true

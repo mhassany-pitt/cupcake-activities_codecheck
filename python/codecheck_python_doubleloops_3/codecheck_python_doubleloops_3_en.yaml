@@ -22,16 +22,12 @@ runtime:
   version: '3'
 statement: Given a list a, return the longest n so that the first n elements equal the last n elements.
 elements:
-- type: locked
-  location:
-    snippet: "\n# Given a list a, return the longest n so that \n# the first n elements equal the last n elements.\n\ndef\
-      \ firstEqualLast(a):\n"
 - type: editable
   location:
-    snippet: |2
-         # Your code here...
-  placeholder: |2
-       # Your code here...
+    snippet: "\n# Given a list a, return the longest n so that \n# the first n elements equal the last n elements.\n\ndef\
+      \ firstEqualLast(a):\n   # Your code here...\n"
+  placeholder: "\n# Given a list a, return the longest n so that \n# the first n elements equal the last n elements.\n\ndef\
+    \ firstEqualLast(a):\n   # Your code here...\n"
 testcases:
 - title: Solution Verification
   visible: true

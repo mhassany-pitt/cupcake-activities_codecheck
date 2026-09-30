@@ -22,18 +22,19 @@ runtime:
   version: '3'
 statement: Given a two-dimensional square array of integers, reverse both diagonals.
 elements:
-- type: locked
+- type: editable
   location:
     snippet: |2
 
       # Given a two-dimensional square array of integers, reverse both diagonals.
 
       def sumDiagonals(arr):
-- type: editable
-  location:
-    snippet: |2
          # Your code here...
   placeholder: |2
+
+    # Given a two-dimensional square array of integers, reverse both diagonals.
+
+    def sumDiagonals(arr):
        # Your code here...
 testcases:
 - title: Solution Verification

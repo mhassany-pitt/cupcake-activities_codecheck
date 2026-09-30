@@ -30,30 +30,16 @@ statement: |-
 
       <pre><code>"Mary", "little", "lamb"</code>, "", ""</pre>
 elements:
-- type: locked
+- type: editable
   location:
     snippet: "public class Words\n{\n   /**\n      Removes all short words (length <= 3) from an array. The \n      order\
       \ of the remaining element is left unchanged. The unused\n      end of the array is filled with empty strings.\n   \
       \   @param words the array from which the short words are to be removed\n   */\n   public static void removeShortWords(String[]\
-      \ words)\n   {\n"
-- type: editable
-  location:
-    snippet: |2+
-            // your work here
-
-
-
-  placeholder: |2+
-          // your work here
-
-
-
-- type: locked
-  location:
-    snippet: |2
-         }
-
-      }
+      \ words)\n   {\n      // your work here\n\n\n\n   }\n\n}\n"
+  placeholder: "public class Words\n{\n   /**\n      Removes all short words (length <= 3) from an array. The \n      order\
+    \ of the remaining element is left unchanged. The unused\n      end of the array is filled with empty strings.\n     \
+    \ @param words the array from which the short words are to be removed\n   */\n   public static void removeShortWords(String[]\
+    \ words)\n   {\n      // your work here\n\n\n\n   }\n\n}\n"
 testcases:
 - title: Solution Verification
   visible: true

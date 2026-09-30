@@ -35,27 +35,17 @@ statement: |-
   aMyrh daa l tilt ealbm ,ti slfeeecw saw iheta  snswo.
   </pre>
 elements:
-- type: locked
-  location:
-    snippet: |
-      import java.io.IOException;
-      import java.io.RandomAccessFile;
-
-      public class TextMangler
-      {
-         public static void swapAdjacentBytes(RandomAccessFile file) throws IOException
-         {
 - type: editable
   location:
-    snippet: |2
-            // TODO: complete
-  placeholder: |2
-          // TODO: complete
-- type: locked
-  location:
-    snippet: "   }   \n   \n   // this method checks your work\n   \n   public static void main(String[] args) throws IOException\n\
-      \   {\n      RandomAccessFile file = new RandomAccessFile(\"data.txt\", \"rw\");\n      swapAdjacentBytes(file);\n \
-      \     file.close();\n   }   \n}\n"
+    snippet: "import java.io.IOException;\nimport java.io.RandomAccessFile;\n\npublic class TextMangler\n{\n   public static\
+      \ void swapAdjacentBytes(RandomAccessFile file) throws IOException\n   {\n      // TODO: complete\n   }   \n   \n  \
+      \ // this method checks your work\n   \n   public static void main(String[] args) throws IOException\n   {\n      RandomAccessFile\
+      \ file = new RandomAccessFile(\"data.txt\", \"rw\");\n      swapAdjacentBytes(file);\n      file.close();\n   }   \n\
+      }\n"
+  placeholder: "import java.io.IOException;\nimport java.io.RandomAccessFile;\n\npublic class TextMangler\n{\n   public static\
+    \ void swapAdjacentBytes(RandomAccessFile file) throws IOException\n   {\n      // TODO: complete\n   }   \n   \n   //\
+    \ this method checks your work\n   \n   public static void main(String[] args) throws IOException\n   {\n      RandomAccessFile\
+    \ file = new RandomAccessFile(\"data.txt\", \"rw\");\n      swapAdjacentBytes(file);\n      file.close();\n   }   \n}\n"
 testcases:
 - title: Solution Verification
   visible: true

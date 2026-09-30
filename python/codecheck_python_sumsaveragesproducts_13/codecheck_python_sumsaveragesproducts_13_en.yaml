@@ -24,17 +24,14 @@ runtime:
   version: '3'
 statement: Given a list of integers, return the average of all elements that are not the maximum or minimum.
 elements:
-- type: locked
+- type: editable
   location:
     snippet: "\n# Given a list of integers, return the average \n# of all elements that are not the maximum or minimum.\n\
       # You may assume that there is only one instance of\n# each of the maximum or minimum. There will be at least\n# 3 elements\
-      \ in the given list.\n\ndef averageWithoutMaxAndMin(arr):\n"
-- type: editable
-  location:
-    snippet: |2
-         # Your code here...
-  placeholder: |2
-       # Your code here...
+      \ in the given list.\n\ndef averageWithoutMaxAndMin(arr):\n   # Your code here...\n"
+  placeholder: "\n# Given a list of integers, return the average \n# of all elements that are not the maximum or minimum.\n\
+    # You may assume that there is only one instance of\n# each of the maximum or minimum. There will be at least\n# 3 elements\
+    \ in the given list.\n\ndef averageWithoutMaxAndMin(arr):\n   # Your code here...\n"
 testcases:
 - title: Solution Verification
   visible: true

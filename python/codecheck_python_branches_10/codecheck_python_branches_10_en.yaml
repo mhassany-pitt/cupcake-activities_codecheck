@@ -24,17 +24,14 @@ runtime:
 statement: Given an actual time and an alarm clock time, both in “military” format (such as 0730 for 7:30am), print how many
   more minutes before the alarm rings. But if the time is after the alarm, print "Alarm already went off".
 elements:
-- type: locked
+- type: editable
   location:
     snippet: "\n# Given an actual time and an alarm clock time, both in military format (such as 0730 for 7:30am), \n# print\
       \ how many more minutes before the alarm rings. When the time is after the alarm, \n# print \"Alarm already went off\"\
-      \ instead. All times will be on the same day. \n\nactualTime = 600 \nalarmTime = 555 \n\n"
-- type: editable
-  location:
-    snippet: |
-      # Your code here...
-  placeholder: |
-    # Your code here...
+      \ instead. All times will be on the same day. \n\nactualTime = 600 \nalarmTime = 555 \n\n# Your code here...\n"
+  placeholder: "\n# Given an actual time and an alarm clock time, both in military format (such as 0730 for 7:30am), \n# print\
+    \ how many more minutes before the alarm rings. When the time is after the alarm, \n# print \"Alarm already went off\"\
+    \ instead. All times will be on the same day. \n\nactualTime = 600 \nalarmTime = 555 \n\n# Your code here...\n"
 testcases:
 - title: Solution Verification
   visible: true

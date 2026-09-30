@@ -25,9 +25,9 @@ statement: "<p>Your task is to read a file containing lines of text, and to writ
   \ fleece was white as snow.\n</pre>\n\n    <p>then your output file should contain the lines</p>\n\n    <pre>its fleece\
   \ was white as snow.\nMary had a little lamb, </pre>"
 elements:
-- type: locked
+- type: editable
   location:
-    snippet: |+
+    snippet: |
       import java.io.FileReader;
       import java.io.FileNotFoundException;
       import java.io.PrintWriter;
@@ -42,19 +42,31 @@ elements:
             String inputFileName = "mary.txt";
             String outputFileName = "output.txt";
 
-- type: editable
-  location:
-    snippet: |2
             // TODO: Open the input and output files.
-  placeholder: |2
-          // TODO: Open the input and output files.
-- type: locked
-  location:
-    snippet: |2
             // Read lines from input file.
             // Write lines in reverse order to output file.
          }
       }
+  placeholder: |
+    import java.io.FileReader;
+    import java.io.FileNotFoundException;
+    import java.io.PrintWriter;
+    import java.util.ArrayList;
+    import java.util.Scanner;
+
+    public class LineReverser
+    {
+       public static void main(String[] args)
+          throws FileNotFoundException
+       {
+          String inputFileName = "mary.txt";
+          String outputFileName = "output.txt";
+
+          // TODO: Open the input and output files.
+          // Read lines from input file.
+          // Write lines in reverse order to output file.
+       }
+    }
 testcases:
 - title: Solution Verification
   visible: true

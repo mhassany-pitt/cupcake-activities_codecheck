@@ -25,7 +25,7 @@ statement: |-
   <li>3, 4, 0 do not have the same sign (because 0 is not positive)</li><li>0, 0, 0 have the same sign</li>
   </ul>
 elements:
-- type: locked
+- type: editable
   location:
     snippet: |
       /**
@@ -39,17 +39,24 @@ elements:
          */
          public boolean allSameSign(int a, int b, int c)
          {
-- type: editable
-  location:
-    snippet: |2
             // your work here
-  placeholder: |2
-          // your work here
-- type: locked
-  location:
-    snippet: |2
          }
       }
+  placeholder: |
+    /**
+       A class to compare numbers.
+    */
+    public class Numbers
+    {
+       /**
+          Checks whether three numbers have all the same sign.
+          @return true if all of the numbers a, b, and c have the same sign
+       */
+       public boolean allSameSign(int a, int b, int c)
+       {
+          // your work here
+       }
+    }
 testcases:
 - title: Solution Verification
   visible: true

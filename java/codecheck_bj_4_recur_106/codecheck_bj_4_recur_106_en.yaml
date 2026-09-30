@@ -23,20 +23,16 @@ statement: "<div>\n<p>We want to implement a method that reverses the digits in 
   \ should yield 6543. </p>\n<p>Use this approach: Combine <code>reverseInt(345) = 543</code> and the remainder 6 into 6543.\
   \ This requires to multiply 6 with 10<sup>3</sup>, the number of digits in \n543.</p>\n</div>"
 elements:
-- type: locked
-  location:
-    snippet: "public class MyMethods\n{  \n   public static int reverseInt(int value)\n   {   \n"
 - type: editable
   location:
-    snippet: |2
-            . . .
-  placeholder: |2
-          . . .
-- type: locked
-  location:
-    snippet: "   }\n\n   public static int powerOfTen(int exponent)\n   {\n      if (exponent <= 0) return 1;\n      else\
-      \ return 10 * powerOfTen(...);\n   }\n   \n   public static int numberOfDigits(int value)\n   {\n      if (value < 10)\
-      \ return 1;\n      else return 1 + numberOfDigits(...);\n   }\n}\n"
+    snippet: "public class MyMethods\n{  \n   public static int reverseInt(int value)\n   {   \n      . . .\n   }\n\n   public\
+      \ static int powerOfTen(int exponent)\n   {\n      if (exponent <= 0) return 1;\n      else return 10 * powerOfTen(...);\n\
+      \   }\n   \n   public static int numberOfDigits(int value)\n   {\n      if (value < 10) return 1;\n      else return\
+      \ 1 + numberOfDigits(...);\n   }\n}\n"
+  placeholder: "public class MyMethods\n{  \n   public static int reverseInt(int value)\n   {   \n      . . .\n   }\n\n  \
+    \ public static int powerOfTen(int exponent)\n   {\n      if (exponent <= 0) return 1;\n      else return 10 * powerOfTen(...);\n\
+    \   }\n   \n   public static int numberOfDigits(int value)\n   {\n      if (value < 10) return 1;\n      else return 1\
+    \ + numberOfDigits(...);\n   }\n}\n"
 testcases:
 - title: Solution Verification
   visible: true

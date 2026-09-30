@@ -23,17 +23,16 @@ runtime:
 statement: Given a string, return the string with the first half and the second half doubled. For example, Java becomes JaJavava
   and Hello becomes HelHellolo.
 elements:
-- type: locked
+- type: editable
   location:
     snippet: "\n# Given a string, return the string with the first half and the second half doubled. \n# For example, Java\
       \ becomes JaJavava and Hello becomes HelHellolo. If the length is \n# odd, like Hello, consider the middle character\
-      \ as part of the first half. If the \n# string is less than 2 characters long, return the original string.\n\ndef duplicateHalves(s):\n"
-- type: editable
-  location:
-    snippet: |2
-         # Your code here...
-  placeholder: |2
-       # Your code here...
+      \ as part of the first half. If the \n# string is less than 2 characters long, return the original string.\n\ndef duplicateHalves(s):\n\
+      \   # Your code here...\n"
+  placeholder: "\n# Given a string, return the string with the first half and the second half doubled. \n# For example, Java\
+    \ becomes JaJavava and Hello becomes HelHellolo. If the length is \n# odd, like Hello, consider the middle character as\
+    \ part of the first half. If the \n# string is less than 2 characters long, return the original string.\n\ndef duplicateHalves(s):\n\
+    \   # Your code here...\n"
 testcases:
 - title: Solution Verification
   visible: true

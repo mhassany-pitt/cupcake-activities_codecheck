@@ -22,7 +22,7 @@ runtime:
   version: '3'
 statement: Given a list of integers, swap the first and last elements.
 elements:
-- type: locked
+- type: editable
   location:
     snippet: |2
 
@@ -30,11 +30,13 @@ elements:
       # swap the first and last elements. Then return the updated list.
 
       def swapFirstAndLast(arr):
-- type: editable
-  location:
-    snippet: |2
          # Your code here...
   placeholder: |2
+
+    # Given a list of integers containing at least one element,
+    # swap the first and last elements. Then return the updated list.
+
+    def swapFirstAndLast(arr):
        # Your code here...
 testcases:
 - title: Solution Verification

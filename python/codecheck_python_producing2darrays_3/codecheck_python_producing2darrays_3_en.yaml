@@ -24,18 +24,16 @@ runtime:
 statement: Repeat the preceding exercise where the array dimensions need not match, filling positions that exist in neither
   array with 0.
 elements:
-- type: locked
+- type: editable
   location:
     snippet: "\n# Given two two-dimensional arrays a and b of integers \n# return a two-dimensional array where the height\
       \ is the maximum height of a and b\n# and the width is the maximum width of a and b, and where each element \n# is the\
       \ greater of the corresponding elements in the two lists.\n# Fill positions that exist in neither array with 0.\n\n\
-      def maxOfMismatchedArrays(a, b):\n"
-- type: editable
-  location:
-    snippet: |2
-         # Your code here...
-  placeholder: |2
-       # Your code here...
+      def maxOfMismatchedArrays(a, b):\n   # Your code here...\n"
+  placeholder: "\n# Given two two-dimensional arrays a and b of integers \n# return a two-dimensional array where the height\
+    \ is the maximum height of a and b\n# and the width is the maximum width of a and b, and where each element \n# is the\
+    \ greater of the corresponding elements in the two lists.\n# Fill positions that exist in neither array with 0.\n\ndef\
+    \ maxOfMismatchedArrays(a, b):\n   # Your code here...\n"
 testcases:
 - title: Solution Verification
   visible: true

@@ -26,27 +26,14 @@ statement: |-
       becomes 7, and o becomes 0. Write a program to carry out
       these replacements with a sample string.</p>
 elements:
-- type: locked
-  location:
-    snippet: |
-      public class ReplacementTester
-      {
-         public static void main(String[] args)
-         {
-            String greeting = "Hello, elite hacker!";
 - type: editable
   location:
-    snippet: "      // your work here \n"
-  placeholder: "      // your work here \n"
-- type: locked
-  location:
-    snippet: |2
-            // call the replace method four times
-
-            System.out.println(modifiedGreeting);
-            System.out.println("Expected: H3770, 371t3 hack3r!");
-         }
-      }
+    snippet: "public class ReplacementTester\n{\n   public static void main(String[] args)\n   {\n      String greeting =\
+      \ \"Hello, elite hacker!\";\n      // your work here \n      // call the replace method four times\n\n      System.out.println(modifiedGreeting);\n\
+      \      System.out.println(\"Expected: H3770, 371t3 hack3r!\");\n   }\n}\n"
+  placeholder: "public class ReplacementTester\n{\n   public static void main(String[] args)\n   {\n      String greeting\
+    \ = \"Hello, elite hacker!\";\n      // your work here \n      // call the replace method four times\n\n      System.out.println(modifiedGreeting);\n\
+    \      System.out.println(\"Expected: H3770, 371t3 hack3r!\");\n   }\n}\n"
 testcases:
 - title: Solution Verification
   visible: true

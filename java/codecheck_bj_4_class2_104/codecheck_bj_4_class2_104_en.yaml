@@ -27,21 +27,16 @@ statement: |-
 
       <p>should return 5 because 20 is 10100<sub>2</sub>.</p>
 elements:
-- type: locked
+- type: editable
   location:
     snippet: "public class Numbers\n{\n   /**\n      Returns the number of digits in the binary\n      representation of a\
       \ number\n      @param n a nonnegative number\n      @return the number of binary digits needed to\n      represent\
-      \ n\n   */\n   \n"
-- type: editable
-  location:
-    snippet: |2
-         // TODO: supply the method
-  placeholder: |2
-       // TODO: supply the method
-- type: locked
-  location:
-    snippet: "   . . .\n   \n   public static void main(String[] args)\n   {\n      System.out.println(Numbers.binaryDigits(20));\n\
-      \   }\n}\n"
+      \ n\n   */\n   \n   // TODO: supply the method\n   . . .\n   \n   public static void main(String[] args)\n   {\n   \
+      \   System.out.println(Numbers.binaryDigits(20));\n   }\n}\n"
+  placeholder: "public class Numbers\n{\n   /**\n      Returns the number of digits in the binary\n      representation of\
+    \ a number\n      @param n a nonnegative number\n      @return the number of binary digits needed to\n      represent\
+    \ n\n   */\n   \n   // TODO: supply the method\n   . . .\n   \n   public static void main(String[] args)\n   {\n     \
+    \ System.out.println(Numbers.binaryDigits(20));\n   }\n}\n"
 testcases:
 - title: Solution Verification
   visible: true

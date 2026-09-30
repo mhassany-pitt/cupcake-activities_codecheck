@@ -25,11 +25,6 @@ elements:
   location:
     snippet: |
       // your work here
-  placeholder: |
-    // your work here
-- type: locked
-  location:
-    snippet: |
       import . . .
 
       public class AreaTester
@@ -43,6 +38,21 @@ elements:
             System.out.println("Expected: 51");
          }
       }
+  placeholder: |
+    // your work here
+    import . . .
+
+    public class AreaTester
+    {
+       public static void main(String[] args)
+       {
+          // your work here
+          . . .
+          double area = rect.getWidth() * rect.getHeight();
+          System.out.println(area);
+          System.out.println("Expected: 51");
+       }
+    }
 testcases:
 - title: Solution Verification
   visible: true

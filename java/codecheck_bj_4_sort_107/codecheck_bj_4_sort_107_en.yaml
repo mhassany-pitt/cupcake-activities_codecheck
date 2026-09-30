@@ -26,7 +26,7 @@ statement: "<p>\nImplement a modification of the SelectionSorter class that reor
   \ be in a different order. For example, </p>\n<pre>\n     [2,<b>5</b>,<b>6</b>,3,4,6,9,1,2]\n     [2,6,<b>5</b>,3,<b>4</b>,6,9,1,2]\n\
   \     [2,6,4,<b>3</b>,5,<b>6</b>,9,1,2]\n     [2,6,4,6,<b>5</b>,3,9,1,<b>2</b>]\n     [2,6,4,6,2,3,9,1,5]\n</pre>"
 elements:
-- type: locked
+- type: editable
   location:
     snippet: "import java.util.Arrays;\n\n/**\n   This modified SelectionSorter class places the even elements followed by\
       \ the odd \n   elements in the array, maintaining the original order of the even elements.\n*/\n\npublic class SelectionSorter\n\
@@ -35,21 +35,25 @@ elements:
       \ followed by the odd elemens in the array, maintaining the original\n     order of the even elements. Visit each element\
       \ of the array, swapping odd \n     elements with the first even one that follows. For example:\n     [5,6,4,6,9,2]\n\
       \     [6,5,4,6,9,2]\n     [6,4,5,6,9,2]\n     [6,4,6,5,9,2]\n     [6,4,6,2,9,5]\n   */\n   public void evenOdd()\n \
-      \  {  \n"
-- type: editable
-  location:
-    snippet: |2
-            // TODO
-  placeholder: |2
-          // TODO
-- type: locked
-  location:
-    snippet: "   }\n\n   /**\n      Finds the first even element starting at posiion index\n      @return the position first\
-      \ even element\n   */\n   private int firstEven(int index)\n   {\n      // TODO\n   }\n\n   /**\n      Swaps two entries\
-      \ of the array.\n      @param i the first position to swap\n      @param j the second position to swap\n   */\n   private\
-      \ void swap(int i, int j)\n   {\n      int temp = a[i];\n      a[i] = a[j];\n      a[j] = temp;\n   }\n   \n   // this\
-      \ method is used to check your work\n   public static int[] check(int[] values)\n   {\n      SelectionSorter sorter\
-      \ = new SelectionSorter(values);\n      sorter.evenOdd();\n      return values;\n   }\n}\n"
+      \  {  \n      // TODO\n   }\n\n   /**\n      Finds the first even element starting at posiion index\n      @return the\
+      \ position first even element\n   */\n   private int firstEven(int index)\n   {\n      // TODO\n   }\n\n   /**\n   \
+      \   Swaps two entries of the array.\n      @param i the first position to swap\n      @param j the second position to\
+      \ swap\n   */\n   private void swap(int i, int j)\n   {\n      int temp = a[i];\n      a[i] = a[j];\n      a[j] = temp;\n\
+      \   }\n   \n   // this method is used to check your work\n   public static int[] check(int[] values)\n   {\n      SelectionSorter\
+      \ sorter = new SelectionSorter(values);\n      sorter.evenOdd();\n      return values;\n   }\n}\n"
+  placeholder: "import java.util.Arrays;\n\n/**\n   This modified SelectionSorter class places the even elements followed\
+    \ by the odd \n   elements in the array, maintaining the original order of the even elements.\n*/\n\npublic class SelectionSorter\n\
+    {\n   private int[] a;\n\n   /**\n      Constructs a selection sorter.\n      @param anArray the array to sort\n   */\n\
+    \   public SelectionSorter(int[] anArray)\n   {\n      a = anArray;\n   }\n\n   /**\n      Places the even elements followed\
+    \ by the odd elemens in the array, maintaining the original\n     order of the even elements. Visit each element of the\
+    \ array, swapping odd \n     elements with the first even one that follows. For example:\n     [5,6,4,6,9,2]\n     [6,5,4,6,9,2]\n\
+    \     [6,4,5,6,9,2]\n     [6,4,6,5,9,2]\n     [6,4,6,2,9,5]\n   */\n   public void evenOdd()\n   {  \n      // TODO\n\
+    \   }\n\n   /**\n      Finds the first even element starting at posiion index\n      @return the position first even element\n\
+    \   */\n   private int firstEven(int index)\n   {\n      // TODO\n   }\n\n   /**\n      Swaps two entries of the array.\n\
+    \      @param i the first position to swap\n      @param j the second position to swap\n   */\n   private void swap(int\
+    \ i, int j)\n   {\n      int temp = a[i];\n      a[i] = a[j];\n      a[j] = temp;\n   }\n   \n   // this method is used\
+    \ to check your work\n   public static int[] check(int[] values)\n   {\n      SelectionSorter sorter = new SelectionSorter(values);\n\
+    \      sorter.evenOdd();\n      return values;\n   }\n}\n"
 testcases:
 - title: Solution Verification
   visible: true

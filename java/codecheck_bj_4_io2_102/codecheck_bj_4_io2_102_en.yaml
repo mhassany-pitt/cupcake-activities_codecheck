@@ -37,7 +37,7 @@ statement: |-
       <p>Your task is to
       implement the decryption method. </p>
 elements:
-- type: locked
+- type: editable
   location:
     snippet: "import java.io.FileInputStream;\nimport java.io.FileOutputStream;\nimport java.io.InputStream;\nimport java.io.OutputStream;\n\
       import java.io.IOException;\n\n/**\n   This class encrypts files using the HyperCaesar cipher.\n*/\npublic class HyperCaesarCipher\n\
@@ -49,19 +49,28 @@ elements:
       \ b = (byte) next;\n            byte c = encrypt(b);\n            out.write(c);\n         }\n      }\n   }\n\n   /**\n\
       \      Encrypts a byte.\n      @param b the byte to encrypt\n      @return the encrypted byte\n   */\n   public byte\
       \ encrypt(byte b)\n   {\n      byte r = (byte) (b + key);\n      key = (byte) (key + b);\n      return r;\n   }\n\n\
-      \   \n"
-- type: editable
-  location:
-    snippet: "   // TODO: Add decryption\n   \n"
-  placeholder: "   // TODO: Add decryption\n   \n"
-- type: locked
-  location:
-    snippet: "   private byte key;\n   \n   // this method is used to check your work\n   \n   public static void main(String[]\
-      \ args)\n   {  \n      try\n      {  \n         InputStream inStream = new FileInputStream(\"encrypted.txt\");\n   \
-      \      OutputStream outStream = new FileOutputStream(\"decrypted.txt\");\n         int key = 3;\n         HyperCaesarCipher\
-      \ cipher = new HyperCaesarCipher(key);\n         cipher.decryptStream(inStream, outStream);\n\n         inStream.close();\n\
-      \         outStream.close();\n      }\n      catch (IOException exception)\n      {  \n         System.out.println(\"\
-      Error processing file: \" + exception);\n      }\n   }\n}\n"
+      \   \n   // TODO: Add decryption\n   \n   private byte key;\n   \n   // this method is used to check your work\n   \n\
+      \   public static void main(String[] args)\n   {  \n      try\n      {  \n         InputStream inStream = new FileInputStream(\"\
+      encrypted.txt\");\n         OutputStream outStream = new FileOutputStream(\"decrypted.txt\");\n         int key = 3;\n\
+      \         HyperCaesarCipher cipher = new HyperCaesarCipher(key);\n         cipher.decryptStream(inStream, outStream);\n\
+      \n         inStream.close();\n         outStream.close();\n      }\n      catch (IOException exception)\n      {  \n\
+      \         System.out.println(\"Error processing file: \" + exception);\n      }\n   }\n}\n"
+  placeholder: "import java.io.FileInputStream;\nimport java.io.FileOutputStream;\nimport java.io.InputStream;\nimport java.io.OutputStream;\n\
+    import java.io.IOException;\n\n/**\n   This class encrypts files using the HyperCaesar cipher.\n*/\npublic class HyperCaesarCipher\n\
+    {\n   /**\n      Constructs a cipher object with a given key.\n      @param aKey the encryption key\n   */\n   public\
+    \ HyperCaesarCipher(int aKey)\n   {\n      key = (byte) aKey;\n   }\n\n   /**\n      Encrypts the contents of a stream.\n\
+    \      @param in the input stream\n      @param out the output stream\n   */      \n   public void encryptStream(InputStream\
+    \ in, OutputStream out)\n         throws IOException\n   {\n      boolean done = false;\n      while (!done)\n      {\n\
+    \         int next = in.read();\n         if (next == -1) done = true;\n         else\n         {\n            byte b\
+    \ = (byte) next;\n            byte c = encrypt(b);\n            out.write(c);\n         }\n      }\n   }\n\n   /**\n \
+    \     Encrypts a byte.\n      @param b the byte to encrypt\n      @return the encrypted byte\n   */\n   public byte encrypt(byte\
+    \ b)\n   {\n      byte r = (byte) (b + key);\n      key = (byte) (key + b);\n      return r;\n   }\n\n   \n   // TODO:\
+    \ Add decryption\n   \n   private byte key;\n   \n   // this method is used to check your work\n   \n   public static\
+    \ void main(String[] args)\n   {  \n      try\n      {  \n         InputStream inStream = new FileInputStream(\"encrypted.txt\"\
+    );\n         OutputStream outStream = new FileOutputStream(\"decrypted.txt\");\n         int key = 3;\n         HyperCaesarCipher\
+    \ cipher = new HyperCaesarCipher(key);\n         cipher.decryptStream(inStream, outStream);\n\n         inStream.close();\n\
+    \         outStream.close();\n      }\n      catch (IOException exception)\n      {  \n         System.out.println(\"\
+    Error processing file: \" + exception);\n      }\n   }\n}\n"
 testcases:
 - title: Solution Verification
   visible: true

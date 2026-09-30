@@ -24,17 +24,14 @@ runtime:
 statement: Given a string in which words are separated by spaces, return the first word that is duplicated (such as an accidental
   “this this”.
 elements:
-- type: locked
+- type: editable
   location:
     snippet: "\n# Given a string in which words are separated by spaces, \n# return the first word that occurs twice in a\
       \ row.\n# For example, you should detect a duplicated 'the the'.\n# If no repeats found, return an empty string.\n\n\
-      def firstRepeatedWord(s):\n"
-- type: editable
-  location:
-    snippet: |2
-         # Your code here...
-  placeholder: |2
-       # Your code here...
+      def firstRepeatedWord(s):\n   # Your code here...\n"
+  placeholder: "\n# Given a string in which words are separated by spaces, \n# return the first word that occurs twice in\
+    \ a row.\n# For example, you should detect a duplicated 'the the'.\n# If no repeats found, return an empty string.\n\n\
+    def firstRepeatedWord(s):\n   # Your code here...\n"
 testcases:
 - title: Solution Verification
   visible: true

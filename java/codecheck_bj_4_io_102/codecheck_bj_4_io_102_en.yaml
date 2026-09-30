@@ -24,22 +24,14 @@ statement: |-
       longest word in the file. If there are multiple words with the same
       length, return the first of the maximum length words. </p>
 elements:
-- type: locked
+- type: editable
   location:
     snippet: "import java.io.FileReader;\nimport java.io.FileNotFoundException;\nimport java.util.Scanner;\n\npublic class\
       \ FileAnalyzer\n{\n   /**\n      @param inputFileName the name of the input file\n   */\n   public static String longestWord(String\
-      \ inputFileName)\n      throws FileNotFoundException \n   {\n"
-- type: editable
-  location:
-    snippet: |2
-            . . .
-  placeholder: |2
-          . . .
-- type: locked
-  location:
-    snippet: |2
-         }
-      }
+      \ inputFileName)\n      throws FileNotFoundException \n   {\n      . . .\n   }\n}\n"
+  placeholder: "import java.io.FileReader;\nimport java.io.FileNotFoundException;\nimport java.util.Scanner;\n\npublic class\
+    \ FileAnalyzer\n{\n   /**\n      @param inputFileName the name of the input file\n   */\n   public static String longestWord(String\
+    \ inputFileName)\n      throws FileNotFoundException \n   {\n      . . .\n   }\n}\n"
 testcases:
 - title: Solution Verification
   visible: true

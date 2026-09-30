@@ -25,28 +25,32 @@ statement: |-
       the <i>largest</i> element and swap it to the last position, then continue
       with the next-largest element and so on. </p>
 elements:
-- type: locked
+- type: editable
   location:
     snippet: "/**\n   This class sorts an array, using a modified selection sort \n   algorithm\n*/\npublic class SelectionSorter\n\
       {\n   /**\n      Constructs a selection sorter.\n      @param anArray the array to sort\n   */\n   public SelectionSorter(int[]\
       \ anArray)\n   {\n      a = anArray;\n   }\n\n   /**\n      Sorts the array managed by this selection sorter.\n   */\n\
-      \   public void sort()\n   {  \n"
-- type: editable
-  location:
-    snippet: |2
-            // TODO: add loop bounds
-  placeholder: |2
-          // TODO: add loop bounds
-- type: locked
-  location:
-    snippet: "      for (int i = ...; i > ...; i--)\n      {  \n         int maxPos = maximumPosition(i);\n         swap(maxPos,\
-      \ i);\n      }\n   }\n\n   /**\n      Finds the largest element in a subrange of the array.\n      @param to the last\
-      \ position in a to compare\n      @return the position of the largest element in the\n      range a[0] . . . a[to]\n\
-      \   */\n   private int maximumPosition(int to)\n   {\n      // your work here\n   }\n\n   /**\n      Swaps two entries\
-      \ of the array.\n      @param i the first position to swap\n      @param j the second position to swap\n   */\n   private\
-      \ void swap(int i, int j)\n   {\n      int temp = a[i];\n      a[i] = a[j];\n      a[j] = temp;\n   }\n\n   private\
-      \ int[] a;\n   \n   // this method is used to check your work\n   public static int[] check(int[] values)\n   {\n  \
-      \    SelectionSorter sorter = new SelectionSorter(values);\n      sorter.sort();\n      return values;\n   }\n}\n"
+      \   public void sort()\n   {  \n      // TODO: add loop bounds\n      for (int i = ...; i > ...; i--)\n      {  \n \
+      \        int maxPos = maximumPosition(i);\n         swap(maxPos, i);\n      }\n   }\n\n   /**\n      Finds the largest\
+      \ element in a subrange of the array.\n      @param to the last position in a to compare\n      @return the position\
+      \ of the largest element in the\n      range a[0] . . . a[to]\n   */\n   private int maximumPosition(int to)\n   {\n\
+      \      // your work here\n   }\n\n   /**\n      Swaps two entries of the array.\n      @param i the first position to\
+      \ swap\n      @param j the second position to swap\n   */\n   private void swap(int i, int j)\n   {\n      int temp\
+      \ = a[i];\n      a[i] = a[j];\n      a[j] = temp;\n   }\n\n   private int[] a;\n   \n   // this method is used to check\
+      \ your work\n   public static int[] check(int[] values)\n   {\n      SelectionSorter sorter = new SelectionSorter(values);\n\
+      \      sorter.sort();\n      return values;\n   }\n}\n"
+  placeholder: "/**\n   This class sorts an array, using a modified selection sort \n   algorithm\n*/\npublic class SelectionSorter\n\
+    {\n   /**\n      Constructs a selection sorter.\n      @param anArray the array to sort\n   */\n   public SelectionSorter(int[]\
+    \ anArray)\n   {\n      a = anArray;\n   }\n\n   /**\n      Sorts the array managed by this selection sorter.\n   */\n\
+    \   public void sort()\n   {  \n      // TODO: add loop bounds\n      for (int i = ...; i > ...; i--)\n      {  \n   \
+    \      int maxPos = maximumPosition(i);\n         swap(maxPos, i);\n      }\n   }\n\n   /**\n      Finds the largest element\
+    \ in a subrange of the array.\n      @param to the last position in a to compare\n      @return the position of the largest\
+    \ element in the\n      range a[0] . . . a[to]\n   */\n   private int maximumPosition(int to)\n   {\n      // your work\
+    \ here\n   }\n\n   /**\n      Swaps two entries of the array.\n      @param i the first position to swap\n      @param\
+    \ j the second position to swap\n   */\n   private void swap(int i, int j)\n   {\n      int temp = a[i];\n      a[i] =\
+    \ a[j];\n      a[j] = temp;\n   }\n\n   private int[] a;\n   \n   // this method is used to check your work\n   public\
+    \ static int[] check(int[] values)\n   {\n      SelectionSorter sorter = new SelectionSorter(values);\n      sorter.sort();\n\
+    \      return values;\n   }\n}\n"
 testcases:
 - title: Solution Verification
   visible: true

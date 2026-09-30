@@ -28,21 +28,16 @@ statement: "<p>Your task is to find out what happens when you call the <code>toU
   \ then include the four Unicode hex digits. For example, the Java string with the contents <i>San José</i> is written as\
   \ <code>&quot;San Jos\\u00E9&quot;</code>.</p>"
 elements:
-- type: locked
+- type: editable
   location:
     snippet: "public class UppercaseTester\n{\n   public static void main(String[] args)\n   {\n      String lower1 = \"hello\"\
       ;            \n      String upper1 = lower1.toUpperCase();\n      \n      System.out.println(upper1);\n      System.out.println(\"\
       Expected: HELLO\");\n      \n      // Now compute and print the uppercase versions\n      // of the strings San José\
-      \ and Fuß. Also print the\n      // expected values"
-- type: editable
-  location:
-    snippet: ".\n\n      ...      \n"
-  placeholder: ".\n\n      ...      \n"
-- type: locked
-  location:
-    snippet: |2
-         }
-      }
+      \ and Fuß. Also print the\n      // expected values.\n\n      ...      \n   }\n}\n"
+  placeholder: "public class UppercaseTester\n{\n   public static void main(String[] args)\n   {\n      String lower1 = \"\
+    hello\";            \n      String upper1 = lower1.toUpperCase();\n      \n      System.out.println(upper1);\n      System.out.println(\"\
+    Expected: HELLO\");\n      \n      // Now compute and print the uppercase versions\n      // of the strings San José and\
+    \ Fuß. Also print the\n      // expected values.\n\n      ...      \n   }\n}\n"
 testcases:
 - title: Solution Verification
   visible: true

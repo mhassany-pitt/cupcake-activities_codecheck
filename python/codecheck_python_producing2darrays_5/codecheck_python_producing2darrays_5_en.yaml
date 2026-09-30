@@ -22,24 +22,16 @@ runtime:
   version: '3'
 statement: Given two two-dimensional arrays with the same number of rows, return a list that places them side by side.
 elements:
-- type: locked
+- type: editable
   location:
     snippet: "\n# Given two two-dimensional rectangular arrays with the same \n# number of rows, return a two-dimensional\
       \ array that places \n# them side by side in the following pattern:\n# a[0][0] a[0][1] ... a[0][n] b[0][0] b[0][1] ...\
-      \ b[0][m]\n# a[1][0] a[1][1] ... a[1][n] b[1][0] b[1][1] ... b[1][m].\n"
-- type: editable
-  location:
-    snippet: |+
-      # ...
-
-  placeholder: |+
-    # ...
-
-- type: locked
-  location:
-    snippet: |
-      def sideBySide(a, b):
-         # Your code here...
+      \ b[0][m]\n# a[1][0] a[1][1] ... a[1][n] b[1][0] b[1][1] ... b[1][m].\n# ...\n\ndef sideBySide(a, b):\n   # Your code\
+      \ here...\n"
+  placeholder: "\n# Given two two-dimensional rectangular arrays with the same \n# number of rows, return a two-dimensional\
+    \ array that places \n# them side by side in the following pattern:\n# a[0][0] a[0][1] ... a[0][n] b[0][0] b[0][1] ...\
+    \ b[0][m]\n# a[1][0] a[1][1] ... a[1][n] b[1][0] b[1][1] ... b[1][m].\n# ...\n\ndef sideBySide(a, b):\n   # Your code\
+    \ here...\n"
 testcases:
 - title: Solution Verification
   visible: true

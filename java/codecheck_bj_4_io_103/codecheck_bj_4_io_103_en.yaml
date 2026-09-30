@@ -27,22 +27,28 @@ statement: |-
 elements:
 - type: editable
   location:
-    snippet: |
-      // TODO: Modify the constructor to throw an IllegalArgumentException
-  placeholder: |
-    // TODO: Modify the constructor to throw an IllegalArgumentException
-- type: locked
-  location:
-    snippet: "// if the initial balance or interest rate is < 0\n\n/**\n   An account that earns interest at a fixed rate.\n\
-      */\npublic class SavingsAccount extends BankAccount\n{  \n   /**\n      Constructs a bank account with a given interest\
-      \ rate.\n      @balance initialBalance the initial balance\n      @param rate the interest rate\n   */\n   private double\
-      \ interestRate;\n     \n   public SavingsAccount(double initialBalance, double rate) \n   {  \n      super(initialBalance);\n\
-      \      interestRate = rate;\n   }\n\n   /**\n      Adds the earned interest to the account balance.\n   */\n   public\
-      \ void addInterest() \n   {  \n      double interest = getBalance() * interestRate / 100;\n      deposit(interest);\
-      \ \n   }\n\n   // This method checks your work.\n   \n   public static String check(double initialBalance, double rate)\n\
-      \   {\n      try\n      {\n         SavingsAccount account = new SavingsAccount(initialBalance, rate);\n         return\
-      \ \"constructed\";\n      }\n      catch (IllegalArgumentException ex)\n      {\n         return \"illegal argument\"\
-      ;\n      }\n      catch (Exception ex)\n      {\n         return \"another error\";\n      }\n   }\n}\n"
+    snippet: "// TODO: Modify the constructor to throw an IllegalArgumentException\n// if the initial balance or interest\
+      \ rate is < 0\n\n/**\n   An account that earns interest at a fixed rate.\n*/\npublic class SavingsAccount extends BankAccount\n\
+      {  \n   /**\n      Constructs a bank account with a given interest rate.\n      @balance initialBalance the initial\
+      \ balance\n      @param rate the interest rate\n   */\n   private double interestRate;\n     \n   public SavingsAccount(double\
+      \ initialBalance, double rate) \n   {  \n      super(initialBalance);\n      interestRate = rate;\n   }\n\n   /**\n\
+      \      Adds the earned interest to the account balance.\n   */\n   public void addInterest() \n   {  \n      double\
+      \ interest = getBalance() * interestRate / 100;\n      deposit(interest); \n   }\n\n   // This method checks your work.\n\
+      \   \n   public static String check(double initialBalance, double rate)\n   {\n      try\n      {\n         SavingsAccount\
+      \ account = new SavingsAccount(initialBalance, rate);\n         return \"constructed\";\n      }\n      catch (IllegalArgumentException\
+      \ ex)\n      {\n         return \"illegal argument\";\n      }\n      catch (Exception ex)\n      {\n         return\
+      \ \"another error\";\n      }\n   }\n}\n"
+  placeholder: "// TODO: Modify the constructor to throw an IllegalArgumentException\n// if the initial balance or interest\
+    \ rate is < 0\n\n/**\n   An account that earns interest at a fixed rate.\n*/\npublic class SavingsAccount extends BankAccount\n\
+    {  \n   /**\n      Constructs a bank account with a given interest rate.\n      @balance initialBalance the initial balance\n\
+    \      @param rate the interest rate\n   */\n   private double interestRate;\n     \n   public SavingsAccount(double initialBalance,\
+    \ double rate) \n   {  \n      super(initialBalance);\n      interestRate = rate;\n   }\n\n   /**\n      Adds the earned\
+    \ interest to the account balance.\n   */\n   public void addInterest() \n   {  \n      double interest = getBalance()\
+    \ * interestRate / 100;\n      deposit(interest); \n   }\n\n   // This method checks your work.\n   \n   public static\
+    \ String check(double initialBalance, double rate)\n   {\n      try\n      {\n         SavingsAccount account = new SavingsAccount(initialBalance,\
+    \ rate);\n         return \"constructed\";\n      }\n      catch (IllegalArgumentException ex)\n      {\n         return\
+    \ \"illegal argument\";\n      }\n      catch (Exception ex)\n      {\n         return \"another error\";\n      }\n \
+    \  }\n}\n"
 testcases:
 - title: Solution Verification
   visible: true

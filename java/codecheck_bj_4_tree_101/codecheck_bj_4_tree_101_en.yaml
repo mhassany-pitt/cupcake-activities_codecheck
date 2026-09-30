@@ -30,7 +30,7 @@ statement: |-
 
       <pre>{ " ", "M", "a", "b", "d", "e", "h", "i", "l", "m", "r", "t", "y" }</pre>
 elements:
-- type: locked
+- type: editable
   location:
     snippet: |
       import java.util.Set;
@@ -40,17 +40,20 @@ elements:
       {
          public Set<String> makeLetterSet(String str)
          {
-- type: editable
-  location:
-    snippet: |2
             // TODO: Complete method
-  placeholder: |2
-          // TODO: Complete method
-- type: locked
-  location:
-    snippet: |2
          }
       }
+  placeholder: |
+    import java.util.Set;
+    import java.util.TreeSet;
+
+    public class LetterSet
+    {
+       public Set<String> makeLetterSet(String str)
+       {
+          // TODO: Complete method
+       }
+    }
 testcases:
 - title: Solution Verification
   visible: true

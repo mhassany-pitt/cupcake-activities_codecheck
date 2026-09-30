@@ -22,16 +22,12 @@ runtime:
   version: '3'
 statement: Given an integer n, return a list containing 1 2 2 3 3 3 4 4 4 4 ... and finally n repeated n times.
 elements:
-- type: locked
-  location:
-    snippet: "\n# Given an integer n, return a list containing \n# 1 2 2 3 3 3 4 4 4 4 ... and finally n repeated n times.\n\
-      # You may assume n is 0 or greater.\n\ndef reapeatNumTimes(n):\n"
 - type: editable
   location:
-    snippet: |2
-         # Your code here...
-  placeholder: |2
-       # Your code here...
+    snippet: "\n# Given an integer n, return a list containing \n# 1 2 2 3 3 3 4 4 4 4 ... and finally n repeated n times.\n\
+      # You may assume n is 0 or greater.\n\ndef reapeatNumTimes(n):\n   # Your code here...\n"
+  placeholder: "\n# Given an integer n, return a list containing \n# 1 2 2 3 3 3 4 4 4 4 ... and finally n repeated n times.\n\
+    # You may assume n is 0 or greater.\n\ndef reapeatNumTimes(n):\n   # Your code here...\n"
 testcases:
 - title: Solution Verification
   visible: true

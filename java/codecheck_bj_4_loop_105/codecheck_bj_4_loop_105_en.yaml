@@ -25,27 +25,14 @@ statement: |-
       contains two digits 7. </p><p>Hint: Repeatedly compute <code>% 10</code> and
       <code>/ 10</code>. </p>
 elements:
-- type: locked
-  location:
-    snippet: |
-      public class Numbers
-      {
-         /**
-            Counts the number of digits with value 7 in a given number
-            @param n any non-negative number
-            @return the number of digits with value 7 in the decimal representation of n
-         */
-         public int countSevens(int n)
-         {
 - type: editable
   location:
-    snippet: "      // your work here\n   \n   \n   \n   \n   \n   \n"
-  placeholder: "      // your work here\n   \n   \n   \n   \n   \n   \n"
-- type: locked
-  location:
-    snippet: |2
-         }
-      }
+    snippet: "public class Numbers\n{\n   /**\n      Counts the number of digits with value 7 in a given number\n      @param\
+      \ n any non-negative number\n      @return the number of digits with value 7 in the decimal representation of n\n  \
+      \ */\n   public int countSevens(int n)\n   {\n      // your work here\n   \n   \n   \n   \n   \n   \n   }\n}\n"
+  placeholder: "public class Numbers\n{\n   /**\n      Counts the number of digits with value 7 in a given number\n      @param\
+    \ n any non-negative number\n      @return the number of digits with value 7 in the decimal representation of n\n   */\n\
+    \   public int countSevens(int n)\n   {\n      // your work here\n   \n   \n   \n   \n   \n   \n   }\n}\n"
 testcases:
 - title: Solution Verification
   visible: true

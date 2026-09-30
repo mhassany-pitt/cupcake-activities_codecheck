@@ -46,43 +46,21 @@ elements:
 - type: editable
   location:
     snippet: "/* \n   TODO: Complete this class so that the title is printed\n   centered in the rectangle. Hint: Override\
-      \ printLine.\n*/\n\n"
+      \ printLine.\n*/\n\n/**\n   A rectangle whose interior is filled with a pattern\n   obtained by repeating a character.\n\
+      */\npublic class TitledRectangle extends Rectangle\n{\n   /**\n      Constructs a rectangle with a given width, height,\
+      \ and title\n      @param aWidth the width (including the corners)\n      @param aHeight the height (including the corners)\n\
+      \      @param aTitle the title\n   */\n   public TitledRectangle(int aWidth, int aHeight, String aTitle)\n   {\n   \
+      \   super(aWidth, aHeight);\n      title = aTitle;\n   }\n\n\n\n\n   private String title;\n\n   // The following method\
+      \ tests your class\n\n   public static void main(String[] args)\n   {\n      TitledRectangle tr = new TitledRectangle(15,\
+      \ 7, \"Hello\");\n      tr.print();\n   }\n}\n"
   placeholder: "/* \n   TODO: Complete this class so that the title is printed\n   centered in the rectangle. Hint: Override\
-    \ printLine.\n*/\n\n"
-- type: locked
-  location:
-    snippet: |
-      /**
-         A rectangle whose interior is filled with a pattern
-         obtained by repeating a character.
-      */
-      public class TitledRectangle extends Rectangle
-      {
-         /**
-            Constructs a rectangle with a given width, height, and title
-            @param aWidth the width (including the corners)
-            @param aHeight the height (including the corners)
-            @param aTitle the title
-         */
-         public TitledRectangle(int aWidth, int aHeight, String aTitle)
-         {
-            super(aWidth, aHeight);
-            title = aTitle;
-         }
-
-
-
-
-         private String title;
-
-         // The following method tests your class
-
-         public static void main(String[] args)
-         {
-            TitledRectangle tr = new TitledRectangle(15, 7, "Hello");
-            tr.print();
-         }
-      }
+    \ printLine.\n*/\n\n/**\n   A rectangle whose interior is filled with a pattern\n   obtained by repeating a character.\n\
+    */\npublic class TitledRectangle extends Rectangle\n{\n   /**\n      Constructs a rectangle with a given width, height,\
+    \ and title\n      @param aWidth the width (including the corners)\n      @param aHeight the height (including the corners)\n\
+    \      @param aTitle the title\n   */\n   public TitledRectangle(int aWidth, int aHeight, String aTitle)\n   {\n     \
+    \ super(aWidth, aHeight);\n      title = aTitle;\n   }\n\n\n\n\n   private String title;\n\n   // The following method\
+    \ tests your class\n\n   public static void main(String[] args)\n   {\n      TitledRectangle tr = new TitledRectangle(15,\
+    \ 7, \"Hello\");\n      tr.print();\n   }\n}\n"
 testcases:
 - title: Solution Verification
   visible: true

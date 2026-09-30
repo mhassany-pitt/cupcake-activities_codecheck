@@ -22,16 +22,12 @@ runtime:
   version: '3'
 statement: Given a two-dimensional array of integers, return a list of the largest element in each row.
 elements:
-- type: locked
-  location:
-    snippet: "\n# Given a two-dimensional array of integers, \n# return a list of the largest element in each row.\n\ndef\
-      \ largestByRow(arr):\n"
 - type: editable
   location:
-    snippet: |2
-         # Your code here...
-  placeholder: |2
-       # Your code here...
+    snippet: "\n# Given a two-dimensional array of integers, \n# return a list of the largest element in each row.\n\ndef\
+      \ largestByRow(arr):\n   # Your code here...\n"
+  placeholder: "\n# Given a two-dimensional array of integers, \n# return a list of the largest element in each row.\n\ndef\
+    \ largestByRow(arr):\n   # Your code here...\n"
 testcases:
 - title: Solution Verification
   visible: true

@@ -22,16 +22,14 @@ runtime:
   version: '3'
 statement: Given three input strings, print all but the shortest one.
 elements:
-- type: locked
-  location:
-    snippet: "\n# Given three input strings, print all but the shortest one, in the order given,\n# separated by a space.\
-      \ If all three string lengths are equal, print \"All Equal\".\n\ns1 = 'hi' \ns2 = 'hello' \ns3 = 'morning' \n\n"
 - type: editable
   location:
-    snippet: |
-      # Your code here...
-  placeholder: |
-    # Your code here...
+    snippet: "\n# Given three input strings, print all but the shortest one, in the order given,\n# separated by a space.\
+      \ If all three string lengths are equal, print \"All Equal\".\n\ns1 = 'hi' \ns2 = 'hello' \ns3 = 'morning' \n\n# Your\
+      \ code here...\n"
+  placeholder: "\n# Given three input strings, print all but the shortest one, in the order given,\n# separated by a space.\
+    \ If all three string lengths are equal, print \"All Equal\".\n\ns1 = 'hi' \ns2 = 'hello' \ns3 = 'morning' \n\n# Your\
+    \ code here...\n"
 testcases:
 - title: Solution Verification
   visible: true

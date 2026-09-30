@@ -22,18 +22,19 @@ runtime:
   version: '3'
 statement: Given an integer n, return a list of length n containing 1 -1 1 -1 ...
 elements:
-- type: locked
+- type: editable
   location:
     snippet: |2
 
       # Given an integer n, return a list of length n containing 1 -1 1 -1 ...
 
       def evenOdd(n):
-- type: editable
-  location:
-    snippet: |2
          # Your code here...
   placeholder: |2
+
+    # Given an integer n, return a list of length n containing 1 -1 1 -1 ...
+
+    def evenOdd(n):
        # Your code here...
 testcases:
 - title: Solution Verification

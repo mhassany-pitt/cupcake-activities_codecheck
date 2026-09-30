@@ -28,7 +28,7 @@ statement: |-
 
       <p>should return 5. </p>
 elements:
-- type: locked
+- type: editable
   location:
     snippet: "public class Sentence implements Measurable\n{\n   /**\n      Constructs a sentence.\n      @param text the\
       \ text of the sentence. \n   */\n   public Sentence(String text)\n   {\n      int n = text.length();\n      String punctuation\
@@ -37,17 +37,19 @@ elements:
       \ is < 0\n      or >= the number of words in this sentence\n   */\n   public String getWord(int i)\n   {\n      if (i\
       \ >= 0 && i < words.length)\n         return words[i];\n      else\n         return \"\";\n   }\n   \n   public String\
       \ toString()\n   {\n      String r = \"\";\n      for (String w : words)\n      {\n         if (r.length() > 0) r +=\
-      \ \" \";\n         r += w;\n      }\n      return r + punctuation;\n   }\n\n"
-- type: editable
-  location:
-    snippet: |2
-         // TODO: Do what it takes to implement the measurable interface
-  placeholder: |2
-       // TODO: Do what it takes to implement the measurable interface
-- type: locked
-  location:
-    snippet: "   // so that the measure of a sentence is the number of words.\n   \n   private String[] words;\n   private\
-      \ String punctuation;\n}\n"
+      \ \" \";\n         r += w;\n      }\n      return r + punctuation;\n   }\n\n   // TODO: Do what it takes to implement\
+      \ the measurable interface\n   // so that the measure of a sentence is the number of words.\n   \n   private String[]\
+      \ words;\n   private String punctuation;\n}\n"
+  placeholder: "public class Sentence implements Measurable\n{\n   /**\n      Constructs a sentence.\n      @param text the\
+    \ text of the sentence. \n   */\n   public Sentence(String text)\n   {\n      int n = text.length();\n      String punctuation\
+    \ = text.substring(n - 1, n);\n      words = text.substring(0, n - 1).split(\"\\\\s+\");\n   }\n   \n   /**\n      Returns\
+    \ a word in this sentence.\n      @param the index of the word \n      @return the ith word or an empty string if i is\
+    \ < 0\n      or >= the number of words in this sentence\n   */\n   public String getWord(int i)\n   {\n      if (i >=\
+    \ 0 && i < words.length)\n         return words[i];\n      else\n         return \"\";\n   }\n   \n   public String toString()\n\
+    \   {\n      String r = \"\";\n      for (String w : words)\n      {\n         if (r.length() > 0) r += \" \";\n     \
+    \    r += w;\n      }\n      return r + punctuation;\n   }\n\n   // TODO: Do what it takes to implement the measurable\
+    \ interface\n   // so that the measure of a sentence is the number of words.\n   \n   private String[] words;\n   private\
+    \ String punctuation;\n}\n"
 testcases:
 - title: Solution Verification
   visible: true

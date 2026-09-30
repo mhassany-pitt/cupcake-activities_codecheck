@@ -22,18 +22,16 @@ runtime:
   version: '3'
 statement: Repeat with compass directions NW, NE, SW, SE.
 elements:
-- type: locked
+- type: editable
   location:
     snippet: "\n# Given a point with integer coordinates (x, y) and a compass direction NW, NE, SW, SE, \n# print the neighboring\
       \ lattice point in the given direction. A lattice is a structure\n# in which all points are equidistant away from one\
       \ another, in this case, each is \n# point is 1 unit away in either the x or y direction. Print the new point in the\
-      \ \n# format (x, y).\n\nx = 0 \ny = 0 \ndirection = 'NW' \n\n"
-- type: editable
-  location:
-    snippet: |
-      # Your code here...
-  placeholder: |
-    # Your code here...
+      \ \n# format (x, y).\n\nx = 0 \ny = 0 \ndirection = 'NW' \n\n# Your code here...\n"
+  placeholder: "\n# Given a point with integer coordinates (x, y) and a compass direction NW, NE, SW, SE, \n# print the neighboring\
+    \ lattice point in the given direction. A lattice is a structure\n# in which all points are equidistant away from one\
+    \ another, in this case, each is \n# point is 1 unit away in either the x or y direction. Print the new point in the \n\
+    # format (x, y).\n\nx = 0 \ny = 0 \ndirection = 'NW' \n\n# Your code here...\n"
 testcases:
 - title: Solution Verification
   visible: true

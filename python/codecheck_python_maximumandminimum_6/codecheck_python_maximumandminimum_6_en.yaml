@@ -22,18 +22,19 @@ runtime:
   version: '3'
 statement: Given a list of integers, return the second-largest element.
 elements:
-- type: locked
+- type: editable
   location:
     snippet: |2
 
       # Given a list of integers, return the second-largest element.
 
       def secondLargestElement(arr):
-- type: editable
-  location:
-    snippet: |2
          # Your code here...
   placeholder: |2
+
+    # Given a list of integers, return the second-largest element.
+
+    def secondLargestElement(arr):
        # Your code here...
 testcases:
 - title: Solution Verification

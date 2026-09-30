@@ -22,15 +22,12 @@ runtime:
   version: '3'
 statement: Given a list of integers, return a list of length 2 containing the minimum and the maximum.
 elements:
-- type: locked
-  location:
-    snippet: "\n# Given a list of integers, return a list of \n# length 2 containing the minimum and the maximum.\n\ndef getMinAndMax(arr):\n"
 - type: editable
   location:
-    snippet: |2
-         # Your code here...
-  placeholder: |2
-       # Your code here...
+    snippet: "\n# Given a list of integers, return a list of \n# length 2 containing the minimum and the maximum.\n\ndef getMinAndMax(arr):\n\
+      \   # Your code here...\n"
+  placeholder: "\n# Given a list of integers, return a list of \n# length 2 containing the minimum and the maximum.\n\ndef\
+    \ getMinAndMax(arr):\n   # Your code here...\n"
 testcases:
 - title: Solution Verification
   visible: true

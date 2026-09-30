@@ -29,35 +29,16 @@ statement: |-
   becomes
   <pre>25 36 45 16 1 4 9</pre>
 elements:
-- type: locked
-  location:
-    snippet: |
-      public class Swapper
-      {
-         /**
-            This method swaps the first and second half of the given array.
-            @param values an array
-         */
-         public void swapFirstAndSecondHalf(int[] values)
-         {
 - type: editable
   location:
-    snippet: |2+
-            // your work here
-
-
-
-
-  placeholder: |2+
-          // your work here
-
-
-
-
-- type: locked
-  location:
-    snippet: "   }\n   \n   \n   // This method is used to check your work\n   public int[] check(int[] values)\n   {\n  \
+    snippet: "public class Swapper\n{\n   /**\n      This method swaps the first and second half of the given array.\n   \
+      \   @param values an array\n   */\n   public void swapFirstAndSecondHalf(int[] values)\n   {\n      // your work here\n\
+      \n\n\n\n   }\n   \n   \n   // This method is used to check your work\n   public int[] check(int[] values)\n   {\n  \
       \    swapFirstAndSecondHalf(values);\n      return values;\n   }\n}\n"
+  placeholder: "public class Swapper\n{\n   /**\n      This method swaps the first and second half of the given array.\n \
+    \     @param values an array\n   */\n   public void swapFirstAndSecondHalf(int[] values)\n   {\n      // your work here\n\
+    \n\n\n\n   }\n   \n   \n   // This method is used to check your work\n   public int[] check(int[] values)\n   {\n    \
+    \  swapFirstAndSecondHalf(values);\n      return values;\n   }\n}\n"
 testcases:
 - title: Solution Verification
   visible: true

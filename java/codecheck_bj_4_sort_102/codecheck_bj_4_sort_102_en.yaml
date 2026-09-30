@@ -25,31 +25,37 @@ statement: |-
       implementation used in section 15.1. Count each occurrence of a[i] as a
       visit. For example, each call to <code>swap</code> counts as four visits. </p>
 elements:
-- type: locked
+- type: editable
   location:
     snippet: "/**\n   This class sorts an array, using the selection sort \n   algorithm\n*/\npublic class SelectionSorter\n\
       {\n   /**\n      Constructs a selection sorter.\n      @param anArray the array to sort\n   */\n   public SelectionSorter(int[]\
       \ anArray)\n   {\n      a = anArray;\n   }\n\n   /**\n      Sorts the array managed by this selection sorter.\n   */\n\
-      \   public void sort()\n   {\n"
-- type: editable
-  location:
-    snippet: |2
-            // TODO: reset visitCount
-  placeholder: |2
-          // TODO: reset visitCount
-- type: locked
-  location:
-    snippet: "      for (int i = 0; i < a.length - 1; i++)\n      {  \n         int minPos = minimumPosition(i);\n       \
-      \  swap(minPos, i);\n      }\n   }\n\n   /**\n      Finds the smallest element in a tail range of the array.\n     \
-      \ @param from the first position in a to compare\n      @return the position of the smallest element in the\n      range\
-      \ a[from] . . . a[a.length - 1]\n   */\n   private int minimumPosition(int from)\n   {\n      // TODO: update visitCount\n\
-      \      int minPos = from;\n      for (int i = from + 1; i < a.length; i++)\n         if (a[i] < a[minPos]) minPos =\
-      \ i;\n      return minPos;\n   }\n\n   /**\n      Swaps two entries of the array.\n      @param i the first position\
-      \ to swap\n      @param j the second position to swap\n   */\n   private void swap(int i, int j)\n   {\n      // TODO:\
-      \ update visitCount\n      int temp = a[i];\n      a[i] = a[j];\n      a[j] = temp;\n   }\n   \n   public int getVisitCount()\
-      \ { return visitCount; }\n\n   private int[] a;\n   private int visitCount;\n   \n   // this method is used to check\
-      \ your work\n   public static int check(int[] values)\n   {\n      SelectionSorter sorter = new SelectionSorter(values);\n\
-      \      sorter.sort();\n      return sorter.getVisitCount();      \n   }\n}\n"
+      \   public void sort()\n   {\n      // TODO: reset visitCount\n      for (int i = 0; i < a.length - 1; i++)\n      {\
+      \  \n         int minPos = minimumPosition(i);\n         swap(minPos, i);\n      }\n   }\n\n   /**\n      Finds the\
+      \ smallest element in a tail range of the array.\n      @param from the first position in a to compare\n      @return\
+      \ the position of the smallest element in the\n      range a[from] . . . a[a.length - 1]\n   */\n   private int minimumPosition(int\
+      \ from)\n   {\n      // TODO: update visitCount\n      int minPos = from;\n      for (int i = from + 1; i < a.length;\
+      \ i++)\n         if (a[i] < a[minPos]) minPos = i;\n      return minPos;\n   }\n\n   /**\n      Swaps two entries of\
+      \ the array.\n      @param i the first position to swap\n      @param j the second position to swap\n   */\n   private\
+      \ void swap(int i, int j)\n   {\n      // TODO: update visitCount\n      int temp = a[i];\n      a[i] = a[j];\n    \
+      \  a[j] = temp;\n   }\n   \n   public int getVisitCount() { return visitCount; }\n\n   private int[] a;\n   private\
+      \ int visitCount;\n   \n   // this method is used to check your work\n   public static int check(int[] values)\n   {\n\
+      \      SelectionSorter sorter = new SelectionSorter(values);\n      sorter.sort();\n      return sorter.getVisitCount();\
+      \      \n   }\n}\n"
+  placeholder: "/**\n   This class sorts an array, using the selection sort \n   algorithm\n*/\npublic class SelectionSorter\n\
+    {\n   /**\n      Constructs a selection sorter.\n      @param anArray the array to sort\n   */\n   public SelectionSorter(int[]\
+    \ anArray)\n   {\n      a = anArray;\n   }\n\n   /**\n      Sorts the array managed by this selection sorter.\n   */\n\
+    \   public void sort()\n   {\n      // TODO: reset visitCount\n      for (int i = 0; i < a.length - 1; i++)\n      { \
+    \ \n         int minPos = minimumPosition(i);\n         swap(minPos, i);\n      }\n   }\n\n   /**\n      Finds the smallest\
+    \ element in a tail range of the array.\n      @param from the first position in a to compare\n      @return the position\
+    \ of the smallest element in the\n      range a[from] . . . a[a.length - 1]\n   */\n   private int minimumPosition(int\
+    \ from)\n   {\n      // TODO: update visitCount\n      int minPos = from;\n      for (int i = from + 1; i < a.length;\
+    \ i++)\n         if (a[i] < a[minPos]) minPos = i;\n      return minPos;\n   }\n\n   /**\n      Swaps two entries of the\
+    \ array.\n      @param i the first position to swap\n      @param j the second position to swap\n   */\n   private void\
+    \ swap(int i, int j)\n   {\n      // TODO: update visitCount\n      int temp = a[i];\n      a[i] = a[j];\n      a[j] =\
+    \ temp;\n   }\n   \n   public int getVisitCount() { return visitCount; }\n\n   private int[] a;\n   private int visitCount;\n\
+    \   \n   // this method is used to check your work\n   public static int check(int[] values)\n   {\n      SelectionSorter\
+    \ sorter = new SelectionSorter(values);\n      sorter.sort();\n      return sorter.getVisitCount();      \n   }\n}\n"
 testcases:
 - title: Solution Verification
   visible: true

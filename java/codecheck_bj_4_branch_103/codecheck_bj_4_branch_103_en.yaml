@@ -26,28 +26,18 @@ statement: |-
       string has length 1, and that it is a letter between A and the last valid
       choice for the problem.</p>
 elements:
-- type: locked
+- type: editable
   location:
     snippet: "public class Inputs\n{\n   /**\n      Gets the choice that the user provided, or null if the \n      user didn't\
       \ provide a valid choice.\n      @param input the user input\n      @param maxChoice the maximum valid choice, e.g.\
       \ \"D\" if there\n      are four choices.\n      @return the user input if it was a valid choice (i.e. length 1\n  \
       \    and between \"A\" and maxChoice), null otherwise\n   */\n   public String getChoice(String input, String maxChoice)\n\
-      \   {\n"
-- type: editable
-  location:
-    snippet: |2+
-            // Your work here
-
-
-  placeholder: |2+
-          // Your work here
-
-
-- type: locked
-  location:
-    snippet: |2
-         }
-      }
+      \   {\n      // Your work here\n\n\n   }\n}\n"
+  placeholder: "public class Inputs\n{\n   /**\n      Gets the choice that the user provided, or null if the \n      user\
+    \ didn't provide a valid choice.\n      @param input the user input\n      @param maxChoice the maximum valid choice,\
+    \ e.g. \"D\" if there\n      are four choices.\n      @return the user input if it was a valid choice (i.e. length 1\n\
+    \      and between \"A\" and maxChoice), null otherwise\n   */\n   public String getChoice(String input, String maxChoice)\n\
+    \   {\n      // Your work here\n\n\n   }\n}\n"
 testcases:
 - title: Solution Verification
   visible: true

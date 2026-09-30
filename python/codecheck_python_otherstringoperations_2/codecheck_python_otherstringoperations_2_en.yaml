@@ -22,17 +22,14 @@ runtime:
   version: '3'
 statement: Given a string s, return the first vowel that is doubled in the string.
 elements:
-- type: locked
+- type: editable
   location:
     snippet: "\n# Given a string s, return the first vowel that is doubled in the string. \n# For this exercise, consider\
       \ only the following vowels: a, e, i, o, u.\n# This problem is not case sensitive. If no vowel is doubled, return None.\n\
-      \n\ndef firstDoubledVowel(s):\n"
-- type: editable
-  location:
-    snippet: |2
-         # Your code here...
-  placeholder: |2
-       # Your code here...
+      \n\ndef firstDoubledVowel(s):\n   # Your code here...\n"
+  placeholder: "\n# Given a string s, return the first vowel that is doubled in the string. \n# For this exercise, consider\
+    \ only the following vowels: a, e, i, o, u.\n# This problem is not case sensitive. If no vowel is doubled, return None.\n\
+    \n\ndef firstDoubledVowel(s):\n   # Your code here...\n"
 testcases:
 - title: Solution Verification
   visible: true

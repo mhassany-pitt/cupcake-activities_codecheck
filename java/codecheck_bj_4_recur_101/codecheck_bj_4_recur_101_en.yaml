@@ -30,7 +30,7 @@ statement: |-
       volume of the bottom layer. Add the volume of the pyramid that is obtained
       by removing the bottom layer.</p>
 elements:
-- type: locked
+- type: editable
   location:
     snippet: |
       public class Pyramid
@@ -42,15 +42,7 @@ elements:
 
          public int getVolume()
          {
-- type: editable
-  location:
-    snippet: |2
             // your work here
-  placeholder: |2
-          // your work here
-- type: locked
-  location:
-    snippet: |2
          }
 
          private int length;
@@ -63,6 +55,29 @@ elements:
             return p.getVolume();
          }
       }
+  placeholder: |
+    public class Pyramid
+    {
+       public Pyramid(int sideLength)
+       {
+          length = sideLength;
+       }
+
+       public int getVolume()
+       {
+          // your work here
+       }
+
+       private int length;
+
+       // this method is used to check your work
+
+       public static int check(int n)
+       {
+          Pyramid p = new Pyramid(n);
+          return p.getVolume();
+       }
+    }
 testcases:
 - title: Solution Verification
   visible: true

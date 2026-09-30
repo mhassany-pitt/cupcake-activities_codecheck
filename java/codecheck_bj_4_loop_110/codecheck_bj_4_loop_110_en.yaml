@@ -30,7 +30,7 @@ statement: |-
   <code>Ellipse2D.Double</code> object that defines the circle and a
   <code>Line2D.Double</code> object that defines the string.</p>
 elements:
-- type: locked
+- type: editable
   location:
     snippet: "import javax.swing.JComponent;\nimport java.awt.Graphics;\nimport java.awt.Graphics2D;\nimport java.awt.Color;\n\
       import java.awt.Rectangle;\nimport java.util.Random;\n\n/**\n   This class displays a number of balloons.\n*/\npublic\
@@ -39,20 +39,17 @@ elements:
       \   {\n      balloonCount = n;\n   }\n      \n   public void paintComponent(Graphics g)\n   {\n     final Color SKY_BLUE\
       \ = new Color(165,218,239);\n     final int MAX_RADIUS = 30;\n\n     Graphics2D g2 = (Graphics2D) g;\n     // Draw the\
       \ sky\n     Rectangle sky = new Rectangle (0, 0 , getWidth(), getHeight());\n     g2.setColor(SKY_BLUE); \n     g2.fill(sky);\n\
-      \     // Use this random number generator\n     Random generator = new Random(42);\n\n     // Generate and draw balloons\n"
-- type: editable
-  location:
-    snippet: |2+
-           // Your work here
-
-  placeholder: |2+
-         // Your work here
-
-- type: locked
-  location:
-    snippet: |2
-         }
-      }
+      \     // Use this random number generator\n     Random generator = new Random(42);\n\n     // Generate and draw balloons\n\
+      \     // Your work here\n\n   }\n}\n"
+  placeholder: "import javax.swing.JComponent;\nimport java.awt.Graphics;\nimport java.awt.Graphics2D;\nimport java.awt.Color;\n\
+    import java.awt.Rectangle;\nimport java.util.Random;\n\n/**\n   This class displays a number of balloons.\n*/\npublic\
+    \ class BalloonComponent extends JComponent\n{\n   private int balloonCount;\n   \n   /**\n     Constructor for a BalloonComponent\
+    \ with a number of balloons\n     @param n the number of balloons to show\n   */\n   public BalloonComponent(int n)\n\
+    \   {\n      balloonCount = n;\n   }\n      \n   public void paintComponent(Graphics g)\n   {\n     final Color SKY_BLUE\
+    \ = new Color(165,218,239);\n     final int MAX_RADIUS = 30;\n\n     Graphics2D g2 = (Graphics2D) g;\n     // Draw the\
+    \ sky\n     Rectangle sky = new Rectangle (0, 0 , getWidth(), getHeight());\n     g2.setColor(SKY_BLUE); \n     g2.fill(sky);\n\
+    \     // Use this random number generator\n     Random generator = new Random(42);\n\n     // Generate and draw balloons\n\
+    \     // Your work here\n\n   }\n}\n"
 testcases:
 - title: Solution Verification
   visible: true

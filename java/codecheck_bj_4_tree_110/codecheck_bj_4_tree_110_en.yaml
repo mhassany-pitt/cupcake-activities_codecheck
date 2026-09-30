@@ -20,11 +20,9 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>
-  The program below will fail to run because the <code>Person</code> class does not
-  implement the <code>Comparable</code> interface. Modify the class so that the program
+  The program below will fail to run because the `Person` class does not
+  implement the `Comparable` interface. Modify the class so that the program
   runs correctly.
-  </p>
 elements:
 - type: editable
   location:

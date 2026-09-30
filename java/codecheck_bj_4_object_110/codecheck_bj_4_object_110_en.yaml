@@ -20,8 +20,9 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>Draw two intersecting rectangles and color their intersection black.</p>
-  <p>Use <code>draw</code> to draw the outline of <code>box1</code> and <code>box2</code>. Create a third rectangle, <code>box3</code>, where the two rectangles intersect.  Use <code>fill</code> to draw <code>box3</code> as a filled rectangle. </p>
+  Draw two intersecting rectangles and color their intersection black.
+
+  Use `draw` to draw the outline of `box1` and `box2`. Create a third rectangle, `box3`, where the two rectangles intersect.  Use `fill` to draw `box3` as a filled rectangle.
 elements:
 - type: editable
   location:

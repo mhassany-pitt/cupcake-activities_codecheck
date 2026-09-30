@@ -21,9 +21,8 @@ pedagogy:
 runtime:
   language: cpp
   version: '17'
-statement: "<p>Given a <code>vector&lt;vector&lt;int&gt;&gt;</code> and row/column positions \n<code>r</code>, <code>c</code>,\
-  \ return a 3x3 <code>vector</code> whose \nmiddle element is <code>arr[r][c]</code>, and whose neighbors are \ncopied from\
-  \ the original. Set non-existent neighbors to zero.\n</p>"
+statement: "Given a `vector&lt;vector&lt;int&gt;&gt;` and row/column positions \n`r`, `c`, return a 3x3 `vector` whose \n\
+  middle element is `arr[r][c]`, and whose neighbors are \ncopied from the original. Set non-existent neighbors to zero."
 elements:
 - type: locked
   location:

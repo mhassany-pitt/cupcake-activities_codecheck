@@ -21,8 +21,8 @@ pedagogy:
 runtime:
   language: cpp
   version: '17'
-statement: "<p>Given a two-dimensional array of integers and row/column positions r, c, \n return the largest neighbor in\
-  \ the compass directions N E S W NE NW SE SW.\n </p>"
+statement: "Given a two-dimensional array of integers and row/column positions r, c, \n return the largest neighbor in the\
+  \ compass directions N E S W NE NW SE SW."
 elements:
 - type: locked
   location:

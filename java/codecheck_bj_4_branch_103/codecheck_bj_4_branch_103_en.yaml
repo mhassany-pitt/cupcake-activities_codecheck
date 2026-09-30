@@ -20,11 +20,11 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>Consider a program that administers multiple-choice quizzes. The
+  Consider a program that administers multiple-choice quizzes. The
       student needs to provide a response such as A or D. Your job will be to
       check for input errors in the student response string. Check that the
       string has length 1, and that it is a letter between A and the last valid
-      choice for the problem.</p>
+      choice for the problem.
 elements:
 - type: editable
   location:

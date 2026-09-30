@@ -19,10 +19,9 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: <p>Write a method that computes how often each letter A-Z or a-z occurs in a string. Don't distinguish between
-  upper- and lowercase letters. Return an array of length 26. The <code>i</code><super>th</super> element contains the number
-  of times that the letter <code>'a' + i</code> or <code>'A' + i</code> occurs in the string. The string may contain other
-  characters that you should simply skip.</p>
+statement: Write a method that computes how often each letter A-Z or a-z occurs in a string. Don't distinguish between upper-
+  and lowercase letters. Return an array of length 26. The `i`<super>th</super> element contains the number of times that
+  the letter `'a' + i` or `'A' + i` occurs in the string. The string may contain other characters that you should simply skip.
 elements:
 - type: editable
   location:

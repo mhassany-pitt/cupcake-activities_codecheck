@@ -21,9 +21,8 @@ pedagogy:
 runtime:
   language: cpp
   version: '17'
-statement: "<p>Given a <code>vector&lt;vector&lt;int&gt;&gt; and a value <code>x</code>, \n   return the positions of all\
-  \ matching elements, as an <code>vector&lt;vector&lt;int&gt;&gt;.\n   If <code>x</code> is not found, return <code>[[-1,\
-  \ -1]]</code>.\n</p>"
+statement: "Given a `vector&lt;vector&lt;int&gt;&gt; and a value <code>x`, \n   return the positions of all matching elements,\
+  \ as an `vector&lt;vector&lt;int&gt;&gt;.\n   If <code>x` is not found, return `[[-1, -1]]`."
 elements:
 - type: locked
   location:

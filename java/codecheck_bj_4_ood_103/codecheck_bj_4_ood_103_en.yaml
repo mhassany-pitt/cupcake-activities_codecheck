@@ -19,18 +19,11 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: |-
-  <p>The invoice program assumes that prices are given in dollar. Other
-      currencies have different rules, and it makes sense to use an interface
-      that defines the essential operations required for money values. The interface <code>Money</code> is given below.</p>
-
-      <p>There will be classes (such as <code>Dollar</code> and <code>Euro</code>) that
-      implement this interface, but you need not know them.</p>
-
-      <p>In this assignment, the <code>Product</code> and <code>LineItem</code> classes
-      have been modified to use the <code>Money</code> interface. </p>
-
-      <p>Your task is to modify the <code>Invoice</code> class.</p>
+statement: "The invoice program assumes that prices are given in dollar. Other\n    currencies have different rules, and it\
+  \ makes sense to use an interface\n    that defines the essential operations required for money values. The interface `Money`\
+  \ is given below.\n\nThere will be classes (such as `Dollar` and `Euro`) that\n    implement this interface, but you need\
+  \ not know them.\n\nIn this assignment, the `Product` and `LineItem` classes\n    have been modified to use the `Money`\
+  \ interface. \n\nYour task is to modify the `Invoice` class."
 elements:
 - type: editable
   location:

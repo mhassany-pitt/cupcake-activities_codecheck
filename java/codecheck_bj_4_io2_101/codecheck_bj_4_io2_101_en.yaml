@@ -19,18 +19,11 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: |-
-  <p>The SuperCaesar cipher is just like the Caesar cipher, except that the
-      key value is incremented in each step. For example, if the initial key is
-      3, the key for the next byte is 4, and so on. The encryption of "eve" with
-      a key of 3 would be "hzj". </p>
-
-      <p>Complete the following class that computes this cipher. Note that you
-      need separate encryption and decryption methods.</p>
-
-      <p>The test procedure turns strings into in-memory streams of byte arrays.
-      This is convenient for testing, and it does not affect the implementation
-      of the cipher class. </p>
+statement: "The SuperCaesar cipher is just like the Caesar cipher, except that the\n    key value is incremented in each step.\
+  \ For example, if the initial key is\n    3, the key for the next byte is 4, and so on. The encryption of \"eve\" with\n\
+  \    a key of 3 would be \"hzj\". \n\nComplete the following class that computes this cipher. Note that you\n    need separate\
+  \ encryption and decryption methods.\n\nThe test procedure turns strings into in-memory streams of byte arrays.\n    This\
+  \ is convenient for testing, and it does not affect the implementation\n    of the cipher class."
 elements:
 - type: editable
   location:

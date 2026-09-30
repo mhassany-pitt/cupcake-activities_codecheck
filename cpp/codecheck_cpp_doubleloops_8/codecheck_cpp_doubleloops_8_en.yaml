@@ -21,8 +21,8 @@ pedagogy:
 runtime:
   language: cpp
   version: '17'
-statement: "<p>Given an array of integers, return the position of \nthe longest subsequence of consecutive integers a, a +\
-  \ 1, a + 2, ...\nYou may assume there is at least on element in the array.\n</p>"
+statement: "Given an array of integers, return the position of \nthe longest subsequence of consecutive integers a, a + 1,\
+  \ a + 2, ...\nYou may assume there is at least on element in the array."
 elements:
 - type: locked
   location:

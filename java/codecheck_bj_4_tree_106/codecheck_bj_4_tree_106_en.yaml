@@ -19,9 +19,7 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: |-
-  <p>
-  Implement a method that receives two arrays of strings and determines which words are unique to each.</p>
+statement: Implement a method that receives two arrays of strings and determines which words are unique to each.
 elements:
 - type: editable
   location:

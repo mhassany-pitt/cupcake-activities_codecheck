@@ -22,8 +22,7 @@ runtime:
   language: cpp
   version: '17'
 statement: "Given a array of integers, return the number of \npositive and the number of negative elements in \nthe array.\
-  \ Use the reference parameters\n<code>neg</code> and <code>pos</code> to return\nthe answer. <code>0</code> is neither negative,\n\
-  nor positive."
+  \ Use the reference parameters\n`neg` and `pos` to return\nthe answer. `0` is neither negative,\nnor positive."
 elements:
 - type: locked
   location:

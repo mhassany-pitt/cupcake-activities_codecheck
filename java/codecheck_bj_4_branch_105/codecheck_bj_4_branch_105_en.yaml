@@ -20,18 +20,18 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>A non-vertical line in the plane can be described by the slope/y
-      intercept equation</p>
+  A non-vertical line in the plane can be described by the slope/y
+      intercept equation
 
-      <p><i>y</i> = <i>m</i> <i>x</i> + <i>b</i></p>
+  *y* = *m* *x* + *b*
 
-      <p>The <code>Line</code> class below models lines that are given in this
-      way.</p>
+  The `Line` class below models lines that are given in this
+      way.
 
-      <p>Your job is to find out whether two lines intersect. Lines with
+  Your job is to find out whether two lines intersect. Lines with
       different slopes will always intersect. Lines with the same slope are
-      parallel, so they don't intersect, <i>except</i> when they are
-      identical.</p>
+      parallel, so they don't intersect, *except* when they are
+      identical.
 elements:
 - type: editable
   location:

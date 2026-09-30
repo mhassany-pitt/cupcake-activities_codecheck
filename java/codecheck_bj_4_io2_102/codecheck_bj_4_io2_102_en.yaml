@@ -20,22 +20,13 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: |-
-  <p>The HyperCaesar cipher is just like the Caesar cipher, except that the
-      key for each step is the initial key + the sum of the previously encoded
-      characters. For example, if the initial key is 3 and the text to be
-      encoded is "eve", then the first "e" is encoded with a key of 3. The next
-      letter is encoded with a key of 104 because the character "e" has Unicode
-      value 101. The third letter is encoded with a key of 222 becase the
-      character "v" has a code value of 118 and 222 = 3 + 101 + 118. The
-      summation process is carried out modulo 256. </p>
-
-      <p>(Despite its seeming complexity, this is not a safe cipher to use for
-      your secret correspondence. It is easy for anyone wishing to decode your
-      messages to try all 256 possible keys.)</p>
-
-      <p>Your task is to
-      implement the decryption method. </p>
+statement: "The HyperCaesar cipher is just like the Caesar cipher, except that the\n    key for each step is the initial key\
+  \ + the sum of the previously encoded\n    characters. For example, if the initial key is 3 and the text to be\n    encoded\
+  \ is \"eve\", then the first \"e\" is encoded with a key of 3. The next\n    letter is encoded with a key of 104 because\
+  \ the character \"e\" has Unicode\n    value 101. The third letter is encoded with a key of 222 becase the\n    character\
+  \ \"v\" has a code value of 118 and 222 = 3 + 101 + 118. The\n    summation process is carried out modulo 256. \n\n(Despite\
+  \ its seeming complexity, this is not a safe cipher to use for\n    your secret correspondence. It is easy for anyone wishing\
+  \ to decode your\n    messages to try all 256 possible keys.)\n\nYour task is to\n    implement the decryption method."
 elements:
 - type: editable
   location:

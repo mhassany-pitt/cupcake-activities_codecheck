@@ -20,15 +20,18 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>The following timer class measures the total time that has elapsed
-      after timing a number of events. Your job is to implement the <code>add</code>
-      method so that it correctly updates the <code>hours</code> and
-      <code>minutes</code> fields. For example, consider this sequence of
-      statements:</p>
-      <pre>Timer t = new Timer();
+  The following timer class measures the total time that has elapsed
+      after timing a number of events. Your job is to implement the `add`
+      method so that it correctly updates the `hours` and
+  `minutes` fields. For example, consider this sequence of
+      statements:
+
+  ```
+  Timer t = new Timer();
   t.add(40); // 40 minutes
   t.add(50); // another 50 minutes
-  System.out.println(t.getTotal()); // prints 1:30, one hour and 30 minutes</pre>
+  System.out.println(t.getTotal()); // prints 1:30, one hour and 30 minutes
+  ```
 elements:
 - type: editable
   location:

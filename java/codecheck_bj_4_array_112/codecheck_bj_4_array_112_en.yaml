@@ -20,14 +20,29 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>Your task is to complete a method that swaps the first and second half of an array of integers. For example, if the array contains the values</p>
-  <pre>1 4 9 16 25 36</pre>
+  Your task is to complete a method that swaps the first and second half of an array of integers. For example, if the array contains the values
+
+  ```
+  1 4 9 16 25 36
+  ```
+
   then after calling the method, it should contain the values
-  <pre>16 25 36 1 4 9</pre>
-  <p>If the array contains an odd number of elements, leave the middle element in place. For example,</p>
-  <pre>1 4 9 16 25 36 45</pre>
+
+  ```
+  16 25 36 1 4 9
+  ```
+
+  If the array contains an odd number of elements, leave the middle element in place. For example,
+
+  ```
+  1 4 9 16 25 36 45
+  ```
+
   becomes
-  <pre>25 36 45 16 1 4 9</pre>
+
+  ```
+  25 36 45 16 1 4 9
+  ```
 elements:
 - type: editable
   location:

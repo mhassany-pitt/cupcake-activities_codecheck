@@ -21,9 +21,9 @@ pedagogy:
 runtime:
   language: cpp
   version: '17'
-statement: "<p>\n   Given a two-dimensional array of integers, a row index <code>r</code>, \n   and a column index <code>c</code>,\
-  \ return the sum of all elements in the \n   given row and column. The element where the row and column \n   meet should\
-  \ only be included once. You may assume that the\n   given index for row/column exists.\n</p>"
+statement: "Given a two-dimensional array of integers, a row index `r`, \n   and a column index `c`, return the sum of all\
+  \ elements in the \n   given row and column. The element where the row and column \n   meet should only be included once.\
+  \ You may assume that the\n   given index for row/column exists."
 elements:
 - type: locked
   location:

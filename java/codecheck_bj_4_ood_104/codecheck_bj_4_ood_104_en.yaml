@@ -21,11 +21,11 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>Add the capability of transferring money from the currently selected
+  Add the capability of transferring money from the currently selected
       account to the other account from the same account holder to the
-      <code>ATM</code> class of Section 12.5.</p>
+  `ATM` class of Section 12.5.
 
-      <p>You need not implement any user interface.</p>
+  You need not implement any user interface.
 elements:
 - type: editable
   location:

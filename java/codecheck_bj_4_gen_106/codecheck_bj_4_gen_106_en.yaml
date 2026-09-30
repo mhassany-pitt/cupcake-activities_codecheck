@@ -4,7 +4,7 @@ locale: en
 id: fc_codecheck_bj_4_gen_106_en
 source: Pair.java
 title: Generic Types 106
-description: This Pair class stores two elements of the same generic type.
+description: '``` This Pair class stores two elements of the same generic type.'
 authors:
 - first: Cay
   last: Horstmann
@@ -20,9 +20,10 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <pre>
-  This Pair class stores two elements of the same generic type. Implement the <code>min</code> which returns the smaller of the two elements. The elements must be instances of the <code>Comparable</code> interface.
-  </pre>
+  ```
+
+  This Pair class stores two elements of the same generic type. Implement the `min` which returns the smaller of the two elements. The elements must be instances of the `Comparable` interface.
+  ```
 elements:
 - type: editable
   location:

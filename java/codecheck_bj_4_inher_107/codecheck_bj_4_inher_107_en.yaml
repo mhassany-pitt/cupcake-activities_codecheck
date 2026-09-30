@@ -19,10 +19,9 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: |-
-  <p>Complete the <code>Car</code> class below so that it inherits from the given
-      <code>Vehicle</code> class. Cars lose value over time. In this example, you should assume that the value is reduced by 25 cents per mile driven, until it reaches zero. </p>
-      <p>Do <i>not</i> add any instance variables to the <code>Car</code> class.</p>
+statement: "Complete the `Car` class below so that it inherits from the given\n`Vehicle` class. Cars lose value over time.\
+  \ In this example, you should assume that the value is reduced by 25 cents per mile driven, until it reaches zero. \n\n\
+  Do *not* add any instance variables to the `Car` class."
 elements:
 - type: editable
   location:

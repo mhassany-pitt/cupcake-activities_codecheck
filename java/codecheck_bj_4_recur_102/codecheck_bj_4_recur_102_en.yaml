@@ -19,16 +19,11 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: |-
-  <p>Two strings of equal length can be interlaced like the teeth of a
-      zipper to form a new word. For example, interlacing <code>cota</code> and
-      <code>rain</code> yields <code>c<b>r</b>o<b>a</b>t<b>i</b>a<b>n</b></code>. The
-      following class constructs a <code>ZipperWord</code> from two strings. </p>
-
-      <p>Your task is to complete the <code>toString</code> method using recursion.
-      Hint: Concatenate the first letter from each string, follwed by a simpler
-      <code>ZipperWord</code> that is made from the tails of the strings
-      (<code>first.substring(1)</code> and <code>second.substring(1)</code>). </p>
+statement: "Two strings of equal length can be interlaced like the teeth of a\n    zipper to form a new word. For example,\
+  \ interlacing `cota` and\n`rain` yields `c**r**o**a**t**i**a**n**`. The\n    following class constructs a `ZipperWord` from\
+  \ two strings. \n\nYour task is to complete the `toString` method using recursion.\n    Hint: Concatenate the first letter\
+  \ from each string, follwed by a simpler\n`ZipperWord` that is made from the tails of the strings\n    (`first.substring(1)`\
+  \ and `second.substring(1)`)."
 elements:
 - type: editable
   location:

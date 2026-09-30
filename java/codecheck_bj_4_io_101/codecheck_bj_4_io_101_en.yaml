@@ -20,10 +20,10 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: "<p>Your task is to read a file containing lines of text, and to write\n    another file that contains these lines\
-  \ in reverse order. For example, if\n    your input file contains the lines</p>\n\n    <pre>Mary had a little lamb, \nits\
-  \ fleece was white as snow.\n</pre>\n\n    <p>then your output file should contain the lines</p>\n\n    <pre>its fleece\
-  \ was white as snow.\nMary had a little lamb, </pre>"
+statement: "Your task is to read a file containing lines of text, and to write\n    another file that contains these lines\
+  \ in reverse order. For example, if\n    your input file contains the lines\n\n```\nMary had a little lamb, \nits fleece\
+  \ was white as snow.\n```\n\nthen your output file should contain the lines\n\n```\nits fleece was white as snow.\nMary\
+  \ had a little lamb,\n```"
 elements:
 - type: editable
   location:

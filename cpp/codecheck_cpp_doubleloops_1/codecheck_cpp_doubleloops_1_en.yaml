@@ -20,8 +20,7 @@ pedagogy:
 runtime:
   language: cpp
   version: '17'
-statement: "Given two arrays <code>a</code> and <code>b</code>, \nremove all elements of <code>b</code> from <code>a</code>.\n\
-  Return the new size of <code>a</code>."
+statement: "Given two arrays `a` and `b`, \nremove all elements of `b` from `a`.\nReturn the new size of `a`."
 elements:
 - type: locked
   location:

@@ -20,10 +20,8 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: |-
-  <p>
-  Write a method that adds an element after the first and another before the last element of a nonempty linked list, using a list iterator.
-  </p>
+statement: Write a method that adds an element after the first and another before the last element of a nonempty linked list,
+  using a list iterator.
 elements:
 - type: editable
   location:

@@ -21,14 +21,18 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>Implement a class <code>ClassSchedule</code> with a title (a string), days the class meets (a string), a start meeting time (a string), an end meeting time (a string) and a class room (a string)</p>
-  <p>Provide a constructor and these methods:</p>
-  <pre>
+  Implement a class `ClassSchedule` with a title (a string), days the class meets (a string), a start meeting time (a string), an end meeting time (a string) and a class room (a string)
+
+  Provide a constructor and these methods:
+
+  ```
+
      public String getTitle()
      public String getTime()
      public String getRoom()
-  </pre>
-  <p>These methods return the class title, the time period in the form <code>days start time-end time</code>, and class room. An example time is: <code>MWF 9:00-9:50</code></p>
+  ```
+
+  These methods return the class title, the time period in the form `days start time-end time`, and class room. An example time is: `MWF 9:00-9:50`
 elements:
 - type: editable
   location:

@@ -20,9 +20,10 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>In some situations, a class needs the help of other classes to complete a task. These other classes are called collaborators. In this program, it is necessary
-      to compare temperatures.  However, temperatures may be expressed using different scales, such as Fahrenheit or Celsius.  You will use a collaborator class to handle converting temperatures from one scale to another.</p>
-      <p>Complete the <code>Temperature</code> class below. Use two instances of the <code>Converter</code> to convert to Celsius or Fahrenheit in the <code>compareTo</code> method.</p>
+  In some situations, a class needs the help of other classes to complete a task. These other classes are called collaborators. In this program, it is necessary
+      to compare temperatures.  However, temperatures may be expressed using different scales, such as Fahrenheit or Celsius.  You will use a collaborator class to handle converting temperatures from one scale to another.
+
+  Complete the `Temperature` class below. Use two instances of the `Converter` to convert to Celsius or Fahrenheit in the `compareTo` method.
 elements:
 - type: editable
   location:

@@ -19,23 +19,11 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: |-
-  <p>A stack can be used to check whether an arithmetic expression such as
-      </p>
-
-      <pre>3*(4+(5-6))/7</pre>
-
-      <p>has properly balanced parentheses. Break the expression into its
-      individual parts. </p>
-
-      <pre>3 * ( 4 + ( 5 - 6 ) ) / 7</pre>
-
-      <p>Push each part on a stack as it is encountered. When a <code>)</code> is
-      encountered, pop everything until the matching <code>(</code>. If the stack is
-      prematurely empty, then report an error.</p>
-
-      <p>At the end, there should be no parentheses left. Otherwise, report an
-      error.</p>
+statement: "A stack can be used to check whether an arithmetic expression such as\n\n```\n3*(4+(5-6))/7\n```\n\nhas properly\
+  \ balanced parentheses. Break the expression into its\n    individual parts. \n\n```\n3 * ( 4 + ( 5 - 6 ) ) / 7\n```\n\n\
+  Push each part on a stack as it is encountered. When a `)` is\n    encountered, pop everything until the matching `(`. If\
+  \ the stack is\n    prematurely empty, then report an error.\n\nAt the end, there should be no parentheses left. Otherwise,\
+  \ report an\n    error."
 elements:
 - type: editable
   location:

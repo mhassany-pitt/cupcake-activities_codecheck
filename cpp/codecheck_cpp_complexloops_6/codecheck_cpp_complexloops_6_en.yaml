@@ -20,10 +20,9 @@ pedagogy:
 runtime:
   language: cpp
   version: '17'
-statement: "<p>Given a <code>vector&lt;vector&lt;int&gt;&gt;</code>, return the \n   position of the largest <b>rectangular</b>\
-  \ zero-filled sub-vector, \n   as a <code>vector&lt;int&g;t</code> of size  3, \n   with the first item for the row, the\
-  \ second for the column, and \n   the third for the area of the sub-vector.\n   Return <code>{-1, -1, 0}</code> if there\
-  \ is no such sub-vector.\n</p>"
+statement: "Given a `vector&lt;vector&lt;int&gt;&gt;`, return the \n   position of the largest **rectangular** zero-filled\
+  \ sub-vector, \n   as a `vector&lt;int&g;t` of size  3, \n   with the first item for the row, the second for the column,\
+  \ and \n   the third for the area of the sub-vector.\n   Return `{-1, -1, 0}` if there is no such sub-vector."
 elements:
 - type: locked
   location:

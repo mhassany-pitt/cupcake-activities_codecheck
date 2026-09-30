@@ -20,7 +20,7 @@ pedagogy:
 runtime:
   language: cpp
   version: '17'
-statement: <p>Given a two-dimensional array of integers, reverse all rows.</p>
+statement: Given a two-dimensional array of integers, reverse all rows.
 elements:
 - type: locked
   location:

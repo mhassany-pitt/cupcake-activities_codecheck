@@ -20,8 +20,8 @@ pedagogy:
 runtime:
   language: cpp
   version: '17'
-statement: "<p>Given a <code>vector&lt;vector&lt;int&gt;&gt;, \n   return a <code>vector</code> containing the largest element\
-  \ in each row.\n   You may assume each row has at least one element.\n</p>"
+statement: "Given a `vector&lt;vector&lt;int&gt;&gt;, \n   return a <code>vector` containing the largest element in each row.\n\
+  \   You may assume each row has at least one element."
 elements:
 - type: locked
   location:

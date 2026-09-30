@@ -20,8 +20,8 @@ pedagogy:
 runtime:
   language: cpp
   version: '17'
-statement: "Given an array of integers, return the first and last \nelements of the original array <b>in sorted order</b>.\
-  \ Return\nthe elements using the reference parameters \n<code>smaller</code> and <code>larger</code>."
+statement: "Given an array of integers, return the first and last \nelements of the original array **in sorted order**. Return\n\
+  the elements using the reference parameters \n`smaller` and `larger`."
 elements:
 - type: locked
   location:

@@ -20,8 +20,8 @@ pedagogy:
 runtime:
   language: cpp
   version: '17'
-statement: "Given an array of integers and two values <code>lower</code> \nand <code>upper</code>, count how many elements\
-  \ are at least \n<code>lower</code> and at most <code>upper</code>."
+statement: "Given an array of integers and two values `lower` \nand `upper`, count how many elements are at least \n`lower`\
+  \ and at most `upper`."
 elements:
 - type: locked
   location:

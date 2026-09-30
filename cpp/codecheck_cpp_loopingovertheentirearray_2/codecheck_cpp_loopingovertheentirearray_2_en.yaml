@@ -20,8 +20,7 @@ pedagogy:
 runtime:
   language: cpp
   version: '17'
-statement: "<p>Given a two-dimensional array of integers, compute \nthe sum of all elements that are not one of the borders.\n\
-  </p>"
+statement: "Given a two-dimensional array of integers, compute \nthe sum of all elements that are not one of the borders."
 elements:
 - type: locked
   location:

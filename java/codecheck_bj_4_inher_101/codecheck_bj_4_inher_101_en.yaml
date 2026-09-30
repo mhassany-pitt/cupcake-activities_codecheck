@@ -19,32 +19,11 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: |-
-  <p>You are given a class <code>Rectangle</code> that produces <q>ASCII
-      art</q> rectangles such as the following:</p>
-
-      <pre>+-------------+
-  |             |
-  |             |
-  |             |
-  |             |
-  |             |
-  +-------------+</pre>
-
-      <p>The code is given below. </p>
-
-      <p>Your task is to produce a subclass <code>FilledRectangle</code> that
-      produces figures such as</p>
-
-      <pre>+-------------+
-  |#############|
-  |#############|
-  |#############|
-  |#############|
-  |#############|
-  +-------------+</pre>
-
-      <p>(when the fill character is <code>#</code>). </p>
+statement: "You are given a class `Rectangle` that produces <q>ASCII\n    art</q> rectangles such as the following:\n\n```\n\
+  +-------------+\n|             |\n|             |\n|             |\n|             |\n|             |\n+-------------+\n\
+  ```\n\nThe code is given below. \n\nYour task is to produce a subclass `FilledRectangle` that\n    produces figures such\
+  \ as\n\n```\n+-------------+\n|#############|\n|#############|\n|#############|\n|#############|\n|#############|\n+-------------+\n\
+  ```\n\n(when the fill character is `#`)."
 elements:
 - type: editable
   location:

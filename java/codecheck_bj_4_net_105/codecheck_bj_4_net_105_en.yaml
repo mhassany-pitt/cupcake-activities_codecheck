@@ -21,17 +21,17 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>The web sites <a
+  The web sites <a
       href="http://www.census.gov/genealogy/names/dist.male.first">http://www.census.gov/genealogy/names/dist.male.first</a>
       and <a
       href="http://www.census.gov/genealogy/names/dist.female.first">http://www.census.gov/genealogy/names/dist.female.first</a>
       contain baby names sorted by popularity. The format is very simple: name,
       frequency, cumulative frequency, and rank. Load these pages into your
-      browser to see for yourself.</p>
+      browser to see for yourself.
 
-      <p>Your task is to write a program that connects to these sites and prints
+  Your task is to write a program that connects to these sites and prints
       the top 50% of male and female names. Stop when the cumulative percentage
-      has exceeded 50%.</p>
+      has exceeded 50%.
 elements:
 - type: editable
   location:

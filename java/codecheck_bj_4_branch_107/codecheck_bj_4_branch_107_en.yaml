@@ -20,15 +20,16 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>A simple guessing game asks the player to guess a number between 1 and 50.  Hints are returned depending on how far from the number the guess is.</p>
+  A simple guessing game asks the player to guess a number between 1 and 50.  Hints are returned depending on how far from the number the guess is.
+
   <ul>
-     <li>20 or more above the number: The hint is "Burning Hot"</li>
-     <li>10 to 19 above the number: The hint is "Hot"</li>
-     <li>5 to 9 above the number: The hint is "Warm"</li>
-     <li>4 below the number to 4 above: The hint is "Pleasant"</li>
-     <li>5 to 9 below the number: The hint is "Cool"</li>
-     <li>10 to 19 below the number: The hint is "Cold"</li>
-     <li>20 or more below the number: The hint is "Ice Cold"</li>
+  <li>20 or more above the number: The hint is "Burning Hot"</li>
+  <li>10 to 19 above the number: The hint is "Hot"</li>
+  <li>5 to 9 above the number: The hint is "Warm"</li>
+  <li>4 below the number to 4 above: The hint is "Pleasant"</li>
+  <li>5 to 9 below the number: The hint is "Cool"</li>
+  <li>10 to 19 below the number: The hint is "Cold"</li>
+  <li>20 or more below the number: The hint is "Ice Cold"</li>
   </ul>
 elements:
 - type: editable

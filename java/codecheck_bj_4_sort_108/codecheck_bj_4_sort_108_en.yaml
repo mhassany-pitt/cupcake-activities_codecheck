@@ -21,13 +21,14 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>Modify the merge sort algorithm so that, instead of sorting an array, it rearranges
+  Modify the merge sort algorithm so that, instead of sorting an array, it rearranges
   places all even elements before the odd ones. For example, the array
-  <code>[1, 4, 9, 16, 25]</code> becomes <code>[4, 16, 1, 9, 25]</code>.</p>
-  <p>Use the same recursion where an array is split in two, each half is rearranged,
-  and the two halves are merged together. However, the <code>merge</code> method needs
+  `[1, 4, 9, 16, 25]` becomes `[4, 16, 1, 9, 25]`.
+
+  Use the same recursion where an array is split in two, each half is rearranged,
+  and the two halves are merged together. However, the `merge` method needs
   to be changed to merge two arrays, each of which has the even elements before the odd ones,
-  into one larger array with the same property.</p>
+  into one larger array with the same property.
 elements:
 - type: editable
   location:

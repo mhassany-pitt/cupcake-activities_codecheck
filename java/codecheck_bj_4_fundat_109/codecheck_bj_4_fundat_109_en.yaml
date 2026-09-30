@@ -20,9 +20,8 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: '<p>Write a method <code>getLastFirst</code> whose parameter is a string containing a name such as <code>"Harry
-  Smith"</code> and that returns a string with the last name followed by a comma and the first name, like this: <code>"Smith,
-  Harry"</code></p>'
+statement: 'Write a method `getLastFirst` whose parameter is a string containing a name such as `"Harry Smith"` and that returns
+  a string with the last name followed by a comma and the first name, like this: `"Smith, Harry"`'
 elements:
 - type: editable
   location:

@@ -20,14 +20,13 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>We want to simulate multiple rocket launches by ACME Rocket Inc. Each
-      launch has a countdown, like this</p>
+  We want to simulate multiple rocket launches by ACME Rocket Inc. Each
+      launch has a countdown, like this
 
-      <p><code>10...</code>(delay)<code>9...</code>(delay)<code>8...</code>(delay)...
-      <code>1...</code>(delay)<code>Liftoff</code></p>
+  `10...`(delay)`9...`(delay)`8...`(delay)...
+  `1...`(delay)`Liftoff`
 
-      <p>The initial counter value and the delay (in milliseconds) are variable.
-  </p>
+  The initial counter value and the delay (in milliseconds) are variable.
 elements:
 - type: editable
   location:

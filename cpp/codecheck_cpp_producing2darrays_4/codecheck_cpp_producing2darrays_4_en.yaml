@@ -21,9 +21,8 @@ pedagogy:
 runtime:
   language: cpp
   version: '17'
-statement: "<p>Given two <code>vector&lt;vector&lt;int&gt;&gt;</code> with the \n   same number of rows and columns, return\
-  \ the first \n   position where they do not match, as a <code>vector</code>.\n   If they do fully match, return <code>{-1,\
-  \ -1}</code>.\n</p>"
+statement: "Given two `vector&lt;vector&lt;int&gt;&gt;` with the \n   same number of rows and columns, return the first \n\
+  \   position where they do not match, as a `vector`.\n   If they do fully match, return `{-1, -1}`."
 elements:
 - type: locked
   location:

@@ -20,10 +20,10 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>In section 14.3, we approximated a count of the array visits in
+  In section 14.3, we approximated a count of the array visits in
       selection sort. Your task is to provide an accurate measurement for the
       implementation used in section 15.1. Count each occurrence of a[i] as a
-      visit. For example, each call to <code>swap</code> counts as four visits. </p>
+      visit. For example, each call to `swap` counts as four visits.
 elements:
 - type: editable
   location:

@@ -20,7 +20,7 @@ pedagogy:
 runtime:
   language: cpp
   version: '17'
-statement: <p>Given a two-dimensional array of integers, compute the sum of all positive elements.</p>
+statement: Given a two-dimensional array of integers, compute the sum of all positive elements.
 elements:
 - type: locked
   location:

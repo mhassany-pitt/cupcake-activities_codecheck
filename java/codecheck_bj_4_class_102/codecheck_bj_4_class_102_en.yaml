@@ -19,9 +19,9 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: <p>Change the deposit and withdraw methods of the BankAccount class so that a count of transactions is updated.
-  For example, if you construct a bank account and invoke deposit once and withdraw twice, calling getTransactionCount should
-  return 3. </p>
+statement: Change the deposit and withdraw methods of the BankAccount class so that a count of transactions is updated. For
+  example, if you construct a bank account and invoke deposit once and withdraw twice, calling getTransactionCount should
+  return 3.
 elements:
 - type: editable
   location:

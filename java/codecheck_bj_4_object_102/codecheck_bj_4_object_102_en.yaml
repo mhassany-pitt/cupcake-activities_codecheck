@@ -20,10 +20,10 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>Complete the following program to compute the average length of the
+  Complete the following program to compute the average length of the
       words. Invoke the appropriate method to compute the length of each word,
       compute the sum of the five results, and divide by 5.0. (You will see in
-      chapter 4 why you need to divide by 5.0 and not simply 5.)</p>
+      chapter 4 why you need to divide by 5.0 and not simply 5.)
 elements:
 - type: editable
   location:

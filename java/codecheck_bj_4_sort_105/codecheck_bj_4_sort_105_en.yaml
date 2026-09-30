@@ -19,19 +19,17 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: "<p>Your task is to implement a number guesser that works on the principle\n    of a binary search. In each step,\
-  \ the guesser cuts the query interval in\n    half. When the interval contains a single number, it proclaims the\n    answer.</p>\n\
-  \n    <p>Suppose your guesser is asked to guess a number between 1 and 100. It\n    starts with the query</p>\n\n    <pre>&gt;50</pre>\n\
-  \n    <p>50 is the midpoint between 1 and 100.</p>\n\n    <p>The person who knows the number says <code>false</code>. The\
-  \ next query is\n    </p>\n\n    <pre>&gt;25</pre>\n\n    <p>25 is the midpoint between 1 and 50.</p>\n\n    <p>The answer\
-  \ is still <code>false</code>, and the next query is </p>\n\n    <pre>&gt;13</pre>\n\n    <p>The answer is still <code>false</code>,\
-  \ and the next query is</p>\n\n    <pre>&gt;7</pre>\n\n    <p>Now the answer is <code>true</code>, and the next query is\
-  \ </p>\n\n    <pre>&gt;10</pre>\n\n    <p>The answer is again <code>true</code>, and the next query is</p>\n\n    <pre>&gt;12</pre>\n\
-  \n    <p>The answer is once again <code>true</code>, and now the guesser proclaims\n    </p>\n\n    <pre>=13</pre>\n\n \
-  \   <p>An object of your class will be called like this:</p>\n\n    <pre>while (...)\n{\n   String guess = guesser.nextGuess();\n\
-  \   if (guess.startsWith(\"=\"))\n   {\n      // display answer and terminate loop\n      ...\n   }\n   else\n   { \n  \
-  \    // show guess to person who knows the answer\n      ...\n      // get response from person\n      boolean resp = ...;\
-  \ \n      guesser.response(resp);\n   }\n}</pre>"
+statement: "Your task is to implement a number guesser that works on the principle\n    of a binary search. In each step,\
+  \ the guesser cuts the query interval in\n    half. When the interval contains a single number, it proclaims the\n    answer.\n\
+  \nSuppose your guesser is asked to guess a number between 1 and 100. It\n    starts with the query\n\n```\n&gt;50\n```\n\
+  \n50 is the midpoint between 1 and 100.\n\nThe person who knows the number says `false`. The next query is\n\n```\n&gt;25\n\
+  ```\n\n25 is the midpoint between 1 and 50.\n\nThe answer is still `false`, and the next query is \n\n```\n&gt;13\n```\n\
+  \nThe answer is still `false`, and the next query is\n\n```\n&gt;7\n```\n\nNow the answer is `true`, and the next query\
+  \ is \n\n```\n&gt;10\n```\n\nThe answer is again `true`, and the next query is\n\n```\n&gt;12\n```\n\nThe answer is once\
+  \ again `true`, and now the guesser proclaims\n\n```\n=13\n```\n\nAn object of your class will be called like this:\n\n\
+  ```\nwhile (...)\n{\n   String guess = guesser.nextGuess();\n   if (guess.startsWith(\"=\"))\n   {\n      // display answer\
+  \ and terminate loop\n      ...\n   }\n   else\n   { \n      // show guess to person who knows the answer\n      ...\n \
+  \     // get response from person\n      boolean resp = ...; \n      guesser.response(resp);\n   }\n}\n```"
 elements:
 - type: editable
   location:

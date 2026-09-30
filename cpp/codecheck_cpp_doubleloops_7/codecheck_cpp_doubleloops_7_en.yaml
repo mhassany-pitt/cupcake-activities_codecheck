@@ -22,9 +22,8 @@ runtime:
   language: cpp
   version: '17'
 statement: |-
-  <p>Given a <code>vector&lt;int&gt;</code>, return a <code>vector&lt;vector&lt;int&gt;&gt;</code>
+  Given a `vector&lt;int&gt;`, return a `vector&lt;vector&lt;int&gt;&gt;`
      where each element contains a value along with its frequency.
-  </p>
 elements:
 - type: locked
   location:

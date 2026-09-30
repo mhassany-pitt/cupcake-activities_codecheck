@@ -19,11 +19,11 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: "<p>Latitude and longitude can be expressed in the form of decimal degrees.  Another form, often used on maps,\
-  \ is degrees, minutes and seconds.  An example is:</p>\n<p>\nLatitude 40.25833 written as Latitude 40°15'30\" \n</p>\n<p>As\
-  \ with time measurements, there are 60 seconds in a minute and 60 minutes in a degree.</p>\n<p>Implement a method <code>convert</code>\
-  \ that converts decimal degrees to a <code>String</code> with degrees, minutes and seconds in the form <code>xxx°xx\"xx.xx'</code>.\
-  \ Seconds may have a fractional part. The unicode character <code>'\\u00B0'</code> is the degree symbol.</p>"
+statement: "Latitude and longitude can be expressed in the form of decimal degrees.  Another form, often used on maps, is\
+  \ degrees, minutes and seconds.  An example is:\n\nLatitude 40.25833 written as Latitude 40°15'30\" \n\nAs with time measurements,\
+  \ there are 60 seconds in a minute and 60 minutes in a degree.\n\nImplement a method `convert` that converts decimal degrees\
+  \ to a `String` with degrees, minutes and seconds in the form `xxx°xx\"xx.xx'`. Seconds may have a fractional part. The\
+  \ unicode character `'\\u00B0'` is the degree symbol."
 elements:
 - type: editable
   location:

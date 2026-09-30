@@ -19,31 +19,15 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: |-
-  <p>We will divide the work of computing the sum of all values in an array
-      over multiple threads. Each thread will compute the sum of a subrange and
-      then update a shared sum variable and a shared count of completed threads.
-      </p>
-
-      <p>The <code>RangeProcessor</code> class, which implements the
-      <code>Runnable</code> interface, encapsulates the processing of a range sum.
-      </p>
-
-      <p>You will start ten threads, each with its own <code>RangeProcessor</code>.
-      You will then need to wait for each thread to terminate. This is achieved
-      by calling the <code>join</code> method of the <code>Thread</code> class. </p>
-
-      <pre>Thread t = new Thread(...);
-  t.start();
-  t.join(); // will continue when t has finished</pre>
-
-      <p>You can simply join each of the ten threads in order since you need all
-      their values before you can continue. Once all threads have terminated,
-      call the <code>getSum</code> methods on the <code>RangeProcessor</code> objects to
-      compute the total sum and then the average.</p>
-
-      <p>You will need to deal with the <code>InterruptedException</code>. It is ok
-      to simply return 0 if it is caught.</p>
+statement: "We will divide the work of computing the sum of all values in an array\n    over multiple threads. Each thread\
+  \ will compute the sum of a subrange and\n    then update a shared sum variable and a shared count of completed threads.\n\
+  \nThe `RangeProcessor` class, which implements the\n`Runnable` interface, encapsulates the processing of a range sum.\n\n\
+  You will start ten threads, each with its own `RangeProcessor`.\n    You will then need to wait for each thread to terminate.\
+  \ This is achieved\n    by calling the `join` method of the `Thread` class. \n\n```\nThread t = new Thread(...);\nt.start();\n\
+  t.join(); // will continue when t has finished\n```\n\nYou can simply join each of the ten threads in order since you need\
+  \ all\n    their values before you can continue. Once all threads have terminated,\n    call the `getSum` methods on the\
+  \ `RangeProcessor` objects to\n    compute the total sum and then the average.\n\nYou will need to deal with the `InterruptedException`.\
+  \ It is ok\n    to simply return 0 if it is caught."
 elements:
 - type: editable
   location:

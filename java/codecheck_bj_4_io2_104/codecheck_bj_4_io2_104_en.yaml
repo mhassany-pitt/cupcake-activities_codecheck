@@ -20,20 +20,21 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>Your task is to swap adjacent letters in a RandomAccessFile. Simply
+  Your task is to swap adjacent letters in a RandomAccessFile. Simply
       read two bytes, back up by two bytes, and write the values out. If the
       file has an odd number of bytes, don't swap the last one. Also, don't swap
       byte pairs that contain the newline or return characters ('\n' or '\r').
       If either byte of a pair equals one of these characters, skip the pair and
-      move on to the next pair.</p>
+      move on to the next pair.
 
-      <p>For example, when you process a file containing the text of a
-      well-known childrens song, it will be transformed into</p>
+  For example, when you process a file containing the text of a
+      well-known childrens song, it will be transformed into
 
-      <pre>aMyrh daa l tilt ealbm,
+  ```
+  aMyrh daa l tilt ealbm,
   ilttell ma,bl tilt ealbm,
   aMyrh daa l tilt ealbm ,ti slfeeecw saw iheta  snswo.
-  </pre>
+  ```
 elements:
 - type: editable
   location:

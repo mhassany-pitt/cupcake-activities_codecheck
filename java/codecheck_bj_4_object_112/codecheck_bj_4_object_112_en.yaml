@@ -19,12 +19,10 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: "<p>Complete the <code>ThreeButtonComponent</code> class to draw three boxes that look like push buttons.  Each\
-  \ box is a <code>Rectangle</code> drawn in <code>Color.GRAY</code> using the Graphics2D method <code>fill3DRect</code>.\
-  \ Look in the Graphics2D class API for a complete description of this method.  Use <code>true</code> for the value for the\
-  \ <code>boolean raised</code> parameter.  (We will learn more about the <code>boolean</code> data type in Chapter 4.)  The\
-  \ center of each box has a different colored circle, <code>Color.RED</code>, <code>Color.GREEN</code>, or <code>Color.CYAN</code>.\
-  \ \n</p>"
+statement: Complete the `ThreeButtonComponent` class to draw three boxes that look like push buttons.  Each box is a `Rectangle`
+  drawn in `Color.GRAY` using the Graphics2D method `fill3DRect`. Look in the Graphics2D class API for a complete description
+  of this method.  Use `true` for the value for the `boolean raised` parameter.  (We will learn more about the `boolean` data
+  type in Chapter 4.)  The center of each box has a different colored circle, `Color.RED`, `Color.GREEN`, or `Color.CYAN`.
 elements:
 - type: editable
   location:

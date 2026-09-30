@@ -20,10 +20,10 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>Employees get paid <q>time and a half</q> for the weekly work
+  Employees get paid <q>time and a half</q> for the weekly work
       hours in excess of 40 hours. For example, an employee making $10/hour and
       working 50 hours in a given week gets paid $10 for the first 40 hours and
-      $15 for the remaining 10 hours, for a total weekly pay of $550.</p>
+      $15 for the remaining 10 hours, for a total weekly pay of $550.
 elements:
 - type: editable
   location:

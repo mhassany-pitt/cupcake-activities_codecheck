@@ -20,11 +20,11 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: "<p>\nImplement a modification of the SelectionSorter class that reorders the array to have even elements followed\
-  \ by odd ones. \n\nFollow the basic steps of the selection sort algorithm. Locate the next even element and swap it with\
-  \ the current one. The algorithm places the even elements first, maintaining their original order. The odd elements may\
-  \ be in a different order. For example, </p>\n<pre>\n     [2,<b>5</b>,<b>6</b>,3,4,6,9,1,2]\n     [2,6,<b>5</b>,3,<b>4</b>,6,9,1,2]\n\
-  \     [2,6,4,<b>3</b>,5,<b>6</b>,9,1,2]\n     [2,6,4,6,<b>5</b>,3,9,1,<b>2</b>]\n     [2,6,4,6,2,3,9,1,5]\n</pre>"
+statement: "Implement a modification of the SelectionSorter class that reorders the array to have even elements followed by\
+  \ odd ones. \n\nFollow the basic steps of the selection sort algorithm. Locate the next even element and swap it with the\
+  \ current one. The algorithm places the even elements first, maintaining their original order. The odd elements may be in\
+  \ a different order. For example, \n\n```\n\n     [2,**5**,**6**,3,4,6,9,1,2]\n     [2,6,**5**,3,**4**,6,9,1,2]\n     [2,6,4,**3**,5,**6**,9,1,2]\n\
+  \     [2,6,4,6,**5**,3,9,1,**2**]\n     [2,6,4,6,2,3,9,1,5]\n```"
 elements:
 - type: editable
   location:

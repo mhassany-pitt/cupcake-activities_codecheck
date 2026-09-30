@@ -21,11 +21,11 @@ pedagogy:
 runtime:
   language: cpp
   version: '17'
-statement: "<p>Given a two-dimensional array of integers, an index, and a string \n   containing the letter \"R\" or \"C:,\
-  \ return the sum of the elements in \n   that row or column. \n</p>\n<p>For example, if the input is <code>{{1,2,3},{4,5,6}}</code>\
-  \ with\n   an index of 0 and string of \"R\", the result would be 6 (because 1 + 2 + 3 = 6).\n   In the same case, if the\
-  \ string was \"C\" instead, the results would be 5\n   because 1 + 4 = 5. You may assume that both dimensions of the array\n\
-  \   have at least one element and that the given index exists for the row/column.\n</p>"
+statement: "Given a two-dimensional array of integers, an index, and a string \n   containing the letter \"R\" or \"C:, return\
+  \ the sum of the elements in \n   that row or column. \n\nFor example, if the input is `{{1,2,3},{4,5,6}}` with\n   an index\
+  \ of 0 and string of \"R\", the result would be 6 (because 1 + 2 + 3 = 6).\n   In the same case, if the string was \"C\"\
+  \ instead, the results would be 5\n   because 1 + 4 = 5. You may assume that both dimensions of the array\n   have at least\
+  \ one element and that the given index exists for the row/column."
 elements:
 - type: locked
   location:

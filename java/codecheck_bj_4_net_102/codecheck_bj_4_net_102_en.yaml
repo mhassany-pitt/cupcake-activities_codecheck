@@ -20,17 +20,17 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>Your task is to provide an oracle server at port 7777 on the local
+  Your task is to provide an oracle server at port 7777 on the local
       host. The oracle protocol is very simple. The client sends a single line
       containing a question to the oracle server, and the oracle server sends
-      the answer in a single line and then disconnects.</p>
+      the answer in a single line and then disconnects.
 
-      <p>The oracle server is not a real oracle. It simply checks whether the
+  The oracle server is not a real oracle. It simply checks whether the
       input is an actual question (that is, a line starting with "where",
       "when", "what", "why", "how", "who", "which"). If so, it sends the
       response "The answer is <a
       href="http://en.wikipedia.org/wiki/The_Answer_to_Life,_the_Universe,_and_Everything">42</a>.".
-      Otherwise, it sends the response "That was not a question."</p>
+      Otherwise, it sends the response "That was not a question."
 elements:
 - type: editable
   location:

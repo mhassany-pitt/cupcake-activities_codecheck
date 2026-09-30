@@ -20,22 +20,22 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>We sometimes want to compare two <code>Pair</code> objects, for example,
-      when using pairs as keys in a tree map.</p>
+  We sometimes want to compare two `Pair` objects, for example,
+      when using pairs as keys in a tree map.
 
-      <p>To compare two pairs, compare the first elements of each. If they are
-      the same, compare the second elements.</p>
+  To compare two pairs, compare the first elements of each. If they are
+      the same, compare the second elements.
 
-      <p>For example, the pair (1, "Joe") comes before (2, "Jim") because the
+  For example, the pair (1, "Joe") comes before (2, "Jim") because the
       first element of the first pair is less. The pair (1, "Jim") comes before
       (1, "Joe") because the first elements are the same and the second element
-      of the first pair is less.</p>
+      of the first pair is less.
 
-      <p>Of course, it is required that the first and second element in the pair
-      are comparable.</p>
+  Of course, it is required that the first and second element in the pair
+      are comparable.
 
-      <p>Your task is to implement the <code>compareTo</code> method, and to add
-      suitable constraints to the generic types.</p>
+  Your task is to implement the `compareTo` method, and to add
+      suitable constraints to the generic types.
 elements:
 - type: editable
   location:

@@ -20,12 +20,14 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>Supply a static method that computes the number of binary digits in a
-      given integer. For example,</p>
+  Supply a static method that computes the number of binary digits in a
+      given integer. For example,
 
-      <pre>Numbers.binaryDigits(20)</pre>
+  ```
+  Numbers.binaryDigits(20)
+  ```
 
-      <p>should return 5 because 20 is 10100<sub>2</sub>.</p>
+  should return 5 because 20 is 10100<sub>2</sub>.
 elements:
 - type: editable
   location:

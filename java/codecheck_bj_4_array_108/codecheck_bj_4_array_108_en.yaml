@@ -20,15 +20,19 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>Remove all short words (that is, words of length at most 3) from an array. Move down the remaining array elements to fit the gaps. Don't change the order of the elements. Fill the unused portion at the end of the array with empty strings.</p>
+  Remove all short words (that is, words of length at most 3) from an array. Move down the remaining array elements to fit the gaps. Don't change the order of the elements. Fill the unused portion at the end of the array with empty strings.
 
-  <p>For example, if you start with an array containing</p>
+  For example, if you start with an array containing
 
-      <pre><code>"Mary", "had", "a", "little", "lamb"</code> </pre>
+  ```
+  `"Mary", "had", "a", "little", "lamb"`
+  ```
 
-      <p>you would end up with an array containing the five strings</p>
+  you would end up with an array containing the five strings
 
-      <pre><code>"Mary", "little", "lamb"</code>, "", ""</pre>
+  ```
+  `"Mary", "little", "lamb"`, "", ""
+  ```
 elements:
 - type: editable
   location:

@@ -20,9 +20,8 @@ pedagogy:
 runtime:
   language: cpp
   version: '17'
-statement: "Given a <code>vector</code> of integers, return a <code>vector&lt;vector&lt;int&gt; &gt;</code>\nof size 2. The\
-  \ first one holds the elements with even \npositions, and the second one holds the elements with odd \npositions in the\
-  \ original <code>vector</code>."
+statement: "Given a `vector` of integers, return a `vector&lt;vector&lt;int&gt; &gt;`\nof size 2. The first one holds the\
+  \ elements with even \npositions, and the second one holds the elements with odd \npositions in the original `vector`."
 elements:
 - type: locked
   location:

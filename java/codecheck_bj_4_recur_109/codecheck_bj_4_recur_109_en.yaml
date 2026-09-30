@@ -21,10 +21,11 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>Complete the static <code>mkString</code> method in the <code>MyMethods</code> class so that it formats an array of <code>int</code> values, with the elements separated by
-  a given separator string.</p>
-  <p>For example, the call <code>mkString(new int[] { 1, 2, 3, 4 }, "|")</code> should
-  return the string "1|2|3|4".</p>
+  Complete the static `mkString` method in the `MyMethods` class so that it formats an array of `int` values, with the elements separated by
+  a given separator string.
+
+  For example, the call `mkString(new int[] { 1, 2, 3, 4 }, "|")` should
+  return the string "1|2|3|4".
 elements:
 - type: editable
   location:

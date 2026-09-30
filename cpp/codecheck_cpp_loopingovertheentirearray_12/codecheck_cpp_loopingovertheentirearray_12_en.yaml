@@ -21,8 +21,8 @@ pedagogy:
 runtime:
   language: cpp
   version: '17'
-statement: "<p>Given a <code>vector&lt;vector&lt;int&gt;&gt; and a value <code>x</code>, \n   return the position of the first\
-  \ match as a <code>vector</code> of length 2. \n   Return <code>[-1, -1]</code> if the value does not occur.\n</p>"
+statement: "Given a `vector&lt;vector&lt;int&gt;&gt; and a value <code>x`, \n   return the position of the first match as\
+  \ a `vector` of length 2. \n   Return `[-1, -1]` if the value does not occur."
 elements:
 - type: locked
   location:

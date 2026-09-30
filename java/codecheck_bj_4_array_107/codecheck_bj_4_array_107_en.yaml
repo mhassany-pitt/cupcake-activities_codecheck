@@ -20,19 +20,11 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: |-
-  <p>Your task is to determine whether an array has the same sequence of
-      numbers at the beginning and the end, and if so, how long that sequence is.</p>
-      <p>For example, the array</p>
-      <pre>1 4 9 10 11 12 1 4 9</pre>
-      <p>has the same sequence <code>1 4 9</code> at the left and the right, and it has length 3.</p>
-      <p>If the array doesn't have a common sequence at the left and the right, such as</p>
-      <pre>1 4 9 16 25</pre>
-      <p>return 0. </p>
-      <p>The two sequences cannot overlap. For example, in the array </p>
-      <pre>1 1 1 1</pre>
-      <p>the sequence <code>1 1</code> occurs at the left and the right, and your
-      method should return 2.</p>
+statement: "Your task is to determine whether an array has the same sequence of\n    numbers at the beginning and the end,\
+  \ and if so, how long that sequence is.\n\nFor example, the array\n\n```\n1 4 9 10 11 12 1 4 9\n```\n\nhas the same sequence\
+  \ `1 4 9` at the left and the right, and it has length 3.\n\nIf the array doesn't have a common sequence at the left and\
+  \ the right, such as\n\n```\n1 4 9 16 25\n```\n\nreturn 0. \n\nThe two sequences cannot overlap. For example, in the array\
+  \ \n\n```\n1 1 1 1\n```\n\nthe sequence `1 1` occurs at the left and the right, and your\n    method should return 2."
 elements:
 - type: editable
   location:

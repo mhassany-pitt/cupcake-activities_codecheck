@@ -19,15 +19,9 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: |-
-  <p>An open interval is the set of all numbers between a lower and upper
-      bound. In mathematical notation, we write </p>
-
-      <p>(a, b) = { x | a &lt; x &lt; b }</p>
-
-      <p>Your task is to determine when two intervals <i>overlap</i>. For
-      example, the intervals (1, 3) and (2, 4) overlap, as do (1, 4) and (2, 3).
-      But the intervals (1, 2) and (3, 4) do not overlap.</p>
+statement: "An open interval is the set of all numbers between a lower and upper\n    bound. In mathematical notation, we\
+  \ write \n\n(a, b) = { x | a &lt; x &lt; b }\n\nYour task is to determine when two intervals *overlap*. For\n    example,\
+  \ the intervals (1, 3) and (2, 4) overlap, as do (1, 4) and (2, 3).\n    But the intervals (1, 2) and (3, 4) do not overlap."
 elements:
 - type: editable
   location:

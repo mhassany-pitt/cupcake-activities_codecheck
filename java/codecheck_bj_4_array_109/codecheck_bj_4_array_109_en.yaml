@@ -20,17 +20,21 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>Count the number of even and odd elements in an array of integers. Since you
+  Count the number of even and odd elements in an array of integers. Since you
       must return two counts, place them into an array of length 2. For example,
-      if you are given the array</p>
+      if you are given the array
 
-      <pre>1, 4, 9, 16, 25</pre>
+  ```
+  1, 4, 9, 16, 25
+  ```
 
-      <p>you return the array with elements</p>
+  you return the array with elements
 
-      <pre>2, 3</pre>
+  ```
+  2, 3
+  ```
 
-      <p>since there were two even and three odd elements.</p>
+  since there were two even and three odd elements.
 elements:
 - type: editable
   location:

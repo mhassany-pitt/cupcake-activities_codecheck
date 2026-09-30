@@ -20,12 +20,14 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>A <code>ClassSchedule</code> class has been designed to represent a class that is scheduled at given days and times. Sometimes class schedule days or times must be changed.  Expand the <code>ClassSchedule</code> class to include methods to allow new values for days, start times and end times</p>
-  <pre>
+  A `ClassSchedule` class has been designed to represent a class that is scheduled at given days and times. Sometimes class schedule days or times must be changed.  Expand the `ClassSchedule` class to include methods to allow new values for days, start times and end times
+
+  ```
+
      public void setDays(String meetingDays)
      public void setStartTime(String startTime)
      public void setEndTime(String endTime)
-  </pre>
+  ```
 elements:
 - type: editable
   location:

@@ -19,8 +19,8 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: <p>Your task is to write a method <code>stutter</code> that repeats all letters t in a string. For example, the
-  call <code>stutter("stutter")</code> should return "sttutttter".</p>
+statement: Your task is to write a method `stutter` that repeats all letters t in a string. For example, the call `stutter("stutter")`
+  should return "sttutttter".
 elements:
 - type: editable
   location:

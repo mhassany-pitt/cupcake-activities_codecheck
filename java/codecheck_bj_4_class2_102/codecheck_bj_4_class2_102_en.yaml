@@ -20,11 +20,12 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>A Java method cannot update primitive
+  A Java method cannot update primitive
       type parameters. For example, the following method does not work as
-      intended:</p>
+      intended:
 
-      <pre>public class SwapTester
+  ```
+  public class SwapTester
   {
      public static void falseSwap(int a, int b) // doesn't work
      {
@@ -41,10 +42,11 @@ statement: |-
         System.out.println(x + " " + y);
         System.out.println("Expected: 4 3"); // test fails
      }
-  }</pre>
+  }
+  ```
 
-      <p>Your task is to implement a method <code>trueSwap</code> that swaps two
-      values that were placed into an array.</p>
+  Your task is to implement a method `trueSwap` that swaps two
+      values that were placed into an array.
 elements:
 - type: editable
   location:

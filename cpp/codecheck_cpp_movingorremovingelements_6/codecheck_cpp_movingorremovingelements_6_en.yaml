@@ -22,8 +22,8 @@ runtime:
   version: '17'
 statement: |-
   Given an array of integers, remove all adjacent duplicates.
-  Three items in a row, such as <code>[2,2,2,1]</code> is considered 2 pairs
-  of duplicates, and should change to <code>[1]</code>. Return the new
+  Three items in a row, such as `[2,2,2,1]` is considered 2 pairs
+  of duplicates, and should change to `[1]`. Return the new
   size of the array.
 elements:
 - type: locked

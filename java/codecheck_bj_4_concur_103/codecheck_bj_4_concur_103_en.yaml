@@ -19,24 +19,14 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: |-
-  <p>We will divide the work of computing the maximum of all values in an
-      array over multiple threads. Each thread will compute the maximum of a
-      subrange and then update a shared max variable and a shared count of
-      completed threads.</p>
-
-      <p>When all threads have completed their work, then the main thread is
-      ready to return the result. Your task is to provide an efficient mechanism
-      for finding out when the work is complete. You should use a condition
-      object and call the <code>await</code> method, thereby deactivating the main
-      thread until one of the subsidiary threads has updated the completion
-      count. </p>
-
-      <p>Be sure to use the lock when you check whether the completion count has
-      reached the total number of threads.</p>
-
-      <p>You will need to deal with the <code>InterruptedException</code>. It is ok
-      to simply return 0 if it is caught.</p>
+statement: "We will divide the work of computing the maximum of all values in an\n    array over multiple threads. Each thread\
+  \ will compute the maximum of a\n    subrange and then update a shared max variable and a shared count of\n    completed\
+  \ threads.\n\nWhen all threads have completed their work, then the main thread is\n    ready to return the result. Your\
+  \ task is to provide an efficient mechanism\n    for finding out when the work is complete. You should use a condition\n\
+  \    object and call the `await` method, thereby deactivating the main\n    thread until one of the subsidiary threads has\
+  \ updated the completion\n    count. \n\nBe sure to use the lock when you check whether the completion count has\n    reached\
+  \ the total number of threads.\n\nYou will need to deal with the `InterruptedException`. It is ok\n    to simply return\
+  \ 0 if it is caught."
 elements:
 - type: editable
   location:

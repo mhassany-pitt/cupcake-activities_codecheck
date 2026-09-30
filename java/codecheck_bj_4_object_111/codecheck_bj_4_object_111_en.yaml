@@ -19,10 +19,10 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: <p>Complete the <code>ThreeDButtonComponent</code> class to draw a button with shading.  The button is a <code>Rectangle</code>,
-  with very thin rectangles on each side to form the shaded sides.  The bottom and right shadings should be darker than the
-  button and the left and top shadings should be lighter.  Use <code>Color.brighter</code> and <code>Color.darker</code> for
-  the shadings.  Look in the Color class API for details on the use of these methods.</p>
+statement: Complete the `ThreeDButtonComponent` class to draw a button with shading.  The button is a `Rectangle`, with very
+  thin rectangles on each side to form the shaded sides.  The bottom and right shadings should be darker than the button and
+  the left and top shadings should be lighter.  Use `Color.brighter` and `Color.darker` for the shadings.  Look in the Color
+  class API for details on the use of these methods.
 elements:
 - type: editable
   location:

@@ -20,16 +20,10 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: |-
-  <p>Complete the static <code>reverseHelper</code> method so that the <code>reverse</code> method returns a String that is the reverse of the parameter <code>s</code>. </p>
-  <p>The helper method should build up the reversed string like this:</p>
-  <pre>reverseHelper("fred", "")
-  = reverseHelper("red", "f")
-  = reverseHelper("ed", "rf")
-  = reverseHelper("d", "erf")
-  = reverseHelper("", "derf")
-  = "derf"
-  </pre>
+statement: "Complete the static `reverseHelper` method so that the `reverse` method returns a String that is the reverse of\
+  \ the parameter `s`. \n\nThe helper method should build up the reversed string like this:\n\n```\nreverseHelper(\"fred\"\
+  , \"\")\n= reverseHelper(\"red\", \"f\")\n= reverseHelper(\"ed\", \"rf\")\n= reverseHelper(\"d\", \"erf\")\n= reverseHelper(\"\
+  \", \"derf\")\n= \"derf\"\n```"
 elements:
 - type: editable
   location:

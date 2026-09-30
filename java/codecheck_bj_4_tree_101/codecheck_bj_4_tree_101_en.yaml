@@ -20,15 +20,18 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>Your task is to produce a set of all letters in a string. Letters are
+  Your task is to produce a set of all letters in a string. Letters are
       represented as strings of length 1. For example, if you are given a string
-      </p>
 
-      <pre>Mary had a little lamb</pre>
+  ```
+  Mary had a little lamb
+  ```
 
-      <p>you should produce the set</p>
+  you should produce the set
 
-      <pre>{ " ", "M", "a", "b", "d", "e", "h", "i", "l", "m", "r", "t", "y" }</pre>
+  ```
+  { " ", "M", "a", "b", "d", "e", "h", "i", "l", "m", "r", "t", "y" }
+  ```
 elements:
 - type: editable
   location:

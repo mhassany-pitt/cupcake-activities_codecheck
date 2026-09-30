@@ -19,11 +19,11 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: "<p>Complete the <code>RectangleManager</code> class below so that it implements the given\n    <code>Adjuster</code>\
-  \ interface. The implementation should use the <code>h</code> and <code>w</code> parameters \n    as the incremental amounts\
-  \ by which the <code>o</code> object's current height and width are to be \n    changed, respectively.  </p>\n\t<p>For example,\
-  \ if the original rectangle has width of 10 and height of 20, and the \n\tincrements are 5 and 7 for width and height respectively,\
-  \ the new dimensions of the\n\trectangle should be width of 15 and height of 27.</p>"
+statement: "Complete the `RectangleManager` class below so that it implements the given\n`Adjuster` interface. The implementation\
+  \ should use the `h` and `w` parameters \n    as the incremental amounts by which the `o` object's current height and width\
+  \ are to be \n    changed, respectively.  \n\nFor example, if the original rectangle has width of 10 and height of 20, and\
+  \ the \n\tincrements are 5 and 7 for width and height respectively, the new dimensions of the\n\trectangle should be width\
+  \ of 15 and height of 27."
 elements:
 - type: editable
   location:

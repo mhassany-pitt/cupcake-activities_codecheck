@@ -20,10 +20,10 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>The <code>SavingsAccount</code> class given below is similar to that of
+  The `SavingsAccount` class given below is similar to that of
       Chapter 9. It should be illegal to construct savings accounts with a
       negative balance or interest rate. Modify the constructor so that an
-      <code>IllegalArgumentException</code> is thrown in these cases.</p>
+  `IllegalArgumentException` is thrown in these cases.
 elements:
 - type: editable
   location:

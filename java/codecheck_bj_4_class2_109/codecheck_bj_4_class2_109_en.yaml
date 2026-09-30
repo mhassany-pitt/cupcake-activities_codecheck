@@ -19,9 +19,9 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: "<p>Supply a static method that counts the number of times that a specific character appears \n    in a given string.\
-  \ For example,</p>\n\n    <pre>countChar(\"abracadabra\",\"a\")</pre>\n\n    <p>should return 5 because the letter \"a\"\
-  \ appears 5 times in the word \"abracadabra\".</p>"
+statement: "Supply a static method that counts the number of times that a specific character appears \n    in a given string.\
+  \ For example,\n\n```\ncountChar(\"abracadabra\",\"a\")\n```\n\nshould return 5 because the letter \"a\" appears 5 times\
+  \ in the word \"abracadabra\"."
 elements:
 - type: editable
   location:

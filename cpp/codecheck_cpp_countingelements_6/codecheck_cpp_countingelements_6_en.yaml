@@ -21,7 +21,7 @@ runtime:
   language: cpp
   version: '17'
 statement: |-
-  Given an array of integers, fill the <code>result</code> array with all elements that occur exactly once.
+  Given an array of integers, fill the `result` array with all elements that occur exactly once.
   Return the size of the result array.
 elements:
 - type: locked

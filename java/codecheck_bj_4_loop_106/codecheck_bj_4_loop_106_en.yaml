@@ -19,12 +19,11 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: "<p>When people enter their telephone numbers into a form they use many\ndifferent formats. Some examples are:\
-  \ </p>\n<pre>   (444) 999-1234\n   4449991234\n   444.999.1234</pre>\nIn the <code>PhoneNumbers</code> class below, complete\
-  \ the\n<code>cleanNumber</code> method. It takes a string and extracts the numeric\ndigits from the string. If there are\
-  \ exactly 10 numeric digits, the number is\nreformatted: <code>(###) ###-####</code> and returned. If there are any other\n\
-  number of digits, the string <code>\"Error\"</code> is returned. \n\n<p>Hint: Use the <code>Character.isDigit</code> method\
-  \ to check whether a\ncharacter is a digit. </p>"
+statement: "When people enter their telephone numbers into a form they use many\ndifferent formats. Some examples are: \n\n\
+  ```\n   (444) 999-1234\n   4449991234\n   444.999.1234\n```\n\nIn the `PhoneNumbers` class below, complete the\n`cleanNumber`\
+  \ method. It takes a string and extracts the numeric\ndigits from the string. If there are exactly 10 numeric digits, the\
+  \ number is\nreformatted: `(###) ###-####` and returned. If there are any other\nnumber of digits, the string `\"Error\"\
+  ` is returned. \n\nHint: Use the `Character.isDigit` method to check whether a\ncharacter is a digit."
 elements:
 - type: editable
   location:

@@ -19,13 +19,8 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: |-
-  <p>When printing the elements in an array, you want commas between the
-      elements, such as </p>
-
-      <pre>1,4,9</pre>
-
-      <p>Note that there is one fewer comma than there are array elements. </p>
+statement: "When printing the elements in an array, you want commas between the\n    elements, such as \n\n```\n1,4,9\n```\n\
+  \nNote that there is one fewer comma than there are array elements."
 elements:
 - type: editable
   location:

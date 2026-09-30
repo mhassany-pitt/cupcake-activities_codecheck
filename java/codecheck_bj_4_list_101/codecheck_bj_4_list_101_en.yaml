@@ -20,8 +20,8 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>Your task is to remove all short words (that is, words with at most 3
-      characters) from a linked list.</p>
+  Your task is to remove all short words (that is, words with at most 3
+      characters) from a linked list.
 elements:
 - type: editable
   location:

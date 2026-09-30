@@ -20,15 +20,17 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>A <i>run</i> is a sequence of adjacent repeated values. For example,
-      the array with elements</p>
+  A *run* is a sequence of adjacent repeated values. For example,
+      the array with elements
 
-      <pre>1 2 2 2 1 3 3 2</pre>
+  ```
+  1 2 2 2 1 3 3 2
+  ```
 
-      <p>has two runs: <code>2 2 2</code> and <code>3 3</code>.</p>
+  has two runs: `2 2 2` and `3 3`.
 
-      <p>Your job is to compute the length of the longest run. For example, with
-      the preceding array, the longest run <code>2 2 2</code> has length 3.</p>
+  Your job is to compute the length of the longest run. For example, with
+      the preceding array, the longest run `2 2 2` has length 3.
 elements:
 - type: editable
   location:

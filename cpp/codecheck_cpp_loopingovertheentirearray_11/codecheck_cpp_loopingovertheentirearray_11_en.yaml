@@ -21,9 +21,9 @@ pedagogy:
 runtime:
   language: cpp
   version: '17'
-statement: "<p>Given a <code>vector&lt;vector&lt;int&gt;&gt;, return the position \n   of the smallest element in the array\
-  \ as a <code>vector</code> of \n   length 2, with the row in the first element, and the column in the second.\n   You may\
-  \ assume there is at least one element in the input.\n</p>"
+statement: "Given a `vector&lt;vector&lt;int&gt;&gt;, return the position \n   of the smallest element in the array as a <code>vector`\
+  \ of \n   length 2, with the row in the first element, and the column in the second.\n   You may assume there is at least\
+  \ one element in the input."
 elements:
 - type: locked
   location:

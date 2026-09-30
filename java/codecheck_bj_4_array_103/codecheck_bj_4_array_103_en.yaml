@@ -19,17 +19,9 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: |-
-  <p>You want to pick a particular “short” word in an array of
-      words, that is, words with at most three characters. </p>
-
-      <p>For example, if you are passed an array containing the words</p>
-
-      <pre>"Mary", "had", "a", "little", "lamb"</pre>
-
-      <p>and you are asked to return the second short word, you would return </p>
-
-      <pre>"a"</pre>
+statement: "You want to pick a particular “short” word in an array of\n    words, that is, words with at most three characters.\
+  \ \n\nFor example, if you are passed an array containing the words\n\n```\n\"Mary\", \"had\", \"a\", \"little\", \"lamb\"\
+  \n```\n\nand you are asked to return the second short word, you would return \n\n```\n\"a\"\n```"
 elements:
 - type: editable
   location:

@@ -22,7 +22,7 @@ runtime:
   version: '17'
 statement: |-
   Given an array of integers, set the reference
-  parameters <code>min</code> and <code>max</code>
+  parameters `min` and `max`
   to the smallest and largest values in the array.
   You may assume that the array contains at least
   one element.

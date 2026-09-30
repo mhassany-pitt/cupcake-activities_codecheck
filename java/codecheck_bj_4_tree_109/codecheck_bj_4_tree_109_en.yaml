@@ -20,9 +20,8 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>
-  When you add instances of the given <code>Person</code> class in a <code>HashSet</code>,
-  the resulting hash set is too large. Evidently, duplicates are not found. Remedy this problem by implementing the <code>equals</code> and <code>hashCode</code> methods.</p>
+  When you add instances of the given `Person` class in a `HashSet`,
+  the resulting hash set is too large. Evidently, duplicates are not found. Remedy this problem by implementing the `equals` and `hashCode` methods.
 elements:
 - type: editable
   location:

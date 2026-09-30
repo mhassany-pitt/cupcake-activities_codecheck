@@ -22,11 +22,13 @@ runtime:
   version: '3'
 statement: |-
   Given an integer n, produce the array
-  <pre>0 1 2 3 ... n
+
+  ```
+  0 1 2 3 ... n
   1 2 3 4 ... 0
   ...
   n 0 1 2 ... n-1
-  </pre>
+  ```
 elements:
 - type: editable
   location:

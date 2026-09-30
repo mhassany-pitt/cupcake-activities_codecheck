@@ -19,28 +19,13 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: |-
-  <p>You are given two strings of equal length. Your task is to generate all
-      <q>zipper words</q> that can be produced from them. A zipper word
-      is made by interleaving the characters at the same index from each string.
-      Some indexes may be skipped. However, a zipper word has length at least 2.
-      For example, if the two strings are </p>
-
-      <pre><b>a</b>n<b>t</b>
-  <b>b</b>u<b>g</b></pre>
-
-      <p>then a zipper word is </p>
-
-      <pre><b>abtg</b></pre>
-
-      <p>Complete the following class to generate an array list of all zipper
-      words. </p>
-
-      <p>Hint: (1) There are two kinds of zipper words that can be made of
-      <code><b>a</b>nt</code> and <code><b>b</b>ug</code>: those that start with
-      <code><b>ab</b></code> and those that don't. In either case, the suffix is a
-      zipper word made of <code>nt</code> and <code>ug</code>. (2) If the length of the
-      strings is is zero, there are no zipper words. </p>
+statement: "You are given two strings of equal length. Your task is to generate all\n<q>zipper words</q> that can be produced\
+  \ from them. A zipper word\n    is made by interleaving the characters at the same index from each string.\n    Some indexes\
+  \ may be skipped. However, a zipper word has length at least 2.\n    For example, if the two strings are \n\n```\n**a**n**t**\n\
+  **b**u**g**\n```\n\nthen a zipper word is \n\n```\n**abtg**\n```\n\nComplete the following class to generate an array list\
+  \ of all zipper\n    words. \n\nHint: (1) There are two kinds of zipper words that can be made of\n`**a**nt` and `**b**ug`:\
+  \ those that start with\n`**ab**` and those that don't. In either case, the suffix is a\n    zipper word made of `nt` and\
+  \ `ug`. (2) If the length of the\n    strings is is zero, there are no zipper words."
 elements:
 - type: editable
   location:

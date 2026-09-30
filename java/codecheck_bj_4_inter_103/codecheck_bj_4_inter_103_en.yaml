@@ -19,25 +19,13 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: |-
-  <p>Some objects can be doubled, for example a bank account. The result
-      would be a bank account with twice the balance. Some objects can't be
-      doubled. For example, there is no double of a dime coin—no twenty
-      cent coin exists. </p>
-
-      <p>The <code>Doublable</code> interface specifies a method for making an
-      object that is double of the current one. It should only be implemented by
-      classes for which doubling makes sense.</p>
-
-      <p>Your job is to modify the <code>Word</code> class of chapter 6 (which is
-      reproduced below, with the bugs fixed) so that it implements the
-      <code>Doublable</code> interface. Doubling a word should repeat its text. For
-      example, </p>
-
-      <pre>new Word("Java").makeDouble()</pre>
-
-      <p>should produce a <code>Word</code> object with text <code>"JavaJava"</code>.
-      </p>
+statement: "Some objects can be doubled, for example a bank account. The result\n    would be a bank account with twice the\
+  \ balance. Some objects can't be\n    doubled. For example, there is no double of a dime coin—no twenty\n    cent coin exists.\
+  \ \n\nThe `Doublable` interface specifies a method for making an\n    object that is double of the current one. It should\
+  \ only be implemented by\n    classes for which doubling makes sense.\n\nYour job is to modify the `Word` class of chapter\
+  \ 6 (which is\n    reproduced below, with the bugs fixed) so that it implements the\n`Doublable` interface. Doubling a word\
+  \ should repeat its text. For\n    example, \n\n```\nnew Word(\"Java\").makeDouble()\n```\n\nshould produce a `Word` object\
+  \ with text `\"JavaJava\"`."
 elements:
 - type: editable
   location:

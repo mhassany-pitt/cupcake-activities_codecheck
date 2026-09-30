@@ -20,9 +20,9 @@ pedagogy:
 runtime:
   language: cpp
   version: '17'
-statement: "Given a <code>vector</code> of integers, return a <code>vector</code>\nof size 2, with each element being a <code>vector&lt;int&gt;</code>.\n\
-  The first holds the positive elements and the second holds the \nnegative elements of the original <code>vector</code>.\
-  \ Zero is\nneither positive, nor negative."
+statement: "Given a `vector` of integers, return a `vector`\nof size 2, with each element being a `vector&lt;int&gt;`.\nThe\
+  \ first holds the positive elements and the second holds the \nnegative elements of the original `vector`. Zero is\nneither\
+  \ positive, nor negative."
 elements:
 - type: locked
   location:

@@ -20,9 +20,9 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>Write a method that gets the last n characters from a string. For
-      example, <code>last("Hello, World!", 5)</code> should return the string
-      <code>"orld!"</code>.</p>
+  Write a method that gets the last n characters from a string. For
+      example, `last("Hello, World!", 5)` should return the string
+  `"orld!"`.
 elements:
 - type: editable
   location:

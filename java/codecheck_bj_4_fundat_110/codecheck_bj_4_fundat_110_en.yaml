@@ -19,18 +19,12 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: |-
-  <p>Fred fills out his time sheet at work, but he needs to provide the number of minutes worked. He only knows the start and end times, given in hours and minutes. Help Fred by implementing the <code>minutesUntil</code> method below. </p>
-  <p>For example, if two <code>Time</code> objects are declared as</p>
-  <pre>Time start = new Time(13:11);
-  Time end = new Time(14:01);
-  </pre>
-  <p>then the call <code>start.minutesUntil(end)</code> should return 50. There are 50 minutes between 13:11 and 14:01.</p>
-  <p>Be sure to handle the situation where Fred works the night shift. If </p>
-  <pre>start = new Time(23:11);
-  end = new Time(1:01);
-  </pre>
-  <p>then the call <code>start.minutesUntil(end)</code> should return 110.</p>
+statement: "Fred fills out his time sheet at work, but he needs to provide the number of minutes worked. He only knows the\
+  \ start and end times, given in hours and minutes. Help Fred by implementing the `minutesUntil` method below. \n\nFor example,\
+  \ if two `Time` objects are declared as\n\n```\nTime start = new Time(13:11);\nTime end = new Time(14:01);\n```\n\nthen\
+  \ the call `start.minutesUntil(end)` should return 50. There are 50 minutes between 13:11 and 14:01.\n\nBe sure to handle\
+  \ the situation where Fred works the night shift. If \n\n```\nstart = new Time(23:11);\nend = new Time(1:01);\n```\n\nthen\
+  \ the call `start.minutesUntil(end)` should return 110."
 elements:
 - type: editable
   location:

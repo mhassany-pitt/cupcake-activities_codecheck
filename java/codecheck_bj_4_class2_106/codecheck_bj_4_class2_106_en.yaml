@@ -19,15 +19,14 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: "<p>Consider the <code>Vehicle</code> class below.</p>\n\n    <p>Note how this class intermingles two responsibilities:\
-  \ describing a\n    vehicle, and describing the characteristics of its propulsion. \n    The second responsibility is not\
-  \ trivial. We may want to add support for \n    different types of propulsion, with completely different characteristics.\n\
-  \    For example, we would be ineterestd in the number of propellers for a boat,\n    and not the number of wheels.</p>\n\
-  \n    <p>Ideally, a <code>Vehicle</code> class should have a single responsibility:\n    to describe a vehicle has some\
-  \ type of self-contained propulsion. A separate \n    <code>Propulsion</code> class should be responsible for the details\
-  \ of managing \n    propulsion characteristics. </p>\n\n    <p>Your task is to modify the <code>Vehicle</code> class so\
-  \ that it uses the\n    <code>Propulsion</code> class given below. The <code>main</code> method shows how your modified\n\
-  \    class should be used. </p>"
+statement: "Consider the `Vehicle` class below.\n\nNote how this class intermingles two responsibilities: describing a\n \
+  \   vehicle, and describing the characteristics of its propulsion. \n    The second responsibility is not trivial. We may\
+  \ want to add support for \n    different types of propulsion, with completely different characteristics.\n    For example,\
+  \ we would be ineterestd in the number of propellers for a boat,\n    and not the number of wheels.\n\nIdeally, a `Vehicle`\
+  \ class should have a single responsibility:\n    to describe a vehicle has some type of self-contained propulsion. A separate\
+  \ \n`Propulsion` class should be responsible for the details of managing \n    propulsion characteristics. \n\nYour task\
+  \ is to modify the `Vehicle` class so that it uses the\n`Propulsion` class given below. The `main` method shows how your\
+  \ modified\n    class should be used."
 elements:
 - type: editable
   location:

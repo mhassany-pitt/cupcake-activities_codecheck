@@ -19,23 +19,10 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: |-
-  <p>Your task is to sort an array list of path names such as </p>
-
-      <pre>/home/me/cs1
-  /usr/share
-  /var/log
-  /usr/local/jdk1.6.0/jre/lib</pre>
-
-      <p>Sort by the path length, i.e. the number of slashes in the path name.
-      Path names of the same length should be arranged in lexicographic order
-      (i.e. by calling <code>String.compareTo</code>.) For example, the path names
-      given above will be sorted as </p>
-
-      <pre>/usr/share
-  /var/log
-  /home/me/cs1
-  /usr/local/jdk1.6.0/jre/lib</pre>
+statement: "Your task is to sort an array list of path names such as \n\n```\n/home/me/cs1\n/usr/share\n/var/log\n/usr/local/jdk1.6.0/jre/lib\n\
+  ```\n\nSort by the path length, i.e. the number of slashes in the path name.\n    Path names of the same length should be\
+  \ arranged in lexicographic order\n    (i.e. by calling `String.compareTo`.) For example, the path names\n    given above\
+  \ will be sorted as \n\n```\n/usr/share\n/var/log\n/home/me/cs1\n/usr/local/jdk1.6.0/jre/lib\n```"
 elements:
 - type: editable
   location:

@@ -21,10 +21,10 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>The "elite hackers" like to make their text look cool by replacing
+  The "elite hackers" like to make their text look cool by replacing
       characters with similar-looking symbols: e becomes 3, i becomes 1, l
       becomes 7, and o becomes 0. Write a program to carry out
-      these replacements with a sample string.</p>
+      these replacements with a sample string.
 elements:
 - type: editable
   location:

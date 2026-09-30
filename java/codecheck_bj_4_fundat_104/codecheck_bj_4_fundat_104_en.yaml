@@ -20,9 +20,9 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>Complete the <code>initials</code> method in the class below. For
-      example, the call <code>initials("Harry", "Joseph", "Hacker")</code> should return the string
-      <code>"HJH"</code>. </p>
+  Complete the `initials` method in the class below. For
+      example, the call `initials("Harry", "Joseph", "Hacker")` should return the string
+  `"HJH"`.
 elements:
 - type: editable
   location:

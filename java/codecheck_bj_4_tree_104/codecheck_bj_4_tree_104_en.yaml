@@ -21,9 +21,9 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>Implement the <code>hashCode</code> method for the <code>LabeledPoint</code>
+  Implement the `hashCode` method for the `LabeledPoint`
       class so that equal objects have the same hash code and that unequal
-      objects are likely to have different hash codes. </p>
+      objects are likely to have different hash codes.
 elements:
 - type: editable
   location:

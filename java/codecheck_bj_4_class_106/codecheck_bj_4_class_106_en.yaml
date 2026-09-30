@@ -19,8 +19,8 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: <p>Your task is to write a tester class for the <code>ClassSchedule</code> class given below. You should test the
-  <code>getTime</code> and <code>setStartTime</code> methods of the <code>ClassSchedule</code> class.</p>
+statement: Your task is to write a tester class for the `ClassSchedule` class given below. You should test the `getTime` and
+  `setStartTime` methods of the `ClassSchedule` class.
 elements:
 - type: editable
   location:

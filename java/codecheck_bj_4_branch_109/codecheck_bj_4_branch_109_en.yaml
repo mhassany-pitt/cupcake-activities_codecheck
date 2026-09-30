@@ -19,10 +19,8 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: |-
-  <p>Write a method to test whether three numbers are all different. For example, </p>
-  <ul><li>3, 5, and 4 are all different</li><li>3, 3, 4 are not all different</li><li>3, 3, 3 are not all different</li>
-  </ul>
+statement: "Write a method to test whether three numbers are all different. For example, \n\n<ul><li>3, 5, and 4 are all different</li><li>3,\
+  \ 3, 4 are not all different</li><li>3, 3, 3 are not all different</li>\n</ul>"
 elements:
 - type: editable
   location:

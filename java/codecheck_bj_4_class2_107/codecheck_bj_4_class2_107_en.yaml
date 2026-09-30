@@ -19,11 +19,11 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: "<p>A Java method cannot update primitive\ntype parameters. For example, the following program cannot work as\n\
-  intended:</p>\n\n<pre>\npublic class BonusTester\n{\n   public static void applyBonus(double value, double bonus)\n   {\n\
-  \      value = value * (1 + bonus);\n   }\n   \n   public static void main(String[] args)\n   {\n      double sal = 45000;\n\
-  \      applyBonus(sal, 0.02); // 2% bonus; cannot work\n      System.out.println(sal); \n      System.out.println(\"Expected:\
-  \ 45900.0\"); \n   }\n}\n</pre>\n    \n<p>To address this problem, the salary should be an object of a class.</p>"
+statement: "A Java method cannot update primitive\ntype parameters. For example, the following program cannot work as\nintended:\n\
+  \n```\n\npublic class BonusTester\n{\n   public static void applyBonus(double value, double bonus)\n   {\n      value =\
+  \ value * (1 + bonus);\n   }\n   \n   public static void main(String[] args)\n   {\n      double sal = 45000;\n      applyBonus(sal,\
+  \ 0.02); // 2% bonus; cannot work\n      System.out.println(sal); \n      System.out.println(\"Expected: 45900.0\"); \n\
+  \   }\n}\n```\n\n    \nTo address this problem, the salary should be an object of a class."
 elements:
 - type: editable
   location:

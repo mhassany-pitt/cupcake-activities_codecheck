@@ -19,13 +19,19 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: "<p>Complete the <code>CarMuseum</code> class below so that it implements the given\n    <code>Measurable</code>\
-  \ interface. Your tasks are as follows:</p>\n    <ul>\n    <li>Modify the <code>CarMuseum</code> class to implement the\
-  \ <code>Measurable</code> interface.</li>\n    <li>In the constructor of <code>CarMuseum</code>, process the input string,\
-  \ and add unique cars to the\n    arraylist (do not add duplicates). </li>\n    <li>Implement the method in <code>Measurable</code>\
-  \ within <code>CarMuseum</code> to return the count of cars\n    in the museum.</li>\n    </ul>\n\t<p>For example, if the\
-  \ input string is \"1949 Ford,1943 Studebaker,1950 Chevrolet,1948 Pontiac,1949 Ford,1944 Pontiac,1949 Studebaker\", then\n\
-  \              the <code>getMeasure</code> method of the <code>CarMuseum</code> class should return 6.0.</p>"
+statement: |-
+  Complete the `CarMuseum` class below so that it implements the given
+  `Measurable` interface. Your tasks are as follows:
+
+  <ul>
+  <li>Modify the `CarMuseum` class to implement the `Measurable` interface.</li>
+  <li>In the constructor of `CarMuseum`, process the input string, and add unique cars to the
+      arraylist (do not add duplicates). </li>
+  <li>Implement the method in `Measurable` within `CarMuseum` to return the count of cars
+      in the museum.</li>
+  </ul>
+  For example, if the input string is "1949 Ford,1943 Studebaker,1950 Chevrolet,1948 Pontiac,1949 Ford,1944 Pontiac,1949 Studebaker", then
+                the `getMeasure` method of the `CarMuseum` class should return 6.0.
 elements:
 - type: editable
   location:

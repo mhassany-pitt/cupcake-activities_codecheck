@@ -21,12 +21,12 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>When you work with angle measurements, you often want them
-      <q>normalized</q> or converted into the range between 0 . . . 359
-      degrees. Write a method <code>normalize</code> that takes an angle of any size
+  When you work with angle measurements, you often want them
+  <q>normalized</q> or converted into the range between 0 . . . 359
+      degrees. Write a method `normalize` that takes an angle of any size
       (positive or negative) and normalizes it. For example,
-      <code>normalize(380)</code> should return 20, and <code>normalize(-30)</code>
-      should return 330. </p>
+  `normalize(380)` should return 20, and `normalize(-30)`
+      should return 330.
 elements:
 - type: editable
   location:

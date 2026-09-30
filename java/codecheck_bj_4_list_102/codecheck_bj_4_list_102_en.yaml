@@ -20,15 +20,19 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>Your task is to duplicate all short words (that is, words with at most
+  Your task is to duplicate all short words (that is, words with at most
       3 characters) in a linked list. For example, you should transform the
-      linked list with the elements</p>
+      linked list with the elements
 
-      <pre>Mary, had, a, little, lamb</pre>
+  ```
+  Mary, had, a, little, lamb
+  ```
 
-      <p>into</p>
+  into
 
-      <pre>Mary, had, had, a, a, little, lamb</pre>
+  ```
+  Mary, had, had, a, a, little, lamb
+  ```
 elements:
 - type: editable
   location:

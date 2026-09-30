@@ -19,10 +19,10 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: "<p>The <code>Vehicle</code> class given below is used to represent various types\n    of self-propelled vehicles.\
-  \ It should be illegal to construct a Vehicle of type\n    \"truck\" with less than 4 wheels, or a Vehicle of type \"motorcycle\"\
-  \ with \n    any number of wheels except 2. Modify the constructor so that an\n    <code>IllegalArgumentException</code>\
-  \ is thrown if either of these conditions\n    are not met.</p>"
+statement: "The `Vehicle` class given below is used to represent various types\n    of self-propelled vehicles. It should\
+  \ be illegal to construct a Vehicle of type\n    \"truck\" with less than 4 wheels, or a Vehicle of type \"motorcycle\"\
+  \ with \n    any number of wheels except 2. Modify the constructor so that an\n`IllegalArgumentException` is thrown if either\
+  \ of these conditions\n    are not met."
 elements:
 - type: editable
   location:

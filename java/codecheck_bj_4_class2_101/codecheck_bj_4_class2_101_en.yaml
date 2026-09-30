@@ -19,21 +19,12 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: |-
-  <p>Consider the <code>Person</code> class below.</p>
-
-      <p>Note how this class intermingles two responsibilities: describing a
-      person, and formatting an address. The second responsibility is not
-      trivial. We may want to add support for department names or apartment
-      numbers. Addresses in other countries have entirely different formats.</p>
-
-      <p>Ideally, the <code>Person</code> class should have a single responsibility:
-      to describe a person who has an address. A separate <code>Address</code> class
-      should be responsible for the details of managing addresses. </p>
-
-      <p>Your task is to modify the <code>Person</code> class so that it uses the
-      <code>Address</code> class given below. The <code>main</code> method shows how your modified
-      class should be used. </p>
+statement: "Consider the `Person` class below.\n\nNote how this class intermingles two responsibilities: describing a\n  \
+  \  person, and formatting an address. The second responsibility is not\n    trivial. We may want to add support for department\
+  \ names or apartment\n    numbers. Addresses in other countries have entirely different formats.\n\nIdeally, the `Person`\
+  \ class should have a single responsibility:\n    to describe a person who has an address. A separate `Address` class\n\
+  \    should be responsible for the details of managing addresses. \n\nYour task is to modify the `Person` class so that\
+  \ it uses the\n`Address` class given below. The `main` method shows how your modified\n    class should be used."
 elements:
 - type: editable
   location:

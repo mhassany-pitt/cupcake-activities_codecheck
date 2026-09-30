@@ -21,24 +21,24 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>Many web site instruct browsers to set <i>cookies</i>, small pieces of
+  Many web site instruct browsers to set *cookies*, small pieces of
       information that the browser will send back to the web site when it
       connects again. Many cookies are quite harmless and merely tell the server
       which page requests are related. However, some cookies are used for
-      marketing and tracking purposes.</p>
+      marketing and tracking purposes.
 
-      <p>Your task is to write a program that prints all cookies that a web page
+  Your task is to write a program that prints all cookies that a web page
       wants to set. The cookies are a part of the HTTP header that is sent
       before the actual HTML document. Cookies are sent in lines that start with
-      <code>Set-Cookie:</code>. However, letter case is not significant, and you
+  `Set-Cookie:`. However, letter case is not significant, and you
       need to be able to handle variations in letter case. Some web site even
-      use a mixture of <code>Set-Cookie:</code>, <code>set-cookie:</code>, and so on, in
-      the same page.</p>
+      use a mixture of `Set-Cookie:`, `set-cookie:`, and so on, in
+      the same page.
 
-      <p>Your program should use the <code>URLConnection</code> class, not sockets.
+  Your program should use the `URLConnection` class, not sockets.
       Use the <a
       href="http://java.sun.com/javase/6/docs/api/java/net/URLConnection.html#getHeaderFields()">getHeaderFields</a>
-      method. </p>
+      method.
 elements:
 - type: editable
   location:

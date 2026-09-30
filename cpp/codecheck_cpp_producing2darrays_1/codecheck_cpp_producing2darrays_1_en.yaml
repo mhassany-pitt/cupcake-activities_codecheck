@@ -20,8 +20,8 @@ pedagogy:
 runtime:
   language: cpp
   version: '17'
-statement: "<code>Given an integer <code>n</code>, produce the 2D <code>vector</code> \n<pre>{\n {0, 1, 2, 3, ... n},\n {1,\
-  \ 2, 3, ... n, 0}\n ...\n {n, 0, 1, 2 ... n-1}\n}\n</pre>"
+statement: "`Given an integer <code>n`, produce the 2D `vector` \n\n```\n{\n {0, 1, 2, 3, ... n},\n {1, 2, 3, ... n, 0}\n\
+  \ ...\n {n, 0, 1, 2 ... n-1}\n}\n```"
 elements:
 - type: locked
   location:

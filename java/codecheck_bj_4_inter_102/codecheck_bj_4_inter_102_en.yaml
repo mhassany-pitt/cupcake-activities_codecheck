@@ -20,11 +20,11 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>In this exercise, we use the <code>Word</code> class from chapter 6 (with
-      the bugs fixed). You should not change the <code>Word</code> class at all.
-      Supply a class <code>WordMeasurer</code> that implements the <code>Measurer</code>
-      interface. The <code>measure</code> method, when applied to a <code>Word</code>
-      object, should return the number of syllables in the word.</p>
+  In this exercise, we use the `Word` class from chapter 6 (with
+      the bugs fixed). You should not change the `Word` class at all.
+      Supply a class `WordMeasurer` that implements the `Measurer`
+      interface. The `measure` method, when applied to a `Word`
+      object, should return the number of syllables in the word.
 elements:
 - type: editable
   location:

@@ -20,10 +20,10 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>Your task is to read a serialized array of objects. You are given a
-      <code>FileInputStream</code>, and you need to read and return the serialized
-      <code>Object[]</code> array within. If a <code>ClassCastException</code> occurs,
-      turn it into an <code>IOException</code> with the same message text.</p>
+  Your task is to read a serialized array of objects. You are given a
+  `FileInputStream`, and you need to read and return the serialized
+  `Object[]` array within. If a `ClassCastException` occurs,
+      turn it into an `IOException` with the same message text.
 elements:
 - type: editable
   location:

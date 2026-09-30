@@ -21,8 +21,8 @@ pedagogy:
 runtime:
   language: cpp
   version: '17'
-statement: "Given a list of integers and a value, return the position \nof the <b>last</b> occurrence of the value in the\
-  \ array, or -1 if \nthe value does not exist."
+statement: "Given a list of integers and a value, return the position \nof the **last** occurrence of the value in the array,\
+  \ or -1 if \nthe value does not exist."
 elements:
 - type: locked
   location:

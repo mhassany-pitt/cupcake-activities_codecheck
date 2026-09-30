@@ -20,8 +20,8 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: "<p>Create the <code>Movement</code> interface below and the abstract \n    methods <code>move</code> and <code>getPosition</code>,\
-  \ which are implemented by the <code>Ship</code> and <code>Auto</code> classes.</p>"
+statement: "Create the `Movement` interface below and the abstract \n    methods `move` and `getPosition`, which are implemented\
+  \ by the `Ship` and `Auto` classes."
 elements:
 - type: editable
   location:

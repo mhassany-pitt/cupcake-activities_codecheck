@@ -20,12 +20,12 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>Your task is to write a method that produces images from strings describing color values.</p>
+  Your task is to write a method that produces images from strings describing color values.
 
-  <p>Draw a small box for each color: red, green, blue, cyan, magenta, yellow,
+  Draw a small box for each color: red, green, blue, cyan, magenta, yellow,
   black, white. The colors are coded in a string, using the letters R, G, B, C,
-  M, Y, K, W. The helper method <code>getSquareColor</code> returns the color
-  corresponding to a particular letter. </p>
+  M, Y, K, W. The helper method `getSquareColor` returns the color
+  corresponding to a particular letter.
 elements:
 - type: editable
   location:

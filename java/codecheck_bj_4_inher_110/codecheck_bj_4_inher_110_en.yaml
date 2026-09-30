@@ -20,11 +20,11 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: "<p>All vehicles used for transportation in the U.S. must have identification, which varies according to the type\
+statement: "All vehicles used for transportation in the U.S. must have identification, which varies according to the type\
   \ of vehicle.  For example,\n\tall automobiles have a unique Vehicle Identification Number (VIN) assigned by the manufacturer,\
-  \ plus a license plate number assigend by\n\tthe state in which the auto is registerd.  Your task is to modify the <code>Auto</code>\
-  \ class below to override the <code>equals</code> method of the \n\t<code>Vehicle</code> class to test that the VIN and\
-  \ license plate number are identical.</p>"
+  \ plus a license plate number assigend by\n\tthe state in which the auto is registerd.  Your task is to modify the `Auto`\
+  \ class below to override the `equals` method of the \n`Vehicle` class to test that the VIN and license plate number are\
+  \ identical."
 elements:
 - type: editable
   location:

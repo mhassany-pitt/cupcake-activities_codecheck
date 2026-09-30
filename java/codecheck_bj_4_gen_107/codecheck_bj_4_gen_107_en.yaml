@@ -20,11 +20,9 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>
   The class below has a static method which sets all elements of an array to a value.
   The method is written for an array of strings. This will cause the method to not compile when invoked on arrays of other types. You will need to modify
   it so that it works for any type.
-  </p>
 elements:
 - type: editable
   location:

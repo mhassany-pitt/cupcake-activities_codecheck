@@ -20,13 +20,12 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: "<p>Your task is to find out what happens when you call the <code>toUpperCase</code> method on strings that\ncontain\
-  \ accented characters and other international characters. Does a lowercase é really become an uppercase É? What about the\
-  \ German “double s”, written as ß? There is no corresponding uppercase \nletter. A German who wants to write the word <i>Fuß</i>\
-  \ (foot) in uppercase writes <i>FUSS</i>. </p>\n<p>Verify that Java knows about the proper handling of these characters.\
-  \ Look up their Unicode values in Appendix A. To include a Unicode character in a string, start with <code>\\u</code> and\
-  \ then include the four Unicode hex digits. For example, the Java string with the contents <i>San José</i> is written as\
-  \ <code>&quot;San Jos\\u00E9&quot;</code>.</p>"
+statement: "Your task is to find out what happens when you call the `toUpperCase` method on strings that\ncontain accented\
+  \ characters and other international characters. Does a lowercase é really become an uppercase É? What about the German\
+  \ “double s”, written as ß? There is no corresponding uppercase \nletter. A German who wants to write the word *Fuß* (foot)\
+  \ in uppercase writes *FUSS*. \n\nVerify that Java knows about the proper handling of these characters. Look up their Unicode\
+  \ values in Appendix A. To include a Unicode character in a string, start with `\\u` and then include the four Unicode hex\
+  \ digits. For example, the Java string with the contents *San José* is written as `&quot;San Jos\\u00E9&quot;`."
 elements:
 - type: editable
   location:

@@ -21,9 +21,8 @@ pedagogy:
 runtime:
   language: cpp
   version: '17'
-statement: "<p>Given a <code>vector&lt;vector&lt;int&gt;&gt;</code> <code>v</code>, return \n   an <code>vector</code> whose\
-  \ <code>[i][j]</code> element is the average \n   of the neighbors of <code>v[i][j]</code> in the N, E, S, W direction.\
-  \ \n   You may assume that there are elements in all directions. \n</p>"
+statement: "Given a `vector&lt;vector&lt;int&gt;&gt;` `v`, return \n   an `vector` whose `[i][j]` element is the average \n\
+  \   of the neighbors of `v[i][j]` in the N, E, S, W direction. \n   You may assume that there are elements in all directions."
 elements:
 - type: locked
   location:

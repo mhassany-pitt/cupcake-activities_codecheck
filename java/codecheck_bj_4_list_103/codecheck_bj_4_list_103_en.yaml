@@ -20,13 +20,15 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>Your task is to concatenate all elements in a linked list of strings
+  Your task is to concatenate all elements in a linked list of strings
       backwards, starting at the end of the list. For example, if a linked list
-      contains the strings</p>
+      contains the strings
 
-      <pre>Mary, had, a, little, lamb</pre>
+  ```
+  Mary, had, a, little, lamb
+  ```
 
-      <p>you should return the string <code>"lamblittleahadMary"</code>.</p>
+  you should return the string `"lamblittleahadMary"`.
 elements:
 - type: editable
   location:

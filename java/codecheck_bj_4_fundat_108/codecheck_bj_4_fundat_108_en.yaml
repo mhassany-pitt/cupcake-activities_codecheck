@@ -20,12 +20,13 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>A position on the planet Earth is specified by latitude and longitude (in degrees). The distance between two points on a sphere can be calculated with the following formula, where latitude and longitude are in radians and r is the radius of the sphere:</p>
-  <p>
+  A position on the planet Earth is specified by latitude and longitude (in degrees). The distance between two points on a sphere can be calculated with the following formula, where latitude and longitude are in radians and r is the radius of the sphere:
+
   distance = r * arccos(sin(latitude1) * sin(latitude2) + cos(latitude1) * cos(latitude2)  * cos(longitude1 - longitude2))
-  </p>
-  <p>The radius of the planet Earth is 6371 km</p>
-  <p>Your task is to compute the distance between two <code>Location</code> objects.</p>
+
+  The radius of the planet Earth is 6371 km
+
+  Your task is to compute the distance between two `Location` objects.
 elements:
 - type: editable
   location:

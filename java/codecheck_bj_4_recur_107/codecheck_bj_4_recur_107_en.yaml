@@ -19,10 +19,10 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: "<p>We want to implement a method that reverses the digits in an integer. For example,\n<code>reverseDigits(3456)</code>\
-  \ should yield 6543. </p>\n<p>Use a recursive helper method reverseDigitsHelper. Here is a typical computation. </p>\n<pre>reverseDigitsHelper(3456,\
+statement: "We want to implement a method that reverses the digits in an integer. For example,\n`reverseDigits(3456)` should\
+  \ yield 6543. \n\nUse a recursive helper method reverseDigitsHelper. Here is a typical computation. \n\n```\nreverseDigitsHelper(3456,\
   \ 0) \n= reverseDigitsHelper(345, 6) \n= reverseDigitsHelper(34, 65) \n= reverseDigitsHelper(3, 654) \n= reverseDigitsHelper(0,\
-  \ 6543) \n= 6543\n</pre>"
+  \ 6543) \n= 6543\n```"
 elements:
 - type: editable
   location:

@@ -19,26 +19,13 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: |-
-  <p>Consider the following algorithm to sort an array of strings and remove
-      duplicates, using two threads. </p>
-
-      <p>The first thread keeps carrying out the following operation: Starting
-      at the beginning of the array, look for two adjacent elements that are out
-      of order. If such a pair is found, swap the elements. </p>
-
-      <p>The second thread keeps carrying out the following operation: Starting
-      at the beginning of the array, look for two adjacent elements that are
-      equal. If such a pair is found, remove one of the elements. </p>
-
-      <p>This is a very inefficient algorithm, but it will eventually sort the
-      array and remove all duplicates.</p>
-
-      <p>However, the program below never stops because both threads run
-      forever.</p>
-
-      <p>Your task is to find a way to terminate each thread when it cannot do
-      any further work.</p>
+statement: "Consider the following algorithm to sort an array of strings and remove\n    duplicates, using two threads. \n\
+  \nThe first thread keeps carrying out the following operation: Starting\n    at the beginning of the array, look for two\
+  \ adjacent elements that are out\n    of order. If such a pair is found, swap the elements. \n\nThe second thread keeps\
+  \ carrying out the following operation: Starting\n    at the beginning of the array, look for two adjacent elements that\
+  \ are\n    equal. If such a pair is found, remove one of the elements. \n\nThis is a very inefficient algorithm, but it\
+  \ will eventually sort the\n    array and remove all duplicates.\n\nHowever, the program below never stops because both\
+  \ threads run\n    forever.\n\nYour task is to find a way to terminate each thread when it cannot do\n    any further work."
 elements:
 - type: editable
   location:

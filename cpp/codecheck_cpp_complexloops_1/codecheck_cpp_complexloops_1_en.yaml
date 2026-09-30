@@ -20,8 +20,8 @@ pedagogy:
 runtime:
   language: cpp
   version: '17'
-statement: "<p>Given a <code>vector&lt;vector&lt;int&gt;&gt;</code>, return the number of \n   distinct elements. Consider\
-  \ an empty <code>vector</code>\n   as having 0 distinct entries.\n</p>"
+statement: "Given a `vector&lt;vector&lt;int&gt;&gt;`, return the number of \n   distinct elements. Consider an empty `vector`\n\
+  \   as having 0 distinct entries."
 elements:
 - type: locked
   location:

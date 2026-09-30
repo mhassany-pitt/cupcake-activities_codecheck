@@ -21,10 +21,10 @@ runtime:
   language: cpp
   version: '17'
 statement: |-
-  Given an array <code>a</code>, return the length of the longest
+  Given an array `a`, return the length of the longest
   sequence that appears both at the front and back of the array.
-  Given <code>[1 2 3 4 5 4 3 1 2]</code> the length of the longest
-  sequence is <code>2</code> (the sequence <code>[1 2]</code>).
+  Given `[1 2 3 4 5 4 3 1 2]` the length of the longest
+  sequence is `2` (the sequence `[1 2]`).
 elements:
 - type: locked
   location:

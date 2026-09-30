@@ -21,14 +21,14 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>Your task is to draw  <i>n</i> balloons centered at random positions, each
-  with a randomly colored circle and a white string.</p>
+  Your task is to draw  *n* balloons centered at random positions, each
+  with a randomly colored circle and a white string.
 
-  <p> The <code>BalloonComponent</code> class generates <i>n</i> balloons
+   The `BalloonComponent` class generates *n* balloons
   centered at random positions in the frame and draws them with a randomly
-  colored circle and a white string. The <code>Balloon</code> class stores an
-  <code>Ellipse2D.Double</code> object that defines the circle and a
-  <code>Line2D.Double</code> object that defines the string.</p>
+  colored circle and a white string. The `Balloon` class stores an
+  `Ellipse2D.Double` object that defines the circle and a
+  `Line2D.Double` object that defines the string.
 elements:
 - type: editable
   location:

@@ -21,10 +21,10 @@ pedagogy:
 runtime:
   language: cpp
   version: '17'
-statement: "<p>Given a rectangular, two-dimensional array of integers \nand a string \"NW\", \"NE\", \"SW, or \"SE\", return\
-  \ the sum of \nthe four elements in the corner of the given compass direction.\n</p>\n<p>For instance, if \"NW\" is given,\
-  \ then the four elements in the \n   Northwest corner are at <code>[0][0]</code>, <code>[0][1]</code>, \n   <code>[1][0]</code>,\
-  \ and <code>[1][1]</code>. \n   You may assume that the two-dimensional array is at least 2x2. \n</p>"
+statement: "Given a rectangular, two-dimensional array of integers \nand a string \"NW\", \"NE\", \"SW, or \"SE\", return\
+  \ the sum of \nthe four elements in the corner of the given compass direction.\n\nFor instance, if \"NW\" is given, then\
+  \ the four elements in the \n   Northwest corner are at `[0][0]`, `[0][1]`, \n`[1][0]`, and `[1][1]`. \n   You may assume\
+  \ that the two-dimensional array is at least 2x2."
 elements:
 - type: locked
   location:

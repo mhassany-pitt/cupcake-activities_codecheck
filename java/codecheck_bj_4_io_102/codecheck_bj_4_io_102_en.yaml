@@ -20,9 +20,9 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>Your task is to open a file, read all words in the file, and find the
+  Your task is to open a file, read all words in the file, and find the
       longest word in the file. If there are multiple words with the same
-      length, return the first of the maximum length words. </p>
+      length, return the first of the maximum length words.
 elements:
 - type: editable
   location:

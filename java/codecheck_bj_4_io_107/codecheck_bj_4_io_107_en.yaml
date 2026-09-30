@@ -20,9 +20,9 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: "<p>Your task is to read an input file containing a name on each line, and then\n    write an output file with\
-  \ those names, with the first letter of each name in \n    uppercase.\n    For example, if the input file contains the name\
-  \ \"bugs bunny\" on one line,\n    the output file should contain \"Bugs Bunny\" on one line.</p>"
+statement: "Your task is to read an input file containing a name on each line, and then\n    write an output file with those\
+  \ names, with the first letter of each name in \n    uppercase.\n    For example, if the input file contains the name \"\
+  bugs bunny\" on one line,\n    the output file should contain \"Bugs Bunny\" on one line."
 elements:
 - type: editable
   location:

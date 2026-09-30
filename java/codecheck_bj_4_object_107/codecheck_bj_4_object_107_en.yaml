@@ -20,8 +20,8 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: '<p>A stronger password can be created by replacing characters with similar-looking symbols: e becomes 3, i becomes
-  1, a becomes @, and s becomes $.</p>'
+statement: 'A stronger password can be created by replacing characters with similar-looking symbols: e becomes 3, i becomes
+  1, a becomes @, and s becomes $.'
 elements:
 - type: editable
   location:

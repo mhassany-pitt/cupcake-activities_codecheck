@@ -19,25 +19,11 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: |-
-  <p>The constructor of the <code>SalaryBonus</code> class below makes the following assumptions;
-       </p>
-
-      <ul>
-        <li><code>salary</code> should not exceed 150,000. </li>
-
-        <li><code>bonusRate</code> should not exceed 5%.
-        </li>
-      </ul>
-
-      <p>You should add <code>assert</code> statements to the constructor that check
-      for these preconditions. </p>
-
-      <p>The <code>check</code> method uses exception handling, a technique
-      introduced in Chapter 11 of the text, to check that you inserted the
-      appropriate <code>assert</code> statements. You need not understand the
-      implementation of the <code>check</code> method at this time, and you should
-      not modify it. </p>
+statement: "The constructor of the `SalaryBonus` class below makes the following assumptions;\n\n<ul>\n<li>`salary` should\
+  \ not exceed 150,000. </li>\n\n<li>`bonusRate` should not exceed 5%.\n</li>\n</ul>\n\nYou should add `assert` statements\
+  \ to the constructor that check\n    for these preconditions. \n\nThe `check` method uses exception handling, a technique\n\
+  \    introduced in Chapter 11 of the text, to check that you inserted the\n    appropriate `assert` statements. You need\
+  \ not understand the\n    implementation of the `check` method at this time, and you should\n    not modify it."
 elements:
 - type: editable
   location:

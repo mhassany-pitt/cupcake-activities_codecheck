@@ -22,7 +22,7 @@ runtime:
   language: cpp
   version: '17'
 statement: "Given an array of integers, return the position of the first element \nthat occurs more than once, or -1 if all\
-  \ elements occur exactly once.\nFor example, <code>[1, 2, 1]</code> would return 0."
+  \ elements occur exactly once.\nFor example, `[1, 2, 1]` would return 0."
 elements:
 - type: locked
   location:

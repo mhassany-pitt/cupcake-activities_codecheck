@@ -20,9 +20,9 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: "<p>\nUsing a queue and a stack, implement a method that tests whether a sequence of numbers\nis a palindrome,\
-  \ that is, equal to the sequence in reverse. For example, <code>[1,2,3,2,1]</code> is a palindrome, but <code>[1,2,2,3,1]</code>\
-  \ is not. \n</p>"
+statement: |-
+  Using a queue and a stack, implement a method that tests whether a sequence of numbers
+  is a palindrome, that is, equal to the sequence in reverse. For example, `[1,2,3,2,1]` is a palindrome, but `[1,2,2,3,1]` is not.
 elements:
 - type: editable
   location:

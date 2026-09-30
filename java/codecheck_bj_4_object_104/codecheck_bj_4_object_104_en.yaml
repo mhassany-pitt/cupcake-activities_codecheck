@@ -21,11 +21,12 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>Your task is to translate the rectangle <code>box2</code> in the program below so that
-      the intersection of <code>box</code> and <code>box2</code> has area 100.</p>
-      <p>Hint: Draw a picture that shows the positions of <code>box1</code> and
-      <code>box2</code>. Then move <code>box2</code> so that it overlaps with
-      <code>box1</code> in a 10 by 10 square. </p>
+  Your task is to translate the rectangle `box2` in the program below so that
+      the intersection of `box` and `box2` has area 100.
+
+  Hint: Draw a picture that shows the positions of `box1` and
+  `box2`. Then move `box2` so that it overlaps with
+  `box1` in a 10 by 10 square.
 elements:
 - type: editable
   location:

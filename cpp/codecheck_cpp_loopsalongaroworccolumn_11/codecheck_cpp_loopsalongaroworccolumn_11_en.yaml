@@ -20,7 +20,7 @@ pedagogy:
 runtime:
   language: cpp
   version: '17'
-statement: <p>Given a two-dimensional square array of integers, reverse both diagonals.</p>
+statement: Given a two-dimensional square array of integers, reverse both diagonals.
 elements:
 - type: locked
   location:

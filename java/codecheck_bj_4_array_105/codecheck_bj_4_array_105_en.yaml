@@ -21,23 +21,24 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>You are given a class similar to the TicTacToe board in Section 7.6,
-      but the board can have more than 3 rows and columns.</p>
+  You are given a class similar to the TicTacToe board in Section 7.6,
+      but the board can have more than 3 rows and columns.
 
-      <p>Your task is to complete a method that fills the four borders (that is,
+  Your task is to complete a method that fills the four borders (that is,
       all cells at the left, right, top, and bottom boundary) with
-      asterisks, like this:</p>
-  <pre>
-  ********
-  *      *
-  *      *
-  *      *
-  *      *
-  *      *
-  *      *
-  ********
+      asterisks, like this:
 
-  </pre>
+  ```
+
+  ********
+  *      *
+  *      *
+  *      *
+  *      *
+  *      *
+  *      *
+  ********
+  ```
 elements:
 - type: editable
   location:

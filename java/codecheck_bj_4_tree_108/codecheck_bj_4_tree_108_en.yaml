@@ -21,10 +21,8 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>
   Given an array of strings, create a tree map whose keys are the string lengths and whose values are the sets of strings with the length given by the key. For example, given the
-  array <code>[I, like, Java]</code>, produce a map that maps 1 to the set containing <code>"I"</code> and 4 to the set containing <code>"like"</code> and <code>"Java"</code>.
-  </p>
+  array `[I, like, Java]`, produce a map that maps 1 to the set containing `"I"` and 4 to the set containing `"like"` and `"Java"`.
 elements:
 - type: editable
   location:

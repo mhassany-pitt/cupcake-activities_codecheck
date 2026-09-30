@@ -19,11 +19,8 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: |-
-  <p>A labeled point has an x- and y-position and a label. </p>
-
-      <p>Implement the <code>toString</code> method of the <code>LabeledPoint</code>
-      class. </p>
+statement: "A labeled point has an x- and y-position and a label. \n\nImplement the `toString` method of the `LabeledPoint`\n\
+  \    class."
 elements:
 - type: editable
   location:

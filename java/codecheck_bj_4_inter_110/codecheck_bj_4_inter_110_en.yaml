@@ -19,10 +19,10 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: <p>The <code>Cat</code> and <code>Dog</code> class below implement the <code>Animal</code> interface. All animals
-  have names, but only dogs do tricks. Implement the <code>describe</code> method, using the <code>instanceof</code> operator
-  to test whether the given animal is a dog. If so, return the name, a space, and the trick that the dog can do, such as "Helmut
-  barks at the moon".  If it is any other kind of animal, return the name, a space, and "has no tricks".</p>
+statement: The `Cat` and `Dog` class below implement the `Animal` interface. All animals have names, but only dogs do tricks.
+  Implement the `describe` method, using the `instanceof` operator to test whether the given animal is a dog. If so, return
+  the name, a space, and the trick that the dog can do, such as "Helmut barks at the moon".  If it is any other kind of animal,
+  return the name, a space, and "has no tricks".
 elements:
 - type: editable
   location:

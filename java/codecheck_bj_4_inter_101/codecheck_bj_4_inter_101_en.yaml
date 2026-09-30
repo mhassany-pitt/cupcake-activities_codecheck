@@ -19,14 +19,9 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: |-
-  <p>Complete the <code>Sentence</code> class below so that it implements the
-      <code>Measurable</code> interface. The measure of a sentence should be the
-      number of words. For example, </p>
-
-      <pre>new Sentence("Mary had a little lamb.").getMeasure()</pre>
-
-      <p>should return 5. </p>
+statement: "Complete the `Sentence` class below so that it implements the\n`Measurable` interface. The measure of a sentence\
+  \ should be the\n    number of words. For example, \n\n```\nnew Sentence(\"Mary had a little lamb.\").getMeasure()\n```\n\
+  \nshould return 5."
 elements:
 - type: editable
   location:

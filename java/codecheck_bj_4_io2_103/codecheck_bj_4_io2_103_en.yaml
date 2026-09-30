@@ -19,18 +19,10 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: |-
-  <p>Your task is to swap all letters A with O and all letters a with o in a
-      RandomAccessFile. Simply read a byte at a time, and if you find a letter
-      to be swapped, move one byte back. </p>
-
-      <p>For example, when you process a file containing the text of a
-      well-known childrens song, it will be transformed into</p>
-
-      <pre>    Mory hod o little lomb,
-      little lomb, little lomb,
-      Mory hod o little lomb, its fleece wos white os snaw.
-  </pre>
+statement: "Your task is to swap all letters A with O and all letters a with o in a\n    RandomAccessFile. Simply read a byte\
+  \ at a time, and if you find a letter\n    to be swapped, move one byte back. \n\nFor example, when you process a file containing\
+  \ the text of a\n    well-known childrens song, it will be transformed into\n\n```\n    Mory hod o little lomb,\n    little\
+  \ lomb, little lomb,\n    Mory hod o little lomb, its fleece wos white os snaw.\n```"
 elements:
 - type: editable
   location:

@@ -20,9 +20,9 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>The <code>checkURL</code> method below checks whether a web site contains data. Checked
+  The `checkURL` method below checks whether a web site contains data. Checked
       exceptions can be thrown in the code. Your task is to declare them but
-      <i>not</i> to catch them. </p>
+  *not* to catch them.
 elements:
 - type: editable
   location:

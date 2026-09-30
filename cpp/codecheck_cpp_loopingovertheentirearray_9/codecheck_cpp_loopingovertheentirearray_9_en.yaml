@@ -20,8 +20,8 @@ pedagogy:
 runtime:
   language: cpp
   version: '17'
-statement: "<p>Given a <code>vector&lt;vector&lt;int&gt;&gt;, return a  \n   <code>vector</code> containing the the number\
-  \ of negative \n   elements in each row.\n</p>"
+statement: "Given a `vector&lt;vector&lt;int&gt;&gt;, return a  \n<code>vector` containing the the number of negative \n \
+  \  elements in each row."
 elements:
 - type: locked
   location:

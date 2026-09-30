@@ -21,9 +21,8 @@ pedagogy:
 runtime:
   language: cpp
   version: '17'
-statement: "<p>Given a two-dimensional array of integers, row/column positions \n   <code>r</code>, <code>c</code>, and a\
-  \ value <code>x</code>, \n   fill the given element and its neighbors (in the compass directions N \n   E S W NE NW SE SW)\
-  \ with <code>x</code>.\n</p>"
+statement: "Given a two-dimensional array of integers, row/column positions \n`r`, `c`, and a value `x`, \n   fill the given\
+  \ element and its neighbors (in the compass directions N \n   E S W NE NW SE SW) with `x`."
 elements:
 - type: locked
   location:

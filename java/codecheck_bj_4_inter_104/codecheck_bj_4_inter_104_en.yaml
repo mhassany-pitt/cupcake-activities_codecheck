@@ -20,18 +20,17 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>Some objects can be doubled, for example a bank account. The result
+  Some objects can be doubled, for example a bank account. The result
       would be a bank account with twice the balance. Some objects can't be
       doubled. For example, there is no double of a dime coin—no twenty
-      cent coin exists.</p>
+      cent coin exists.
 
-      <p>The <code>Doubler</code> interface (given below) describes a callback that can compute
-      the doubling of a given object.</p>
+  The `Doubler` interface (given below) describes a callback that can compute
+      the doubling of a given object.
 
-      <p>Your job is to provide a class <code>RectangleDoubler</code> that computes
-      the doubling of a <code>Rectangle</code>. The doubling should have double the
+  Your job is to provide a class `RectangleDoubler` that computes
+      the doubling of a `Rectangle`. The doubling should have double the
       width and height, but the same x and y positions of the top left corner.
-      </p>
 elements:
 - type: editable
   location:

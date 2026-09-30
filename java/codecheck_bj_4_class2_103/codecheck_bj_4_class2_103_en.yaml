@@ -19,39 +19,14 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: |-
-  <p>The constructor of the <code>Sentence</code> class below makes assumptions
-      about the <code>text</code> parameter: </p>
-
-      <ul>
-        <li><code>text</code> should end in a punctuation symbol (. ? !) </li>
-
-        <li>The words in <code>text</code> should be separated by single spaces.
-        </li>
-      </ul>
-
-      <p>For example,</p>
-
-      <pre>new Sentence("Mary had a little lamb.")</pre>
-
-      <p>is ok, but</p>
-
-      <pre>new Sentence("Mary had a little lamb")</pre>
-
-      <p>and</p>
-
-      <pre>new Sentence("Mary  had  a  little  lamb!")</pre>
-
-      <p>are not.</p>
-
-      <p>You should add <code>assert</code> statements to the constructor that check
-      for these preconditions. </p>
-
-      <p>The <code>check</code> method uses exception handling, a technique
-      introduced in Chapter 11 of the text, to check that you inserted the
-      appropriate <code>assert</code> statements. You need not understand the
-      implementation of the <code>check</code> method at this time, and you should
-      not modify it. </p>
+statement: "The constructor of the `Sentence` class below makes assumptions\n    about the `text` parameter: \n\n<ul>\n<li>`text`\
+  \ should end in a punctuation symbol (. ? !) </li>\n\n<li>The words in `text` should be separated by single spaces.\n</li>\n\
+  </ul>\n\nFor example,\n\n```\nnew Sentence(\"Mary had a little lamb.\")\n```\n\nis ok, but\n\n```\nnew Sentence(\"Mary had\
+  \ a little lamb\")\n```\n\nand\n\n```\nnew Sentence(\"Mary  had  a  little  lamb!\")\n```\n\nare not.\n\nYou should add\
+  \ `assert` statements to the constructor that check\n    for these preconditions. \n\nThe `check` method uses exception\
+  \ handling, a technique\n    introduced in Chapter 11 of the text, to check that you inserted the\n    appropriate `assert`\
+  \ statements. You need not understand the\n    implementation of the `check` method at this time, and you should\n    not\
+  \ modify it."
 elements:
 - type: editable
   location:

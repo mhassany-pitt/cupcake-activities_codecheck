@@ -19,11 +19,9 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: |-
-  <p>Write a method to test whether three numbers have the same sign (positive, zero, or negative). For example, </p>
-  <ul><li>-3, -4, -5 have the same sign</li><li>3, 4, -5 do not have the same sign</li>
-  <li>3, 4, 0 do not have the same sign (because 0 is not positive)</li><li>0, 0, 0 have the same sign</li>
-  </ul>
+statement: "Write a method to test whether three numbers have the same sign (positive, zero, or negative). For example, \n\
+  \n<ul><li>-3, -4, -5 have the same sign</li><li>3, 4, -5 do not have the same sign</li>\n<li>3, 4, 0 do not have the same\
+  \ sign (because 0 is not positive)</li><li>0, 0, 0 have the same sign</li>\n</ul>"
 elements:
 - type: editable
   location:

@@ -21,10 +21,8 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>
   Given an array of strings, create a tree map with each string as a key and
   its corresponding value the number of letters in that string.
-  </p>
 elements:
 - type: editable
   location:

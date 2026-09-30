@@ -21,12 +21,12 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>Complete the following function that computes the length of a line
-      segment with end points (<i>x</i><sub>1</sub>, <i>y</i><sub>1</sub>) and
-      (<i>x</i><sub>2</sub>, <i>y</i><sub>2</sub>). According to the Pythagorean
-      theorem, the length is √(<i>x</i><sub>1</sub> -
-      <i>x</i><sub>2</sub>)<sup>2</sup> + (<i>y</i><sub>1</sub> -
-      <i>y</i><sub>2</sub>)<sup>2</sup>. <code></code> </p>
+  Complete the following function that computes the length of a line
+      segment with end points (*x*<sub>1</sub>, *y*<sub>1</sub>) and
+      (*x*<sub>2</sub>, *y*<sub>2</sub>). According to the Pythagorean
+      theorem, the length is √(*x*<sub>1</sub> -
+  *x*<sub>2</sub>)<sup>2</sup> + (*y*<sub>1</sub> -
+  *y*<sub>2</sub>)<sup>2</sup>. ``
 elements:
 - type: editable
   location:

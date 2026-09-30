@@ -4,7 +4,7 @@ locale: en
 id: fc_codecheck_bj_4_sort_109_en
 source: MergeSorter.java
 title: Sorting and Searching 109
-description: Modify the merge method so that the merging produces a descending sort.
+description: '``` Modify the merge method so that the merging produces a descending sort. ```'
 authors:
 - first: Cay
   last: Horstmann
@@ -20,9 +20,10 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <pre>
+  ```
+
   Modify the merge method so that the merging produces a descending sort.
-  </pre>
+  ```
 elements:
 - type: editable
   location:

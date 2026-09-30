@@ -19,10 +19,7 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: |-
-  <p>
-  Implement the <code>addLast</code> method in this simplified <code>LinkedList</code> class.
-  </p>
+statement: Implement the `addLast` method in this simplified `LinkedList` class.
 elements:
 - type: editable
   location:

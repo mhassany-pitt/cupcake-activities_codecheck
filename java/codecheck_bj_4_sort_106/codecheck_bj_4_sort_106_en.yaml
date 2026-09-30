@@ -21,8 +21,8 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>Your task is to modify the selection sort algorithm so that you find
-      the <i>largest</i> element and swap it to the last position and find the <i>smallest</i> element and swap it to the first position. Your result will only place two array elements correctly</p>
+  Your task is to modify the selection sort algorithm so that you find
+      the *largest* element and swap it to the last position and find the *smallest* element and swap it to the first position. Your result will only place two array elements correctly
 elements:
 - type: editable
   location:

@@ -21,12 +21,12 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>In the following code, catch the <code>NumberFormatException</code> that is
-      thrown when the argument of <code>Integer.parseInt</code> does not represent a
-      number.</p>
+  In the following code, catch the `NumberFormatException` that is
+      thrown when the argument of `Integer.parseInt` does not represent a
+      number.
 
-      <p>If either of the strings does not represent a number, use zero instead
-      when forming the sum. </p>
+  If either of the strings does not represent a number, use zero instead
+      when forming the sum.
 elements:
 - type: editable
   location:

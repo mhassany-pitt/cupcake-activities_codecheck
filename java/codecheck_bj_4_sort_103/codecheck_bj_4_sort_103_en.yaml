@@ -19,10 +19,10 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: "<p>In section 14.5, we approximated a count of the array visits in merge\n    sort. Your task is to provide an\
-  \ accurate measurement for the\n    implementation used in section 15.4. Count each occurrence of\n    <code>a[i]</code>,\
-  \ <code>first[i]</code>, or <code>second[i]</code> as a visit. When \n    recursively generating smaller merge sorters,\
-  \ be\n    sure to copy their visit counts after they have completed.</p>"
+statement: "In section 14.5, we approximated a count of the array visits in merge\n    sort. Your task is to provide an accurate\
+  \ measurement for the\n    implementation used in section 15.4. Count each occurrence of\n`a[i]`, `first[i]`, or `second[i]`\
+  \ as a visit. When \n    recursively generating smaller merge sorters, be\n    sure to copy their visit counts after they\
+  \ have completed."
 elements:
 - type: editable
   location:

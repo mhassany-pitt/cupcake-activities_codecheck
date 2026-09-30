@@ -20,21 +20,20 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>We will divide the work of computing the sum of all values in an array
+  We will divide the work of computing the sum of all values in an array
       over multiple threads. Each thread will compute the sum of a subrange and
       then update a shared sum variable and a shared count of completed threads.
-      </p>
 
-      <p>Since the shared variable is updated by multiple threads, we need to
+  Since the shared variable is updated by multiple threads, we need to
       ensure that the updates do not interfere with each other. Your task is to
       use a lock so that only one thread at a time updates the shared data. Note
-      that you should <i>not</i> use a lock to control access to the array which
+      that you should *not* use a lock to control access to the array which
       is not mutated. Otherwise we would completely lose the benefit of using
-      multiple threads.</p>
+      multiple threads.
 
-      <p>Note: We use a slightly wasteful mechanism for finding out when all
+  Note: We use a slightly wasteful mechanism for finding out when all
       threads have completed their work. Several exercises in this chapter
-      explore other strategies.</p>
+      explore other strategies.
 elements:
 - type: editable
   location:

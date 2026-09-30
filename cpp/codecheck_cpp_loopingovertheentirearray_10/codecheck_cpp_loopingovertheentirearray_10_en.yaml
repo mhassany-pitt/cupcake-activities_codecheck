@@ -21,8 +21,8 @@ runtime:
   language: cpp
   version: '17'
 statement: |-
-  <p>Given a <code>vector&lt;vector&lt;int&gt;&gt;, return the largest element.
-     You may assume there is at least one element in the <code>vector</code>.
+  Given a `vector&lt;vector&lt;int&gt;&gt;, return the largest element.
+     You may assume there is at least one element in the <code>vector`.
 elements:
 - type: locked
   location:

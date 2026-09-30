@@ -19,18 +19,10 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: |-
-  <p>You are given a string that is either valid XML (when it starts with a
-      <code>'&lt;'</code> character) or the name of a file. Your task is to read the
-      XML document. </p>
-
-      <p>In order to parse a document from a string, you need to turn it into an
-      input stream, like this:</p>
-
-      <pre>InputStream in = new ByteArrayInputStream(str.getBytes());</pre>
-
-      <p>One of the overloaded <code>parse</code> methods of the
-      <code>DocumentBuilder</code> class accepts an <code>InputStream</code>. </p>
+statement: "You are given a string that is either valid XML (when it starts with a\n`'&lt;'` character) or the name of a file.\
+  \ Your task is to read the\n    XML document. \n\nIn order to parse a document from a string, you need to turn it into an\n\
+  \    input stream, like this:\n\n```\nInputStream in = new ByteArrayInputStream(str.getBytes());\n```\n\nOne of the overloaded\
+  \ `parse` methods of the\n`DocumentBuilder` class accepts an `InputStream`."
 elements:
 - type: editable
   location:

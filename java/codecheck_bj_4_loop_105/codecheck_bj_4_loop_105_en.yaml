@@ -19,11 +19,9 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: |-
-  <p>Your task is to write a method <code>countSevens</code> that counts the number of digits equal to 7 in a given number. For example,
-      the call <code>countSevens(1797)</code> should return 2 since the number
-      contains two digits 7. </p><p>Hint: Repeatedly compute <code>% 10</code> and
-      <code>/ 10</code>. </p>
+statement: "Your task is to write a method `countSevens` that counts the number of digits equal to 7 in a given number. For\
+  \ example,\n    the call `countSevens(1797)` should return 2 since the number\n    contains two digits 7. \n\nHint: Repeatedly\
+  \ compute `% 10` and\n`/ 10`."
 elements:
 - type: editable
   location:

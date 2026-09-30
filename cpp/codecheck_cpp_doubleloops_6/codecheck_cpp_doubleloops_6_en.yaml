@@ -20,8 +20,7 @@ pedagogy:
 runtime:
   language: cpp
   version: '17'
-statement: "<p>Given a <code>vector&lt;int&gt;</code>, return a <code>vector</code> \nof all elements of a that occur exactly\
-  \ once.\n</p>"
+statement: "Given a `vector&lt;int&gt;`, return a `vector` \nof all elements of a that occur exactly once."
 elements:
 - type: locked
   location:

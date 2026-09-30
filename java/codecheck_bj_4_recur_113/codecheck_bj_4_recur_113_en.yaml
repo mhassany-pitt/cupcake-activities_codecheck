@@ -19,11 +19,11 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: <p>Complete the <code>MyMethods</code> class so that the static <code>vowels</code> method returns a string of
-  the vowels of the string parameter. For example, vowels("excercise") would return the string "eeie" because those are the
-  sequence of vowels in the word. Assume vowels are the letters a,e,i,o,u. You can limit your input and output to lower case
-  letters. The vowels method calls a helper method whose parameter are the original string, the starting index where to look
-  for vowels, and the previously found vowels. </p>
+statement: Complete the `MyMethods` class so that the static `vowels` method returns a string of the vowels of the string
+  parameter. For example, vowels("excercise") would return the string "eeie" because those are the sequence of vowels in the
+  word. Assume vowels are the letters a,e,i,o,u. You can limit your input and output to lower case letters. The vowels method
+  calls a helper method whose parameter are the original string, the starting index where to look for vowels, and the previously
+  found vowels.
 elements:
 - type: editable
   location:

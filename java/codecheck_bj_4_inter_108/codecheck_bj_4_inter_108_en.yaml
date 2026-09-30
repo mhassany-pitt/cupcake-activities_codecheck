@@ -20,8 +20,8 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>Modify the <code>PolygonTester</code> class below so that it uses anonymous objects where
-      possible. Objects that are only used once should be coded as anonymous objects.</p>
+  Modify the `PolygonTester` class below so that it uses anonymous objects where
+      possible. Objects that are only used once should be coded as anonymous objects.
 elements:
 - type: editable
   location:

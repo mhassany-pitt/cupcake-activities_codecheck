@@ -20,11 +20,13 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>The latitude, longitude and place name are used to label a map.  Implement a class with latitude and longitude as decimal degrees (33.755, for example) and a place name.  Provide a toString method that will return an XML string with the values in this format:</p>
-  <pre>
+  The latitude, longitude and place name are used to label a map.  Implement a class with latitude and longitude as decimal degrees (33.755, for example) and a place name.  Provide a toString method that will return an XML string with the values in this format:
+
+  ```
+
      &lt;label name="Atlanta, GA" latitude="33.755" longitude="-84.39"/&gt;
      &lt;label name="San Francisco, CA" latitude="37.7793" longitude="-122.4192"/&gt;
-  </pre>
+  ```
 elements:
 - type: editable
   location:

@@ -20,18 +20,10 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: |-
-  <p>Your task is to add a <code>rotate</code> method to the <code>LinkedList</code>
-      class of Section 15.2 that rotates the elements of a linked list so that
-      the second element becomes the first, the third the second, and so on. The
-      first element becomes the last element. For example, after rotating the
-      list containing the elements </p>
-
-      <pre>Mary, had, a, little, lamb</pre>
-
-      <p>the list becomes</p>
-
-      <pre>had, a, little, lamb, Mary</pre>
+statement: "Your task is to add a `rotate` method to the `LinkedList`\n    class of Section 15.2 that rotates the elements\
+  \ of a linked list so that\n    the second element becomes the first, the third the second, and so on. The\n    first element\
+  \ becomes the last element. For example, after rotating the\n    list containing the elements \n\n```\nMary, had, a, little,\
+  \ lamb\n```\n\nthe list becomes\n\n```\nhad, a, little, lamb, Mary\n```"
 elements:
 - type: editable
   location:

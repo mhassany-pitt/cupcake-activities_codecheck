@@ -21,11 +21,11 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>Complete the <code>getMiddle</code> method that gets the middle character
+  Complete the `getMiddle` method that gets the middle character
       from a word if the word length is odd, or the middle character pair if it
-      is even. For example, <code>getMiddle("Java")</code> returns <code>"av"</code>. If
+      is even. For example, `getMiddle("Java")` returns `"av"`. If
       the word is empty, return the empty string. If it is null, return
-      null.</p>
+      null.
 elements:
 - type: editable
   location:

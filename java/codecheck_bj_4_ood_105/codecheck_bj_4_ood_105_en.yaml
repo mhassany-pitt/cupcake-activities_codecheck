@@ -19,13 +19,12 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: "<p>In this assignment, a <code>transfer</code> method has been added to the\n    <code>ATM</code> class of section\
-  \ 12.5:</p>\n\n    <pre>public class ATM \n   /** \n      Transfers between the current account and the other account\n\
-  \      of the same customer.\n      (Precondition: state is TRANSACT)\n   */\n   public void transfer(double value)\n  \
-  \ {\n      . . .\n      back();\n   }</pre>\n\n    <p>Your task is to change the command-line user interface of the\n  \
-  \  <code>ATMSimulator</code> so that the menu </p>\n\n    <pre>A=Deposit, B=Withdrawal, C=Cancel: </pre>\n\n    <p>is replaced\
-  \ by</p>\n\n    <pre>A=Deposit, B=Withdrawal, C=Transfer, D=Cancel: </pre>\n\n    <p>Of course, you should now carry out\
-  \ the appropriate actions when the\n    user selects options C or D.</p>"
+statement: "In this assignment, a `transfer` method has been added to the\n`ATM` class of section 12.5:\n\n```\npublic class\
+  \ ATM \n   /** \n      Transfers between the current account and the other account\n      of the same customer.\n      (Precondition:\
+  \ state is TRANSACT)\n   */\n   public void transfer(double value)\n   {\n      . . .\n      back();\n   }\n```\n\nYour\
+  \ task is to change the command-line user interface of the\n`ATMSimulator` so that the menu \n\n```\nA=Deposit, B=Withdrawal,\
+  \ C=Cancel:\n```\n\nis replaced by\n\n```\nA=Deposit, B=Withdrawal, C=Transfer, D=Cancel:\n```\n\nOf course, you should\
+  \ now carry out the appropriate actions when the\n    user selects options C or D."
 elements:
 - type: editable
   location:

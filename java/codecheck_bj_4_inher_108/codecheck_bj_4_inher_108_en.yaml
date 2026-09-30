@@ -19,19 +19,18 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: "<p>Enumerated types in Java are quite powerful, in that they can contain methods and instance variables.  An enum\
-  \ type class automatically has a static <code>values</code>\n\tmethod added by the compiler that returns an array containing\
-  \ all of the values of the enum in the order in which they were declared.</p>\n\t<p>You will complete the <code>Elements</code>\
-  \ enumeration which declares elements with their symbols and melting points. Your tasks are as follows:</p>\n    <ul>\n\
-  \    <li>Complete the declaration of the <code>Elements</code> enum class using the table of elements given below</li>\n\
-  \    <li>Complete the <code>getMeltedElements</code> method that returns a list of all elements that will melt at a given\
-  \ temperature.</li>\n    </ul>\n<p>Table of melting points:</p>\n<table border=\"1\">\n<tr align=\"center\">\n\t<td>Element</td>\n\
-  \t<td>Symbol</td>\n\t<td>Melting Point</td>\n</tr>\n<tr align=\"center\">\n\t<td>Hydrogen</td>\n\t<td>H</td>\n\t<td>-258.975</td>\n\
-  </tr>\n<tr align=\"center\">\n\t<td>Oxygen</td>\n\t<td>O</td>\n\t<td>-222.65</td>\n</tr>\n<tr align=\"center\">\n\t<td>Nitrogen</td>\n\
-  \t<td>N</td>\n\t<td>-209.86</td>\n</tr>\n<tr align=\"center\">\n\t<td>Chlorine</td>\n\t<td>Cl</td>\n\t<td>-100.84</td>\n\
-  </tr>\n<tr align=\"center\">\n\t<td>Mercury</td>\n\t<td>Hg</td>\n\t<td>-38.72</td>\n</tr>\n<tr align=\"center\">\n\t<td>Potassium</td>\n\
-  \t<td>K</td>\n\t<td>63.35</td>\n</tr>\n<tr align=\"center\">\n\t<td>Sodium</td>\n\t<td>Na</td>\n\t<td>98.0</td>\n</tr>\n\
-  </table>"
+statement: "Enumerated types in Java are quite powerful, in that they can contain methods and instance variables.  An enum\
+  \ type class automatically has a static `values`\n\tmethod added by the compiler that returns an array containing all of\
+  \ the values of the enum in the order in which they were declared.\n\nYou will complete the `Elements` enumeration which\
+  \ declares elements with their symbols and melting points. Your tasks are as follows:\n\n<ul>\n<li>Complete the declaration\
+  \ of the `Elements` enum class using the table of elements given below</li>\n<li>Complete the `getMeltedElements` method\
+  \ that returns a list of all elements that will melt at a given temperature.</li>\n</ul>\nTable of melting points:\n\n<table\
+  \ border=\"1\">\n<tr align=\"center\">\n<td>Element</td>\n<td>Symbol</td>\n<td>Melting Point</td>\n</tr>\n<tr align=\"center\"\
+  >\n<td>Hydrogen</td>\n<td>H</td>\n<td>-258.975</td>\n</tr>\n<tr align=\"center\">\n<td>Oxygen</td>\n<td>O</td>\n<td>-222.65</td>\n\
+  </tr>\n<tr align=\"center\">\n<td>Nitrogen</td>\n<td>N</td>\n<td>-209.86</td>\n</tr>\n<tr align=\"center\">\n<td>Chlorine</td>\n\
+  <td>Cl</td>\n<td>-100.84</td>\n</tr>\n<tr align=\"center\">\n<td>Mercury</td>\n<td>Hg</td>\n<td>-38.72</td>\n</tr>\n<tr\
+  \ align=\"center\">\n<td>Potassium</td>\n<td>K</td>\n<td>63.35</td>\n</tr>\n<tr align=\"center\">\n<td>Sodium</td>\n<td>Na</td>\n\
+  <td>98.0</td>\n</tr>\n</table>"
 elements:
 - type: editable
   location:

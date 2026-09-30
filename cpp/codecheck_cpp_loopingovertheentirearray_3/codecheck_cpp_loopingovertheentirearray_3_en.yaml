@@ -22,8 +22,8 @@ runtime:
   language: cpp
   version: '17'
 statement: |-
-  <p>Given a two-dimensional <b>square</b> array of integers, compute the
-  sum of all elements that are not on one of the diagonals.</p>
+  Given a two-dimensional **square** array of integers, compute the
+  sum of all elements that are not on one of the diagonals.
 elements:
 - type: locked
   location:

@@ -19,12 +19,11 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: "<p>A simple way of encoding a message is the railfence cypher.  The message is written downwards and diagonally\
-  \ on rails of an imaginary fence, moving down and up.  The message, <code>Howareyou?</code> becomes\n<pre>\nH . . . r .\
-  \ . . u .\n. o . a . e . o . ? \n. . w . . . y . . .\n</pre>\nwhich is then encoded as <code>Hruoaeo?wy</code></p>\n<p>Write\
-  \ a method that receives a string and that returns a two-dimensional array of strings, \nplacing the characters as indicated\
-  \ in the preceding diagram. Each array element should either be <code>null</code> (represented by <code>.</code> above)\
-  \ or a string of length 1.</p>"
+statement: "A simple way of encoding a message is the railfence cypher.  The message is written downwards and diagonally on\
+  \ rails of an imaginary fence, moving down and up.  The message, `Howareyou?` becomes\n\n```\n\nH . . . r . . . u .\n. o\
+  \ . a . e . o . ? \n. . w . . . y . . .\n```\n\nwhich is then encoded as `Hruoaeo?wy`\n\nWrite a method that receives a\
+  \ string and that returns a two-dimensional array of strings, \nplacing the characters as indicated in the preceding diagram.\
+  \ Each array element should either be `null` (represented by `.` above) or a string of length 1."
 elements:
 - type: editable
   location:

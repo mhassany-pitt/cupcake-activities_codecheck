@@ -20,28 +20,33 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>You are given a class <code>Rectangle</code> that produces <q>ASCII
-      art</q> rectangles such as the following:</p>
+  You are given a class `Rectangle` that produces <q>ASCII
+      art</q> rectangles such as the following:
 
-      <pre>+-------------+
+  ```
+  +-------------+
   |             |
   |             |
   |             |
   |             |
   |             |
-  +-------------+</pre>
+  +-------------+
+  ```
 
-      <p>The code is given below.</p>
-      <p>Your task is to produce a subclass <code>TitledRectangle</code> that
-      produces figures such as</p>
+  The code is given below.
 
-      <pre>+-------------+
+  Your task is to produce a subclass `TitledRectangle` that
+      produces figures such as
+
+  ```
+  +-------------+
   |             |
   |             |
   |    Hello    |
   |             |
   |             |
-  +-------------+</pre>
+  +-------------+
+  ```
 elements:
 - type: editable
   location:

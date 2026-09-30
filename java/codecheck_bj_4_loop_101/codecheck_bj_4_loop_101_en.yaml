@@ -20,9 +20,9 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>Your task is to write a method <code>getVowels</code> that gets the vowels in a string. For example,
-      the call <code>getVowels("Hello, World!")</code> should return the string
-      <code>"eoo"</code>.</p>
+  Your task is to write a method `getVowels` that gets the vowels in a string. For example,
+      the call `getVowels("Hello, World!")` should return the string
+  `"eoo"`.
 elements:
 - type: editable
   location:

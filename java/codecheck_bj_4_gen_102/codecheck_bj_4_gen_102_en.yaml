@@ -20,21 +20,23 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>Your task is to complete the implementation of a generic
-      <code>Matrix</code> class. A matrix is a two-dimensional arrangement of
+  Your task is to complete the implementation of a generic
+  `Matrix` class. A matrix is a two-dimensional arrangement of
       elements. You access elements with a row and column index. For
-      example,</p>
+      example,
 
-      <pre>Matrix&lt;String&gt; tttBoard = new Matrix&lt;String&gt;(3, 3);<br />tttBoard.put(0, 0, "x");
-  if (tttBoard.get(1, 2).equals("o")) . . .</pre>
+  ```
+  Matrix&lt;String&gt; tttBoard = new Matrix&lt;String&gt;(3, 3);<br />tttBoard.put(0, 0, "x");
+  if (tttBoard.get(1, 2).equals("o")) . . .
+  ```
 
-      <p>Since we are not allowed to use generic arrays, we use an array list
+  Since we are not allowed to use generic arrays, we use an array list
       instead. We store the (i, j) element at index i * columns + j. For
       example, in a 10 x 10 matrix, the (3,4) element is stored at index 3 * 10
-      + 4 = 34.</p>
+      + 4 = 34.
 
-      <p>Complete the implementations of the <code>get</code> and <code>put</code>
-      method below.</p>
+  Complete the implementations of the `get` and `put`
+      method below.
 elements:
 - type: editable
   location:

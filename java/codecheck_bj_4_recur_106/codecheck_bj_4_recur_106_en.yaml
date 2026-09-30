@@ -19,9 +19,9 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: "<div>\n<p>We want to implement a method that reverses the digits in an integer. For example,\n<code>reverseInt(3456)</code>\
-  \ should yield 6543. </p>\n<p>Use this approach: Combine <code>reverseInt(345) = 543</code> and the remainder 6 into 6543.\
-  \ This requires to multiply 6 with 10<sup>3</sup>, the number of digits in \n543.</p>\n</div>"
+statement: "<div>\nWe want to implement a method that reverses the digits in an integer. For example,\n`reverseInt(3456)`\
+  \ should yield 6543. \n\nUse this approach: Combine `reverseInt(345) = 543` and the remainder 6 into 6543. This requires\
+  \ to multiply 6 with 10<sup>3</sup>, the number of digits in \n543.\n\n</div>"
 elements:
 - type: editable
   location:

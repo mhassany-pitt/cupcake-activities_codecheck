@@ -20,11 +20,10 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: "<p>Your task is to read an input file containing a month name followed by the average\n    maximum temperature\
-  \ for that month in Celsius, and then write an output file with the month names\n    and the average maximum temperature\
-  \ for the month in Fahrenheit. For example, if the input file \n    contains the line \"Jan 8.9\" on one line, the output\
-  \ file should contain \"Jan 40.9\" on one line.</p>\n   <p>The formula for converting from Celsius to Fahrenheit is F =\
-  \ 9/5 C + 32.</p>"
+statement: "Your task is to read an input file containing a month name followed by the average\n    maximum temperature for\
+  \ that month in Celsius, and then write an output file with the month names\n    and the average maximum temperature for\
+  \ the month in Fahrenheit. For example, if the input file \n    contains the line \"Jan 8.9\" on one line, the output file\
+  \ should contain \"Jan 40.9\" on one line.\n\nThe formula for converting from Celsius to Fahrenheit is F = 9/5 C + 32."
 elements:
 - type: editable
   location:

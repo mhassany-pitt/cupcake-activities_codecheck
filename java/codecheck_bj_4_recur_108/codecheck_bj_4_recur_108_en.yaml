@@ -20,8 +20,8 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: <p>Complete the <code>multiply</code> method in the <code>MyMethods</code> class so that it returns the product
-  of the non-negative integer n multipled by the integer m. Use recursion and addition. <em>Do not</em> use multiplication!</p>
+statement: Complete the `multiply` method in the `MyMethods` class so that it returns the product of the non-negative integer
+  n multipled by the integer m. Use recursion and addition. *Do not* use multiplication!
 elements:
 - type: editable
   location:

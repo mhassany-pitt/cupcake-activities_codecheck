@@ -21,9 +21,8 @@ pedagogy:
 runtime:
   language: cpp
   version: '17'
-statement: "<p>\nGiven a two-dimensional array of integers and a <code>string</code> \"N\", \"E\", \"S\", \"W\", \nreturn\
-  \ the middle element along the border in the given compass direction, or the average \nof the two middle ones if the border\
-  \ length is even.\n</p>"
+statement: "Given a two-dimensional array of integers and a `string` \"N\", \"E\", \"S\", \"W\", \nreturn the middle element\
+  \ along the border in the given compass direction, or the average \nof the two middle ones if the border length is even."
 elements:
 - type: locked
   location:

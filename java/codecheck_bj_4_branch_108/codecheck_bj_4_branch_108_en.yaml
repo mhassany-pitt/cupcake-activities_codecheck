@@ -19,10 +19,8 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: |-
-  <p>Write a method to test whether four numbers are all the same. For example, </p>
-  <ul><li>3, 3, 3, and 3 are all the same</li><li>3, 3, 4, 3 are not all the same</li><li>3, 4, 5, 5 are not all the same</li>
-  </ul>
+statement: "Write a method to test whether four numbers are all the same. For example, \n\n<ul><li>3, 3, 3, and 3 are all\
+  \ the same</li><li>3, 3, 4, 3 are not all the same</li><li>3, 4, 5, 5 are not all the same</li>\n</ul>"
 elements:
 - type: editable
   location:

@@ -20,8 +20,8 @@ pedagogy:
 runtime:
   language: cpp
   version: '17'
-statement: "Given two arrays <code>a</code> and <code>b</code>, \ncopy all elements that occur in <code>a</code> but \nnot\
-  \ in <code>b</code> into <code>result</code>.\nReturn the size of <code>result</code>."
+statement: "Given two arrays `a` and `b`, \ncopy all elements that occur in `a` but \nnot in `b` into `result`.\nReturn the\
+  \ size of `result`."
 elements:
 - type: locked
   location:

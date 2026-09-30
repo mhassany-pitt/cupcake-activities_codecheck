@@ -20,8 +20,7 @@ pedagogy:
 runtime:
   language: cpp
   version: '17'
-statement: "<p>Given a <code>vector&lt;int&gt;</code>, return the largest sequence \n   whose reverse also occurs somewhere\
-  \ in the array.\n</p>"
+statement: "Given a `vector&lt;int&gt;`, return the largest sequence \n   whose reverse also occurs somewhere in the array."
 elements:
 - type: locked
   location:

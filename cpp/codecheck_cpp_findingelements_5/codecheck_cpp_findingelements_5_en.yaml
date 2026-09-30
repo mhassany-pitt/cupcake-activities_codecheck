@@ -20,8 +20,8 @@ pedagogy:
 runtime:
   language: cpp
   version: '17'
-statement: "Given two arrays of integers <b>of the same length</b>, return \nthe first index where their elements are the\
-  \ same.\nIf they are never the same, return -1."
+statement: "Given two arrays of integers **of the same length**, return \nthe first index where their elements are the same.\n\
+  If they are never the same, return -1."
 elements:
 - type: locked
   location:

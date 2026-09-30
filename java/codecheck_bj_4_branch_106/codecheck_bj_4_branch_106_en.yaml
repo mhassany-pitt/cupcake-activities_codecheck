@@ -20,12 +20,12 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>We consider names of people that consist of first and last names, such
+  We consider names of people that consist of first and last names, such
       as <q>Joe Smith</q>. When you sort names, you first sort by last
       name and, if two people have the same last name, then you sort by first
       name. For example, <q>Jane Doe</q> comes before <q>Harry
       Hacker</q>, but <q>Amy Doe</q> comes before <q>Jane
-      Doe</q>. </p>
+      Doe</q>.
 elements:
 - type: editable
   location:

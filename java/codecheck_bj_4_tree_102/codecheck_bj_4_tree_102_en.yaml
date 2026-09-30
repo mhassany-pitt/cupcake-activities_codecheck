@@ -19,12 +19,12 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: "<p>Your task is to produce a map of the frequencies of all letters in a\n    string. Letters are represented as\
-  \ strings of length 1. For example, if\n    you are given a string</p>\n\n    <pre>Mary had a little lamb</pre>\n\n    <p>you\
-  \ should produce the map</p>\n\n    <pre>\" \" -&gt; 4\n\"M\" -&gt; 1\n\"a\" -&gt; 4\n\"b\" -&gt; 1\n\"d\" -&gt; 1\n\"e\"\
-  \ -&gt; 1\n\"h\" -&gt; 1 \n\"i\" -&gt; 1\n\"l\" -&gt; 3\n\"m\" -&gt; 1\n\"r\" -&gt; 1\n\"t\" -&gt; 2\n\"y\" -&gt; 1</pre>\n\
-  \n    <p>Construct a map that contains the keys in sorted order.</p>\n\n    <p>Hint: Use autoboxing:</p>\n\n    <pre>Integer\
-  \ f = freqs.get(letter); // Caution: may be null\n. . .\nfreqs.put(letter, f + 1); // Can use arithmetic with Integer</pre>"
+statement: "Your task is to produce a map of the frequencies of all letters in a\n    string. Letters are represented as strings\
+  \ of length 1. For example, if\n    you are given a string\n\n```\nMary had a little lamb\n```\n\nyou should produce the\
+  \ map\n\n```\n\" \" -&gt; 4\n\"M\" -&gt; 1\n\"a\" -&gt; 4\n\"b\" -&gt; 1\n\"d\" -&gt; 1\n\"e\" -&gt; 1\n\"h\" -&gt; 1 \n\
+  \"i\" -&gt; 1\n\"l\" -&gt; 3\n\"m\" -&gt; 1\n\"r\" -&gt; 1\n\"t\" -&gt; 2\n\"y\" -&gt; 1\n```\n\nConstruct a map that contains\
+  \ the keys in sorted order.\n\nHint: Use autoboxing:\n\n```\nInteger f = freqs.get(letter); // Caution: may be null\n. .\
+  \ .\nfreqs.put(letter, f + 1); // Can use arithmetic with Integer\n```"
 elements:
 - type: editable
   location:

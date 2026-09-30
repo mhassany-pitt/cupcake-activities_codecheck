@@ -20,27 +20,31 @@ runtime:
   language: java
   version: '17'
 statement: |-
-  <p>Intuitively, every square is a rectangle, so it is tempting to use
-      inheritance for implementing a square:</p>
+  Intuitively, every square is a rectangle, so it is tempting to use
+      inheritance for implementing a square:
 
-      <pre>public class Square extends Rectangle </pre>
+  ```
+  public class Square extends Rectangle
+  ```
 
-      <p>However, the devil is in the details. The <code>Square</code> class
-      inherits all mutators of <code>Rectangle</code>, and some of them can mutate a
-      square into a non-square shape.</p>
+  However, the devil is in the details. The `Square` class
+      inherits all mutators of `Rectangle`, and some of them can mutate a
+      square into a non-square shape.
 
-      <p>The safer approach is to use aggregation:</p>
+  The safer approach is to use aggregation:
 
-      <pre>public class Square
+  ```
+  public class Square
   {
      . . .
      private Rectangle rect;
-  }</pre>
+  }
+  ```
 
-      <p>Now we do not inherit any <code>Rectangle</code> methods. Instead, all
-      methods must be implemented so that they operate on the <code>rect</code>
+  Now we do not inherit any `Rectangle` methods. Instead, all
+      methods must be implemented so that they operate on the `rect`
       instance field. Your task is to implement the constructor and three
-      methods. </p>
+      methods.
 elements:
 - type: editable
   location:

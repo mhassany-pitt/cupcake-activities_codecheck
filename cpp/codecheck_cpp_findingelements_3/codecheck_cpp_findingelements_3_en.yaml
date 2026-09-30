@@ -20,8 +20,8 @@ pedagogy:
 runtime:
   language: cpp
   version: '17'
-statement: "Given an array of integers and a value, fill <code>result</code> \nwith all positions of the value in the array.\
-  \ Return the size of\n<code>result</code>."
+statement: "Given an array of integers and a value, fill `result` \nwith all positions of the value in the array. Return the\
+  \ size of\n`result`."
 elements:
 - type: locked
   location:

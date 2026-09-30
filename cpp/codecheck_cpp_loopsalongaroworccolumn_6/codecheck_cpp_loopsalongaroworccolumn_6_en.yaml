@@ -20,8 +20,8 @@ pedagogy:
 runtime:
   language: cpp
   version: '17'
-statement: "<p> Given a two-dimensional array of integers, return the sum \n    of all elements along the north and south\
-  \ border. If there is only\n    one row, it will be treated as both the North and South border.\n</p>"
+statement: "Given a two-dimensional array of integers, return the sum \n    of all elements along the north and south border.\
+  \ If there is only\n    one row, it will be treated as both the North and South border."
 elements:
 - type: locked
   location:

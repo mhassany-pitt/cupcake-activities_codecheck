@@ -19,8 +19,8 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: "<p>An RSS file describes a set of news items. Here is a sample RSS\n    file:</p>\n\n    <pre>&lt;?xml version=\"\
-  1.0\"?&gt;\n&lt;rss version=\"2.0\"&gt;\n  &lt;channel&gt;\n    &lt;title&gt;Liftoff News&lt;/title&gt;\n    &lt;link&gt;http://liftoff.msfc.nasa.gov/&lt;/link&gt;\n\
+statement: "An RSS file describes a set of news items. Here is a sample RSS\n    file:\n\n```\n&lt;?xml version=\"1.0\"?&gt;\n\
+  &lt;rss version=\"2.0\"&gt;\n  &lt;channel&gt;\n    &lt;title&gt;Liftoff News&lt;/title&gt;\n    &lt;link&gt;http://liftoff.msfc.nasa.gov/&lt;/link&gt;\n\
   \    &lt;description&gt;Liftoff to Space Exploration.&lt;/description&gt;\n    &lt;language&gt;en-us&lt;/language&gt;\n\
   \    &lt;pubDate&gt;Tue, 10 Jun 2003 04:00:00 GMT&lt;/pubDate&gt;\n    &lt;lastBuildDate&gt;Tue, 10 Jun 2003 09:41:01 GMT&lt;/lastBuildDate&gt;\n\
   \    &lt;docs&gt;http://blogs.law.harvard.edu/tech/rss&lt;/docs&gt;\n    &lt;generator&gt;Weblog Editor 2.0&lt;/generator&gt;\n\
@@ -41,10 +41,9 @@ statement: "<p>An RSS file describes a set of news items. Here is a sample RSS\n
   \      &lt;description&gt;Compared to earlier spacecraft, the International Space\n        Station has many luxuries, but\
   \ laundry facilities are not one of them.\n        Instead, astronauts have other options.&lt;/description&gt;\n      &lt;pubDate&gt;Tue,\
   \ 20 May 2003 08:56:02 GMT&lt;/pubDate&gt;\n      &lt;guid&gt;http://liftoff.msfc.nasa.gov/2003/05/20.html#item570&lt;/guid&gt;\n\
-  \    &lt;/item&gt;\n  &lt;/channel&gt;\n&lt;/rss&gt;</pre>\n\n    <p>Note: The RSS format is documented at <a\n    href=\"\
-  http://cyber.law.harvard.edu/rss/rss.html\">http://cyber.law.harvard.edu/rss/rss.html</a>.</p>\n\n    <p>There have been\
-  \ different versions of the RSS format (such as 0.92 and\n    2.0). Your task is to get the version of a given RSS document.\
-  \ </p>"
+  \    &lt;/item&gt;\n  &lt;/channel&gt;\n&lt;/rss&gt;\n```\n\nNote: The RSS format is documented at <a\n    href=\"http://cyber.law.harvard.edu/rss/rss.html\"\
+  >http://cyber.law.harvard.edu/rss/rss.html</a>.\n\nThere have been different versions of the RSS format (such as 0.92 and\n\
+  \    2.0). Your task is to get the version of a given RSS document."
 elements:
 - type: editable
   location:

@@ -19,9 +19,9 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: <p>The following <code>Vehicle</code> class throws a custom exception of type <code>IllegalNumberOfWheels</code>.
-  Your task is to implement this exception class. The exception should not be a checked exception, and it should indicate
-  that an improper wheel count is an illegal parameter value.</p>
+statement: The following `Vehicle` class throws a custom exception of type `IllegalNumberOfWheels`. Your task is to implement
+  this exception class. The exception should not be a checked exception, and it should indicate that an improper wheel count
+  is an illegal parameter value.
 elements:
 - type: editable
   location:

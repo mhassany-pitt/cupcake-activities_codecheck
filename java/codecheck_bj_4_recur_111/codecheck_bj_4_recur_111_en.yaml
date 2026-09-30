@@ -20,9 +20,9 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: <p>Modify the static return upperCase method in the MyMethods class so that it returns a string of the upper case
+statement: Modify the static return upperCase method in the MyMethods class so that it returns a string of the upper case
   letters. For example, upperCase("John DeGamma") would return the string "JDG" because those are the sequence of upper case
-  letters in the word.</p>
+  letters in the word.
 elements:
 - type: editable
   location:

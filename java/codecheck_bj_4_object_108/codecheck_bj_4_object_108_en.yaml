@@ -19,9 +19,9 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: <p><code>StringBuilder</code> is another class that provides methods to manipulate strings.  Look in the <code>StringBuilder</code>
-  class API for information on the <code>reverse</code> method and use the method to reverse a sample string. Then use the
-  <code>toString</code> method to obtain the string in the <code>StringBuilder</code> object.</p>
+statement: '`StringBuilder` is another class that provides methods to manipulate strings.  Look in the `StringBuilder` class
+  API for information on the `reverse` method and use the method to reverse a sample string. Then use the `toString` method
+  to obtain the string in the `StringBuilder` object.'
 elements:
 - type: editable
   location:

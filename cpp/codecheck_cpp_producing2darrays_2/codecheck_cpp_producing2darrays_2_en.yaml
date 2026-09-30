@@ -21,9 +21,9 @@ pedagogy:
 runtime:
   language: cpp
   version: '17'
-statement: "<p>Given two 2D <code>vector&lt;vector&lt;int&gt;&gt;></code> \n   <code>a</code> and <code>b</code>, with the\
-  \ same number \n   of rows and columns, return a <code>vector</code> of \n   of the same size where each element is the\
-  \ greater of the \n   corresponding elements in the two <code>vector</code>s.\n</p>"
+statement: "Given two 2D `vector&lt;vector&lt;int&gt;&gt;>` \n`a` and `b`, with the same number \n   of rows and columns,\
+  \ return a `vector` of \n   of the same size where each element is the greater of the \n   corresponding elements in the\
+  \ two `vector`s."
 elements:
 - type: locked
   location:

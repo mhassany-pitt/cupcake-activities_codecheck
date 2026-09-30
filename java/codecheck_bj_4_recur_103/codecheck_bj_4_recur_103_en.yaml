@@ -19,18 +19,11 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: |-
-  <p>Two strings of equal length can be interlaced like the teeth of a
-      zipper to form a new word. For example, interlacing <code>cota</code> and
-      <code>rain</code> yields <code>c<b>r</b>o<b>a</b>t<b>i</b>a<b>n</b></code>. The
-      following class constructs a <code>ZipperWord</code> from two strings. </p>
-
-      <p>Your task is to complete the implementation of the
-      <code>toStringHelper</code> method below. That method computes the zipped word
-      resulting from interleaving characters from <code>first</code> and
-      <code>second</code>, starting with the given position. Interleave the
-      characters at that position and combine with a recursive call to
-      <code>toStringHelper</code>. </p>
+statement: "Two strings of equal length can be interlaced like the teeth of a\n    zipper to form a new word. For example,\
+  \ interlacing `cota` and\n`rain` yields `c**r**o**a**t**i**a**n**`. The\n    following class constructs a `ZipperWord` from\
+  \ two strings. \n\nYour task is to complete the implementation of the\n`toStringHelper` method below. That method computes\
+  \ the zipped word\n    resulting from interleaving characters from `first` and\n`second`, starting with the given position.\
+  \ Interleave the\n    characters at that position and combine with a recursive call to\n`toStringHelper`."
 elements:
 - type: editable
   location:

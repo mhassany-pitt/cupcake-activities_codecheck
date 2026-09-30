@@ -19,16 +19,10 @@ pedagogy:
 runtime:
   language: java
   version: '17'
-statement: |-
-  <p>A recursive <q>squid</q> is a <b>squ</b>are <b>i</b>n a
-      <b>d</b>iamond containing another <q>squid</q>.</p>
-
-      <p>Your task is to implement the <code>draw</code> method of the squid. Draw
-      the diamond, draw the square, then make another <code>Squid</code> with half
-      the radius, and call its <code>draw</code> method. However, if the radius is
-      too small, do nothing. </p>
-
-      <p>Viewer and component classes have been provided.</p>
+statement: "A recursive <q>squid</q> is a **squ**are **i**n a\n**d**iamond containing another <q>squid</q>.\n\nYour task is\
+  \ to implement the `draw` method of the squid. Draw\n    the diamond, draw the square, then make another `Squid` with half\n\
+  \    the radius, and call its `draw` method. However, if the radius is\n    too small, do nothing. \n\nViewer and component\
+  \ classes have been provided."
 elements:
 - type: editable
   location:

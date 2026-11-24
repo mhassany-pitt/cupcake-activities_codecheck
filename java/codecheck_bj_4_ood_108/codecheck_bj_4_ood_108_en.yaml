@@ -43,7 +43,6 @@ elements:
 testcases:
 - title: Solution Verification
   visible: true
-  status: pass
 includes:
 - Measurable.java
 - Stamp.java

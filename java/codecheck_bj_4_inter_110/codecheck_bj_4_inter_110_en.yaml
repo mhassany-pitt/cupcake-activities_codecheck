@@ -41,7 +41,6 @@ elements:
 testcases:
 - title: Solution Verification
   visible: true
-  status: pass
 includes:
 - Animal.java
 - Cat.java

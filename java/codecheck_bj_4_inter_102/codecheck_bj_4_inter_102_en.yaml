@@ -37,7 +37,6 @@ elements:
 testcases:
 - title: Solution Verification
   visible: true
-  status: pass
 includes:
 - DataSet.java
 - Measurer.java

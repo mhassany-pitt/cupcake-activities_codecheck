@@ -124,6 +124,5 @@ elements:
 testcases:
 - title: Solution Verification
   visible: true
-  status: pass
 includes:
 - Rectangle.java

@@ -52,6 +52,5 @@ elements:
 testcases:
 - title: Solution Verification
   visible: true
-  status: pass
 includes:
 - BankAccount.java

@@ -47,6 +47,5 @@ elements:
 testcases:
 - title: Solution Verification
   visible: true
-  status: pass
 includes:
 - LocationTester.java

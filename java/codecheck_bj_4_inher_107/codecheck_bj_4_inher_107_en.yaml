@@ -58,7 +58,6 @@ elements:
 testcases:
 - title: Solution Verification
   visible: true
-  status: pass
 includes:
 - CarTester.java
 - Vehicle.java

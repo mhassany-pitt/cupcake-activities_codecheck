@@ -48,6 +48,5 @@ elements:
 testcases:
 - title: Solution Verification
   visible: true
-  status: pass
 includes:
 - BankAccountTester.java

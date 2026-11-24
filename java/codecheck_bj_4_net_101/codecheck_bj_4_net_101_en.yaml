@@ -40,7 +40,6 @@ elements:
 testcases:
 - title: Solution Verification
   visible: true
-  status: pass
 includes:
 - OracleServer.java
 - OracleService.java

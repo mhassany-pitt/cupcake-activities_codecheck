@@ -38,7 +38,6 @@ elements:
 testcases:
 - title: Solution Verification
   visible: true
-  status: pass
 includes:
 - AutoTester.java
 - Vehicle.java
